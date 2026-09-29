@@ -9,7 +9,6 @@ interface SpecialStoryNode {
   text?: string;
   track?: string;
   objects?: string[];
-  [key: string]: unknown;
 }
 
 /** Lightweight, local-first viewer for photos, letters, investigation and MP3 story beats. */

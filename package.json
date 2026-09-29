@@ -5,5 +5,13 @@
   "creator": {
     "version": "3.8.8"
   },
-  "scripts": {}
+  "scripts": {
+    "test:story": "node scripts/validate-chapter01.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run test:story && npm run typecheck"
+  },
+  "devDependencies": {
+    "@cocos/creator-types": "3.8.8",
+    "typescript": "5.2.2"
+  }
 }

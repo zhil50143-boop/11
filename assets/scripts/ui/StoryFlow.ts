@@ -3,6 +3,7 @@ import { StoryManager, type StoryEvent } from '../story/StoryManager';
 import { DialoguePanel } from './DialoguePanel';
 import { ChoicePanel } from './ChoicePanel';
 import { MemoryInteractionPanel } from './MemoryInteractionPanel';
+import type { StoryNode } from '../story/StoryNode';
 
 const { ccclass, property } = _decorator;
 
@@ -80,7 +81,7 @@ export class StoryFlow extends Component {
     }
   }
 
-  private renderSpecial(node: { id: string; type: string; [key: string]: unknown }): void {
+  private renderSpecial(node: StoryNode): void {
     if (node.type === 'episodeEnd') {
       this.busy = true;
       void this.loadNextEpisode().finally(() => { this.busy = false; });

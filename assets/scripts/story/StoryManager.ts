@@ -180,7 +180,8 @@ export class StoryManager extends Component {
       if (branch.flag) {
         if (!!this.state.flags[branch.flag] === (branch.equals ?? true)) return branch.next;
       } else if (branch.stat && branch.operator && typeof branch.value === 'number') {
-        const current = (this.state.stats as Record<string, number>)[branch.stat] ?? 0;
+        const stat = branch.stat as keyof GameStateData['stats'];
+        const current = this.state.stats[stat] ?? 0;
         if (this.compare(current, branch.operator, branch.value)) return branch.next;
       }
     }
