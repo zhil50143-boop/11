@@ -8,7 +8,8 @@
   "scripts": {
     "test:story": "node scripts/validate-chapter01.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "npm run test:story && npm run typecheck"
+    "test": "npm run test:story && npm run test:scenes && npm run typecheck",
+    "test:scenes": "node scripts/validate-scenes.mjs"
   },
   "devDependencies": {
     "@cocos/creator-types": "3.8.8",
