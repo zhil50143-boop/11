@@ -26,22 +26,30 @@ export class StoryFlow extends Component {
   private busy = false;
 
   async start(): Promise<void> {
-    if (!this.manager) {
-      this.showError('StoryManager 未绑定。');
-      return;
-    }
+    if (!this.manager) return this.showError('StoryManager 未绑定。');
     this.continueButton?.on(Node.EventType.TOUCH_END, this.onContinue, this);
-    await this.manager.loadEpisode('data/story/chapter01/ep01_home');
-    this.render(this.manager.current());
+    this.interactionPanel?.on(Node.EventType.TOUCH_END, this.onCompleteSpecial, this);
+    try {
+      await this.manager.loadChapterManifest('data/story/chapter01/chapter01_manifest');
+      this.render(this.manager.current());
+    } catch (error) {
+      this.showError(error instanceof Error ? error.message : String(error));
+    }
   }
 
   onDestroy(): void {
     this.continueButton?.off(Node.EventType.TOUCH_END, this.onContinue, this);
+    this.interactionPanel?.off(Node.EventType.TOUCH_END, this.onCompleteSpecial, this);
   }
 
   private onContinue(): void {
     if (this.busy || !this.manager) return;
     this.render(this.manager.advance());
+  }
+
+  private onCompleteSpecial(): void {
+    if (!this.manager) return;
+    this.render(this.manager.completeSpecial());
   }
 
   private render(event: StoryEvent): void {
@@ -58,11 +66,12 @@ export class StoryFlow extends Component {
 
     if (event.type === 'choice') {
       this.choices?.render(event.node.options, id => {
-        if (!this.manager) return;
-        this.render(this.manager.choose(id));
+        if (this.manager) this.render(this.manager.choose(id));
       });
     } else if (event.type === 'special') {
       this.renderSpecial(event.node);
+    } else if (event.type === 'end') {
+      this.node.emit('chapter-slice-end', event.message);
     } else if (event.type === 'error') {
       this.showError(event.message);
     }
@@ -74,8 +83,7 @@ export class StoryFlow extends Component {
       void this.loadNextEpisode().finally(() => { this.busy = false; });
       return;
     }
-    // Special nodes are deliberately surfaced as interactions. The panel can
-    // show photo/letter/audio content, then calls StoryManager.completeSpecial().
+
     if (this.interactionPanel) this.interactionPanel.active = true;
     const label = node.type === 'photo' ? '翻看照片'
       : node.type === 'letter' ? '展开信件'
@@ -88,8 +96,7 @@ export class StoryFlow extends Component {
 
   private async loadNextEpisode(): Promise<void> {
     if (!this.manager) return;
-    const event = await this.manager.advanceEpisode();
-    this.render(event);
+    this.render(await this.manager.advanceEpisode());
   }
 
   private showError(message: string): void {
