@@ -1,0 +1,31 @@
+{
+  "chapterId": "CH01",
+  "title": "那封迟到的信",
+  "episodes": [
+    {
+      "id": "CH01_EP01",
+      "name": "雨夜回家",
+      "resource": "data/story/chapter01/ep01_home",
+      "startNode": "CH01_EP01_N001"
+    },
+    {
+      "id": "CH01_EP02",
+      "name": "旧纸箱",
+      "resource": "data/story/chapter01/ep02_box",
+      "startNode": "CH01_EP02_N001"
+    },
+    {
+      "id": "CH01_EP03",
+      "name": "饭桌以后",
+      "resource": "data/story/chapter01/ep03_dinner",
+      "startNode": "CH01_EP03_N001"
+    },
+    {
+      "id": "CH01_EP04",
+      "name": "01.mp3",
+      "resource": "data/story/chapter01/ep04_mp3",
+      "startNode": "CH01_EP04_N001"
+    }
+  ],
+  "nextChapter": "CH02"
+}
