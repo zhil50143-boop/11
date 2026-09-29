@@ -131,6 +131,7 @@ export class StoryManager extends Component {
     const next = this.manifest.episodes.find(item => item.id === nextId);
     if (!next) {
       this.state.progress.nodeId = node.id;
+      this.state.flags.CH01_VERTICAL_SLICE_COMPLETE = true;
       SaveManager.save(this.state);
       return { type: 'end', message: 'Chapter 01 Vertical Slice 已完成。' };
     }
