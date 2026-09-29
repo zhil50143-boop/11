@@ -25,3 +25,7 @@ TapTap H5 沉浸式互动叙事游戏。
 - Tap API 与 Story 系统必须解耦
 
 请先阅读 CODEX_TASK.md 和 docs/GAME_SPEC.md。
+
+
+## Chapter 01 implementation status
+This work is on branch `codex/ch01-vertical-slice`. Runtime code now includes the chapter manifest loader, local-save progression, dialogue/choice panels, special memory interaction panels, and the 2037-to-2007 transition data. See `docs/CH01_SCENE_WIRING.md` for the remaining Cocos scene setup. Native `.scene` assets, original photo art, and MP3 audio are not yet in the repository; the H5 preview/build has not yet been verified.
