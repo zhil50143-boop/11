@@ -2,6 +2,7 @@ import { _decorator, Component, Node } from 'cc';
 import { StoryManager, type StoryEvent } from '../story/StoryManager';
 import { DialoguePanel } from './DialoguePanel';
 import { ChoicePanel } from './ChoicePanel';
+import { MemoryInteractionPanel } from './MemoryInteractionPanel';
 
 const { ccclass, property } = _decorator;
 
@@ -21,6 +22,7 @@ export class StoryFlow extends Component {
   @property(DialoguePanel) dialogue: DialoguePanel | null = null;
   @property(ChoicePanel) choices: ChoicePanel | null = null;
   @property(Node) interactionPanel: Node | null = null;
+  @property(MemoryInteractionPanel) memoryPanel: MemoryInteractionPanel | null = null;
   @property(Node) continueButton: Node | null = null;
 
   private busy = false;
@@ -55,6 +57,7 @@ export class StoryFlow extends Component {
   private render(event: StoryEvent): void {
     this.choices?.clear();
     if (this.interactionPanel) this.interactionPanel.active = false;
+    if (this.memoryPanel) this.memoryPanel.node.active = false;
 
     if (event.type === 'text') {
       this.dialogue?.render(event.node, SPEAKERS);
@@ -91,6 +94,7 @@ export class StoryFlow extends Component {
       : node.type === 'investigation' ? '调查旧物'
       : node.type === 'transition' ? '继续回到记忆'
       : '继续';
+    this.memoryPanel?.render(node, label);
     this.interactionPanel?.emit('story-special', { node, label });
   }
 
