@@ -36,6 +36,7 @@ export class StoryManager extends Component {
   }
 
   async loadEpisode(resourcePath: string): Promise<void> {
+    this.state ??= SaveManager.load();
     const asset = await this.loadJson(resourcePath);
     const episode = asset.json as EpisodeData;
     if (!episode || !Array.isArray(episode.nodes) || !episode.startNode) {
@@ -57,6 +58,7 @@ export class StoryManager extends Component {
   }
 
   async loadChapterManifest(resourcePath: string): Promise<void> {
+    this.state ??= SaveManager.load();
     const asset = await this.loadJson(resourcePath);
     const manifest = asset.json as ChapterManifest;
     if (!manifest?.chapterId || !Array.isArray(manifest.episodes) || !manifest.episodes.length) {
