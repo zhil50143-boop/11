@@ -7,7 +7,7 @@
       "id": "CH01_EP02_N001",
       "type": "narration",
       "text": "纸箱里放着一张旧照片、一张17路公交票、一条已经褪色的编织手绳、一台旧MP3，以及一封信。",
-      "next": "CH01_EP02_C001"
+      "next": "CH01_EP02_INVESTIGATE_001"
     },
     {
       "id": "CH01_EP02_C001",
@@ -16,21 +16,29 @@
         {
           "id": "A",
           "text": "先拿起照片。",
-          "setFlags": ["VIEWED_OLD_PHOTO"],
-          "effects": { "nostalgia": 2 },
-          "next": "CH01_EP02_PHOTO_001"
+          "setFlags": [
+            "VIEWED_OLD_PHOTO"
+          ],
+          "effects": {
+            "nostalgia": 2
+          },
+          "next": "CH01_EP02_PHOTO_VIEW"
         },
         {
           "id": "B",
           "text": "先看信封。",
-          "setFlags": ["VIEWED_LETTER"],
-          "next": "CH01_EP02_LETTER_001"
+          "setFlags": [
+            "VIEWED_LETTER"
+          ],
+          "next": "CH01_EP02_LETTER_VIEW"
         },
         {
           "id": "C",
           "text": "先看旧MP3。",
-          "setFlags": ["FOUND_MP3"],
-          "next": "CH01_EP02_MP3_001"
+          "setFlags": [
+            "FOUND_MP3"
+          ],
+          "next": "CH01_EP02_MP3_VIEW"
         }
       ]
     },
@@ -72,22 +80,37 @@
         {
           "id": "A",
           "text": "高中同学。",
-          "effects": { "honesty": 1, "avoidance": 2 },
-          "setFlags": ["ANSWERED_CLASSMATE"],
+          "effects": {
+            "honesty": 1,
+            "avoidance": 2
+          },
+          "setFlags": [
+            "ANSWERED_CLASSMATE"
+          ],
           "next": "CH01_EP02_A001"
         },
         {
           "id": "B",
           "text": "以前喜欢过的人。",
-          "effects": { "honesty": 5, "understandingPartner": 2 },
-          "setFlags": ["TOLD_PARTNER_XIA"],
+          "effects": {
+            "honesty": 5,
+            "understandingPartner": 2
+          },
+          "setFlags": [
+            "TOLD_PARTNER_XIA"
+          ],
           "next": "CH01_EP02_B001"
         },
         {
           "id": "C",
           "text": "以前很熟的朋友。",
-          "effects": { "nostalgia": 1, "avoidance": 2 },
-          "setFlags": ["CALLED_XIA_OLD_FRIEND"],
+          "effects": {
+            "nostalgia": 1,
+            "avoidance": 2
+          },
+          "setFlags": [
+            "CALLED_XIA_OLD_FRIEND"
+          ],
           "next": "CH01_EP02_C001A"
         }
       ]
@@ -117,6 +140,42 @@
       "id": "CH01_EP02_END",
       "type": "episodeEnd",
       "next": "CH01_EP03"
+    },
+    {
+      "id": "CH01_EP02_INVESTIGATE_001",
+      "type": "investigation",
+      "title": "打开旧纸箱",
+      "text": "一张旧照片、一张17路公交票、一条褪色的编织手绳、一台旧MP3，以及一封信。逐件查看这些留下来的东西。",
+      "objects": [
+        "旧照片",
+        "17路公交票",
+        "编织手绳",
+        "旧MP3",
+        "信封"
+      ],
+      "next": "CH01_EP02_C001"
+    },
+    {
+      "id": "CH01_EP02_PHOTO_VIEW",
+      "type": "photo",
+      "title": "旧照片",
+      "text": "照片正面：南门树下，一个女孩望向镜头。照片背面写着：“2009.6，南门那棵树。周叙拍照的时候能不能看镜头。”",
+      "next": "CH01_EP02_PHOTO_001"
+    },
+    {
+      "id": "CH01_EP02_LETTER_VIEW",
+      "type": "letter",
+      "title": "信封",
+      "text": "信封正面写着“周叙 收”。右下角只有三个字：许知夏。",
+      "next": "CH01_EP02_LETTER_001"
+    },
+    {
+      "id": "CH01_EP02_MP3_VIEW",
+      "type": "audioInteraction",
+      "title": "旧MP3",
+      "text": "屏幕全黑，按下电源没有反应。你把它放回纸箱。",
+      "track": "",
+      "next": "CH01_EP02_MP3_001"
     }
   ]
 }
