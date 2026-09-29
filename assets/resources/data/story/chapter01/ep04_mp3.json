@@ -13,7 +13,7 @@
       "id": "CH01_EP04_N002",
       "type": "narration",
       "text": "周叙按下了播放。",
-      "next": "CH01_EP04_N003"
+      "next": "CH01_EP04_AUDIO_PLAY"
     },
     {
       "id": "CH01_EP04_N003",
@@ -54,7 +54,7 @@
       "id": "CH01_EP04_N008",
       "type": "narration",
       "text": "2037年的雨声渐渐变成公交车玻璃上的雨声。画面回到2007年9月7日，十七路公交。",
-      "next": "CH01_EP04_N009"
+      "next": "CH01_EP04_MEMORY_TRANSITION"
     },
     {
       "id": "CH01_EP04_N009",
@@ -86,19 +86,25 @@
         {
           "id": "A",
           "text": "里面。",
-          "setFlags": ["CH01_FIRST_BUS_CHOICE_A"],
+          "setFlags": [
+            "CH01_FIRST_BUS_CHOICE_A"
+          ],
           "next": "CH01_EP04_A001"
         },
         {
           "id": "B",
           "text": "外面。",
-          "setFlags": ["CH01_FIRST_BUS_CHOICE_B"],
+          "setFlags": [
+            "CH01_FIRST_BUS_CHOICE_B"
+          ],
           "next": "CH01_EP04_B001"
         },
         {
           "id": "C",
           "text": "随便。",
-          "setFlags": ["CH01_FIRST_BUS_CHOICE_C"],
+          "setFlags": [
+            "CH01_FIRST_BUS_CHOICE_C"
+          ],
           "next": "CH01_EP04_C001A"
         }
       ]
@@ -163,7 +169,9 @@
         {
           "id": "C",
           "text": "现在注意到了。",
-          "effects": { "understandingXia": 1 },
+          "effects": {
+            "understandingXia": 1
+          },
           "next": "CH01_EP04_C002A"
         }
       ]
@@ -199,6 +207,23 @@
       "id": "CH01_EP04_END",
       "type": "episodeEnd",
       "next": "CH02"
+    },
+    {
+      "id": "CH01_EP04_AUDIO_PLAY",
+      "type": "audioInteraction",
+      "title": "01.mp3",
+      "text": "旧MP3里传出一段带着底噪的录音。",
+      "track": "01.mp3",
+      "next": "CH01_EP04_N003"
+    },
+    {
+      "id": "CH01_EP04_MEMORY_TRANSITION",
+      "type": "transition",
+      "title": "回到2007年",
+      "text": "2037年的雨声渐渐变成公交车玻璃上的雨声。画面回到2007年9月7日，十七路公交。",
+      "yearFrom": 2037,
+      "yearTo": 2007,
+      "next": "CH01_EP04_N009"
     }
   ]
 }
