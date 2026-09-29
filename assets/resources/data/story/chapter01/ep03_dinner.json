@@ -31,22 +31,35 @@
         {
           "id": "A",
           "text": "可能只是忙。",
-          "effects": { "avoidance": 1 },
-          "setFlags": ["TOLD_DAUGHTER_MAYBE_BUSY"],
+          "effects": {
+            "avoidance": 1
+          },
+          "setFlags": [
+            "TOLD_DAUGHTER_MAYBE_BUSY"
+          ],
           "next": "CH01_EP03_A001"
         },
         {
           "id": "B",
           "text": "你可以直接问他。",
-          "effects": { "honesty": 2, "selfReflection": 1 },
-          "setFlags": ["ADVISED_DIRECT_QUESTION"],
+          "effects": {
+            "honesty": 2,
+            "selfReflection": 1
+          },
+          "setFlags": [
+            "ADVISED_DIRECT_QUESTION"
+          ],
           "next": "CH01_EP03_B001"
         },
         {
           "id": "C",
           "text": "别一直等。",
-          "effects": { "reality": 2 },
-          "setFlags": ["ADVISED_NOT_TO_WAIT"],
+          "effects": {
+            "reality": 2
+          },
+          "setFlags": [
+            "ADVISED_NOT_TO_WAIT"
+          ],
           "next": "CH01_EP03_C001A"
         }
       ]
@@ -117,21 +130,30 @@
         {
           "id": "A",
           "text": "打开信。",
-          "setFlags": ["READ_LETTER_OPENING"],
-          "effects": { "nostalgia": 3, "regret": 2 },
-          "next": "CH01_EP03_LETTER_001"
+          "setFlags": [
+            "READ_LETTER_OPENING"
+          ],
+          "effects": {
+            "nostalgia": 3,
+            "regret": 2
+          },
+          "next": "CH01_EP03_LETTER_OPEN"
         },
         {
           "id": "B",
           "text": "先看看MP3。",
-          "setFlags": ["FOUND_MP3"],
-          "next": "CH01_EP03_MP3_001"
+          "setFlags": [
+            "FOUND_MP3"
+          ],
+          "next": "CH01_EP03_MP3_PLAY"
         },
         {
           "id": "C",
           "text": "再看看那张照片。",
-          "effects": { "nostalgia": 1 },
-          "next": "CH01_EP03_PHOTO_001"
+          "effects": {
+            "nostalgia": 1
+          },
+          "next": "CH01_EP03_PHOTO_REVIEW"
         }
       ]
     },
@@ -157,6 +179,28 @@
       "id": "CH01_EP03_TO_MP3",
       "type": "episodeEnd",
       "next": "CH01_EP04"
+    },
+    {
+      "id": "CH01_EP03_LETTER_OPEN",
+      "type": "letter",
+      "title": "迟到的信",
+      "text": "周叙：不知道你看到这封信的时候，已经多少岁了。如果真的已经过去很多年……那大概说明，我们最后没有一起走到未来。",
+      "next": "CH01_EP03_LETTER_001"
+    },
+    {
+      "id": "CH01_EP03_MP3_PLAY",
+      "type": "audioInteraction",
+      "title": "接通电源",
+      "text": "周叙找到一根还能使用的旧转接线，把MP3接上了电源。",
+      "track": "01.mp3",
+      "next": "CH01_EP03_MP3_001"
+    },
+    {
+      "id": "CH01_EP03_PHOTO_REVIEW",
+      "type": "photo",
+      "title": "照片背面",
+      "text": "周叙重新看着照片。二十八年前的许知夏还停在树下。",
+      "next": "CH01_EP03_PHOTO_001"
     }
   ]
 }
