@@ -27,10 +27,22 @@ export class StoryManager extends Component {
     }
     return request;
   }
+  private manifestPath(chapterId: string): string {
+    const key = chapterId.toLowerCase();
+    return 'data/story/' + key + '/' + key + '_manifest';
+  }
+  private async loadManifest(chapterId: string): Promise<void> {
+    const asset = await this.loadJSON(this.manifestPath(chapterId));
+    const manifest = asset.json as ChapterManifest;
+    if (!manifest || manifest.chapterId !== chapterId || !Array.isArray(manifest.episodes) || !manifest.episodes.length) throw new Error('章节配置不可用：' + chapterId);
+    this.manifest = manifest;
+    this.state.progress.chapterId = chapterId;
+    SaveManager.save(this.state);
+  }
   async initialize(): Promise<void> {
     await this.perform(async () => {
       this.runtime = new StoryRuntime(SaveManager.load(), state => SaveManager.save(state));
-      this.manifest = (await this.loadJSON('data/story/chapter01/chapter01_manifest')).json as ChapterManifest;
+      await this.loadManifest(this.state.progress.chapterId || 'CH01');
       const ref = this.manifest.episodes.find(e => e.id === this.state.progress.episodeId);
       if (!ref) throw new Error('存档片段不可用。请保留存档并使用对应版本。');
       await this.loadEpisode(ref.resource);
@@ -50,8 +62,7 @@ export class StoryManager extends Component {
   async choose(option: string, id: string): Promise<void> { await this.perform(async () => { this.runtime.choose(option, id); await this.present() }) }
   async inspect(item: string, id: string): Promise<void> { await this.perform(async () => { this.runtime.inspect(item, id); await this.present() }) }
   async complete(id: string): Promise<void> { await this.perform(async () => { this.runtime.complete(id); await this.present() }) }
-  async refresh(): Promise<void> { if (!this.ready) { await this.initialize(); return; }
-    await this.perform(() => this.present()) }
+  async refresh(): Promise<void> { if (!this.ready) { await this.initialize(); return; } await this.perform(() => this.present()) }
   retrySave(): boolean { return this.hasState() && SaveManager.save(this.state) }
   private saveReading = () => { this.retrySave() };
   setReadingOffset(id: string, offset: number): void {
@@ -63,12 +74,14 @@ export class StoryManager extends Component {
     if (!this.alive) return;
     let node = this.runtime.current();
     for (let guard = 0; node.type === 'episodeEnd' && guard < 16; guard++) {
-      if (node.next === this.manifest.nextChapter) {
-        SaveManager.save(this.state); this.events.emit('change', { type: 'end' }); return;
-      }
       const ref = this.manifest.episodes.find(e => e.id === node.next);
-      if (!ref) throw new Error('Unknown episode: ' + node.next);
-      await this.loadEpisode(ref.resource);
+      if (ref) await this.loadEpisode(ref.resource);
+      else if (node.next === this.manifest.nextChapter) {
+        const nextChapter = node.next;
+        try { await this.loadManifest(nextChapter); }
+        catch { SaveManager.save(this.state); this.events.emit('change', { type: 'end' }); return; }
+        await this.loadEpisode(this.manifest.episodes[0].resource);
+      } else throw new Error('Unknown episode: ' + node.next);
       if (!this.alive) return;
       node = this.runtime.current();
     }
