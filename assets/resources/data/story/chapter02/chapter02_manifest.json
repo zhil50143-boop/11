@@ -1,0 +1,13 @@
+{
+  "chapterId": "CH02",
+  "title": "十七岁的夏天",
+  "episodes": [
+    {
+      "id": "CH02_EP01",
+      "name": "第二天",
+      "resource": "data/story/chapter02/ep01_next_day",
+      "startNode": "CH02_EP01_N001"
+    }
+  ],
+  "nextChapter": "CH03"
+}
