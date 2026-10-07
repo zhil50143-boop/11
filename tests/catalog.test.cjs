@@ -13,8 +13,8 @@ function fixture(change, check) {
   finally { if (!root.startsWith(work+path.sep)) throw Error('Invalid fixture cleanup path');fs.rmSync(root,{recursive:true,force:true}); }
 }
 function edit(root,file,change){const name=path.join(root,file);const json=JSON.parse(fs.readFileSync(name));change(json);fs.writeFileSync(name,JSON.stringify(json));}
-test('entire playable catalog includes all six chapter 02 episodes',()=>{
-  const r=validateStoryTree();assert.ok(r.chapters>=2);assert.ok(r.episodes>=10);assert.ok(r.nodes>=75);
+test('entire playable catalog includes three implemented chapters',()=>{
+  const r=validateStoryTree();assert.ok(r.chapters>=3);assert.ok(r.episodes>=16);assert.ok(r.nodes>=117);
 });
 test('validator rejects an episode file omitted from its manifest',()=>{
   fixture(root=>edit(root,'data/story/chapter02/chapter02_manifest.json',m=>m.episodes=m.episodes.filter(e=>e.id!=='CH02_EP02')),root=>assert.throws(()=>validateStoryTree(root),/Unregistered story file: ep02_old_gym/));
@@ -35,7 +35,7 @@ test('chapter transition persists a consistent cursor and preserves it if the ne
   assert.deepEqual(s.progress,before);assert.equal(writes.length,count);
   runtime.load(second,'CH02');assert.equal(s.progress.episodeId,'CH02_EP02');assert.equal(runtime.current().id,'CH02_EP02_N001');
 });
-test('every chapter 01 route also reaches the registered old gym and the current chapter 02 boundary',()=>{
+test('every route reaches the current boundary and keeps chapter 02 and 03 decision consequences',()=>{
   const catalog=JSON.parse(fs.readFileSync(path.join(resources,'data/story/catalog.json')));
   const chapters=new Map(catalog.chapters.map(ref=>{const m=JSON.parse(fs.readFileSync(path.join(resources,ref.resource+'.json')));return[m.chapterId,m]}));
   const episodes=new Map([...chapters.values()].flatMap(m=>m.episodes.map(ref=>[ref.id,{chapterId:m.chapterId,ep:JSON.parse(fs.readFileSync(path.join(resources,ref.resource+'.json')))}])));
@@ -45,12 +45,19 @@ test('every chapter 01 route also reaches the registered old gym and the current
     const runtime=new StoryRuntime(state,()=>{});runtime.load(entry.ep,entry.chapterId);const node=runtime.current();
     const enqueue=act=>{const copy=structuredClone(state),r=new StoryRuntime(copy,()=>{});r.load(entry.ep,entry.chapterId);act(r);queue.push({state:copy,episodeId:item.episodeId,steps:item.steps+1})};
     if(node.type==='episodeEnd'){
-      if(node.next===catalog.pendingChapter){endings++;assert.equal(state.progress.chapterId,'CH02');assert.equal(state.progress.episodeId,'CH02_EP06');assert.ok(state.readNodeIds.includes('CH02_EP02_GYM'));assert.ok(state.life.memoryRecords.FIRST_MEETING.evidence.includes('旧体育馆午休'));assert.ok(state.readNodeIds.includes('CH02_EP05_MESSAGES'));assert.equal(state.life.memoryRecords.HOME_SUMMER.status,'fragmentary');const told=!!state.flags.CH02_TOLD_FAMILY_RELATION;assert.notEqual(told,!!state.flags.CH02_HID_FAMILY_RELATION);assert.ok(state.readNodeIds.includes(told?'CH02_EP06_HOME_TOLD':'CH02_EP06_HOME_HIDDEN'));assert.ok(!state.readNodeIds.includes(told?'CH02_EP06_HOME_HIDDEN':'CH02_EP06_HOME_TOLD'));}
+      if(node.next===catalog.pendingChapter){
+        endings++;const last=chapters.get(catalog.chapters.at(-1).id);assert.equal(state.progress.chapterId,last.chapterId);assert.equal(state.progress.episodeId,last.episodes.at(-1).id);
+        assert.ok(state.readNodeIds.includes('CH02_EP02_GYM'));assert.ok(state.life.memoryRecords.FIRST_MEETING.evidence.includes('旧体育馆午休'));assert.ok(state.readNodeIds.includes('CH02_EP05_MESSAGES'));assert.equal(state.life.memoryRecords.HOME_SUMMER.status,'fragmentary');
+        const told=!!state.flags.CH02_TOLD_FAMILY_RELATION;assert.notEqual(told,!!state.flags.CH02_HID_FAMILY_RELATION);assert.ok(state.readNodeIds.includes(told?'CH02_EP06_HOME_TOLD':'CH02_EP06_HOME_HIDDEN'));assert.ok(!state.readNodeIds.includes(told?'CH02_EP06_HOME_HIDDEN':'CH02_EP06_HOME_TOLD'));
+        for(const [a,b] of [['CH03_EP02_KNOWN','CH03_EP02_FIRST_NAME'],['CH03_EP04_FAMILY_KNOWN','CH03_EP04_FAMILY_LATE'],['CH03_EP06_FAMILY_KNOWN','CH03_EP06_FAMILY_LATE']]){assert.ok(state.readNodeIds.includes(told?a:b));assert.ok(!state.readNodeIds.includes(told?b:a));}
+        const discuss=!!state.flags.CH03_DISCUSS_PLANS;assert.notEqual(discuss,!!state.flags.CH03_ASSUMED_SAME_CITY);assert.ok(state.readNodeIds.includes(discuss?'CH03_EP06_DISCUSS':'CH03_EP06_ASSUME'));assert.ok(!state.readNodeIds.includes(discuss?'CH03_EP06_ASSUME':'CH03_EP06_DISCUSS'));
+        assert.ok(state.flags.CH03_SEEN_GRADUATION_PHOTO&&state.flags.CH03_SEEN_FUTURE_ENVELOPE);assert.equal(state.life.memoryRecords.GRADUATION.status,'fragmentary');assert.equal(state.life.time.year,2009);assert.equal(state.life.stage,'graduate');assert.deepEqual(state.endings,{});assert.ok(!state.flags.READ_FULL_LETTER);
+      }
       else {const next=episodes.has(node.next)?node.next:chapters.get(node.next).episodes[0].id;queue.push({state,episodeId:next,steps:item.steps+1});}
     }else if(node.type==='choice')node.options.forEach(o=>enqueue(r=>r.choose(o.id,node.id)));
     else if(node.type==='investigation'){node.items.filter(i=>!state.flags[i.viewedFlag]).forEach(i=>enqueue(r=>r.inspect(i.id,node.id)));if(node.requiredFlags.every(f=>state.flags[f]))enqueue(r=>r.complete(node.id));}
     else if(['dialogue','narration','passage','phone'].includes(node.type))enqueue(r=>r.advance(node.id));
     else enqueue(r=>r.complete(node.id));
   }
-  assert.equal(endings,1272);console.log('Full implemented game routes: '+endings);
+  assert.equal(endings,2544);console.log('Full implemented game routes: '+endings);
 });

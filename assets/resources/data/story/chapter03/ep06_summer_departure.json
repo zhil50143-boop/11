@@ -1,0 +1,393 @@
+{
+  "episodeId": "CH03_EP06",
+  "name": "两张录取通知",
+  "startNode": "CH03_EP06_N001",
+  "nodes": [
+    {
+      "id": "CH03_EP06_N001",
+      "type": "passage",
+      "title": "信封送到家里",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "七月，周叙的录取通知送到家里。母亲拿着信封先看邮戳，才叫他来拆。学校是省内的那所工科大学。父亲晚上回来，把里面的报到说明看了两遍，问床铺多宽，还要带什么。"
+        },
+        {
+          "text": "许知夏的通知比他晚几天。她给他打电话，说录到了自己选的北方那所大学，新闻专业。周叙听完先说好，又问报到是哪天。她把纸拿近了一点，念给他听，两边日期不一样。"
+        },
+        {
+          "text": "周叙把出分后和父亲一起确认的志愿单拿出来，放在通知旁边。另一份在许知夏家里，是她自己和母亲看过以后填的。两边专业没有再换，连暑假结束后的车票也得分开买。"
+        },
+        {
+          "text": "电话那边，她母亲叫她把缴费单收好，别一直拿在手里。许知夏答应一声，问周叙还有没有咨询会那张复印页。周叙说有，夹在参考册里。她说哪天带过来，想确认一下有没有漏下的资料。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 7,
+          "season": "summer",
+          "label": "2009 · 夏 · 暑假",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "GRADUATION",
+          "title": "毕业那年",
+          "status": "fragmentary",
+          "evidence": [
+            "两份录取通知"
+          ]
+        }
+      },
+      "next": "CH03_EP06_PLAN_CHECK"
+    },
+    {
+      "id": "CH03_EP06_PLAN_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH03_DISCUSS_PLANS",
+          "next": "CH03_EP06_DISCUSS"
+        }
+      ],
+      "fallback": "CH03_EP06_ASSUME"
+    },
+    {
+      "id": "CH03_EP06_DISCUSS",
+      "type": "passage",
+      "title": "把日期重新记一遍",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "见面时，两人把报到日期重新记到纸上。许知夏带着自己的材料，问周叙之前说的住宿问题问到了没有。他说问了，新生先按学校安排住，回头再告诉家里。她把这个写在自己的清单旁边。"
+        },
+        {
+          "text": "周叙说自己之前一直在查见面怎么坐车，看完她那份课程说明，才发现两个人开学后未必同一天有空。许知夏说先等课表出来，别现在就把每个周末排好。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "你那个实训也不是随便请假吧？"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "应该不是。还得再问。"
+        },
+        {
+          "text": "他们没把以后每个月都定下来，只约好到学校先打一次电话，把宿舍号码记住。许知夏把清单折起来，问他可不可以周末帮自己把剩下的底片装盒。他说可以，先问几点。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 7,
+          "season": "summer",
+          "label": "2009 · 夏 · 见面",
+          "location": "17路站点",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "GRADUATION",
+          "title": "毕业那年",
+          "status": "fragmentary",
+          "evidence": [
+            "商量各自的报到日期"
+          ]
+        }
+      },
+      "next": "CH03_EP06_FAMILY_CHECK"
+    },
+    {
+      "id": "CH03_EP06_ASSUME",
+      "type": "passage",
+      "title": "没有用上的线路图",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "见面时，周叙带着五月圈过的参考册。许知夏翻到那一页，看见学校名字已经被重新写回去，没有说话。周叙把线路图抽出来，说这个大概用不上了，正式填的时候也没按这张排。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "我那天不是不想和你见面。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "我知道。"
+        },
+        {
+          "text": "她看着他，等他把后半句说完。周叙说自己当时觉得近一点就都方便，没有先问她要学什么。许知夏把参考册放回他手里，说以后要替她圈名字之前，至少先讲一声。"
+        },
+        {
+          "text": "周叙答应了。她没有因此改自己的通知，也没有拿通知向他证明什么，只翻到报到说明，问开学后电话打在哪里。他说到学校先打回来，两个人又把宿舍可能留电话的位置标出来。"
+        },
+        {
+          "text": "回家的时候，周叙把线路图仍然收着。图背面是另一页数学草稿，他原本打算撕下来扔掉，最后折小，夹回参考册。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 7,
+          "season": "summer",
+          "label": "2009 · 夏 · 见面",
+          "location": "17路站点",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "GRADUATION",
+          "title": "毕业那年",
+          "status": "fragmentary",
+          "evidence": [
+            "后来解释那张线路图"
+          ]
+        }
+      },
+      "next": "CH03_EP06_FAMILY_CHECK"
+    },
+    {
+      "id": "CH03_EP06_FAMILY_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH02_TOLD_FAMILY_RELATION",
+          "next": "CH03_EP06_FAMILY_KNOWN"
+        },
+        {
+          "flag": "CH02_HID_FAMILY_RELATION",
+          "next": "CH03_EP06_FAMILY_LATE"
+        }
+      ],
+      "fallback": "CH03_EP06_FAMILY_LATE"
+    },
+    {
+      "id": "CH03_EP06_FAMILY_KNOWN",
+      "type": "passage",
+      "title": "知道两个人要分开走",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "母亲知道许知夏的通知来了，问周叙什么时候去送。周叙说还没定，得看两家买票。父亲把列好的行李单递给他，让他先把自己的报到事弄清楚，别只想着去车站。"
+        },
+        {
+          "speaker": "ZHOU_MOTHER",
+          "text": "她家里送不送？你先问一下。"
+        },
+        {
+          "text": "周叙说母亲送，父亲那天还在上班。母亲又问路上吃的有没有准备，想到两个人都带着不少东西，便把柜子里的旧布袋拿出来，让他找时间送过去。"
+        },
+        {
+          "text": "他给许知夏发消息，问需不需要布袋。她回说家里已经买了，不过谢谢阿姨。母亲看过消息，把布袋收回去，又拿出一袋没吃完的饼干，让周叙自己带。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 7,
+          "season": "summer",
+          "label": "2009 · 夏 · 收拾行李",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "GRADUATION",
+          "title": "毕业那年",
+          "status": "fragmentary",
+          "evidence": [
+            "父母知道各自去向"
+          ]
+        }
+      },
+      "next": "CH03_EP06_LETTER"
+    },
+    {
+      "id": "CH03_EP06_FAMILY_LATE",
+      "type": "passage",
+      "title": "这次把话说完",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "母亲从陈野母亲那里听说许知夏要去北方，回来问周叙。周叙先说是，又把两张报到日期写到家里的挂历边上。母亲问他为什么这些事总要从别人那里听见，他说之前学校还没定，不知道从哪里说。"
+        },
+        {
+          "speaker": "ZHOU_MOTHER",
+          "text": "现在定了，你就从现在说。"
+        },
+        {
+          "text": "他把许知夏学的专业、哪天走、谁去送都说了一遍。父亲听完，把行李单放到旁边，问自己的车票买了没有。周叙说还没买，父亲让他明天去办，别两边都顾着，自己的反而落下。"
+        },
+        {
+          "text": "母亲没有接着问去买书那一次。她把旧布袋拿给他，让他问问许知夏需不需要。周叙先发了消息，收到她说家里已经买好，才把袋子放回柜子里。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 7,
+          "season": "summer",
+          "label": "2009 · 夏 · 收拾行李",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "GRADUATION",
+          "title": "毕业那年",
+          "status": "fragmentary",
+          "evidence": [
+            "这次向父母说清去向"
+          ]
+        }
+      },
+      "next": "CH03_EP06_LETTER"
+    },
+    {
+      "id": "CH03_EP06_LETTER",
+      "type": "passage",
+      "title": "写给以后的人",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "八月回学校还最后一件器材时，社团老师让他们把要留的照片和纸都装进有名字的袋子。柜子很乱，老师说先放着，开学以后会重新整理，不要把借过的底片带丢。"
+        },
+        {
+          "text": "许知夏在空教室里拿了一张信纸，写了一会儿，又从本子里抽出一张，压在下面。周叙问写什么，她说给以后看的，不是现在交作业。他凑过去，她用手背挡住，把第一张折了一下。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "现在看完就没意思了。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "那什么时候看？"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "以后。你先别问。"
+        },
+        {
+          "text": "她把信放进写了他名字的信封，封口没有粘好，说自己还有一页没写完。周叙把装着照片的档案袋打开，替她压住下面翘起的纸角。老师在门口叫他们把门锁上，许知夏又把信封拿到手里。"
+        },
+        {
+          "text": "周叙没有看完那两页。后来他记得的是信封右下角的名字、没有写地址的背面，还有许知夏让他别在纸上留下杯子印的那句话。学校柜子里最后收了什么，当时也没有逐件核对。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 8,
+          "season": "summer",
+          "label": "2009 · 夏 · 返校还东西",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "GRADUATION",
+          "title": "毕业那年",
+          "status": "fragmentary",
+          "evidence": [
+            "毕业时写的未来信封"
+          ]
+        }
+      },
+      "next": "CH03_EP06_ENVELOPE"
+    },
+    {
+      "id": "CH03_EP06_ENVELOPE",
+      "type": "letter",
+      "actionText": "看信封",
+      "text": "周叙 收\n\n右下角：许知夏。\n背面没有地址。封口的胶没有粘好，里面有折过的信纸。\n\n他没有在这一天读完正文。",
+      "next": "CH03_EP06_PHONE",
+      "setFlags": [
+        "CH03_SEEN_FUTURE_ENVELOPE"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 8,
+          "season": "summer",
+          "label": "2009 · 夏 · 信封",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "GRADUATION",
+          "title": "毕业那年",
+          "status": "fragmentary",
+          "evidence": [
+            "未读完的毕业信"
+          ]
+        }
+      }
+    },
+    {
+      "id": "CH03_EP06_PHONE",
+      "type": "phone",
+      "title": "出门前的短信",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "陈野：我哥说明天帮我搬箱子，你们不用来了。"
+        },
+        {
+          "text": "周叙：你那个球带不带？"
+        },
+        {
+          "text": "陈野：先留给我弟。他已经在上面写名字了。"
+        },
+        {
+          "text": "许知夏：明天我妈也去车站。你不用来太早。"
+        },
+        {
+          "text": "周叙：我车票下午才走。能过去。"
+        },
+        {
+          "text": "许知夏：那先把你自己的东西装好。别又去车站才找。"
+        },
+        {
+          "text": "周叙把手机放到桌边，接着装箱子。母亲从门口问充电线带了没有，他翻了一下，没有找到，最后发现插在旧茶叶盒后面。父亲正在检查拉杆，拉起来又按回去，箱子一直响。"
+        },
+        {
+          "text": "许知夏那天晚上只回到十点。她母亲要把手机充满，自己还在往箱子里塞一条薄毯。周叙等了一会儿，给她补了一条，说自己已经装好，会在进站以前打电话。"
+        },
+        {
+          "text": "第二天早上，母亲把饭盛得少一点，让他路上别饿着。周叙吃完，把桌上的车次表重新看了一眼。自己那一栏在下午，许知夏的那一栏在上午。他把纸留在挂历旁，提起箱子试了试，父亲已经在门口找钥匙。"
+        },
+        {
+          "text": "箱子提到门口，他给许知夏发了一条，说到了学校再告诉她食堂在哪里。她回了一句让他记得吃饭。周叙还把十一假期写在本子上，想着到时候可以再去洗照片；第一页已经记了两家的电话，接着是车次，他给那次见面留了半张空白。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 8,
+          "season": "summer",
+          "label": "2009 · 夏 · 出发以前",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "graduate",
+        "memory": {
+          "id": "GRADUATION",
+          "title": "毕业那年",
+          "status": "fragmentary",
+          "evidence": [
+            "两个不同的出发时间"
+          ]
+        }
+      },
+      "next": "CH03_EP06_END"
+    },
+    {
+      "id": "CH03_EP06_END",
+      "type": "episodeEnd",
+      "next": "CH04"
+    }
+  ],
+  "nodeAliases": {}
+}

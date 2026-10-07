@@ -1,0 +1,43 @@
+{
+  "chapterId": "CH03",
+  "title": "我们以为会永远",
+  "episodes": [
+    {
+      "id": "CH03_EP01",
+      "name": "新学期",
+      "resource": "data/story/chapter03/ep01_new_term",
+      "startNode": "CH03_EP01_N001"
+    },
+    {
+      "id": "CH03_EP02",
+      "name": "周末的饭",
+      "resource": "data/story/chapter03/ep02_family_table",
+      "startNode": "CH03_EP02_N001"
+    },
+    {
+      "id": "CH03_EP03",
+      "name": "各自的打算",
+      "resource": "data/story/chapter03/ep03_school_days",
+      "startNode": "CH03_EP03_N001"
+    },
+    {
+      "id": "CH03_EP04",
+      "name": "志愿草稿",
+      "resource": "data/story/chapter03/ep04_plans",
+      "startNode": "CH03_EP04_N001"
+    },
+    {
+      "id": "CH03_EP05",
+      "name": "南门那棵树",
+      "resource": "data/story/chapter03/ep05_graduation_photo",
+      "startNode": "CH03_EP05_N001"
+    },
+    {
+      "id": "CH03_EP06",
+      "name": "两张录取通知",
+      "resource": "data/story/chapter03/ep06_summer_departure",
+      "startNode": "CH03_EP06_N001"
+    }
+  ],
+  "nextChapter": "CH04"
+}

@@ -1,0 +1,334 @@
+{
+  "episodeId": "CH03_EP04",
+  "name": "志愿草稿",
+  "startNode": "CH03_EP04_N001",
+  "nodes": [
+    {
+      "id": "CH03_EP04_N001",
+      "type": "passage",
+      "title": "资料摊在桌上",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "五月，学校开了咨询会。几张长桌摆在走廊里，资料被风吹得到处都是。周叙拿了一本参考册，先找自己看过的那所省内工科大学，再往后翻许知夏提过的学校。两处介绍隔了很远。"
+        },
+        {
+          "text": "她从另一张桌子过来，手里多了一份新闻专业的课程说明。周叙看见书上圈的地方，问她是不是还是想去北边。她说还有几所在比较，没有定下来，正式填报也得等出分以后。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "我昨天和你说过，还有一所不在那个城市。"
+        },
+        {
+          "text": "周叙记得她说过名字，没有记住位置。他打开自己的纸，想把两张意向表放在一起。许知夏站在桌边，等他把资料翻完，老师在另一头催他们别挡住后面的人。"
+        },
+        {
+          "text": "他们换到空教室。周叙把自己画的线路图放下，许知夏拿出课程说明，两张纸没有对齐。他已经在参考册上圈了几处，打算等会儿给她看。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 5,
+          "season": "spring",
+          "label": "2009 · 春 · 咨询会",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "SCHOOL_PLANS",
+          "title": "选校以前",
+          "status": "fragmentary",
+          "evidence": [
+            "咨询会的两份资料"
+          ]
+        }
+      },
+      "next": "CH03_EP04_FAMILY_CHECK"
+    },
+    {
+      "id": "CH03_EP04_FAMILY_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH02_TOLD_FAMILY_RELATION",
+          "next": "CH03_EP04_FAMILY_KNOWN"
+        },
+        {
+          "flag": "CH02_HID_FAMILY_RELATION",
+          "next": "CH03_EP04_FAMILY_LATE"
+        }
+      ],
+      "fallback": "CH03_EP04_FAMILY_LATE"
+    },
+    {
+      "id": "CH03_EP04_FAMILY_KNOWN",
+      "type": "passage",
+      "title": "父亲前一晚问过",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "前一晚，父亲已经问过许知夏想去哪里。周叙说北边，父亲又问她学什么。他没有答上来，母亲在旁边说一起坐了这么久车，倒该问问人家的打算。"
+        },
+        {
+          "speaker": "ZHOU_FATHER",
+          "text": "你自己那几所，先看能不能学得下去。她也得看她的。"
+        },
+        {
+          "text": "母亲把住宿费那一页折起来，提醒他回来别只说能不能在一个地方，家里还得知道要准备什么。周叙答应了一声。父亲把笔递给他，让他把没弄明白的写下来，今天去问。"
+        },
+        {
+          "text": "纸上有四个问题，最后一个是课程。他把前面几个都问了，最后那个还空着。许知夏坐下时，看见这张纸，问他是不是父亲写的。周叙说自己写的，笔是父亲给的。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 5,
+          "season": "spring",
+          "label": "2009 · 春 · 咨询会",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "SCHOOL_PLANS",
+          "title": "选校以前",
+          "status": "fragmentary",
+          "evidence": [
+            "家里提前知道选校来往"
+          ]
+        }
+      },
+      "next": "CH03_EP04_CHOICE"
+    },
+    {
+      "id": "CH03_EP04_FAMILY_LATE",
+      "type": "passage",
+      "title": "后来才问到的事",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "自从去年春天那顿饭以后，父母已经知道许知夏的名字。不过周叙很少再说两个人具体做什么。前一晚，母亲在他的参考册里发现另一所学校的复印页，才问是不是许知夏也想去这里。"
+        },
+        {
+          "text": "他先说只是帮同学查资料。母亲问是哪一个同学，他说许知夏。父亲在门边穿鞋，停下来问学什么，周叙还是没答上来。"
+        },
+        {
+          "speaker": "ZHOU_MOTHER",
+          "text": "你每次都说帮人家看看，自己问清楚没有？"
+        },
+        {
+          "text": "父亲让他今天回来把两个人各自的想法分开说，别又只留一个学校名字。周叙把纸收进册子，没有再说去书店的那一次。到空教室坐下时，他想到这句话，仍然先把两张表并到一起。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 5,
+          "season": "spring",
+          "label": "2009 · 春 · 咨询会",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "SCHOOL_PLANS",
+          "title": "选校以前",
+          "status": "fragmentary",
+          "evidence": [
+            "家里后来才问清选校"
+          ]
+        }
+      },
+      "next": "CH03_EP04_CHOICE"
+    },
+    {
+      "id": "CH03_EP04_CHOICE",
+      "type": "choice",
+      "prompt": "两个人的意向表，要怎么商量？",
+      "consequence": "这次会决定谁先说清自己的打算，以及家里听到哪一份解释；正式去向仍须各自选择、考试和录取，不由这一句话决定分手。",
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 5,
+          "season": "spring",
+          "label": "2009 · 春 · 咨询会",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "SCHOOL_PLANS",
+          "title": "选校以前",
+          "status": "fragmentary",
+          "evidence": []
+        }
+      },
+      "options": [
+        {
+          "id": "DISCUSS",
+          "text": "先听她选专业的理由，再一起比较各自的表。",
+          "next": "CH03_EP04_DISCUSS",
+          "effects": {
+            "understandingXia": 2,
+            "honesty": 1
+          },
+          "setFlags": [
+            "CH03_DISCUSS_PLANS"
+          ]
+        },
+        {
+          "id": "ASSUME",
+          "text": "先把方便见面的几所圈好，再把安排给她看。",
+          "next": "CH03_EP04_ASSUME",
+          "effects": {
+            "avoidance": 1
+          },
+          "setFlags": [
+            "CH03_ASSUMED_SAME_CITY"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CH03_EP04_DISCUSS",
+      "type": "passage",
+      "title": "先看课程那一页",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙把线路图往旁边放，问她圈的这几门为什么想学。许知夏翻到课程说明，指着其中一行，讲到一半自己也拿不准，说得再去问老师，不能只看这个介绍。"
+        },
+        {
+          "text": "她想试的事不只有摄影。社团做过一次校刊，她替别人采访，问题写了半页，真问的时候只问出三个。她说后来把录音听了几遍，有些话连自己也不知道当时有没有听明白。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "不一定就是这所。近一点也行，但别先替我划掉。"
+        },
+        {
+          "text": "周叙点头，把自己圈过的两处重新画了一下。他说家里希望学费和路费能负担，自己也想学点以后能用的东西。许知夏问他有没有看过实习安排，他说没有，两个人又把资料翻回去。"
+        },
+        {
+          "text": "咨询会结束前，他们找老师补问了几个问题。老师没有替谁定学校，让他们回家把条件列清楚。回去时两张表仍然不一样，但周叙拿着她的复印页，知道该先看哪一行了。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 5,
+          "season": "spring",
+          "label": "2009 · 春 · 咨询会以后",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "SCHOOL_PLANS",
+          "title": "选校以前",
+          "status": "fragmentary",
+          "evidence": [
+            "先听双方的专业理由"
+          ]
+        }
+      },
+      "next": "CH03_EP04_RETURN"
+    },
+    {
+      "id": "CH03_EP04_ASSUME",
+      "type": "passage",
+      "title": "圈好的地方",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙把圈好的几所推过去，告诉她这几处离自己想去的学校不远，有的周末坐车就能到。许知夏低头看了一会儿，问他为什么把自己一直看的那所划掉。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "太远了。见一次面都得来回一天。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "我还没说不去呢。"
+        },
+        {
+          "text": "她把那条线擦了。周叙想说自己只是列一下，她指着纸上写好的顺序，说那就不要先排好了再让她看。他把册子拿回来，又把划掉的名字写在旁边，字比原来小。"
+        },
+        {
+          "text": "两个人坐了一会儿。许知夏没有把自己的表给他重写，只把课程说明复印页留下，让他至少看完这一页。临出门，她说正式填报前会再商量，但自己的志愿要自己填。"
+        },
+        {
+          "text": "周叙回家的车比她早一班。他站到车门边，抬手想挥一下，她正在收那几张纸，没抬头。他把复印页放到参考册里，没有扔。晚上看到第二行，才知道自己圈的那所并没有她想问的那门课。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 5,
+          "season": "spring",
+          "label": "2009 · 春 · 咨询会以后",
+          "location": "17路站点",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "SCHOOL_PLANS",
+          "title": "选校以前",
+          "status": "fragmentary",
+          "evidence": [
+            "先替她圈好的学校"
+          ]
+        }
+      },
+      "next": "CH03_EP04_RETURN"
+    },
+    {
+      "id": "CH03_EP04_RETURN",
+      "type": "passage",
+      "title": "饭后还在看",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "那晚饭后，父亲把餐桌一半空出来，留给他摊资料。母亲要洗工作服，先把盆从旁边挪走，提醒他别用杯子压纸，杯底都是水。"
+        },
+        {
+          "text": "周叙把省内那几所单独放到左边。父亲指着学校介绍上的专业名称，问这个是不是自己常听说的那个。周叙说不太一样，刚问过老师，得再看课程。父亲说那就慢慢看，别光听同事说谁家孩子去了哪里。"
+        },
+        {
+          "text": "母亲拿着湿衣服经过，问许知夏的表呢。他说她自己拿回家了，自己留了一张课程说明。母亲把衣服抖开，没有再问两张表是不是一样。"
+        },
+        {
+          "text": "十点，许知夏发短信，说母亲让自己把外地住宿和路程也查一查。周叙回了一个好，又把查到的一条车次写在草稿边上。这一次他没有直接写成她该去哪所学校。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 5,
+          "season": "spring",
+          "label": "2009 · 春 · 晚上",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "memory": {
+          "id": "SCHOOL_PLANS",
+          "title": "选校以前",
+          "status": "fragmentary",
+          "evidence": [
+            "双方各自保留意向表"
+          ]
+        }
+      },
+      "next": "CH03_EP04_END"
+    },
+    {
+      "id": "CH03_EP04_END",
+      "type": "episodeEnd",
+      "next": "CH03_EP05"
+    }
+  ],
+  "nodeAliases": {}
+}

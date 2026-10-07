@@ -1,8 +1,18 @@
 {
   "startChapter": "CH01",
   "chapters": [
-    { "id": "CH01", "resource": "data/story/chapter01/chapter01_manifest" },
-    { "id": "CH02", "resource": "data/story/chapter02/chapter02_manifest" }
+    {
+      "id": "CH01",
+      "resource": "data/story/chapter01/chapter01_manifest"
+    },
+    {
+      "id": "CH02",
+      "resource": "data/story/chapter02/chapter02_manifest"
+    },
+    {
+      "id": "CH03",
+      "resource": "data/story/chapter03/chapter03_manifest"
+    }
   ],
-  "pendingChapter": "CH03"
+  "pendingChapter": "CH04"
 }
