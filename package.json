@@ -9,7 +9,9 @@
     "check:story": "node tools/check-story.cjs",
     "test": "tsc -p tsconfig.core.json && node --test tests/*.test.cjs",
     "check:cocos": "tsc --noEmit -p tsconfig.json",
-    "check:types": "tsc --noEmit -p tsconfig.verify.json"
+    "check:types": "tsc --noEmit -p tsconfig.verify.json",
+    "check:browser": "node tools/browser-smoke.cjs",
+    "preview": "node tools/serve-preview.cjs"
   },
   "devDependencies": {
     "ajv": "8.20.0",

@@ -5,216 +5,317 @@
   "nodes": [
     {
       "id": "CH01_EP04_N001",
-      "type": "narration",
-      "text": "MP3屏幕亮起。文件列表里有：01.mp3、02.mp3、summer.mp3、不要删.mp3。",
-      "next": "CH01_EP04_N002"
+      "type": "passage",
+      "title": "文件列表",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几行：01.mp3、02.mp3、summer.mp3、不要删.mp3。"
+        },
+        {
+          "text": "周叙按了一下侧面的键，光标没有动。他又按了一下，才跳到第二行。机器还跟以前一样，得有点耐心。"
+        },
+        {
+          "text": "他把光标移回第一行，戴上耳机。程安然已经回到电脑前，没再问他。"
+        }
+      ],
+      "next": "CH01_EP04_N002",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP04_N002",
       "type": "audioInteraction",
       "text": "01.mp3",
-      "next": "CH01_EP04_N003",
+      "next": "CH01_EP04_RECORDING",
       "setFlags": [
         "OPENED_MP3_RECORDING"
-      ]
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
-      "id": "CH01_EP04_N003",
-      "type": "dialogue",
-      "speaker": "XIA_17_RECORDING",
-      "text": "喂？",
-      "next": "CH01_EP04_N004"
-    },
-    {
-      "id": "CH01_EP04_N004",
-      "type": "dialogue",
-      "speaker": "XIA_17_RECORDING",
-      "text": "听得到吗？",
-      "next": "CH01_EP04_N005"
-    },
-    {
-      "id": "CH01_EP04_N005",
-      "type": "dialogue",
-      "speaker": "XIA_17_RECORDING",
-      "text": "周叙。你别装死。",
-      "next": "CH01_EP04_N006"
-    },
-    {
-      "id": "CH01_EP04_N006",
-      "type": "dialogue",
-      "speaker": "XIA_17_RECORDING",
-      "text": "不是你说让我试一下录音功能吗？现在我录了，你又不说话。",
-      "next": "CH01_EP04_N007"
-    },
-    {
-      "id": "CH01_EP04_N007",
-      "type": "dialogue",
-      "speaker": "XIA_17_RECORDING",
-      "text": "等一下。车来了。",
-      "next": "CH01_EP04_N008"
+      "id": "CH01_EP04_RECORDING",
+      "type": "passage",
+      "title": "录音开头",
+      "category": "main",
+      "paragraphs": [
+        {
+          "speaker": "XIA_17_RECORDING",
+          "text": "喂？听得到吗？"
+        },
+        {
+          "text": "耳机里先是两下碰到外壳的声音。女孩把录音器拿得很近，呼吸和说话声混在一起。"
+        },
+        {
+          "speaker": "XIA_17_RECORDING",
+          "text": "周叙。你别装死。不是你说让我试一下录音功能吗？现在我录了，你又不说话。"
+        },
+        {
+          "text": "后面有人说了一句什么，太轻了，没听清。女孩停了一下。"
+        },
+        {
+          "speaker": "XIA_17_RECORDING",
+          "text": "等一下。车来了。"
+        },
+        {
+          "text": "周叙摘下一边耳机。窗外仍在下雨。他看着桌上的公交票，记起了一扇擦不干净的车窗。"
+        }
+      ],
+      "next": "CH01_EP04_N008",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP04_N008",
       "type": "transition",
-      "text": "雨落在公交车的玻璃上。",
-      "next": "CH01_EP04_N009",
       "from": "2037年 · 家中",
       "to": "2007年9月7日 · 17路公交",
+      "text": "雨落在公交车的玻璃上。",
+      "next": "CH01_EP04_BUS",
       "setFlags": [
         "IN_MEMORY_2007"
-      ]
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
-      "id": "CH01_EP04_N009",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "expression": "curious",
-      "position": "center",
-      "text": "同学。",
-      "next": "CH01_EP04_N010"
-    },
-    {
-      "id": "CH01_EP04_N010",
-      "type": "dialogue",
-      "speaker": "ZHOUXU_17",
-      "text": "嗯？",
-      "next": "CH01_EP04_N011"
-    },
-    {
-      "id": "CH01_EP04_N011",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "text": "你坐里面还是外面？",
-      "next": "CH01_EP04_C001"
-    },
-    {
-      "id": "CH01_EP04_C001",
-      "type": "choice",
-      "options": [
+      "id": "CH01_EP04_BUS",
+      "type": "passage",
+      "title": "17路公交",
+      "category": "daily",
+      "paragraphs": [
         {
-          "id": "A",
-          "text": "里面。",
-          "setFlags": [
-            "CH01_FIRST_BUS_CHOICE_A"
-          ],
-          "next": "CH01_EP04_A001"
+          "text": "2007年9月7日。周叙的校服袖口湿了，书包下面垫着一张练习纸。司机关门时，一个男生从后门挤上来，说自己的伞还在门外。车又停了一下。"
         },
         {
-          "id": "B",
-          "text": "外面。",
-          "setFlags": [
-            "CH01_FIRST_BUS_CHOICE_B"
-          ],
-          "next": "CH01_EP04_B001"
+          "speaker": "XIA_17",
+          "text": "同学。"
         },
         {
-          "id": "C",
-          "text": "随便。",
-          "setFlags": [
-            "CH01_FIRST_BUS_CHOICE_C"
-          ],
-          "next": "CH01_EP04_C001A"
+          "text": "周叙抬头。旁边的女孩抱着书包，肩上的校服颜色比他的深一点。她用手背碰了下座位，确认没有积水。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "你坐里面还是外面？"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "里面吧。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "那你进去啊。你挡着我，我怎么让。"
+        },
+        {
+          "text": "他把书包提起来，侧着身子挪到靠窗的位置。女孩坐下，先把书包放到腿上，又拿下来，塞在脚边。"
         }
-      ]
-    },
-    {
-      "id": "CH01_EP04_A001",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "text": "那你进去啊。你挡着我，我怎么让。",
-      "next": "CH01_EP04_N012"
-    },
-    {
-      "id": "CH01_EP04_B001",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "text": "行。那你一会儿别睡着压我。",
-      "next": "CH01_EP04_N012"
-    },
-    {
-      "id": "CH01_EP04_C001A",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "text": "那我坐里面了。你往旁边挪一下。",
-      "next": "CH01_EP04_N012"
-    },
-    {
-      "id": "CH01_EP04_N012",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "text": "你是不是二班的？",
-      "next": "CH01_EP04_N013"
-    },
-    {
-      "id": "CH01_EP04_N013",
-      "type": "dialogue",
-      "speaker": "ZHOUXU_17",
-      "text": "你怎么知道？",
-      "next": "CH01_EP04_N014"
-    },
-    {
-      "id": "CH01_EP04_N014",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "expression": "slightSmile",
-      "text": "因为我昨天就坐你前面。你不会完全没注意吧？",
-      "next": "CH01_EP04_C002"
-    },
-    {
-      "id": "CH01_EP04_C002",
-      "type": "choice",
-      "options": [
-        {
-          "id": "A",
-          "text": "真没注意。",
-          "next": "CH01_EP04_A002"
+      ],
+      "next": "CH01_EP04_CLASSMATES",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋",
+          "location": "17路公交",
+          "timeline": "memory"
         },
-        {
-          "id": "B",
-          "text": "好像有点印象。",
-          "next": "CH01_EP04_B002"
+        "stage": "student",
+        "relationships": {
+          "XIA": "刚认识"
         },
-        {
-          "id": "C",
-          "text": "现在注意到了。",
-          "effects": {
-            "understandingXia": 1
-          },
-          "next": "CH01_EP04_C002A"
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "MP3开头",
+            "公交座位片段"
+          ]
         }
-      ]
+      }
     },
     {
-      "id": "CH01_EP04_A002",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "text": "行。非常好。",
-      "next": "CH01_EP04_N015"
+      "id": "CH01_EP04_CLASSMATES",
+      "type": "passage",
+      "title": "坐在前面的人",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "speaker": "XIA_17",
+          "text": "你是不是二班的？"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "你怎么知道？"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "因为我昨天就坐你前面。你完全没注意？"
+        },
+        {
+          "text": "周叙看着她，终于想起前一天有人朝老师借了一卷胶带。他那时在补作业，没有抬头。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "好像有点印象。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "这句话一听就是没印象。"
+        },
+        {
+          "text": "她把书包拉链拉上，没接着追问。从旁边袋子里露出一根相机带，带子边缘已经起毛。车转弯时，周叙用手扶了一下书包，免得它滑到地上。"
+        }
+      ],
+      "next": "CH01_EP04_WINDOW",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋",
+          "location": "17路公交",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "刚认识"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "MP3开头",
+            "公交座位片段"
+          ]
+        }
+      }
     },
     {
-      "id": "CH01_EP04_B002",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "text": "这句话一听就是没印象。",
-      "next": "CH01_EP04_N015"
-    },
-    {
-      "id": "CH01_EP04_C002A",
-      "type": "dialogue",
-      "speaker": "XIA_17",
-      "text": "你这个人还挺会补救。",
-      "next": "CH01_EP04_N015"
-    },
-    {
-      "id": "CH01_EP04_N015",
-      "type": "narration",
-      "text": "那是我第一次真正记住许知夏。至少……我一直以为是第一次。",
-      "next": "CH01_EP04_END"
+      "id": "CH01_EP04_WINDOW",
+      "type": "passage",
+      "title": "下一站",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "车窗上蒙了一层水汽。女孩用袖口擦出一小块，看了一眼外面，又擦了擦自己的袖子。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "今天怎么还下雨。昨天说没有的。"
+        },
+        {
+          "text": "周叙说他也没带伞。女孩低头确认自己的伞还在脚边，没有接那句话。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "你叫什么？"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "周叙。你呢？"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "许知夏。知不知道的知。"
+        },
+        {
+          "text": "前排有人按了下车铃。她把伞拎起来，站起来前提醒他把练习纸拿走，纸已经粘在座位边上。周叙揭下来时撕破了一个角。"
+        },
+        {
+          "text": "他后来一直记得她先问了座位，才问他的名字。至于昨天在教室里有没有说过话，他已经想不起来了。"
+        }
+      ],
+      "next": "CH01_EP04_END",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋",
+          "location": "17路公交",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "刚认识"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "MP3开头",
+            "公交座位片段"
+          ]
+        }
+      }
     },
     {
       "id": "CH01_EP04_END",
       "type": "episodeEnd",
       "next": "CH02"
     }
-  ]
+  ],
+  "nodeAliases": {
+    "CH01_EP04_N003": "CH01_EP04_RECORDING",
+    "CH01_EP04_N004": "CH01_EP04_RECORDING",
+    "CH01_EP04_N005": "CH01_EP04_RECORDING",
+    "CH01_EP04_N006": "CH01_EP04_RECORDING",
+    "CH01_EP04_N007": "CH01_EP04_RECORDING",
+    "CH01_EP04_N009": "CH01_EP04_BUS",
+    "CH01_EP04_N010": "CH01_EP04_BUS",
+    "CH01_EP04_N011": "CH01_EP04_BUS",
+    "CH01_EP04_C001": "CH01_EP04_BUS",
+    "CH01_EP04_A001": "CH01_EP04_BUS",
+    "CH01_EP04_B001": "CH01_EP04_BUS",
+    "CH01_EP04_C001A": "CH01_EP04_BUS",
+    "CH01_EP04_N012": "CH01_EP04_CLASSMATES",
+    "CH01_EP04_N013": "CH01_EP04_CLASSMATES",
+    "CH01_EP04_N014": "CH01_EP04_CLASSMATES",
+    "CH01_EP04_C002": "CH01_EP04_CLASSMATES",
+    "CH01_EP04_A002": "CH01_EP04_CLASSMATES",
+    "CH01_EP04_B002": "CH01_EP04_CLASSMATES",
+    "CH01_EP04_C002A": "CH01_EP04_CLASSMATES",
+    "CH01_EP04_N015": "CH01_EP04_CLASSMATES"
+  }
 }

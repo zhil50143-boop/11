@@ -8,10 +8,24 @@ export function normalizeSave(value: unknown): GameStateData {
   const base = createInitialState();
   if (!record(value)) throw new Error('Invalid save root');
   if (typeof value.saveVersion === 'number' && value.saveVersion > base.saveVersion) throw new Error('Save is from a newer version');
-  if (value.saveVersion !== undefined && value.saveVersion !== 1) throw new Error('Unsupported save version');
+  if (value.saveVersion !== undefined && value.saveVersion !== 1 && value.saveVersion !== 2) throw new Error('Unsupported save version');
   const p = value.progress;
   if (record(p) && ['chapterId','episodeId','nodeId'].every(k => typeof p[k] === 'string')) {
-    base.progress = { chapterId: p.chapterId as string, episodeId: p.episodeId as string, nodeId: p.nodeId as string };
+    base.progress = { chapterId: p.chapterId as string, episodeId: p.episodeId as string, nodeId: p.nodeId as string,
+      readingOffset: typeof p.readingOffset === 'number' && Number.isFinite(p.readingOffset) ? Math.max(0, Math.min(1, p.readingOffset)) : 0 };
+  }
+  const life = value.life;
+  if (record(life)) {
+    const time = life.time;
+    if (record(time) && typeof time.year === 'number' && Number.isInteger(time.year) && typeof time.month === 'number' && Number.isInteger(time.month) && time.month >= 1 && time.month <= 12 && ['spring','summer','autumn','winter'].includes(String(time.season)) && ['present','memory'].includes(String(time.timeline)) && typeof time.label === 'string' && typeof time.location === 'string') {
+      base.life.time = { year: time.year, month: time.month, season: time.season as typeof base.life.time.season, label: time.label, location: time.location, timeline: time.timeline as typeof base.life.time.timeline };
+    }
+    if (['student','graduate','working','parent','middleAge'].includes(String(life.stage))) base.life.stage = life.stage as typeof base.life.stage;
+    if (record(life.relationships)) base.life.relationships = Object.fromEntries(Object.entries(life.relationships).filter(([k,v]) => !['__proto__','constructor','prototype'].includes(k) && typeof v === 'string')) as Record<string,string>;
+    if (record(life.memoryRecords)) for (const [id,memory] of Object.entries(life.memoryRecords)) {
+      if (['__proto__','constructor','prototype'].includes(id) || !record(memory) || typeof memory.title !== 'string' || !['fragmentary','contradictory','reinterpreted','complete'].includes(String(memory.status)) || !Array.isArray(memory.evidence)) continue;
+      base.life.memoryRecords[id] = { title: memory.title, status: memory.status as typeof base.life.memoryRecords[string]['status'], evidence: [...new Set(memory.evidence.filter((v): v is string => typeof v === 'string'))] };
+    }
   }
   if (record(value.stats)) for (const key of Object.keys(base.stats) as (keyof typeof base.stats)[]) {
     const n = value.stats[key];
@@ -36,10 +50,15 @@ export class LocalSave {
     if (!raw) return createInitialState();
     try {
       const parsed: unknown = JSON.parse(raw);
-      if (record(parsed) && typeof parsed.saveVersion === 'number' && parsed.saveVersion > 1) {
+      if (record(parsed) && typeof parsed.saveVersion === 'number' && parsed.saveVersion > 2) {
         this.blocked = true; throw new Error('存档来自较新版本，请使用对应版本继续。');
       }
-      return normalizeSave(parsed);
+      const state = normalizeSave(parsed);
+      if (record(parsed) && parsed.saveVersion !== 2) {
+        try { if (!this.storage.getItem(this.key + '.v1.backup')) this.storage.setItem(this.key + '.v1.backup', raw) }
+        catch { this.blocked = true; throw new Error('旧版本存档无法备份，已保留原记录。') }
+      }
+      return state;
     } catch (error) {
       if (this.blocked) throw error;
       try { this.storage.setItem(this.key + '.corrupt', raw); }

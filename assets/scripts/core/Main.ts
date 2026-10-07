@@ -12,10 +12,11 @@ export class Main extends Component {
     const notice = text(canvas, '', 0, 180, 32);
     const fresh = button(canvas, '从头开始', -440, () => {
       if (!confirm) {
-        confirm = true; notice.string = '再次点按会替换本地剧情进度。'; return;
+        confirm = true; notice.string = '再次点按会替换本地剧情进度。'; cancel.node.active = true; return;
       }
       if (SaveManager.clear()) open(); else title.string = SaveManager.warning;
     });
-    button(canvas, '取消重新开始', -620, () => { confirm = false; notice.string = ''; fresh.interactable = true });
+    const cancel = button(canvas, '取消重新开始', -620, () => { confirm = false; notice.string = ''; cancel.node.active = false; fresh.interactable = true });
+    cancel.node.active = false;
   }
 }

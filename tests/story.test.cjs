@@ -23,7 +23,7 @@ test('all choice combinations and investigation orders reach slice end',()=>{
     else if(node.type==='investigation'){
       node.items.filter(i=>!state.flags[i.viewedFlag]).forEach(i=>enqueue(r=>r.inspect(i.id,node.id)));
       if(node.requiredFlags.every(f=>state.flags[f]))enqueue(r=>r.complete(node.id));
-    } else if(['dialogue','narration'].includes(node.type))enqueue(r=>r.advance(node.id));
+    } else if(['dialogue','narration','passage','phone'].includes(node.type))enqueue(r=>r.advance(node.id));
     else enqueue(r=>r.complete(node.id));
   }
   assert.ok(endings>=100); console.log('Completed routes: '+endings);
@@ -36,15 +36,48 @@ test('revisiting photo cannot farm stats, and stale input cannot repeat choice',
   assert.throws(()=>r.complete('CH01_EP02_C001'),/Required/);
   r.inspect('letter','CH01_EP02_C001');r.complete('CH01_EP02_LETTER_001');r.complete('CH01_EP02_C001');
   r.advance('CH01_EP02_NAME_001');r.choose('B','CH01_EP02_C002');
-  assert.throws(()=>r.choose('B','CH01_EP02_C002'),/Stale/);assert.equal(s.stats.honesty,5);
+  assert.throws(()=>r.choose('B','CH01_EP02_C002'),/Stale/);assert.equal(s.stats.honesty,2);
 });
 test('resume every interaction preserves cursor and flags',()=>{
-  for(const ep of episodes)for(const node of ep.nodes.filter(n=>['photo','letter','audioInteraction','transition','choice','investigation','episodeEnd'].includes(n.type))){
+  for(const ep of episodes)for(const node of ep.nodes.filter(n=>['photo','letter','audioInteraction','transition','choice','investigation','episodeEnd','passage','phone'].includes(n.type))){
     const st=storage();const local=new LocalSave(st,'test');const s=createInitialState();
     s.progress.episodeId=ep.episodeId;s.progress.nodeId=node.id;s.flags.TEST=true;
     assert.ok(local.save(s));const restored=local.load();const r=new StoryRuntime(restored,()=>{});r.load(ep);
     assert.equal(r.current().id,node.id);assert.ok(restored.flags.TEST);
   }
+});
+test('only the consequential disclosure is a decision; daily content advances naturally',()=>{
+  const choices=episodes.flatMap(e=>e.nodes.filter(n=>n.type==='choice'));
+  assert.deepEqual(choices.map(n=>n.id),['CH01_EP02_C002']);
+  assert.ok(choices[0].consequence && choices[0].prompt);
+  assert.ok(episodes.flatMap(e=>e.nodes).some(n=>n.type==='phone'));
+  const s=createInitialState();const r=new StoryRuntime(s,()=>{});r.load(episodes[3]);
+  s.progress.nodeId='CH01_EP04_BUS';r.current();
+  assert.equal(s.life.time.year,2007);assert.equal(s.life.stage,'student');
+  assert.equal(s.life.memoryRecords.FIRST_MEETING.status,'fragmentary');
+  r.advance('CH01_EP04_BUS');assert.equal(r.current().id,'CH01_EP04_CLASSMATES');
+});
+test('v1 saves are backed up and removed dialogue nodes resume in life passages',()=>{
+  const st=storage();const local=new LocalSave(st,'test');const old=createInitialState();
+  old.saveVersion=1;delete old.life;delete old.progress.readingOffset;
+  old.progress.episodeId='CH01_EP04';old.progress.nodeId='CH01_EP04_C001';old.flags.OLD_DECISION=true;old.stats.honesty=11;
+  const raw=JSON.stringify(old);st.values.set('test',raw);const restored=local.load();
+  assert.equal(st.values.get('test.v1.backup'),raw);assert.equal(restored.saveVersion,2);
+  const r=new StoryRuntime(restored,s=>local.save(s));r.load(episodes[3]);
+  assert.equal(r.current().id,'CH01_EP04_BUS');assert.equal(restored.life.time.year,2007);
+  assert.equal(restored.stats.honesty,11);assert.ok(restored.flags.OLD_DECISION);
+  const blocked=new LocalSave({getItem:key=>key==='test'?raw:null,setItem:()=>{throw Error('quota')},removeItem:()=>{}},'test');
+  assert.throws(()=>blocked.load(),/无法备份/);assert.equal(blocked.save(createInitialState()),false);
+});
+test('reading position and memory evidence survive resume without duplicate or downgrade',()=>{
+  const st=storage();const local=new LocalSave(st,'test');const s=createInitialState();
+  s.progress.episodeId='CH01_EP04';s.progress.nodeId='CH01_EP04_BUS';s.progress.readingOffset=0.7;
+  s.life.memoryRecords.FIRST_MEETING={title:'初次相识',status:'complete',evidence:['另一份证词']};
+  local.save(s);const restored=local.load();const r=new StoryRuntime(restored,()=>{});r.load(episodes[3]);
+  r.current();r.current();assert.equal(restored.progress.readingOffset,0.7);
+  assert.equal(restored.life.memoryRecords.FIRST_MEETING.status,'complete');
+  assert.equal(new Set(restored.life.memoryRecords.FIRST_MEETING.evidence).size,3);
+  r.advance('CH01_EP04_BUS');assert.equal(restored.progress.readingOffset,0);
 });
 test('malformed, future and blocked storage saves preserve data',()=>{
   const st=storage();const local=new LocalSave(st,'test');st.values.set('test','broken');

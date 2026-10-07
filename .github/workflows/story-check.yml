@@ -1,7 +1,7 @@
 name: Story checks
 on:
   push:
-    branches: ["codex/chapter01-slice"]
+    branches: ["main"]
   pull_request:
 permissions:
   contents: read

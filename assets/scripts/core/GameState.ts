@@ -13,12 +13,38 @@ export interface StoryProgress {
   chapterId: string;
   episodeId: string;
   nodeId: string;
+  readingOffset: number;
+}
+
+export type LifeStage = 'student' | 'graduate' | 'working' | 'parent' | 'middleAge';
+export type MemoryStatus = 'fragmentary' | 'contradictory' | 'reinterpreted' | 'complete';
+export interface StoryTime {
+  year: number;
+  month: number;
+  season: 'spring' | 'summer' | 'autumn' | 'winter';
+  label: string;
+  location: string;
+  timeline: 'present' | 'memory';
+}
+export interface MemoryRecord { title: string; status: MemoryStatus; evidence: string[] }
+export interface LifeState {
+  time: StoryTime;
+  stage: LifeStage;
+  relationships: Record<string, string>;
+  memoryRecords: Record<string, MemoryRecord>;
+}
+export interface LifeContext {
+  time?: StoryTime;
+  stage?: LifeStage;
+  relationships?: Record<string, string>;
+  memory?: { id: string; title: string; status: MemoryStatus; evidence: string[] };
 }
 
 export interface GameStateData {
   saveVersion: number;
   playCount: number;
   progress: StoryProgress;
+  life: LifeState;
   stats: StoryStats;
   flags: Record<string, boolean>;
   metaFlags: Record<string, boolean>;
@@ -31,12 +57,19 @@ export interface GameStateData {
 
 export function createInitialState(): GameStateData {
   return {
-    saveVersion: 1,
+    saveVersion: 2,
     playCount: 1,
     progress: {
       chapterId: 'CH01',
       episodeId: 'CH01_EP01',
       nodeId: 'CH01_EP01_N001',
+      readingOffset: 0,
+    },
+    life: {
+      time: { year: 2037, month: 9, season: 'autumn', label: '2037 · 秋', location: '家中', timeline: 'present' },
+      stage: 'middleAge',
+      relationships: {},
+      memoryRecords: {},
     },
     stats: {
       nostalgia: 0,

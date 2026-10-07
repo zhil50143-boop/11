@@ -5,220 +5,173 @@
   "nodes": [
     {
       "id": "CH01_EP01_N001",
-      "type": "narration",
-      "text": "2037年9月7日，晚上19:42。",
-      "next": "CH01_EP01_N002"
-    },
-    {
-      "id": "CH01_EP01_N002",
-      "type": "narration",
-      "text": "雨比天气预报里说的来得更早。",
-      "next": "CH01_EP01_N003"
-    },
-    {
-      "id": "CH01_EP01_N003",
-      "type": "narration",
-      "text": "周叙推开门的时候，裤脚已经湿了一截。",
-      "next": "CH01_EP01_N004"
-    },
-    {
-      "id": "CH01_EP01_N004",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "expression": "neutral",
-      "position": "center",
-      "text": "鞋别往里面踩。",
-      "next": "CH01_EP01_N005"
-    },
-    {
-      "id": "CH01_EP01_N005",
-      "type": "dialogue",
-      "speaker": "ZHOUXU",
-      "text": "嗯。",
-      "next": "CH01_EP01_N006"
-    },
-    {
-      "id": "CH01_EP01_N006",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "伞放阳台。",
-      "next": "CH01_EP01_N007"
-    },
-    {
-      "id": "CH01_EP01_N007",
-      "type": "dialogue",
-      "speaker": "ZHOUXU",
-      "text": "知道。",
-      "next": "CH01_EP01_N008"
-    },
-    {
-      "id": "CH01_EP01_N008",
-      "type": "narration",
-      "text": "结婚十七年以后，很多对话已经短到不需要完整句子。",
-      "next": "CH01_EP01_N009"
-    },
-    {
-      "id": "CH01_EP01_N009",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "饭还差一会儿。",
-      "next": "CH01_EP01_N010"
-    },
-    {
-      "id": "CH01_EP01_N010",
-      "type": "dialogue",
-      "speaker": "ZHOUXU",
-      "text": "满满呢？",
-      "next": "CH01_EP01_N011"
-    },
-    {
-      "id": "CH01_EP01_N011",
-      "type": "dialogue",
-      "speaker": "ZHOUMAN",
-      "text": "我听见了！",
-      "next": "CH01_EP01_N012"
-    },
-    {
-      "id": "CH01_EP01_N012",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "听见也不知道出来打个招呼。",
-      "next": "CH01_EP01_N013"
-    },
-    {
-      "id": "CH01_EP01_N013",
-      "type": "dialogue",
-      "speaker": "ZHOUMAN",
-      "text": "爸——我写作业呢！",
-      "next": "CH01_EP01_N014"
-    },
-    {
-      "id": "CH01_EP01_N014",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "expression": "slightSmile",
-      "text": "她已经拿“写作业”当万能借口用了。",
-      "next": "CH01_EP01_C001"
-    },
-    {
-      "id": "CH01_EP01_C001",
-      "type": "choice",
-      "options": [
+      "type": "passage",
+      "title": "雨夜回家",
+      "category": "main",
+      "paragraphs": [
         {
-          "id": "A",
-          "text": "像我。",
-          "effects": {
-            "understandingPartner": 1
-          },
-          "next": "CH01_EP01_A001"
+          "text": "2037年9月7日，晚上19:42。雨比天气预报里说的来得早。周叙出了地铁才发现伞在办公室，只好在便利店买了一把。伞很小，回到楼下，裤脚还是湿了一截。"
         },
         {
-          "id": "B",
-          "text": "明明更像你。",
-          "next": "CH01_EP01_B001"
+          "speaker": "ANRAN",
+          "text": "鞋别往里面踩。"
         },
         {
-          "id": "C",
-          "text": "十六岁都这样。",
-          "next": "CH01_EP01_C001A"
+          "text": "他停在门口，把鞋脱了。鞋柜上压着一张水费单，旁边是周满上周忘在家里的校牌。程安然从厨房探了下头，又回去翻锅里的菜。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "伞放阳台。地上那块毛巾擦一下，早上刚拖的。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "嗯。满满呢？"
+        },
+        {
+          "speaker": "ZHOUMAN",
+          "text": "我听见了！爸，我写作业呢！"
+        },
+        {
+          "text": "声音从卧室传出来。周叙把湿外套挂在靠门的钩子上，发现钩子已经歪了，往里面推了推。那颗螺丝他上个星期就说要拧紧。"
         }
-      ]
-    },
-    {
-      "id": "CH01_EP01_A001",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "你还挺有自知之明。",
-      "next": "CH01_EP01_N015"
-    },
-    {
-      "id": "CH01_EP01_B001",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "她拖延的时候才像你。",
-      "next": "CH01_EP01_N015"
-    },
-    {
-      "id": "CH01_EP01_C001A",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "你十六岁的时候什么样，我又没见过。估计也挺难伺候。",
-      "next": "CH01_EP01_N015"
-    },
-    {
-      "id": "CH01_EP01_N015",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "对了，有你的快递。",
-      "next": "CH01_EP01_N016"
-    },
-    {
-      "id": "CH01_EP01_N016",
-      "type": "dialogue",
-      "speaker": "ZHOUXU",
-      "text": "我的？",
-      "next": "CH01_EP01_N017"
-    },
-    {
-      "id": "CH01_EP01_N017",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "高中寄来的。说是旧教学楼要拆，整理仓库翻出一批以前学生留下的东西。",
-      "next": "CH01_EP01_N018"
-    },
-    {
-      "id": "CH01_EP01_N018",
-      "type": "narration",
-      "text": "纸箱边角被雨水浸湿，寄件信息写着：南城第二中学旧校区资料整理组。",
-      "next": "CH01_EP01_C002"
-    },
-    {
-      "id": "CH01_EP01_C002",
-      "type": "choice",
-      "options": [
-        {
-          "id": "A",
-          "text": "先把湿外套挂好。",
-          "effects": {
-            "reality": 1
-          },
-          "next": "CH01_EP01_HANG_COAT"
+      ],
+      "next": "CH01_EP01_DAILY",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 傍晚",
+          "location": "家中",
+          "timeline": "present"
         },
-        {
-          "id": "B",
-          "text": "现在看看。",
-          "effects": {
-            "nostalgia": 1
-          },
-          "next": "CH01_EP01_N019"
-        },
-        {
-          "id": "C",
-          "text": "估计都是些旧东西。",
-          "effects": {
-            "avoidance": 1
-          },
-          "next": "CH01_EP01_N019"
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
         }
-      ]
+      }
     },
     {
-      "id": "CH01_EP01_N019",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "随你。",
-      "next": "CH01_EP01_END"
+      "id": "CH01_EP01_DAILY",
+      "type": "passage",
+      "title": "饭还差一会儿",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "speaker": "ANRAN",
+          "text": "冰箱有点东西，你先拿出来。我腾不开手。"
+        },
+        {
+          "text": "他把剩下的半盒豆腐拿出来，顺便看了一眼贴在冰箱门上的便签：周六复查。是母亲的。下面另一行是程安然写的：报告放蓝色文件袋。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "周六几点来着？"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "八点。你别又忘了。我上午还得去一趟公司。"
+        },
+        {
+          "text": "周叙说记住了，拿手机设了提醒。他看见程安然的电脑还开在餐桌一角，屏幕上是改过好几版的工作材料。有一行批注，她还没删掉。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "你们不是说今天交完？"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "又要改。吃完再说。"
+        },
+        {
+          "text": "周满开了卧室门，先看了一眼锅。她想问晚饭什么时候好，又转身回去找一张卷子。门没有关严，里面传来椅子拖动的声音。"
+        }
+      ],
+      "next": "CH01_EP01_PARCEL",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
+    },
+    {
+      "id": "CH01_EP01_PARCEL",
+      "type": "passage",
+      "title": "桌边的纸箱",
+      "category": "main",
+      "paragraphs": [
+        {
+          "speaker": "ANRAN",
+          "text": "对了，有你的快递。学校寄来的。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "我的学校？"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "高中。说旧教学楼要拆，清仓库的时候翻出些以前学生留下的东西。你看看单子，我也没仔细读。"
+        },
+        {
+          "text": "纸箱放在餐桌旁，下面垫着一张旧报纸。边角湿了，透明胶带被压得皱起来。寄件栏写着：南城第二中学旧校区资料整理组。"
+        },
+        {
+          "text": "周叙洗了手，在抽屉里找剪刀。抽屉里有三节不知道有没有电的电池、一包没用完的橡皮筋，还有周满小时候的姓名贴。他把剪刀拿出来，没有把其他东西重新摆好。"
+        },
+        {
+          "text": "纸箱里的东西装在同一个旧档案袋里。袋口的绳子断了一半，外面用圆珠笔写着他的班级和名字。周叙认了两遍，是自己的字。"
+        }
+      ],
+      "next": "CH01_EP01_END",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP01_END",
       "type": "episodeEnd",
       "next": "CH01_EP02"
-    },
-    {
-      "id": "CH01_EP01_HANG_COAT",
-      "type": "narration",
-      "text": "周叙挂好外套，擦了擦手，拿起桌边的纸箱。",
-      "next": "CH01_EP01_N019"
     }
-  ]
+  ],
+  "nodeAliases": {
+    "CH01_EP01_N002": "CH01_EP01_N001",
+    "CH01_EP01_N003": "CH01_EP01_N001",
+    "CH01_EP01_N004": "CH01_EP01_N001",
+    "CH01_EP01_N005": "CH01_EP01_N001",
+    "CH01_EP01_N006": "CH01_EP01_N001",
+    "CH01_EP01_N007": "CH01_EP01_N001",
+    "CH01_EP01_N008": "CH01_EP01_N001",
+    "CH01_EP01_N009": "CH01_EP01_N001",
+    "CH01_EP01_N010": "CH01_EP01_N001",
+    "CH01_EP01_N011": "CH01_EP01_N001",
+    "CH01_EP01_N012": "CH01_EP01_N001",
+    "CH01_EP01_N013": "CH01_EP01_N001",
+    "CH01_EP01_N014": "CH01_EP01_N001",
+    "CH01_EP01_C001": "CH01_EP01_DAILY",
+    "CH01_EP01_A001": "CH01_EP01_N001",
+    "CH01_EP01_B001": "CH01_EP01_N001",
+    "CH01_EP01_C001A": "CH01_EP01_N001",
+    "CH01_EP01_N015": "CH01_EP01_N001",
+    "CH01_EP01_N016": "CH01_EP01_N001",
+    "CH01_EP01_N017": "CH01_EP01_N001",
+    "CH01_EP01_N018": "CH01_EP01_N001",
+    "CH01_EP01_C002": "CH01_EP01_PARCEL",
+    "CH01_EP01_N019": "CH01_EP01_PARCEL",
+    "CH01_EP01_HANG_COAT": "CH01_EP01_PARCEL"
+  }
 }

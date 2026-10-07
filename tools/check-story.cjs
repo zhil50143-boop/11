@@ -15,6 +15,7 @@ for (const ref of manifest.episodes) {
   if (ep.episodeId !== ref.id || ep.startNode !== ref.startNode) throw new Error('Manifest mismatch: '+ref.id);
   const nodes = new Map(ep.nodes.map(n=>[n.id,n]));
   if (nodes.size !== ep.nodes.length || !nodes.has(ep.startNode)) throw new Error('Invalid node IDs: '+ref.id);
+  for (const target of Object.values(ep.nodeAliases??{})) if (!nodes.has(target)) throw new Error('Invalid save migration target: '+target);
   const links = node => [node.type !== 'episodeEnd' ? node.next : undefined,node.fallback,...(node.options??[]).map(x=>x.next),...(node.branches??[]).map(x=>x.next),...(node.items??[]).map(x=>x.next)].filter(Boolean);
   for (const node of ep.nodes) {
     for (const target of links(node)) if (!nodes.has(target)) throw new Error('Missing target: '+node.id+' -> '+target);

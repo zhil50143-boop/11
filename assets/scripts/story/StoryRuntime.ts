@@ -1,5 +1,6 @@
 import type { GameStateData } from '../core/GameState';
 import { applyEffects } from './StoryEffects';
+import { applyLifeContext } from '../core/LifeState';
 import type { EpisodeData, StoryNode, InteractionStoryNode } from './StoryNode';
 
 export class StoryRuntime {
@@ -13,8 +14,14 @@ export class StoryRuntime {
     }
     if (!nodes.has(episode.startNode)) throw new Error('Missing start node');
     this.nodes = nodes;
-    if (this.state.progress.episodeId !== episode.episodeId || !nodes.has(this.state.progress.nodeId)) {
+    if (this.state.progress.episodeId !== episode.episodeId) {
       this.state.progress.nodeId = episode.startNode;
+      this.state.progress.readingOffset = 0;
+    } else if (!nodes.has(this.state.progress.nodeId)) {
+      const alias = episode.nodeAliases?.[this.state.progress.nodeId];
+      if (!alias || !nodes.has(alias)) throw new Error('Saved passage is not available: ' + this.state.progress.nodeId);
+      this.state.progress.nodeId = alias;
+      this.state.progress.readingOffset = 0;
     }
     this.state.progress.episodeId = episode.episodeId;
     this.persist(this.state);
@@ -40,13 +47,16 @@ export class StoryRuntime {
       } else if (node.type === 'save') {
         if (!node.next) throw new Error('Save node has no next');
         this.go(node.next);
-      } else return node;
+      } else {
+        if (applyLifeContext(this.state.life, node.lifeContext)) this.persist(this.state);
+        return node;
+      }
     }
     throw new Error('Automatic node cycle');
   }
   advance(expected: string): StoryNode {
     const node = this.expect(expected);
-    if (node.type !== 'dialogue' && node.type !== 'narration') throw new Error('Advance requires text');
+    if (!['dialogue', 'narration', 'passage', 'phone'].includes(node.type)) throw new Error('Advance requires text');
     if (!node.next) throw new Error('Text node has no next');
     this.read(node.id); this.go(node.next); return this.current();
   }
@@ -89,7 +99,7 @@ export class StoryRuntime {
     if (!this.nodes.has(id)) throw new Error('Missing target: ' + id);
   }
   private go(id: string): void {
-    this.requireTarget(id); this.state.progress.nodeId = id; this.persist(this.state);
+    this.requireTarget(id); this.state.progress.nodeId = id; this.state.progress.readingOffset = 0; this.persist(this.state);
   }
   private read(id: string): void {
     if (!this.state.readNodeIds.includes(id)) this.state.readNodeIds.push(id);

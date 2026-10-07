@@ -11,7 +11,8 @@
 | [Howler 2.2.4](https://github.com/goldfire/howler.js/tree/v2.2.4) | [MIT](https://github.com/goldfire/howler.js/blob/v2.2.4/LICENSE.md) | H5 音频播放、暂停 | 暂不引入；与 Cocos AudioSource 重复，双音频生命周期增加移动端风险 |
 | [localForage 1.10.0](https://github.com/localForage/localForage/tree/1.10.0) | [Apache-2.0](https://github.com/localForage/localForage/blob/1.10.0/LICENSE) | 异步 IndexedDB 存储 | 暂不引入；当前存档小，Cocos sys.localStorage 足够，异步迁移有额外复杂度 |
 | [ccc-tnt-framework](https://github.com/onvia/ccc-tnt-framework) | [自定义禁止商业使用](https://github.com/onvia/ccc-tnt-framework/blob/master/LICENSE) | 资源/UI/管理器 | 排除；不能用于本商业产品，不复制其实现 |
-| [OpenAI Playwright Skill](https://github.com/openai/skills/tree/main/skills/.curated/playwright) | [Apache-2.0](https://github.com/openai/skills/blob/main/skills/.curated/playwright/LICENSE.txt) | 浏览器交互验收辅助 | 候选，未安装/未执行；本地执行通道无响应；Canvas 检查仍需 Cocos 真浏览器验证 |
+| [OpenAI Playwright Skill](https://github.com/openai/skills/tree/main/skills/.curated/playwright) | [Apache-2.0](https://github.com/openai/skills/blob/main/skills/.curated/playwright/LICENSE.txt) | 浏览器交互验收辅助 | 未安装该 Skill；本次使用本机已有 Playwright 工具进行 Canvas 实测，无需另加 Skill |
+| [Microsoft Playwright](https://github.com/microsoft/playwright) | [Apache-2.0](https://github.com/microsoft/playwright/blob/main/LICENSE) | 开发期真实浏览器触摸、刷新续读与截图 | 已使用本机已有测试环境；只调用测试 API，不复制示例内容，不加入 H5 运行时 |
 
 H5 加载采用 Cocos 3.8 官方 resources API，按 manifest 加载当前片段、预取下一片段 JSON；不用第三方 CDN，不预取全部美术音频。
 依据：[Cocos 3.8 动态资源加载](https://docs.cocos.com/creator/3.8/manual/en/asset/dynamic-load-resources.html)。

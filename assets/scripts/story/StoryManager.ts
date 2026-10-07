@@ -53,6 +53,12 @@ export class StoryManager extends Component {
   async refresh(): Promise<void> { if (!this.ready) { await this.initialize(); return; }
     await this.perform(() => this.present()) }
   retrySave(): boolean { return this.hasState() && SaveManager.save(this.state) }
+  private saveReading = () => { this.retrySave() };
+  setReadingOffset(id: string, offset: number): void {
+    if (!this.hasState() || this.state.progress.nodeId !== id || !Number.isFinite(offset)) return;
+    this.state.progress.readingOffset = Math.max(0, Math.min(1, offset));
+    this.unschedule(this.saveReading); this.scheduleOnce(this.saveReading, 0.3);
+  }
   private async present(): Promise<void> {
     if (!this.alive) return;
     let node = this.runtime.current();

@@ -5,97 +5,221 @@
   "nodes": [
     {
       "id": "CH01_EP03_N001",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "吃饭的时候能不能别看手机？",
-      "next": "CH01_EP03_N002"
-    },
-    {
-      "id": "CH01_EP03_N002",
-      "type": "dialogue",
-      "speaker": "ZHOUMAN",
-      "text": "我就看一眼。",
-      "next": "CH01_EP03_N003"
-    },
-    {
-      "id": "CH01_EP03_N003",
-      "type": "dialogue",
-      "speaker": "ZHOUMAN",
-      "text": "爸，如果一个人一直不回消息，是不是就是不想回？",
-      "next": "CH01_EP03_C001"
-    },
-    {
-      "id": "CH01_EP03_C001",
-      "type": "choice",
-      "options": [
+      "type": "passage",
+      "title": "饭桌上",
+      "category": "daily",
+      "paragraphs": [
         {
-          "id": "A",
-          "text": "可能只是忙。",
-          "effects": {
-            "avoidance": 1
-          },
-          "setFlags": [
-            "TOLD_DAUGHTER_MAYBE_BUSY"
-          ],
-          "next": "CH01_EP03_A001"
+          "text": "周满把卷子带到了饭桌，摊开又被程安然收起来。纸上的一道题圈了三次，她坚持说不是自己不会，是老师答案写错了。"
         },
         {
-          "id": "B",
-          "text": "你可以直接问他。",
-          "effects": {
-            "honesty": 2,
-            "selfReflection": 1
-          },
-          "setFlags": [
-            "ADVISED_DIRECT_QUESTION"
-          ],
-          "next": "CH01_EP03_B001"
+          "speaker": "ANRAN",
+          "text": "先吃饭。吃完你们再研究。"
         },
         {
-          "id": "C",
-          "text": "别一直等。",
-          "effects": {
-            "reality": 2
-          },
-          "setFlags": [
-            "ADVISED_NOT_TO_WAIT"
-          ],
-          "next": "CH01_EP03_C001A"
+          "text": "周叙给她盛了半碗汤。她说不喝，他就把碗放到自己旁边，过了一会儿，她又伸手拿回去。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "明天考试？"
+        },
+        {
+          "speaker": "ZHOUMAN",
+          "text": "小测。不是考试。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "那今天别太晚睡。"
+        },
+        {
+          "text": "周满点头，手机在桌下亮了一下。程安然看见了，只叫她把手机放到旁边。她把屏幕扣在桌面上，几分钟后又翻回来。"
+        },
+        {
+          "speaker": "ZHOUMAN",
+          "text": "爸，如果一个人一直不回消息，是不是就是不想回？"
         }
-      ]
+      ],
+      "next": "CH01_EP03_DAUGHTER",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 晚饭",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ZHOUMAN": "有自己的心事"
+        }
+      }
     },
     {
-      "id": "CH01_EP03_A001",
-      "type": "dialogue",
-      "speaker": "ZHOUMAN",
-      "text": "大人是不是特别喜欢说别人忙？",
-      "next": "CH01_EP03_N004"
+      "id": "CH01_EP03_DAUGHTER",
+      "type": "passage",
+      "title": "没说完的话",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "speaker": "ZHOUXU",
+          "text": "可能忙吧。也可能没看见。"
+        },
+        {
+          "speaker": "ZHOUMAN",
+          "text": "我就知道你会这么说。"
+        },
+        {
+          "text": "她低头夹了两下菜，没夹起来。周叙本来想问是谁，想了想又没有问。"
+        },
+        {
+          "speaker": "ZHOUMAN",
+          "text": "上次我发你消息，你也半天没回。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "那会儿开会。"
+        },
+        {
+          "text": "程安然用筷子敲了下碗边，不重。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "她不是在问你那一次。"
+        },
+        {
+          "text": "周叙看了女儿一眼。她已经在说明天小测要换教室，话题走到了别处。他还想回到刚才那句话，又找不到合适的地方插进去。"
+        }
+      ],
+      "next": "CH01_EP03_CLEANUP",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
-      "id": "CH01_EP03_B001",
-      "type": "dialogue",
-      "speaker": "ZHOUMAN",
-      "text": "那多尴尬。",
-      "next": "CH01_EP03_N004"
+      "id": "CH01_EP03_CLEANUP",
+      "type": "passage",
+      "title": "收拾饭桌",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "吃完饭，周满收了自己的碗。程安然提醒她把椅子推回去，她说知道，还是忘了。周叙从后面经过，把椅子推了进去。"
+        },
+        {
+          "text": "他洗碗的时候，程安然把剩菜装进盒子。两个人碰到同一个抽屉，她先退了半步，让他把滤网拿出来。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "下个月物业费，你交了没？"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "没，我明天交。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "我已经交了。你别再交一遍。"
+        },
+        {
+          "text": "她把一张缴费单压在冰箱上的磁扣下，回到电脑前。周叙擦了灶台，又去拧门口那颗松掉的螺丝。拧紧后，他试着挂上外套，没有再歪。"
+        }
+      ],
+      "next": "CH01_EP03_PHONE",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
-      "id": "CH01_EP03_C001A",
-      "type": "dialogue",
-      "speaker": "ZHOUMAN",
-      "text": "说得轻松。",
-      "next": "CH01_EP03_N004"
+      "id": "CH01_EP03_PHONE",
+      "type": "phone",
+      "title": "家庭群",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "19:16\n外婆：周六去医院别空着肚子，我问过了，这次不用抽血。"
+        },
+        {
+          "text": "19:24\n程安然：好。报告我带着。"
+        },
+        {
+          "text": "20:38\n周满：谁拿走我充电线了"
+        },
+        {
+          "text": "20:39\n程安然：沙发缝里。"
+        },
+        {
+          "text": "20:41\n周满：找到了"
+        },
+        {
+          "text": "周叙往上翻，找到程安然下午发的一张超市小票。下面是他回的一个“好”。他点开小票，放大看了一眼，又把手机放下。"
+        }
+      ],
+      "next": "CH01_EP03_LATE",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
-      "id": "CH01_EP03_N004",
-      "type": "narration",
-      "text": "一个很久以前的声音突然从记忆里冒出来：你生气能不能直接说？",
-      "next": "CH01_EP03_N005"
-    },
-    {
-      "id": "CH01_EP03_N005",
-      "type": "narration",
-      "text": "深夜23:18，那个纸箱还在桌上。信封被单独放在了台灯下面。",
-      "next": "CH01_EP03_COND001"
+      "id": "CH01_EP03_LATE",
+      "type": "passage",
+      "title": "23:18",
+      "category": "time",
+      "paragraphs": [
+        {
+          "text": "周满房里的灯灭了。程安然还在改材料，椅子靠背上搭着她的薄外套。周叙倒了杯温水，放到电脑旁边。她抬了抬头，过了一会儿才喝。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "你先睡，不用等我。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "还差很多？"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "不知道。他们明天不满意，还得接着改。"
+        },
+        {
+          "text": "周叙没有说“早点休息”。他把灯往她那边挪了些，在桌子另一头坐下。旧纸箱还在脚边，信封被单独放在了台灯下面。"
+        }
+      ],
+      "next": "CH01_EP03_COND001",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP03_COND001",
@@ -111,82 +235,139 @@
     },
     {
       "id": "CH01_EP03_N006A",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "想看就看。",
-      "next": "CH01_EP03_C002"
+      "type": "passage",
+      "title": "台灯下面",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "程安然看他拿起信封，停下了敲键盘。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "想看就看。我忙我的。"
+        },
+        {
+          "text": "她把电脑往自己这边收了一点，给他留出一块空地方。周叙点头，把信纸抽了出来。"
+        }
+      ],
+      "next": "CH01_EP03_LETTER_001",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP03_N006B",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "别太晚。",
-      "next": "CH01_EP03_C002"
-    },
-    {
-      "id": "CH01_EP03_C002",
-      "type": "choice",
-      "options": [
+      "type": "passage",
+      "title": "台灯下面",
+      "category": "main",
+      "paragraphs": [
         {
-          "id": "A",
-          "text": "打开信。",
-          "setFlags": [
-            "READ_LETTER_OPENING"
-          ],
-          "effects": {
-            "nostalgia": 3,
-            "regret": 2
-          },
-          "next": "CH01_EP03_LETTER_001"
+          "text": "周叙拿起信封。程安然看了一眼，又回到那份材料上。"
         },
         {
-          "id": "B",
-          "text": "先看看MP3。",
-          "setFlags": [
-            "FOUND_MP3"
-          ],
-          "next": "CH01_EP03_MP3_001"
+          "speaker": "ANRAN",
+          "text": "别太晚。"
         },
         {
-          "id": "C",
-          "text": "再看看那张照片。",
-          "effects": {
-            "nostalgia": 1
-          },
-          "next": "CH01_EP03_PHOTO_001"
+          "text": "他答应了一声。信纸卡在封口，他用指尖慢慢拨开，没有碰到放在旁边的水杯。"
         }
-      ]
+      ],
+      "next": "CH01_EP03_LETTER_001",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP03_LETTER_001",
       "type": "letter",
-      "text": "周叙：不知道你看到这封信的时候，已经多少岁了。如果真的已经过去很多年……那大概说明，我们最后没有一起走到未来。",
+      "actionText": "抽出信纸",
+      "text": "周叙：\n\n不知道你看到这封信的时候，已经多少岁了。\n\n如果真的已经过去很多年……那大概说明，我们最后没有一起走到未来。",
       "next": "CH01_EP03_TO_MP3",
-      "actionText": "抽出信纸"
-    },
-    {
-      "id": "CH01_EP03_PHOTO_001",
-      "type": "photo",
-      "text": "周叙重新看着照片。二十八年前的许知夏还停在树下。",
-      "next": "CH01_EP03_TO_MP3",
-      "backText": "照片背面写着：2009.6，南门那棵树。周叙拍照的时候能不能看镜头。"
-    },
-    {
-      "id": "CH01_EP03_MP3_001",
-      "type": "narration",
-      "text": "周叙找到一根还能使用的旧转接线，把MP3接上了电源。",
-      "next": "CH01_EP03_TO_MP3"
+      "setFlags": [
+        "READ_LETTER_OPENING"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP03_TO_MP3",
-      "type": "narration",
+      "type": "passage",
+      "title": "旧转接线",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "信纸叠得很紧，里面还有一页。他没有马上接着看，先用那张公交票压住翘起的纸角。"
+        },
+        {
+          "text": "MP3的接口很旧。他在电视柜下面找到一袋转接线，大部分连着什么都记不清了。试到第三根，屏幕终于亮了一下。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "哪来的这个？还能用？"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "以前的。先充一会儿。"
+        },
+        {
+          "text": "程安然保存了材料，去给自己接了点水。周叙把耳机线上的结解开，又把坏掉的耳机放回袋里。他找到另一副，接上去。"
+        }
+      ],
       "next": "CH01_EP03_END",
-      "text": "他把转接线接好，MP3屏幕亮了。"
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 深夜",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP03_END",
       "type": "episodeEnd",
       "next": "CH01_EP04"
     }
-  ]
+  ],
+  "nodeAliases": {
+    "CH01_EP03_N002": "CH01_EP03_N001",
+    "CH01_EP03_N003": "CH01_EP03_N001",
+    "CH01_EP03_C001": "CH01_EP03_DAUGHTER",
+    "CH01_EP03_A001": "CH01_EP03_DAUGHTER",
+    "CH01_EP03_B001": "CH01_EP03_DAUGHTER",
+    "CH01_EP03_C001A": "CH01_EP03_DAUGHTER",
+    "CH01_EP03_N004": "CH01_EP03_N001",
+    "CH01_EP03_N005": "CH01_EP03_N001",
+    "CH01_EP03_C002": "CH01_EP03_LETTER_001",
+    "CH01_EP03_PHOTO_001": "CH01_EP03_TO_MP3",
+    "CH01_EP03_MP3_001": "CH01_EP03_TO_MP3"
+  }
 }

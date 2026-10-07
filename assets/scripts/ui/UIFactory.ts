@@ -1,9 +1,10 @@
-import { Node, Canvas, Camera, UITransform, Label, Graphics, Color, Layers, Button, view, ResolutionPolicy } from 'cc';
+import { Node, Canvas, Camera, UITransform, Label, Graphics, Color, Layers, Button, view, ResolutionPolicy, profiler } from 'cc';
 export function container(parent: Node, name: string, y = 0): Node {
   const node = new Node(name); node.layer = Layers.Enum.UI_2D; parent.addChild(node);
   node.addComponent(UITransform).setContentSize(960, 1600); node.setPosition(0, y); return node;
 }
 export function makeCanvas(parent: Node): Node {
+  profiler.hideStats();
   view.setDesignResolutionSize(1080, 1920, ResolutionPolicy.SHOW_ALL);
   const node = container(parent, 'Canvas');
   node.getComponent(UITransform)!.setContentSize(1080, 1920);

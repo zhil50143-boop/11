@@ -3,6 +3,7 @@ import { StoryManager, type StoryEvent } from '../story/StoryManager';
 import { SaveManager } from '../save/SaveManager';
 import { makeCanvas, container, text, button, clear } from './UIFactory';
 import { DialoguePanel } from './DialoguePanel';
+import { PassagePanel } from './PassagePanel';
 import { ChoicePanel } from './ChoicePanel';
 import { PhotoViewer } from './PhotoViewer';
 import { LetterViewer } from './LetterViewer';
@@ -49,7 +50,13 @@ export class StoryView extends Component {
         if (!this.manager.hasState()) void this.manager.initialize(); else void this.manager.refresh();
       }); return;
     }
-    text(this.status, this.manager.state.flags.IN_MEMORY_2007 ? this.memoryLabel : this.presentLabel, 800, 100, 30);
+    const life = this.manager.state.life;
+    text(this.status, life.time.label + ' · ' + life.time.location, 800, 100, 30);
+    const memory = life.time.timeline === 'memory' ? Object.values(life.memoryRecords)[0] : undefined;
+    if (memory) {
+      const names = {fragmentary:'残缺',contradictory:'出现矛盾',reinterpreted:'重新理解',complete:'完整'};
+      text(this.status, memory.title + ' · ' + names[memory.status], 735, 70, 26);
+    }
     if (SaveManager.warning) {
       text(this.status, SaveManager.warning, -800, 70, 26);
       button(this.status, '重试保存', -890, () => { this.manager.retrySave(); void this.manager.refresh() });
@@ -60,6 +67,9 @@ export class StoryView extends Component {
     }
     const node = event.node;
     switch (node.type) {
+      case 'passage': case 'phone':
+        new PassagePanel().show(this.root, node, this.speakers, this.manager.state.progress.readingOffset,
+          offset => this.manager.setReadingOffset(node.id, offset), () => void this.manager.advance(node.id)); break;
       case 'dialogue': case 'narration':
         new DialoguePanel().show(this.root, node, node.speaker ? this.speakers[node.speaker] ?? node.speaker : '', () => void this.manager.advance(node.id)); break;
       case 'choice':
@@ -81,7 +91,7 @@ export class StoryView extends Component {
   }
   private investigation(node: InteractionStoryNode): void {
     text(this.root, node.text, 500, 160);
-    if (!node.requiredFlags?.every(f => this.manager.state.flags[f])) text(this.root, '先看看照片和信封。', -470, 100, 30);
+    if (!node.requiredFlags?.every(f => this.manager.state.flags[f])) text(this.root, '先看看照片和信封。', 365, 70, 30);
     node.items?.forEach((item, i) => {
       const viewed = this.manager.state.flags[item.viewedFlag] ? '（看过）' : '';
       button(this.root, item.text + viewed, 200 - i * 155, () => void this.manager.inspect(item.id, node.id));

@@ -1,6 +1,8 @@
 library/
 temp/
 local/
+profiles/
+settings/v2/packages/information.json
 build/
 node_modules/
 work/

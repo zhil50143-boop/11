@@ -14,6 +14,7 @@
     "assets/scripts/story/StoryRuntime.ts",
     "assets/scripts/save/LocalSave.ts",
     "assets/scripts/vendor/mitt.ts",
-    "assets/scripts/core/NarrativeMath.ts"
+    "assets/scripts/core/NarrativeMath.ts",
+    "assets/scripts/core/LifeState.ts"
   ]
 }

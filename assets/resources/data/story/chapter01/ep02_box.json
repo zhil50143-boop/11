@@ -5,14 +5,37 @@
   "nodes": [
     {
       "id": "CH01_EP02_N001",
-      "type": "narration",
-      "text": "纸箱里放着一张旧照片、一张17路公交票、一条已经褪色的编织手绳、一台旧MP3，以及一封信。",
-      "next": "CH01_EP02_C001"
+      "type": "passage",
+      "title": "旧纸箱",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "最上面是一张照片。照片和公交票夹在一起，票上的字已经淡了。编织手绳打着一个很小的结，旧MP3的线绕在机身上。信封压在最下面，没封口。"
+        },
+        {
+          "text": "周叙把档案袋放平，先把缠在一起的东西慢慢分开。照片背面的笔迹蹭在票上，他用拇指擦了一下，发现擦不掉。"
+        },
+        {
+          "text": "程安然端了一盘菜出来，看他还站在桌边，就把盘子挪开了些。她没有催，只提醒他别把纸放进水里。"
+        }
+      ],
+      "next": "CH01_EP02_C001",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP02_C001",
       "type": "investigation",
-      "text": "纸箱放在餐桌旁。",
+      "text": "档案袋摊在桌上。",
       "items": [
         {
           "id": "photo",
@@ -27,6 +50,18 @@
           "viewedFlag": "VIEWED_LETTER"
         },
         {
+          "id": "ticket",
+          "text": "17路公交票",
+          "next": "CH01_EP02_TICKET",
+          "viewedFlag": "VIEWED_BUS_TICKET"
+        },
+        {
+          "id": "rope",
+          "text": "褪色的手绳",
+          "next": "CH01_EP02_ROPE",
+          "viewedFlag": "VIEWED_OLD_ROPE"
+        },
+        {
           "id": "mp3",
           "text": "旧 MP3",
           "next": "CH01_EP02_MP3_001",
@@ -37,57 +72,173 @@
         "VIEWED_OLD_PHOTO",
         "VIEWED_LETTER"
       ],
-      "next": "CH01_EP02_NAME_001"
+      "next": "CH01_EP02_NAME_001",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP02_PHOTO_001",
       "type": "photo",
-      "text": "照片已经褪色。女孩看着镜头，而年轻的周叙没有看镜头，他在看她。",
+      "text": "照片有一角被压折了。树下的女孩眯着眼，像是嫌太阳太晒。年轻的周叙站在她旁边，没有看镜头。照片里还拍进了一截别人的书包。",
+      "backText": "2009.6，南门那棵树。\n周叙拍照的时候能不能看镜头。",
       "next": "CH01_EP02_C001",
-      "backText": "照片背面写着：2009.6，南门那棵树。周叙拍照的时候能不能看镜头。",
       "setFlags": [
         "VIEWED_OLD_PHOTO"
       ],
-      "effects": {
-        "nostalgia": 2
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
       }
     },
     {
       "id": "CH01_EP02_LETTER_001",
       "type": "letter",
-      "text": "信封正面写着“周叙 收”。右下角只有三个字：许知夏。",
+      "actionText": "查看信封",
+      "text": "信封正面写着“周叙 收”。右下角是三个字：许知夏。\n\n背面没有地址。开口处留着一小段胶的痕迹，像是曾经贴住，又揭开了。",
       "next": "CH01_EP02_C001",
       "setFlags": [
         "VIEWED_LETTER"
       ],
-      "actionText": "查看信封"
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
+    },
+    {
+      "id": "CH01_EP02_TICKET",
+      "type": "photo",
+      "text": "车票上还能看出“17路”。下面的日期很模糊，最后一个数字分不清是六还是八。\n\n周叙记得那时坐车要准备零钱。有几次没带够，司机让他到下一站换开。他以前一直以为这些票早就扔了。",
+      "next": "CH01_EP02_C001",
+      "setFlags": [
+        "VIEWED_BUS_TICKET"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
+    },
+    {
+      "id": "CH01_EP02_ROPE",
+      "type": "photo",
+      "text": "蓝色线几乎褪成灰色。打结的地方缠着一根短头发，周叙没有去扯。\n\n他试着把那个结拆开。拉了两下，越拉越紧，只好放回原处。",
+      "next": "CH01_EP02_C001",
+      "setFlags": [
+        "VIEWED_OLD_ROPE"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP02_MP3_001",
       "type": "photo",
-      "text": "旧MP3屏幕全黑，按下电源没有任何反应。",
+      "text": "屏幕全黑。电源键得用指甲才能按下去，按了很久也没反应。充电口里有点灰。\n\n他把绕在上面的线解下来，才发现并不是充电线，只是一副坏了的耳机。",
       "next": "CH01_EP02_C001",
       "setFlags": [
         "FOUND_MP3"
-      ]
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP02_NAME_001",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "认识？",
-      "next": "CH01_EP02_C002"
+      "type": "passage",
+      "title": "那个名字",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "程安然看见了信封上的名字，伸手把旁边那杯水挪远。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "认识？"
+        },
+        {
+          "text": "周叙拿着信封，没有马上回答。厨房里的锅盖响了一下，她回头看了一眼，又转回来等他。"
+        }
+      ],
+      "next": "CH01_EP02_C002",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      }
     },
     {
       "id": "CH01_EP02_C002",
       "type": "choice",
+      "prompt": "要怎么向程安然说起许知夏？",
+      "consequence": "影响他是否向妻子坦白过去，并由深夜的对白承接。",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
       "options": [
         {
           "id": "A",
           "text": "高中同学。",
           "effects": {
-            "honesty": 1,
-            "avoidance": 2
+            "avoidance": 1
           },
           "setFlags": [
             "ANSWERED_CLASSMATE"
@@ -98,8 +249,8 @@
           "id": "B",
           "text": "以前喜欢过的人。",
           "effects": {
-            "honesty": 5,
-            "understandingPartner": 2
+            "honesty": 2,
+            "understandingPartner": 1
           },
           "setFlags": [
             "TOLD_PARTNER_XIA"
@@ -110,8 +261,7 @@
           "id": "C",
           "text": "以前很熟的朋友。",
           "effects": {
-            "nostalgia": 1,
-            "avoidance": 2
+            "avoidance": 1
           },
           "setFlags": [
             "CALLED_XIA_OLD_FRIEND"
@@ -122,29 +272,122 @@
     },
     {
       "id": "CH01_EP02_A001",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "高中同学？还给你写过信。",
-      "next": "CH01_EP02_END"
+      "type": "passage",
+      "title": "先吃饭",
+      "category": "main",
+      "paragraphs": [
+        {
+          "speaker": "ANRAN",
+          "text": "高中同学？还给你写过信。"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "挺久以前了。"
+        },
+        {
+          "text": "她看了他一下，没再问，把桌角的电脑合上。周叙把信封压回照片下面，才发现自己的手一直捏着同一个角。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "叫满满出来吧，菜好了。"
+        }
+      ],
+      "next": "CH01_EP02_END",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "有话没说完"
+        }
+      }
     },
     {
       "id": "CH01_EP02_B001",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "初恋？怪不得你刚才看见名字以后，半天没说话。",
-      "next": "CH01_EP02_END"
+      "type": "passage",
+      "title": "先吃饭",
+      "category": "main",
+      "paragraphs": [
+        {
+          "speaker": "ANRAN",
+          "text": "初恋？"
+        },
+        {
+          "speaker": "ZHOUXU",
+          "text": "嗯。那时候。"
+        },
+        {
+          "text": "程安然点了下头。她想说什么，厨房的定时器先响了。她过去关掉，回来时把信封放在没沾水的地方。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "那你自己收好。别和满满的练习册混了。"
+        },
+        {
+          "text": "周叙说好，叫女儿出来吃饭。程安然顺手把那张湿报纸换了一张。"
+        }
+      ],
+      "next": "CH01_EP02_END",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "说起了过去"
+        }
+      }
     },
     {
       "id": "CH01_EP02_C001A",
-      "type": "dialogue",
-      "speaker": "ANRAN",
-      "text": "能把信留到现在，应该确实挺熟的。",
-      "next": "CH01_EP02_END"
+      "type": "passage",
+      "title": "先吃饭",
+      "category": "main",
+      "paragraphs": [
+        {
+          "speaker": "ANRAN",
+          "text": "能把信留到现在，应该确实挺熟。"
+        },
+        {
+          "text": "周叙没接话，把档案袋叠了两下。程安然去拿筷子，回来时他还在看那个名字。"
+        },
+        {
+          "speaker": "ANRAN",
+          "text": "放旁边吧，一会儿还得摆碗。"
+        }
+      ],
+      "next": "CH01_EP02_END",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "有话没说完"
+        }
+      }
     },
     {
       "id": "CH01_EP02_END",
       "type": "episodeEnd",
       "next": "CH01_EP03"
     }
-  ]
+  ],
+  "nodeAliases": {}
 }

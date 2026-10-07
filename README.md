@@ -1,6 +1,6 @@
 # 余生未寄 / The Letter Never Sent
 
-TapTap H5 沉浸式互动叙事游戏。
+TapTap H5 现实人生叙事模拟。连续生活叙事优先，重大决定才出现选项。
 
 ## 技术栈
 - Cocos Creator 3.8.x
@@ -13,7 +13,7 @@ TapTap H5 沉浸式互动叙事游戏。
 
 ## 当前开发目标
 先完成 Chapter 01 Vertical Slice：
-2037 家中 → 旧纸箱 → 旧物调查 → 照片/信件 → MP3 → 记忆转场 → 2007 公交 → 许知夏首次登场 → 第一个选择。
+2037 家中 → 旧纸箱 → 旧物调查 → 照片/信件 → MP3 → 记忆转场 → 2007 公交 → 许知夏首次登场 → 自然相识。
 
 ## 核心限制
 - 不增加联网主线依赖
@@ -26,13 +26,15 @@ TapTap H5 沉浸式互动叙事游戏。
 
 请先阅读 CODEX_TASK.md 和 docs/GAME_SPEC.md。
 
-## 第一章开发分支
-Boot → Main → Story 场景和代码式占位 UI 位于 assets/scenes 与 assets/scripts/ui。
+## 第一章当前实现
+Boot → Main → Story 场景、连续阅读与代码式 UI 位于 assets/scenes 与 assets/scripts/ui。
 当前支持四段 JSON、片段切换、隐藏变量、条件、自动本地存档、旧物调查、照片翻面、信件查看、MP3 文字降级、2037→2007 短转场及第一章结束停留。
-照片与声音尚未配置正式原创资源；代码存在不等于 Cocos 构建、浏览器和 TapTap 真机已经通过。
+已通过 Cocos 3.8.8 Web Mobile 实际构建与手机尺寸浏览器触摸检查。照片与声音尚未配置正式原创资源；TapTap 真机仍待验证。
 
 参阅：
 - [制作约束](CODEX_TASK.md)
 - [开源候选、许可与取舍](docs/OPEN_SOURCE_REVIEW.md)
 - [运行与验收](docs/RUN_AND_VERIFY.md)
 - [当前验证记录](docs/VALIDATION.md)
+
+本聊天在 main 开发，不新建分支。第一章已改为生活段落、家庭群记录、旧物调查和一个重大决定。详见 [新版内容规则](docs/LIFE_NARRATIVE_RULES.md)。

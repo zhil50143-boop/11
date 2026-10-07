@@ -1,17 +1,33 @@
 # 第一章运行与验收
-使用 Cocos Creator 3.8.8 打开工程，等待导入。打开 assets/scenes/Boot.scene，预览。构建 Web Mobile 时将 Boot、Main、Story 三个场景加入构建列表，Boot 为启动场景。画布 1080×1920，竖屏 SHOW_ALL。
 
-代码与纯剧情检查：
-1. npm ci（依赖锁文件已由 GitHub Actions 实际生成）。
-2. npm run check:story：Schema、目标节点、片段引用、可达性。
-3. npm run check:types：Cocos 官方 3.8.8 类型声明下所有脚本检查；npm test：独立 StoryRuntime、存档恢复、旧物重复效果、损坏/未来版本保护。
-4. Cocos 导入生成 temp/tsconfig.cocos.json 后，npm run check:cocos。
-5. 从 Boot 跑到 Main、Story 和第一章结束，刷新返回同节点与变量。
-6. 查看照片、翻面、放回；查看信封、放回；收好纸箱；饭桌、深夜抽信；给 MP3 接电、点播放、转场、公交选择。
-7. 在 choice / viewer / transition / 片段切换时刷新，不能重复获得效果，也不能跳过选择。
-8. 双击选项、重复翻面、音频加载后退出、存储配额失败、断网继续主线，检查控制台。
-9. Web Mobile 真浏览器和 TapTap H5 真机分别核验触摸、竖屏、音频首次手势、后台返回和续档。
+使用 Cocos Creator 3.8.8 打开工程。Boot、Main、Story 位于 assets/scenes，Boot 为入口。竖屏 1080×1920、SHOW_ALL。
 
-当前限制：照片以原始 JSON 的文字描述占位，录音未配置正式音频资源时可读原有录音对白继续。不能把这些占位当成最终美术/配音。
-场景序列化和所有 Cocos API 必须经真实 3.8.8 导入与浏览器执行确认；纯逻辑测试不能代替它们。
-当前开发分支不包含 Chapter 02，第一章结束保留末尾存档，不加载不存在的 CH02。
+## 开发检查
+1. `npm ci --ignore-scripts`。
+2. `npm run check:story`：Schema、节点引用、旧节点别名、可达性。
+3. `npm run check:types`：官方 Cocos 3.8.8 全脚本检查。
+4. `npm test`：8 项核心测试、636 条路线。
+5. Cocos 编辑器预览 Boot；构建时使用 build-config/web-mobile.json，三场景均需包含。
+
+Windows 命令行构建示例（替换编辑器和工程绝对路径）：
+```powershell
+& 'C:/ProgramData/cocos/editors/Creator/3.8.8/CocosCreator.exe' --project '你的工程路径' --build 'configPath=你的工程路径/build-config/web-mobile.json'
+```
+
+生成 build/web-mobile/index.html 后，运行 `npm run preview`，打开 http://127.0.0.1:5088。端口占用时用 `npm run preview -- 5089`。不要双击 file:// 页面。开发包关闭性能面板，普通剧情不显示隐藏属性。
+
+## 浏览器复验
+可使用已有 Playwright 测试环境；它只用于开发检查，不加入游戏运行时。没有环境时可另行安装：
+```powershell
+npm install --no-save --package-lock=false playwright
+npx playwright install chromium
+npm run check:browser -- http://127.0.0.1:你的端口
+```
+如使用已有工具安装目录，可设置 PLAYWRIGHT_MODULE；如使用本机 Chrome，可设置 BROWSER_EXECUTABLE。第三个脚本参数可指定报告目录，默认 work/browser-report。浏览器工具固定 540×960 手机尺寸，使用触摸拖动与点按，断言实际存档和显示节点；它要求开发构建中 Cocos 的 cc 调试接口。
+
+人工检查连续段落上滑阅读、刷新续读；五件旧物、照片翻面、查看信封、收好纸箱；向程安然说明许知夏的决定；饭桌、家庭群、深夜抽信；MP3 文字降级、短转场与自然公交对话。重要决定必须在后文得到回应，普通应答不弹选项。
+
+TapTap H5 真机另验：触摸、竖屏、真实录音首次手势播放、切后台恢复、存储配额失败与资源加载失败。本机浏览器结果不能代替平台验收。
+
+## 当前范围
+第一章文字原型可以从头走到结束。照片与声音尚无正式原创资源；第二章尚未加入。旧 v1 存档先备份，再经 nodeAliases 接回新版段落。未来版本存档或无法备份的旧档不会被自动覆盖。
