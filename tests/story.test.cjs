@@ -17,7 +17,7 @@ test('all choice combinations and investigation orders reach slice end',()=>{
     runtime.load(episodes[item.index]); const node=runtime.current();
     const enqueue=fn=>{const copy=structuredClone(state);const r=new StoryRuntime(copy,()=>{});r.load(episodes[item.index]);fn(r);queue.push({state:copy,index:item.index,steps:item.steps+1})};
     if(node.type==='episodeEnd'){
-      if(node.next==='CH02'){endings++;assert.ok(state.flags.IN_MEMORY_2007);assert.ok(state.flags.PLAYED_OLD_MP3);assert.ok(state.flags.VIEWED_OLD_PHOTO&&state.flags.VIEWED_LETTER)}
+      if(node.next==='CH02'){endings++;assert.ok(state.flags.IN_MEMORY_2007);assert.ok(state.flags.OPENED_MP3_RECORDING);assert.ok(state.flags.VIEWED_OLD_PHOTO&&state.flags.VIEWED_LETTER)}
       else {const index=episodes.findIndex(e=>e.episodeId===node.next);assert.ok(index>=0);queue.push({state,index,steps:item.steps+1})}
     } else if(node.type==='choice') node.options.forEach(o=>enqueue(r=>r.choose(o.id,node.id)));
     else if(node.type==='investigation'){
