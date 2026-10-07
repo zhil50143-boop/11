@@ -24,7 +24,7 @@ export function normalizeSave(value: unknown): GameStateData {
     if (record(life.relationships)) base.life.relationships = Object.fromEntries(Object.entries(life.relationships).filter(([k,v]) => !['__proto__','constructor','prototype'].includes(k) && typeof v === 'string')) as Record<string,string>;
     if (record(life.memoryRecords)) for (const [id,memory] of Object.entries(life.memoryRecords)) {
       if (['__proto__','constructor','prototype'].includes(id) || !record(memory) || typeof memory.title !== 'string' || !['fragmentary','contradictory','reinterpreted','complete'].includes(String(memory.status)) || !Array.isArray(memory.evidence)) continue;
-      base.life.memoryRecords[id] = { title: memory.title, status: memory.status as typeof base.life.memoryRecords[string]['status'], evidence: [...new Set(memory.evidence.filter((v): v is string => typeof v === 'string'))] };
+      base.life.memoryRecords[id] = { title: memory.title, status: memory.status as typeof base.life.memoryRecords[string]['status'], evidence: Array.from(new Set(memory.evidence.filter((v): v is string => typeof v === 'string'))) };
     }
   }
   if (record(value.stats)) for (const key of Object.keys(base.stats) as (keyof typeof base.stats)[]) {
@@ -33,7 +33,7 @@ export function normalizeSave(value: unknown): GameStateData {
   }
   for (const key of ['flags','metaFlags','cg','endings'] as const) base[key] = boolMap(value[key]);
   if (record(value.memories)) base.memories = Object.fromEntries(Object.entries(value.memories).filter(([k,v]) => !['__proto__','constructor','prototype'].includes(k) && typeof v === 'number' && Number.isFinite(v))) as Record<string, number>;
-  if (Array.isArray(value.readNodeIds)) base.readNodeIds = [...new Set(value.readNodeIds.filter((v): v is string => typeof v === 'string'))];
+  if (Array.isArray(value.readNodeIds)) base.readNodeIds = Array.from(new Set(value.readNodeIds.filter((v): v is string => typeof v === 'string')));
   if (typeof value.playCount === 'number' && Number.isInteger(value.playCount) && value.playCount > 0) base.playCount = value.playCount;
   if (typeof value.updatedAt === 'number' && Number.isFinite(value.updatedAt)) base.updatedAt = value.updatedAt;
   return base;
@@ -57,6 +57,17 @@ export class LocalSave {
       if (record(parsed) && parsed.saveVersion !== 2) {
         try { if (!this.storage.getItem(this.key + '.v1.backup')) this.storage.setItem(this.key + '.v1.backup', raw) }
         catch { this.blocked = true; throw new Error('旧版本存档无法备份，已保留原记录。') }
+      }
+      if (record(parsed) && parsed.saveVersion === 2) {
+        const invalidHistory = Array.isArray(parsed.readNodeIds) && parsed.readNodeIds.some(v => typeof v !== 'string');
+        const records = record(parsed.life) && record(parsed.life.memoryRecords) ? parsed.life.memoryRecords : {};
+        const invalidEvidence = Object.values(records).some(m => record(m) && Array.isArray(m.evidence) && m.evidence.some(v => typeof v !== 'string'));
+        if (invalidHistory || invalidEvidence) {
+          // Older H5 builds could serialize a Set as {}. Keep the original;
+          // missing history cannot be invented from an empty object.
+          try { if (!this.storage.getItem(this.key + '.v2.collections.backup')) this.storage.setItem(this.key + '.v2.collections.backup', raw) }
+          catch { this.blocked = true; throw new Error('旧记录无法备份，已保留原存档。') }
+        }
       }
       return state;
     } catch (error) {

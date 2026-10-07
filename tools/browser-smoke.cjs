@@ -6,13 +6,14 @@ const manifests=catalog.chapters.map(c=>JSON.parse(fs.readFileSync(path.join(res
 const nodes=new Map(manifests.flatMap(m=>m.episodes.flatMap(e=>JSON.parse(fs.readFileSync(path.join(resources,e.resource+'.json'))).nodes)).map(n=>[n.id,n]));
 const out=path.resolve(process.argv[3] || path.join(__dirname,'../work/browser-report')),errors=[],requests=[],visited=[];fs.mkdirSync(out,{recursive:true});
 const url=process.argv[2];if(!url)throw new Error('Usage: node tools/browser-smoke.cjs http://127.0.0.1:PORT [report-directory]');
+const familyOption=process.env.CH02_FAMILY_CHOICE==='TELL'?'TELL':'WAIT';
 (async()=>{
  const browser=await chromium.launch({headless:true,...(process.env.BROWSER_EXECUTABLE ? {executablePath:process.env.BROWSER_EXECUTABLE} : {}),args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
  const context=await browser.newContext({viewport:{width:540,height:960},hasTouch:true,isMobile:true});const page=await context.newPage();
  page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});page.on('response',r=>{if(r.status()>=400)requests.push({url:r.url(),status:r.status()})});
  const snapshot=()=>page.evaluate(()=>{const cc=window.cc,scene=cc?.director.getScene();let manager;const labels=[],buttons=[],scrolls=[];function walk(n){if(!n.activeInHierarchy)return;const m=n.getComponent('StoryManager');if(m?.hasState())manager=m;const label=n.getComponent(cc.Label);if(label)labels.push(label.string);const b=n.getComponent(cc.Button);if(b){const t=n.children.find(c=>c.getComponent(cc.Label))?.getComponent(cc.Label)?.string;buttons.push({title:t,x:270+n.worldPosition.x/2,y:480-n.worldPosition.y/2,enabled:b.interactable})}const scroll=n.getComponent(cc.ScrollView);if(scroll)scrolls.push({offset:scroll.getScrollOffset().y,max:scroll.getMaxScrollOffset().y});for(const c of n.children)walk(c)}if(scene)walk(scene);return{scene:scene?.name,labels,buttons,scrolls,state:manager?.state,save:localStorage.getItem('yushengweiji.save.v1'),title:document.title}});
  const tap=async title=>{let s=await snapshot();let b=s.buttons.find(b=>b.title===title&&b.enabled);assert.ok(b,'Missing active button '+title+' at '+s.state?.progress.nodeId);await page.touchscreen.tap(b.x,b.y);await page.waitForTimeout(400)};
- const reload=async()=>{let before=(await snapshot()).state;await page.reload();await page.waitForTimeout(2200);await tap('继续');await page.waitForTimeout(800);const after=(await snapshot()).state;assert.equal(after.progress.nodeId,before.progress.nodeId);assert.deepEqual(after.flags,before.flags);assert.deepEqual(after.stats,before.stats);return after};
+ const reload=async()=>{let before=(await snapshot()).state;await page.reload();await page.waitForTimeout(2200);await tap('继续');await page.waitForTimeout(800);const after=(await snapshot()).state;assert.equal(after.progress.nodeId,before.progress.nodeId);assert.deepEqual(after.flags,before.flags);assert.deepEqual(after.stats,before.stats);assert.deepEqual(after.readNodeIds,before.readNodeIds,'Read history survives H5 reload');assert.deepEqual(after.life.memoryRecords,before.life.memoryRecords,'Evidence survives H5 reload');return after};
  await page.goto(url);await page.waitForTimeout(5000);await page.screenshot({path:path.join(out,'chapter01-menu.png')});await tap('继续');await page.waitForTimeout(800);
  let first=await snapshot();assert.ok(first.scrolls[0].max>0);const cdp=await context.newCDPSession(page);
  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:260,y:680}]});
@@ -22,10 +23,11 @@ const url=process.argv[2];if(!url)throw new Error('Usage: node tools/browser-smo
  await reload();const restored=await snapshot();assert.ok(Math.abs(restored.state.progress.readingOffset-offset)<0.03,'Reading offset state restored');assert.ok(Math.abs(restored.scrolls[0].offset/restored.scrolls[0].max-offset)<0.03,'Reading offset UI restored');
  await page.screenshot({path:path.join(out,'chapter01-reading.png')});
  const inspected=new Set(),resumed=new Set(['passage']);
- for(let guard=0;guard<80;guard++){
+ for(let guard=0;guard<nodes.size*4;guard++){
   let s=await snapshot();if(s.labels.includes('当前内容读完了。'))break;
   const n=nodes.get(s.state?.progress.nodeId);assert.ok(n,'Unknown displayed node');visited.push(n.id);
-  if(!resumed.has(n.type)||['CH02_EP01_N001','CH02_EP02_GYM'].includes(n.id)){await reload();resumed.add(n.type);s=await snapshot()}
+  if(!resumed.has(n.type)||['CH02_EP01_N001','CH02_EP02_GYM','CH02_EP03_N001','CH02_EP06_HOME_HIDDEN','CH02_EP06_HOME_TOLD'].includes(n.id)){await reload();resumed.add(n.type);s=await snapshot()}
+  if(n.id==='CH02_EP03_N001'){assert.ok(s.labels.includes('那年暑假 · 残缺'));assert.equal(s.state.life.time.month,7);await page.screenshot({path:path.join(out,'chapter02-summer.png')})}
   if(n.id==='CH01_EP04_WINDOW'){
    await page.evaluate(()=>{const m=window.cc.director.getScene().children[0].getComponent('StoryManager');const failed=Promise.reject(new Error('章节读取失败测试'));failed.catch(()=>{});m.pending.set('data/story/chapter02/ep01_next_day',failed)});
    await tap('继续');const failed=await snapshot();assert.ok(failed.labels.includes('章节读取失败测试'));assert.ok(!failed.labels.includes('当前内容读完了。'));assert.equal(failed.state.progress.chapterId,'CH01');assert.equal(failed.state.progress.episodeId,'CH01_EP04');assert.equal(JSON.parse(failed.save).progress.chapterId,'CH01');
@@ -36,15 +38,23 @@ const url=process.argv[2];if(!url)throw new Error('Usage: node tools/browser-smo
    const item=n.items.find(i=>!inspected.has(i.id));if(item){inspected.add(item.id);await tap(item.text+(s.state.flags[item.viewedFlag]?'（看过）':''))}else await tap('收好纸箱');
   }else if(n.type==='photo'){if(n.backText)await tap('翻面');await tap('放回去')}
   else if(n.type==='letter'){await tap(n.actionText??'查看');await tap('放回去')}
-  else if(n.type==='choice'){await page.screenshot({path:path.join(out,'chapter01-decision.png')});await tap(n.options[1].text)}
+  else if(n.type==='choice'){await page.screenshot({path:path.join(out,n.id+'-decision.png')});await tap((n.id==='CH02_EP06_CHOICE'?n.options.find(o=>o.id===familyOption):n.options[1]).text)}
   else if(n.type==='audioInteraction'){await tap('播放');assert.ok((await snapshot()).labels.includes('录音暂时无法播放。可以读文字继续。'));await tap('继续')}
   else if(n.type==='transition'){await page.waitForTimeout(600);await tap('继续')}
   else throw new Error('Unexpected '+n.type);
   if(n.id==='CH01_EP04_BUS')await page.screenshot({path:path.join(out,'chapter01-bus.png')});
  }
- let end=await snapshot();assert.equal(end.state.progress.chapterId,'CH02');assert.equal(end.state.progress.episodeId,'CH02_EP02');assert.ok(visited.includes('CH02_EP02_GYM'));assert.ok(visited.includes('CH02_EP02_PHOTO'));assert.ok(end.labels.includes('当前内容读完了。'));assert.equal(end.state.life.time.year,2007);assert.equal(end.state.life.stage,'student');assert.ok(end.state.flags.TOLD_PARTNER_XIA);assert.ok(visited.includes('CH01_EP03_N006A'));assert.ok(!visited.includes('CH01_EP03_N006B'));
+ let end=await snapshot();assert.equal(end.state.progress.chapterId,'CH02');assert.equal(end.state.progress.episodeId,'CH02_EP06');assert.ok(visited.includes('CH02_EP02_GYM'));assert.ok(visited.includes('CH02_EP02_PHOTO'));assert.ok(visited.includes('CH02_EP05_MESSAGES'));const told=familyOption==='TELL';assert.ok(visited.includes(told?'CH02_EP06_HOME_TOLD':'CH02_EP06_HOME_HIDDEN'));assert.ok(!visited.includes(told?'CH02_EP06_HOME_HIDDEN':'CH02_EP06_HOME_TOLD'));assert.ok(end.state.flags[told?'CH02_TOLD_FAMILY_RELATION':'CH02_HID_FAMILY_RELATION']);assert.ok(end.labels.includes('当前内容读完了。'));assert.equal(end.state.life.time.year,2007);assert.equal(end.state.life.time.month,12);assert.equal(end.state.life.stage,'student');assert.ok(end.state.flags.TOLD_PARTNER_XIA);assert.ok(visited.includes('CH01_EP03_N006A'));assert.ok(!visited.includes('CH01_EP03_N006B'));
+ const saved=JSON.parse(end.save);assert.deepEqual(saved.readNodeIds,end.state.readNodeIds);assert.deepEqual(saved.life.memoryRecords,end.state.life.memoryRecords);
+ for(const id of new Set(visited))assert.ok(saved.readNodeIds.includes(id),'Saved reading history includes '+id);
+ for(const memory of Object.values(saved.life.memoryRecords)){assert.ok(memory.evidence.length>0);assert.ok(memory.evidence.every(e=>typeof e==='string'),'Evidence is a string array')}
+ assert.ok(saved.life.memoryRecords.FIRST_MEETING.evidence.includes('旧体育馆午休'));assert.ok(saved.life.memoryRecords.HOME_SUMMER.evidence.includes('工厂送钥匙'));
  await reload();assert.ok((await snapshot()).labels.includes('当前内容读完了。'));
- const report={viewport:'540x960 touch',title:end.title,visited,inspectionItems:inspected.size,readingOffset:offset,resumedTypes:[...resumed],endState:end.state,errors,failedRequests:requests};fs.writeFileSync(path.join(out,'browser-smoke.json'),JSON.stringify(report,null,2));
+ const damaged=structuredClone(saved);damaged.readNodeIds=[{},...saved.readNodeIds.slice(-2)];damaged.life.memoryRecords.FIRST_MEETING.evidence=[{}];const raw=JSON.stringify(damaged);
+ // Seed after the old page's hide-save and before the new Boot loads.
+ await page.addInitScript(raw=>localStorage.setItem('yushengweiji.save.v1',raw),raw);await page.reload();await page.waitForTimeout(2200);await tap('继续');await page.waitForTimeout(800);
+ const recovered=await snapshot(),backup=await page.evaluate(()=>localStorage.getItem('yushengweiji.save.v1.v2.collections.backup'));assert.equal(backup,raw);assert.equal(recovered.state.progress.nodeId,saved.progress.nodeId);assert.deepEqual(recovered.state.flags,saved.flags);assert.deepEqual(recovered.state.life.memoryRecords.FIRST_MEETING.evidence,[]);assert.deepEqual(recovered.state.readNodeIds,saved.readNodeIds.slice(-2));assert.ok(recovered.labels.includes('当前内容读完了。'));
+ const report={viewport:'540x960 touch',title:end.title,familyOption,visited,inspectionItems:inspected.size,readingOffset:offset,resumedTypes:[...resumed],endState:end.state,v2BackupVerified:true,errors,failedRequests:requests};fs.writeFileSync(path.join(out,'browser-smoke.json'),JSON.stringify(report,null,2));
  assert.equal(errors.length,0);assert.equal(requests.filter(r=>!r.url.endsWith('/favicon.ico')).length,0);
  console.log(JSON.stringify({result:'PASS',visitedNodes:visited.length,inspectionItems:inspected.size,readingOffset:offset,resumedTypes:[...resumed],errors,requests},null,2));await browser.close();
 })().catch(e=>{console.error(e);process.exit(1)});

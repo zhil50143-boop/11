@@ -1,0 +1,515 @@
+{
+  "episodeId": "CH02_EP06",
+  "name": "周末的约定",
+  "startNode": "CH02_EP06_N001",
+  "nodes": [
+    {
+      "id": "CH02_EP06_N001",
+      "type": "passage",
+      "title": "没有带手套",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "十二月的风从教学楼两边穿过去，楼下停着的自行车坐垫上全是灰。许知夏把手缩在袖子里，隔一会儿才伸出来拉一下书包。周叙问她冷不冷，她说你看看我现在这个样子。"
+        },
+        {
+          "text": "他把自己的手套拿出来，里面还有一张忘了扔的公交票。许知夏戴上一只，另一只还给他，说左右都在外面的时候，谁戴两只也没用。"
+        },
+        {
+          "text": "这副手套在袖口旁边漏风。周叙把那张票折小，塞进自己的口袋。他们没有像平时那样一直说话，走到站牌下，看见陈野正蹲着把自行车链条挂回去。"
+        },
+        {
+          "text": "你们先走，别等我。",
+          "speaker": "CHENYE_17"
+        },
+        {
+          "text": "周叙过去扶住车。陈野的手都是油，车筐里放着一袋热馒头。他说家里今天没人做饭，自己得先送回去。许知夏从书包里拿了两张废纸，让他擦手，纸上还印着社团买东西的报价。"
+        },
+        {
+          "text": "三个人一起把链条挂好，17路已经从对面开过去了。陈野推车去小卖部洗手，回来发现他们还没走，便把馒头袋子打开，让他们各拿一个。"
+        },
+        {
+          "text": "别拿最大的，那是给我弟的。",
+          "speaker": "CHENYE_17"
+        },
+        {
+          "text": "周叙拿到的那一个已经凉了。他把它塞回袋子，陈野让他换，不要一直装客气。许知夏在旁边戴着那只不合手的手套，捧着馒头，半天没想好从哪里咬。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 放学",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "彼此在意的人"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "冬天的周末约定"
+          ]
+        }
+      },
+      "next": "CH02_EP06_PROMISE"
+    },
+    {
+      "id": "CH02_EP06_PROMISE",
+      "type": "passage",
+      "title": "洗照片的那家店",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "几天以后，许知夏问周叙周六有没有空。她要去另一家店洗照片，社团那一卷一直没洗出来。老师原本说可以顺路带去，后来忙起来，又把胶卷还给她。"
+        },
+        {
+          "text": "这次我自己付。你不用替我投车钱。",
+          "speaker": "XIA_17"
+        },
+        {
+          "text": "我知道。",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "她把胶卷盒子晃了一下，盖子上的胶带松了，差点掉出来。周叙伸手压住，两个人都往后收了一下手。许知夏重新把盖子扣好，问他为什么不直接说去不去。"
+        },
+        {
+          "text": "去。",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "他们约好在车站见。许知夏走了两步又回来，问他是不是会像上次一样早半小时。周叙说大概会，她说那自己也早点，不要两个人分开等。"
+        },
+        {
+          "text": "回家路上，周叙拿着还没用完的零钱，走过了两次同一家小卖部。他不是没听懂许知夏的意思，只是不知道如果家里问起，自己该怎样说。母亲前几天还在问他最近怎么周末也往学校跑。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 放学",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "彼此在意的人"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "冬天的周末约定"
+          ]
+        }
+      },
+      "next": "CH02_EP06_FAMILY"
+    },
+    {
+      "id": "CH02_EP06_FAMILY",
+      "type": "passage",
+      "title": "饭桌上的问题",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "晚饭时，母亲问他周六几点出去。父亲正在把一张电费单折小，没有抬头，只问是不是又去搬桌子。周叙说不是搬桌子，母亲便把盛汤的勺子停在锅边等他。"
+        },
+        {
+          "text": "许知夏在他的生活里已经不只是一个借过零钱的同学。可是说到她的名字，他还是先看了一眼父亲，怕接下来会被问很多和成绩、放学时间有关的事。"
+        },
+        {
+          "text": "父亲把电费单放到桌边。母亲让他先把碗端过去，汤快滴下来了。周叙接过碗，听见父亲又问了一次是不是和陈野一起。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 晚饭",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "彼此在意的人"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "冬天的周末约定"
+          ]
+        }
+      },
+      "next": "CH02_EP06_CHOICE"
+    },
+    {
+      "id": "CH02_EP06_CHOICE",
+      "type": "choice",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 晚饭",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "彼此在意的人"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "冬天的周末约定"
+          ]
+        }
+      },
+      "prompt": "要向家里说明最近和许知夏的来往吗？",
+      "consequence": "父母是否知道两人的来往，会改变他们对这个周末的回应，也留下以后选校时要说清楚或继续瞒着的事。",
+      "options": [
+        {
+          "id": "TELL",
+          "text": "说起许知夏和一起洗照片的约定。",
+          "next": "CH02_EP06_TOLD",
+          "effects": {
+            "honesty": 2
+          },
+          "setFlags": [
+            "CH02_TOLD_FAMILY_RELATION"
+          ]
+        },
+        {
+          "id": "WAIT",
+          "text": "先不提她，只说和陈野出去。",
+          "next": "CH02_EP06_HIDDEN",
+          "effects": {
+            "avoidance": 1
+          },
+          "setFlags": [
+            "CH02_HID_FAMILY_RELATION"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CH02_EP06_TOLD",
+      "type": "passage",
+      "title": "父亲抬起头",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "周叙说是同班的许知夏，她在摄影社，他们要去洗胶卷。母亲把汤盛到父亲碗里，先问女孩子住哪里。父亲抬头看他，说洗照片为什么还要专门坐车过去。"
+        },
+        {
+          "text": "社团那家店没洗好。",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "钱呢？",
+          "speaker": "ZHOU_FATHER"
+        },
+        {
+          "text": "她自己带。我也带了车钱。",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "父亲没有接着问。他拿起筷子，过了一会儿才说回来别太晚，公交现在收得早。母亲问要不要让人家来吃饭，周叙急着说不用，父亲在旁边笑了一声。"
+        },
+        {
+          "text": "又不是让你明天带回来。",
+          "speaker": "ZHOU_MOTHER"
+        },
+        {
+          "text": "周叙吃得很快，差点烫着。他回房间后听见父亲说了一句“还知道讲”，声音不大，母亲让父亲别隔着门一直说，孩子都听见了。周叙坐到桌前，给许知夏发短信，说自己周六能去。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 晚饭",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "FAMILY": "知道他的来往"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "向家里提起许知夏"
+          ]
+        }
+      },
+      "next": "CH02_EP06_SATURDAY"
+    },
+    {
+      "id": "CH02_EP06_HIDDEN",
+      "type": "passage",
+      "title": "没有说出的名字",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "周叙说和陈野去买书。父亲点了点头，母亲问陈野是不是还骑那辆掉链子的车。他说是，母亲让他把手洗干净再来端碗。"
+        },
+        {
+          "text": "父亲从上衣口袋里拿出零钱，让他顺便买一份修电器的小册子。周叙问在哪里卖，父亲说新华书店那边可以找找。说完又把钱收回去，说算了，自己下周路过再看。"
+        },
+        {
+          "text": "这句话讲完，周叙反而不知道怎么继续解释了。他本来只想少回答几个问题，现在却得把去哪个书店、几点回来都说得差不多。母亲没有怀疑，把剩下的汤盛给他。"
+        },
+        {
+          "text": "吃完饭，他给陈野发了一条短信，说家里问起就说去买书。陈野过了很久才回，问自己什么时候答应过周六出去。周叙说不用真的去，陈野回了一个“哦”。"
+        },
+        {
+          "text": "那天睡觉前，周叙把这条短信又看了一次，没有删除。他给许知夏发短信，仍然只说周六能去，没有提起家里问过什么。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 晚饭",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "FAMILY": "还不知道他的来往"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "没有向家里说出的名字"
+          ]
+        }
+      },
+      "next": "CH02_EP06_SATURDAY"
+    },
+    {
+      "id": "CH02_EP06_SATURDAY",
+      "type": "passage",
+      "title": "八点五十",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周六早上，许知夏八点五十到站牌。周叙已经在那里。他说车比平常来得快，她说你还真能每次都找到理由。她带了一副自己的手套，把上次那一只还给他。"
+        },
+        {
+          "text": "洗照片的店在路口后面，招牌掉了一角。他们把胶卷交给老板，老板说下午才能拿。许知夏看了看表，问附近有没有地方能坐着写作业，老板指了指另一边的公共图书馆。"
+        },
+        {
+          "text": "图书馆没有他们想找的座位。两个人在里面转了一圈，最后坐到杂志区靠门的小桌子。许知夏写英语，周叙写数学。她碰到不认识的单词，就把书推过去，他不会的时候也只能把书推回来。"
+        },
+        {
+          "text": "周叙去洗手，回来时发现她把自己的橡皮借给了隔壁小孩。小孩一直不还，她不好意思马上去要，翻了半天书包，最后用周叙那块已经很硬的旧橡皮。"
+        },
+        {
+          "text": "下午取照片时，许知夏把其中一张弄错了顺序，老板又把整套编号拿出来核对了一遍。她抱歉地站在柜台边，周叙在旁边接过找回的零钱。老板把纸袋封好，他们在店门口分了两个下午都没吃掉的橘子。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 周六",
+          "location": "图书馆与照相店",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "彼此在意的人"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "冬天的周末约定"
+          ]
+        }
+      },
+      "next": "CH02_EP06_HOME_CHECK"
+    },
+    {
+      "id": "CH02_EP06_HOME_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH02_TOLD_FAMILY_RELATION",
+          "equals": true,
+          "next": "CH02_EP06_HOME_TOLD"
+        }
+      ],
+      "fallback": "CH02_EP06_HOME_HIDDEN"
+    },
+    {
+      "id": "CH02_EP06_HOME_TOLD",
+      "type": "passage",
+      "title": "回家之前",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "周叙给家里打了电话，说照片已经拿到，马上坐车回去。母亲问要不要多做一碗饭，他说许知夏家里也做好了。挂电话以后，他看见许知夏正在把照片装回纸袋，便走过去帮她扶住袋口。"
+        },
+        {
+          "text": "你家里知道？",
+          "speaker": "XIA_17"
+        },
+        {
+          "text": "知道我们来洗照片。",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "她没有往下问，只提醒他别把那张公交票也塞进照片里。周叙把票放回口袋。回家以后，母亲果然问照片洗好了没有，他说好了，她让他改天拿一张来看看。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 周六傍晚",
+          "location": "回家路上",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "彼此在意的人"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "冬天的周末约定"
+          ]
+        }
+      },
+      "next": "CH02_EP06_CLOSE"
+    },
+    {
+      "id": "CH02_EP06_HOME_HIDDEN",
+      "type": "passage",
+      "title": "回家之前",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "母亲打电话来问他们买好书没有。周叙背过身，说已经买好了。许知夏在旁边装照片，等他挂断，才问他还买了什么书。"
+        },
+        {
+          "text": "还没买。一会儿路过看一下。",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "他们在书店多停了十分钟。周叙买了一本用不上几页的习题册，许知夏也买了一支笔。结账时，她问他是不是原本还有别的事，早说就可以早点来。"
+        },
+        {
+          "text": "周叙说没有。回到家，母亲看着那本新习题册，问旧的写完没有。他把书放在饭桌边，只说老师说可以看看。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 周六傍晚",
+          "location": "回家路上",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "彼此在意的人"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "冬天的周末约定"
+          ]
+        }
+      },
+      "next": "CH02_EP06_CLOSE"
+    },
+    {
+      "id": "CH02_EP06_CLOSE",
+      "type": "passage",
+      "title": "书桌上的两样东西",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "那晚，周叙把习题本和照片放在书桌上，翻了一下，又分开收起来。手机响了两声，许知夏说有一张洗歪了，明天带到学校给他看。"
+        },
+        {
+          "text": "周叙：你今天看过几遍了？"
+        },
+        {
+          "text": "许知夏：还没看完。你早点写作业。"
+        },
+        {
+          "text": "他回了一句知道了，把手机翻过来。母亲在门外让他别关灯太晚，他答应了一声，继续算那道下午没算完的题。窗户缝里进风，他用课本压住卷子的一角。"
+        },
+        {
+          "text": "陈野的短信晚了一点。他问周叙借没借到老师要的那本参考书，自己明天轮到交。周叙把书从包底翻出来，塞进外侧袋子，免得早上又忘。父亲在客厅换台，声音大了，母亲让他调小一点。"
+        },
+        {
+          "text": "周叙还没把题算完，手机又亮了一下。许知夏说明早会给他留靠过道的位置，车窗边又开始漏风。他回了一句好，先把闹钟往前拨了五分钟。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 12,
+          "season": "winter",
+          "label": "2007 · 冬 · 晚上",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "彼此在意的人"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "冬天的周末约定"
+          ]
+        }
+      },
+      "next": "CH02_EP06_END"
+    },
+    {
+      "id": "CH02_EP06_END",
+      "type": "episodeEnd",
+      "next": "CH03"
+    }
+  ],
+  "nodeAliases": {}
+}

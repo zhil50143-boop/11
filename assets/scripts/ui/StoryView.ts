@@ -52,7 +52,9 @@ export class StoryView extends Component {
     }
     const life = this.manager.state.life;
     text(this.status, life.time.label + ' · ' + life.time.location, 800, 100, 30);
-    const memory = life.time.timeline === 'memory' ? Object.values(life.memoryRecords)[0] : undefined;
+    const memoryId = event.type === 'node' ? event.node.lifeContext?.memory?.id : undefined;
+    const memory = life.time.timeline === 'memory'
+      ? (memoryId ? life.memoryRecords[memoryId] : Object.values(life.memoryRecords)[0]) : undefined;
     if (memory) {
       const names = {fragmentary:'残缺',contradictory:'出现矛盾',reinterpreted:'重新理解',complete:'完整'};
       text(this.status, memory.title + ' · ' + names[memory.status], 735, 70, 26);

@@ -13,6 +13,30 @@
       "name": "旧体育馆",
       "resource": "data/story/chapter02/ep02_old_gym",
       "startNode": "CH02_EP02_N001"
+    },
+    {
+      "id": "CH02_EP03",
+      "name": "那年暑假",
+      "resource": "data/story/chapter02/ep03_summer_home",
+      "startNode": "CH02_EP03_N001"
+    },
+    {
+      "id": "CH02_EP04",
+      "name": "放学以后",
+      "resource": "data/story/chapter02/ep04_after_school",
+      "startNode": "CH02_EP04_N001"
+    },
+    {
+      "id": "CH02_EP05",
+      "name": "电话号码",
+      "resource": "data/story/chapter02/ep05_winter_messages",
+      "startNode": "CH02_EP05_N001"
+    },
+    {
+      "id": "CH02_EP06",
+      "name": "周末的约定",
+      "resource": "data/story/chapter02/ep06_weekend",
+      "startNode": "CH02_EP06_N001"
     }
   ],
   "nextChapter": "CH03"

@@ -9,18 +9,42 @@
       "title": "第二天早上",
       "category": "daily",
       "paragraphs": [
-        {"text": "第二天早读前，教室里还没坐满。值日生拖过地，后门那一块一直没干。周叙把书包挂在椅背上，发现昨天被雨打湿的练习纸皱成了一圈。"},
-        {"text": "前排有人在找透明胶。抽屉开了又关，最后从旁边桌上借到半卷。"},
-        {"speaker": "XIA_17", "text": "你昨天那张纸还能交吗？"},
-        {"speaker": "ZHOUXU_17", "text": "能吧。字还看得见。"},
-        {"speaker": "XIA_17", "text": "右下角都没了。"},
-        {"text": "周叙低头看了一眼。昨天从公交座位上揭纸的时候，确实撕掉了一角。他把缺口折到背面，假装这件事解决了。"}
+        {
+          "text": "第二天早读前，教室里还没坐满。值日生拖过地，后门那一块一直没干。周叙把书包挂在椅背上，发现昨天被雨打湿的练习纸皱成了一圈。"
+        },
+        {
+          "text": "前排有人在找透明胶。抽屉开了又关，最后从旁边桌上借到半卷。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "你昨天那张纸还能交吗？"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "能吧。字还看得见。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "右下角都没了。"
+        },
+        {
+          "text": "周叙低头看了一眼。昨天从公交座位上揭纸的时候，确实撕掉了一角。他把缺口折到背面，假装这件事解决了。"
+        }
       ],
       "next": "CH02_EP01_CAMERA",
       "lifeContext": {
-        "time": {"year": 2007, "month": 9, "season": "autumn", "label": "2007 · 秋 · 早读前", "location": "南城二中", "timeline": "memory"},
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋 · 早读前",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
         "stage": "student",
-        "relationships": {"XIA": "刚认识"}
+        "relationships": {
+          "XIA": "刚认识"
+        }
       }
     },
     {
@@ -29,18 +53,43 @@
       "title": "相机带",
       "category": "npc",
       "paragraphs": [
-        {"text": "许知夏把胶带递回来时，书包侧袋里的相机带滑了出来。边缘起了毛，扣子上缠着一小段白线。"},
-        {"speaker": "ZHOUXU_17", "text": "你带相机上学？"},
-        {"speaker": "XIA_17", "text": "今天社团要用。别跟班主任说。"},
-        {"speaker": "ZHOUXU_17", "text": "他不知道？"},
-        {"speaker": "XIA_17", "text": "知道了就会让我放办公室。上次放进去，镜头盖差点找不到。"},
-        {"text": "她说完把相机往书包里面塞了塞。早读铃响的时候，她才想起胶带还在周叙桌上，又伸手拿回去。"}
+        {
+          "text": "许知夏把胶带递回来时，书包侧袋里的相机带滑了出来。边缘起了毛，扣子上缠着一小段白线。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "你带相机上学？"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "今天社团要用。别跟班主任说。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "他不知道？"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "知道了就会让我放办公室。上次放进去，镜头盖差点找不到。"
+        },
+        {
+          "text": "她说完把相机往书包里面塞了塞。早读铃响的时候，她才想起胶带还在周叙桌上，又伸手拿回去。"
+        }
       ],
       "next": "CH02_EP01_BREAK",
       "lifeContext": {
-        "time": {"year": 2007, "month": 9, "season": "autumn", "label": "2007 · 秋 · 上午", "location": "南城二中", "timeline": "memory"},
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋 · 上午",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
         "stage": "student",
-        "relationships": {"XIA": "同班同学"}
+        "relationships": {
+          "XIA": "同班同学"
+        }
       }
     },
     {
@@ -49,22 +98,152 @@
       "title": "课间十分钟",
       "category": "daily",
       "paragraphs": [
-        {"text": "第二节课后，陈野从后门进来，把一瓶常温汽水放在周叙桌上。他自己的那瓶已经喝了一半。"},
-        {"speaker": "CHENYE_17", "text": "楼下只剩这个味。你爱喝不喝。"},
-        {"text": "周叙拧开瓶盖。陈野顺着他的视线看了一眼前排，又低头翻他的数学卷子。"},
-        {"speaker": "CHENYE_17", "text": "第三题借我看。"},
-        {"speaker": "ZHOUXU_17", "text": "你自己不是写了？"},
-        {"speaker": "CHENYE_17", "text": "我看看咱俩谁错。"},
-        {"text": "最后两个人都错了。上课铃响以后，陈野把卷子抽走，回自己班前说中午别跑，他要去旧体育馆看校队训练。周叙答应了一声。"},
-        {"text": "很多年以后，他已经记不清那天中午到底去了没有。记忆里留下来的，反而是那半卷透明胶和一瓶并不好喝的汽水。"}
+        {
+          "text": "第二节课后，陈野从后门进来，把一瓶常温汽水放在周叙桌上。他自己的那瓶已经喝了一半。"
+        },
+        {
+          "speaker": "CHENYE_17",
+          "text": "楼下只剩这个味。你爱喝不喝。"
+        },
+        {
+          "text": "周叙拧开瓶盖。陈野顺着他的视线看了一眼前排，又低头翻他的数学卷子。"
+        },
+        {
+          "speaker": "CHENYE_17",
+          "text": "第三题借我看。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "你自己不是写了？"
+        },
+        {
+          "speaker": "CHENYE_17",
+          "text": "我看看咱俩谁错。"
+        },
+        {
+          "text": "最后两个人都错了。上课铃响以后，陈野把卷子抽走，回自己班前说中午别跑，他要去旧体育馆看校队训练。周叙答应了一声。"
+        },
+        {
+          "text": "很多年以后，他已经记不清那天中午到底去了没有。记忆里留下来的，反而是那半卷透明胶和一瓶并不好喝的汽水。"
+        }
       ],
-      "next": "CH02_EP01_END",
+      "next": "CH02_EP01_LUNCH",
       "lifeContext": {
-        "time": {"year": 2007, "month": 9, "season": "autumn", "label": "2007 · 秋 · 课间", "location": "南城二中", "timeline": "memory"},
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋 · 课间",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
         "stage": "student",
-        "relationships": {"XIA": "同班同学", "CHENYE": "朋友"},
-        "memory": {"id": "FIRST_MEETING", "title": "初次相识", "status": "fragmentary", "evidence": ["第二天的零碎日常"]}
+        "relationships": {
+          "XIA": "同班同学",
+          "CHENYE": "朋友"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "第二天的零碎日常"
+          ]
+        }
       }
+    },
+    {
+      "id": "CH02_EP01_LUNCH",
+      "type": "passage",
+      "title": "饭盒",
+      "category": "daily",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋 · 中午",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student"
+      },
+      "next": "CH02_EP01_AFTER_CLASS",
+      "paragraphs": [
+        {
+          "text": "中午第四节课拖了几分钟，食堂窗口前已经排起队。陈野拿着饭盒站在队伍外面，指着靠墙的位置，让周叙先帮他放着。他的校服拉链少了一半，风从衣领里灌进去，手却还捏着一本没合上的练习册。"
+        },
+        {
+          "text": "你先过去，我给班长把这个交了。",
+          "speaker": "CHENYE_17"
+        },
+        {
+          "text": "你刚才不是说去体育馆？",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "吃完再去。又不是去比赛。",
+          "speaker": "CHENYE_17"
+        },
+        {
+          "text": "周叙端着饭盒往桌边走，路过许知夏时，她正把两块姜从菜里挑出来。对面的同学催她快点，她用筷子指了一下饭盒，说还没找完。周叙没有搭话，站着等陈野回来。"
+        },
+        {
+          "text": "陈野坐下以后，先把那本练习册塞回书包，才看见自己的饭已经少了一块肉。他问周叙是不是饿得这么快，周叙说是他买饭的时候，食堂阿姨就少给了一块。"
+        },
+        {
+          "text": "你去问她。",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "算了，一会儿上课。",
+          "speaker": "CHENYE_17"
+        },
+        {
+          "text": "他们都知道还有半个小时。陈野还是把饭往嘴里扒，吃到最后才发现自己拿错了勺子。洗饭盒的时候，他让周叙在楼梯口等，周叙回教室拿了一下外套。"
+        }
+      ]
+    },
+    {
+      "id": "CH02_EP01_AFTER_CLASS",
+      "type": "passage",
+      "title": "靠窗那张桌",
+      "category": "npc",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋 · 中午",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student"
+      },
+      "next": "CH02_EP01_END",
+      "paragraphs": [
+        {
+          "text": "教室里只剩几个不回家的同学。许知夏把英语书垫在窗台上，拿着相机对着操场，按了快门之后才发现镜头盖没取。她看了一眼四周，发现周叙正在门边，便把相机放下了。"
+        },
+        {
+          "text": "你没看见。",
+          "speaker": "XIA_17"
+        },
+        {
+          "text": "我来拿外套。",
+          "speaker": "ZHOUXU_17"
+        },
+        {
+          "text": "那就快拿。",
+          "speaker": "XIA_17"
+        },
+        {
+          "text": "周叙从椅背上拽下外套，拉链勾住了书包带，弄了两次才松开。许知夏低头取下镜头盖，重新对着操场。这次她没有马上按，等一个抱着水桶的人走过去，才拍了下来。"
+        },
+        {
+          "text": "周叙走到楼梯口，陈野已经在下面喊他。他把外套往胳膊上一搭，回头时看见靠窗的那张桌还压着英语书。窗户太高，许知夏踮了一下脚。"
+        }
+      ]
     },
     {
       "id": "CH02_EP01_END",

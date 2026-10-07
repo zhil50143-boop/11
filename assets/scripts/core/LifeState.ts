@@ -14,7 +14,7 @@ export function applyLifeContext(life: LifeState, context?: LifeContext): boolea
   const update = context.memory;
   if (update) {
     const previous = life.memoryRecords[update.id];
-    const evidence = [...new Set([...(previous?.evidence ?? []), ...update.evidence])];
+    const evidence = Array.from(new Set([...(previous?.evidence ?? []), ...update.evidence]));
     const status = previous && order.indexOf(previous.status) > order.indexOf(update.status) ? previous.status : update.status;
     if (!previous || previous.title !== update.title || previous.status !== status || previous.evidence.length !== evidence.length) {
       life.memoryRecords[update.id] = { title: update.title, status, evidence }; changed = true;
