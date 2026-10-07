@@ -1,7 +1,9 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE || 'playwright');
-const data=path.resolve(__dirname,'../assets/resources/data/story/chapter01');
-const nodes=new Map(fs.readdirSync(data).filter(f=>f.endsWith('.json')&&!f.includes('manifest')).flatMap(f=>JSON.parse(fs.readFileSync(path.join(data,f))).nodes).map(n=>[n.id,n]));
+const resources=path.resolve(__dirname,'../assets/resources');
+const catalog=JSON.parse(fs.readFileSync(path.join(resources,'data/story/catalog.json')));
+const manifests=catalog.chapters.map(c=>JSON.parse(fs.readFileSync(path.join(resources,c.resource+'.json'))));
+const nodes=new Map(manifests.flatMap(m=>m.episodes.flatMap(e=>JSON.parse(fs.readFileSync(path.join(resources,e.resource+'.json'))).nodes)).map(n=>[n.id,n]));
 const out=path.resolve(process.argv[3] || path.join(__dirname,'../work/browser-report')),errors=[],requests=[],visited=[];fs.mkdirSync(out,{recursive:true});
 const url=process.argv[2];if(!url)throw new Error('Usage: node tools/browser-smoke.cjs http://127.0.0.1:PORT [report-directory]');
 (async()=>{
@@ -21,10 +23,15 @@ const url=process.argv[2];if(!url)throw new Error('Usage: node tools/browser-smo
  await page.screenshot({path:path.join(out,'chapter01-reading.png')});
  const inspected=new Set(),resumed=new Set(['passage']);
  for(let guard=0;guard<80;guard++){
-  let s=await snapshot();if(s.labels.includes('第一章片段结束。'))break;
+  let s=await snapshot();if(s.labels.includes('当前内容读完了。'))break;
   const n=nodes.get(s.state?.progress.nodeId);assert.ok(n,'Unknown displayed node');visited.push(n.id);
-  if(!resumed.has(n.type)){await reload();resumed.add(n.type);s=await snapshot()}
-  if(n.type==='passage'||n.type==='phone')await tap('继续');
+  if(!resumed.has(n.type)||['CH02_EP01_N001','CH02_EP02_GYM'].includes(n.id)){await reload();resumed.add(n.type);s=await snapshot()}
+  if(n.id==='CH01_EP04_WINDOW'){
+   await page.evaluate(()=>{const m=window.cc.director.getScene().children[0].getComponent('StoryManager');const failed=Promise.reject(new Error('章节读取失败测试'));failed.catch(()=>{});m.pending.set('data/story/chapter02/ep01_next_day',failed)});
+   await tap('继续');const failed=await snapshot();assert.ok(failed.labels.includes('章节读取失败测试'));assert.ok(!failed.labels.includes('当前内容读完了。'));assert.equal(failed.state.progress.chapterId,'CH01');assert.equal(failed.state.progress.episodeId,'CH01_EP04');assert.equal(JSON.parse(failed.save).progress.chapterId,'CH01');
+   await page.evaluate(()=>window.cc.director.getScene().children[0].getComponent('StoryManager').pending.delete('data/story/chapter02/ep01_next_day'));
+   await tap('重试');assert.equal((await snapshot()).state.progress.chapterId,'CH02');
+  }else if(n.type==='passage'||n.type==='phone')await tap('继续');
   else if(n.type==='investigation'){
    const item=n.items.find(i=>!inspected.has(i.id));if(item){inspected.add(item.id);await tap(item.text+(s.state.flags[item.viewedFlag]?'（看过）':''))}else await tap('收好纸箱');
   }else if(n.type==='photo'){if(n.backText)await tap('翻面');await tap('放回去')}
@@ -35,10 +42,10 @@ const url=process.argv[2];if(!url)throw new Error('Usage: node tools/browser-smo
   else throw new Error('Unexpected '+n.type);
   if(n.id==='CH01_EP04_BUS')await page.screenshot({path:path.join(out,'chapter01-bus.png')});
  }
- let end=await snapshot();assert.ok(end.labels.includes('第一章片段结束。'));assert.equal(end.state.life.time.year,2007);assert.equal(end.state.life.stage,'student');assert.ok(end.state.flags.TOLD_PARTNER_XIA);assert.ok(visited.includes('CH01_EP03_N006A'));assert.ok(!visited.includes('CH01_EP03_N006B'));
- await reload();assert.ok((await snapshot()).labels.includes('第一章片段结束。'));
+ let end=await snapshot();assert.equal(end.state.progress.chapterId,'CH02');assert.equal(end.state.progress.episodeId,'CH02_EP02');assert.ok(visited.includes('CH02_EP02_GYM'));assert.ok(visited.includes('CH02_EP02_PHOTO'));assert.ok(end.labels.includes('当前内容读完了。'));assert.equal(end.state.life.time.year,2007);assert.equal(end.state.life.stage,'student');assert.ok(end.state.flags.TOLD_PARTNER_XIA);assert.ok(visited.includes('CH01_EP03_N006A'));assert.ok(!visited.includes('CH01_EP03_N006B'));
+ await reload();assert.ok((await snapshot()).labels.includes('当前内容读完了。'));
  const report={viewport:'540x960 touch',title:end.title,visited,inspectionItems:inspected.size,readingOffset:offset,resumedTypes:[...resumed],endState:end.state,errors,failedRequests:requests};fs.writeFileSync(path.join(out,'browser-smoke.json'),JSON.stringify(report,null,2));
- assert.equal(errors.filter(e=>!e.includes('404')).length,0);assert.equal(requests.filter(r=>!r.url.endsWith('/favicon.ico')).length,0);
+ assert.equal(errors.length,0);assert.equal(requests.filter(r=>!r.url.endsWith('/favicon.ico')).length,0);
  console.log(JSON.stringify({result:'PASS',visitedNodes:visited.length,inspectionItems:inspected.size,readingOffset:offset,resumedTypes:[...resumed],errors,requests},null,2));await browser.close();
 })().catch(e=>{console.error(e);process.exit(1)});
 

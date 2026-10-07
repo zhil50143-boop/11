@@ -69,7 +69,7 @@
     {
       "id": "CH02_EP01_END",
       "type": "episodeEnd",
-      "next": "CH03"
+      "next": "CH02_EP02"
     }
   ],
   "nodeAliases": {}

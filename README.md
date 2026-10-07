@@ -26,9 +26,9 @@ TapTap H5 现实人生叙事模拟。连续生活叙事优先，重大决定才�
 
 请先阅读 CODEX_TASK.md 和 docs/GAME_SPEC.md。
 
-## 第一章当前实现
+## 当前实现与开发进度
 Boot → Main → Story 场景、连续阅读与代码式 UI 位于 assets/scenes 与 assets/scripts/ui。
-当前支持四段 JSON、片段切换、隐藏变量、条件、自动本地存档、旧物调查、照片翻面、信件查看、MP3 文字降级、2037→2007 短转场及第一章结束停留。
+当前登记两章、六个片段、44 个节点。支持连续阅读、隐藏变量、条件、自动本地存档、旧物调查、照片翻面、信件查看、MP3 文字降级、2037→2007 短转场，第一章可进入第二章两段校园生活。第二章完整内容仍待完善，当前末尾停在 CH03 开发边界。
 已通过 Cocos 3.8.8 Web Mobile 实际构建与手机尺寸浏览器触摸检查。照片与声音尚未配置正式原创资源；TapTap 真机仍待验证。
 
 参阅：
@@ -36,5 +36,7 @@ Boot → Main → Story 场景、连续阅读与代码式 UI 位于 assets/scene
 - [开源候选、许可与取舍](docs/OPEN_SOURCE_REVIEW.md)
 - [运行与验收](docs/RUN_AND_VERIFY.md)
 - [当前验证记录](docs/VALIDATION.md)
+- [第二章后的全游戏策划核对](docs/CHAPTER02_AUDIT.md)
+- [最终版持续开发进度](docs/FINAL_PROGRESS.md)
 
 本聊天在 main 开发，不新建分支。第一章已改为生活段落、家庭群记录、旧物调查和一个重大决定。详见 [新版内容规则](docs/LIFE_NARRATIVE_RULES.md)。

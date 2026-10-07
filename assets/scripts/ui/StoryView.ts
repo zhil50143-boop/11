@@ -62,7 +62,7 @@ export class StoryView extends Component {
       button(this.status, '重试保存', -890, () => { this.manager.retrySave(); void this.manager.refresh() });
     }
     if (event.type === 'end') {
-      text(this.root, '第一章片段结束。', 100);
+      text(this.root, '当前内容读完了。', 100);
       text(this.root, '可以退出，稍后从这里继续。', -100, 160, 32); return;
     }
     const node = event.node;

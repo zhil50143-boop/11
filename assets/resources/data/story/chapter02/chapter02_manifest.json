@@ -7,6 +7,12 @@
       "name": "第二天",
       "resource": "data/story/chapter02/ep01_next_day",
       "startNode": "CH02_EP01_N001"
+    },
+    {
+      "id": "CH02_EP02",
+      "name": "旧体育馆",
+      "resource": "data/story/chapter02/ep02_old_gym",
+      "startNode": "CH02_EP02_N001"
     }
   ],
   "nextChapter": "CH03"

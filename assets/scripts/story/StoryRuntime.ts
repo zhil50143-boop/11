@@ -6,7 +6,7 @@ import type { EpisodeData, StoryNode, InteractionStoryNode } from './StoryNode';
 export class StoryRuntime {
   private nodes = new Map<string, StoryNode>();
   constructor(public readonly state: GameStateData, private readonly persist: (state: GameStateData) => void) {}
-  load(episode: EpisodeData): void {
+  load(episode: EpisodeData, chapterId = this.state.progress.chapterId): void {
     const nodes = new Map<string, StoryNode>();
     for (const node of episode.nodes) {
       if (nodes.has(node.id)) throw new Error('Duplicate node: ' + node.id);
@@ -23,6 +23,7 @@ export class StoryRuntime {
       this.state.progress.nodeId = alias;
       this.state.progress.readingOffset = 0;
     }
+    this.state.progress.chapterId = chapterId;
     this.state.progress.episodeId = episode.episodeId;
     this.persist(this.state);
   }

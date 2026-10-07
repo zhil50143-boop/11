@@ -1,12 +1,12 @@
-# 第一章运行与验收
+# 当前已实现章节运行与验收
 
 使用 Cocos Creator 3.8.8 打开工程。Boot、Main、Story 位于 assets/scenes，Boot 为入口。竖屏 1080×1920、SHOW_ALL。
 
 ## 开发检查
 1. `npm ci --ignore-scripts`。
-2. `npm run check:story`：Schema、节点引用、旧节点别名、可达性。
+2. `npm run check:story`：全部已登记章节的 Schema、未登记文件、节点引用、旧节点别名、片段及跨章全局可达性。
 3. `npm run check:types`：官方 Cocos 3.8.8 全脚本检查。
-4. `npm test`：8 项核心测试、636 条路线。
+4. `npm test`：14 项测试；636 条路线从第一章继续到第二章旧体育馆与当前边界。
 5. Cocos 编辑器预览 Boot；构建时使用 build-config/web-mobile.json，三场景均需包含。
 
 Windows 命令行构建示例（替换编辑器和工程绝对路径）：
@@ -30,4 +30,6 @@ npm run check:browser -- http://127.0.0.1:你的端口
 TapTap H5 真机另验：触摸、竖屏、真实录音首次手势播放、切后台恢复、存储配额失败与资源加载失败。本机浏览器结果不能代替平台验收。
 
 ## 当前范围
-第一章文字原型可以从头走到结束。照片与声音尚无正式原创资源；第二章尚未加入。旧 v1 存档先备份，再经 nodeAliases 接回新版段落。未来版本存档或无法备份的旧档不会被自动覆盖。
+两章当前已登记内容可以从入口走到第二章末尾；第二章两个短片段不代表完整章已完成。照片与声音尚无正式原创资源；第三章尚未加入。旧 v1 存档先备份，再经 nodeAliases 接回新版段落。未来版本存档或无法备份的旧档不会被自动覆盖。
+
+章节资源路径由 assets/resources/data/story/catalog.json 登记。新增章节须同时登记 catalog 和章节 manifest；每个片段必须从章入口可达。pendingChapter 只是当前尚未开发的末尾边界，不能用于吞掉已登记资源的加载错误。每完成一章按 CHAPTER02_AUDIT.md 的形式核对整个项目与策划书，并更新 FINAL_PROGRESS.md。

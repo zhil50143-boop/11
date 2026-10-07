@@ -35,3 +35,4 @@ export type StoryNodeType = StoryNode['type'];
 export interface EpisodeData { episodeId: string; name: string; startNode: string; nodes: StoryNode[]; nodeAliases?: Record<string, string> }
 export interface EpisodeRef { id: string; name: string; resource: string; startNode: string }
 export interface ChapterManifest { chapterId: string; title: string; episodes: EpisodeRef[]; nextChapter: string }
+export interface StoryCatalog { startChapter: string; chapters: { id: string; resource: string }[]; pendingChapter?: string }
