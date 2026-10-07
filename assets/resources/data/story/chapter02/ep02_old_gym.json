@@ -1,0 +1,167 @@
+{
+  "episodeId": "CH02_EP02",
+  "name": "旧体育馆",
+  "startNode": "CH02_EP02_N001",
+  "nodes": [
+    {
+      "id": "CH02_EP02_N001",
+      "type": "passage",
+      "title": "中午",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "午休铃刚响，陈野就在后门敲了两下窗。周叙嘴里还含着最后一口饭，只好把饭盒盖上跟出去。"
+        },
+        {
+          "speaker": "CHENYE_17",
+          "text": "快点，晚了他们就散了。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "你不是说看训练吗？"
+        },
+        {
+          "speaker": "CHENYE_17",
+          "text": "顺便找人。"
+        },
+        {
+          "text": "陈野没说找谁。两个人沿着实验楼后面那条窄路走，墙根堆着刚剪下来的树枝，太阳晒得塑胶跑道有一股热味。"
+        }
+      ],
+      "next": "CH02_EP02_GYM",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋 · 午休",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "同班同学",
+          "CHENYE": "朋友"
+        }
+      }
+    },
+    {
+      "id": "CH02_EP02_GYM",
+      "type": "passage",
+      "title": "旧体育馆",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "旧体育馆的侧门开着。校队在里面练球，鞋底摩擦地板的声音一阵一阵传出来。陈野站在门口看了半分钟，忽然朝看台最下面挥了下手。"
+        },
+        {
+          "text": "一个扎短马尾的女生把水瓶放下，隔着半个球场皱眉看他。"
+        },
+        {
+          "speaker": "GIRL_17",
+          "text": "你怎么又来了？"
+        },
+        {
+          "speaker": "CHENYE_17",
+          "text": "路过。"
+        },
+        {
+          "speaker": "GIRL_17",
+          "text": "你们班在另一栋楼。"
+        },
+        {
+          "text": "陈野咳了一声，回头让周叙别笑。周叙这才明白所谓的“看训练”主要是在看谁。"
+        },
+        {
+          "speaker": "CHENYE_17",
+          "text": "这事你别跟别人说。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "我什么都没看见。"
+        },
+        {
+          "text": "陈野满意了。回去的路上，他买了两根冰棍，一根算封口费。"
+        }
+      ],
+      "next": "CH02_EP02_PHOTO",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋 · 午休",
+          "location": "旧体育馆",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "CHENYE": "朋友"
+        }
+      }
+    },
+    {
+      "id": "CH02_EP02_PHOTO",
+      "type": "passage",
+      "title": "一张没拍好的照片",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "下午最后一节自习，许知夏从摄影社回来。她把相机放进抽屉，翻作业时掉出一张刚洗的小样。"
+        },
+        {
+          "text": "照片里只有半截篮球架、一块过曝的窗户和一个模糊的人影。"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "这张也留？"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "为什么不留？"
+        },
+        {
+          "speaker": "ZHOUXU_17",
+          "text": "没拍好。"
+        },
+        {
+          "speaker": "XIA_17",
+          "text": "没拍好也是拍过。"
+        },
+        {
+          "text": "她把小样夹进英语书，继续抄黑板上的作业。周叙当时没觉得这句话有什么特别，只觉得摄影社的人大概都舍不得扔照片。"
+        }
+      ],
+      "next": "CH02_EP02_END",
+      "lifeContext": {
+        "time": {
+          "year": 2007,
+          "month": 9,
+          "season": "autumn",
+          "label": "2007 · 秋 · 放学前",
+          "location": "南城二中",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "同班同学",
+          "CHENYE": "朋友"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识",
+          "status": "fragmentary",
+          "evidence": [
+            "旧体育馆午休"
+          ]
+        }
+      }
+    },
+    {
+      "id": "CH02_EP02_END",
+      "type": "episodeEnd",
+      "next": "CH03"
+    }
+  ],
+  "nodeAliases": {}
+}
