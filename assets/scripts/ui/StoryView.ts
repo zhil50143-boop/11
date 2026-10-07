@@ -32,7 +32,9 @@ export class StoryView extends Component {
     try {
       const asset = await new Promise<JsonAsset>((resolve,reject) => resources.load('data/presentation', JsonAsset, (e,a) => e || !a ? reject(e) : resolve(a)));
       if (!this.isValid) return;
-      this.speakers = asset.json.speakers; this.presentLabel = asset.json.present; this.memoryLabel = asset.json.memory;
+      const config = asset.json;
+      if (!config || !config.speakers || typeof config.speakers !== 'object' || typeof config.present !== 'string' || typeof config.memory !== 'string' || Object.values(config.speakers).some(v => typeof v !== 'string')) throw new Error('Invalid presentation JSON');
+      this.speakers = config.speakers; this.presentLabel = config.present; this.memoryLabel = config.memory;
       await this.manager.initialize();
     } catch { if (this.isValid) this.render({type:'error', message:'暂时无法打开。请重试。'}) }
   }

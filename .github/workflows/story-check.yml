@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
       - run: npm install --ignore-scripts
       - run: node -e "console.log('LOCK_JSON_BEGIN'); console.log(require('node:fs').readFileSync('package-lock.json','utf8')); console.log('LOCK_JSON_END')"
       - run: npm run check:types
