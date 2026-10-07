@@ -2,9 +2,9 @@
 使用 Cocos Creator 3.8.8 打开工程，等待导入。打开 assets/scenes/Boot.scene，预览。构建 Web Mobile 时将 Boot、Main、Story 三个场景加入构建列表，Boot 为启动场景。画布 1080×1920，竖屏 SHOW_ALL。
 
 代码与纯剧情检查：
-1. npm install（首次产生 package-lock.json，检查并提交后改用 npm ci）。
+1. npm ci（依赖锁文件已由 GitHub Actions 实际生成）。
 2. npm run check:story：Schema、目标节点、片段引用、可达性。
-3. npm test：独立 StoryRuntime、存档恢复、旧物重复效果、损坏/未来版本保护。
+3. npm run check:types：Cocos 官方 3.8.8 类型声明下所有脚本检查；npm test：独立 StoryRuntime、存档恢复、旧物重复效果、损坏/未来版本保护。
 4. Cocos 导入生成 temp/tsconfig.cocos.json 后，npm run check:cocos。
 5. 从 Boot 跑到 Main、Story 和第一章结束，刷新返回同节点与变量。
 6. 查看照片、翻面、放回；查看信封、放回；收好纸箱；饭桌、深夜抽信；给 MP3 接电、点播放、转场、公交选择。

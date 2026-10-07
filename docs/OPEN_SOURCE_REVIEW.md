@@ -17,4 +17,4 @@ H5 加载采用 Cocos 3.8 官方 resources API，按 manifest 加载当前片段
 依据：[Cocos 3.8 动态资源加载](https://docs.cocos.com/creator/3.8/manual/en/asset/dynamic-load-resources.html)。
 
 mitt 固定 tag 3.0.1，源文件 assets/scripts/vendor/mitt.ts，未修改正文；MIT 全文随仓库保存。
-Ajv 固定 8.20.0，许可保存在 third_party/ajv/LICENSE。首次实际安装后须生成并提交 package-lock.json，再使用 npm ci；目前不能把尚未安装的工具称为已验证。
+Ajv 固定 8.20.0，许可保存在 third_party/ajv/LICENSE。已通过 GitHub Actions 实际安装并执行；package-lock.json 由该环境生成并提交，后续使用 npm ci。
