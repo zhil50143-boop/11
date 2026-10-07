@@ -1,0 +1,250 @@
+{
+  "episodeId": "CH04_EP04",
+  "name": "暑假还没定",
+  "startNode": "CH04_EP04_N001",
+  "nodes": [
+    {
+      "id": "CH04_EP04_N001",
+      "type": "passage",
+      "title": "家里的复查单",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "六月，母亲让周叙暑假陪父亲去复查。时间在七月，父亲说自己能去，母亲还是把预约那张纸寄来，怕他又只记早班时间。周叙接到纸以后，把实验课的最后一天圈出来，算着能不能提前回去。"
+        },
+        {
+          "text": "许知夏报名了校报暑期采访组，在学校附近做几家旧店铺的口述采访。不是带薪工作，车费要先自己垫，老师会在结束以后核对。她晚上打电话说表刚发下来，问周叙暑假想怎么安排。"
+        },
+        {
+          "text": "周叙说家里要复查。许知夏问是哪天，他说日期看见了，还要确定医生有没有换。她说自己母亲也在排休，等采访表确认以后想一起看时间，不能现在就答应哪天回南城。"
+        },
+        {
+          "text": "母亲第二天又来电话，问许知夏是不是也回，想着那两天可以请她到家里吃顿饭。父亲在旁边说看人家有没有空，不要特意折腾。周叙拿着手机，桌上是家里的复查单，旁边还有许知夏昨晚发来的采访日期。"
+        },
+        {
+          "text": "他以前把两边的纸都收到一个本子里，现在有几天重在一起。母亲还在电话里等着，他得先把这件事说清楚。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 6,
+          "season": "summer",
+          "label": "2010 · 夏 · 家里的复查单",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "复查单与暑期采访日期"
+          ]
+        }
+      },
+      "next": "CH04_EP04_CHOICE"
+    },
+    {
+      "id": "CH04_EP04_CHOICE",
+      "type": "choice",
+      "prompt": "母亲问她暑假来不来，要怎么答？",
+      "consequence": "这会影响两边怎样安排时间。复查仍会去，许知夏的采访也有自己的约定；不会因这一次回答决定分手。",
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 6,
+          "season": "summer",
+          "label": "2010 · 夏 · 暑期安排",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "还没有确定的暑期来往"
+          ]
+        }
+      },
+      "options": [
+        {
+          "id": "ASK",
+          "text": "先告诉家里她还没定，和她核对采访日期。",
+          "next": "CH04_EP04_ASK",
+          "effects": {
+            "honesty": 2,
+            "understandingXia": 1
+          },
+          "setFlags": [
+            "CH04_ASKED_SUMMER_PLAN"
+          ]
+        },
+        {
+          "id": "PROMISE",
+          "text": "先答应家里她会来，再请她照这几天安排。",
+          "next": "CH04_EP04_PROMISE",
+          "effects": {
+            "avoidance": 1
+          },
+          "setFlags": [
+            "CH04_PROMISED_FOR_XIA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CH04_EP04_ASK",
+      "type": "passage",
+      "title": "还不能替她答应",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙说还没有定，得先问她采访哪几天。母亲答应，让他有消息再说，自己先按两个人吃饭买菜。父亲在旁边问复查是不是早上，周叙把纸翻出来，说自己当天可以陪去，许知夏来不来是另外一件事。"
+        },
+        {
+          "text": "晚上他把家里的日期告诉许知夏。她拿着采访表看，有两天可以移动，但必须问另外两个组员，不能只改自己的。他说不用挪复查那天，自己先陪父亲去，剩下的时间再约。她把这句话记下来，又问他父亲最近吃药怎么样。"
+        },
+        {
+          "text": "第二天许知夏发来确认后的表，采访比原来晚了一天。周叙把旧短信里的日期划掉，给母亲打电话说八月初再定吃饭，七月不用一直留着菜。母亲说知道了，还让他别忘自己返校的课。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 6,
+          "season": "summer",
+          "label": "2010 · 夏 · 还不能替她答应",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "没有替她定下的暑期承诺"
+          ]
+        }
+      },
+      "next": "CH04_EP04_MESSAGES"
+    },
+    {
+      "id": "CH04_EP04_PROMISE",
+      "type": "passage",
+      "title": "已经说出口的日期",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙先答应，说她应该也回，复查那两天可以顺路来家里。母亲让他再问问有没有不吃的东西。他放下电话，才把那两天发给许知夏，说家里已经等着了，希望她采访早点做完。"
+        },
+        {
+          "text": "许知夏打回来，让他把采访表拿出来。那两天有一家店只能晚上访问，另外两个人也已经约好。她问他和家里说之前为什么不先问，周叙说以为暑假时间多，能调。她说不是只调她一个人，不能让别人都跟着这张纸改。"
+        },
+        {
+          "text": "他等了一会儿，说自己去和家里讲。许知夏让他不要说成她临时不肯来，是本来就没有答应过。他第二天再打给母亲，把这件事重说了一遍。母亲问那就不回了？他解释是七月这几天没空，八月还要等表，父亲在旁边说先别买人家的菜。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 6,
+          "season": "summer",
+          "label": "2010 · 夏 · 已经说出口的日期",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "替她答应后又重说的日期"
+          ]
+        }
+      },
+      "next": "CH04_EP04_MESSAGES"
+    },
+    {
+      "id": "CH04_EP04_MESSAGES",
+      "type": "phone",
+      "title": "确认过的那一张",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "许知夏：这是最后确认的。周六那一行不是休息，是换到晚上。"
+        },
+        {
+          "text": "周叙：看到了。家里的复查是周二。"
+        },
+        {
+          "text": "许知夏：那周二你先去。到家以后告诉我。"
+        },
+        {
+          "text": "周叙：我考完还有一次实验补交，后天走。"
+        },
+        {
+          "text": "许知夏：别忘带报告。上次放我袋子里那种。"
+        },
+        {
+          "text": "陈野：我暑假要多搬几次货。你们回来先发消息，我不一定在球场。"
+        },
+        {
+          "text": "周叙：知道。你弟那边怎么样？"
+        },
+        {
+          "text": "陈野：鞋还没买。他自己非要挑。"
+        },
+        {
+          "text": "周叙把短信里的日子抄到新纸上，这次没有把已经划掉的纸一并寄回去。室友拿着火车票问他明天去不去吃最后一顿食堂，他说去，先把母亲寄来的复查单收进书包外层。纸角露出来，他用一本练习册挡住，拉链才合上。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 6,
+          "season": "summer",
+          "label": "2010 · 夏 · 确认过的那一张",
+          "location": "两边的大学",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "最终确认的采访表"
+          ]
+        }
+      },
+      "next": "CH04_EP04_END"
+    },
+    {
+      "id": "CH04_EP04_END",
+      "type": "episodeEnd",
+      "next": "CH04_EP05"
+    }
+  ],
+  "nodeAliases": {}
+}

@@ -1,0 +1,269 @@
+{
+  "episodeId": "CH04_EP05",
+  "name": "暑假各过几天",
+  "startNode": "CH04_EP05_N001",
+  "nodes": [
+    {
+      "id": "CH04_EP05_N001",
+      "type": "passage",
+      "title": "复查那天",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "七月，父亲去复查，周叙比预约时间早半小时到。母亲把水瓶交给他，自己还要去上班。父亲说不用这么早，到了门口却先拿号码，把原先装药的袋子翻了一遍，怕报告没有带全。"
+        },
+        {
+          "text": "候诊时，父亲让周叙坐，自己靠在窗边。周叙问最近胃还疼不疼，他说有时候，接着问儿子大学考试有没有过。周叙说过了，有一门分数不高，父亲没再问几分，只提醒他袋子别放地上，医院地刚拖过。"
+        },
+        {
+          "text": "医生看完报告，让父亲按原来的安排吃药，过几个月再来。父亲出来先给母亲打电话，问中午有没有留饭。母亲让他们路上买点菜，自己还没下班。周叙去拿药，回来才看见许知夏的消息，问去完了没有。"
+        },
+        {
+          "text": "他把医生说的几句写过去，又告诉她报告装回家里的蓝袋。许知夏说记好复查那个月，接着发了一条说采访对象今天没来，大家正换地方等。周叙想回电话，想到她可能还在街上，先回了一句有空再说。"
+        },
+        {
+          "text": "回家以后，父亲把药按吃的时间摆好，母亲一边洗菜一边问他有没有问清楚。周叙照着纸答，有一处没记全，父亲拿过来补了一句。晚上他把水瓶洗了，才继续问许知夏那家店最后找到了谁。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 7,
+          "season": "summer",
+          "label": "2010 · 夏 · 复查那天",
+          "location": "南城医院",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "七月复查的蓝袋"
+          ]
+        }
+      },
+      "next": "CH04_EP05_SUMMER_CHECK"
+    },
+    {
+      "id": "CH04_EP05_SUMMER_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH04_ASKED_SUMMER_PLAN",
+          "next": "CH04_EP05_AGREED"
+        },
+        {
+          "flag": "CH04_PROMISED_FOR_XIA",
+          "next": "CH04_EP05_CORRECTED"
+        }
+      ],
+      "fallback": "CH04_EP05_CORRECTED"
+    },
+    {
+      "id": "CH04_EP05_AGREED",
+      "type": "passage",
+      "title": "等到表上空下来",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "八月初，许知夏确定能回来两天，先发了车次。周叙问她母亲会不会去接，她说会，第二天下午可以到他家。母亲知道以后，把原先没买的菜补上，又让他去买番茄，不要只买看起来大的。"
+        },
+        {
+          "text": "许知夏来时，先问父亲复查结果，又给母亲带了一张采访时洗出来的旧街照片。周叙没有把那两天排满，饭后她还要替自己母亲拿东西。他们只约了晚一点去照相店，许知夏把空袋留在桌边，提醒他先看老板开不开门。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 8,
+          "season": "summer",
+          "label": "2010 · 夏 · 等到表上空下来",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "核对过日期后的两天见面"
+          ]
+        }
+      },
+      "next": "CH04_EP05_STREET"
+    },
+    {
+      "id": "CH04_EP05_CORRECTED",
+      "type": "passage",
+      "title": "不是她临时改的",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "八月初，许知夏发来回南城的时间，周叙再告诉母亲。母亲提起上次没来的饭，他先解释那时候采访日期已经有了，是自己没有问就答应。母亲听完，说这次知道哪天来再去买菜，把冰箱那盒已经吃完的东西挪开。"
+        },
+        {
+          "text": "许知夏到家那天下午，周叙把这句解释告诉她。她点头，说别又只在两个人讲电话时承认，下次直接把还没定说出来。他说这次母亲知道了，她便接着问父亲复查结果，也把给母亲的街景照片拿出来。饭还是照常吃，两个人下午各有要跑的地方。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 8,
+          "season": "summer",
+          "label": "2010 · 夏 · 不是她临时改的",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "后来向家里改正的说法"
+          ]
+        }
+      },
+      "next": "CH04_EP05_STREET"
+    },
+    {
+      "id": "CH04_EP05_STREET",
+      "type": "passage",
+      "title": "街口新装的门",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "吃完饭，许知夏先去替母亲取一只修好的风扇，周叙跟着帮拿。店里说还要半小时，她站在门口看旧招牌，提起暑假采访那家店。原先约的人不愿讲，倒是隔壁老板说了一下午，录音里风扇一直响，回学校还得重新核对姓名。"
+        },
+        {
+          "text": "周叙问她怎么把名字记错的，她说现场问完以为记住了，回来发现同音字有好几种。老师让她再去确认，不能猜。她说到这里，打开本子给他看改过的那一行，笔划得太重，纸已经起毛。"
+        },
+        {
+          "text": "两个人到照相店时，老板正在装新门。玻璃上贴着请从旁边进，陈野站在里面等鞋旁那张照片洗好。他让他们别踩门口的木条，又说弟弟把新鞋买回去了，钱比他想的多，下周还要出去搬货。"
+        },
+        {
+          "text": "许知夏没把那次录音放给周叙听，机器已经还给采访组，只给他看一张冲印照片。街上有一块新塑料棚，照片边角也拍进了一段电线。她说原来想把线裁掉，后来觉得那天本来就是这样，便把两张里面较清楚的一张留给他。"
+        },
+        {
+          "text": "陈野在旁边说这条街每次回来看都不一样，又问他们晚上打不打球。许知夏说自己要帮母亲收东西，周叙想了一下，说等把风扇送回去再去。陈野让他别超过七点，自己明天还得早起。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 8,
+          "season": "summer",
+          "label": "2010 · 夏 · 街口新装的门",
+          "location": "南城旧街",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "核对过姓名的采访照片"
+          ]
+        }
+      },
+      "next": "CH04_EP05_PHOTO"
+    },
+    {
+      "id": "CH04_EP05_PHOTO",
+      "type": "photo",
+      "text": "文字占位：南城旧街，一块塑料棚压着旧门头，照片边缘有电线和半辆停着的自行车。正式照片待制作。",
+      "backText": "2010.8，回去拿风扇那天。\n店名再问一次，别照我本子上第一次写的。——许知夏",
+      "setFlags": [
+        "CH04_SEEN_STREET_PHOTO"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 8,
+          "season": "summer",
+          "label": "2010 · 夏 · 街景照片",
+          "location": "南城照相店",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "2010.8街景照片背文"
+          ]
+        }
+      },
+      "next": "CH04_EP05_NIGHT"
+    },
+    {
+      "id": "CH04_EP05_NIGHT",
+      "type": "passage",
+      "title": "没一起去的球场",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "傍晚把风扇送到许知夏家，母亲正把超市的工作服晾起来。风扇接上电以后声音不小，她说能转就先用，过了夏天再说。许知夏把袋子里的零件放在柜子上，周叙想帮忙找盒子，她让他先去球场，陈野已经发了两条消息。"
+        },
+        {
+          "text": "陈野站在场边没急着投，先问周叙什么时候走。他说后天，陈野说自己还要留一周，店里缺人。两个人打了一会儿，球滚到卖水的门口，店主让他们别撞到纸箱。周叙拿了一瓶水，顺手给陈野也拿一瓶，付完才发现带的零钱不够，又掏出父亲白天给的那张。"
+        },
+        {
+          "text": "许知夏没有来球场。她晚上发来一条说风扇用着还行，母亲已经睡了，让他明天帮看洗出的另一张有没有放错袋。周叙说好，回家把街景照片夹进书里，父亲在桌边算下个月夜班的日子，让他把台灯往外挪一点。"
+        },
+        {
+          "text": "两个人回学校的日期仍然不同。周叙把要带的东西排到门口，母亲提醒他这次饭盒不装汤。他拿着盖子试了一下，手机里最后一条是许知夏说自己到了再发消息，没有约下一个整月每天要做什么。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2010,
+          "month": 8,
+          "season": "summer",
+          "label": "2010 · 夏 · 没一起去的球场",
+          "location": "南城",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "暑假不同的返校日期"
+          ]
+        }
+      },
+      "next": "CH04_EP05_END"
+    },
+    {
+      "id": "CH04_EP05_END",
+      "type": "episodeEnd",
+      "next": "CH04_EP06"
+    }
+  ],
+  "nodeAliases": {}
+}

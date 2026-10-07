@@ -1,0 +1,43 @@
+{
+  "chapterId": "CH04",
+  "title": "两座城市",
+  "episodes": [
+    {
+      "id": "CH04_EP01",
+      "name": "新的号码",
+      "resource": "data/story/chapter04/ep01_arrival",
+      "startNode": "CH04_EP01_N001"
+    },
+    {
+      "id": "CH04_EP02",
+      "name": "对不上的课表",
+      "resource": "data/story/chapter04/ep02_timetables",
+      "startNode": "CH04_EP02_N001"
+    },
+    {
+      "id": "CH04_EP03",
+      "name": "冬天的电话",
+      "resource": "data/story/chapter04/ep03_winter_calls",
+      "startNode": "CH04_EP03_N001"
+    },
+    {
+      "id": "CH04_EP04",
+      "name": "暑假还没定",
+      "resource": "data/story/chapter04/ep04_summer_plan",
+      "startNode": "CH04_EP04_N001"
+    },
+    {
+      "id": "CH04_EP05",
+      "name": "暑假各过几天",
+      "resource": "data/story/chapter04/ep05_summer_days",
+      "startNode": "CH04_EP05_N001"
+    },
+    {
+      "id": "CH04_EP06",
+      "name": "各自的新学年",
+      "resource": "data/story/chapter04/ep06_new_year",
+      "startNode": "CH04_EP06_N001"
+    }
+  ],
+  "nextChapter": "CH05"
+}

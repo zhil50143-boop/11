@@ -1,0 +1,281 @@
+{
+  "episodeId": "CH04_EP02",
+  "name": "对不上的课表",
+  "startNode": "CH04_EP02_N001",
+  "nodes": [
+    {
+      "id": "CH04_EP02_N001",
+      "type": "passage",
+      "title": "十一以前",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "十月前，班里有人问十一回不回家。周叙先说回，想到许知夏暑假说过一起洗照片，又问室友在哪里买车票。室友说自己家远，不回了，想去找个便宜地方吃饭，周叙让他把名字也写在拼桌那张纸上。"
+        },
+        {
+          "text": "许知夏那边临时多了一次校报采访，老师让他们节后交，组里有两个人假期要回家，得先把访问做完。她给周叙发来时间，问原来想约哪天。他看见第三天画着一道线，自己车票还没买，先把时间写在参考册空白处。"
+        },
+        {
+          "text": "周叙的机械制图课开始用大纸，他卷着一根纸筒回宿舍，开门时撞到门框。晚上想给许知夏讲这个，电话打过去，她正和组员改提纲，只说等半小时。他把纸筒立在床边，坐了一会儿，又把母亲让他带回家的清单拿出来。"
+        },
+        {
+          "text": "半小时以后，许知夏打过来，先问是不是买票了。周叙说还没有，拿着本子把自己空的那几天念了一遍。她说别只记放假，采访还有前一天准备，把两张表摆出来比较容易。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 10,
+          "season": "autumn",
+          "label": "2009 · 秋 · 十一以前",
+          "location": "周叙大学教学楼",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "十一采访与返乡时间"
+          ]
+        }
+      },
+      "next": "CH04_EP02_PAPER"
+    },
+    {
+      "id": "CH04_EP02_PAPER",
+      "type": "letter",
+      "actionText": "摊开两张时间表",
+      "text": "周叙：周五下午制图，周六可走，周日傍晚返校。\n许知夏：周六上午采访，下午整理，周日等组员确认。\n\n十一的见面还没有定下来。",
+      "setFlags": [
+        "CH04_READ_TIMETABLES"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 10,
+          "season": "autumn",
+          "label": "2009 · 秋 · 课表旁的纸条",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "两张不相同的假期表"
+          ]
+        }
+      },
+      "next": "CH04_EP02_PLAN_CHECK"
+    },
+    {
+      "id": "CH04_EP02_PLAN_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH03_DISCUSS_PLANS",
+          "next": "CH04_EP02_COMPARE"
+        },
+        {
+          "flag": "CH03_ASSUMED_SAME_CITY",
+          "next": "CH04_EP02_REARRANGE"
+        }
+      ],
+      "fallback": "CH04_EP02_REARRANGE"
+    },
+    {
+      "id": "CH04_EP02_COMPARE",
+      "type": "passage",
+      "title": "把空的那天圈出来",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙把两边都有事的日子划掉，问她采访哪一部分还没准备。许知夏说要再联系店主，原先想问的人换了班，不能按旧时间过去。周叙听完，把自己那张票的事先放下，说这次各自回家，见面再找两边都空的一天。"
+        },
+        {
+          "text": "许知夏说好，接着讲那家店的招牌已经拆了，要找以前的照片。她让他到家帮忙看看高中那袋照片里有没有底片，但别把整袋邮寄出去。周叙在纸上写了这一条，也提醒她那张进过光的公交照片可能还在自己那里。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 10,
+          "season": "autumn",
+          "label": "2009 · 秋 · 把空的那天圈出来",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "先比较采访与返乡时间"
+          ]
+        }
+      },
+      "next": "CH04_EP02_MESSAGES"
+    },
+    {
+      "id": "CH04_EP02_REARRANGE",
+      "type": "passage",
+      "title": "没有提前问的那张票",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙拿着还没填完的购票纸，想让许知夏先来自己这边，再一起回南城。他把车次念给她听，她说星期六下午不能走，上午采访完还要和别人核对记录。周叙问能不能晚上整理，她在电话那边停了一下，问另外两个人的时间谁来改。"
+        },
+        {
+          "text": "他翻着纸，说自己还没买，许知夏让他先别买她那一张。电话结束以后，他去把名字从代买表上划掉，又打回来告诉她。她没有再问划了几次，只说她会把确定的时间发来；两个人约了这次各自回家，见面另找时间。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 10,
+          "season": "autumn",
+          "label": "2009 · 秋 · 没有提前问的那张票",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "没有买出的第二张票"
+          ]
+        }
+      },
+      "next": "CH04_EP02_MESSAGES"
+    },
+    {
+      "id": "CH04_EP02_MESSAGES",
+      "type": "phone",
+      "title": "回去以后再说",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "许知夏：店主改到下午了。前面那张表别用了。"
+        },
+        {
+          "text": "周叙：知道。回家要我找哪一袋？"
+        },
+        {
+          "text": "许知夏：蓝笔写名字的。不要拿老师的登记袋。"
+        },
+        {
+          "text": "周叙：那袋我放衣柜上面了。"
+        },
+        {
+          "text": "许知夏：好。找不到也先别翻别人的。"
+        },
+        {
+          "text": "陈野：我这边回去晚一天，车票没抢到。你们别等我打球。"
+        },
+        {
+          "text": "周叙：那你弟的鞋带给谁？"
+        },
+        {
+          "text": "陈野：我妈说让我留着。人家现在不穿那个颜色了。"
+        },
+        {
+          "text": "周叙回家两天，找到那袋底片，拿去问老板还能不能洗。老板说先把编号抄好，别又混在一起。母亲从市场回来，看见他蹲在桌旁，把菜袋放下，先问是不是今晚就走。他这才去看自己的车票，时间比记得的早了一小时。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 10,
+          "season": "autumn",
+          "label": "2009 · 秋 · 回去以后再说",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "按编号找到的旧底片"
+          ]
+        }
+      },
+      "next": "CH04_EP02_LATE"
+    },
+    {
+      "id": "CH04_EP02_LATE",
+      "type": "passage",
+      "title": "课表换了一行",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "十一以后，两边都有新课。周叙第一次做实验，线路接错，等老师过来时仪表一直没有读数。小组里有人已经写报告，他让对方先别照自己的数据抄，重新接了一遍，又去借一根导线。"
+        },
+        {
+          "text": "许知夏的采访也没交成她想的样子。校报只用了很短一段，她在电话里抱怨照片裁掉了招牌。周叙问要不要再交一遍，她说老师让他们先看问题怎么问，不是只把照片放大。她一边说一边翻本子，翻到被雨水弄皱的那页，又停下来晾。"
+        },
+        {
+          "text": "有天周叙下课后拨电话，接的是她室友，说她去了图书馆。对方问要不要留话，他说不用，又想起自己明天要做实验，补了一句让她晚上有空回一下。许知夏回来时，宿舍电话旁放着一张购物单，留言写在反面，她差点把它拿去超市。"
+        },
+        {
+          "text": "周叙等到第二天才听见这件事。两个人都笑了一下，她让他把实验时间提前说，不然下次可能还要找那张纸。他答应，拿着笔把电话要讲的几件事写下来，最后一行是母亲让他问的药盒尺寸，和学校的事挤在一起。"
+        },
+        {
+          "text": "陈野开始在学校附近帮店里搬周末的货。他打电话时常站在门口，怕里面太吵，说回来再约。周叙也没每次都找到他，有一次干脆只发了个地址，让他把要寄回家的鞋别再写成自己宿舍。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2009,
+          "month": 11,
+          "season": "autumn",
+          "label": "2009 · 秋 · 课表换了一行",
+          "location": "两边的大学",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地来往"
+        },
+        "memory": {
+          "id": "DISTANCE",
+          "title": "两座城市",
+          "status": "fragmentary",
+          "evidence": [
+            "购物单背面的电话留言"
+          ]
+        }
+      },
+      "next": "CH04_EP02_END"
+    },
+    {
+      "id": "CH04_EP02_END",
+      "type": "episodeEnd",
+      "next": "CH04_EP03"
+    }
+  ],
+  "nodeAliases": {}
+}
