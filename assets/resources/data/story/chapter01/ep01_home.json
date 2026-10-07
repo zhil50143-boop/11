@@ -107,7 +107,9 @@
         {
           "id": "A",
           "text": "像我。",
-          "effects": { "understandingPartner": 1 },
+          "effects": {
+            "understandingPartner": 1
+          },
           "next": "CH01_EP01_A001"
         },
         {
@@ -176,20 +178,26 @@
       "options": [
         {
           "id": "A",
-          "text": "吃完饭再看。",
-          "effects": { "reality": 1 },
-          "next": "CH01_EP01_N019"
+          "text": "先把湿外套挂好。",
+          "effects": {
+            "reality": 1
+          },
+          "next": "CH01_EP01_HANG_COAT"
         },
         {
           "id": "B",
           "text": "现在看看。",
-          "effects": { "nostalgia": 1 },
+          "effects": {
+            "nostalgia": 1
+          },
           "next": "CH01_EP01_N019"
         },
         {
           "id": "C",
           "text": "估计都是些旧东西。",
-          "effects": { "avoidance": 1 },
+          "effects": {
+            "avoidance": 1
+          },
           "next": "CH01_EP01_N019"
         }
       ]
@@ -205,6 +213,12 @@
       "id": "CH01_EP01_END",
       "type": "episodeEnd",
       "next": "CH01_EP02"
+    },
+    {
+      "id": "CH01_EP01_HANG_COAT",
+      "type": "narration",
+      "text": "周叙挂好外套，擦了擦手，拿起桌边的纸箱。",
+      "next": "CH01_EP01_N019"
     }
   ]
 }

@@ -25,3 +25,14 @@ TapTap H5 沉浸式互动叙事游戏。
 - Tap API 与 Story 系统必须解耦
 
 请先阅读 CODEX_TASK.md 和 docs/GAME_SPEC.md。
+
+## 第一章开发分支
+Boot → Main → Story 场景和代码式占位 UI 位于 assets/scenes 与 assets/scripts/ui。
+当前支持四段 JSON、片段切换、隐藏变量、条件、自动本地存档、旧物调查、照片翻面、信件查看、MP3 文字降级、2037→2007 短转场及第一章结束停留。
+照片与声音尚未配置正式原创资源；代码存在不等于 Cocos 构建、浏览器和 TapTap 真机已经通过。
+
+参阅：
+- [制作约束](CODEX_TASK.md)
+- [开源候选、许可与取舍](docs/OPEN_SOURCE_REVIEW.md)
+- [运行与验收](docs/RUN_AND_VERIFY.md)
+- [当前验证记录](docs/VALIDATION.md)

@@ -11,9 +11,12 @@
     },
     {
       "id": "CH01_EP04_N002",
-      "type": "narration",
-      "text": "周叙按下了播放。",
-      "next": "CH01_EP04_N003"
+      "type": "audioInteraction",
+      "text": "01.mp3",
+      "next": "CH01_EP04_N003",
+      "setFlags": [
+        "PLAYED_OLD_MP3"
+      ]
     },
     {
       "id": "CH01_EP04_N003",
@@ -52,9 +55,14 @@
     },
     {
       "id": "CH01_EP04_N008",
-      "type": "narration",
-      "text": "2037年的雨声渐渐变成公交车玻璃上的雨声。画面回到2007年9月7日，十七路公交。",
-      "next": "CH01_EP04_N009"
+      "type": "transition",
+      "text": "雨落在公交车的玻璃上。",
+      "next": "CH01_EP04_N009",
+      "from": "2037年 · 家中",
+      "to": "2007年9月7日 · 17路公交",
+      "setFlags": [
+        "IN_MEMORY_2007"
+      ]
     },
     {
       "id": "CH01_EP04_N009",
@@ -86,19 +94,25 @@
         {
           "id": "A",
           "text": "里面。",
-          "setFlags": ["CH01_FIRST_BUS_CHOICE_A"],
+          "setFlags": [
+            "CH01_FIRST_BUS_CHOICE_A"
+          ],
           "next": "CH01_EP04_A001"
         },
         {
           "id": "B",
           "text": "外面。",
-          "setFlags": ["CH01_FIRST_BUS_CHOICE_B"],
+          "setFlags": [
+            "CH01_FIRST_BUS_CHOICE_B"
+          ],
           "next": "CH01_EP04_B001"
         },
         {
           "id": "C",
           "text": "随便。",
-          "setFlags": ["CH01_FIRST_BUS_CHOICE_C"],
+          "setFlags": [
+            "CH01_FIRST_BUS_CHOICE_C"
+          ],
           "next": "CH01_EP04_C001A"
         }
       ]
@@ -121,7 +135,7 @@
       "id": "CH01_EP04_C001A",
       "type": "dialogue",
       "speaker": "XIA_17",
-      "text": "我最烦别人说随便。因为说完随便，最后又都有意见。",
+      "text": "那我坐里面了。你往旁边挪一下。",
       "next": "CH01_EP04_N012"
     },
     {
@@ -163,7 +177,9 @@
         {
           "id": "C",
           "text": "现在注意到了。",
-          "effects": { "understandingXia": 1 },
+          "effects": {
+            "understandingXia": 1
+          },
           "next": "CH01_EP04_C002A"
         }
       ]

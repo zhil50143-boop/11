@@ -1,0 +1,444 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "episodeId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "startNode": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "next": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "dialogue",
+                  "narration"
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "speaker": {
+                "type": "string",
+                "minLength": 1
+              },
+              "expression": {
+                "type": "string",
+                "minLength": 1
+              },
+              "position": {
+                "enum": [
+                  "left",
+                  "center",
+                  "right"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "text",
+              "next"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "next": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "choice"
+                ]
+              },
+              "options": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "next": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "effects": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "nostalgia": {
+                          "type": "number",
+                          "minimum": -100,
+                          "maximum": 100
+                        },
+                        "reality": {
+                          "type": "number",
+                          "minimum": -100,
+                          "maximum": 100
+                        },
+                        "regret": {
+                          "type": "number",
+                          "minimum": -100,
+                          "maximum": 100
+                        },
+                        "understandingXia": {
+                          "type": "number",
+                          "minimum": -100,
+                          "maximum": 100
+                        },
+                        "understandingPartner": {
+                          "type": "number",
+                          "minimum": -100,
+                          "maximum": 100
+                        },
+                        "selfReflection": {
+                          "type": "number",
+                          "minimum": -100,
+                          "maximum": 100
+                        },
+                        "honesty": {
+                          "type": "number",
+                          "minimum": -100,
+                          "maximum": 100
+                        },
+                        "avoidance": {
+                          "type": "number",
+                          "minimum": -100,
+                          "maximum": 100
+                        }
+                      }
+                    },
+                    "setFlags": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "text",
+                    "next"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "options"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "next": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "condition"
+                ]
+              },
+              "fallback": {
+                "type": "string",
+                "minLength": 1
+              },
+              "branches": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "flag": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "equals": {
+                      "type": "boolean"
+                    },
+                    "stat": {
+                      "enum": [
+                        "nostalgia",
+                        "reality",
+                        "regret",
+                        "understandingXia",
+                        "understandingPartner",
+                        "selfReflection",
+                        "honesty",
+                        "avoidance"
+                      ]
+                    },
+                    "operator": {
+                      "enum": [
+                        ">=",
+                        ">",
+                        "<=",
+                        "<",
+                        "=="
+                      ]
+                    },
+                    "value": {
+                      "type": "number"
+                    },
+                    "next": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "next"
+                  ],
+                  "oneOf": [
+                    {
+                      "required": [
+                        "flag"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "stat",
+                        "operator",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "branches",
+              "fallback"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "next": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "investigation",
+                  "photo",
+                  "letter",
+                  "audioInteraction",
+                  "transition"
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "actionText": {
+                "type": "string",
+                "minLength": 1
+              },
+              "backText": {
+                "type": "string",
+                "minLength": 1
+              },
+              "resource": {
+                "type": "string",
+                "minLength": 1
+              },
+              "from": {
+                "type": "string",
+                "minLength": 1
+              },
+              "to": {
+                "type": "string",
+                "minLength": 1
+              },
+              "effects": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "nostalgia": {
+                    "type": "number",
+                    "minimum": -100,
+                    "maximum": 100
+                  },
+                  "reality": {
+                    "type": "number",
+                    "minimum": -100,
+                    "maximum": 100
+                  },
+                  "regret": {
+                    "type": "number",
+                    "minimum": -100,
+                    "maximum": 100
+                  },
+                  "understandingXia": {
+                    "type": "number",
+                    "minimum": -100,
+                    "maximum": 100
+                  },
+                  "understandingPartner": {
+                    "type": "number",
+                    "minimum": -100,
+                    "maximum": 100
+                  },
+                  "selfReflection": {
+                    "type": "number",
+                    "minimum": -100,
+                    "maximum": 100
+                  },
+                  "honesty": {
+                    "type": "number",
+                    "minimum": -100,
+                    "maximum": 100
+                  },
+                  "avoidance": {
+                    "type": "number",
+                    "minimum": -100,
+                    "maximum": 100
+                  }
+                }
+              },
+              "setFlags": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "requiredFlags": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "next": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "viewedFlag": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "text",
+                    "next",
+                    "viewedFlag"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "text",
+              "next"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "next": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "enum": [
+                  "save",
+                  "episodeEnd"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "next"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "episodeId",
+    "name",
+    "startNode",
+    "nodes"
+  ]
+}

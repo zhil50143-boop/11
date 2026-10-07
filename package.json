@@ -1,9 +1,17 @@
 {
   "name": "yushengweiji",
-  "uuid": "yushengweiji-tap-h5",
+  "uuid": "d8b2715e-4f19-4b41-a18c-97c5f3bc1320",
   "version": "0.1.0",
   "creator": {
     "version": "3.8.8"
   },
-  "scripts": {}
+  "scripts": {
+    "check:story": "node tools/check-story.cjs",
+    "test": "tsc -p tsconfig.core.json && node --test tests/*.test.cjs",
+    "check:cocos": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1",
+    "typescript": "5.6.3"
+  }
 }

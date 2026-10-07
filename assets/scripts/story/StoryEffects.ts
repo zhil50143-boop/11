@@ -1,3 +1,4 @@
+import { clamp } from '../core/NarrativeMath';
 import type { GameStateData } from '../core/GameState';
 import type { StoryEffectMap } from './StoryNode';
 
@@ -8,9 +9,9 @@ export function applyEffects(
 ): void {
   if (effects) {
     for (const [key, delta] of Object.entries(effects)) {
-      if (key in state.stats) {
+      if (Object.prototype.hasOwnProperty.call(state.stats, key) && Number.isFinite(delta)) {
         const current = state.stats[key as keyof typeof state.stats];
-        state.stats[key as keyof typeof state.stats] = Math.max(0, Math.min(100, current + delta));
+        state.stats[key as keyof typeof state.stats] = clamp(current + delta);
       }
     }
   }

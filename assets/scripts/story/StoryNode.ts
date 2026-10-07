@@ -1,75 +1,31 @@
-export type StoryNodeType =
-  | 'dialogue'
-  | 'narration'
-  | 'choice'
-  | 'condition'
-  | 'background'
-  | 'character'
-  | 'music'
-  | 'sound'
-  | 'investigation'
-  | 'photo'
-  | 'letter'
-  | 'audioInteraction'
-  | 'transition'
-  | 'save'
-  | 'episodeEnd';
-
-export interface StoryEffectMap {
-  [key: string]: number;
-}
-
+export interface StoryEffectMap { [key: string]: number }
 export interface ChoiceOption {
-  id: string;
-  text: string;
-  effects?: StoryEffectMap;
-  setFlags?: string[];
-  next: string;
+  id: string; text: string; next: string;
+  effects?: StoryEffectMap; setFlags?: string[];
 }
-
 export interface StoryConditionBranch {
-  flag?: string;
-  equals?: boolean;
-  stat?: string;
-  operator?: '>=' | '>' | '<=' | '<' | '==';
-  value?: number;
-  next: string;
+  flag?: string; equals?: boolean; stat?: string;
+  operator?: '>=' | '>' | '<=' | '<' | '=='; value?: number; next: string;
 }
-
-export interface BaseStoryNode {
-  id: string;
-  type: StoryNodeType;
-  next?: string;
-}
-
+export interface BaseStoryNode { id: string; next?: string }
 export interface TextStoryNode extends BaseStoryNode {
-  type: 'dialogue' | 'narration';
-  speaker?: string;
-  expression?: string;
-  position?: 'left' | 'center' | 'right';
-  text: string;
+  type: 'dialogue' | 'narration'; text: string; speaker?: string;
+  expression?: string; position?: 'left' | 'center' | 'right';
 }
-
-export interface ChoiceStoryNode extends BaseStoryNode {
-  type: 'choice';
-  options: ChoiceOption[];
-}
-
+export interface ChoiceStoryNode extends BaseStoryNode { type: 'choice'; options: ChoiceOption[] }
 export interface ConditionStoryNode extends BaseStoryNode {
-  type: 'condition';
-  branches: StoryConditionBranch[];
-  fallback: string;
+  type: 'condition'; branches: StoryConditionBranch[]; fallback: string;
 }
-
-export type StoryNode =
-  | TextStoryNode
-  | ChoiceStoryNode
-  | ConditionStoryNode
-  | (BaseStoryNode & Record<string, unknown>);
-
-export interface EpisodeData {
-  episodeId: string;
-  name: string;
-  startNode: string;
-  nodes: StoryNode[];
+export interface InvestigationItem { id: string; text: string; next: string; viewedFlag: string }
+export interface InteractionStoryNode extends BaseStoryNode {
+  type: 'investigation' | 'photo' | 'letter' | 'audioInteraction' | 'transition';
+  text: string; actionText?: string; backText?: string; resource?: string; from?: string; to?: string;
+  items?: InvestigationItem[]; requiredFlags?: string[];
+  effects?: StoryEffectMap; setFlags?: string[];
 }
+export interface ControlStoryNode extends BaseStoryNode { type: 'save' | 'episodeEnd' }
+export type StoryNode = TextStoryNode | ChoiceStoryNode | ConditionStoryNode | InteractionStoryNode | ControlStoryNode;
+export type StoryNodeType = StoryNode['type'];
+export interface EpisodeData { episodeId: string; name: string; startNode: string; nodes: StoryNode[] }
+export interface EpisodeRef { id: string; name: string; resource: string; startNode: string }
+export interface ChapterManifest { chapterId: string; title: string; episodes: EpisodeRef[]; nextChapter: string }

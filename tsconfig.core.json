@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "outDir": "work/core",
+    "rootDir": "assets/scripts",
+    "skipLibCheck": true
+  },
+  "include": [
+    "assets/scripts/core/GameState.ts",
+    "assets/scripts/story/StoryNode.ts",
+    "assets/scripts/story/StoryEffects.ts",
+    "assets/scripts/story/StoryRuntime.ts",
+    "assets/scripts/save/LocalSave.ts",
+    "assets/scripts/vendor/mitt.ts",
+    "assets/scripts/core/NarrativeMath.ts"
+  ]
+}

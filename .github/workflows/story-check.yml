@@ -1,0 +1,19 @@
+name: Story checks
+on:
+  push:
+    branches: ["codex/chapter01-slice"]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm install --ignore-scripts
+      - run: npm run check:story
+      - run: npm test
