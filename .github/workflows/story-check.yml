@@ -15,5 +15,7 @@ jobs:
         with:
           node-version: "20"
       - run: npm install --ignore-scripts
+      - run: node -e "console.log('LOCK_JSON_BEGIN'); console.log(require('node:fs').readFileSync('package-lock.json','utf8')); console.log('LOCK_JSON_END')"
+      - run: npm run check:types
       - run: npm run check:story
       - run: npm test

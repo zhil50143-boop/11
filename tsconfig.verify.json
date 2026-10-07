@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "types": [
+      "@cocos/creator-types/engine"
+    ]
+  },
+  "include": [
+    "assets/scripts/**/*.ts"
+  ]
+}

@@ -3,6 +3,7 @@
 
 | 候选 / 原始来源 | 已核对许可证 | 可复用范围 | 风险与决定 |
 |---|---|---|---|
+| [Cocos 官方 creator-types 3.8.8](https://github.com/cocos/creator-types) | [ISC（package.json）](https://github.com/cocos/creator-types/blob/main/package.json) | CI 检查所有脚本与 3.8.8 cc API 类型 | 选用，仅开发依赖；类型检查不能代替场景运行 |
 | [mitt 3.0.1](https://github.com/developit/mitt/tree/3.0.1) | [MIT](https://github.com/developit/mitt/blob/3.0.1/LICENSE) | TypeScript 事件订阅、退订；StoryManager→UI | 选用，原样 vendoring，保留许可；卸载时清理订阅 |
 | [Ajv 8.17.1](https://github.com/ajv-validator/ajv/tree/v8.17.1) | [MIT](https://github.com/ajv-validator/ajv/blob/v8.17.1/LICENSE) | 开发期 JSON Schema 校验 | 选用，仅 devDependency，不加入 H5 运行时；语义目标检查另做 |
 | [InkJS](https://github.com/y-lohse/inkjs) | [MIT](https://github.com/y-lohse/inkjs/blob/master/LICENSE.md) | 分支叙事解释器、序列化状态 | 不引入；Ink 编译 JSON 与现有节点 JSON 不兼容，会重复建立引擎 |
