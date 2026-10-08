@@ -1,5 +1,7 @@
 import { Node, UITransform, Label, ScrollView, Mask, Vec2, Color, Graphics } from 'cc';
 import { container } from './UIFactory';
+import { artSurface } from './ArtSurface';
+import { ReadingSettings } from './ReadingSettings';
 
 // A readable physical document; the same text remains available if audio fails.
 export class DocumentPanel {
@@ -8,21 +10,30 @@ export class DocumentPanel {
     const area = container(root, 'Document');
     area.getComponent(UITransform)!.setContentSize(900, 1110);
     const paper = area.addComponent(Graphics);
-    paper.fillColor = new Color(239, 237, 230); paper.rect(-450, -555, 900, 1110); paper.fill();
+    paper.fillColor = ReadingSettings.paper; paper.rect(-450, -555, 900, 1110); paper.fill();
+    artSurface(area, 'paper_v1', 0, 0, 900, 1110, false, ReadingSettings.paperTint);
     const viewport = container(area, 'Viewport');
     viewport.getComponent(UITransform)!.setContentSize(900, 1110);
     viewport.addComponent(Mask).type = Mask.Type.GRAPHICS_RECT;
     const content = container(viewport, 'Content');
     const transform = content.getComponent(UITransform)!; transform.setAnchorPoint(0.5, 1);
-    const body = container(content, 'DocumentText');
-    const box = body.getComponent(UITransform)!; box.setAnchorPoint(0.5, 1); box.setContentSize(804, 100); body.setPosition(0, -44);
-    const label = body.addComponent(Label); label.string = value; label.fontSize = 46; label.lineHeight = 74;
-    label.enableWrapText = true; label.overflow = Label.Overflow.RESIZE_HEIGHT;
-    label.horizontalAlign = Label.HorizontalAlign.LEFT; label.verticalAlign = Label.VerticalAlign.TOP;
-    label.color = new Color(44, 45, 43); label.updateRenderData(true);
-    transform.setContentSize(900, Math.max(1110, box.height + 88)); content.setPosition(0, 555);
+    const size = ReadingSettings.bodySize(46), lineHeight = Math.round(size * 1.61);
+    let top = 44;
+    // One giant Label can exceed the WebGL canvas texture height and stretch
+    // glyphs. Keep the source's own line/paragraph boundaries in separate labels.
+    for (const paragraph of value.split('\n')) {
+      if (!paragraph) { top += lineHeight; continue; }
+      const body = container(content, 'DocumentText');
+      const box = body.getComponent(UITransform)!; box.setAnchorPoint(0.5, 1); box.setContentSize(804, 100); body.setPosition(0, -top);
+      const label = body.addComponent(Label); label.string = paragraph; label.fontSize = size; label.lineHeight = lineHeight;
+      label.enableWrapText = true; label.overflow = Label.Overflow.RESIZE_HEIGHT;
+      label.horizontalAlign = Label.HorizontalAlign.LEFT; label.verticalAlign = Label.VerticalAlign.TOP;
+      label.color = ReadingSettings.ink; label.updateRenderData(true);
+      top += box.height;
+    }
+    transform.setContentSize(900, Math.max(1110, top + 44)); content.setPosition(0, 555);
     const scroll = area.addComponent(ScrollView); scroll.content = content;
-    scroll.horizontal = false; scroll.vertical = true; scroll.inertia = true;
+    scroll.horizontal = false; scroll.vertical = true; scroll.inertia = !ReadingSettings.current.reducedMotion;
     const update = () => {
       const max = scroll.getMaxScrollOffset().y;
       const fraction = max > 0 ? Math.max(0, Math.min(1, scroll.getScrollOffset().y / max)) : 1;

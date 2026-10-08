@@ -15,6 +15,7 @@
     "assets/scripts/save/LocalSave.ts",
     "assets/scripts/vendor/mitt.ts",
     "assets/scripts/core/NarrativeMath.ts",
-    "assets/scripts/core/LifeState.ts"
+    "assets/scripts/core/LifeState.ts",
+    "assets/scripts/save/ReadingPreferences.ts"
   ]
 }

@@ -1,5 +1,6 @@
 import { Node, Sprite, SpriteFrame, UITransform, Mask, Color, resources, isValid, Button, Graphics, Label } from 'cc';
 import { container, button } from './UIFactory';
+import { ReadingSettings } from './ReadingSettings';
 
 // Runtime only composes generated assets; story text and touch targets stay separate.
 export function artSurface(parent: Node, id: string, x: number, y: number,
@@ -24,13 +25,15 @@ export function artSurface(parent: Node, id: string, x: number, y: number,
   return bounds;
 }
 
-export function paperButton(parent: Node, title: string, y: number, action: () => void): Button {
+export function paperButton(parent: Node, title: string, y: number, action: () => void, width = 900): Button {
   const control = button(parent, title, y, action);
+  control.node.getComponent(UITransform)!.setContentSize(width, 132);
   // Native solid surface remains a fallback if this optional texture cannot load.
   const graphics = control.node.getComponent(Graphics)!;
-  graphics.clear(); graphics.fillColor = new Color(213, 207, 190);
-  graphics.rect(-450, -66, 900, 132); graphics.fill();
-  const paper = artSurface(control.node, 'paper_v1', 0, 0, 900, 132, false, '#d4cfbe'); paper.setSiblingIndex(0);
-  control.node.children.find(n => n.getComponent(Label))!.getComponent(Label)!.color = new Color(53, 59, 57);
+  graphics.clear(); graphics.fillColor = ReadingSettings.current.theme === 'night' ? new Color(57, 65, 60) : new Color(213, 207, 190);
+  graphics.rect(-width / 2, -66, width, 132); graphics.fill();
+  const paper = artSurface(control.node, 'paper_v1', 0, 0, width, 132, false, ReadingSettings.current.theme === 'night' ? '#3c443e' : '#d4cfbe'); paper.setSiblingIndex(0);
+  const label = control.node.children.find(n => n.getComponent(Label))!.getComponent(Label)!;
+  label.node.getComponent(UITransform)!.setContentSize(width - 20, 116); label.color = ReadingSettings.ink;
   return control;
 }

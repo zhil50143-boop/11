@@ -1,6 +1,7 @@
 import { Node, UITransform, Label, ScrollView, Mask, Vec2, Color } from 'cc';
 import { container, text, button } from './UIFactory';
 import type { PassageStoryNode } from '../story/StoryNode';
+import { ReadingSettings } from './ReadingSettings';
 
 export class PassagePanel {
   show(root: Node, node: PassageStoryNode, speakers: Record<string,string>, offset: number,
@@ -27,11 +28,11 @@ export class PassagePanel {
     };
     for (const paragraph of node.paragraphs) {
       if (paragraph.speaker) line(speakers[paragraph.speaker] ?? paragraph.speaker, 36, new Color(177,184,172));
-      line(paragraph.text, 48, new Color(235,231,220));
+      line(paragraph.text, ReadingSettings.bodySize(48), new Color(235,231,220));
     }
     transform.setContentSize(940, Math.max(1110, top)); content.setPosition(0, 555);
     const scroll = area.addComponent(ScrollView); scroll.content = content;
-    scroll.horizontal = false; scroll.vertical = true; scroll.inertia = true;
+    scroll.horizontal = false; scroll.vertical = true; scroll.inertia = !ReadingSettings.current.reducedMotion;
     scroll.node.on(ScrollView.EventType.SCROLLING, () => {
       const max = scroll.getMaxScrollOffset().y;
       changed(max > 0 ? Math.max(0, Math.min(1, scroll.getScrollOffset().y / max)) : 0);

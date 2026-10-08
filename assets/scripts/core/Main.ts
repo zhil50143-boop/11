@@ -1,9 +1,10 @@
-import { _decorator, Component, director, Color, Label, Graphics, UITransform } from 'cc';
+import { _decorator, Component, director, Color, Label, Graphics, UITransform, Node } from 'cc';
 import { SaveManager } from '../save/SaveManager';
-import { makeCanvas, text, button } from '../ui/UIFactory';
+import { makeCanvas, text, button, clear } from '../ui/UIFactory';
 import { createNextRound } from '../story/EndingResolver';
 import { VisualDraft } from '../ui/VisualDraft';
 import { artSurface, paperButton } from '../ui/ArtSurface';
+import { SettingsPanel } from '../ui/SettingsPanel';
 const { ccclass } = _decorator;
 @ccclass('Main')
 export class Main extends Component {
@@ -11,6 +12,10 @@ export class Main extends Component {
     const canvas = makeCanvas(this.node);
     const draft = typeof window === 'undefined' ? null : new URLSearchParams(window.location.search).get('visualDraft');
     if (draft && ['desk','home','bus','decision'].includes(draft)) { new VisualDraft(canvas).show(draft); return; }
+    this.showHome(canvas);
+  }
+  private showHome(canvas: Node): void {
+    clear(canvas);
     artSurface(canvas, 'desk_2037_v1', 0, 0, 1080, 1920, true);
     const title = text(canvas, '余生未寄', 755, 150, 64);
     title.node.setPosition(180, 755); title.node.getComponent(UITransform)!.setContentSize(560, 150);
@@ -39,5 +44,8 @@ export class Main extends Component {
     });
     const cancel = paperButton(canvas, '取消重新开始', -650, () => { confirm = false; notice.string = ''; cancel.node.active = false; fresh.interactable = true });
     cancel.node.active = false;
+    paperButton(canvas, '阅读设置', -835, () => {
+      new SettingsPanel(canvas, () => { if (this.isValid) this.showHome(canvas); });
+    });
   }
 }

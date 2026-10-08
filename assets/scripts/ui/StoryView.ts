@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game, director, Color } from 'cc';
+import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game, director, UITransform, ScrollView } from 'cc';
 import { StoryManager, type StoryEvent } from '../story/StoryManager';
 import { SaveManager } from '../save/SaveManager';
 import { makeCanvas, container, text, button, clear } from './UIFactory';
@@ -10,12 +10,20 @@ import { PhotoViewer } from './PhotoViewer';
 import { LetterViewer } from './LetterViewer';
 import { AudioPlayer } from './AudioPlayer';
 import type { InteractionStoryNode } from '../story/StoryNode';
+import { paperButton } from './ArtSurface';
+import { ReadingSettings } from './ReadingSettings';
+import { SettingsPanel } from './SettingsPanel';
 const { ccclass } = _decorator;
 @ccclass('StoryView')
 export class StoryView extends Component {
   private manager!: StoryManager;
   private root!: Node;
   private status!: Node;
+  private canvas!: Node;
+  private settings?: SettingsPanel;
+  private lastEvent?: StoryEvent;
+  private viewNode = '';
+  private interactionView = { letterOpen: false, photoBack: false, transcriptOpen: false };
   private audio = new AudioPlayer();
   private speakers: Record<string, string> = {};
   private presentLabel = ''; private memoryLabel = '';
@@ -26,8 +34,8 @@ export class StoryView extends Component {
     if (this.manager) this.manager.retrySave();
   };
   async start(): Promise<void> {
-    const canvas = makeCanvas(this.node);
-    this.root = container(canvas, 'Story'); this.status = container(canvas, 'Status');
+    this.canvas = makeCanvas(this.node);
+    this.root = container(this.canvas, 'Story'); this.status = container(this.canvas, 'Status');
     text(this.root, '正在打开……', 0);
     this.manager = this.node.addComponent(StoryManager);
     this.manager.events.on('change', this.onChange); game.on(Game.EVENT_HIDE, this.onHide); game.on(Game.EVENT_SHOW, this.onShow);
@@ -41,6 +49,13 @@ export class StoryView extends Component {
     } catch { if (this.isValid) this.render({type:'error', message:'暂时无法打开。请重试。'}) }
   }
   private render(event: StoryEvent): void {
+    this.lastEvent = event;
+    const viewNode = event.type === 'node' ? event.node.id : '';
+    if (viewNode !== this.viewNode) {
+      this.viewNode = viewNode;
+      this.interactionView = { letterOpen: false, photoBack: false, transcriptOpen: false };
+    }
+    this.settings?.destroy(); this.settings = undefined;
     this.audio.dispose();
     const opacity = this.root.getComponent(UIOpacity);
     if (opacity) { Tween.stopAllByTarget(opacity); opacity.opacity = 255; }
@@ -54,7 +69,32 @@ export class StoryView extends Component {
     const life = this.manager.state.life;
     const paperReading = event.type === 'node' && event.node.type === 'passage'
       && this.manager.state.progress.chapterId === 'CH01' && !!LifeReadingPanel.background(life.time);
-    if (!paperReading) text(this.status, life.time.label + ' · ' + life.time.location, 800, 100, 30);
+    if (!paperReading) {
+      const time = text(this.status, life.time.label + ' · ' + life.time.location, 785, 100, 30);
+      time.node.setPosition(-100, 785); time.node.getComponent(UITransform)!.setContentSize(680, 100);
+    }
+    const back = paperButton(this.status, '返回书桌', 884, () => {
+      for (const scroll of this.root.getComponentsInChildren(ScrollView)) scroll.stopAutoScroll();
+      this.audio.pause();
+      if (!this.manager.retrySave()) {
+        if (this.lastEvent) this.render(this.lastEvent);
+        return;
+      }
+      director.loadScene('Main', error => {
+        if (error && this.isValid) this.render({ type: 'error', message: '暂时无法返回。请重试。' });
+      });
+    }, 264);
+    back.node.setPosition(-350, 884);
+    const settings = paperButton(this.status, '阅读设置', 884, () => {
+      if (this.settings) return;
+      for (const scroll of this.root.getComponentsInChildren(ScrollView)) scroll.stopAutoScroll();
+      this.audio.pause();
+      this.settings = new SettingsPanel(this.canvas, changed => {
+        this.settings = undefined;
+        if (changed && this.isValid && this.lastEvent) this.render(this.lastEvent);
+      }, () => this.audio.applyVolume());
+    }, 216);
+    settings.node.setPosition(388, 884);
     const memoryId = event.type === 'node' ? event.node.lifeContext?.memory?.id : undefined;
     const memory = life.time.timeline === 'memory'
       ? (memoryId ? life.memoryRecords[memoryId] : Object.values(life.memoryRecords)[0]) : undefined;
@@ -66,7 +106,7 @@ export class StoryView extends Component {
     }
     if (SaveManager.warning) {
       const warning = text(this.status, SaveManager.warning, -800, 70, 26);
-      if (paperReading) warning.color = new Color(53, 59, 57);
+      if (paperReading) warning.color = ReadingSettings.ink;
       button(this.status, '重试保存', -890, () => { this.manager.retrySave(); void this.manager.refresh() });
     }
     if (event.type === 'end') {
@@ -98,12 +138,20 @@ export class StoryView extends Component {
         new DialoguePanel().show(this.root, node, node.speaker ? this.speakers[node.speaker] ?? node.speaker : '', () => void this.manager.advance(node.id)); break;
       case 'choice':
         new ChoicePanel().show(this.root, node, id => void this.manager.choose(id, node.id)); break;
-      case 'photo': new PhotoViewer().show(this.root, node, () => void this.manager.complete(node.id)); break;
-      case 'letter': new LetterViewer().show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset, offset => this.manager.setReadingOffset(node.id, offset)); break;
-      case 'audioInteraction': this.audio.show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset, offset => this.manager.setReadingOffset(node.id, offset)); break;
+      case 'photo': new PhotoViewer().show(this.root, node, () => void this.manager.complete(node.id), this.interactionView.photoBack,
+        back => { this.interactionView.photoBack = back; }); break;
+      case 'letter': new LetterViewer().show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset,
+        offset => this.manager.setReadingOffset(node.id, offset), this.interactionView.letterOpen,
+        () => { this.interactionView.letterOpen = true; }); break;
+      case 'audioInteraction': this.audio.show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset,
+        offset => this.manager.setReadingOffset(node.id, offset), this.interactionView.transcriptOpen,
+        () => { this.interactionView.transcriptOpen = true; }); break;
       case 'investigation': this.investigation(node); break;
       case 'transition': {
         text(this.root, node.to ?? node.text, 80);
+        if (ReadingSettings.current.reducedMotion) {
+          button(this.root, '继续', -650, () => void this.manager.complete(node.id)); break;
+        }
         const opacity = this.root.getComponent(UIOpacity) ?? this.root.addComponent(UIOpacity);
         opacity.opacity = 0;
         tween(opacity).to(0.45, {opacity:255}).call(() => {
@@ -124,6 +172,7 @@ export class StoryView extends Component {
     done.interactable = node.requiredFlags?.every(f => this.manager.state.flags[f]) ?? true;
   }
   onDestroy(): void {
+    this.settings?.destroy();
     this.audio.dispose(); this.manager?.events.off('change', this.onChange);
     game.off(Game.EVENT_HIDE, this.onHide); game.off(Game.EVENT_SHOW, this.onShow);
   }

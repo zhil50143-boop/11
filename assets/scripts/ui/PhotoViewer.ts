@@ -1,10 +1,13 @@
 import { Node, Sprite, SpriteFrame, UITransform, resources, Color, Graphics } from 'cc';
 import { text, button, container } from './UIFactory';
 import type { InteractionStoryNode } from '../story/StoryNode';
+import { ReadingSettings } from './ReadingSettings';
+import { artSurface } from './ArtSurface';
 export class PhotoViewer {
-  show(root: Node, node: InteractionStoryNode, done: () => void): void {
+  show(root: Node, node: InteractionStoryNode, done: () => void, initiallyBack = false, flipped: (back: boolean) => void = () => {}): void {
     const caption = text(root, node.text, 150, 750);
-    let back = false;
+    let back = initiallyBack;
+    caption.node.active = !back;
     let loaded = false;
     const image = node.resource ? container(root, 'Photograph', 180) : undefined;
     if (image) {
@@ -20,16 +23,17 @@ export class PhotoViewer {
         image.active = !back;
       });
     }
-    const paper = container(root, 'PhotoBack', 180); paper.active = false;
+    const paper = container(root, 'PhotoBack', 180); paper.active = back;
     paper.getComponent(UITransform)!.setContentSize(900, 600);
-    const surface = paper.addComponent(Graphics); surface.fillColor = new Color(239,237,230); surface.rect(-450,-300,900,600); surface.fill();
+    const surface = paper.addComponent(Graphics); surface.fillColor = ReadingSettings.paper; surface.rect(-450,-300,900,600); surface.fill();
+    artSurface(paper, 'paper_v1', 0, 0, 900, 600, false, ReadingSettings.paperTint);
     // Keep the ink separate from the generated image, preserving exact story text.
-    const backCaption = text(paper, node.backText ?? '', 0, 500, 46); backCaption.color = new Color(44,45,43);
+    const backCaption = text(paper, node.backText ?? '', 0, 500, ReadingSettings.bodySize(46)); backCaption.color = ReadingSettings.ink;
     const finish = button(root, '放回去', -650, done);
     if (node.backText) {
-      finish.interactable = false;
+      finish.interactable = back;
       button(root, '翻面', -460, () => {
-        back = !back; paper.active = back; caption.node.active = !back;
+        back = !back; flipped(back); paper.active = back; caption.node.active = !back;
         if (image) image.active = !back && loaded;
         finish.interactable = true;
       });
