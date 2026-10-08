@@ -1,12 +1,12 @@
 {
   "version": "1.0.0-rc.3",
-  "sourceCommit": "a7060bdc554b65833f4d06b6dc2e8d6079376563",
+  "sourceCommit": "c5905eed976be054a8809d2c113e8cdc33868fd9",
   "chapters": 10,
   "episodes": 60,
   "nodeCount": 467,
   "endings": 6,
   "jsonTextEntries": 3300,
-  "sourceTextEntries": 94,
+  "sourceTextEntries": 118,
   "coverage": {
     "json": "all Chinese string values, no branch filtering",
     "source": "all Chinese TypeScript literals/templates outside vendor",
@@ -19824,50 +19824,57 @@
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 15,
+      "line": 20,
       "text": "余生未寄",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 18,
+      "line": 23,
       "text": "暂时无法打开，请重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 19,
+      "line": 24,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 31,
+      "line": 36,
       "text": "从头开始",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 33,
+      "line": 38,
       "text": "再次点按会从头读。已经读完的结局会保留。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 38,
+      "line": 43,
       "text": "存档暂时无法读取。请保留原记录后重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 40,
+      "line": 45,
       "text": "取消重新开始",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/core/Main.ts",
+      "line": 47,
+      "text": "阅读设置",
       "format": "literal",
       "scope": "game-source"
     },
@@ -20048,266 +20055,427 @@
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 20,
+      "line": 24,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 21,
+      "line": 25,
       "text": "播放",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 23,
+      "line": 27,
       "text": "录音暂时无法播放。可以查看完整录音文字。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 23,
+      "line": 27,
       "text": "录音暂时无法播放。可以读文字继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 28,
+      "line": 32,
       "text": "录音暂时无法播放。可以读文字继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 30,
+      "line": 34,
       "text": "暂停 / 继续播放",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 36,
+      "line": 45,
       "text": "查看录音文字",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 42,
+      "line": 49,
       "text": "\n正在读取录音……",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "line": 46,
+      "line": 53,
       "text": "录音暂时无法播放。可以读文字继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/ChoicePanel.ts",
-      "line": 6,
+      "line": 7,
       "text": "决定",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/DialoguePanel.ts",
-      "line": 7,
+      "line": 8,
       "text": "继续",
-      "format": "literal",
-      "scope": "game-source"
-    },
-    {
-      "file": "assets/scripts/ui/LetterViewer.ts",
-      "line": 7,
-      "text": "放回去",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/LetterViewer.ts",
       "line": 8,
+      "text": "放回去",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/LetterViewer.ts",
+      "line": 14,
       "text": "查看",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/LifeReadingPanel.ts",
-      "line": 10,
+      "line": 11,
       "text": "家中",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/LifeReadingPanel.ts",
-      "line": 11,
+      "line": 12,
       "text": "公交",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/LifeReadingPanel.ts",
-      "line": 58,
+      "line": 60,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/PassagePanel.ts",
-      "line": 40,
+      "line": 41,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "line": 15,
+      "line": 18,
       "text": "照片暂时没能打开。\n\n",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "line": 28,
+      "line": 32,
       "text": "放回去",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "line": 31,
+      "line": 35,
       "text": "翻面",
       "format": "literal",
       "scope": "game-source"
     },
     {
-      "file": "assets/scripts/ui/StoryView.ts",
+      "file": "assets/scripts/ui/SettingsPanel.ts",
       "line": 31,
+      "text": "阅读设置",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 32,
+      "text": "点按下面的项目可切换。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 34,
+      "text": "标准",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 34,
+      "text": "较大",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 34,
+      "text": "大字",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 35,
+      "text": "字号：",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 36,
+      "text": "纸面：",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 36,
+      "text": "日间",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 36,
+      "text": "夜间",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 37,
+      "text": "录音音量：",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 37,
+      "text": "静音",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 37,
+      "text": "较轻",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 37,
+      "text": "正常",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 39,
+      "text": "减少动态：",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 39,
+      "text": "开",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 39,
+      "text": "关",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 40,
+      "text": "雨停了。他把窗户开了一点，回去收桌上的碗。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 44,
+      "text": "阅读设置暂时不能保存，本页仍可使用。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "line": 47,
+      "text": "返回",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/StoryView.ts",
+      "line": 39,
       "text": "正在打开……",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 41,
+      "line": 49,
       "text": "暂时无法打开。请重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 50,
+      "line": 65,
       "text": "重试",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 63,
+      "line": 76,
+      "text": "返回书桌",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/StoryView.ts",
+      "line": 84,
+      "text": "暂时无法返回。请重试。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/StoryView.ts",
+      "line": 88,
+      "text": "阅读设置",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/StoryView.ts",
+      "line": 103,
       "text": "残缺",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 63,
+      "line": 103,
       "text": "出现矛盾",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 63,
+      "line": 103,
       "text": "重新理解",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 63,
+      "line": 103,
       "text": "完整",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 70,
+      "line": 110,
       "text": "重试保存",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 73,
+      "line": 113,
       "text": "当前内容读完了。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 74,
+      "line": 114,
       "text": "可以退出，稍后从这里继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 89,
+      "line": 129,
       "text": "这一页读完了。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 90,
+      "line": 130,
       "text": "再读一遍",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 91,
+      "line": 131,
       "text": "回到首页",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 110,
+      "line": 153,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 113,
+      "line": 158,
+      "text": "继续",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/StoryView.ts",
+      "line": 161,
       "text": "该片段暂时无法继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 118,
+      "line": 166,
       "text": "先看看照片和信封。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 120,
+      "line": 168,
       "text": "（看过）",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 123,
+      "line": 171,
       "text": "收好纸箱",
       "format": "literal",
       "scope": "game-source"
@@ -20753,7 +20921,7 @@
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "sha256": "1e326ef1ee7725c236f11d20016b8f123c3e180c8b6dc376aea46d7c561e9f91"
+      "sha256": "d1d803856076408ab6a575a77a01b3be0ad0ba6906ce23ee00d6b6e2a414a08c"
     },
     {
       "file": "assets/scripts/core/NarrativeMath.ts",
@@ -20774,6 +20942,10 @@
     {
       "file": "assets/scripts/save/LocalSave.ts",
       "sha256": "3260dd66e25abd3d18a4fb95ccd8fde1e0564b786f794f4f8bdccc7653671ec5"
+    },
+    {
+      "file": "assets/scripts/save/ReadingPreferences.ts",
+      "sha256": "12cdf919bb5d1196d3b03c1804f8f17d9ec6836d9749b6c2ad3b9abb70686dfe"
     },
     {
       "file": "assets/scripts/save/SaveManager.ts",
@@ -20801,43 +20973,51 @@
     },
     {
       "file": "assets/scripts/ui/ArtSurface.ts",
-      "sha256": "ae6a25448ebf4e2ff42ccdac69fbf45e9d34362899beb8e70cacbdefc15df2d1"
+      "sha256": "fba8d6f7419a90b60301a2cfc6b03a743131776d1500a8f5abf6eb71edce6dd2"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
-      "sha256": "14a4482bbccc629ff9d23d2dd72f33f94ad563e71560345375e1ede04e08bad9"
+      "sha256": "768c8c055d854987d49102f49d7f4387f649dc88f51026526d32542419c888b1"
     },
     {
       "file": "assets/scripts/ui/ChoicePanel.ts",
-      "sha256": "11fb9e06ebd65461bfd29ca03561928eb85639d27bbc501469c6e9f0aa8a1f95"
+      "sha256": "c35cf73ef16a47c4f658c1e9b982ba42d5fa8e712c79124d1be6aa2474c30a54"
     },
     {
       "file": "assets/scripts/ui/DialoguePanel.ts",
-      "sha256": "0a93019463d288f1b43d1981fb49e5fce01017b336af31477d86629e414e0415"
+      "sha256": "0ad2b37445482e004da4f6ae52948e8e6c9d98075cdfe0895339657668214ece"
     },
     {
       "file": "assets/scripts/ui/DocumentPanel.ts",
-      "sha256": "0c9f1a9af899c79c1e30926e548d7b996673cdf188f6a50b5d8745df56689bd7"
+      "sha256": "047098bba73998417365d38cfc45e77636a865470d49a61c72dca5234be80187"
     },
     {
       "file": "assets/scripts/ui/LetterViewer.ts",
-      "sha256": "1654fb98431ed485905a61135223cde0fde48762dc2cb0842ed96a2efa78a595"
+      "sha256": "36e08ef6da0d0575f25129ce6adec4155db1e444a616fc0eb83463eab74e3fa2"
     },
     {
       "file": "assets/scripts/ui/LifeReadingPanel.ts",
-      "sha256": "d84c07b4d8a9b5cfd7b21d8143c405bd9880e04993ada09f449b15da0b430d17"
+      "sha256": "0b775462adfe33c7603cc5608cf6e4b3e41e0fa079358f1e456c46d8caa6e033"
     },
     {
       "file": "assets/scripts/ui/PassagePanel.ts",
-      "sha256": "2047b4397ec627f57066342c70c79c63c7e68e67fca67c3d696950d28cedea04"
+      "sha256": "19dbbc1ad3d8fe4fda7ed0fa1104900111065622731e6403a41b838954c6f078"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "sha256": "09dc0e4497e143c0fb2bc91d106ee3d7199107e6bea96de662ac80a0283f4f13"
+      "sha256": "b8d7c7faaa385e598826e0689cbe3537571bb9cc8874756ff49774308a211532"
+    },
+    {
+      "file": "assets/scripts/ui/ReadingSettings.ts",
+      "sha256": "266ae30154d3183216b1e8f832606a6aaed2a0ee5ac9ac791709fc49fa5a432a"
+    },
+    {
+      "file": "assets/scripts/ui/SettingsPanel.ts",
+      "sha256": "c6ba8d6f8a8e3a43e3b773e64e29ac9832359f51f2cc1c2c430e57ebda3ab1f0"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "sha256": "da8df3bcb7b5dc1a44df7c793d35b0ea4ec6ecaa2e42345b75043c30c1ef87d2"
+      "sha256": "d92189a3f2d559dafa66d0909d1905a789587160907b4420a85d253ffd5daab3"
     },
     {
       "file": "assets/scripts/ui/UIFactory.ts",
@@ -20853,8 +21033,8 @@
     }
   ],
   "export": {
-    "bytes": 975605,
-    "sha256": "c2eb79ad49b7620c8a068c41b6286019eca8ee9c98c2aaa94ab07c9dd93aaef6"
+    "bytes": 977019,
+    "sha256": "74d68133a4c34853299caebd9307946dd8c996cd85e817b6ee61f4360c974906"
   },
   "limitations": [
     "Current candidate, regenerate on final commit",

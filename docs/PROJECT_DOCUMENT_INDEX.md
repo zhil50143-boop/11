@@ -9,6 +9,8 @@
 | EXTERNAL_REVIEW_V2.md | 用户提供的工程对照审核 | 以f976796为旧快照，截图缺口已补基线 |
 | OPTIMIZATION_ROADMAP_SOURCE.md | 用户DOCX抽取的路线图原文 | Phase0/1及预算建议；平台条款须另核 |
 | VISUAL_V2_SPEC.md | 三屏、决定变体、皮肤与模板规格 | 布局已确认；首页及第一章两处正文已接入 |
+| READING_SETTINGS.md | 字号/纸面/音量/减少动态、存储边界与返回书桌 | 已接入实际Main/Story；手机安全区待验 |
+| shots/v2-reading-settings/index.json / shots/v2-reading-navigation/index.json | 设置重排53图、通用入口12状态×5比例60图 | 实际桌面触摸与截图；不代替物理手机 |
 | ART_SOURCE_POLICY.md / ../art/visual-v2/manifest.json | 用户最新Image来源要求与每件提示/散列 | 新增7件；具体模型型号工具未回传 |
 | ASSET_REGISTER.csv / baseline/SCENE_PROP_LIST.md | 真实素材和待产条目、地点与物件清单 | 13个已入库文件、53地点标签，12共享空间初分 |
 | baseline/STORY_EXPERIENCE.md / PROSE_REVIEW.md | 60片段估算和文本线索 | 不代替真人时长；不自动改正文 |

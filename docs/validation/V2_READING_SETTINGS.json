@@ -1,0 +1,553 @@
+{
+  "date": "2026-10-08",
+  "sourceCommit": "c5905eed976be054a8809d2c113e8cdc33868fd9",
+  "version": "1.0.0-rc.3",
+  "build": "build/visual-v2-reading-return-final",
+  "finished": "2026-10-08 23:15:23",
+  "core": {
+    "typeChecks": 2,
+    "chapters": 10,
+    "episodes": 60,
+    "nodes": 467,
+    "tests": 57,
+    "initialRoutes": 508800,
+    "sourceCI": {
+      "id": 37800098968,
+      "conclusion": "success",
+      "url": "https://github.com/zhil50143-boop/11/actions/runs/37800098968"
+    }
+  },
+  "settings": {
+    "result": "PASS",
+    "method": "Genuine Main/first-chapter touch and scroll, independent preference failure injection; letter/audio/photo initial fixtures produced by domain actions, then real H5 touch, no running story writes or audio seeks. Five desktop touch viewports, not physical phones.",
+    "shots": [
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "settings-standard-paper",
+        "file": "360x640-settings-standard-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "settings-large-paper",
+        "file": "360x640-settings-large-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "settings-extra-paper",
+        "file": "360x640-settings-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "settings-extra-night",
+        "file": "360x640-settings-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "settings-standard-night",
+        "file": "360x640-settings-standard-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "settings-large-night",
+        "file": "360x640-settings-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "home-large-night",
+        "file": "360x640-home-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "home-extra-night",
+        "file": "360x640-home-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "home-extra-paper",
+        "file": "360x640-home-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 640
+        },
+        "state": "settings-write-failure",
+        "file": "360x640-settings-write-failure.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "settings-standard-paper",
+        "file": "390x780-settings-standard-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "settings-large-paper",
+        "file": "390x780-settings-large-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "settings-extra-paper",
+        "file": "390x780-settings-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "settings-extra-night",
+        "file": "390x780-settings-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "settings-standard-night",
+        "file": "390x780-settings-standard-night.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "settings-large-night",
+        "file": "390x780-settings-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "home-large-night",
+        "file": "390x780-home-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "home-extra-night",
+        "file": "390x780-home-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "home-extra-paper",
+        "file": "390x780-home-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "settings-write-failure",
+        "file": "390x780-settings-write-failure.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "settings-standard-paper",
+        "file": "375x812-settings-standard-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "settings-large-paper",
+        "file": "375x812-settings-large-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "settings-extra-paper",
+        "file": "375x812-settings-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "settings-extra-night",
+        "file": "375x812-settings-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "settings-standard-night",
+        "file": "375x812-settings-standard-night.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "settings-large-night",
+        "file": "375x812-settings-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "home-large-night",
+        "file": "375x812-home-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "home-extra-night",
+        "file": "375x812-home-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "home-extra-paper",
+        "file": "375x812-home-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "state": "settings-write-failure",
+        "file": "375x812-settings-write-failure.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "settings-standard-paper",
+        "file": "412x915-settings-standard-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "settings-large-paper",
+        "file": "412x915-settings-large-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "settings-extra-paper",
+        "file": "412x915-settings-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "settings-extra-night",
+        "file": "412x915-settings-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "settings-standard-night",
+        "file": "412x915-settings-standard-night.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "settings-large-night",
+        "file": "412x915-settings-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "home-large-night",
+        "file": "412x915-home-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "home-extra-night",
+        "file": "412x915-home-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "home-extra-paper",
+        "file": "412x915-home-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 412,
+          "height": 915
+        },
+        "state": "settings-write-failure",
+        "file": "412x915-settings-write-failure.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "settings-standard-paper",
+        "file": "360x840-settings-standard-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "settings-large-paper",
+        "file": "360x840-settings-large-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "settings-extra-paper",
+        "file": "360x840-settings-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "settings-extra-night",
+        "file": "360x840-settings-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "settings-standard-night",
+        "file": "360x840-settings-standard-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "settings-large-night",
+        "file": "360x840-settings-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "home-large-night",
+        "file": "360x840-home-large-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "home-extra-night",
+        "file": "360x840-home-extra-night.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "home-extra-paper",
+        "file": "360x840-home-extra-paper.png"
+      },
+      {
+        "viewport": {
+          "width": 360,
+          "height": 840
+        },
+        "state": "settings-write-failure",
+        "file": "360x840-settings-write-failure.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "letter-reflow-keeps-view",
+        "file": "390x780-letter-reflow-keeps-view.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "transcript-reflow-keeps-view",
+        "file": "390x780-transcript-reflow-keeps-view.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 780
+        },
+        "state": "photo-reflow-keeps-view",
+        "file": "390x780-photo-reflow-keeps-view.png"
+      }
+    ],
+    "preferenceNamespaceIndependent": true,
+    "restartPersisted": true,
+    "reflowPreservedFactsAndOffset": true,
+    "interactionViewsPreserved": true,
+    "completeSourcesNotAwardedEarly": true,
+    "documentTextCompleteAndTextureBounded": true,
+    "volumeAppliedToRealSource": true,
+    "errors": []
+  },
+  "navigation": {
+    "method": "Initial saved-state fixtures generated by existing domain runtime actions along reachable story routes; actual H5 rendering/touch actions, no running-state writes. Five viewport ratios, not five physical phones. Screenshots require human inspection; geometry checks do not prove aesthetics or safe-area handling in TapTap.",
+    "viewports": [
+      {
+        "width": 360,
+        "height": 640
+      },
+      {
+        "width": 390,
+        "height": 780
+      },
+      {
+        "width": 375,
+        "height": 812
+      },
+      {
+        "width": 412,
+        "height": 915
+      },
+      {
+        "width": 360,
+        "height": 840
+      }
+    ],
+    "count": 60
+  },
+  "returnHome": {
+    "result": "PASS",
+    "method": "Genuine first-chapter touch and scroll, return to Main, resume same node/offset/facts. Failed story storage keeps current page and original raw save; retry then return succeeds. No seeded facts or runtime state writes.",
+    "nodeId": "CH01_EP01_N001",
+    "readingOffset": 0.7473998627541659,
+    "factsPreserved": true,
+    "failureRetainedPageAndRaw": true,
+    "retryReturned": true,
+    "errors": []
+  },
+  "inAppPreview": {
+    "url": "http://127.0.0.1:57319/",
+    "tab": "8",
+    "method": "Same-origin server update and in-app reload/touch resume; visible screenshot before and after both show 饭桌上. Left 返回书桌 and right 阅读设置 visible. This observation is separate from regression screenshots.",
+    "originalProgressRetained": true
+  },
+  "whole": {
+    "touchSteps": 290,
+    "crossChapterRetries": [
+      "CH02",
+      "CH03",
+      "CH04",
+      "CH05",
+      "CH06",
+      "CH07",
+      "CH08",
+      "CH09",
+      "CH10"
+    ],
+    "readingOffsetRestored": 0.13426222905136279,
+    "resumedTypes": [
+      "passage",
+      "investigation",
+      "photo",
+      "letter",
+      "choice",
+      "phone",
+      "audioInteraction",
+      "transition",
+      "ending"
+    ],
+    "legacyBackupVerified": true,
+    "errors": [],
+    "failedRequests": []
+  },
+  "delivery": {
+    "bytes": 14353866,
+    "sha256": "df7f1962d663558da74062bed52f6a363500de07623cc0e887eaeac309b7aaf1",
+    "entries": 134,
+    "crc": "PASS",
+    "voicePreserved": true,
+    "voiceSha256": "3a4e650df1b990ac02e519d0f1835195a52dced5c363e05e535b11f92e2f78b1",
+    "platform": "Not uploaded. Original approved RC2 remains version275902."
+  },
+  "copy": {
+    "jsonEntries": 3300,
+    "sourceEntries": 118,
+    "gameSourceEntries": 99,
+    "designPreviewEntries": 19,
+    "bytes": 977019,
+    "sha256": "74d68133a4c34853299caebd9307946dd8c996cd85e817b6ee61f4360c974906"
+  },
+  "remaining": [
+    "Other chapter scenes and complete interaction templates",
+    "New-reader direct entry and acquired-object lookback",
+    "Human everyday-life reading and character age consistency",
+    "Physical TapTap phone, actual safe areas, background recovery and deployment compression",
+    "Final performance and approval"
+  ]
+}
