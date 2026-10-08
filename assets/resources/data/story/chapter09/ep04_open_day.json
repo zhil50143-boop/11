@@ -1,0 +1,372 @@
+{
+  "episodeId": "CH09_EP04",
+  "name": "她自己定的日程",
+  "startNode": "CH09_EP04_N001",
+  "nodes": [
+    {
+      "id": "CH09_EP04_N001",
+      "type": "passage",
+      "title": "九月十八日的下班路",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙下班去取一只修好的拉链，店里把袋子放错了层，老板翻了两遍才找出来。程安然发消息说女儿今晚在同学家吃饭，已经给家里发过位置。他回了收到，没再给女儿打一次相同的电话。"
+        },
+        {
+          "text": "学校开放日登记快截止了，他把通知读到下面一行：上午看资料，旧器材不外借，登记只是安排进校的人数。他把复查报告放好，没有拿这张通知当成别人也会到场的证明。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 九月十八日的下班路",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP04_JOB_CHECK"
+    },
+    {
+      "id": "CH09_EP04_JOB_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH05_TALKED_JOB_CONDITIONS",
+          "next": "CH09_EP04_JOB_SHARED"
+        },
+        {
+          "flag": "CH05_ASSUMED_RETURN_FOR_JOB",
+          "next": "CH09_EP04_JOB_REVISED"
+        }
+      ],
+      "fallback": "CH09_EP04_JOB_COMMON"
+    },
+    {
+      "id": "CH09_EP04_JOB_SHARED",
+      "type": "passage",
+      "title": "先问已经定下的事",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "下班前，同事说下周要去另一个组借调，交接的人还没到。周叙想起2013那张写过岗位条件的纸，没先说“你回来以后再补”，先问借调是哪几天、哪些事已经和负责人确认。"
+        },
+        {
+          "text": "同事说不是自己一时想换，家里的接送也核过了。周叙把自己能接的那一列圈出来，余下的交给负责人分，不让对方把已经说好的事情都重新排一次。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 先问已经定下的事",
+          "location": "南城",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH09_EP04_COMMUTE"
+    },
+    {
+      "id": "CH09_EP04_JOB_REVISED",
+      "type": "passage",
+      "title": "把顺口的安排停下来",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "同事说下周要去另一个组借调，周叙顺口说回来以后补一补。话说完，他想起当年自己说过工作以后就回来的打算，并不是两个人都确认过的安排，便问同事这一趟已经定了哪几天。"
+        },
+        {
+          "text": "对方说借调不会马上结束，家里的接送也安排过，不是回来补半天就够。周叙把刚才圈给对方的那一列擦掉，自己接能处理的部分，余下请负责人重新分。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 把顺口的安排停下来",
+          "location": "南城",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH09_EP04_COMMUTE"
+    },
+    {
+      "id": "CH09_EP04_JOB_COMMON",
+      "type": "passage",
+      "title": "借调的日期",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "同事说下周去另一个组，交接的人还没到。周叙问具体是哪几天，对方把通知给他看，说一部分已经和家里核过，不能再随便改到别的星期。"
+        },
+        {
+          "text": "周叙接了自己能够处理的那一列，剩下的请负责人重新分。他没有在表上替对方写一个返回日期，只把通知上确认过的时间标出来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 借调的日期",
+          "location": "南城",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH09_EP04_COMMUTE"
+    },
+    {
+      "id": "CH09_EP04_COMMUTE",
+      "type": "passage",
+      "title": "从公司出来",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "交接表发出以后，周叙才去取修好的拉链。店老板让他拉一遍，第一下有点紧，老板把布边按住，让他再试一次。第二下过去了，他没有只听见一句“修好了”就把袋子带走。"
+        },
+        {
+          "text": "路上母亲问父亲住得惯不惯，周叙说早上已经回去了，忘了昨天答应到站后给她发一声。他打给父亲，老人说和朋友坐着呢，到了自己也没想着发。两个人都晚了一点，周叙先把人在哪里说清楚，没有拿谁先忘记来抵掉自己没发那一条。"
+        },
+        {
+          "text": "程安然的消息问拉链有没有修，周叙把试过的袋子拍给她，说还要拿回家再放东西。妻子回了一句好，让他进门以后放在椅子上，今晚她自己重新装材料。"
+        },
+        {
+          "text": "他走到小区门口，看见女儿和同学在对一本参考书的名字，没把车灯按响让她赶紧过来。周满看到父亲，先和同学说完还书的时间，再自己往门里走。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 从公司出来",
+          "location": "南城",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH09_EP04_CONTACT"
+    },
+    {
+      "id": "CH09_EP04_CONTACT",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CONTACTED_XIA",
+          "next": "CH09_EP04_INVITE"
+        }
+      ],
+      "fallback": "CH09_EP04_NO_INVITE"
+    },
+    {
+      "id": "CH09_EP04_INVITE",
+      "type": "phone",
+      "title": "她已经要回南城",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "许知夏说周末原本就要回南城，母亲家里一只水龙头漏水，维修师傅约在周六；周日早上顺路给学校送旧社团的几页登记。她已经排好返程，不是看见周叙的消息才把几天都空出来。"
+        },
+        {
+          "text": "她问他会不会去看资料，如果去，可以在九月二十日上午十一点的学校门外聊十分钟。之后她要去母亲那边吃饭，下午赶车。她说有些旧事自己也记不清，不保证坐下来就能把当年每一句话都答出来。"
+        },
+        {
+          "text": "周叙看见她给的时间和地点，先去核自己的安排。许知夏又补了一句，不方便就各忙各的，学校的页可以按资料组的办法存，不用两个人一定见面。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 她已经要回南城",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "setFlags": [
+        "CH09_XIA_INVITED_MEETING"
+      ],
+      "next": "CH09_EP04_MEETING_CHOICE"
+    },
+    {
+      "id": "CH09_EP04_MEETING_CHOICE",
+      "type": "choice",
+      "prompt": "接受这次见面吗？",
+      "consequence": "她给的是一次短的公开见面，之后各自还有安排。",
+      "options": [
+        {
+          "id": "MEET",
+          "text": "核清自己的时间，接受邀请。",
+          "next": "CH09_EP04_ACCEPT",
+          "setFlags": [
+            "CH09_ACCEPTED_MEETING"
+          ]
+        },
+        {
+          "id": "DECLINE",
+          "text": "说明这次不见，旧资料由学校留存。",
+          "next": "CH09_EP04_DECLINE_REPLY",
+          "effects": {
+            "reality": 1
+          },
+          "setFlags": [
+            "CH09_CHOSE_NO_MEETING"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CH09_EP04_ACCEPT",
+      "type": "passage",
+      "title": "先核自己的安排",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙问过父亲周日什么时候回家，又和程安然核了买菜时间。妻子说自己的材料已经交了，上午另有一件事，不会跟着去学校；女儿也不会为他的见面取消图书馆。"
+        },
+        {
+          "text": "他把许知夏给的时间、学校门外的位置和十分钟的安排讲清楚，说到点会离开。程安然说她听见了，后面怎样相处还得把话接着说完。周叙给许知夏回了可以，到时在校门外等，不提前去母亲家里找。"
+        },
+        {
+          "text": "她回了好，让他别把旧器材也带去，资料组只收纸页。周叙把那只MP3放回抽屉，只准备了自己的登记页。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 先核自己的安排",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "setFlags": [
+        "PARTNER_AWARE_MEETING"
+      ],
+      "next": "CH09_EP04_CLOSE"
+    },
+    {
+      "id": "CH09_EP04_DECLINE_REPLY",
+      "type": "phone",
+      "title": "这次不见",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙回复说这次就不见了，旧页按学校办法留存。许知夏过了一会儿说好，资料组收到了会登记，有要核的姓名再按公开的办法问。"
+        },
+        {
+          "text": "她没有追问他是不是还在生气，也没有以没有见面撤回已经讲过的事实。周叙把这个答复讲给程安然，说两个人这次只聊到这里。妻子点头，又问父亲周日想吃什么，他去厨房看还剩哪些菜。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 这次不见",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "setFlags": [
+        "CH09_DECLINED_MEETING",
+        "CH09_CONTACT_CLOSED"
+      ],
+      "next": "CH09_EP04_CLOSE"
+    },
+    {
+      "id": "CH09_EP04_NO_INVITE",
+      "type": "passage",
+      "title": "没有别人的约定",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙把学校登记页填好，准备交的是自己的旧社团名单。许知夏没有给他见面时间，他也不知道她这个周末在哪里。他去填自己的登记人数，在随行那一栏写了零。"
+        },
+        {
+          "text": "他告诉程安然周日想去学校交一页纸，问买菜可不可以放到回来以后。妻子说她上午也有事，两个人把晚饭前的时间留出来。周满说自己只去图书馆，不去看他们的旧教室。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 没有别人的约定",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP04_CLOSE"
+    },
+    {
+      "id": "CH09_EP04_CLOSE",
+      "type": "passage",
+      "title": "把袋子减轻",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙把几张纸放进薄袋，拿掉一张和学校无关的工作单。里面少了一张，袋子看起来还是一样。他把父亲的车次另存到手机提醒，没有夹到旧纸里。"
+        },
+        {
+          "text": "周六晚上，女儿坐在门口试一双旧鞋，说走一会儿就磨脚。周叙看她把厚袜子换了，没坚持说自己穿着一直没问题。程安然从袋里找出创可贴，让女儿先带一片，别到路上再回家拿。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 把袋子减轻",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP04_END"
+    },
+    {
+      "id": "CH09_EP04_END",
+      "type": "episodeEnd",
+      "next": "CH09_EP05"
+    }
+  ],
+  "nodeAliases": {}
+}

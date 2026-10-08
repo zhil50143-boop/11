@@ -1,0 +1,291 @@
+{
+  "episodeId": "CH09_EP06",
+  "name": "见过以后，还有星期一",
+  "startNode": "CH09_EP06_N001",
+  "nodes": [
+    {
+      "id": "CH09_EP06_N001",
+      "type": "passage",
+      "title": "九月二十一日的早餐",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "星期一早晨，周满找不到前一天带的水杯，最后从鞋边把它拿起来。程安然说别把杯子和鞋放一起，女儿答应，把盖子重新洗过才装进包。周叙拿了一只饭盒，问今天要不要多装一点，妻子说自己的下午饭已经和同事订了。"
+        },
+        {
+          "text": "学校回执还在他的袋里，今天上班不用带。周叙把它放到柜子的透明夹页里，那里还有复查的日期单。他先把新的日期朝外，没有用一张旧页把这周要做的事盖住。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 九月二十一日的早餐",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP06_CONTACT"
+    },
+    {
+      "id": "CH09_EP06_CONTACT",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CONTACTED_XIA",
+          "next": "CH09_EP06_TIMING"
+        }
+      ],
+      "fallback": "CH09_EP06_UNSENT"
+    },
+    {
+      "id": "CH09_EP06_TIMING",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "TOLD_PARTNER_BEFORE_CONTACT",
+          "next": "CH09_EP06_BEFORE"
+        }
+      ],
+      "fallback": "CH09_EP06_AFTER"
+    },
+    {
+      "id": "CH09_EP06_BEFORE",
+      "type": "passage",
+      "title": "那一条，发之前讲过",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "吃完饭，程安然问这件事接下来准备怎样放，周叙说联系只是这几次旧资料的问答，不准备每天找个由头继续。“那这次就聊到这里？”妻子问。他说是。她把桌上的纸挪到一边，拿过自己的饭盒。"
+        },
+        {
+          "text": "妻子说如果后面又想问别的，先把想做的事讲出来。他答应了。妻子把要带的袋子提起来，问晚上能不能早一点去拿修好的东西，他看过自己的安排，说可以，放到门边那张便签上。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 那一条，发之前讲过",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP06_MEET"
+    },
+    {
+      "id": "CH09_EP06_AFTER",
+      "type": "passage",
+      "title": "不是后来说明就没有发生",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "程安然提起那天早上才知道消息已经发出，说自己还记得问了一遍“昨晚确认了什么”。周叙说是自己没有先讲，那天应该在发之前告诉她。妻子说：“我问的就是这个。”"
+        },
+        {
+          "text": "妻子说：“我不想每次都问半天才知道。”周叙点头，说以后先讲具体打算。他答应先说具体打算，不再只说“没什么”。程安然拿起袋子，又问晚上谁去拿修好的东西，两个人把这一程重新核好。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 不是后来说明就没有发生",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP06_MEET"
+    },
+    {
+      "id": "CH09_EP06_MEET",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "MET_XIA",
+          "next": "CH09_EP06_MET"
+        }
+      ],
+      "fallback": "CH09_EP06_CLOSED"
+    },
+    {
+      "id": "CH09_EP06_MET",
+      "type": "passage",
+      "title": "十分钟以后",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "许知夏晚上发来一句已经到站，水龙头的单子也给母亲放好了。周叙回了收到，没有把这句话接成下一次见面的安排。她又说母亲嫌新的龙头太紧，走以前教她拧过一次。周叙回了一句老人用顺手要一阵，她说是，明天再打电话问问。"
+        },
+        {
+          "text": "他在夹页旁写上许知夏给的日期，笔尖在一个旧折痕上划了一下，把纸重新垫平。程安然回来时，周叙正把饭盒盖子拆开洗，台灯照着她要用的那块桌面，没有一直开在旧纸上。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 十分钟以后",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "setFlags": [
+        "CH09_RESPECTED_MEETING_END"
+      ],
+      "next": "CH09_EP06_CLOSE"
+    },
+    {
+      "id": "CH09_EP06_CLOSED",
+      "type": "passage",
+      "title": "这次聊到这里",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙在学校回执旁写好退回纸页的日期，没有再发一条“还有个问题”。许知夏答复过的内容留在手机里，没说过的仍没有答案；没有见面也没有让那封旧信变成假的。"
+        },
+        {
+          "text": "程安然在桌边找便签，他把自己的夹页收起来，让出她正在用的位置。妻子说谢谢，又让他帮忙核一下材料袋上的名字。周叙看过两遍，说这张没写错。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 这次聊到这里",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP06_CLOSE"
+    },
+    {
+      "id": "CH09_EP06_UNSENT",
+      "type": "passage",
+      "title": "草稿仍然没发",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "草稿放了一周多，许知夏没有因为他去了一趟学校，就知道里面写过什么。周叙没有等一条自己从没发出的消息得到答复，也没把没有联系记成对方拒绝。"
+        },
+        {
+          "text": "程安然问回执有没有放好，他说在柜里，告诉她自己没有给那个旧同学发消息。妻子点头，把手里的便签贴回门口，晚上要取的东西仍按刚才说好的时间去拿。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 草稿仍然没发",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP06_CLOSE"
+    },
+    {
+      "id": "CH09_EP06_CLOSE",
+      "type": "passage",
+      "title": "下班前再看一次",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "下午同事让周叙再核一遍交接表，有一列日期沿用了上周。他改过以后发回去，没有用忙着想旧事解释漏掉的那一行。陈野发来配货的地址，这次发对了群，周叙没把它当成自己手机里的旧问题。"
+        },
+        {
+          "text": "下班前，周叙看见门口那张便签的照片，想起还要取东西，先问店里几点关门。对方说七点，他算了路上的时间，收好包就走。他给家里发了一句还要绕到修理店，程安然回说饭已经好了，路上慢一点。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 下班前再看一次",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP06_BAG"
+    },
+    {
+      "id": "CH09_EP06_BAG",
+      "type": "passage",
+      "title": "晚上装回去",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "修好的袋子放在椅子上，程安然把材料一页页装回去，发现隔层里还留着上个月的小票。她把需要报销的留下，不用的扔掉，叫周叙看一眼哪张是他垫的。周叙指错了一张，拿出自己的记录核过，才把真正那张递过去。"
+        },
+        {
+          "text": "女儿在房间里问胶带用完没有，妻子说还在抽屉上层。周满自己拿去，又送回来，说书皮贴好了，等还完这一本再借下一本。她的下周没有围着父亲的旧信安排。"
+        },
+        {
+          "text": "周叙洗完饭盒，找了一块干净布把盖子边上的水擦掉。程安然在桌前坐了一会儿，说今天只到这里，明早再核。他把台灯关掉，发现墙边的小灯还亮着，回去又按了一次。"
+        },
+        {
+          "text": "睡前母亲发来父亲和朋友坐在饭桌边的一张照片，说人已经到家了。周叙回了好，把消息给妻子看，明天要问医院的事另记在便签上，没有让妻子替自己一直盯着那一列日期。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 晚上装回去",
+          "location": "南城",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH09_EP06_END"
+    },
+    {
+      "id": "CH09_EP06_END",
+      "type": "episodeEnd",
+      "next": "CH10"
+    }
+  ],
+  "nodeAliases": {}
+}

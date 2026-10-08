@@ -29,3 +29,9 @@ Ajv 固定 8.20.0，许可保存在 third_party/ajv/LICENSE。已通过 GitHub A
 | [Impeccable](https://github.com/pbakaus/impeccable/tree/778c8a7b71ccd5bfe3ca6ac68c15d9d872d0f87d) | Apache-2.0，LICENSE与NOTICE.md随本机技能安装保留；平台参考派生部分MIT见NOTICE | 用户确认指该技能并允许独立图片评审；用critique按适用范围评审 | 已安装4.5.0；机械检测主要检查网页界面，不是PNG生成瑕疵检测器。图片审查不得把未扫描/零发现等同自动合格，不强套网页交互分数，不改变本项目叙事方向 |
 
 Code2Games核查日期2026-10-08，固定提交8d5ca9c95432e3969bef443a83f8cf224ea4f5a8。论文[arXiv2610.05033v1](https://arxiv.org/abs/2610.05033)介绍UE5引擎重构与执行反馈；论文许可不替代代码、模型、图片或数据集授权。公开仓库现有可执行交付与论文描述分开判断，本次未声称已跑通它。它的稳定ID和运行反馈思路与本项目已有节点ID、Schema、核心测试和真实H5回归相近，没有显著新增收益。
+
+## 离线声音制作工具（2026-10-08）
+
+Qwen官方[Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)代码与官方模型卡标注Apache-2.0；本地包qwen-tts固定0.1.1，许可证原文保留third_party/qwen-tts/LICENSE。首个0.6B-CustomVoice（85e237c12c027371202489a0ec509ded67b5e4b5）候选被用户否定，不采用。新[1.7B-VoiceDesign](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign/tree/5ecdb67327fd37bb2e042aab12ff7391903235d3)描述虚构角色与现场说话语气，再用[0.6B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/tree/5d83992436eae1d760afd27aff78a71d676296fc)沿用自己生成的两个人物声线；没有现实人物参考。只作为本机离线素材生产，模型权重/推理依赖不加入H5运行时。原文脚本、指纹、试听、转写与主观听感状态分开留证。
+
+独立ASR用SYSTRAN [faster-whisper](https://github.com/SYSTRAN/faster-whisper)1.2.1与官方small模型536b0662742c02347bc0e980a01041f333bce120，MIT，仅检查内容，不证明声音自然。PyAV19路径解码metadata_errors不兼容，改用soundfile读取真实波形与16k数组输入，没有改对白来迎合转写结果。所有模型的大文件均实际核SHA256，制作目录忽略，不复制示例内容。

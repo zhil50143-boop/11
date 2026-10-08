@@ -1,0 +1,291 @@
+{
+  "episodeId": "CH09_EP03",
+  "name": "过了一阵才回",
+  "startNode": "CH09_EP03_N001",
+  "nodes": [
+    {
+      "id": "CH09_EP03_N001",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CONTACTED_XIA",
+          "next": "CH09_EP03_TIMING"
+        }
+      ],
+      "fallback": "CH09_EP03_LOCAL"
+    },
+    {
+      "id": "CH09_EP03_TIMING",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "TOLD_PARTNER_BEFORE_CONTACT",
+          "next": "CH09_EP03_EARLY"
+        }
+      ],
+      "fallback": "CH09_EP03_LATER"
+    },
+    {
+      "id": "CH09_EP03_EARLY",
+      "type": "passage",
+      "title": "星期六的早晨",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "程安然问消息有没有回，周叙把屏幕给她看，说还没有。她让他先把床铺完，父亲来的时候别又在床上堆旧纸。他把纸收到柜子边，给家里回了接车的位置。"
+        },
+        {
+          "text": "妻子后来出门送材料，先去找自己的钥匙，没有问他每隔多久看一次手机。周叙中午做饭，把女儿的那一份单独留出来，等了半小时，才收到她要晚一点回来的消息。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 星期六的早晨",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP03_REPLY"
+    },
+    {
+      "id": "CH09_EP03_LATER",
+      "type": "passage",
+      "title": "补上昨晚没说的",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "九月十二日早上，程安然问他昨晚确认了什么，周叙说消息已经发给许知夏。他把发出的原文给妻子看。“昨晚发的？怎么没说一声？”妻子问。他说：“是，我没先讲。”"
+        },
+        {
+          "text": "程安然说她不想每次都从结果倒着问过程。她还要出门送材料，这一会儿谈不完，晚上回来再说。周叙答应，把妻子要带的袋子从旧物下面找出来，没有用多做一顿饭替代那段没讲明白的话。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 补上昨晚没说的",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "setFlags": [
+        "CH09_TOLD_PARTNER_LATER",
+        "CH09_EXPLAINED_NAME_NOW"
+      ],
+      "next": "CH09_EP03_REPLY"
+    },
+    {
+      "id": "CH09_EP03_REPLY",
+      "type": "phone",
+      "title": "下午四点多",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "许知夏下午四点多回了消息，先说上午在核一组旧版面，手机不在手边。她问学校是不是按社团袋签退的，自己也收到过登记通知，只是没有收到同样的袋子。"
+        },
+        {
+          "text": "周叙把附页拍给她，没有把妻子的材料和女儿的书拍进去。她回了一个看清了，说那只MP3以前的线接触不好，试录时拿在手里会碰到外壳。她说那阵子老师让她先试两次，免得真采访时忘了按录音。"
+        },
+        {
+          "text": "她现在仍在北方做编辑，近来帮文化版整理地方旧刊。她说年轻时觉得一段采访写成稿就完了，现在有时候光核人名就要来回问三次。周叙问她是不是一直做这一个岗位，她说换过部门，并不是从2013到今天每天都一样。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 下午四点多",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "重新联系，各自生活"
+        }
+      },
+      "setFlags": [
+        "CH09_XIA_REPLIED"
+      ],
+      "next": "CH09_EP03_OWN_LIFE"
+    },
+    {
+      "id": "CH09_EP03_OWN_LIFE",
+      "type": "passage",
+      "title": "她那边的星期六",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "许知夏说这周末还要帮儿子看去学校的行李单。他今年刚上大学，总觉得少一根线，到地方才发现带了两根。丈夫去买转接头，她正在等家里发照片，先不能一直拿手机聊。"
+        },
+        {
+          "text": "周叙说女儿已经上高中，许知夏问她叫什么，他回答周满。她说名字好记，又问以前那位老师还能不能参加学校的开放日。他说老师会去，只坐上午那一会儿。她回了一个好，又说儿子在叫她，晚点再看手机。"
+        },
+        {
+          "text": "晚上程安然回家，周叙把收到的答复讲给她听。妻子问这次有没有另外约什么，他说还没有，只聊了退回的旧资料。程安然把袋子放下，自己去洗脸，周叙留在厨房把锅里那一层饭翻松。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 她那边的星期六",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP03_CLOSE"
+    },
+    {
+      "id": "CH09_EP03_LOCAL",
+      "type": "passage",
+      "title": "自己的旧登记",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "没有发消息，周叙也没有收到许知夏关于旧袋的答复。他看学校公开的资料目录，里面只列年代和社团，没有同学的私人地址。照片背后的字仍是自己手上的那几行。"
+        },
+        {
+          "text": "陈野在群里问谁找到老师的合照，一个同学发出压缩过的小图，角落的人辨不清。周叙说自己只能看清前排，没有因为想起谁的名字，就把角落也认成那个人。"
+        },
+        {
+          "text": "下午妻子回家，问洗洁精有没有买。他从袋子里拿出来，程安然说这瓶正好，又把买多的鸡蛋放到冰箱里面一点。周满带回一本借来的参考书，在封面里贴了写着归还日期的纸。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 自己的旧登记",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP03_CLOSE"
+    },
+    {
+      "id": "CH09_EP03_CLOSE",
+      "type": "passage",
+      "title": "星期一的接车",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周一周叙先把工作里的编号交给同事，再去车站接父亲。老人没按他说的出口走，站在另一个门边等，电话里都说自己这里有一棵树。周叙走过去，才发现两个出口都有树。"
+        },
+        {
+          "text": "复查结束回家，程安然把菜重新热过，父亲说不用弄这么多，又夹了一筷子。周满问报告放在哪里，周叙把透明袋拿给她看，说明只是想让她知道位置，不用她替大人背住每个数字。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 星期一的接车",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP03_HOSPITAL"
+    },
+    {
+      "id": "CH09_EP03_HOSPITAL",
+      "type": "passage",
+      "title": "报告还要自己留",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "医院窗口让父亲核出生日期，老人报得很快，周叙怕工作人员没听清，准备再说一遍，父亲摆了摆手，让对方把屏幕转过来。老人自己看过，指出其中一位录错了。周叙站在旁边把透明袋拿开，没有再抢着把整行念完。"
+        },
+        {
+          "text": "医生讲的是这一回检查和下一次什么时候再看，父亲问了药盒上两个名字是不是同一种。周叙在手机里记日期，听见父亲又问能不能照以前的办法一起吃，才抬头核那两个字。医生让他们带着盒子再问开药的门诊，不能只凭袋子颜色合在一起。"
+        },
+        {
+          "text": "出门以后，父亲说自己怕名字记反，想拍一张。周叙把袋口扶好，等他拍清楚。老人让他把照片也发给程安然，说上次是她帮忙找的盒子。他发了，但没把“她知道”当成自己从此不用再核。"
+        },
+        {
+          "text": "回家的车上父亲坐靠窗的位置，看见一家老店换了招牌，说以前卖早点的人好像退休了。周叙问他是不是还想去看看，父亲说今天不去，晚饭已经等着，有空再问朋友。老人把透明袋压在腿上，车到站时先把它拿好才站起来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 报告还要自己留",
+          "location": "南城",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH09_EP03_HOME"
+    },
+    {
+      "id": "CH09_EP03_HOME",
+      "type": "passage",
+      "title": "把电话放近一点",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "父亲晚上住在家里，觉得枕头太高，程安然去拿薄一点的。老人说不用麻烦，话说完又把枕头往外抽了一半。她把薄的放过去，他试了试，才说这个好。周叙拿走厚的，没有在房门口再问他是不是一定没问题。"
+        },
+        {
+          "text": "周满帮祖父把手机充上电，发现声音开得很小，老人说车上怕吵人，忘了调回来。女儿问他要调到哪一档，老人让她放一声试试，试完说这样听得见。"
+        },
+        {
+          "text": "睡前父亲问女儿学校现在还有没有广播，周满说有，课间有时能听见，操场远一点就听不清。老人说他们那时候只有一个喇叭，女儿笑了一下，说那体育课也未必听清。周叙从客厅经过，看见父亲已经把手机放到枕边，便没有再进去替他换位置。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 把电话放近一点",
+          "location": "南城",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH09_EP03_END"
+    },
+    {
+      "id": "CH09_EP03_END",
+      "type": "episodeEnd",
+      "next": "CH09_EP04"
+    }
+  ],
+  "nodeAliases": {}
+}

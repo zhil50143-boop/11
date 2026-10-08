@@ -1,0 +1,237 @@
+{
+  "episodeId": "CH09_EP01",
+  "name": "星期五的草稿",
+  "startNode": "CH09_EP01_N001",
+  "nodes": [
+    {
+      "id": "CH09_EP01_N001",
+      "type": "passage",
+      "title": "九月十一日，星期五",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周满把同学的书带回来了，用纸包着，还没拆。她说下周会还，今天先做完另外一科。程安然把饭分到三个碗里，自己那一碗没有放葱，周叙端到桌边时才发现放错了位置，换了回来。"
+        },
+        {
+          "text": "吃饭时女儿问星期天能不能晚一点回家，几个同学约着去图书馆。程安然问关门时间，让她自己查，周叙本来想说自己去接，又看见女儿已经在和同学核公交的末班。她说定下来再发给家里，没把手机递给父亲代答。"
+        },
+        {
+          "text": "周叙那条草稿还在。昨晚没发，今天打开也没有多出别人的回答。他把“你还记得吗”删了，觉得只这几个字，别人不知道他到底想问什么，又容易以为所有旧事都该从头答一遍。"
+        },
+        {
+          "text": "同学群里有人转了学校的通知，九月二十日有半天校友资料开放，登记的人可以看旧社团名册。陈野说那天要送货，赶不上，不要算他的名字。周叙把日期记下，没有托他去问许知夏会不会来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 九月十一日，星期五",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP01_CARE"
+    },
+    {
+      "id": "CH09_EP01_CARE",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH07_PLANNED_CARE_TOGETHER",
+          "next": "CH09_EP01_SHARED"
+        }
+      ],
+      "fallback": "CH09_EP01_COMMON"
+    },
+    {
+      "id": "CH09_EP01_SHARED",
+      "type": "passage",
+      "title": "周末还要核一次",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "程安然问父亲复查要不要提前一晚住过来。周叙翻开两个人以前分过的班次，发现这周和那时候已经不同，不能照着旧安排答应。他给家里打电话，父亲说自己先坐车过来，时间还要等医院确认。"
+        },
+        {
+          "text": "妻子说那就先留一床被子，接车的事明天再定。周叙把被套找出来，女儿在旁边拍掉枕套上的线头，把没用的那一只放回柜顶。女儿抖了一下枕套，线头粘在袖子上，又让母亲帮她拿掉。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 周末还要核一次",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP01_DRAFT"
+    },
+    {
+      "id": "CH09_EP01_COMMON",
+      "type": "passage",
+      "title": "没有直接填到她那边",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "复查时间还没有最后定，周叙把家里的消息给程安然看。她说自己的材料周一交，周末能帮哪一程，要等父亲车次出来。周叙没把“在家”当成她整天有空，先把医院电话存下来。"
+        },
+        {
+          "text": "女儿听见要留床铺，自己把书从那张床上挪开。程安然去找被套时，周叙接过一只枕头，两个人在柜前让了一下。程安然说那一只是女儿的，下面的给老人用。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 没有直接填到她那边",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP01_DRAFT"
+    },
+    {
+      "id": "CH09_EP01_DRAFT",
+      "type": "passage",
+      "title": "把问题写具体",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙回到手机前，先写学校退回了旧袋子，里面有高中那封信和一段试录。后面他没有写让她解释2013，也没说自己在等她多久，只问她是否愿意聊几句旧学校的事。"
+        },
+        {
+          "text": "写完以后，他又读一遍。她这些年住在哪里、最近忙什么，他并不知道。那条消息如果发出去，就会到别人今天正在用的手机上，不再是自己桌上的一张纸。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 把问题写具体",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP01_CONTACT_CHOICE"
+    },
+    {
+      "id": "CH09_EP01_CONTACT_CHOICE",
+      "type": "choice",
+      "prompt": "这条消息怎么办？",
+      "consequence": "发出消息会占用她现在的时间；不发，旧纸仍然可以留在自己这里。",
+      "options": [
+        {
+          "id": "SEND",
+          "text": "先问她是否愿意聊几句。",
+          "next": "CH09_EP01_INTENT",
+          "setFlags": [
+            "CH09_INTENDS_CONTACT"
+          ]
+        },
+        {
+          "id": "NONE",
+          "text": "暂时不联系，把草稿留下。",
+          "next": "CH09_EP01_UNSENT",
+          "setFlags": [
+            "CH09_LEFT_UNSENT"
+          ],
+          "effects": {
+            "reality": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH09_EP01_INTENT",
+      "type": "passage",
+      "title": "还没有送达",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "他把草稿留在输入框里，没有立即碰发送。客厅里程安然在对两页材料的顺序，周满拿走了桌角的胶带。他把手机拿出去，站在沙发边，先等妻子把这一页核完。"
+        },
+        {
+          "text": "程安然合上一页材料，抬头问：“怎么了？”周叙挪过来一点，说有件事想和她讲。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 还没有送达",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP01_END"
+    },
+    {
+      "id": "CH09_EP01_UNSENT",
+      "type": "passage",
+      "title": "先留在这里",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙把输入框关了，草稿没有清空。他去厨房洗碗，发现洗洁精已经很少，明天买东西时要带一瓶。程安然让他顺便看冰箱里的鸡蛋，他开门数过，说还有四个。"
+        },
+        {
+          "text": "女儿问有没有小一点的袋子装书，周叙从旧箱子底下抽出一个，抖掉里面的灰。他没收到许知夏的消息，也没有让谁把这条草稿转给她。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 先留在这里",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP01_END"
+    },
+    {
+      "id": "CH09_EP01_END",
+      "type": "episodeEnd",
+      "next": "CH09_EP02"
+    }
+  ],
+  "nodeAliases": {}
+}

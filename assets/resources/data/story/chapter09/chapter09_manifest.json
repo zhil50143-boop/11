@@ -1,0 +1,43 @@
+{
+  "chapterId": "CH09",
+  "title": "如果现在去见她",
+  "episodes": [
+    {
+      "id": "CH09_EP01",
+      "name": "星期五的草稿",
+      "resource": "data/story/chapter09/ep01_friday",
+      "startNode": "CH09_EP01_N001"
+    },
+    {
+      "id": "CH09_EP02",
+      "name": "说到现在",
+      "resource": "data/story/chapter09/ep02_before_send",
+      "startNode": "CH09_EP02_N001"
+    },
+    {
+      "id": "CH09_EP03",
+      "name": "过了一阵才回",
+      "resource": "data/story/chapter09/ep03_reply",
+      "startNode": "CH09_EP03_N001"
+    },
+    {
+      "id": "CH09_EP04",
+      "name": "她自己定的日程",
+      "resource": "data/story/chapter09/ep04_open_day",
+      "startNode": "CH09_EP04_N001"
+    },
+    {
+      "id": "CH09_EP05",
+      "name": "学校门外",
+      "resource": "data/story/chapter09/ep05_school_gate",
+      "startNode": "CH09_EP05_N001"
+    },
+    {
+      "id": "CH09_EP06",
+      "name": "见过以后，还有星期一",
+      "resource": "data/story/chapter09/ep06_monday",
+      "startNode": "CH09_EP06_N001"
+    }
+  ],
+  "nextChapter": "CH10"
+}

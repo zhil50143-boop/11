@@ -7,3 +7,5 @@ graduation_2009.png：2026-10-08通过内置image_gen生成的虚构人物2009�
 用户已要求用Taste-Skill、Impeccable做审美评定。两名独立评审和文件指纹见docs/ART_REVIEW.md。采用普通快照构图，保留不齐整的表情和左侧包；旧照片右下角折损的 P3 建议留作后续美术复核，不添加额外噪点、磨皮或装饰。其他照片、正式声音和整游戏美术验收仍待完成。
 
 family_2035.png 与 street_2010.png：2026-10-08内置image_gen原创候选，各1536×1024 RGB；同名prompt保留。两名独立评审与文件/本地浏览器核验见ART_REVIEW_FAMILY_STREET.md。第八章包中尚未引用，下一批接入后再做实际Cocos验收；不是正式游戏截图。
+
+第九章批次已将family_2035与street_2010复制到resources/images并导入SpriteFrame。最终本批真实H5已显示正面与背文，540×960截图见chapter09-final-check；此处原图仍不是游戏截图。

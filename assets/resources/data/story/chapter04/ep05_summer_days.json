@@ -187,7 +187,7 @@
     {
       "id": "CH04_EP05_PHOTO",
       "type": "photo",
-      "text": "文字占位：南城旧街，一块塑料棚压着旧门头，照片边缘有电线和半辆停着的自行车。正式照片待制作。",
+      "text": "南城旧街。塑料棚遮着旧门头，照片边缘有电线和半辆自行车。",
       "backText": "2010.8，回去拿风扇那天。\n店名再问一次，别照我本子上第一次写的。——许知夏",
       "setFlags": [
         "CH04_SEEN_STREET_PHOTO"
@@ -214,7 +214,8 @@
           ]
         }
       },
-      "next": "CH04_EP05_NIGHT"
+      "next": "CH04_EP05_NIGHT",
+      "resource": "images/street_2010/spriteFrame"
     },
     {
       "id": "CH04_EP05_NIGHT",

@@ -32,7 +32,11 @@
     {
       "id": "CH08",
       "resource": "data/story/chapter08/chapter08_manifest"
+    },
+    {
+      "id": "CH09",
+      "resource": "data/story/chapter09/chapter09_manifest"
     }
   ],
-  "pendingChapter": "CH09"
+  "pendingChapter": "CH10"
 }

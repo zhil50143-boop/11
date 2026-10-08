@@ -1,0 +1,288 @@
+{
+  "episodeId": "CH09_EP05",
+  "name": "学校门外",
+  "startNode": "CH09_EP05_N001",
+  "nodes": [
+    {
+      "id": "CH09_EP05_N001",
+      "type": "passage",
+      "title": "九月二十日，星期日",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "资料组把桌子摆在旧教学楼的一层，有几只纸箱还没开。周叙在登记本上签了名字，把自己那页名单交过去，工作人员问拍摄年份，他说能确认的在背面，其他几张不敢认。"
+        },
+        {
+          "text": "旧走廊重新铺过地，饮水机移到了另一边。周叙去找以前的南门，发现外面多了一道栏杆，只能绕到现在的出口。周满发来消息，说图书馆那边有座位，不用来接。他回了好，才把登记袋收好。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 九月二十日，星期日",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP05_TEACHER"
+    },
+    {
+      "id": "CH09_EP05_TEACHER",
+      "type": "passage",
+      "title": "登记桌的另一边",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "以前教过他们的老师坐在登记桌旁，正在给几张照片分年份。周叙叫了一声，老师抬头认了他一会儿，先说你比以前壮了，再去拿自己的眼镜。周叙说头发也少了，老师笑起来，说这个不用我来提醒。"
+        },
+        {
+          "text": "桌上有一张运动会的集体照，周叙指着后排问是不是陈野。老师说这张自己也没认齐，只在右边确定了两个人，别急着把名单写死。旁边一个校友听见，拿来自己的那一版，两张的日期不一样，原来站在后排的也不是同一拨人。"
+        },
+        {
+          "text": "老师问陈野今天怎么没来，周叙说要送货。老师让他有空回一句，自己还记得陈野总在午休以后才交本子。周叙拿出手机先记了一句，老师又说那是很多年前的事，别让人看见就以为还在催他交作业。"
+        },
+        {
+          "text": "工作人员端来水，老师把杯子移到桌子下面的小凳上，怕碰湿照片。周叙接过空纸袋，把自己带的页放平，等前面的人签完才走到登记本边上。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 登记桌的另一边",
+          "location": "南城",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH09_EP05_MEET_CHECK"
+    },
+    {
+      "id": "CH09_EP05_MEET_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH09_ACCEPTED_MEETING",
+          "next": "CH09_EP05_MET"
+        }
+      ],
+      "fallback": "CH09_EP05_ALONE"
+    },
+    {
+      "id": "CH09_EP05_MET",
+      "type": "passage",
+      "title": "十一点，校门外",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "许知夏先从资料组出来，肩上背着一只普通的布袋，低头把取件单折小。看见周叙，她先叫了名字，又说等一下，袋里有一页纸没放平。周叙让到门边，没有走过去接她的包。"
+        },
+        {
+          "text": "她问他有没有把那段录音打开，周叙说自己看的部分。许知夏说她记得碰壳的声音，不记得每一个字，拿到文件才能再核。“我那时候写字很挤。”她说，“里面那一页是不是还折着？”周叙点了一下头，说纸角翘了。"
+        },
+        {
+          "text": "她提起2013时，说刚入职的班次常变，自己也有没提前说清的地方，但当时没有答应辞掉那份岗位回南城。周叙说自己的便条也写着票没定，并不是一直买好等她。"
+        },
+        {
+          "text": "门里有人搬桌子，许知夏往旁边挪了一点。她说现在丈夫也做编辑，两人作息有时不一样，儿子刚离家读大学，最近电话里讲得最多的是快递放在哪里。周叙笑了一下，说女儿借本书都比自己记得清楚。"
+        },
+        {
+          "text": "他看了一眼时间，没有问她能不能把午饭推掉。许知夏说母亲等着，返程前还要把水龙头的新保修单给她放好。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 十一点，校门外",
+          "location": "学校门外",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "见过，各自生活"
+        }
+      },
+      "setFlags": [
+        "MET_XIA"
+      ],
+      "next": "CH09_EP05_OLD_PAGE"
+    },
+    {
+      "id": "CH09_EP05_OLD_PAGE",
+      "type": "passage",
+      "title": "她带来的那一页",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "许知夏从袋里拿出一张旧练习本的扫描页，说资料组收的是社团名单，这一页不是名单，她自己多印了一份。边栏写着九月七日，下面有“17路”和一个人的名字。"
+        },
+        {
+          "text": "她说自己当时怕忘了新同学的名字，写在本子上，后来一直夹着。周叙说那张练习纸湿了，揭下来少了个角。她记得窗边有水，谁先说没带伞却不记得了。"
+        },
+        {
+          "text": "“前一天在教室，是不是也见过？”周叙问。许知夏皱了一下眉，说想不起来了，只记得那张纸粘住了。“这页你拿着吧，我家里还有原本。”"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 她带来的那一页",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP05_FIRST_PAGE"
+    },
+    {
+      "id": "CH09_EP05_FIRST_PAGE",
+      "type": "letter",
+      "actionText": "看练习本的边栏",
+      "text": "练习本扫描页 · 许知夏留存\n\n2007.9.7\n17路，下雨。\n周叙，叙述的叙。纸揭的时候破了一角。\n\n2037.9.20复印页旁注：原本边栏由许知夏保留，此页与周叙的公交座位回忆对照。原页只写了当天的公交记录。前一天教室里是否谈过话，双方记不清；旧车票尾数仍辨不清。",
+      "requireReadToEnd": true,
+      "setFlags": [
+        "CH09_CHECKED_FIRST_PAGE"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 看练习本的边栏",
+          "location": "学校门外",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP05_CHECKED"
+    },
+    {
+      "id": "CH09_EP05_CHECKED",
+      "type": "passage",
+      "title": "能对上的名字和雨",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙把页放回薄袋，指了一下自己的名字，说她把“叙”写得很像“余”。许知夏凑过来看，说那时写快了，是有点像。“你不是还让我再写一次吗？”她问。周叙说公交上那一次倒是记得。"
+        },
+        {
+          "text": "许知夏说时间差不多了，母亲家就在下一个路口往里。周叙在门边说再见。她把布袋换到另一边肩上，走到路口停下来等车过去。"
+        },
+        {
+          "text": "她走到路口先看车，周叙转身去拿资料组给的回执。工作人员问他需不需要把登记袋封起来，他说好，伸手压住翘起的封口。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 能对上的名字和雨",
+          "location": "学校门外",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        },
+        "memory": {
+          "id": "FIRST_MEETING",
+          "title": "初次相识：公交段核对",
+          "status": "complete",
+          "evidence": [
+            "许知夏留存2007.9.7练习本扫描边栏",
+            "双方核对公交雨天与练习纸破角；前一日教室细节未知"
+          ]
+        }
+      },
+      "next": "CH09_EP05_CLOSE"
+    },
+    {
+      "id": "CH09_EP05_ALONE",
+      "type": "passage",
+      "title": "自己的回执",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙交完纸，工作人员让他核回执上的电话号码。他看见少了一位，拿笔补上，重新签名。今天他没有和许知夏约见面，也没有从资料组索要她的地址或电话。"
+        },
+        {
+          "text": "走出学校，店里的风扇仍在转，门头已经换了字。他在玻璃门前停了一下，里面卖的已经换成面包，旧照片里那台风扇也不在了。程安然发来一张菜摊的照片，问晚上买哪一种，他看过，说小一点的够了。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 自己的回执",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP05_CLOSE"
+    },
+    {
+      "id": "CH09_EP05_CLOSE",
+      "type": "passage",
+      "title": "回家以前",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "公交站有人问是不是去医院那一边，周叙指了一下路线牌，发现自己刚才也看错了方向，先把说错的那一站改回来。他上车以后把薄袋放到腿上，没有占着旁边的位置。"
+        },
+        {
+          "text": "女儿的消息说晚饭能回来，和同学已经分开走了。周叙看完给家里发了一句自己也在路上，买菜的事按昨天说的办。程安然回了好，后面又加了一句，鸡蛋不用买了。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 回家以前",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH09_EP05_END"
+    },
+    {
+      "id": "CH09_EP05_END",
+      "type": "episodeEnd",
+      "next": "CH09_EP06"
+    }
+  ],
+  "nodeAliases": {}
+}

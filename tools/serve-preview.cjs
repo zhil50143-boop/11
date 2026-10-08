@@ -1,11 +1,11 @@
 const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
-const root = path.resolve(__dirname, '../build/web-mobile');
+const root = process.argv[3] ? path.resolve(process.argv[3]) : path.resolve(__dirname, '../build/web-mobile');
 const port = Number(process.argv[2] || 5088);
 if (!Number.isInteger(port) || port < 0 || port > 65535) throw new Error('Invalid preview port');
 if (!fs.existsSync(path.join(root, 'index.html'))) throw new Error('Build Web Mobile first');
-const types = {'.html':'text/html; charset=utf-8','.js':'application/javascript','.json':'application/json','.css':'text/css','.png':'image/png','.svg':'image/svg+xml','.wasm':'application/wasm','.mp3':'audio/mpeg','.woff':'font/woff'};
+const types = {'.html':'text/html; charset=utf-8','.js':'application/javascript','.json':'application/json','.css':'text/css','.png':'image/png','.svg':'image/svg+xml','.wasm':'application/wasm','.mp3':'audio/mpeg','.wav':'audio/wav','.woff':'font/woff'};
 const server = http.createServer((req, res) => {
   let file;
   try {
