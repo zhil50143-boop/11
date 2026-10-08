@@ -1,10 +1,10 @@
 # 《余生未寄》全部游戏文案审核汇总
 
-版本：1.0.0-rc.2｜整理日期：2026-10-08｜剧情与界面源码基线：3c2aeab35fd9437f6c40edc5d2a66bb8bae218c4
+版本：1.0.0-rc.3｜整理日期：2026-10-08｜剧情与界面源码基线：a7060bdc554b65833f4d06b6dc2e8d6079376563
 
 本汇总从当前实际入包清单与游戏源码生成，完整收录十章、所有条件分支、选择、旧物、短信、照片背文、信件、录音、六个结局及界面提示，包含剧透和隐藏结局。共10章、60片段、467个节点、6个结局，不是单条通关路线或剧情摘要。每处保留来源以便GPT/平台核对，原文不改写。
 
-当前为发布候选：音色已确认；真人阅读节奏、TapTap实际容器与手机尚待验收。本汇总不代表平台已审核或已发布。最终版本将按最终提交重新生成，后续任何文案修改都需重导出。照片与声音二进制另随源码/素材保留，本文不把图像鉴定或ASR当作内容批准。
+当前为视觉升级开发切片，已上传RC2及其旧文案另存不覆盖：音色已确认；真人阅读节奏、TapTap实际容器与手机尚待验收。本汇总不代表平台已审核或已发布。最终版本将按最终提交重新生成，后续任何文案修改都需重导出。照片与声音二进制另随源码/素材保留，本文不把图像鉴定或ASR当作内容批准。
 
 ## 第1章 那封迟到的信
 
@@ -6077,31 +6077,31 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 家中
 
-### assets/scripts/core/Main.ts:9
+### assets/scripts/core/Main.ts:15
 
 余生未寄
 
-### assets/scripts/core/Main.ts:10
+### assets/scripts/core/Main.ts:18
 
 暂时无法打开，请重试。
 
-### assets/scripts/core/Main.ts:11
+### assets/scripts/core/Main.ts:19
 
 继续
 
-### assets/scripts/core/Main.ts:14
+### assets/scripts/core/Main.ts:31
 
 从头开始
 
-### assets/scripts/core/Main.ts:16
+### assets/scripts/core/Main.ts:33
 
 再次点按会从头读。已经读完的结局会保留。
 
-### assets/scripts/core/Main.ts:21
+### assets/scripts/core/Main.ts:38
 
 存档暂时无法读取。请保留原记录后重试。
 
-### assets/scripts/core/Main.ts:23
+### assets/scripts/core/Main.ts:40
 
 取消重新开始
 
@@ -6205,40 +6205,40 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 请先读到这一页的末尾。
 
-### assets/scripts/ui/AudioPlayer.ts:12
+### assets/scripts/ui/AudioPlayer.ts:20
 
 继续
 
-### assets/scripts/ui/AudioPlayer.ts:13
+### assets/scripts/ui/AudioPlayer.ts:21
 
 播放
 
-### assets/scripts/ui/AudioPlayer.ts:15
+### assets/scripts/ui/AudioPlayer.ts:23
 
 录音暂时无法播放。可以查看完整录音文字。
 
-### assets/scripts/ui/AudioPlayer.ts:15
+### assets/scripts/ui/AudioPlayer.ts:23
 
 录音暂时无法播放。可以读文字继续。
-
-### assets/scripts/ui/AudioPlayer.ts:20
-
-录音暂时无法播放。可以读文字继续。
-
-### assets/scripts/ui/AudioPlayer.ts:22
-
-暂停 / 继续播放
 
 ### assets/scripts/ui/AudioPlayer.ts:28
 
+录音暂时无法播放。可以读文字继续。
+
+### assets/scripts/ui/AudioPlayer.ts:30
+
+暂停 / 继续播放
+
+### assets/scripts/ui/AudioPlayer.ts:36
+
 查看录音文字
 
-### assets/scripts/ui/AudioPlayer.ts:34
+### assets/scripts/ui/AudioPlayer.ts:42
 
 
 正在读取录音……
 
-### assets/scripts/ui/AudioPlayer.ts:38
+### assets/scripts/ui/AudioPlayer.ts:46
 
 录音暂时无法播放。可以读文字继续。
 
@@ -6258,6 +6258,18 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 查看
 
+### assets/scripts/ui/LifeReadingPanel.ts:10
+
+家中
+
+### assets/scripts/ui/LifeReadingPanel.ts:11
+
+公交
+
+### assets/scripts/ui/LifeReadingPanel.ts:58
+
+继续
+
 ### assets/scripts/ui/PassagePanel.ts:40
 
 继续
@@ -6276,77 +6288,153 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 翻面
 
-### assets/scripts/ui/StoryView.ts:30
+### assets/scripts/ui/StoryView.ts:31
 
 正在打开……
 
-### assets/scripts/ui/StoryView.ts:40
+### assets/scripts/ui/StoryView.ts:41
 
 暂时无法打开。请重试。
 
-### assets/scripts/ui/StoryView.ts:49
+### assets/scripts/ui/StoryView.ts:50
 
 重试
 
-### assets/scripts/ui/StoryView.ts:59
+### assets/scripts/ui/StoryView.ts:63
 
 残缺
 
-### assets/scripts/ui/StoryView.ts:59
+### assets/scripts/ui/StoryView.ts:63
 
 出现矛盾
 
-### assets/scripts/ui/StoryView.ts:59
+### assets/scripts/ui/StoryView.ts:63
 
 重新理解
 
-### assets/scripts/ui/StoryView.ts:59
+### assets/scripts/ui/StoryView.ts:63
 
 完整
 
-### assets/scripts/ui/StoryView.ts:64
+### assets/scripts/ui/StoryView.ts:70
 
 重试保存
 
-### assets/scripts/ui/StoryView.ts:67
+### assets/scripts/ui/StoryView.ts:73
 
 当前内容读完了。
 
-### assets/scripts/ui/StoryView.ts:68
+### assets/scripts/ui/StoryView.ts:74
 
 可以退出，稍后从这里继续。
 
-### assets/scripts/ui/StoryView.ts:78
+### assets/scripts/ui/StoryView.ts:89
 
 这一页读完了。
 
-### assets/scripts/ui/StoryView.ts:79
+### assets/scripts/ui/StoryView.ts:90
 
 再读一遍
 
-### assets/scripts/ui/StoryView.ts:80
+### assets/scripts/ui/StoryView.ts:91
 
 回到首页
 
-### assets/scripts/ui/StoryView.ts:99
+### assets/scripts/ui/StoryView.ts:110
 
 继续
 
-### assets/scripts/ui/StoryView.ts:102
+### assets/scripts/ui/StoryView.ts:113
 
 该片段暂时无法继续。
 
-### assets/scripts/ui/StoryView.ts:107
+### assets/scripts/ui/StoryView.ts:118
 
 先看看照片和信封。
 
-### assets/scripts/ui/StoryView.ts:109
+### assets/scripts/ui/StoryView.ts:120
 
 （看过）
 
-### assets/scripts/ui/StoryView.ts:112
+### assets/scripts/ui/StoryView.ts:123
 
 收好纸箱
+
+### assets/scripts/ui/VisualDraft.ts:27（独立设计预览，非正常剧情界面）
+
+余生未寄
+
+### assets/scripts/ui/VisualDraft.ts:28（独立设计预览，非正常剧情界面）
+
+2037 · 九月
+
+### assets/scripts/ui/VisualDraft.ts:31（独立设计预览，非正常剧情界面）
+
+继续阅读
+
+### assets/scripts/ui/VisualDraft.ts:32（独立设计预览，非正常剧情界面）
+
+旧相册
+
+### assets/scripts/ui/VisualDraft.ts:34（独立设计预览，非正常剧情界面）
+
+书桌上的信，接着上次读。
+
+### assets/scripts/ui/VisualDraft.ts:42（独立设计预览，非正常剧情界面）
+
+2007.09.07 · 17路公交
+
+### assets/scripts/ui/VisualDraft.ts:42（独立设计预览，非正常剧情界面）
+
+2037.09.07 · 雨夜
+
+### assets/scripts/ui/VisualDraft.ts:43（独立设计预览，非正常剧情界面）
+
+靠窗的位置
+
+### assets/scripts/ui/VisualDraft.ts:43（独立设计预览，非正常剧情界面）
+
+雨夜回家
+
+### assets/scripts/ui/VisualDraft.ts:46（独立设计预览，非正常剧情界面）
+
+要怎么向程安然说起许知夏？
+
+### assets/scripts/ui/VisualDraft.ts:47（独立设计预览，非正常剧情界面）
+
+高中同学。
+
+### assets/scripts/ui/VisualDraft.ts:47（独立设计预览，非正常剧情界面）
+
+以前喜欢过的人。
+
+### assets/scripts/ui/VisualDraft.ts:47（独立设计预览，非正常剧情界面）
+
+以前很熟的朋友。
+
+### assets/scripts/ui/VisualDraft.ts:58（独立设计预览，非正常剧情界面）
+
+程安然
+
+### assets/scripts/ui/VisualDraft.ts:58（独立设计预览，非正常剧情界面）
+
+周叙
+
+### assets/scripts/ui/VisualDraft.ts:58（独立设计预览，非正常剧情界面）
+
+周满
+
+### assets/scripts/ui/VisualDraft.ts:58（独立设计预览，非正常剧情界面）
+
+许知夏
+
+### assets/scripts/ui/VisualDraft.ts:58（独立设计预览，非正常剧情界面）
+
+周叙
+
+### assets/scripts/ui/VisualDraft.ts:65（独立设计预览，非正常剧情界面）
+
+继续
 
 ## 人物显示名称与默认场景
 
