@@ -1,0 +1,43 @@
+{
+  "chapterId": "CH05",
+  "title": "未来开始有价格",
+  "episodes": [
+    {
+      "id": "CH05_EP01",
+      "name": "第一张实践表",
+      "resource": "data/story/chapter05/ep01_practice",
+      "startNode": "CH05_EP01_N001"
+    },
+    {
+      "id": "CH05_EP02",
+      "name": "大三的日常",
+      "resource": "data/story/chapter05/ep02_third_year",
+      "startNode": "CH05_EP02_N001"
+    },
+    {
+      "id": "CH05_EP03",
+      "name": "实习那几周",
+      "resource": "data/story/chapter05/ep03_internship",
+      "startNode": "CH05_EP03_N001"
+    },
+    {
+      "id": "CH05_EP04",
+      "name": "招聘会那张纸",
+      "resource": "data/story/chapter05/ep04_job_forms",
+      "startNode": "CH05_EP04_N001"
+    },
+    {
+      "id": "CH05_EP05",
+      "name": "答复以前",
+      "resource": "data/story/chapter05/ep05_offer_week",
+      "startNode": "CH05_EP05_N001"
+    },
+    {
+      "id": "CH05_EP06",
+      "name": "各自要交的东西",
+      "resource": "data/story/chapter05/ep06_graduation",
+      "startNode": "CH05_EP06_N001"
+    }
+  ],
+  "nextChapter": "CH06"
+}

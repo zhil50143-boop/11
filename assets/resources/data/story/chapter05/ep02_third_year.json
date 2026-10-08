@@ -1,0 +1,246 @@
+{
+  "episodeId": "CH05_EP02",
+  "name": "大三的日常",
+  "startNode": "CH05_EP02_N001",
+  "nodes": [
+    {
+      "id": "CH05_EP02_N001",
+      "type": "passage",
+      "title": "课又排到晚上",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "十月，课表比前一年满。周叙从实训楼回来，宿舍里有人已经睡了，桌上放着他的饭盒，室友帮着带回来，没有等他一起吃。他把饭热过，边吃边看第二天要交的图，碗放得太近，沾到纸角。"
+        },
+        {
+          "text": "许知夏也在忙课。她写了一篇采访作业，老师让她把别人的话和自己的说明分开，她在电话里念到一半，发现自己忘了引号放在哪里。周叙让她先改，自己去洗碗，回来的时候，她已经又删了一段。"
+        },
+        {
+          "text": "有次两人约好九点讲电话，周叙在实验楼多留了半小时。出来以后，他先发消息说晚了，不让她一直等。许知夏说自己也在借电脑排作业，只剩几分钟，讲完就得让给下一个人。他们先问了家里，没把所有学校的事都讲完。"
+        },
+        {
+          "text": "周叙想给她寄一点复印资料，把纸装进袋里才发现是自己的机械课讲义。她笑着说先别寄，自己看不懂那些。他把袋子重新拆开，抽出她真正让找的旧街照片编号，放到一旁，第二天才去办。"
+        },
+        {
+          "text": "宿舍的热水要拿卡刷。周叙几次忘带，室友借过一回，后来让他自己放到钥匙边。那天他把手机也放过去，母亲来电的时候，整个钥匙串跟着响，桌边的人让他先接，别一直震着。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2011,
+          "month": 10,
+          "season": "autumn",
+          "label": "2011 · 秋 · 课又排到晚上",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "晚课后没讲完的通话"
+          ]
+        }
+      },
+      "next": "CH05_EP02_HOME"
+    },
+    {
+      "id": "CH05_EP02_HOME",
+      "type": "passage",
+      "title": "冬天家里的账",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "2012年一月，周叙回到南城，母亲在桌上整理旧票，父亲的班表压在一只杯子下面。母亲说下半年班次少了几天，买东西得先看家里还有什么，不要一回来就把以前没吃完的全扔掉。"
+        },
+        {
+          "text": "父亲没把这件事说成大事，只问周叙下学期的住宿费交没交。周叙说还有一部分，拿出学校发的单子。母亲看完让他别把该交的拖着，自己去找存折，回来又问这次在家住几天。"
+        },
+        {
+          "text": "许知夏也在算实习的钱。她母亲问去外地是不是学校都给安排，她说只有接收证明，不是所有吃住都有人付。周叙听着，把自己去年留的交通票摆出来，第一次发现单张看起来很小，合起来放了一整层。"
+        },
+        {
+          "text": "陈野找他们吃饭，先说明天只能坐一会儿。送货的店换了负责人，他要过去确认开学以后还能不能周末做。弟弟的书已经买了，鞋没换，他说家里想先把旧的穿完。周叙没有拿自己的单子给他比，三个人在照相店门口等了会儿，老板还没开门。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2012,
+          "month": 1,
+          "season": "winter",
+          "label": "2012 · 冬 · 冬天家里的账",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "家里的住宿费单"
+          ]
+        }
+      },
+      "next": "CH05_EP02_FAMILY_CHECK"
+    },
+    {
+      "id": "CH05_EP02_FAMILY_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH02_TOLD_FAMILY_RELATION",
+          "next": "CH05_EP02_FAMILY_KNOWN"
+        },
+        {
+          "flag": "CH02_HID_FAMILY_RELATION",
+          "next": "CH05_EP02_FAMILY_LATE"
+        }
+      ],
+      "fallback": "CH05_EP02_MESSAGES"
+    },
+    {
+      "id": "CH05_EP02_FAMILY_KNOWN",
+      "type": "passage",
+      "title": "父母知道她也有安排",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "母亲知道周叙晚上要和许知夏商量实习，吃完饭把桌子空出一角，问她那边有没有问到住宿。周叙说还在找，不是拿了通知就能住进去。父亲说两个人的事先各自问明白，别用一边的表替另一边答。"
+        },
+        {
+          "text": "周叙把这句话转给许知夏，她说自己已经问了两处，都要再等。母亲过来拿水杯，听见他讲，她让他别光说等，自己的申请也要交。他应了一声，把一直留在包里的空表拿了出来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2012,
+          "month": 1,
+          "season": "winter",
+          "label": "2012 · 冬 · 父母知道她也有安排",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "家里知道两边都在问住宿"
+          ]
+        }
+      },
+      "next": "CH05_EP02_MESSAGES"
+    },
+    {
+      "id": "CH05_EP02_FAMILY_LATE",
+      "type": "passage",
+      "title": "现在说的是实际日期",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "母亲问周叙总拿着手机是不是和许知夏讲实习。他没有再拿陈野买书来解释，先把她要问的住宿、自己的课程和还没定的日期说了一遍。母亲说以前总要别人来补，现在就从这张表开始讲。"
+        },
+        {
+          "text": "父亲问两边的钱是不是同一份安排，周叙说不是，各自都有要垫的。父亲让他先弄清自己这份，再问她缺哪一项。许知夏接电话时，他把家里已经知道的事说清楚，没有让她再替自己猜母亲在问什么。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2012,
+          "month": 1,
+          "season": "winter",
+          "label": "2012 · 冬 · 现在说的是实际日期",
+          "location": "周叙家",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "把实习日期直接告诉家里"
+          ]
+        }
+      },
+      "next": "CH05_EP02_MESSAGES"
+    },
+    {
+      "id": "CH05_EP02_MESSAGES",
+      "type": "phone",
+      "title": "一张复印件",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "许知夏：表寄出了。地址最后一行没写宿舍楼，帮我看一下是不是还能到。"
+        },
+        {
+          "text": "周叙：我去收发室问。"
+        },
+        {
+          "text": "许知夏：问到告诉我。不是今天就要答复，不用跑去等。"
+        },
+        {
+          "text": "陈野：这周不回去。店里要盘货，等以后再约。"
+        },
+        {
+          "text": "周叙：你上午还有课吧？"
+        },
+        {
+          "text": "陈野：问过了，我下午去。还没把学校丢了。"
+        },
+        {
+          "text": "周叙从收发室回来，说信到了，工作人员让他把电话补上。他接着去交自己的申请，老师指出少了一页课程说明，让他明天补。晚饭时，他把两份复印件放在包里，和饭卡隔开，免得第二天又只拿出空袋。"
+        },
+        {
+          "text": "许知夏那晚在帮母亲查一张缴费单。她说去年记过位置，今年东西又挪了，母亲已经先去问邻居。周叙说自己家里也把药袋换了，她让他下次回去先看，不要等到了复查那天才找。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2012,
+          "month": 3,
+          "season": "spring",
+          "label": "2012 · 春 · 一张复印件",
+          "location": "两边的大学",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "补过电话的实习申请"
+          ]
+        }
+      },
+      "next": "CH05_EP02_END"
+    },
+    {
+      "id": "CH05_EP02_END",
+      "type": "episodeEnd",
+      "next": "CH05_EP03"
+    }
+  ],
+  "nodeAliases": {}
+}

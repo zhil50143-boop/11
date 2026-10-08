@@ -1,0 +1,269 @@
+{
+  "episodeId": "CH05_EP04",
+  "name": "招聘会那张纸",
+  "startNode": "CH05_EP04_N001",
+  "nodes": [
+    {
+      "id": "CH05_EP04_N001",
+      "type": "passage",
+      "title": "鞋底还没干",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "十一月，周叙穿着一双新擦过的鞋去招聘会，路上碰到雨，到了门口鞋底还是湿的。室友把简历装在透明袋里，他只有一个旧文件夹，边角起毛，站在门边先把夹子按紧。"
+        },
+        {
+          "text": "有家设备公司收了他的材料，问能不能接受轮班。周叙先说可以，出来以后，才发现那张介绍里没有写宿舍怎么办。他回去排了一次队，等到自己时问这一项，对方说先看安排，不是每个岗位都一样。"
+        },
+        {
+          "text": "许知夏也在准备稿样。她把实习时的几篇文章放在一起，删掉了自己没做过的部分，后来发现能直接署自己名字的并不多。周叙让她多放几张照片，她说对方要看她怎么核对信息，不是只看拍了多少。"
+        },
+        {
+          "text": "晚上两人讲电话，各自念了一遍收到的要求。周叙要补一份成绩说明，她要把稿件过程写清楚，还没有谁拿到确定的工作。他把桌上的车票挪开，发现下面压着母亲发来的复查时间，只能把几件事重新列到纸上。"
+        },
+        {
+          "text": "陈野的消息来得很晚，说配货点可能有毕业后的空位，要先问哪一班。周叙问他是不是不去别处看了，他说还会看，先把这份条件问全，不愿再像暑假那样听见缺人就直接答应。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2012,
+          "month": 11,
+          "season": "autumn",
+          "label": "2012 · 秋 · 鞋底还没干",
+          "location": "周叙大学招聘会",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "招聘会补问的住宿条件"
+          ]
+        }
+      },
+      "next": "CH05_EP04_SPRING"
+    },
+    {
+      "id": "CH05_EP04_SPRING",
+      "type": "passage",
+      "title": "论文和回程票",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "2013年三月，周叙把毕业设计的图打出来，老师让他改了两个位置，他一直觉得自己去年问过，又在旧笔记里翻了半天。最后发现问的是另一种情况，拿着图再去找老师，没有把那一页硬照搬过来。"
+        },
+        {
+          "text": "许知夏的论文也没写完。她约的采访对象换了时间，原先能用的几天都空出来，却不能直接把别人的记录当成自己问过。她回南城看母亲的计划因此往后推，打电话时一边讲一边看新的车次。"
+        },
+        {
+          "text": "周叙父亲还按原来的日期复查，母亲换班以后能陪去。周叙说自己可以回来，父亲让他先看论文要不要交，不用每一趟都硬赶。母亲接过电话，问他学校那张图改完没有，他说还有一处，母亲便让他先改。"
+        },
+        {
+          "text": "有一晚，周叙给许知夏讲公司回了消息，要他再去面谈。许知夏也收到了一家北方报社的回复，准备去试一段时间，但还不等于以后一定留在那里。周叙听到北方，拿起自己画过的路线，许知夏让他先听完岗位和日期。"
+        },
+        {
+          "text": "他们讲到宿舍管理员来查门，电话被放下几分钟。回来以后，周叙从刚才那一项接着问，没有把她要留下的原因缩成想离自己远一点。纸上写的是交通、住宿、要补的材料和各自需要回家的日期。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 3,
+          "season": "spring",
+          "label": "2013 · 春 · 论文和回程票",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "2013春两份面谈消息"
+          ]
+        }
+      },
+      "next": "CH05_EP04_SUMMER_CHECK"
+    },
+    {
+      "id": "CH05_EP04_SUMMER_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH04_ASKED_SUMMER_PLAN",
+          "next": "CH05_EP04_COMPARE"
+        },
+        {
+          "flag": "CH04_PROMISED_FOR_XIA",
+          "next": "CH05_EP04_RECHECK"
+        }
+      ],
+      "fallback": "CH05_EP04_JOB_NOTE"
+    },
+    {
+      "id": "CH05_EP04_COMPARE",
+      "type": "passage",
+      "title": "把没问到的留空",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙把两份消息并着放，先问哪些条件已经确认。许知夏说住宿还没确定，具体跟谁做也要到那里问，不准备现在就向家里承诺留在哪儿。他说自己也是，把介绍上没写的几项留在旁边，第二天再去问。"
+        },
+        {
+          "text": "母亲后来又问到许知夏的工作，他只说正在面谈，不拿自己的答复期限替她答应。许知夏告诉他母亲已经知道北方那边还在试，不用替她讲成已经上班。两边都有要交的材料，他们各自补，晚上再核一次。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 3,
+          "season": "spring",
+          "label": "2013 · 春 · 把没问到的留空",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "先比较已经确认的岗位条件"
+          ]
+        }
+      },
+      "next": "CH05_EP04_JOB_NOTE"
+    },
+    {
+      "id": "CH05_EP04_RECHECK",
+      "type": "passage",
+      "title": "不是她临时变了主意",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "母亲问许知夏是不是回来工作，周叙想到以前自己先替她答应的那顿饭，先说明她从来没有确认回南城就业。母亲说以前听他提过一起回来，他承认那是自己说的打算，不是她的答复。"
+        },
+        {
+          "text": "他把这句话告诉许知夏，她说这次就照这样和家里讲，不要等北方那边回消息才算她改了主意。周叙把还没确认的几项重新写到纸上，前面加了一个问号。自己的面谈日期已经定了，但她那一栏没有被他填成同一天。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 3,
+          "season": "spring",
+          "label": "2013 · 春 · 不是她临时变了主意",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "向家里区分打算与她的答复"
+          ]
+        }
+      },
+      "next": "CH05_EP04_JOB_NOTE"
+    },
+    {
+      "id": "CH05_EP04_JOB_NOTE",
+      "type": "letter",
+      "actionText": "看两边的岗位记录",
+      "text": "周叙：省内设备公司，轮班要再问，住宿另确认，答复有期限。\n许知夏：北方报社，先试岗，补稿样，住处尚未定。\n\n一起回南城只是谈过的打算，未得到双方确认。",
+      "setFlags": [
+        "CH05_READ_JOB_CONDITIONS"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 3,
+          "season": "spring",
+          "label": "2013 · 春 · 岗位记录",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "尚未确认的两份岗位条件"
+          ]
+        }
+      },
+      "next": "CH05_EP04_CHEN"
+    },
+    {
+      "id": "CH05_EP04_CHEN",
+      "type": "passage",
+      "title": "陈野先问班次",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "四月回南城，周叙遇到陈野，对方手里拿着一张排班草稿，说配货点给他看了毕业后的安排。他问过夜班和休息时间，暂时没有把弟弟开学那周一起答应进去，要回家先商量。"
+        },
+        {
+          "text": "周叙问他们毕业以后还能不能在这里打球，陈野说先看谁哪天真的有空，别每次都让人来等。他说完又问许知夏现在在哪，周叙说在北方试岗，陈野让他别只问回来没有，人家去做什么也该听。"
+        },
+        {
+          "text": "许知夏那天刚把一段稿子重写完。周叙打来时，她没有因为他回南城就停下手上的事，让他先等自己把资料交给同事。周叙在站牌旁等，看见原来卖水的地方换成了小吃摊，给母亲发了一条问带不带饭。"
+        },
+        {
+          "text": "晚一点两人才接着讲。许知夏说试岗还没完，周叙说自己面谈问到住宿了，但条件没有家里想的那么轻松。电话讲到末尾，陈野已经上车走了，周叙把新摊的名字记下来，母亲还在家等他吃饭。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 4,
+          "season": "spring",
+          "label": "2013 · 春 · 陈野先问班次",
+          "location": "南城公交站",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "陈野问过的毕业班次"
+          ]
+        }
+      },
+      "next": "CH05_EP04_END"
+    },
+    {
+      "id": "CH05_EP04_END",
+      "type": "episodeEnd",
+      "next": "CH05_EP05"
+    }
+  ],
+  "nodeAliases": {}
+}

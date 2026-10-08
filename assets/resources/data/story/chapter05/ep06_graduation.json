@@ -1,0 +1,266 @@
+{
+  "episodeId": "CH05_EP06",
+  "name": "各自要交的东西",
+  "startNode": "CH05_EP06_N001",
+  "nodes": [
+    {
+      "id": "CH05_EP06_N001",
+      "type": "passage",
+      "title": "把图重新卷好",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "六月，周叙把毕业设计的图重新卷好，拿去交最后一份材料。老师让他把改过的那页留在前面，不然以后查不到哪一处已经重画。他站在门边把顺序又换了一次，文件夹里还留着公司让他补的纸。"
+        },
+        {
+          "text": "宿舍开始有人先搬走。室友把用不着的盆留给后面的人，问周叙要不要那块插线板。他说带着自己原来那块就行，对方拿起来，才发现有一头还缠着去年标过名字的胶带。"
+        },
+        {
+          "text": "许知夏也在学校交论文材料，她的电话有一天到晚上才接。她说报社有了回复，让她毕业后带齐材料过去，先跟着值班编辑熟悉工作。周叙问日期，她把纸拿来念，两边并不一样。"
+        },
+        {
+          "text": "母亲问周叙几时回南城，他先说自己的，再说许知夏还要收拾北方的住处。父亲没替他们选，把前几个月的班表放进抽屉，提醒他原来留在家里的行李也要拿走，别每次回来都只找那一只袋子。"
+        },
+        {
+          "text": "周叙把要带的东西分成两堆，证件和工具放一起，旧照片与本子另装。他翻到大二结束那张实践表，背面已经用来写过新的电话号码，不能再当现在的安排。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 6,
+          "season": "summer",
+          "label": "2013 · 夏 · 把图重新卷好",
+          "location": "周叙的大学",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "两份不同的毕业后开始日期"
+          ]
+        }
+      },
+      "next": "CH05_EP06_JOB_CHECK"
+    },
+    {
+      "id": "CH05_EP06_JOB_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH05_TALKED_JOB_CONDITIONS",
+          "next": "CH05_EP06_SEPARATE"
+        },
+        {
+          "flag": "CH05_ASSUMED_RETURN_FOR_JOB",
+          "next": "CH05_EP06_CORRECT"
+        }
+      ],
+      "fallback": "CH05_EP06_PACK"
+    },
+    {
+      "id": "CH05_EP06_SEPARATE",
+      "type": "passage",
+      "title": "知道还要再商量",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "许知夏把报社的开始日期告诉他时，两个人没有把这当成违背一份已经共同定好的安排。周叙说自己还要问轮班是不是先跟人做，她说自己的住处也要最后核一次，不能现在就给他一个每天都有空的时间。"
+        },
+        {
+          "text": "他们仍想回南城见一面，但都得先处理各自的材料和行李。周叙把能回的日期发给她，后面写了暂定，许知夏回说看到了，等买到车票再确认。母亲问她会不会来，他照原话说还要等，没有把暂定去掉。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 6,
+          "season": "summer",
+          "label": "2013 · 夏 · 知道还要再商量",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "分别确定工作后的暂定见面"
+          ]
+        }
+      },
+      "next": "CH05_EP06_PACK"
+    },
+    {
+      "id": "CH05_EP06_CORRECT",
+      "type": "passage",
+      "title": "这不是她后来才反悔",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "许知夏告诉他报社有回复，周叙看着之前列的省内名单，还是问了一句那边一定要去吗。她说自己试过、问过，也和家里谈过，不是听见他定了就临时选相反的地方。"
+        },
+        {
+          "text": "他把那句问话停下，说知道，自己之前把她回来写得太快。许知夏让他把这一点也和家里说明，不要变成她毕业以后才反悔。周叙又给母亲打电话，讲清楚她没有答应那份名单，母亲听完问他的行李几时带回，他把话接着说完。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 6,
+          "season": "summer",
+          "label": "2013 · 夏 · 这不是她后来才反悔",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "把未答应的名单向家里讲清楚"
+          ]
+        }
+      },
+      "next": "CH05_EP06_PACK"
+    },
+    {
+      "id": "CH05_EP06_PACK",
+      "type": "passage",
+      "title": "最后一晚在宿舍",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "毕业手续办完，周叙把借的衣服还回去，拿着证件在宿舍门口又核了一遍。床上只剩一条薄毯，室友问他什么时候走，他说后天，对方说自己明天就走，让他最后出门记得关窗。"
+        },
+        {
+          "text": "陈野打来电话，已经在收拾自己的东西，问南城那顿饭还吃不吃。他们没把所有人都凑成同一天，先说回来以后再确认。陈野接着问周叙工作证件带齐没有，说自己把一张复印件塞进弟弟的书袋，差点跟着寄回家。"
+        },
+        {
+          "text": "许知夏那边房东要来看屋子，她晚上在清桌子。周叙听见她把盒子挪动的声音，问要不要把自己留下的几张照片寄过去。她说先别寄，地址马上要换，不然又得让别人替自己找。"
+        },
+        {
+          "text": "他拿起照片袋，把没有确定的新地址留空。那张旧的毕业照片还在本子里，和后来实习留下的票隔了一页。现在需要收好的不是一件新东西，他把两个袋子都装进箱子，留出上面一层给证件。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 6,
+          "season": "summer",
+          "label": "2013 · 夏 · 最后一晚在宿舍",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "graduate",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "毕业后仍留空的新地址"
+          ]
+        }
+      },
+      "next": "CH05_EP06_NOTE"
+    },
+    {
+      "id": "CH05_EP06_NOTE",
+      "type": "letter",
+      "actionText": "看报到备忘",
+      "text": "2013.6\n周叙：毕业手续已办，省内岗位，报到前补材料，轮班另问。\n许知夏：毕业后北方报社，新住处待交接。\n\n见面：等她买到车票再确认。",
+      "setFlags": [
+        "CH05_READ_START_DATES"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 6,
+          "season": "summer",
+          "label": "2013 · 夏 · 报到备忘",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "graduate",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "2013.6各自的报到备忘"
+          ]
+        }
+      },
+      "next": "CH05_EP06_CLOSE"
+    },
+    {
+      "id": "CH05_EP06_CLOSE",
+      "type": "passage",
+      "title": "带回家的箱子",
+      "category": "time",
+      "paragraphs": [
+        {
+          "text": "回到南城，周叙把箱子靠在鞋柜旁，母亲让他先拿出脏衣服，别等第二天又装回去。父亲在阳台上拧那只旧风扇，零件有一处换过，声音还是不小。他问工作那边几时去，周叙把备忘拿出来给他看。"
+        },
+        {
+          "text": "许知夏还在北方交接住处。她给他发来一条说柜子钥匙已经还了，行李有一箱先寄回母亲那里，自己要等最后一份手续。他问车票买了没有，她说还没有，明天去问，到时再给他消息。"
+        },
+        {
+          "text": "周叙把母亲做的饭端到桌上，手机放在没沾水的一角。陈野说晚上可以过来坐一下，别又一群人在门口等，他回了个好，给陈野留了一个碗。父亲看着工作通知，问宿舍是不是确定有床，他把还没确认那一行指给父亲。"
+        },
+        {
+          "text": "晚上两人讲电话，周叙从食堂和工具讲起，许知夏讲新桌子、稿件和要补的人名。谁也没有在这一通里把以后每个月排完。他们约好车票有消息再说，母亲从厨房出来问第二天去不去买菜，他先把自己的空日子讲清楚。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 6,
+          "season": "summer",
+          "label": "2013 · 夏 · 带回家的箱子",
+          "location": "南城",
+          "timeline": "memory"
+        },
+        "stage": "graduate",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "毕业回家后尚未定好的车票"
+          ]
+        }
+      },
+      "next": "CH05_EP06_END"
+    },
+    {
+      "id": "CH05_EP06_END",
+      "type": "episodeEnd",
+      "next": "CH06"
+    }
+  ],
+  "nodeAliases": {}
+}

@@ -16,7 +16,11 @@
     {
       "id": "CH04",
       "resource": "data/story/chapter04/chapter04_manifest"
+    },
+    {
+      "id": "CH05",
+      "resource": "data/story/chapter05/chapter05_manifest"
     }
   ],
-  "pendingChapter": "CH05"
+  "pendingChapter": "CH06"
 }

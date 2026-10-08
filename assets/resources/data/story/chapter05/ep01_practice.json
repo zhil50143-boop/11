@@ -1,0 +1,263 @@
+{
+  "episodeId": "CH05_EP01",
+  "name": "第一张实践表",
+  "startNode": "CH05_EP01_N001",
+  "nodes": [
+    {
+      "id": "CH05_EP01_N001",
+      "type": "passage",
+      "title": "先问清楚地点",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "七月，老师把暑期实践的名单贴在门口。周叙找到自己的名字，又沿着那一行看地点。是省内一家设备厂，先参观，再在办公室整理两周图纸记录。他原先以为就在父亲的工厂附近，拿地图查，发现还隔着两趟车。"
+        },
+        {
+          "text": "回宿舍以后，他把通知读了一遍。学校只统一安排第一天的车，之后自己去，午饭可以在厂里吃，回学校晚了就得提前告诉宿管。室友拿着另一份表，说自己那边更远，要先问有没有临时住宿。"
+        },
+        {
+          "text": "母亲打电话来，听他说省内，问是不是每天回家。他说不能，住学校过去更近。母亲让他把时间寄来，父亲刚下夜班，只在旁边问了一句厂叫什么。周叙念了名字，父亲说不认识，那边不是自己原来上班的地方。"
+        },
+        {
+          "text": "许知夏给他发来报社的接待通知，她先去帮着整理旧稿和采访资料，还没有独立报道。学姐告诉她带上学生证，暑期用的宿舍要另问。周叙看了一遍，发现两边开始时间差了三天，自己原来圈的周末也不一定能用。"
+        },
+        {
+          "text": "他把手机放在通知旁边，去借一支笔。回来的时候，母亲已经又发了一条，问这回许知夏会不会也回来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2011,
+          "month": 7,
+          "season": "summer",
+          "label": "2011 · 夏 · 先问清楚地点",
+          "location": "周叙大学教学楼",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "两份不同地点的暑期通知"
+          ]
+        }
+      },
+      "next": "CH05_EP01_SUMMER_CHECK"
+    },
+    {
+      "id": "CH05_EP01_SUMMER_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH04_ASKED_SUMMER_PLAN",
+          "next": "CH05_EP01_CHECK_FIRST"
+        },
+        {
+          "flag": "CH04_PROMISED_FOR_XIA",
+          "next": "CH05_EP01_REMEMBER"
+        }
+      ],
+      "fallback": "CH05_EP01_FACTORY"
+    },
+    {
+      "id": "CH05_EP01_CHECK_FIRST",
+      "type": "passage",
+      "title": "这次还是先核对",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙先告诉母亲她的表还在问住宿，不能替她说哪天回。他给许知夏发了自己的通知，让她看两周里面哪天可能有空。她说还要问值班老师，先把确定不能走的日子标出来，剩下的也未必都空。"
+        },
+        {
+          "text": "母亲后来问到吃饭，他把那几天说清楚，父亲让他别一边参观一边赶车。许知夏回消息，说如果见面要连换两趟车，这次就别硬挤。周叙在本子里把一个周末留空，没有再往里面添车次。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2011,
+          "month": 7,
+          "season": "summer",
+          "label": "2011 · 夏 · 这次还是先核对",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "先核对实践日程"
+          ]
+        }
+      },
+      "next": "CH05_EP01_FACTORY"
+    },
+    {
+      "id": "CH05_EP01_REMEMBER",
+      "type": "passage",
+      "title": "看见去年划掉的那两行",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙看见本子里去年那两行改过的日期，没有马上答应母亲。他说许知夏还没定，自己也得先看车。母亲听完，让他这次把通知问清楚再讲，不要又说成别人后来临时改。"
+        },
+        {
+          "text": "他给许知夏发了自己的实践表，又解释家里还没答应她来。许知夏说好，提醒他她那边只是接待通知，住宿和每天结束的时间都要问。周叙问过自己这边的老师，把原来以为能赶上的晚车划掉，再告诉家里暑假先不约那顿饭。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2011,
+          "month": 7,
+          "season": "summer",
+          "label": "2011 · 夏 · 看见去年划掉的那两行",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "从旧承诺里改过的实践日期"
+          ]
+        }
+      },
+      "next": "CH05_EP01_FACTORY"
+    },
+    {
+      "id": "CH05_EP01_FACTORY",
+      "type": "passage",
+      "title": "办公室的那张椅子",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "第一天到厂里，周叙在门口把学生证拿出来，门卫让他和同学等着带队的人。办公室里只有两张空椅子，他们轮着坐。带他们的师傅先让他们核对旧图纸编号，别看到一样的名字就放到同一袋里。"
+        },
+        {
+          "text": "周叙抄了几页，下午发现有一串号写反，得全部重新翻。师傅没有替他改，拿铅笔在那一行点了一下，让他从原纸查。中午吃饭时，他端着餐盘站在门边，师傅让他先坐，别人还没下班，不用一起等。"
+        },
+        {
+          "text": "回学校的车堵在路上，周叙站了很久，袜子被雨水打湿。到宿舍，室友已经把他的盆挪开，桌上留着一张让他关窗的纸。他把学生证晾在书下面，给许知夏发消息，说自己今天没进车间，先抄了一天纸。"
+        },
+        {
+          "text": "她过了一会儿才回，说自己整理的资料也有同名的人，差点把年份放错。两个人没讲以后谁的工作更好，只把第二天要问的事各说了几句。周叙想起午饭的钱先从卡里扣，还得去补一次余额，许知夏说她也得先留出车费。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2011,
+          "month": 7,
+          "season": "summer",
+          "label": "2011 · 夏 · 办公室的那张椅子",
+          "location": "设备厂办公室",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "写反的图纸编号"
+          ]
+        }
+      },
+      "next": "CH05_EP01_COST_NOTE"
+    },
+    {
+      "id": "CH05_EP01_COST_NOTE",
+      "type": "letter",
+      "actionText": "看支出纸条",
+      "text": "周叙：通勤车费、午饭、雨天回程多留一点。\n许知夏：临时住宿先问，交通票留下，稿件材料自己复印。\n\n两边都还没有正式工资。",
+      "setFlags": [
+        "CH05_READ_PRACTICE_COSTS"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2011,
+          "month": 7,
+          "season": "summer",
+          "label": "2011 · 夏 · 支出纸条",
+          "location": "周叙大学宿舍",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "两边先垫的实践支出"
+          ]
+        }
+      },
+      "next": "CH05_EP01_WEEKEND"
+    },
+    {
+      "id": "CH05_EP01_WEEKEND",
+      "type": "passage",
+      "title": "那周没有赶过去",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "八月，许知夏有一个周日没有去报社，原先想和周叙见面，后来发现光来回就要两天。她把时刻表抄给他看，两个人最后都留在原地。周叙用那天洗衣服，给父亲打电话，父亲问他厂里食堂怎么样，他说面还行，菜常常太咸。"
+        },
+        {
+          "text": "陈野的暑期安排又变了。他跟着店里多跑了几次送货，回来把自己的车票往后改，说弟弟马上开学，家里还要买几样东西。周叙问能不能凑一天见，他说等回南城再约，自己不是每天都能早走。"
+        },
+        {
+          "text": "许知夏那周寄来一张抄好的联系方式，是资料室里负责接待的人。她说在里面整理材料不方便接电话，急事可以打这个号码，平时发消息，她出来会回。周叙把纸夹到本子里，没有和旧宿舍号码写在同一行。晚上她打来，说事情做完了，第二天先回学校盖章。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2011,
+          "month": 8,
+          "season": "summer",
+          "label": "2011 · 夏 · 那周没有赶过去",
+          "location": "两边的大学",
+          "timeline": "memory"
+        },
+        "stage": "student",
+        "relationships": {
+          "XIA": "异地，商量毕业去向"
+        },
+        "memory": {
+          "id": "WORK_PLANS",
+          "title": "毕业以前的打算",
+          "status": "fragmentary",
+          "evidence": [
+            "没赶成的八月周末"
+          ]
+        }
+      },
+      "next": "CH05_EP01_END"
+    },
+    {
+      "id": "CH05_EP01_END",
+      "type": "episodeEnd",
+      "next": "CH05_EP02"
+    }
+  ],
+  "nodeAliases": {}
+}
