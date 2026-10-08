@@ -1,0 +1,324 @@
+{
+  "episodeId": "CH06_EP03",
+  "name": "约一次见面",
+  "startNode": "CH06_EP03_N001",
+  "nodes": [
+    {
+      "id": "CH06_EP03_N001",
+      "type": "passage",
+      "title": "先空出的周日",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "九月，周叙在表上圈了一个周日，想去北方看许知夏。先圈的是休息日，车票还没买，他拿着时刻表算了两遍，发现到那里已经是下午，第二天回来又要很早。"
+        },
+        {
+          "text": "许知夏说可以先看看，但她那周还要跟采访，回来几点没有定。周叙问能不能换一天，她说得问清楚，不能光因为他画了一个圈就当已经能走。她也想见，不想让他赶到以后一直坐在住处等。"
+        },
+        {
+          "text": "家里同一个月还有父亲复查。母亲能陪，原先说好回来帮搬的一张柜子可以晚一点。周叙给母亲讲自己想走的那两天，母亲问她那边确定了吗，他翻开记事本，没有把那一栏写成已定。"
+        },
+        {
+          "text": "两个人试着把别的周末也放进去。有一回她能空，周叙要跟人交接；另一回他不用去，她的同事已经排过请假，不能都换在一起。他们把时间来回看，最后先留下十月返乡的那几天，等她确认好工作上的安排再买票。"
+        },
+        {
+          "text": "周叙还是把那个周日留在本子里，旁边加了没约成。到了那天，他在宿舍洗了积下的衣服，给许知夏发消息问采访回来没有。她晚一点才说回来，先补一份材料，他问要不要打电话，她说等一会儿，到最后已经很晚。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 9,
+          "season": "autumn",
+          "label": "2013 · 秋 · 先空出的周日",
+          "location": "周叙的宿舍",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "九月没有约成的周末"
+          ]
+        }
+      },
+      "next": "CH06_EP03_SUMMER_CHECK"
+    },
+    {
+      "id": "CH06_EP03_SUMMER_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH04_ASKED_SUMMER_PLAN",
+          "next": "CH06_EP03_ASKED"
+        },
+        {
+          "flag": "CH04_PROMISED_FOR_XIA",
+          "next": "CH06_EP03_REVISED"
+        }
+      ],
+      "fallback": "CH06_EP03_PLAN_CHECK"
+    },
+    {
+      "id": "CH06_EP03_ASKED",
+      "type": "passage",
+      "title": "先说还没买票",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙给母亲说十月还在问，先别替许知夏排那顿饭。他们以前核对过暑期安排，这次仍把未确认的日子留空。许知夏告诉他一件已经定下来的事：回南城先陪母亲办材料，不是整趟都住在他家里。"
+        },
+        {
+          "text": "他把这一项记下，又问剩下的几天。他能做的是讲出自己哪天有空，还得听她怎么安排。她说买到票会告诉他，先不让两边家里都准备同一天。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 9,
+          "season": "autumn",
+          "label": "2013 · 秋 · 先说还没买票",
+          "location": "周叙的宿舍",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "继续先问返乡本人的安排"
+          ]
+        }
+      },
+      "next": "CH06_EP03_PLAN_CHECK"
+    },
+    {
+      "id": "CH06_EP03_REVISED",
+      "type": "passage",
+      "title": "没有把未定说成答应",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "母亲问许知夏是不是十月能来，周叙想起以前自己先替她答应过的暑假，这回先说还没买票。她要回家陪母亲办材料，别把那几天全写成来自己这里。"
+        },
+        {
+          "text": "许知夏听他说完，让他把这一点也讲给家里。周叙说已经讲了，又把自己的轮班给她念了一遍。两人重新看日期，旧本子里那两行划掉的日子还在，他没有再用一张自己的空表替她填完。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 9,
+          "season": "autumn",
+          "label": "2013 · 秋 · 没有把未定说成答应",
+          "location": "周叙的宿舍",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "以前替她承诺的经历在十月来往中重说"
+          ]
+        }
+      },
+      "next": "CH06_EP03_PLAN_CHECK"
+    },
+    {
+      "id": "CH06_EP03_PLAN_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH03_DISCUSS_PLANS",
+          "next": "CH06_EP03_LISTEN"
+        },
+        {
+          "flag": "CH03_ASSUMED_SAME_CITY",
+          "next": "CH06_EP03_RECONSIDER"
+        }
+      ],
+      "fallback": "CH06_EP03_SHIFT_NOTE"
+    },
+    {
+      "id": "CH06_EP03_LISTEN",
+      "type": "passage",
+      "title": "去那边住也要有工作",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙问过她现在做的事、晚上结束的时间，才讲到自己有没有可能去北方。许知夏说如果他要找，需要先看真正能去的岗位，不能只为了见面搬过去，最后每一天都怪她没时间。"
+        },
+        {
+          "text": "他问她愿不愿意回省内，也先把她能找的工作和家里的事放进去。两边都不是完全没有办法，却还没有一条两人都愿意长期按着走的安排。电话说到水快烧开，她去关，回来以后又接着讲，没有在这晚把留在哪个城市定下来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 9,
+          "season": "autumn",
+          "label": "2013 · 秋 · 去那边住也要有工作",
+          "location": "两人的住处",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "先听岗位后仍未达成同城的安排"
+          ]
+        }
+      },
+      "next": "CH06_EP03_SHIFT_NOTE"
+    },
+    {
+      "id": "CH06_EP03_RECONSIDER",
+      "type": "passage",
+      "title": "先停下那条现成路线",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙拿着旧地图，刚说到省内方便，许知夏便问他方便的是哪一部分。她能找什么、自己的母亲和现在的工作怎么办，不能从他的班表里直接得出来。他把地图放下，先听她把没讲完的岗位说完。"
+        },
+        {
+          "text": "他也试着问自己能不能去北方，她没有说一句过来就都好了，提醒他要自己愿意做那份工作。周叙回去问了几个人，得到的回复还不确定。下一次讲电话，他把确定和没确定的分开，没拿问过两句当成已经替两人找到路。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 9,
+          "season": "autumn",
+          "label": "2013 · 秋 · 先停下那条现成路线",
+          "location": "两人的住处",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "先安排的习惯停下来后仍需真实岗位"
+          ]
+        }
+      },
+      "next": "CH06_EP03_SHIFT_NOTE"
+    },
+    {
+      "id": "CH06_EP03_SHIFT_NOTE",
+      "type": "letter",
+      "actionText": "看改过的见面日期",
+      "text": "2013.9\n九月那次：没买票，双方时间未确认。\n十月：她先回家办材料；再约见面，等工作安排与车票。\n\n周叙的休息日不等于两个人共同的空日子。",
+      "setFlags": [
+        "CH06_READ_VISIT_DATES"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 9,
+          "season": "autumn",
+          "label": "2013 · 秋 · 看改过的见面日期",
+          "location": "周叙的宿舍",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "九月未定与十月待确认的见面日期"
+          ]
+        }
+      },
+      "next": "CH06_EP03_MESSAGES"
+    },
+    {
+      "id": "CH06_EP03_MESSAGES",
+      "type": "phone",
+      "title": "先告诉我你到了",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "许知夏：同事那边问过了，十月可以回几天。明天去看票。"
+        },
+        {
+          "text": "周叙：买到发时间，我去接。"
+        },
+        {
+          "text": "许知夏：先别调你那边。票有了再说。"
+        },
+        {
+          "text": "周叙：好。"
+        },
+        {
+          "text": "陈野：我那周可能不在南城，要陪我弟去一趟学校。"
+        },
+        {
+          "text": "周叙：知道，回来再约。"
+        },
+        {
+          "text": "隔了两天，许知夏把买到的到站时间告诉周叙。他去问可以换哪半天，带班的人让他先和同事说。周叙问过以后，把确认下来的那半天发给她，没有把同事别的班也一起答应过去。"
+        },
+        {
+          "text": "许知夏说先到家里，第二天再出来。周叙那晚把母亲托买的东西收进袋子，准备回去时一起带。他们讲到最后，先确认了见面的地点，没再说“到时候什么都好办”，电话结束以后，许知夏去找自己的证件袋。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 9,
+          "season": "autumn",
+          "label": "2013 · 秋 · 先告诉我你到了",
+          "location": "两人的住处",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "十月票买好后才确认换班与见面"
+          ]
+        }
+      },
+      "next": "CH06_EP03_END"
+    },
+    {
+      "id": "CH06_EP03_END",
+      "type": "episodeEnd",
+      "next": "CH06_EP04"
+    }
+  ],
+  "nodeAliases": {}
+}

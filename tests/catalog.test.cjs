@@ -13,8 +13,8 @@ function fixture(change, check) {
   finally { if (!root.startsWith(work+path.sep)) throw Error('Invalid fixture cleanup path');fs.rmSync(root,{recursive:true,force:true}); }
 }
 function edit(root,file,change){const name=path.join(root,file);const json=JSON.parse(fs.readFileSync(name));change(json);fs.writeFileSync(name,JSON.stringify(json));}
-test('entire playable catalog includes five implemented chapters',()=>{
-  const r=validateStoryTree();assert.ok(r.chapters>=5);assert.ok(r.episodes>=28);assert.ok(r.nodes>=208);
+test('entire playable catalog includes six implemented chapters',()=>{
+  const r=validateStoryTree();assert.ok(r.chapters>=6);assert.ok(r.episodes>=34);assert.ok(r.nodes>=254);
 });
 test('validator rejects an episode file omitted from its manifest',()=>{
   fixture(root=>edit(root,'data/story/chapter02/chapter02_manifest.json',m=>m.episodes=m.episodes.filter(e=>e.id!=='CH02_EP02')),root=>assert.throws(()=>validateStoryTree(root),/Unregistered story file: ep02_old_gym/));
@@ -35,7 +35,7 @@ test('chapter transition persists a consistent cursor and preserves it if the ne
   assert.deepEqual(s.progress,before);assert.equal(writes.length,count);
   runtime.load(second,'CH02');assert.equal(s.progress.episodeId,'CH02_EP02');assert.equal(runtime.current().id,'CH02_EP02_N001');
 });
-test('every route reaches the current boundary and keeps chapter 02 to 05 decision consequences',()=>{
+test('every route reaches the current boundary and keeps chapter 02 to 06 decision consequences',()=>{
   const catalog=JSON.parse(fs.readFileSync(path.join(resources,'data/story/catalog.json')));
   const chapters=new Map(catalog.chapters.map(ref=>{const m=JSON.parse(fs.readFileSync(path.join(resources,ref.resource+'.json')));return[m.chapterId,m]}));
   const episodes=new Map([...chapters.values()].flatMap(m=>m.episodes.map(ref=>[ref.id,{chapterId:m.chapterId,ep:JSON.parse(fs.readFileSync(path.join(resources,ref.resource+'.json')))}])));
@@ -54,9 +54,10 @@ test('every route reaches the current boundary and keeps chapter 02 to 05 decisi
         assert.ok(state.flags.CH03_SEEN_GRADUATION_PHOTO&&state.flags.CH03_SEEN_FUTURE_ENVELOPE);assert.equal(state.life.memoryRecords.GRADUATION.status,'fragmentary');
         const ask=!!state.flags.CH04_ASKED_SUMMER_PLAN;assert.notEqual(ask,!!state.flags.CH04_PROMISED_FOR_XIA);
         for(const [yes,no,condition] of [['CH04_EP01_ASK','CH04_EP01_SET',discuss],['CH04_EP02_COMPARE','CH04_EP02_REARRANGE',discuss],['CH04_EP03_KNOWN','CH04_EP03_LATE',told],['CH04_EP05_AGREED','CH04_EP05_CORRECTED',ask],['CH04_EP06_LISTEN','CH04_EP06_FIX',discuss],['CH04_EP06_ASK_AGAIN','CH04_EP06_PROMISE_AGAIN',ask]]){assert.ok(state.readNodeIds.includes(condition?yes:no));assert.ok(!state.readNodeIds.includes(condition?no:yes));}
-        assert.ok(state.flags.CH04_READ_TIMETABLES&&state.flags.CH04_SEEN_STREET_PHOTO);assert.equal(state.life.time.year,2013);assert.equal(state.life.time.month,6);assert.equal(state.life.stage,'graduate');assert.equal(state.life.memoryRecords.DISTANCE.status,'fragmentary');assert.equal(state.life.relationships.XIA,'异地，商量毕业去向');const share=!!state.flags.CH05_TALKED_JOB_CONDITIONS;assert.notEqual(share,!!state.flags.CH05_ASSUMED_RETURN_FOR_JOB);
+        assert.ok(state.flags.CH04_READ_TIMETABLES&&state.flags.CH04_SEEN_STREET_PHOTO);assert.equal(state.life.time.year,2013);assert.equal(state.life.time.month,12);assert.equal(state.life.stage,'working');assert.equal(state.life.memoryRecords.DISTANCE.status,'fragmentary');assert.equal(state.life.relationships.XIA,'已经分开');const share=!!state.flags.CH05_TALKED_JOB_CONDITIONS;assert.notEqual(share,!!state.flags.CH05_ASSUMED_RETURN_FOR_JOB);
         for(const [yes,no,condition] of [['CH05_EP01_CHECK_FIRST','CH05_EP01_REMEMBER',ask],['CH05_EP02_FAMILY_KNOWN','CH05_EP02_FAMILY_LATE',told],['CH05_EP03_ASK_ROOM','CH05_EP03_SUGGEST_ROOM',discuss],['CH05_EP04_COMPARE','CH05_EP04_RECHECK',ask],['CH05_EP05_SHARE','CH05_EP05_RETURN',share],['CH05_EP06_SEPARATE','CH05_EP06_CORRECT',share]]){assert.ok(state.readNodeIds.includes(condition?yes:no));assert.ok(!state.readNodeIds.includes(condition?no:yes));}
-        assert.ok(state.flags.CH05_READ_PRACTICE_COSTS&&state.flags.CH05_READ_JOB_CONDITIONS&&state.flags.CH05_READ_START_DATES);assert.equal(state.life.memoryRecords.WORK_PLANS.status,'fragmentary');assert.deepEqual(state.endings,{});assert.ok(!state.flags.READ_FULL_LETTER&&!state.flags.FOUND_FULL_RECORDING&&!state.flags.UNDERSTOOD_BREAKUP_TRUTH);
+        assert.ok(state.flags.CH05_READ_PRACTICE_COSTS&&state.flags.CH05_READ_JOB_CONDITIONS&&state.flags.CH05_READ_START_DATES);assert.equal(state.life.memoryRecords.WORK_PLANS.status,'fragmentary');for(const [yes,no,condition] of [['CH06_EP01_SHARE','CH06_EP01_CORRECT',share],['CH06_EP02_EARLY','CH06_EP02_LATE',told],['CH06_EP03_ASKED','CH06_EP03_REVISED',ask],['CH06_EP03_LISTEN','CH06_EP03_RECONSIDER',discuss],['CH06_EP04_SEPARATE','CH06_EP04_CORRECTED',share]]){assert.ok(state.readNodeIds.includes(condition?yes:no));assert.ok(!state.readNodeIds.includes(condition?no:yes));}
+        assert.ok(state.flags.CH06_READ_WORK_NOTE&&state.flags.CH06_READ_VISIT_DATES&&state.flags.CH06_READ_STATION_NOTE&&state.flags.CH06_PARTED_2013);assert.equal(state.life.memoryRecords.WORK_START.status,'fragmentary');assert.equal(state.life.memoryRecords.BREAKUP.status,'fragmentary');assert.deepEqual(state.endings,{});assert.ok(!state.flags.READ_FULL_LETTER&&!state.flags.FOUND_FULL_RECORDING&&!state.flags.UNDERSTOOD_BREAKUP_TRUTH);
       }
       else {const next=episodes.has(node.next)?node.next:chapters.get(node.next).episodes[0].id;queue.push({state,episodeId:next,steps:item.steps+1});}
     }else if(node.type==='choice')node.options.forEach(o=>enqueue(r=>r.choose(o.id,node.id)));

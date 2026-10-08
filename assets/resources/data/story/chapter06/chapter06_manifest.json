@@ -1,0 +1,43 @@
+{
+  "chapterId": "CH06",
+  "title": "那天我们都没有回头",
+  "episodes": [
+    {
+      "id": "CH06_EP01",
+      "name": "第一班",
+      "resource": "data/story/chapter06/ep01_first_shift",
+      "startNode": "CH06_EP01_N001"
+    },
+    {
+      "id": "CH06_EP02",
+      "name": "空出来的晚上",
+      "resource": "data/story/chapter06/ep02_evenings",
+      "startNode": "CH06_EP02_N001"
+    },
+    {
+      "id": "CH06_EP03",
+      "name": "约一次见面",
+      "resource": "data/story/chapter06/ep03_visit_dates",
+      "startNode": "CH06_EP03_N001"
+    },
+    {
+      "id": "CH06_EP04",
+      "name": "没有一起定下来的事",
+      "resource": "data/story/chapter06/ep04_days_home",
+      "startNode": "CH06_EP04_N001"
+    },
+    {
+      "id": "CH06_EP05",
+      "name": "站口",
+      "resource": "data/story/chapter06/ep05_station",
+      "startNode": "CH06_EP05_N001"
+    },
+    {
+      "id": "CH06_EP06",
+      "name": "回去以后",
+      "resource": "data/story/chapter06/ep06_afterwards",
+      "startNode": "CH06_EP06_N001"
+    }
+  ],
+  "nextChapter": "CH07"
+}

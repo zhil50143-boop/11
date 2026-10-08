@@ -1,0 +1,315 @@
+{
+  "episodeId": "CH06_EP01",
+  "name": "第一班",
+  "startNode": "CH06_EP01_N001",
+  "nodes": [
+    {
+      "id": "CH06_EP01_N001",
+      "type": "passage",
+      "title": "车票买好了",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "许知夏买到回南城的票，给周叙发了到站时间。他照着时间去接，母亲让他带一瓶水，说车站外面买的贵。他下楼才发现瓶盖没拧紧，裤子侧面湿了一块，在站前等的时候一直拿袋子挡着。"
+        },
+        {
+          "text": "她从出口出来，手里除了箱子还有一个纸袋，里面装着没寄完的书。周叙接过去，她说别放到湿的那一边，最底下有她母亲让带回来的单子。他把两个袋子换了手，问她车上吃过没有，她说吃了半个面包，剩下的忘在座位上。"
+        },
+        {
+          "text": "那几天他们见了一次陈野，也各自回家办材料。陈野已经定下配货点的岗位，还没拿到新的班表，吃饭时接电话说等拿到再答，不是现在就能替别人顶班。许知夏听了一会儿，问周叙工作那边回宿舍申请没有，他说可以先去登记，床位还要到那里看。"
+        },
+        {
+          "text": "她的住处也在交接。母亲帮她把一箱冬天的衣服留在家里，她先带薄的过去。周叙陪她去买一个插线板，试着问能不能再多留一天，她拿出通知给他看，报到前还要回去补材料。他们把出发时间写到袋子上的旧纸条旁，没有改她已经买好的车票。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 6,
+          "season": "summer",
+          "label": "2013 · 夏 · 车票买好了",
+          "location": "南城",
+          "timeline": "memory"
+        },
+        "stage": "graduate",
+        "relationships": {
+          "XIA": "异地，准备报到"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "六月确认过的返乡与报到日期"
+          ]
+        }
+      },
+      "next": "CH06_EP01_ARRIVAL"
+    },
+    {
+      "id": "CH06_EP01_ARRIVAL",
+      "type": "passage",
+      "title": "一张空床",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "七月，周叙带着箱子去报到。门口的人把他带到办公室，让他先核姓名，再去宿舍。登记的地方找不到钥匙，他等了快一个小时，同行的人出去买烟，他留在原处看着行李，给家里发消息说到了。"
+        },
+        {
+          "text": "宿舍里有一张空床，靠着门，前一个人留下了一个弯掉的衣架。周叙把袋子放上去，拿抹布擦了半天床沿。室友已经上了一阵班，问他带没带凉席，他说带了，打开才发现母亲塞在最上面的是一条毛巾，凉席还在箱底。"
+        },
+        {
+          "text": "第一周他跟人做设备记录，交班时要把没处理完的那几项说清。他写得慢，有一页别人看不清，师傅让他重新抄，别把昨天的编号直接沿用。吃饭的时候大家讲班次，他还没听明白就点了头，回去问室友，才把第二天几点到写准确。"
+        },
+        {
+          "text": "许知夏也到报社了。她先跟着值班编辑整理来稿、核人名和电话，交给她的材料看完还得给编辑核一次。有一晚她等别人看完材料，回到住处已经很晚，水池边还放着上一家忘拿的盆。她把盆挪开，洗了两件衣服，再回周叙那条问住处的消息。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 7,
+          "season": "summer",
+          "label": "2013 · 夏 · 一张空床",
+          "location": "省内设备公司",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "七月各自报到后的第一周"
+          ]
+        }
+      },
+      "next": "CH06_EP01_JOB_CHECK"
+    },
+    {
+      "id": "CH06_EP01_JOB_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH05_TALKED_JOB_CONDITIONS",
+          "next": "CH06_EP01_SHARE"
+        },
+        {
+          "flag": "CH05_ASSUMED_RETURN_FOR_JOB",
+          "next": "CH06_EP01_CORRECT"
+        }
+      ],
+      "fallback": "CH06_EP01_HOUSE"
+    },
+    {
+      "id": "CH06_EP01_SHARE",
+      "type": "passage",
+      "title": "报到以后再核一次",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙把实际排班表上的内容抄给许知夏，告诉她之前问过的床位现在有了，休息日却要等下一张表。她说自己当初也只问到开始日期，到了才知道晚上经常要等交稿，两个人不能把五月没写的那几项当成已经有空。"
+        },
+        {
+          "text": "她让他把确定能接电话的时间发来，不方便就先留消息。周叙说好，先写了两天，后面没有接着把整个月填满。母亲问他们是不是周末一起回家，他说明还没约，自己下周也不一定空。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 7,
+          "season": "summer",
+          "label": "2013 · 夏 · 报到以后再核一次",
+          "location": "周叙的宿舍",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "答复前沟通过的条件在报到后继续核对"
+          ]
+        }
+      },
+      "next": "CH06_EP01_HOUSE"
+    },
+    {
+      "id": "CH06_EP01_CORRECT",
+      "type": "passage",
+      "title": "不能拿自己的床位替她算",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "宿舍有床以后，周叙又想起省内那份名单，给许知夏打电话时说了一句这里住着倒还方便。她问是他的床还是她的住处，他停了一下，说是自己的，她那边怎么样还得问。"
+        },
+        {
+          "text": "许知夏把新住处的路讲给他听，离报社比实习时近一些，屋子小，要和另一位姑娘轮着用厨房。周叙没有把她留下讲成后来变了主意。他告诉母亲两个人已经分别报到，之前谈过的回来是自己的建议，不是她已经答应的一份安排。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 7,
+          "season": "summer",
+          "label": "2013 · 夏 · 不能拿自己的床位替她算",
+          "location": "周叙的宿舍",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "分别报到后没有把旧建议写成她违约"
+          ]
+        }
+      },
+      "next": "CH06_EP01_HOUSE"
+    },
+    {
+      "id": "CH06_EP01_HOUSE",
+      "type": "passage",
+      "title": "电风扇放哪边",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "宿舍的风扇放在桌上，转到周叙床这边就会碰见一根电线。室友让他把线从桌后绕，他绕好以后，发现自己挂着的毛巾又挡住风。两个人把东西挪了几遍，最后谁也没用刚进门时看好的那个位置。"
+        },
+        {
+          "text": "母亲寄来的饭盒盖子还和他旧的那只对不上，他拿去问食堂能不能热饭，对方让他换成能盖严的。他回去把母亲塞进箱子的几只盒子拿出来，哪只装了药袋、哪只装了针线，都得先腾干净。"
+        },
+        {
+          "text": "许知夏打来时正找房东留的水表记录。房东把字写在包装背面，她念了两遍，发现有一个数被折住。周叙问她有没有吃饭，她说吃过了，问他那边要自己带碗吗。他看着桌上刚腾出来的饭盒，先把盖子合了一次。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 7,
+          "season": "summer",
+          "label": "2013 · 夏 · 电风扇放哪边",
+          "location": "周叙的宿舍",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "搬进宿舍以后要自己处理的吃住"
+          ]
+        }
+      },
+      "next": "CH06_EP01_PAPER"
+    },
+    {
+      "id": "CH06_EP01_PAPER",
+      "type": "letter",
+      "actionText": "看报到后的便条",
+      "text": "2013.7\n周叙：床位已登记；第一周跟班，休息日等排表。\n许知夏：先跟值班编辑；住处已换，交稿结束时间不固定。\n\n家里问到周末，先看各自的表。",
+      "setFlags": [
+        "CH06_READ_WORK_NOTE"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 7,
+          "season": "summer",
+          "label": "2013 · 夏 · 看报到后的便条",
+          "location": "周叙的宿舍",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "报到后的两份实际作息"
+          ]
+        }
+      },
+      "next": "CH06_EP01_PHONE"
+    },
+    {
+      "id": "CH06_EP01_PHONE",
+      "type": "phone",
+      "title": "第一张工资单以前",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "许知夏：房东的那张纸找到了。没多算，刚才是我念错一位。"
+        },
+        {
+          "text": "周叙：我明天跟早班，晚上可能接得早。"
+        },
+        {
+          "text": "许知夏：我明天要等一份稿，不一定。"
+        },
+        {
+          "text": "周叙：那你出来再说。"
+        },
+        {
+          "text": "母亲：箱子里那袋药别一直放宿舍，周末带回来。"
+        },
+        {
+          "text": "周叙：不是这周。等班表出来。"
+        },
+        {
+          "text": "周叙把母亲那条消息记到本子上，怕下一次回家又只拿洗过的衣服。他算了一下手边的钱，第一张工资单还没来，先去食堂充了一点，剩下的留着车费。许知夏那边也要先付住处的费用，她问母亲寄的衣服到了没有，母亲回说还在路上。"
+        },
+        {
+          "text": "那晚他们没有吵，也没讲多久。许知夏的室友要打电话，周叙这边有人要关大灯，他让她先去，自己把床头的小灯接上。两个人第二天都要早起，挂电话以后，各自把桌上的纸收起来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2013,
+          "month": 7,
+          "season": "summer",
+          "label": "2013 · 夏 · 第一张工资单以前",
+          "location": "两人的住处",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "异地，各自上班"
+        },
+        "memory": {
+          "id": "WORK_START",
+          "title": "刚上班那年",
+          "status": "fragmentary",
+          "evidence": [
+            "入职第一个月的日常短信"
+          ]
+        }
+      },
+      "next": "CH06_EP01_END"
+    },
+    {
+      "id": "CH06_EP01_END",
+      "type": "episodeEnd",
+      "next": "CH06_EP02"
+    }
+  ],
+  "nodeAliases": {}
+}
