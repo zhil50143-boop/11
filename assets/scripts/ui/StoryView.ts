@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game, director } from 'cc';
+import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game, director, Color } from 'cc';
 import { StoryManager, type StoryEvent } from '../story/StoryManager';
 import { SaveManager } from '../save/SaveManager';
 import { makeCanvas, container, text, button, clear } from './UIFactory';
@@ -65,7 +65,8 @@ export class StoryView extends Component {
       if (!paperReading) text(this.status, memoryCaption, 735, 70, 26);
     }
     if (SaveManager.warning) {
-      text(this.status, SaveManager.warning, -800, 70, 26);
+      const warning = text(this.status, SaveManager.warning, -800, 70, 26);
+      if (paperReading) warning.color = new Color(53, 59, 57);
       button(this.status, '重试保存', -890, () => { this.manager.retrySave(); void this.manager.refresh() });
     }
     if (event.type === 'end') {
