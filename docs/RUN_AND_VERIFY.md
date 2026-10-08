@@ -1,6 +1,6 @@
 # 当前十章候选的运行与验收
 
-Cocos Creator 3.8.8 + TypeScript，1080×1920竖屏，Boot/Main/Story。十章60片段467节点、六结局与真实重读已实现。声音普通口语感仍重做；真人阅读、最终声音包和TapTap设备待验。进度以FINAL_PROGRESS为准。
+Cocos Creator 3.8.8 + TypeScript，1080×1920竖屏，Boot/Main/Story。十章60片段467节点、六结局与真实重读已实现。第三版两名角色音色已经用户确认固定，完整录音已接入；真人阅读与TapTap设备待验。进度以FINAL_PROGRESS为准。
 
 ## 开发检查
 
@@ -62,3 +62,7 @@ TapTap上传ZIP根仅一个game/文件夹，game/index.html在第一层，H5资�
 实时CLI帮助中屏幕方向1=portrait、0=landscape，不可照旧样例给竖屏传0。上传要求文件在命令当前目录内，以实际schema为准。上传、主包绑定、提审和发布单独批准/核验。
 
 平台真机另查首次手势音频、切后台恢复、触摸和安全区、存储配额/加载失败、部署压缩和性能。普通Chrome与本机ZIP预检不替代TapTap容器/手机。
+
+## 全文内容交接
+
+运行`node tools/export-review-copy.cjs`从实际入包清单和源码重新生成PLATFORM_REVIEW_COPY.md与index.json。导出须覆盖10章60片段467节点、全部替代分支与六结局；原始字符串和源文件散列一并保留，不能用单路线、摘要或识别转写代替。平台阅读和GPT核对见REVIEW_HANDOFF.md；最终版本变化后重导出，并与最终提交和包对应。

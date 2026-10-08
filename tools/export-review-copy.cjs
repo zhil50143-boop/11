@@ -2,10 +2,11 @@
 const fs=require('node:fs'), path=require('node:path'), crypto=require('node:crypto'), assert=require('node:assert/strict'), ts=require('typescript');
 const root=path.resolve(__dirname,'..'), target=path.resolve(process.argv[2]||path.join(root,'docs/PLATFORM_REVIEW_COPY.md'));
 const read=file=>JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
+const textHash=file=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n')).digest('hex');
 const chinese=/[\u3400-\u9fff]/;
 const records=[], inputs=[], nodes=[], sections=[], contextRows=[];
 const inventory=(file,object)=>{
- inputs.push({file,sha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(root,file))).digest('hex')});
+ inputs.push({file,sha256:textHash(file)});
  const visit=(v,key)=>{if(typeof v==='string'&&chinese.test(v))records.push({file,path:key,text:v});else if(v&&typeof v==='object')for(const[k,x]of Object.entries(v))visit(x,key?(Array.isArray(v)?key+'['+k+']':key+'.'+k):k)};
  visit(object,'');
 };
@@ -59,7 +60,7 @@ for(const file of walk('assets/scripts').filter(f=>!f.includes('/vendor/'))){
   }
   ts.forEachChild(node,visit);
  };visit(source);
- inputs.push({file,sha256:crypto.createHash('sha256').update(raw).digest('hex')});
+ inputs.push({file,sha256:textHash(file)});
 }
 sections.push('## 界面、操作、存档与异常提示全集\n\n下列直接提取当前游戏源码中的中文文字，含加载、按钮、翻面、播放、阅读、重读、存档及异常情况。为保守覆盖，也收录源码内部背景和诊断的中文常量；它们不全部展示给玩家，可按来源区分。重复原文按来源保留。模板中的动态部分按源码保留，人物与场景变量来自前面的实际正文与场景标注。\n');
 for(const row of uiRows)sections.push('### '+row.file+':'+row.line+'\n\n'+row.text+'\n');
@@ -67,6 +68,7 @@ sections.push('## 人物显示名称与默认场景\n');
 for(const [id,name]of Object.entries(presentation.speakers))sections.push('- '+id+'：'+name);
 sections.push('\n默认现实标注：'+presentation.present+'\n\n默认回忆标注：'+presentation.memory+'\n');
 const audioFile='art/original/audio/manifest.json',audio=read(audioFile);
+inputs.push({file:audioFile,sha256:textHash(audioFile)});
 sections.push('## 实际录音口述台词\n\n第三版两名角色音色已由用户确认固定。以下按音频制作清单保留实际口述台词，不以识别转写替换。完整录音约63.53秒；第一章只使用前16.66秒，第八章使用完整文件。\n');
 for(const event of audio.events)sections.push(event.role+'（'+event.start.toFixed(2)+'～'+event.end.toFixed(2)+'秒）：'+event.text+'\n');
 sections.push('## 原始文字覆盖附录\n\n为避免任一分支、场景标注或背景文字遗漏，以下逐条保留所有入包剧情及人物JSON中的中文字符串。主文已整理阅读顺序；这里包含重复场景与内部关系背景原文，后者并不展示为关系分数。控制标识、数值、资源路径不是玩家文案，不计入本文字表；完整节点清单另见JSON索引。\n');
@@ -77,6 +79,6 @@ const body=header+sections.join('\n');
 // The raw appendix is an exhaustive coverage witness independent of the formatted body.
 assert.ok(records.every(r=>body.includes(r.text)),'Missing JSON copy');assert.ok(uiRows.every(r=>body.includes(r.text)),'Missing source copy');
 fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,body,'utf8');
-const index={version:'1.0.0-rc.2',sourceCommit,chapters:chapterCount,episodes:episodeCount,nodeCount:nodes.length,endings:endingCount,jsonTextEntries:records.length,sourceTextEntries:uiRows.length,coverage:{json:'all Chinese string values, no branch filtering',source:'all Chinese TypeScript literals/templates outside vendor',voice:'all manifest events'},nodes,textRecords:records,interfaceText:uiRows,inputs,export:{bytes:Buffer.byteLength(body),sha256:crypto.createHash('sha256').update(body).digest('hex')},limitations:['Current candidate, regenerate on final commit','Images/audio require separate review','Human reading and physical TapTap device pending']};
+const index={version:'1.0.0-rc.2',sourceCommit,chapters:chapterCount,episodes:episodeCount,nodeCount:nodes.length,endings:endingCount,jsonTextEntries:records.length,sourceTextEntries:uiRows.length,coverage:{json:'all Chinese string values, no branch filtering',source:'all Chinese TypeScript literals/templates outside vendor',voice:'all manifest events'},inputHashPolicy:'SHA256 of UTF-8 source normalized to LF; matches source archive independent of Windows checkout line endings',nodes,textRecords:records,interfaceText:uiRows,inputs,export:{bytes:Buffer.byteLength(body),sha256:crypto.createHash('sha256').update(body).digest('hex')},limitations:['Current candidate, regenerate on final commit','Images/audio require separate review','Human reading and physical TapTap device pending']};
 fs.writeFileSync(target.replace(/\.md$/i,'.index.json'),JSON.stringify(index,null,2)+'\n');
 console.log(JSON.stringify({file:target,chapters:chapterCount,episodes:episodeCount,nodes:nodes.length,endings:endingCount,jsonTextEntries:records.length,sourceTextEntries:uiRows.length,bytes:index.export.bytes,sha256:index.export.sha256},null,2));
