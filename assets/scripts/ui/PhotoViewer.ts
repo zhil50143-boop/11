@@ -24,7 +24,7 @@ export class PhotoViewer {
     paper.getComponent(UITransform)!.setContentSize(900, 600);
     const surface = paper.addComponent(Graphics); surface.fillColor = new Color(239,237,230); surface.rect(-450,-300,900,600); surface.fill();
     // Keep the ink separate from the generated image, preserving exact story text.
-    const backCaption = text(paper, node.backText ?? '', 0, 500, 38); backCaption.color = new Color(44,45,43);
+    const backCaption = text(paper, node.backText ?? '', 0, 500, 46); backCaption.color = new Color(44,45,43);
     const finish = button(root, '放回去', -650, done);
     if (node.backText) {
       finish.interactable = false;

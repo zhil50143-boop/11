@@ -1,0 +1,174 @@
+{
+  "episodeId": "CH10_EP03",
+  "name": "还要一起商量",
+  "startNode": "CH10_EP03_N001",
+  "nodes": [
+    {
+      "id": "CH10_EP03_N001",
+      "type": "passage",
+      "title": "九月二十九日，星期二",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "程安然接到单位的通知，下周有两天要去另一处做交接，晚上可能回来晚。她先把日期记在家里的纸上，问周叙父亲的复查有没有定。周叙说还没有，医院答应有号再打电话，不能当成已经排好了。"
+        },
+        {
+          "text": "两个人在餐桌边看了一会儿。周满国庆假期有一天约同学，另外几天没有定，不能默认她替家里跑一整天。程安然说她那两天先不排接车，让周叙看能否把自己的工作错开；他给单位发消息，等明天才能答复。"
+        },
+        {
+          "text": "纸上有一格空着。他们留在那里，把医院电话写到旁边。周叙去关厨房的灯，回来才想起车前几天已经预约保养，下周同一天可能取不回来，打电话问能不能改期。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 九月二十九日，星期二",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP03_CARE"
+    },
+    {
+      "id": "CH10_EP03_CARE",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH07_PLANNED_CARE_TOGETHER",
+          "next": "CH10_EP03_SHARED"
+        }
+      ],
+      "fallback": "CH10_EP03_REVISE_CHECK"
+    },
+    {
+      "id": "CH10_EP03_REVISE_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH07_ASSUMED_PARTNER_PAUSE",
+          "next": "CH10_EP03_REVISED"
+        }
+      ],
+      "fallback": "CH10_EP03_COMMON"
+    },
+    {
+      "id": "CH10_EP03_SHARED",
+      "type": "passage",
+      "title": "原来的分工也会变",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "程安然问接车的事要不要先打给父亲问一下。以前分过的照看时间只管那一段，如今大家的班次都变了。周叙给家里打电话，父亲说这次能自己上车，到站后要是太晚，再看看谁有空。"
+        },
+        {
+          "text": "周叙把这句告诉妻子。她说先不用把所有人都叫来，确认车次以后再说。两个人各自把能做的那一段圈出来，剩下的没有硬凑到同一个人那里。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 原来的分工也会变",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP03_ANRAN"
+    },
+    {
+      "id": "CH10_EP03_REVISED",
+      "type": "passage",
+      "title": "这次没有先替她填",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "程安然看着那张纸，说这两天别再先按她在家算。周叙听见“再”字，知道她说的是以前照看家里时那次安排，后来已经改过。他说这次先问单位能调哪一天，把自己那一格写在医院电话旁边。"
+        },
+        {
+          "text": "妻子没有把空出来的时间全接走。她说交接如果结束早，晚饭可以回来做，结束晚就各自吃，别等。周叙把这句记下来，第二天自己买了一份可以热的饭，女儿那份让她回家前再说。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 这次没有先替她填",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP03_ANRAN"
+    },
+    {
+      "id": "CH10_EP03_COMMON",
+      "type": "passage",
+      "title": "先核各自的时间",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙给单位发完消息，把父亲的电话号写到纸上。程安然说自己结束早可以回来，结束晚就不等饭。女儿放学看见那张纸，也补上自己约同学的日期。"
+        },
+        {
+          "text": "三个人说的是这一周能做什么，没有拿别的年份的安排来代替今天。医院没确认的那一项仍然空着。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 先核各自的时间",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP03_ANRAN"
+    },
+    {
+      "id": "CH10_EP03_ANRAN",
+      "type": "passage",
+      "title": "她今天还有一件事",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "程安然交接用的一份材料被退回来，说明里写得不够清楚。她在桌边改了两个晚上，周叙坐下来想帮着核数字，问了几次都没弄明白。她把纸翻回第一页，说：“你先别动，我这边还没对完。”声音比平时硬一点。周叙收回手，去把自己的碗洗了。"
+        },
+        {
+          "text": "过了一会儿，她把一页推给他，说刚才急了，让他只查这一项，不用改整份。周叙问怎么对，妻子拿笔指给他看。查完还要等另一个同事确认，安然说这份东西来回了三次，今天最好别再漏。晚上十点多，对方回了消息，她重新开电脑，补上最后一页，第二天照常去上班。"
+        },
+        {
+          "text": "周叙早上送她到路口。她问晚上有没有空顺路拿快递，里面是自己买的鞋。周叙说要看几点离开单位，如果来不及就发消息。她说好，把包往上提了一下，去等另外一趟车。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 她今天还有一件事",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "setFlags": [
+        "CH10_SHARED_WEEK"
+      ],
+      "next": "CH10_EP03_END"
+    },
+    {
+      "id": "CH10_EP03_END",
+      "type": "episodeEnd",
+      "next": "CH10_EP04"
+    }
+  ],
+  "nodeAliases": {}
+}

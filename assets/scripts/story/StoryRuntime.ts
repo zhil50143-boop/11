@@ -1,6 +1,7 @@
 import type { GameStateData } from '../core/GameState';
 import { applyEffects } from './StoryEffects';
 import { applyLifeContext } from '../core/LifeState';
+import { resolveEnding, recordEnding } from './EndingResolver';
 import type { EpisodeData, StoryNode, InteractionStoryNode } from './StoryNode';
 
 export class StoryRuntime {
@@ -31,7 +32,9 @@ export class StoryRuntime {
     for (let guard = 0; guard < 64; guard++) {
       const node = this.nodes.get(this.state.progress.nodeId);
       if (!node) throw new Error('Missing node: ' + this.state.progress.nodeId);
-      if (node.type === 'condition') {
+      if (node.type === 'endingRoute') {
+        this.go(node.targets[resolveEnding(this.state)]);
+      } else if (node.type === 'condition') {
         const branch = node.branches.find(b => {
           if (b.flag) return !!this.state.flags[b.flag] === (b.equals ?? true);
           if (!b.stat || !b.operator || b.value === undefined) return false;
@@ -95,6 +98,12 @@ export class StoryRuntime {
     this.requireTarget(special.next);
     if (!this.state.readNodeIds.includes(node.id)) applyEffects(this.state, special.effects, special.setFlags);
     this.read(node.id); this.go(special.next); return this.current();
+  }
+  finish(expected: string): void {
+    const node = this.expect(expected);
+    if (node.type !== 'ending') throw new Error('Ending required');
+    recordEnding(this.state, node.endingId);
+    this.read(node.id); this.persist(this.state);
   }
   private expect(id: string): StoryNode {
     const node = this.current();

@@ -35,3 +35,11 @@ Code2Games核查日期2026-10-08，固定提交8d5ca9c95432e3969bef443a83f8cf224
 Qwen官方[Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)代码与官方模型卡标注Apache-2.0；本地包qwen-tts固定0.1.1，许可证原文保留third_party/qwen-tts/LICENSE。首个0.6B-CustomVoice（85e237c12c027371202489a0ec509ded67b5e4b5）候选被用户否定，不采用。新[1.7B-VoiceDesign](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign/tree/5ecdb67327fd37bb2e042aab12ff7391903235d3)描述虚构角色与现场说话语气，再用[0.6B-Base](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base/tree/5d83992436eae1d760afd27aff78a71d676296fc)沿用自己生成的两个人物声线；没有现实人物参考。只作为本机离线素材生产，模型权重/推理依赖不加入H5运行时。原文脚本、指纹、试听、转写与主观听感状态分开留证。
 
 独立ASR用SYSTRAN [faster-whisper](https://github.com/SYSTRAN/faster-whisper)1.2.1与官方small模型536b0662742c02347bc0e980a01041f333bce120，MIT，仅检查内容，不证明声音自然。PyAV19路径解码metadata_errors不兼容，改用soundfile读取真实波形与16k数组输入，没有改对白来迎合转写结果。所有模型的大文件均实际核SHA256，制作目录忽略，不复制示例内容。
+
+## 当前发布构建与声音版本
+
+Cocos Creator3.8.8所附引擎根LICENSE.md为MIT，原文保存third_party/cocos-engine-3.8.8/LICENSE.md，随H5 THIRD_PARTY_NOTICES.txt与mitt许可分发。仅裁剪并构建本游戏所需引擎模块，不分发编辑器或将其许可推断到其他软件。
+
+用户否定两版声音后，第三版重新设计两名普通声线，延续仍只使用本项目虚构合成参考。63.53秒正式候选、16.66秒开头、原声说明、散列和完整独立转写在art/original/audio。旧两版留在忽略的work，不作为当前素材；第三版技术播放通过，音色已由用户试听确认。
+
+音色确认记录：2026-10-08用户试听新声线后回复“比上一版自然”，随后明确“就这个音色了”。第三版两名角色音色已确认固定；普通说话的语气、接话及全篇真人阅读继续校准，技术检测不冒充听感。

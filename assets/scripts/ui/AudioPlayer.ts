@@ -5,11 +5,11 @@ import { DocumentPanel } from './DocumentPanel';
 export class AudioPlayer {
   private generation = 0;
   private source: AudioSource | null = null;
-  dispose(): void { this.generation++; this.source?.stop(); this.source = null }
+  dispose(): void { this.generation++; this.source?.stop(); this.source?.destroy(); this.source = null }
   show(root: Node, node: InteractionStoryNode, done: () => void, offset = 0, changed: (offset: number) => void = () => {}): void {
     this.dispose(); const generation = this.generation;
     const label = text(root, node.text, 250, 300);
-    const finish = button(root, '继续', -650, () => { this.dispose(); done() }); finish.interactable = false;
+    const finish = button(root, '继续', -650, () => { this.dispose(); done() }); finish.interactable = !!node.requireReadToEnd && offset >= .99;
     const play = button(root, '播放', -300, () => {
       if (!this.source) {
         label.string = node.transcript ? '录音暂时无法播放。可以查看完整录音文字。' : '录音暂时无法播放。可以读文字继续。';

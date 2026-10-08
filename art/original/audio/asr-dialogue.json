@@ -1,0 +1,133 @@
+{
+  "method": "Independent transcript without expected-text prompting. Does not establish natural timbre or human listening acceptance.",
+  "results": [
+    {
+      "index": "许知夏",
+      "role": "许知夏",
+      "expected": "喂？听得到吗？周叙，你别装死。不是你说让我试一下录音功能吗？现在我录了，你又不说话。",
+      "transcript": "喂? 听得到吗? 赵绪,你别装死。不是你说让我试一下录音功能吗? 现在我录了,你又不说话。",
+      "peak": 0.523712158203125,
+      "clippedSamples": 0
+    },
+    {
+      "index": "周叙",
+      "role": "周叙",
+      "expected": "我不知道说什么。你离近点，刚才那句会不会没录上？你把它带去社团？那以后你问，我来写。",
+      "transcript": "我不知道说什么,你离敬点,刚才那句会不会没路上。你把他带去社团,那以后你问,我来写。",
+      "peak": 0.572540283203125,
+      "clippedSamples": 0
+    },
+    {
+      "index": 2,
+      "role": "周叙",
+      "expected": "我不知道说什么。你离近点，刚才那句会不会没录上？",
+      "transcript": "我不知道说什么。你离境点,刚才那句会不会没路上。",
+      "peak": 0.47650146484375,
+      "clippedSamples": 0
+    },
+    {
+      "index": 3,
+      "role": "许知夏",
+      "expected": "等一下。车来了。",
+      "transcript": "等下,车来了。",
+      "peak": 0.495758056640625,
+      "clippedSamples": 0
+    },
+    {
+      "index": 4,
+      "role": "许知夏",
+      "expected": "哦，是隔壁班的车。你刚说什么？",
+      "transcript": "哦﹑是隔壁般的车﹑你刚说什么?",
+      "peak": 0.515411376953125,
+      "clippedSamples": 0
+    },
+    {
+      "index": 5,
+      "role": "周叙",
+      "expected": "让你离近点。",
+      "transcript": "让你离境点。",
+      "peak": 0.512603759765625,
+      "clippedSamples": 0
+    },
+    {
+      "index": 6,
+      "role": "许知夏",
+      "expected": "这么近啊。你先听听，能不能听清。",
+      "transcript": "这么近啊?你先听听,能不能听清?",
+      "peak": 0.40167236328125,
+      "clippedSamples": 0
+    },
+    {
+      "index": 7,
+      "role": "周叙",
+      "expected": "你把它带去社团？",
+      "transcript": "你把他带去社团?",
+      "peak": 0.536407470703125,
+      "clippedSamples": 0
+    },
+    {
+      "index": 8,
+      "role": "许知夏",
+      "expected": "先试。老师说采访的时候有人答得快，我老来不及写。也不是每次都录，真让别人说话，得先问。",
+      "transcript": "显示﹐老师说采访的时候有人答得快,我老来不及写。也不是每次斗路,真让别人说话,得先问。",
+      "peak": 0.491485595703125,
+      "clippedSamples": 0
+    },
+    {
+      "index": 9,
+      "role": "周叙",
+      "expected": "那以后你问，我来写。",
+      "transcript": "那以后你问,我来写。",
+      "peak": 0.4766845703125,
+      "clippedSamples": 0
+    },
+    {
+      "index": 10,
+      "role": "许知夏",
+      "expected": "你先把自己的作业写完。上次最后两页还是问陈野的。",
+      "transcript": "你先把自己的作业写完,上次最后两页还是问陈也的。",
+      "peak": 0.465972900390625,
+      "clippedSamples": 0
+    },
+    {
+      "index": 11,
+      "role": "周叙",
+      "expected": "有一页他也没写。",
+      "transcript": "有一页它也没写。",
+      "peak": 0.39776611328125,
+      "clippedSamples": 0
+    },
+    {
+      "index": 12,
+      "role": "许知夏",
+      "expected": "那你们俩先写。明天我要去借相机，别说又没找着老师。",
+      "transcript": "那你们俩先写,明天我要去借相机,别说又没找找老师。",
+      "peak": 0.467620849609375,
+      "clippedSamples": 0
+    },
+    {
+      "index": 13,
+      "role": "许知夏",
+      "expected": "这句也录进去了。先别删，我想听听刚才那一下。",
+      "transcript": "这句也录进去了。先别删,我想听听刚才那一下。",
+      "peak": 0.461151123046875,
+      "clippedSamples": 0
+    },
+    {
+      "index": 14,
+      "role": "周叙",
+      "expected": "那文件名改一下。",
+      "transcript": "文件名改一下。",
+      "peak": 0.580169677734375,
+      "clippedSamples": 0
+    },
+    {
+      "index": 15,
+      "role": "许知夏",
+      "expected": "等会儿。老师在门口叫了，你把线先收起来。",
+      "transcript": "等会﹐老师在门口叫了。你把鲜鲜收起来。",
+      "peak": 0.482513427734375,
+      "clippedSamples": 0
+    }
+  ]
+}

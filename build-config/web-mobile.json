@@ -4,11 +4,13 @@
   "buildPath": "project://build",
   "outputName": "web-mobile",
   "startScene": "6634dd05-0617-44e7-a62d-64c7d3824321",
-  "debug": true,
+  "debug": false,
   "showFPS": false,
   "mainBundleCompressionType": "merge_dep",
   "md5Cache": true,
   "packages": {
-    "web-mobile": { "orientation": "portrait" }
+    "web-mobile": {
+      "orientation": "portrait"
+    }
   }
 }

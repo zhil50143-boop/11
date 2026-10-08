@@ -1,0 +1,21 @@
+{
+  "method": "Independent transcript without expected-text prompting. Does not establish natural timbre or human listening acceptance.",
+  "results": [
+    {
+      "index": "许知夏",
+      "role": "许知夏",
+      "expected": "喂？听得到吗？周叙，你别装死。不是你说让我试一下录音功能吗？现在我录了，你又不说话。",
+      "transcript": "喂? 听得到吗? 赵绪,你别装死。不是你说让我试一下录音功能吗? 现在我录了,你又不说话。",
+      "peak": 0.523712158203125,
+      "clippedSamples": 0
+    },
+    {
+      "index": "周叙",
+      "role": "周叙",
+      "expected": "我不知道说什么。你离近点，刚才那句会不会没录上？你把它带去社团？那以后你问，我来写。",
+      "transcript": "我不知道说什么,你离敬点,刚才那句会不会没路上。你把他带去社团,那以后你问,我来写。",
+      "peak": 0.572540283203125,
+      "clippedSamples": 0
+    }
+  ]
+}

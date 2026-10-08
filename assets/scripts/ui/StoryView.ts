@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game } from 'cc';
+import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game, director } from 'cc';
 import { StoryManager, type StoryEvent } from '../story/StoryManager';
 import { SaveManager } from '../save/SaveManager';
 import { makeCanvas, container, text, button, clear } from './UIFactory';
@@ -72,6 +72,17 @@ export class StoryView extends Component {
       case 'passage': case 'phone':
         new PassagePanel().show(this.root, node, this.speakers, this.manager.state.progress.readingOffset,
           offset => this.manager.setReadingOffset(node.id, offset), () => void this.manager.advance(node.id)); break;
+      case 'ending':
+        if (this.manager.state.flags.ROUND_COMPLETED) {
+          text(this.root, node.title, 350, 120, 48);
+          text(this.root, '这一页读完了。', 100, 100, 34);
+          button(this.root, '再读一遍', -350, () => void this.manager.nextRound());
+          button(this.root, '回到首页', -530, () => director.loadScene('Main'));
+        } else {
+          new PassagePanel().show(this.root, { ...node, type: 'passage' }, this.speakers, this.manager.state.progress.readingOffset,
+            offset => this.manager.setReadingOffset(node.id, offset), () => void this.manager.finish(node.id));
+        }
+        break;
       case 'dialogue': case 'narration':
         new DialoguePanel().show(this.root, node, node.speaker ? this.speakers[node.speaker] ?? node.speaker : '', () => void this.manager.advance(node.id)); break;
       case 'choice':

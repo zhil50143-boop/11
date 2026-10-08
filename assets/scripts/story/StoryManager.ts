@@ -3,6 +3,7 @@ import mitt from '../vendor/mitt';
 import { SaveManager } from '../save/SaveManager';
 import { StoryRuntime } from './StoryRuntime';
 import type { ChapterManifest, EpisodeData, StoryNode, StoryCatalog } from './StoryNode';
+import { createNextRound } from './EndingResolver';
 const { ccclass } = _decorator;
 export type StoryEvent = { type: 'node'; node: StoryNode } | { type: 'end' } | { type: 'error'; message: string };
 @ccclass('StoryManager')
@@ -72,6 +73,21 @@ export class StoryManager extends Component {
   async choose(option: string, id: string): Promise<void> { await this.perform(async () => { this.runtime.choose(option, id); await this.present() }) }
   async inspect(item: string, id: string): Promise<void> { await this.perform(async () => { this.runtime.inspect(item, id); await this.present() }) }
   async complete(id: string): Promise<void> { await this.perform(async () => { this.runtime.complete(id); await this.present() }) }
+  async finish(id: string): Promise<void> { await this.perform(async () => { this.runtime.finish(id); await this.present() }) }
+  async nextRound(): Promise<void> {
+    await this.perform(async () => {
+      const next = createNextRound(this.state);
+      const manifest = await this.readManifest(this.catalog.startChapter);
+      const episode = (await this.loadJSON(manifest.episodes[0].resource)).json as EpisodeData;
+      let committed = false;
+      const candidate = new StoryRuntime(next, state => { if (committed) SaveManager.save(state) });
+      candidate.load(episode, manifest.chapterId);
+      if (!SaveManager.save(next)) throw new Error(SaveManager.warning);
+      committed = true;
+      this.runtime = candidate;
+      this.manifest = manifest; this.preloadNext(); await this.present();
+    });
+  }
   async refresh(): Promise<void> { if (!this.ready) { await this.initialize(); return; } await this.perform(() => this.present()) }
   retrySave(): boolean { return this.hasState() && SaveManager.save(this.state) }
   private saveReading = () => { this.retrySave() };
@@ -86,7 +102,7 @@ export class StoryManager extends Component {
     for (let guard = 0; node.type === 'episodeEnd' && guard < 16; guard++) {
       const ref = this.manifest.episodes.find(e => e.id === node.next);
       if (ref) await this.loadEpisode(ref.resource);
-      else if (node.next === this.manifest.nextChapter) {
+      else if (node.next && node.next === this.manifest.nextChapter) {
         if (node.next === this.catalog.pendingChapter) {
           SaveManager.save(this.state); this.events.emit('change', { type: 'end' }); return;
         }

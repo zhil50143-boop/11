@@ -1,0 +1,255 @@
+{
+  "episodeId": "CH10_EP04",
+  "name": "放回不同的袋子",
+  "startNode": "CH10_EP04_N001",
+  "nodes": [
+    {
+      "id": "CH10_EP04_N001",
+      "type": "passage",
+      "title": "十月二日，星期五",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "家里的旧袋子还放在书桌旁。周叙腾出桌面，把学校寄来的清单放在最上面，找了一只新的纸袋装已经松开的几张纸。原袋口有一处磨破，拿起来时照片会往外滑，他折进去一小段，用胶带贴住。"
+        },
+        {
+          "text": "陈野发来消息，说自己今天在外送货，路过他们以前等车的那条街，原来的店门已经换了。他拍的是新门头，没翻出什么大家都忘了的秘密。周叙问他最近怎么总跑那一边，陈野说换了两家客户，这个月要多走几趟。"
+        },
+        {
+          "text": "周叙回说自己也在整理旧纸。陈野隔了很久才问找到没有，周叙说有的找到了，有的还没有。陈野发了一个语音，说现在到了卸货的地方，晚点再聊。周叙没有连续追问。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 10,
+          "season": "autumn",
+          "label": "2037 · 秋 · 十月二日，星期五",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP04_TRUTH"
+    },
+    {
+      "id": "CH10_EP04_TRUTH",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "UNDERSTOOD_BREAKUP_TRUTH",
+          "next": "CH10_EP04_CHECK_LETTER"
+        }
+      ],
+      "fallback": "CH10_EP04_UNKNOWN"
+    },
+    {
+      "id": "CH10_EP04_CHECK_LETTER",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "READ_FULL_LETTER",
+          "next": "CH10_EP04_CHECK_AUDIO"
+        }
+      ],
+      "fallback": "CH10_EP04_UNKNOWN"
+    },
+    {
+      "id": "CH10_EP04_CHECK_AUDIO",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "FOUND_FULL_RECORDING",
+          "next": "CH10_EP04_CHECK_DATES"
+        }
+      ],
+      "fallback": "CH10_EP04_UNKNOWN"
+    },
+    {
+      "id": "CH10_EP04_CHECK_DATES",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH08_COMPARED_DATES",
+          "next": "CH10_EP04_CHECK_CHEN"
+        }
+      ],
+      "fallback": "CH10_EP04_UNKNOWN"
+    },
+    {
+      "id": "CH10_EP04_CHECK_CHEN",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH08_HEARD_CHEN_CONTEXT",
+          "next": "CH10_EP04_KNOWN"
+        }
+      ],
+      "fallback": "CH10_EP04_UNKNOWN"
+    },
+    {
+      "id": "CH10_EP04_KNOWN",
+      "type": "passage",
+      "title": "每张纸自己的日期",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "完整信放在2009年的学校留存袋里，工作封套的纸另放一边。周叙没有再把两种笔迹相似的日期合成同一件事。陈野说的只是他当年听到的安排，那天在车站的人还是周叙自己。"
+        },
+        {
+          "text": "他把这几种来源写到清单背面，标出哪一处是信里说的，哪一处是后来拿到的通知。录音是高中试功能的那一段，不能拿里面的一句玩笑替2013年的许知夏解释。他把两只袋子分别放回去，留着原来的地址，没有为它们补一个共同的结尾。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 10,
+          "season": "autumn",
+          "label": "2037 · 秋 · 每张纸自己的日期",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "setFlags": [
+        "CH10_SORTED_OWN_PAPERS"
+      ],
+      "next": "CH10_EP04_CONTACT"
+    },
+    {
+      "id": "CH10_EP04_UNKNOWN",
+      "type": "passage",
+      "title": "先留出不知道的地方",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙翻到自己没有读完的那部分，没有给它写结论。有些纸已经看过，有些还没看，清单上空着的地方只写“以后再核”。这几天已经发生的事，不能让旧纸自动多出一句回答。"
+        },
+        {
+          "text": "他把2009学校袋和2013工作封套分开放。相似的笔迹仍然在纸上，年份却不一样。旧录音也没有变成车站那天的留言。周叙把缺的那一项留下，没把“我大概记得”写成“她就是这样想的”。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 10,
+          "season": "autumn",
+          "label": "2037 · 秋 · 先留出不知道的地方",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP04_CONTACT"
+    },
+    {
+      "id": "CH10_EP04_CONTACT",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "MET_XIA",
+          "next": "CH10_EP04_MET"
+        }
+      ],
+      "fallback": "CH10_EP04_CLOSE_CHECK"
+    },
+    {
+      "id": "CH10_EP04_CLOSE_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH09_DECLINED_MEETING",
+          "next": "CH10_EP04_CLOSED"
+        }
+      ],
+      "fallback": "CH10_EP04_UNMET"
+    },
+    {
+      "id": "CH10_EP04_MET",
+      "type": "passage",
+      "title": "她发来的只到这里",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "学校门口见面的那十分钟已经过去。许知夏发来的第一页照片存到手机里，周叙给文件补了学校和日期。他没有据此补出前一天教室里的人，也没有把她这次返乡改成专程来找自己。"
+        },
+        {
+          "text": "他想起她走之前还要去看母亲家的漏水。后来没有再收到维修结果，也不需要追着问。那份校报材料由她自己交回去，她有没有改最后一页，仍然是她的工作。周叙把手机充上电，去收已经晾干的被套。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 10,
+          "season": "autumn",
+          "label": "2037 · 秋 · 她发来的只到这里",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP04_END"
+    },
+    {
+      "id": "CH10_EP04_CLOSED",
+      "type": "passage",
+      "title": "不再追问下一次",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙翻到那次没有约见的对话。自己说不去校门外见面，许知夏回了好，随后去处理她回家的事。两个人没有另外改一个私下的时间，也没有让陈野去约第二次。"
+        },
+        {
+          "text": "他把对话留着，没有再接一句“其实还有句话”。整理旧纸花的时间已经够多，今天这条聊天也停在原来那句。他锁上手机，把装照片的小袋放到书架里，袋口朝上。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 10,
+          "season": "autumn",
+          "label": "2037 · 秋 · 不再追问下一次",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "setFlags": [
+        "CH10_LEFT_CONTACT_CLOSED"
+      ],
+      "next": "CH10_EP04_END"
+    },
+    {
+      "id": "CH10_EP04_UNMET",
+      "type": "passage",
+      "title": "今天没有新的来信",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙把手机放到桌边，旧袋子仍然按日期收好。没有见过的人今天也不会从纸里走出来，有些事暂时留在自己的记忆里。"
+        },
+        {
+          "text": "门外有人送快递，周满过去签收。她说里面那双鞋是母亲的，把袋子放在门边，没拆。周叙给程安然发消息，告诉她快递拿到了，问回来要不要先试。她说晚一点，自己那边还有一页没核。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 10,
+          "season": "autumn",
+          "label": "2037 · 秋 · 今天没有新的来信",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP04_END"
+    },
+    {
+      "id": "CH10_EP04_END",
+      "type": "episodeEnd",
+      "next": "CH10_EP05"
+    }
+  ],
+  "nodeAliases": {}
+}

@@ -1,51 +1,40 @@
 # 余生未寄 / The Letter Never Sent
 
-TapTap H5 现实人生叙事模拟。连续生活叙事优先，重大决定才出现选项。
+TapTap H5 现实人生叙事模拟。连续生活叙事优先，少量重要决定有长期承接。
 
-## 技术栈
-- Cocos Creator 3.8.x
-- TypeScript
-- 竖屏 1080×1920
-- TapTap H5 首发
-- JSON 数据驱动剧情
-- Local Save 为第一层存档
-- Tap 平台能力通过 PlatformService 解耦
+## 当前状态
 
-## 当前开发目标
+第十章《余生未寄》六段已实现，当前10章60片段467节点，六个结局和真实重读已接入。54项核心测试、508800条初始路线通过；同一H5存档从Boot连续六轮实际触摸290/287/279/290/274/274步，第四轮隐藏结局，下一轮保留六结局且重置当轮事实。位置修正后的RC2重新整游戏290步、缺失历史20步、新轮存储失败恢复通过，九处跨章失败重试、集合与原文备份继续保留。发布构建裁剪未使用模块、改善窄屏正文与按钮，弱网首屏由调试约53秒降至发布无压缩约15秒/gzip约7秒。用户再次否定第二版声音的AI/动漫感，第三版两名普通声线及63.53秒完整对白已重新生成接入，实际H5播放/暂停/恢复/自然结束/刷新与来源门控通过；第三版音色已由用户确认；全篇真人阅读、TapTap真机与最终验收尚待完成，不能称最终版本。详见docs/CHAPTER10_AUDIT.md。
 
-第九章《如果现在去见她》六段已接入，当前9章54片段418节点；49项测试、508800条全游戏路线和两种类型检查通过。实际发送/说明/见面后才记录事实，五条联系路径均可达；知夏有原定返乡、工作与家庭，未联系路径有完整当前生活。家庭2035和旧街2010照片已在Cocos实显。用户否定的第一版配音不采用，正在重新制作自然熟人对白声线。全篇修30处说理式旁白并补齐录音开头和车声语境。最终当前构建2026-10-08 16:00:27 Finished，build/chapter09-final；一条整游戏270步、四条真实第八章存档续玩34/37/34/26步、缺失旧历史26步、八处跨章失败重试、集合恢复和异常v2备份通过，0脚本错误/资源失败。逐项审查见CHAPTER09_AUDIT.md。CH10、六结局、二周目、声音接入、真人阅读与最终性能/TapTap真机待完成，本批仍是开发验证版。
+源码和开发始终留在当前工程main。十章与六结局可运行，仍在声音与最终交付验收阶段。
 
-在当前工程 main 继续至十章、六结局与可交付的 TapTap H5，每章完成后核对整个游戏。进度以 docs/FINAL_PROGRESS.md 为准。已实现第一章回归流程：
-2037 家中 → 旧纸箱 → 旧物调查 → 照片/信件 → MP3 → 记忆转场 → 2007 公交 → 许知夏首次登场 → 自然相识。
+## 技术与边界
 
-## 核心限制
-- 不增加联网主线依赖
-- 不做 UGC
-- 不做 AI 聊天
-- 不做 IAP
-- 广告默认关闭，仅预留自愿激励视频接口
-- 剧情不得硬编码在 UI/平台脚本
-- Tap API 与 Story 系统必须解耦
+- Cocos Creator 3.8.8、TypeScript、JSON剧情，竖屏1080×1920。
+- Boot → Main → Story；本地自动存档、旧档迁移、阅读位置与元进度。
+- 照片翻面、信纸滚动、短信、旧物调查、MP3播放和多来源记忆重构。
+- 隐藏数值只服务事实与结局，没有关系分数、收集百分比、签到或复杂成长模型。
+- 主线离线可运行；平台接口隔离，广告关闭。没有UGC、AI聊天、动态剧情或IAP。
+- 四张原创照片已实显。声音只采用本项目虚构合成参考，模型权重和制作运行时不随游戏发布。
 
-请先阅读 CODEX_TASK.md 和 docs/GAME_SPEC.md。
+## 开发与试玩
 
-## 当前实现与开发进度
-Boot → Main → Story 场景、连续阅读与代码式 UI 位于 assets/scenes 与 assets/scripts/ui。
-本批接入第八章《记忆会骗人》六段：2037雨夜、自己的日期、完整信与录音文字、陈野的有限证词、多来源对照及当前家庭周末。当前8章48片段349节点，44项测试、101760条全游戏路线与两种类型检查通过；32种旧历史×四证据路径逐节点存取。完整来源需实际读到末尾，四个独立来源AND才重构，不编造车站目击。最终Cocos构建2026-10-08 12:07:57 Finished，四种阅读结果真实H5触摸233/228/230/230步、七处跨章失败重试、长文中途刷新恢复、完整集合及异常v2备份通过；缺失历史CH07末尾旧档21步通过。毕业照新旧两版已实际显示。审查见CHAPTER08_AUDIT.md。CH09～10、其余照片接入、正式声音、六结局、二周目、真人阅读校准、最终性能与TapTap真机待完成，本批仍是开发验证版。
-已通过实际Web Mobile构建与手机尺寸浏览器触摸。原创毕业照已接入并在H5核验；家庭与旧街照片为已独立审评候选，尚未接入。正式声音和TapTap真机待完成。
+先读CODEX_TASK、GAME_SPEC和LIFE_NARRATIVE_RULES。安装依赖后运行 npm run check:types、npm run check:story、npm test；本机编辑器已导入时另跑 npm run check:cocos。
 
-参阅：
-- [制作约束](CODEX_TASK.md)
-- [开源候选、许可与取舍](docs/OPEN_SOURCE_REVIEW.md)
+发布配置位于build-config/web-mobile.json，关闭debug并裁剪到所需2D模块。构建后用 tools/prepare-delivery.cjs 添加运行时许可，再用 tools/serve-preview.cjs 通过HTTP试玩；gzip模式与未压缩模式分别验收。详细可复现步骤见运行文档。不能双击file://代替H5运行，也不能使用历史build/web-mobile当最新包。
+
+## 项目资料
+
+- [当前进度与最终门槛](docs/FINAL_PROGRESS.md)
+- [生活内容与声音约束](docs/LIFE_NARRATIVE_RULES.md)
+- [完整策划摘要](docs/GAME_SPEC.md)
+- [第十章后的全游戏审查](docs/CHAPTER10_AUDIT.md)
+- [六结局与重读规则](docs/ENDING_RULES.md)
 - [运行与验收](docs/RUN_AND_VERIFY.md)
-- [当前验证记录](docs/VALIDATION.md)
-- [第八章后的全游戏策划核对](docs/CHAPTER08_AUDIT.md)
-- [第七章历史审查](docs/CHAPTER07_AUDIT.md)
-- [第六章历史审查](docs/CHAPTER06_AUDIT.md)
-- [第五章历史审查](docs/CHAPTER05_AUDIT.md)
-- [第四章历史审查](docs/CHAPTER04_AUDIT.md)
-- [第三章历史审查](docs/CHAPTER03_AUDIT.md)
-- [第二章历史审查](docs/CHAPTER02_AUDIT.md)
-- [最终版持续开发进度](docs/FINAL_PROGRESS.md)
+- [验证记录](docs/VALIDATION.md)
+- [开源候选和许可证](docs/OPEN_SOURCE_REVIEW.md)
+- [照片审查](docs/ART_REVIEW.md)、[家庭与旧街照片审查](docs/ART_REVIEW_FAMILY_STREET.md)
 
-本聊天在 main 开发，不新建分支。第一章已改为生活段落、家庭群记录、旧物调查和一个重大决定。详见 [新版内容规则](docs/LIFE_NARRATIVE_RULES.md)。
+第二至九章的CHAPTER*_AUDIT保存当时范围。当前状态以FINAL_PROGRESS和实际源码/产物为准。
+
+音色确认记录：2026-10-08用户试听新声线后回复“比上一版自然”，随后明确“就这个音色了”。第三版两名角色音色已确认固定；普通说话的语气、接话及全篇真人阅读继续校准，技术检测不冒充听感。

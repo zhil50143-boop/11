@@ -1,0 +1,16 @@
+{
+  "file": "references/xia.wav",
+  "text": "喂？听得到吗？周叙，你别装死。不是你说让我试一下录音功能吗？现在我录了，你又不说话。",
+  "seed": 13057,
+  "instruct": "一个普通中国女高中生，已经接近成年，未经播音训练的真实日常嗓音。声线在中偏低的自然音区，有胸声，音色结实、略有不规则的颗粒感，轻微的鼻腔共鸣。用自己的正常声音说话，声音不尖、不甜、不纤细、不飘，不用气声和假声，不是动漫人物或声优，不做可爱少女腔。放学后试旧MP3录音，和熟悉的男同学说话，正常音量，随口问机器录上没有，叫名字稍停顿，后半句语速自然稍快。轻微催促，句末收住，像生活中一句没有练过的话，不演戏，不朗诵。",
+  "role": "许知夏",
+  "sampleRate": 24000,
+  "duration": 9.52,
+  "peak": 0.523712158203125,
+  "sha256": "f2880066e59e98ef5566fc3dcdebfa0fe0af24ef1b21b122a1d8cac8a105e506",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "license": "Apache-2.0",
+  "realPersonReference": false,
+  "status": "Version 3 timbre accepted by user on 2026-10-08: 就这个音色了. Earlier two versions rejected. Full story human reading pending."
+}

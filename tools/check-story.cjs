@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const Ajv = require('ajv');
 const validate = new Ajv({allErrors:true}).compile(require('./story.schema.json'));
-const links = node => [node.type !== 'episodeEnd' ? node.next : undefined,node.fallback,...(node.options??[]).map(x=>x.next),...(node.branches??[]).map(x=>x.next),...(node.items??[]).map(x=>x.next)].filter(Boolean);
+const links = node => [node.type !== 'episodeEnd' ? node.next : undefined,node.fallback,...(node.options??[]).map(x=>x.next),...(node.branches??[]).map(x=>x.next),...(node.items??[]).map(x=>x.next),...Object.values(node.targets??{})].filter(Boolean);
 function validateStoryTree(resourceRoot = path.resolve(__dirname,'../assets/resources')) {
   const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
   const storyRoot = path.join(resourceRoot,'data/story');
@@ -18,7 +18,7 @@ function validateStoryTree(resourceRoot = path.resolve(__dirname,'../assets/reso
     if (!/^CH\d{2}$/.test(entry.id) || chapters.has(entry.id)) throw new Error('Invalid/duplicate chapter: '+entry.id);
     const manifestFile = resourceFile(entry.resource);
     const manifest = read(manifestFile);
-    if (manifest.chapterId !== entry.id || !manifest.title || !/^CH\d{2}$/.test(manifest.nextChapter) || !Array.isArray(manifest.episodes) || !manifest.episodes.length) throw new Error('Invalid manifest: '+entry.id);
+    if (manifest.chapterId !== entry.id || !manifest.title || (manifest.nextChapter!==undefined&&!/^CH\d{2}$/.test(manifest.nextChapter)) || !Array.isArray(manifest.episodes) || !manifest.episodes.length) throw new Error('Invalid manifest: '+entry.id);
     const folder = path.dirname(manifestFile);
     chapters.set(entry.id,{manifest,folder});files.add(manifestFile);
     for (const ref of manifest.episodes) {
@@ -34,6 +34,8 @@ function validateStoryTree(resourceRoot = path.resolve(__dirname,'../assets/reso
       for (const node of ep.nodes) {
         if (globalNodes.has(node.id)) throw new Error('Duplicate global node: '+node.id);globalNodes.add(node.id);
         for (const target of links(node)) if (!nodes.has(target)) throw new Error('Missing target: '+node.id+' -> '+target);
+        if (node.type==='endingRoute') for (const [endingId,target] of Object.entries(node.targets)) if(nodes.get(target)?.type!=='ending'||nodes.get(target).endingId!==endingId) throw new Error('Invalid ending target: '+endingId);
+        if (node.type==='ending' && (entry.id!==catalog.chapters.at(-1).id||ref.id!==manifest.episodes.at(-1).id||manifest.nextChapter||catalog.pendingChapter)) throw new Error('Ending outside final episode: '+node.id);
         for (const list of [node.options,node.items]) if (list && new Set(list.map(x=>x.id)).size !== list.length) throw new Error('Duplicate option/item IDs');
         if (node.type === 'investigation' && (!node.items?.length || !Array.isArray(node.requiredFlags) || (!node.requiredFlags.length && !node.optional))) throw new Error('Incomplete investigation');
         if (node.requireReadToEnd && !['letter','audioInteraction'].includes(node.type)) throw new Error('Read-to-end requires a document: '+node.id);
@@ -43,7 +45,7 @@ function validateStoryTree(resourceRoot = path.resolve(__dirname,'../assets/reso
       const reached = new Set(), queue = [ep.startNode];
       while(queue.length) { const id=queue.pop();if(reached.has(id))continue;reached.add(id);queue.push(...links(nodes.get(id))); }
       if (reached.size !== nodes.size) throw new Error('Unreachable nodes: '+[...nodes.keys()].filter(x=>!reached.has(x)));
-      if (!ep.nodes.some(n=>n.type==='episodeEnd')) throw new Error('Episode has no exit: '+ref.id);
+      if (!ep.nodes.some(n=>n.type==='episodeEnd'||n.type==='ending')) throw new Error('Episode has no exit: '+ref.id);
       episodes.set(ref.id,{ep,chapterId:entry.id});
     }
   }
@@ -55,7 +57,11 @@ function validateStoryTree(resourceRoot = path.resolve(__dirname,'../assets/reso
     }
   }
   if (!chapters.has(catalog.startChapter)) throw new Error('Missing start chapter');
-  if (!/^CH\d{2}$/.test(catalog.pendingChapter) || chapters.has(catalog.pendingChapter)) throw new Error('Invalid pending chapter boundary');
+  if (catalog.pendingChapter!==undefined && (!/^CH\d{2}$/.test(catalog.pendingChapter) || chapters.has(catalog.pendingChapter))) throw new Error('Invalid pending chapter boundary');
+  if (!catalog.pendingChapter) {
+    const endings=Array.from(episodes.values()).flatMap(e=>e.ep.nodes).filter(n=>n.type==='ending').map(n=>n.endingId);
+    if(endings.length!==6||new Set(endings).size!==6) throw new Error('Final game requires six unique endings');
+  }
   const edges = new Map();
   for (const [id,{ep,chapterId}] of episodes) {
     const manifest = chapters.get(chapterId).manifest;
@@ -76,5 +82,5 @@ function validateStoryTree(resourceRoot = path.resolve(__dirname,'../assets/reso
 }
 module.exports = {validateStoryTree};
 if (require.main === module) {
-  const r=validateStoryTree();console.log(`Story catalog and graph PASS: ${r.chapters} chapters, ${r.episodes} episodes, ${r.nodes} nodes; pending ${r.pendingChapter}`);
+  const r=validateStoryTree();console.log(`Story catalog and graph PASS: ${r.chapters} chapters, ${r.episodes} episodes, ${r.nodes} nodes; ${r.pendingChapter ? 'pending '+r.pendingChapter : 'six terminal endings'}`);
 }

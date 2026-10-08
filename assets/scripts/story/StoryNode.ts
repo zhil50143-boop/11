@@ -1,4 +1,5 @@
 import type { LifeContext } from '../core/GameState';
+import type { EndingId } from './EndingResolver';
 export interface StoryEffectMap { [key: string]: number }
 export interface ChoiceOption {
   id: string; text: string; next: string;
@@ -31,9 +32,11 @@ export interface InteractionStoryNode extends BaseStoryNode {
   effects?: StoryEffectMap; setFlags?: string[];
 }
 export interface ControlStoryNode extends BaseStoryNode { type: 'save' | 'episodeEnd' }
-export type StoryNode = PassageStoryNode | TextStoryNode | ChoiceStoryNode | ConditionStoryNode | InteractionStoryNode | ControlStoryNode;
+export interface EndingRouteNode extends BaseStoryNode { type: 'endingRoute'; targets: Record<EndingId, string> }
+export interface EndingStoryNode extends BaseStoryNode { type: 'ending'; endingId: EndingId; title: string; paragraphs: StoryParagraph[]; category: 'main' }
+export type StoryNode = PassageStoryNode | TextStoryNode | ChoiceStoryNode | ConditionStoryNode | InteractionStoryNode | ControlStoryNode | EndingRouteNode | EndingStoryNode;
 export type StoryNodeType = StoryNode['type'];
 export interface EpisodeData { episodeId: string; name: string; startNode: string; nodes: StoryNode[]; nodeAliases?: Record<string, string> }
 export interface EpisodeRef { id: string; name: string; resource: string; startNode: string }
-export interface ChapterManifest { chapterId: string; title: string; episodes: EpisodeRef[]; nextChapter: string }
+export interface ChapterManifest { chapterId: string; title: string; episodes: EpisodeRef[]; nextChapter?: string }
 export interface StoryCatalog { startChapter: string; chapters: { id: string; resource: string }[]; pendingChapter?: string }

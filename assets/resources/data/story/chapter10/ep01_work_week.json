@@ -1,0 +1,171 @@
+{
+  "episodeId": "CH10_EP01",
+  "name": "这周的事",
+  "startNode": "CH10_EP01_N001",
+  "nodes": [
+    {
+      "id": "CH10_EP01_N001",
+      "type": "passage",
+      "title": "九月二十三日，星期三",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周叙到单位时，昨天打印的表还在桌上。同事在日期旁画了个圈，问这一项到底是本周交，还是下周一起交。周叙翻回邮件，发现自己只抄了前半句，补上一行说明，又把改过的那份发给她。"
+        },
+        {
+          "text": "中午两个人在楼下吃饭。她说下个月要调到另一组，新来的同事得跟几天才能接上，原来那张联系表最好不要只留名字。周叙问哪些环节最容易找错人，把两个号码分开存了。"
+        },
+        {
+          "text": "她问他这几天怎么总在看手机。他说家里有点旧学校的事，已经处理了一部分。对方没接着问，端起盘子找老板换一双筷子。她下午要去接母亲，午休只剩二十分钟，周叙也回去把表发完。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 九月二十三日，星期三",
+          "location": "单位",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP01_JOB_CHECK"
+    },
+    {
+      "id": "CH10_EP01_JOB_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH05_TALKED_JOB_CONDITIONS",
+          "next": "CH10_EP01_LISTEN"
+        }
+      ],
+      "fallback": "CH10_EP01_OLD_CHECK"
+    },
+    {
+      "id": "CH10_EP01_OLD_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH05_ASSUMED_RETURN_FOR_JOB",
+          "next": "CH10_EP01_RECHECK"
+        }
+      ],
+      "fallback": "CH10_EP01_COMMON"
+    },
+    {
+      "id": "CH10_EP01_LISTEN",
+      "type": "passage",
+      "title": "交接之前",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "年轻同事问能不能把一项工作换个顺序。周叙让他把时间说完，才看有没有人会被拖到。他记得毕业时自己和许知夏把两份报到通知放在一起，各自确定的是各自的岗位。如今听这个年轻人讲条件，他也不能只看自己这边少了哪一格。"
+        },
+        {
+          "text": "换完以后，还有一项确实赶不上。周叙把原因写到交接里，没有替同事答应晚上补完。年轻人说自己再去和接手的人谈，拿着那张表出去了。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 交接之前",
+          "location": "单位",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP01_HOME"
+    },
+    {
+      "id": "CH10_EP01_RECHECK",
+      "type": "passage",
+      "title": "先把时间听完",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "年轻同事问能不能换一项工作的顺序，周叙刚想说先按原来的做，又让他把后半句讲完。对方晚上要去医院陪床，明天早上有人替他，能做的时间和表上不一样。"
+        },
+        {
+          "text": "周叙想起毕业时自己曾把许知夏回来工作算进安排，后来已经把那一项划掉。如今表上空着的地方，也不能先用别人没答应的时间填满。他改过自己的那项，剩下的让同事去谈，没有假装全部都已经解决。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 先把时间听完",
+          "location": "单位",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP01_HOME"
+    },
+    {
+      "id": "CH10_EP01_COMMON",
+      "type": "passage",
+      "title": "一项一项确认",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "年轻同事拿来一张交接表。周叙请他把晚上不能来的时间写清楚，再找接手的人核一下。纸上有两项没填，他们留着空白，没有替不在场的人签字。"
+        },
+        {
+          "text": "下班前周叙把自己负责的那一页交出去，保留了改动记录。另一组什么时候有空，还得等明天的回复。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 一项一项确认",
+          "location": "单位",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP01_HOME"
+    },
+    {
+      "id": "CH10_EP01_HOME",
+      "type": "passage",
+      "title": "回家以后",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周满放学比他晚。程安然先到家，饭刚做了一半，单位的人打电话来问材料上的一处数字。她关小火去接，周叙把案板上的菜放进锅里，不确定要加多少水，等她回来再问。"
+        },
+        {
+          "text": "饭后他给父亲打电话。父亲说这周的药还够，下次复查要先打电话排时间，不用现在就买票。周叙把上次拿错的那份单据重新分开，又问钥匙能不能正常开门。父亲说能，就是门锁转起来还是有点涩。"
+        },
+        {
+          "text": "挂断以后，程安然把明天要用的材料放进包里，问周叙有没有看见她的充电线。他在沙发垫后面找到，自己那根留在单位了，只好等她用完再充。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 回家以后",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge"
+      },
+      "next": "CH10_EP01_END"
+    },
+    {
+      "id": "CH10_EP01_END",
+      "type": "episodeEnd",
+      "next": "CH10_EP02"
+    }
+  ],
+  "nodeAliases": {}
+}

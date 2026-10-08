@@ -1,0 +1,42 @@
+{
+  "chapterId": "CH10",
+  "title": "余生未寄",
+  "episodes": [
+    {
+      "id": "CH10_EP01",
+      "name": "这周的事",
+      "resource": "data/story/chapter10/ep01_work_week",
+      "startNode": "CH10_EP01_N001"
+    },
+    {
+      "id": "CH10_EP02",
+      "name": "她们放学以后",
+      "resource": "data/story/chapter10/ep02_school_week",
+      "startNode": "CH10_EP02_N001"
+    },
+    {
+      "id": "CH10_EP03",
+      "name": "还要一起商量",
+      "resource": "data/story/chapter10/ep03_shared_week",
+      "startNode": "CH10_EP03_N001"
+    },
+    {
+      "id": "CH10_EP04",
+      "name": "放回不同的袋子",
+      "resource": "data/story/chapter10/ep04_paper_addresses",
+      "startNode": "CH10_EP04_N001"
+    },
+    {
+      "id": "CH10_EP05",
+      "name": "自己写的一页",
+      "resource": "data/story/chapter10/ep05_unsent_page",
+      "startNode": "CH10_EP05_N001"
+    },
+    {
+      "id": "CH10_EP06",
+      "name": "下周的安排",
+      "resource": "data/story/chapter10/ep06_next_week",
+      "startNode": "CH10_EP06_N001"
+    }
+  ]
+}

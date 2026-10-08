@@ -1,0 +1,236 @@
+{
+  "version": 3,
+  "modelDesign": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "designRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "modelContinuation": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "continuationRevision": "5d83992436eae1d760afd27aff78a71d676296fc",
+  "toolLicense": "Apache-2.0",
+  "realPersonReference": false,
+  "sampleRate": 24000,
+  "duration": 63.53,
+  "previewDuration": 16.66,
+  "peak": 0.5221527218818665,
+  "clippedSamples": 0,
+  "events": [
+    {
+      "index": 0,
+      "role": "许知夏",
+      "text": "喂？听得到吗？周叙，你别装死。不是你说让我试一下录音功能吗？现在我录了，你又不说话。",
+      "start": 0,
+      "end": 9.52,
+      "source": "xia.wav",
+      "sha256": "f2880066e59e98ef5566fc3dcdebfa0fe0af24ef1b21b122a1d8cac8a105e506",
+      "trim": {
+        "leadingRemoved": 0,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 2,
+      "role": "周叙",
+      "text": "我不知道说什么。你离近点，刚才那句会不会没录上？",
+      "start": 9.72,
+      "end": 14.84,
+      "source": "takes/02.wav",
+      "sha256": "0a685d462d23b9743025fb9e90c084090fa0a5268710272ca268519a01f3baf9",
+      "trim": {
+        "leadingRemoved": 0.88,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 3,
+      "role": "许知夏",
+      "text": "等一下。车来了。",
+      "start": 15.04,
+      "end": 16.66,
+      "source": "takes/03.wav",
+      "sha256": "03ec4c95df17277e82017f3b334914d2037afe8d2414b118078f7f3874a6247f",
+      "trim": {
+        "leadingRemoved": 0.64,
+        "trailingRemoved": 0.3
+      }
+    },
+    {
+      "index": 4,
+      "role": "许知夏",
+      "text": "哦，是隔壁班的车。你刚说什么？",
+      "start": 16.94,
+      "end": 20.35,
+      "source": "takes/04.wav",
+      "sha256": "0d32cca3a74571e553e8ccc24874f136bd915940ffc501a17d13d72d48026cda",
+      "trim": {
+        "leadingRemoved": 0.59,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 5,
+      "role": "周叙",
+      "text": "让你离近点。",
+      "start": 20.55,
+      "end": 21.74,
+      "source": "takes/05.wav",
+      "sha256": "03a8f6b17da6972dbacabd03f68d174d0b1fbaa06921eeb07059eea3be8d1123",
+      "trim": {
+        "leadingRemoved": 0.97,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 6,
+      "role": "许知夏",
+      "text": "这么近啊。你先听听，能不能听清。",
+      "start": 21.94,
+      "end": 25.43,
+      "source": "takes/06.wav",
+      "sha256": "3bacddef283d0576cb6fabff787eb06d01109988f14994bb76a6d28abed82c63",
+      "trim": {
+        "leadingRemoved": 0.35,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 7,
+      "role": "周叙",
+      "text": "你把它带去社团？",
+      "start": 25.63,
+      "end": 26.98,
+      "source": "takes/07.wav",
+      "sha256": "3810e37de7464183ab9d3c1eb65c15bca677211dc91166bf37479ba81f6a91b4",
+      "trim": {
+        "leadingRemoved": 0.73,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 8,
+      "role": "许知夏",
+      "text": "先试。老师说采访的时候有人答得快，我老来不及写。也不是每次都录，真让别人说话，得先问。",
+      "start": 27.18,
+      "end": 39.83,
+      "source": "takes/08.wav",
+      "sha256": "a4bec8c4a33018faafb0851023ade8cc887ad3771f311139378b6dc3e1e99191",
+      "trim": {
+        "leadingRemoved": 1.17,
+        "trailingRemoved": 0.82
+      }
+    },
+    {
+      "index": 9,
+      "role": "周叙",
+      "text": "那以后你问，我来写。",
+      "start": 40.03,
+      "end": 42.04,
+      "source": "takes/09.wav",
+      "sha256": "00833d15cec2702fefe1399c26b6666789b39e9a4ad4597342ae6ab7f0e42e38",
+      "trim": {
+        "leadingRemoved": 0.87,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 10,
+      "role": "许知夏",
+      "text": "你先把自己的作业写完。上次最后两页还是问陈野的。",
+      "start": 42.24,
+      "end": 46.4,
+      "source": "takes/10.wav",
+      "sha256": "c249b3f3529ade8c0ffecf8ebb26d4c6bb6f39bedbc2d6ad42794073557118f2",
+      "trim": {
+        "leadingRemoved": 0.24,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 11,
+      "role": "周叙",
+      "text": "有一页他也没写。",
+      "start": 46.6,
+      "end": 47.98,
+      "source": "takes/11.wav",
+      "sha256": "52b1a512275bfbeb627b2815f04fbca71e599c6a5e52c968bc7979cf8436b344",
+      "trim": {
+        "leadingRemoved": 0.94,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 12,
+      "role": "许知夏",
+      "text": "那你们俩先写。明天我要去借相机，别说又没找着老师。",
+      "start": 48.18,
+      "end": 52.75,
+      "source": "takes/12.wav",
+      "sha256": "324b4db6eeb8d142fc8442b33cd686a93af5258838d4cd0202f3ef8bb2a7ef08",
+      "trim": {
+        "leadingRemoved": 0.39,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 13,
+      "role": "许知夏",
+      "text": "这句也录进去了。先别删，我想听听刚才那一下。",
+      "start": 53.03,
+      "end": 57.64,
+      "source": "takes/13.wav",
+      "sha256": "def839a05c5786e1a2fbe0afe22bf32af5d5625836430166b1226483c57d5e13",
+      "trim": {
+        "leadingRemoved": 0.43,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 14,
+      "role": "周叙",
+      "text": "那文件名改一下。",
+      "start": 57.84,
+      "end": 59.2,
+      "source": "takes/14.wav",
+      "sha256": "b6e0bf84ce4833a093e8b76d55e97b7af60bca658ae8053f50f2bfe02b2f7970",
+      "trim": {
+        "leadingRemoved": 0.96,
+        "trailingRemoved": 0
+      }
+    },
+    {
+      "index": 15,
+      "role": "许知夏",
+      "text": "等会儿。老师在门口叫了，你把线先收起来。",
+      "start": 59.4,
+      "end": 63.35,
+      "source": "takes/15.wav",
+      "sha256": "88c72c9f47d3e0d5832d42a697391ff260e798e6d3a53e884b3d99220d9ccde8",
+      "trim": {
+        "leadingRemoved": 0.61,
+        "trailingRemoved": 0
+      }
+    }
+  ],
+  "edits": "New plain middle/lower voices; short ordinary turn gaps; excess edge silence trimmed with breathing margins; original intra-sentence timing retained. No pitch shifting, anime presets, music, crying or noise filter.",
+  "subjectiveListening": "2026-10-08用户试听新声线后回复“比上一版自然”，随后明确“就这个音色了”。第三版两名角色音色已确认固定；普通说话的语气、接话及全篇真人阅读继续校准，技术检测不冒充听感。",
+  "files": [
+    {
+      "file": "01-full.mp3",
+      "bytes": 509036,
+      "sha256": "3a4e650df1b990ac02e519d0f1835195a52dced5c363e05e535b11f92e2f78b1"
+    },
+    {
+      "file": "01-opening.mp3",
+      "bytes": 134060,
+      "sha256": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c"
+    }
+  ],
+  "voiceAcceptance": {
+    "date": "2026-10-08",
+    "version": 3,
+    "scope": "两名角色音色固定",
+    "feedback": [
+      "比上一版自然",
+      "就这个音色了"
+    ],
+    "earlierVersions": "rejected",
+    "humanStoryReading": "pending"
+  }
+}

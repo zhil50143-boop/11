@@ -26,8 +26,8 @@ export class PassagePanel {
       top += box.height + 30;
     };
     for (const paragraph of node.paragraphs) {
-      if (paragraph.speaker) line(speakers[paragraph.speaker] ?? paragraph.speaker, 30, new Color(177,184,172));
-      line(paragraph.text, 40, new Color(235,231,220));
+      if (paragraph.speaker) line(speakers[paragraph.speaker] ?? paragraph.speaker, 36, new Color(177,184,172));
+      line(paragraph.text, 48, new Color(235,231,220));
     }
     transform.setContentSize(940, Math.max(1110, top)); content.setPosition(0, 555);
     const scroll = area.addComponent(ScrollView); scroll.content = content;

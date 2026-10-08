@@ -16,7 +16,7 @@ export class DocumentPanel {
     const transform = content.getComponent(UITransform)!; transform.setAnchorPoint(0.5, 1);
     const body = container(content, 'DocumentText');
     const box = body.getComponent(UITransform)!; box.setAnchorPoint(0.5, 1); box.setContentSize(804, 100); body.setPosition(0, -44);
-    const label = body.addComponent(Label); label.string = value; label.fontSize = 38; label.lineHeight = 64;
+    const label = body.addComponent(Label); label.string = value; label.fontSize = 46; label.lineHeight = 74;
     label.enableWrapText = true; label.overflow = Label.Overflow.RESIZE_HEIGHT;
     label.horizontalAlign = Label.HorizontalAlign.LEFT; label.verticalAlign = Label.VerticalAlign.TOP;
     label.color = new Color(44, 45, 43); label.updateRenderData(true);

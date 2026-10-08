@@ -1,0 +1,16 @@
+{
+  "file": "references/zhou.wav",
+  "text": "我不知道说什么。你离近点，刚才那句会不会没录上？你把它带去社团？那以后你问，我来写。",
+  "seed": 13061,
+  "instruct": "一个普通中国男高中生，变声之后的日常中低音，声音有自然胸腔共鸣和一点粗糙感。未经配音训练，普通话随口聊天，音色朴素，像身边真实的同学，不像动漫少年、男声优或偶像，不捏着嗓子，不装深沉，不故意磁性，不像播音员。放学后被熟悉的女同学拿MP3试录，第一句不好意思，音量稍小，接着问设备能不能录上，问完等她回答。语速和停顿随意思变化，短句结尾落下，不逐字念齐，不抒情。",
+  "role": "周叙",
+  "sampleRate": 24000,
+  "duration": 8.88,
+  "peak": 0.572540283203125,
+  "sha256": "e2dd6728156f828b7d3a6c2492a8e5084029f79276bd0181c6b86fbf7cb92624",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "license": "Apache-2.0",
+  "realPersonReference": false,
+  "status": "Version 3 timbre accepted by user on 2026-10-08: 就这个音色了. Earlier two versions rejected. Full story human reading pending."
+}

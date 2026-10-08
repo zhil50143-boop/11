@@ -16,7 +16,7 @@ export function makeCanvas(parent: Node): Node {
   const canvas = node.addComponent(Canvas); canvas.cameraComponent = camera;
   return node;
 }
-export function text(parent: Node, value: string, y: number, height = 350, size = 42): Label {
+export function text(parent: Node, value: string, y: number, height = 350, size = 46): Label {
   const node = container(parent, 'Text', y); node.getComponent(UITransform)!.setContentSize(900, height);
   const label = node.addComponent(Label); label.string = value; label.fontSize = size; label.lineHeight = size + 18;
   label.color = new Color(235, 231, 220); label.horizontalAlign = Label.HorizontalAlign.LEFT;
@@ -24,9 +24,9 @@ export function text(parent: Node, value: string, y: number, height = 350, size 
   return label;
 }
 export function button(parent: Node, title: string, y: number, action: () => void): Button {
-  const node = container(parent, 'Button', y); node.getComponent(UITransform)!.setContentSize(900, 110);
-  const g = node.addComponent(Graphics); g.fillColor = new Color(63, 67, 65); g.rect(-450, -55, 900, 110); g.fill();
-  const label = text(node, title, 0, 90, 36); label.horizontalAlign = Label.HorizontalAlign.CENTER;
+  const node = container(parent, 'Button', y); node.getComponent(UITransform)!.setContentSize(900, 132);
+  const g = node.addComponent(Graphics); g.fillColor = new Color(63, 67, 65); g.rect(-450, -66, 900, 132); g.fill();
+  const label = text(node, title, 0, 116, 44); label.lineHeight = 56; label.horizontalAlign = Label.HorizontalAlign.CENTER;
   const b = node.addComponent(Button); b.transition = Button.Transition.NONE;
   node.on(Node.EventType.TOUCH_END, () => { if (b.interactable) action() });
   return b;
