@@ -35,7 +35,9 @@ function validateStoryTree(resourceRoot = path.resolve(__dirname,'../assets/reso
         if (globalNodes.has(node.id)) throw new Error('Duplicate global node: '+node.id);globalNodes.add(node.id);
         for (const target of links(node)) if (!nodes.has(target)) throw new Error('Missing target: '+node.id+' -> '+target);
         for (const list of [node.options,node.items]) if (list && new Set(list.map(x=>x.id)).size !== list.length) throw new Error('Duplicate option/item IDs');
-        if (node.type === 'investigation' && (!node.items?.length || !node.requiredFlags?.length)) throw new Error('Incomplete investigation');
+        if (node.type === 'investigation' && (!node.items?.length || !Array.isArray(node.requiredFlags) || (!node.requiredFlags.length && !node.optional))) throw new Error('Incomplete investigation');
+        if (node.requireReadToEnd && !['letter','audioInteraction'].includes(node.type)) throw new Error('Read-to-end requires a document: '+node.id);
+        if (node.type === 'audioInteraction' && node.requireReadToEnd && !node.transcript) throw new Error('Full audio requires readable fallback: '+node.id);
         for (const speaker of [node.speaker,...(node.paragraphs??[]).map(p=>p.speaker)].filter(Boolean)) if (!speakers[speaker]) throw new Error('Unknown speaker: '+speaker);
       }
       const reached = new Set(), queue = [ep.startNode];

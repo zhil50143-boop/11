@@ -8,7 +8,7 @@ export interface StoryConditionBranch {
   flag?: string; equals?: boolean; stat?: string;
   operator?: '>=' | '>' | '<=' | '<' | '=='; value?: number; next: string;
 }
-export interface BaseStoryNode { id: string; next?: string; lifeContext?: LifeContext }
+export interface BaseStoryNode { id: string; next?: string; lifeContext?: LifeContext; setFlags?: string[] }
 export interface StoryParagraph { text: string; speaker?: string }
 export interface PassageStoryNode extends BaseStoryNode {
   type: 'passage' | 'phone'; title: string; paragraphs: StoryParagraph[];
@@ -26,6 +26,7 @@ export interface InvestigationItem { id: string; text: string; next: string; vie
 export interface InteractionStoryNode extends BaseStoryNode {
   type: 'investigation' | 'photo' | 'letter' | 'audioInteraction' | 'transition';
   text: string; actionText?: string; backText?: string; resource?: string; from?: string; to?: string;
+  transcript?: string; requireReadToEnd?: boolean; requiredHint?: string; doneText?: string; optional?: boolean;
   items?: InvestigationItem[]; requiredFlags?: string[];
   effects?: StoryEffectMap; setFlags?: string[];
 }

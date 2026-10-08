@@ -104,7 +104,8 @@
           "timeline": "present"
         },
         "stage": "middleAge"
-      }
+      },
+      "resource": "images/graduation_old/spriteFrame"
     },
     {
       "id": "CH01_EP02_LETTER_001",

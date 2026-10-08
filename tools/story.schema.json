@@ -159,6 +159,14 @@
                     ]
                   }
                 }
+              },
+              "setFlags": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
               }
             },
             "required": [
@@ -823,6 +831,24 @@
                     ]
                   }
                 }
+              },
+              "transcript": {
+                "type": "string",
+                "minLength": 1
+              },
+              "requiredHint": {
+                "type": "string",
+                "minLength": 1
+              },
+              "doneText": {
+                "type": "string",
+                "minLength": 1
+              },
+              "requireReadToEnd": {
+                "type": "boolean"
+              },
+              "optional": {
+                "type": "boolean"
               }
             },
             "required": [
@@ -1114,6 +1140,14 @@
                   "required": [
                     "text"
                   ]
+                }
+              },
+              "setFlags": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
                 }
               }
             },

@@ -1,0 +1,154 @@
+{
+  "episodeId": "CH08_EP06",
+  "name": "这个周末还有事",
+  "startNode": "CH08_EP06_N001",
+  "nodes": [
+    {
+      "id": "CH08_EP06_N001",
+      "type": "passage",
+      "title": "九月十日",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周四晚上，周满把借来的书放到桌边，先找自己的书签。周叙以为那是她做题用的书，翻开才发现不是，女儿让他不要替自己圈内容。程安然把快递袋剪开，里面有一包要换掉的灯泡，问两个人谁有空拿梯子。"
+        },
+        {
+          "text": "周叙搬来梯子，先把电关掉，程安然在旁边收拆下的盒子。女儿在门口念明天出门的时间，他站在梯子上没听清，下来又让她说了一遍。三个人各说了一句，才把明天谁在哪儿说清楚，没把它当成一件不用再问的事。"
+        },
+        {
+          "text": "新灯亮起来，桌上的袋子也显得更旧。周叙把它往柜里挪，想起自己原本要找的是一个为什么。现在多了几份东西，能对清一些事实，仍没有许知夏现在的号码或她愿不愿意见面的答复。一个名字在同学群里，不等于对方答应让他走进今天的生活。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 九月十日",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP06_TOLD_CHECK"
+    },
+    {
+      "id": "CH08_EP06_TOLD_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "TOLD_PARTNER_XIA",
+          "next": "CH08_EP06_TOLD"
+        }
+      ],
+      "fallback": "CH08_EP06_COMMON"
+    },
+    {
+      "id": "CH08_EP06_TOLD",
+      "type": "passage",
+      "title": "已经说过的名字",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "程安然已经听过他如何说许知夏的名字，没有再假装不知道那段关系。她问信是不是高中那一封，他把袋签和正文日期给她看，说是。妻子看了一眼，把水杯拿走，说知道了，明天复查的车次还是得确认。"
+        },
+        {
+          "text": "以前说明过一段关系，不等于以后每一个动作都已经说过。周叙把同学群打开，又关上；如果要请人转话、打电话或见面，那是新的事，不能让妻子只从一条突然来的消息里知道。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 已经说过的名字",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP06_CLOSE"
+    },
+    {
+      "id": "CH08_EP06_COMMON",
+      "type": "passage",
+      "title": "把话补到现在",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "程安然问信是哪一年写的，周叙把两张纸上的八月对给她看，说是高中留的。她说那就别把学校退东西当成别人最近联系你，又去核家里复查的日期。"
+        },
+        {
+          "text": "周叙想起自己第一次答得不全的那句，没在这时让她替自己证明没什么。他把同学群打开，又关上；请人转话、打电话或见面，都会是新的事，不能拿当时怎样说过一个名字，代替对现在的说明。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 把话补到现在",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP06_CLOSE"
+    },
+    {
+      "id": "CH08_EP06_CLOSE",
+      "type": "passage",
+      "title": "还没发出去",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "陈野在群里问谁能找到老师以前拍的合照，有人说还在自己的硬盘。周叙往上翻到同学名单，许知夏的名字仍在。她最近没有在这些消息下面说话，他不知道她是不是常看这个群，也不知道旧学校有没有联系上她。"
+        },
+        {
+          "text": "他打开一条新的消息，写了“学校寄回了以前的东西”，停在下一句。想问的事情还没写清，他把那几个字又读了一遍，放下手机。程安然在厨房，他想等她忙完再讲讲自己为什么翻出这个名字。消息仍在草稿里。"
+        },
+        {
+          "text": "厨房有人叫他拿碗，周叙把手机扣到自己这一边，先去拿。女儿说自己明天晚上回来吃，程安然说那就留一份，没把周末都等在他的旧信边上。那条消息还在草稿里，今晚谁也没有收到它。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 还没发出去",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP06_END"
+    },
+    {
+      "id": "CH08_EP06_END",
+      "type": "episodeEnd",
+      "next": "CH09"
+    }
+  ],
+  "nodeAliases": {}
+}

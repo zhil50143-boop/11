@@ -1,0 +1,183 @@
+{
+  "episodeId": "CH08_EP01",
+  "name": "灯还亮着",
+  "startNode": "CH08_EP01_N001",
+  "nodes": [
+    {
+      "id": "CH08_EP01_N001",
+      "type": "passage",
+      "title": "九月七日的晚上",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "程安然把最后一页材料装回袋子，没有问他想起多少事。她把桌上的耳机线往里收了一点，说自己明早还要带这张桌角的便签，旧纸别再压到上面。周叙把两个袋子分开，摸到桌下那块还没擦干的地方，又去拿了一块布。"
+        },
+        {
+          "text": "周满从房间出来找充电器，绕过纸箱，问父亲是不是还要用那只插座。他拔掉已经不用的线，把插座让给她。女儿看了一眼照片，说这人是你啊，又低头去看充电灯，没等他讲照片背面写了什么。"
+        },
+        {
+          "text": "过去那些年在脑子里过得快，桌上的杯子却还在原来的地方。周叙拿起来，里面的水已经凉了，嘴唇碰到杯沿才发现自己没喝。他把杯子洗掉，回来时程安然已经把电脑关上，在门边核明天的钥匙和卡。"
+        },
+        {
+          "text": "她说先睡，有事明天再讲。周叙答应了一声，把信纸合上，却没有随手塞回所有旧物下面。他在档案袋里找到学校附的清单，顶端盖着资料整理组的印章，纸是新的，和里面那些旧东西不是同一年。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 九月七日的晚上",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP01_CARE_CHECK"
+    },
+    {
+      "id": "CH08_EP01_CARE_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH07_PLANNED_CARE_TOGETHER",
+          "next": "CH08_EP01_SHARED"
+        }
+      ],
+      "fallback": "CH08_EP01_COMMON"
+    },
+    {
+      "id": "CH08_EP01_SHARED",
+      "type": "passage",
+      "title": "明早的接送",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "程安然在门口说女儿明早要提前到校，自己有一份材料要送，周叙先看了自己的出门时间，再说哪一程能接。以前一起列过班次，也没有让所有早晨都自动排好；女儿这次说只要送到公交站，后面的路自己走。"
+        },
+        {
+          "text": "他把提醒改成她实际要走的时间，没有按自己上班的点来算。程安然看过以后说好，又问家里的复查有没有确认日期。两人只把明天能定的事写完，不把后面一周也一口应下。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 明早的接送",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP01_ARCHIVE"
+    },
+    {
+      "id": "CH08_EP01_COMMON",
+      "type": "passage",
+      "title": "门口的便签",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "门边的便签写着女儿要提前到校，程安然要送一份材料。周叙伸手想把两件事都圈到自己这一边，妻子让他先看自己的出门时间，女儿从屋里说只送到公交站就行。"
+        },
+        {
+          "text": "他把多圈的那一程擦掉，只留下能够确认的。程安然问复查日期有没有问过家里，他拿起手机，看到这时候已经很晚，说明早再打。她没有替他把那个日期补上。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 门口的便签",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP01_ARCHIVE"
+    },
+    {
+      "id": "CH08_EP01_ARCHIVE",
+      "type": "letter",
+      "actionText": "看学校附页",
+      "text": "南城第二中学旧校区资料整理组\n\n2037.9\n退还：社团留存袋，袋签姓名周叙。\n旧登记页：2009.8，器材归还时附存的照片、未封信封及小器材。\n本次按现有袋签联系收件人，未核定每件旧物的拍摄或录制日期。\n\n登记页与旧袋同时附回。",
+      "setFlags": [
+        "CH08_READ_ARCHIVE_NOTE"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 看学校附页",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP01_CLOSE"
+    },
+    {
+      "id": "CH08_EP01_CLOSE",
+      "type": "passage",
+      "title": "先把袋子放平",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "附页没有说许知夏最近写过信，也没有说她托学校来找他。周叙又看了一遍袋签，把“2009.8”从旧印章里辨出来。开头那句像是写给很久以后的话，现在读着很近，纸却已经在学校留了许多年。"
+        },
+        {
+          "text": "他先前把工作宿舍那个箱子和这只档案袋想成了同一处。他从自己的旧本子中取出当年寄送照片用的封套，对过地址与笔迹，才认出2013装地址和照片的旧封套并不是2009这封未来信。学校附的袋签仍在这一个上面。他只把能够对得上的部分放到桌上，没有靠箱子的形状替余下的事补完。"
+        },
+        {
+          "text": "房间里有人叫他关灯，周叙把清单和信纸分开放平。对面的楼还有一扇窗亮着，他去检查阳台的衣服，摸到一件袖口还湿，往旁边挪开，才把灯关掉。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 先把袋子放平",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH08_EP01_END"
+    },
+    {
+      "id": "CH08_EP01_END",
+      "type": "episodeEnd",
+      "next": "CH08_EP02"
+    }
+  ],
+  "nodeAliases": {}
+}

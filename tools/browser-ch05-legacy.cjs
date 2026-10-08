@@ -28,6 +28,7 @@ let browser;const errors=[],failedRequests=[],visited=[];
   else if(n.type==='letter'){await tap(n.actionText??'查看');assert.ok((await snap()).labels.includes(n.text));await tap('放回去')}
   else if(n.type==='choice')await tap(n.options.find(o=>o.id===(n.id==='CH05_EP05_CHOICE'?'SHARE':'TOGETHER')).text);
   else if(n.type==='photo'){await tap('翻面');assert.ok((await snap()).labels.includes(n.backText));await tap('放回去')}
+  else if(n.type==='investigation')await tap(n.doneText??'收好纸箱');
   else if(n.type==='transition'){await page.waitForTimeout(600);await tap('继续')}
   else throw Error('Unexpected node '+n.id);
  }

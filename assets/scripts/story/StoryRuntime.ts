@@ -59,6 +59,8 @@ export class StoryRuntime {
     const node = this.expect(expected);
     if (!['dialogue', 'narration', 'passage', 'phone'].includes(node.type)) throw new Error('Advance requires text');
     if (!node.next) throw new Error('Text node has no next');
+    this.requireTarget(node.next);
+    if (!this.state.readNodeIds.includes(node.id)) applyEffects(this.state, undefined, node.setFlags);
     this.read(node.id); this.go(node.next); return this.current();
   }
   choose(id: string, expected: string): StoryNode {
@@ -83,6 +85,9 @@ export class StoryRuntime {
       throw new Error('Interaction required');
     }
     const special = node as InteractionStoryNode;
+    if (special.requireReadToEnd && this.state.progress.readingOffset < 0.99) {
+      throw new Error('请先读到这一页的末尾。');
+    }
     if (special.type === 'investigation' && !special.requiredFlags?.every(f => this.state.flags[f])) {
       throw new Error('Required items not viewed');
     }

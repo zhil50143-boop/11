@@ -77,8 +77,8 @@ export class StoryView extends Component {
       case 'choice':
         new ChoicePanel().show(this.root, node, id => void this.manager.choose(id, node.id)); break;
       case 'photo': new PhotoViewer().show(this.root, node, () => void this.manager.complete(node.id)); break;
-      case 'letter': new LetterViewer().show(this.root, node, () => void this.manager.complete(node.id)); break;
-      case 'audioInteraction': this.audio.show(this.root, node, () => void this.manager.complete(node.id)); break;
+      case 'letter': new LetterViewer().show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset, offset => this.manager.setReadingOffset(node.id, offset)); break;
+      case 'audioInteraction': this.audio.show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset, offset => this.manager.setReadingOffset(node.id, offset)); break;
       case 'investigation': this.investigation(node); break;
       case 'transition': {
         text(this.root, node.to ?? node.text, 80);
@@ -93,12 +93,12 @@ export class StoryView extends Component {
   }
   private investigation(node: InteractionStoryNode): void {
     text(this.root, node.text, 500, 160);
-    if (!node.requiredFlags?.every(f => this.manager.state.flags[f])) text(this.root, '先看看照片和信封。', 365, 70, 30);
+    if (!node.requiredFlags?.every(f => this.manager.state.flags[f])) text(this.root, node.requiredHint ?? '先看看照片和信封。', 365, 70, 30);
     node.items?.forEach((item, i) => {
       const viewed = this.manager.state.flags[item.viewedFlag] ? '（看过）' : '';
       button(this.root, item.text + viewed, 200 - i * 155, () => void this.manager.inspect(item.id, node.id));
     });
-    const done = button(this.root, '收好纸箱', -650, () => void this.manager.complete(node.id));
+    const done = button(this.root, node.doneText ?? '收好纸箱', -650, () => void this.manager.complete(node.id));
     done.interactable = node.requiredFlags?.every(f => this.manager.state.flags[f]) ?? true;
   }
   onDestroy(): void {

@@ -1,0 +1,43 @@
+{
+  "chapterId": "CH08",
+  "title": "记忆会骗人",
+  "episodes": [
+    {
+      "id": "CH08_EP01",
+      "name": "灯还亮着",
+      "resource": "data/story/chapter08/ep01_lamp",
+      "startNode": "CH08_EP01_N001"
+    },
+    {
+      "id": "CH08_EP02",
+      "name": "先看日期",
+      "resource": "data/story/chapter08/ep02_dates",
+      "startNode": "CH08_EP02_N001"
+    },
+    {
+      "id": "CH08_EP03",
+      "name": "留在袋子里的",
+      "resource": "data/story/chapter08/ep03_folded_pages",
+      "startNode": "CH08_EP03_N001"
+    },
+    {
+      "id": "CH08_EP04",
+      "name": "陈野知道哪一段",
+      "resource": "data/story/chapter08/ep04_chen_call",
+      "startNode": "CH08_EP04_N001"
+    },
+    {
+      "id": "CH08_EP05",
+      "name": "把几段放回原处",
+      "resource": "data/story/chapter08/ep05_put_back",
+      "startNode": "CH08_EP05_N001"
+    },
+    {
+      "id": "CH08_EP06",
+      "name": "这个周末还有事",
+      "resource": "data/story/chapter08/ep06_current_weekend",
+      "startNode": "CH08_EP06_N001"
+    }
+  ],
+  "nextChapter": "CH09"
+}
