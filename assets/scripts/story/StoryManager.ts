@@ -119,7 +119,16 @@ export class StoryManager extends Component {
     if (this.busy || !this.alive) return;
     this.busy = true;
     try { await action() } catch (error) {
-      if (this.alive) this.events.emit('change', { type: 'error', message: error instanceof Error ? error.message : String(error) });
+      // Keep actionable save/version messages; loader paths and engine errors
+      // are implementation details, not dialogue or instructions to a player.
+      const message = error instanceof Error ? error.message : '';
+      const saveMessages = [
+        '存档来自较新版本，请使用对应版本继续。', '旧版本存档无法备份，已保留原记录。',
+        '旧记录无法备份，已保留原存档。', '旧存档无法备份，已保留原记录。',
+        '存档片段不可用。请保留存档并使用对应版本。',
+      ];
+      if (this.alive) this.events.emit('change', { type: 'error',
+        message: SaveManager.warning || (saveMessages.includes(message) ? message : '这段内容暂时没能打开。请重试。') });
     } finally { this.busy = false }
   }
   onDestroy(): void { this.alive = false; this.events.all.clear(); this.pending.clear() }
