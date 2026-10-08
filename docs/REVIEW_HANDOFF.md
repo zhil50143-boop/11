@@ -4,6 +4,8 @@
 
 ## 可直接阅读的材料
 
+当前main是1.0.0-rc.3视觉开发切片，全部中文保守覆盖仍从实际源码生成，VisualDraft中文明确标为“独立设计预览”。已上传RC2另有不可混用的原H5、源码与3300条JSON/72条源码文案；新main的3300/94合集不能替代旧包审核输入。最新制作决定/素材来源/审查见DESIGN_DECISIONS、ART_SOURCE_POLICY、V2_PHASE0_AUDIT及art/visual-v2。
+
 - `PLATFORM_REVIEW_COPY.md`：完整原文合集，十章及所有替代分支、重要决定与选项、调查入口、短信、照片说明与背文、信件、录音、六结局、界面操作与异常提示。它不只收录一次通关看到的内容。
 - `PLATFORM_REVIEW_COPY.index.json`：467节点与每条文字的来源、文件散列和汇总散列，核查是否遗漏。原始文字附录包含重复场景及内部背景，用于保守核对，不是新增游戏界面。
 - `GAME_SPEC.md`、`DIRECTION_SOURCE.txt`、`LIFE_NARRATIVE_RULES.md`：策划和用户确认的生活叙事方向。

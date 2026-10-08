@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-08",
+  "requirement": "All final artwork uses the current latest available Image generation service. Concrete model ID not returned by built-in tool; never invent provenance.",
+  "assets": [
+    {
+      "id": "home_2037_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-08",
+      "source": "art/visual-v2/home_2037_v1.png",
+      "sourceBytes": 2148980,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "9d0d592c36dcbf0f1057bac409f70f528e7007f7249346923400e37db4ec91cd",
+      "prompt": "art/visual-v2/home_2037_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/home_2037_v1.jpg",
+      "resource": "images/visual-v2/home_2037_v1/spriteFrame",
+      "bytes": 172412,
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "2c2c16bb410bc4dfb9eac9ee60cf9b15cae66dbb45e0d6325c7d175dcc520f0e",
+      "alpha": null,
+      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+    },
+    {
+      "id": "bus_2007_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-08",
+      "source": "art/visual-v2/bus_2007_v1.png",
+      "sourceBytes": 2568276,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "5a1094358bfd78474763cd4f65dc5a58b6e4a509150312db1679422fb401cd21",
+      "prompt": "art/visual-v2/bus_2007_v1.prompt.txt",
+      "editedFrom": "art/visual-v2/bus_2007_rejected_worn.png",
+      "file": "assets/resources/images/visual-v2/bus_2007_v1.jpg",
+      "resource": "images/visual-v2/bus_2007_v1/spriteFrame",
+      "bytes": 223039,
+      "size": [
+        1280,
+        853
+      ],
+      "sha256": "979f6d4440581b36a577f9a822b491a1efbc03bd42e9ffc2de2f4824e3406691",
+      "alpha": null,
+      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "referenceSha256": "e3aa0646a2ce3360e55577b9ff07ef274fe7eb5b33da0192302e2517642dc9de"
+    },
+    {
+      "id": "desk_2037_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-08",
+      "source": "art/visual-v2/desk_2037_v1.png",
+      "sourceBytes": 2336656,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "4919afe847d38091291b91f1dbde17c11608e8a36987152e95e962909807ecce",
+      "prompt": "art/visual-v2/desk_2037_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/desk_2037_v1.jpg",
+      "resource": "images/visual-v2/desk_2037_v1/spriteFrame",
+      "bytes": 214269,
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "2d39ee066d7cb3f0e8f415e6e40d3aa5e4eb02732b3657d57c5a5495a16f8d83",
+      "alpha": null,
+      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+    },
+    {
+      "id": "paper_v1",
+      "kind": "paper",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-08",
+      "source": "art/visual-v2/paper_v1.png",
+      "sourceBytes": 2545332,
+      "sourceSize": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "0be3f906c8e683b72d0e8ec1bc24d0e025abb177a9770ddf004aef8857065c4b",
+      "prompt": "art/visual-v2/paper_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/paper_v1.jpg",
+      "resource": "images/visual-v2/paper_v1/spriteFrame",
+      "bytes": 122751,
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "43550e61f7ac89be9fdc2fb876fdaed467b81ea1ccfa0e7848ce2bddff663a7b",
+      "alpha": null,
+      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+    },
+    {
+      "id": "envelope_v1",
+      "kind": "prop",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-08",
+      "source": "art/visual-v2/envelope_v1.png",
+      "sourceBytes": 2165596,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "sourceSha256": "b43ece84b0e239512961b25cfc8fb023af52299511fa546793541a2b84a73b33",
+      "prompt": "art/visual-v2/envelope_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/envelope_v1.png",
+      "resource": "images/visual-v2/envelope_v1/spriteFrame",
+      "bytes": 359587,
+      "size": [
+        720,
+        360
+      ],
+      "sha256": "8d18381ed9a388664e2bac66a5922c918cb8a16dad25319297821160e989d4a3",
+      "alpha": {
+        "transparentPixels": 77269,
+        "opaquePixels": 1311,
+        "totalPixels": 259200
+      },
+      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+    },
+    {
+      "id": "album_v1",
+      "kind": "prop",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-08",
+      "source": "art/visual-v2/album_v1.png",
+      "sourceBytes": 2741462,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceSha256": "c066e318b9bd293848710181ea13741ac388a63d24ec8eb5552aad093739cdd8",
+      "prompt": "art/visual-v2/album_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/album_v1.png",
+      "resource": "images/visual-v2/album_v1/spriteFrame",
+      "bytes": 862717,
+      "size": [
+        720,
+        720
+      ],
+      "sha256": "3d46b7fdfdfbdbb2e6716620e5de97d2a0dfe83636c0ae4d7817c6473d09c679",
+      "alpha": {
+        "transparentPixels": 181212,
+        "opaquePixels": 1180,
+        "totalPixels": 518400
+      },
+      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+    },
+    {
+      "id": "mp3_v1",
+      "kind": "prop",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-08",
+      "source": "art/visual-v2/mp3_v1.png",
+      "sourceBytes": 1723304,
+      "sourceSize": [
+        1086,
+        1448
+      ],
+      "sourceSha256": "d7d92e80b620be5598d49fae9ab4e880ace03f736be6f18d7dd6e7f9cbff798f",
+      "prompt": "art/visual-v2/mp3_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/mp3_v1.png",
+      "resource": "images/visual-v2/mp3_v1/spriteFrame",
+      "bytes": 749016,
+      "size": [
+        720,
+        960
+      ],
+      "sha256": "7603c75d4c50a8fab47e93a967233e3d5625be07dd3080533371b370d49cb290",
+      "alpha": {
+        "transparentPixels": 369774,
+        "opaquePixels": 967,
+        "totalPixels": 691200
+      },
+      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+    }
+  ]
+}

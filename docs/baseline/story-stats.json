@@ -1,0 +1,6945 @@
+{
+  "inputHash": "f2f77fff9ed66d860041a69ffcc52a06da8ee598dc4bd559d7e4749d15c70377",
+  "chapters": 10,
+  "episodes": 60,
+  "nodes": 467,
+  "method": "All-branch totals include mutually exclusive content and are not play time. Six sampled domain routes give separate 400-500 character/minute estimates, not measured human time. Repeated investigation visits are deduplicated; optional reading/audio cannot be inferred from this model.",
+  "rows": [
+    {
+      "chapter": "CH01",
+      "chapterTitle": "那封迟到的信",
+      "episode": "CH01_EP01",
+      "title": "雨夜回家",
+      "nodes": 4,
+      "allBranchCharacters": 720,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 傍晚",
+        "2037 · 秋"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH01",
+      "chapterTitle": "那封迟到的信",
+      "episode": "CH01_EP02",
+      "title": "旧纸箱",
+      "nodes": 13,
+      "allBranchCharacters": 827,
+      "choiceNodes": 1,
+      "interactionNodes": 6,
+      "timeLabels": [
+        "2037 · 秋"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH01",
+      "chapterTitle": "那封迟到的信",
+      "episode": "CH01_EP03",
+      "title": "饭桌以后",
+      "nodes": 11,
+      "allBranchCharacters": 1177,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2037 · 秋 · 晚饭",
+        "2037 · 秋",
+        "2037 · 秋 · 深夜"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH01",
+      "chapterTitle": "那封迟到的信",
+      "episode": "CH01_EP04",
+      "title": "01.mp3",
+      "nodes": 8,
+      "allBranchCharacters": 944,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2037 · 秋 · 深夜",
+        "2007 · 秋"
+      ],
+      "places": [
+        "家中",
+        "17路公交"
+      ]
+    },
+    {
+      "chapter": "CH02",
+      "chapterTitle": "十七岁的夏天",
+      "episode": "CH02_EP01",
+      "title": "第二天",
+      "nodes": 6,
+      "allBranchCharacters": 1098,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2007 · 秋 · 早读前",
+        "2007 · 秋 · 上午",
+        "2007 · 秋 · 课间",
+        "2007 · 秋 · 中午"
+      ],
+      "places": [
+        "南城二中"
+      ]
+    },
+    {
+      "chapter": "CH02",
+      "chapterTitle": "十七岁的夏天",
+      "episode": "CH02_EP02",
+      "title": "旧体育馆",
+      "nodes": 6,
+      "allBranchCharacters": 1057,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2007 · 秋 · 午休",
+        "2007 · 秋 · 放学前",
+        "2007 · 秋 · 放学",
+        "2007 · 秋 · 晚上"
+      ],
+      "places": [
+        "南城二中",
+        "旧体育馆",
+        "17路公交",
+        "周叙家"
+      ]
+    },
+    {
+      "chapter": "CH02",
+      "chapterTitle": "十七岁的夏天",
+      "episode": "CH02_EP03",
+      "title": "那年暑假",
+      "nodes": 5,
+      "allBranchCharacters": 1482,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2007 · 夏 · 暑假",
+        "2007 · 夏 · 下午",
+        "2007 · 秋 · 晚上"
+      ],
+      "places": [
+        "周叙家",
+        "父亲的工厂"
+      ]
+    },
+    {
+      "chapter": "CH02",
+      "chapterTitle": "十七岁的夏天",
+      "episode": "CH02_EP04",
+      "title": "放学以后",
+      "nodes": 5,
+      "allBranchCharacters": 1479,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2007 · 秋 · 放学",
+        "2007 · 秋 · 傍晚"
+      ],
+      "places": [
+        "南城二中",
+        "17路临时站点"
+      ]
+    },
+    {
+      "chapter": "CH02",
+      "chapterTitle": "十七岁的夏天",
+      "episode": "CH02_EP05",
+      "title": "电话号码",
+      "nodes": 5,
+      "allBranchCharacters": 1433,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2007 · 秋 · 晚自习",
+        "2007 · 秋 · 周末",
+        "2007 · 秋 · 晚上",
+        "2007 · 秋 · 周六上午"
+      ],
+      "places": [
+        "南城二中",
+        "周叙家"
+      ]
+    },
+    {
+      "chapter": "CH02",
+      "chapterTitle": "十七岁的夏天",
+      "episode": "CH02_EP06",
+      "title": "周末的约定",
+      "nodes": 12,
+      "allBranchCharacters": 2514,
+      "choiceNodes": 1,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2007 · 冬 · 放学",
+        "2007 · 冬 · 晚饭",
+        "2007 · 冬 · 周六",
+        "2007 · 冬 · 周六傍晚",
+        "2007 · 冬 · 晚上"
+      ],
+      "places": [
+        "南城二中",
+        "周叙家",
+        "图书馆与照相店",
+        "回家路上"
+      ]
+    },
+    {
+      "chapter": "CH03",
+      "chapterTitle": "我们以为会永远",
+      "episode": "CH03_EP01",
+      "title": "新学期",
+      "nodes": 5,
+      "allBranchCharacters": 1444,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2008 · 冬 · 返校",
+        "2008 · 春 · 放学",
+        "2008 · 春 · 周末",
+        "2008 · 春 · 课间"
+      ],
+      "places": [
+        "南城二中",
+        "17路公交",
+        "周叙家"
+      ]
+    },
+    {
+      "chapter": "CH03",
+      "chapterTitle": "我们以为会永远",
+      "episode": "CH03_EP02",
+      "title": "周末的饭",
+      "nodes": 6,
+      "allBranchCharacters": 1382,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2008 · 春 · 周六中午",
+        "2008 · 春 · 午饭",
+        "2008 · 春 · 午饭后",
+        "2008 · 春 · 周末以后"
+      ],
+      "places": [
+        "周叙家",
+        "南城二中"
+      ]
+    },
+    {
+      "chapter": "CH03",
+      "chapterTitle": "我们以为会永远",
+      "episode": "CH03_EP03",
+      "title": "各自的打算",
+      "nodes": 5,
+      "allBranchCharacters": 1387,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2008 · 秋 · 高三",
+        "2008 · 秋 · 周日",
+        "2009 · 春 · 模拟考以后",
+        "2009 · 春 · 晚上"
+      ],
+      "places": [
+        "南城二中",
+        "许知夏家",
+        "周叙家"
+      ]
+    },
+    {
+      "chapter": "CH03",
+      "chapterTitle": "我们以为会永远",
+      "episode": "CH03_EP04",
+      "title": "志愿草稿",
+      "nodes": 9,
+      "allBranchCharacters": 1691,
+      "choiceNodes": 1,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2009 · 春 · 咨询会",
+        "2009 · 春 · 咨询会以后",
+        "2009 · 春 · 晚上"
+      ],
+      "places": [
+        "南城二中",
+        "17路站点",
+        "周叙家"
+      ]
+    },
+    {
+      "chapter": "CH03",
+      "chapterTitle": "我们以为会永远",
+      "episode": "CH03_EP05",
+      "title": "南门那棵树",
+      "nodes": 6,
+      "allBranchCharacters": 1466,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2009 · 夏 · 考完以后",
+        "2009 · 夏 · 返校",
+        "2009 · 夏 · 毕业照片",
+        "2009 · 夏 · 洗好的照片",
+        "2009 · 夏 · 毕业以后"
+      ],
+      "places": [
+        "南城二中校门",
+        "南城二中",
+        "南城二中南门",
+        "照相店",
+        "周叙家"
+      ]
+    },
+    {
+      "chapter": "CH03",
+      "chapterTitle": "我们以为会永远",
+      "episode": "CH03_EP06",
+      "title": "两张录取通知",
+      "nodes": 11,
+      "allBranchCharacters": 2158,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2009 · 夏 · 暑假",
+        "2009 · 夏 · 见面",
+        "2009 · 夏 · 收拾行李",
+        "2009 · 夏 · 返校还东西",
+        "2009 · 夏 · 信封",
+        "2009 · 夏 · 出发以前"
+      ],
+      "places": [
+        "周叙家",
+        "17路站点",
+        "南城二中"
+      ]
+    },
+    {
+      "chapter": "CH04",
+      "chapterTitle": "两座城市",
+      "episode": "CH04_EP01",
+      "title": "新的号码",
+      "nodes": 7,
+      "allBranchCharacters": 1533,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2009 · 秋 · 宿舍门口",
+        "2009 · 秋 · 饭卡第一次用",
+        "2009 · 秋 · 先问现在忙不忙",
+        "2009 · 秋 · 原来不在宿舍",
+        "2009 · 秋 · 熄灯前的消息"
+      ],
+      "places": [
+        "周叙的大学",
+        "周叙大学食堂",
+        "周叙大学宿舍",
+        "两边的大学宿舍"
+      ]
+    },
+    {
+      "chapter": "CH04",
+      "chapterTitle": "两座城市",
+      "episode": "CH04_EP02",
+      "title": "对不上的课表",
+      "nodes": 8,
+      "allBranchCharacters": 1507,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2009 · 秋 · 十一以前",
+        "2009 · 秋 · 课表旁的纸条",
+        "2009 · 秋 · 把空的那天圈出来",
+        "2009 · 秋 · 没有提前问的那张票",
+        "2009 · 秋 · 回去以后再说",
+        "2009 · 秋 · 课表换了一行"
+      ],
+      "places": [
+        "周叙大学教学楼",
+        "周叙大学宿舍",
+        "两边的大学"
+      ]
+    },
+    {
+      "chapter": "CH04",
+      "chapterTitle": "两座城市",
+      "episode": "CH04_EP03",
+      "title": "冬天的电话",
+      "nodes": 8,
+      "allBranchCharacters": 1998,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2009 · 冬 · 先把衣服晒进去",
+        "2010 · 冬 · 寒假回家",
+        "2010 · 冬 · 家里知道约了谁",
+        "2010 · 冬 · 这次没有借陈野的名字",
+        "2010 · 冬 · 带回去的饭盒",
+        "2010 · 春 · 各自家里也有事"
+      ],
+      "places": [
+        "周叙大学宿舍",
+        "周叙家",
+        "两边的大学"
+      ]
+    },
+    {
+      "chapter": "CH04",
+      "chapterTitle": "两座城市",
+      "episode": "CH04_EP04",
+      "title": "暑假还没定",
+      "nodes": 6,
+      "allBranchCharacters": 1183,
+      "choiceNodes": 1,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2010 · 夏 · 家里的复查单",
+        "2010 · 夏 · 暑期安排",
+        "2010 · 夏 · 还不能替她答应",
+        "2010 · 夏 · 已经说出口的日期",
+        "2010 · 夏 · 确认过的那一张"
+      ],
+      "places": [
+        "周叙大学宿舍",
+        "两边的大学"
+      ]
+    },
+    {
+      "chapter": "CH04",
+      "chapterTitle": "两座城市",
+      "episode": "CH04_EP05",
+      "title": "暑假各过几天",
+      "nodes": 8,
+      "allBranchCharacters": 1712,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2010 · 夏 · 复查那天",
+        "2010 · 夏 · 等到表上空下来",
+        "2010 · 夏 · 不是她临时改的",
+        "2010 · 夏 · 街口新装的门",
+        "2010 · 夏 · 街景照片",
+        "2010 · 夏 · 没一起去的球场"
+      ],
+      "places": [
+        "南城医院",
+        "周叙家",
+        "南城旧街",
+        "南城照相店",
+        "南城"
+      ]
+    },
+    {
+      "chapter": "CH04",
+      "chapterTitle": "两座城市",
+      "episode": "CH04_EP06",
+      "title": "各自的新学年",
+      "nodes": 10,
+      "allBranchCharacters": 2086,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2010 · 秋 · 走熟的那条路",
+        "2010 · 秋 · 先听她换组的理由",
+        "2010 · 秋 · 又想替她换一个安排",
+        "2011 · 冬 · 各有一张账单",
+        "2011 · 春 · 先看今年的表",
+        "2011 · 春 · 记住去年改过一次",
+        "2011 · 夏 · 大二暑假以前"
+      ],
+      "places": [
+        "周叙的大学",
+        "周叙大学宿舍",
+        "南城与两边的大学"
+      ]
+    },
+    {
+      "chapter": "CH05",
+      "chapterTitle": "未来开始有价格",
+      "episode": "CH05_EP01",
+      "title": "第一张实践表",
+      "nodes": 8,
+      "allBranchCharacters": 1468,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2011 · 夏 · 先问清楚地点",
+        "2011 · 夏 · 这次还是先核对",
+        "2011 · 夏 · 看见去年划掉的那两行",
+        "2011 · 夏 · 办公室的那张椅子",
+        "2011 · 夏 · 支出纸条",
+        "2011 · 夏 · 那周没有赶过去"
+      ],
+      "places": [
+        "周叙大学教学楼",
+        "周叙大学宿舍",
+        "设备厂办公室",
+        "两边的大学"
+      ]
+    },
+    {
+      "chapter": "CH05",
+      "chapterTitle": "未来开始有价格",
+      "episode": "CH05_EP02",
+      "title": "大三的日常",
+      "nodes": 7,
+      "allBranchCharacters": 1414,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2011 · 秋 · 课又排到晚上",
+        "2012 · 冬 · 冬天家里的账",
+        "2012 · 冬 · 父母知道她也有安排",
+        "2012 · 冬 · 现在说的是实际日期",
+        "2012 · 春 · 一张复印件"
+      ],
+      "places": [
+        "周叙大学宿舍",
+        "周叙家",
+        "两边的大学"
+      ]
+    },
+    {
+      "chapter": "CH05",
+      "chapterTitle": "未来开始有价格",
+      "episode": "CH05_EP03",
+      "title": "实习那几周",
+      "nodes": 7,
+      "allBranchCharacters": 1491,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2012 · 夏 · 每天同一趟车",
+        "2012 · 夏 · 先问那间屋子",
+        "2012 · 夏 · 近一点也不等于都有地方",
+        "2012 · 夏 · 月底留下的票",
+        "2012 · 夏 · 陈野自己的去向"
+      ],
+      "places": [
+        "设备厂附近",
+        "周叙大学宿舍",
+        "南城小饭店"
+      ]
+    },
+    {
+      "chapter": "CH05",
+      "chapterTitle": "未来开始有价格",
+      "episode": "CH05_EP04",
+      "title": "招聘会那张纸",
+      "nodes": 8,
+      "allBranchCharacters": 1638,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2012 · 秋 · 鞋底还没干",
+        "2013 · 春 · 论文和回程票",
+        "2013 · 春 · 把没问到的留空",
+        "2013 · 春 · 不是她临时变了主意",
+        "2013 · 春 · 岗位记录",
+        "2013 · 春 · 陈野先问班次"
+      ],
+      "places": [
+        "周叙大学招聘会",
+        "周叙大学宿舍",
+        "南城公交站"
+      ]
+    },
+    {
+      "chapter": "CH05",
+      "chapterTitle": "未来开始有价格",
+      "episode": "CH05_EP05",
+      "title": "答复以前",
+      "nodes": 6,
+      "allBranchCharacters": 1238,
+      "choiceNodes": 1,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2013 · 春 · 周五以前要答复",
+        "2013 · 春 · 工作去向",
+        "2013 · 春 · 两边分别问清楚",
+        "2013 · 春 · 她没有答应的那一栏",
+        "2013 · 春 · 还有材料没交完"
+      ],
+      "places": [
+        "周叙大学宿舍",
+        "周叙大学楼道",
+        "两边的大学"
+      ]
+    },
+    {
+      "chapter": "CH05",
+      "chapterTitle": "未来开始有价格",
+      "episode": "CH05_EP06",
+      "title": "各自要交的东西",
+      "nodes": 8,
+      "allBranchCharacters": 1505,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2013 · 夏 · 把图重新卷好",
+        "2013 · 夏 · 知道还要再商量",
+        "2013 · 夏 · 这不是她后来才反悔",
+        "2013 · 夏 · 最后一晚在宿舍",
+        "2013 · 夏 · 报到备忘",
+        "2013 · 夏 · 带回家的箱子"
+      ],
+      "places": [
+        "周叙的大学",
+        "周叙大学宿舍",
+        "南城"
+      ]
+    },
+    {
+      "chapter": "CH06",
+      "chapterTitle": "那天我们都没有回头",
+      "episode": "CH06_EP01",
+      "title": "第一班",
+      "nodes": 9,
+      "allBranchCharacters": 1765,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2013 · 夏 · 车票买好了",
+        "2013 · 夏 · 一张空床",
+        "2013 · 夏 · 报到以后再核一次",
+        "2013 · 夏 · 不能拿自己的床位替她算",
+        "2013 · 夏 · 电风扇放哪边",
+        "2013 · 夏 · 看报到后的便条",
+        "2013 · 夏 · 第一张工资单以前"
+      ],
+      "places": [
+        "南城",
+        "省内设备公司",
+        "周叙的宿舍",
+        "两人的住处"
+      ]
+    },
+    {
+      "chapter": "CH06",
+      "chapterTitle": "那天我们都没有回头",
+      "episode": "CH06_EP02",
+      "title": "空出来的晚上",
+      "nodes": 7,
+      "allBranchCharacters": 1466,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2013 · 夏 · 电话不再固定九点",
+        "2013 · 夏 · 母亲先问有没有约过",
+        "2013 · 夏 · 现在不用别人补日期",
+        "2013 · 夏 · 饭剩在小锅里",
+        "2013 · 夏 · 陈野这次不跟他们等"
+      ],
+      "places": [
+        "周叙的宿舍",
+        "周叙家",
+        "两人的住处",
+        "南城小饭店"
+      ]
+    },
+    {
+      "chapter": "CH06",
+      "chapterTitle": "那天我们都没有回头",
+      "episode": "CH06_EP03",
+      "title": "约一次见面",
+      "nodes": 10,
+      "allBranchCharacters": 1418,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2013 · 秋 · 先空出的周日",
+        "2013 · 秋 · 先说还没买票",
+        "2013 · 秋 · 没有把未定说成答应",
+        "2013 · 秋 · 去那边住也要有工作",
+        "2013 · 秋 · 先停下那条现成路线",
+        "2013 · 秋 · 看改过的见面日期",
+        "2013 · 秋 · 先告诉我你到了"
+      ],
+      "places": [
+        "周叙的宿舍",
+        "两人的住处"
+      ]
+    },
+    {
+      "chapter": "CH06",
+      "chapterTitle": "那天我们都没有回头",
+      "episode": "CH06_EP04",
+      "title": "没有一起定下来的事",
+      "nodes": 8,
+      "allBranchCharacters": 1990,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2013 · 秋 · 十月回到南城",
+        "2013 · 秋 · 吃饭时候还要接电话",
+        "2013 · 秋 · 问清楚以后仍有不同",
+        "2013 · 秋 · 没有一份她答应过的名单",
+        "2013 · 秋 · 说到后来已经很晚",
+        "2013 · 秋 · 返程以前又说了一次"
+      ],
+      "places": [
+        "南城",
+        "周叙家",
+        "周叙家楼下",
+        "南城街边",
+        "两人的住处"
+      ]
+    },
+    {
+      "chapter": "CH06",
+      "chapterTitle": "那天我们都没有回头",
+      "episode": "CH06_EP05",
+      "title": "站口",
+      "nodes": 6,
+      "allBranchCharacters": 1345,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2013 · 秋 · 到车站的时候",
+        "2013 · 秋 · 把话说到这里",
+        "2013 · 秋 · 到检票口",
+        "2013 · 秋 · 自己的返程便条",
+        "2013 · 秋 · 走到公交站"
+      ],
+      "places": [
+        "南城车站",
+        "南城车站候车区",
+        "南城车站检票口",
+        "南城车站外"
+      ]
+    },
+    {
+      "chapter": "CH06",
+      "chapterTitle": "那天我们都没有回头",
+      "episode": "CH06_EP06",
+      "title": "回去以后",
+      "nodes": 6,
+      "allBranchCharacters": 1741,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2013 · 秋 · 回去以后要交班",
+        "2013 · 秋 · 向家里讲清楚",
+        "2013 · 秋 · 陈野不替她作证",
+        "2013 · 秋 · 不再约每个周末",
+        "2013 · 冬 · 冬天那张新表"
+      ],
+      "places": [
+        "周叙的宿舍",
+        "周叙家",
+        "南城小饭店",
+        "省内设备公司"
+      ]
+    },
+    {
+      "chapter": "CH07",
+      "chapterTitle": "后来的人",
+      "episode": "CH07_EP01",
+      "title": "自己的钥匙",
+      "nodes": 12,
+      "allBranchCharacters": 1596,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2014 · 春 · 换一把锁",
+        "2014 · 春 · 那一段已经讲清",
+        "2015 · 春 · 周末的电话",
+        "2015 · 春 · 木板和洗衣机",
+        "2016 · 夏 · 先看自己的条件",
+        "2016 · 夏 · 看搬家的清单"
+      ],
+      "places": [
+        "工作地出租屋",
+        "出租屋",
+        "南城家中",
+        "新出租屋"
+      ]
+    },
+    {
+      "chapter": "CH07",
+      "chapterTitle": "后来的人",
+      "episode": "CH07_EP02",
+      "title": "漏水的楼道",
+      "nodes": 4,
+      "allBranchCharacters": 1132,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2017 · 春 · 等房东来",
+        "2017 · 夏 · 不是每天都碰到",
+        "2017 · 秋 · 一碗面"
+      ],
+      "places": [
+        "出租楼楼道",
+        "楼下小店",
+        "面店"
+      ]
+    },
+    {
+      "chapter": "CH07",
+      "chapterTitle": "后来的人",
+      "episode": "CH07_EP03",
+      "title": "两个人的安排",
+      "nodes": 6,
+      "allBranchCharacters": 1135,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2018 · 春 · 再约一次",
+        "2018 · 夏 · 听她讲完",
+        "2018 · 夏 · 各自的桌子"
+      ],
+      "places": [
+        "南城街边",
+        "程安然租住的房子",
+        "两人的住处"
+      ]
+    },
+    {
+      "chapter": "CH07",
+      "chapterTitle": "后来的人",
+      "episode": "CH07_EP04",
+      "title": "以后谁来做",
+      "nodes": 9,
+      "allBranchCharacters": 1274,
+      "choiceNodes": 1,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2019 · 秋 · 两个杯子",
+        "2019 · 秋 · 以后谁来做",
+        "2019 · 秋 · 先列自己的那一栏",
+        "2019 · 秋 · 那一栏不是她答应过的",
+        "2019 · 秋 · 另外一个周末",
+        "2019 · 秋 · 月底再看"
+      ],
+      "places": [
+        "出租屋"
+      ]
+    },
+    {
+      "chapter": "CH07",
+      "chapterTitle": "后来的人",
+      "episode": "CH07_EP05",
+      "title": "放在哪里都要用",
+      "nodes": 4,
+      "allBranchCharacters": 800,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2020 · 夏 · 登记那天",
+        "2020 · 夏 · 看两个人写的袋子标签",
+        "2020 · 秋 · 她还要回去交材料"
+      ],
+      "places": [
+        "登记处与出租屋",
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH07",
+      "chapterTitle": "后来的人",
+      "episode": "CH07_EP06",
+      "title": "小床旁边",
+      "nodes": 7,
+      "allBranchCharacters": 1073,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2021 · 春 · 名字还没写准",
+        "2021 · 春 · 看小床边的便签",
+        "2021 · 夏 · 重新列一次",
+        "2021 · 夏 · 早上那一袋"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH07",
+      "chapterTitle": "后来的人",
+      "episode": "CH07_EP07",
+      "title": "夜里的那趟车",
+      "nodes": 6,
+      "allBranchCharacters": 1106,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2024 · 冬 · 听见她喊人",
+        "2024 · 冬 · 早上的交接",
+        "2024 · 冬 · 另一边也要上班"
+      ],
+      "places": [
+        "家中与门诊",
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH07",
+      "chapterTitle": "后来的人",
+      "episode": "CH07_EP08",
+      "title": "她也有自己的周末",
+      "nodes": 6,
+      "allBranchCharacters": 1242,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2030 · 秋 · 书包换过几次",
+        "2035 · 夏 · 没有站在中间",
+        "2035 · 夏 · 现在那张照片",
+        "2037 · 秋 · 高中开学",
+        "2037 · 秋 · 回到餐桌"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH08",
+      "chapterTitle": "记忆会骗人",
+      "episode": "CH08_EP01",
+      "title": "灯还亮着",
+      "nodes": 7,
+      "allBranchCharacters": 1065,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2037 · 秋 · 九月七日的晚上",
+        "2037 · 秋 · 明早的接送",
+        "2037 · 秋 · 门口的便签",
+        "2037 · 秋 · 看学校附页",
+        "2037 · 秋 · 先把袋子放平"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH08",
+      "chapterTitle": "记忆会骗人",
+      "episode": "CH08_EP02",
+      "title": "先看日期",
+      "nodes": 5,
+      "allBranchCharacters": 1108,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2037 · 秋 · 九月八日的早晨",
+        "2037 · 秋 · 两处不同的纸",
+        "2037 · 秋 · 看自己对过的日期",
+        "2037 · 秋 · 先接现在的电话"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH08",
+      "chapterTitle": "记忆会骗人",
+      "episode": "CH08_EP03",
+      "title": "留在袋子里的",
+      "nodes": 9,
+      "allBranchCharacters": 2048,
+      "choiceNodes": 0,
+      "interactionNodes": 3,
+      "timeLabels": [
+        "2037 · 秋 · 纸没有自己展开",
+        "2037 · 秋 · 展开信纸",
+        "2037 · 秋 · 旧录音全文",
+        "2037 · 秋 · 纸里写的是那时",
+        "2037 · 秋 · 还没展开的那一页",
+        "2037 · 秋 · 分开两只袋子"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH08",
+      "chapterTitle": "记忆会骗人",
+      "episode": "CH08_EP04",
+      "title": "陈野知道哪一段",
+      "nodes": 4,
+      "allBranchCharacters": 873,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 九月九日",
+        "2037 · 秋 · 陈野的电话",
+        "2037 · 秋 · 挂电话以后"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH08",
+      "chapterTitle": "记忆会骗人",
+      "episode": "CH08_EP05",
+      "title": "把几段放回原处",
+      "nodes": 10,
+      "allBranchCharacters": 1095,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2037 · 秋 · 不同来源",
+        "2037 · 秋 · 对照后的分开",
+        "2037 · 秋 · 信纸的年份",
+        "2037 · 秋 · 先留空",
+        "2037 · 秋 · 把纸放远一点"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH08",
+      "chapterTitle": "记忆会骗人",
+      "episode": "CH08_EP06",
+      "title": "这个周末还有事",
+      "nodes": 6,
+      "allBranchCharacters": 863,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 九月十日",
+        "2037 · 秋 · 已经说过的名字",
+        "2037 · 秋 · 把话补到现在",
+        "2037 · 秋 · 还没发出去"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH09",
+      "chapterTitle": "如果现在去见她",
+      "episode": "CH09_EP01",
+      "title": "星期五的草稿",
+      "nodes": 9,
+      "allBranchCharacters": 1040,
+      "choiceNodes": 1,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 九月十一日，星期五",
+        "2037 · 秋 · 周末还要核一次",
+        "2037 · 秋 · 没有直接填到她那边",
+        "2037 · 秋 · 把问题写具体",
+        "2037 · 秋 · 还没有送达",
+        "2037 · 秋 · 先留在这里"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH09",
+      "chapterTitle": "如果现在去见她",
+      "episode": "CH09_EP02",
+      "title": "说到现在",
+      "nodes": 13,
+      "allBranchCharacters": 1694,
+      "choiceNodes": 1,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 她知道的不是这一条",
+        "2037 · 秋 · 先前没有讲全",
+        "2037 · 秋 · 发之前讲明白",
+        "2037 · 秋 · 先回到输入框",
+        "2037 · 秋 · 只发这一条",
+        "2037 · 秋 · 星期六先出门",
+        "2037 · 秋 · 灯装好了",
+        "2037 · 秋 · 备用钥匙",
+        "2037 · 秋 · 晚饭前的桌子"
+      ],
+      "places": [
+        "家中",
+        "南城"
+      ]
+    },
+    {
+      "chapter": "CH09",
+      "chapterTitle": "如果现在去见她",
+      "episode": "CH09_EP03",
+      "title": "过了一阵才回",
+      "nodes": 11,
+      "allBranchCharacters": 1839,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 星期六的早晨",
+        "2037 · 秋 · 补上昨晚没说的",
+        "2037 · 秋 · 下午四点多",
+        "2037 · 秋 · 她那边的星期六",
+        "2037 · 秋 · 自己的旧登记",
+        "2037 · 秋 · 星期一的接车",
+        "2037 · 秋 · 报告还要自己留",
+        "2037 · 秋 · 把电话放近一点"
+      ],
+      "places": [
+        "家中",
+        "南城"
+      ]
+    },
+    {
+      "chapter": "CH09",
+      "chapterTitle": "如果现在去见她",
+      "episode": "CH09_EP04",
+      "title": "她自己定的日程",
+      "nodes": 14,
+      "allBranchCharacters": 1759,
+      "choiceNodes": 1,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 九月十八日的下班路",
+        "2037 · 秋 · 先问已经定下的事",
+        "2037 · 秋 · 把顺口的安排停下来",
+        "2037 · 秋 · 借调的日期",
+        "2037 · 秋 · 从公司出来",
+        "2037 · 秋 · 她已经要回南城",
+        "2037 · 秋 · 先核自己的安排",
+        "2037 · 秋 · 这次不见",
+        "2037 · 秋 · 没有别人的约定",
+        "2037 · 秋 · 把袋子减轻"
+      ],
+      "places": [
+        "家中",
+        "南城"
+      ]
+    },
+    {
+      "chapter": "CH09",
+      "chapterTitle": "如果现在去见她",
+      "episode": "CH09_EP05",
+      "title": "学校门外",
+      "nodes": 10,
+      "allBranchCharacters": 1719,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2037 · 秋 · 九月二十日，星期日",
+        "2037 · 秋 · 登记桌的另一边",
+        "2037 · 秋 · 十一点，校门外",
+        "2037 · 秋 · 她带来的那一页",
+        "2037 · 秋 · 看练习本的边栏",
+        "2037 · 秋 · 能对上的名字和雨",
+        "2037 · 秋 · 自己的回执",
+        "2037 · 秋 · 回家以前"
+      ],
+      "places": [
+        "家中",
+        "南城",
+        "学校门外"
+      ]
+    },
+    {
+      "chapter": "CH09",
+      "chapterTitle": "如果现在去见她",
+      "episode": "CH09_EP06",
+      "title": "见过以后，还有星期一",
+      "nodes": 12,
+      "allBranchCharacters": 1454,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 九月二十一日的早餐",
+        "2037 · 秋 · 那一条，发之前讲过",
+        "2037 · 秋 · 不是后来说明就没有发生",
+        "2037 · 秋 · 十分钟以后",
+        "2037 · 秋 · 这次聊到这里",
+        "2037 · 秋 · 草稿仍然没发",
+        "2037 · 秋 · 下班前再看一次",
+        "2037 · 秋 · 晚上装回去"
+      ],
+      "places": [
+        "家中",
+        "南城"
+      ]
+    },
+    {
+      "chapter": "CH10",
+      "chapterTitle": "余生未寄",
+      "episode": "CH10_EP01",
+      "title": "这周的事",
+      "nodes": 8,
+      "allBranchCharacters": 908,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 九月二十三日，星期三",
+        "2037 · 秋 · 交接之前",
+        "2037 · 秋 · 先把时间听完",
+        "2037 · 秋 · 一项一项确认",
+        "2037 · 秋 · 回家以后"
+      ],
+      "places": [
+        "单位",
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH10",
+      "chapterTitle": "余生未寄",
+      "episode": "CH10_EP02",
+      "title": "她们放学以后",
+      "nodes": 5,
+      "allBranchCharacters": 1022,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 九月二十五日，星期五",
+        "2037 · 秋 · 没有全删掉",
+        "2037 · 秋 · 周日的时间",
+        "2037 · 秋 · 照片排好了"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH10",
+      "chapterTitle": "余生未寄",
+      "episode": "CH10_EP03",
+      "title": "还要一起商量",
+      "nodes": 8,
+      "allBranchCharacters": 975,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 九月二十九日，星期二",
+        "2037 · 秋 · 原来的分工也会变",
+        "2037 · 秋 · 这次没有先替她填",
+        "2037 · 秋 · 先核各自的时间",
+        "2037 · 秋 · 她今天还有一件事"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH10",
+      "chapterTitle": "余生未寄",
+      "episode": "CH10_EP04",
+      "title": "放回不同的袋子",
+      "nodes": 14,
+      "allBranchCharacters": 1058,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 十月二日，星期五",
+        "2037 · 秋 · 每张纸自己的日期",
+        "2037 · 秋 · 先留出不知道的地方",
+        "2037 · 秋 · 她发来的只到这里",
+        "2037 · 秋 · 不再追问下一次",
+        "2037 · 秋 · 今天没有新的来信"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH10",
+      "chapterTitle": "余生未寄",
+      "episode": "CH10_EP05",
+      "title": "自己写的一页",
+      "nodes": 5,
+      "allBranchCharacters": 1079,
+      "choiceNodes": 0,
+      "interactionNodes": 1,
+      "timeLabels": [
+        "2037 · 秋 · 十月四日，星期日",
+        "2037 · 秋 · 字没有写得很齐",
+        "2037 · 秋 · 还有一封没回的邮件"
+      ],
+      "places": [
+        "家中"
+      ]
+    },
+    {
+      "chapter": "CH10",
+      "chapterTitle": "余生未寄",
+      "episode": "CH10_EP06",
+      "title": "下周的安排",
+      "nodes": 9,
+      "allBranchCharacters": 2796,
+      "choiceNodes": 0,
+      "interactionNodes": 0,
+      "timeLabels": [
+        "2037 · 秋 · 十月七日，星期三",
+        "2037 · 秋 · 十月十一日，星期日"
+      ],
+      "places": [
+        "家中",
+        "南城",
+        "家中 → 站台"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "ending": "REUNION",
+      "evidence": "FULL",
+      "visited": [
+        "CH01_EP01_N001",
+        "CH01_EP01_DAILY",
+        "CH01_EP01_PARCEL",
+        "CH01_EP01_END",
+        "CH01_EP02_N001",
+        "CH01_EP02_C001",
+        "CH01_EP02_PHOTO_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_LETTER_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_TICKET",
+        "CH01_EP02_C001",
+        "CH01_EP02_ROPE",
+        "CH01_EP02_C001",
+        "CH01_EP02_MP3_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_NAME_001",
+        "CH01_EP02_C002",
+        "CH01_EP02_B001",
+        "CH01_EP02_END",
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A",
+        "CH01_EP03_LETTER_001",
+        "CH01_EP03_TO_MP3",
+        "CH01_EP03_END",
+        "CH01_EP04_N001",
+        "CH01_EP04_N002",
+        "CH01_EP04_RECORDING",
+        "CH01_EP04_N008",
+        "CH01_EP04_BUS",
+        "CH01_EP04_CLASSMATES",
+        "CH01_EP04_WINDOW",
+        "CH01_EP04_END",
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS",
+        "CH02_EP01_END",
+        "CH02_EP02_N001",
+        "CH02_EP02_GYM",
+        "CH02_EP02_PHOTO",
+        "CH02_EP02_BUS_HOME",
+        "CH02_EP02_NOTEBOOK",
+        "CH02_EP02_END",
+        "CH02_EP03_N001",
+        "CH02_EP03_FACTORY",
+        "CH02_EP03_ERRANDS",
+        "CH02_EP03_REPAIR",
+        "CH02_EP03_END",
+        "CH02_EP04_N001",
+        "CH02_EP04_ROUTE",
+        "CH02_EP04_CHENYE",
+        "CH02_EP04_LOOK",
+        "CH02_EP04_END",
+        "CH02_EP05_N001",
+        "CH02_EP05_NUMBER",
+        "CH02_EP05_MESSAGES",
+        "CH02_EP05_SATURDAY",
+        "CH02_EP05_END",
+        "CH02_EP06_N001",
+        "CH02_EP06_PROMISE",
+        "CH02_EP06_FAMILY",
+        "CH02_EP06_CHOICE",
+        "CH02_EP06_TOLD",
+        "CH02_EP06_SATURDAY",
+        "CH02_EP06_HOME_TOLD",
+        "CH02_EP06_CLOSE",
+        "CH02_EP06_END",
+        "CH03_EP01_N001",
+        "CH03_EP01_BUS",
+        "CH03_EP01_HOME",
+        "CH03_EP01_MESSAGE",
+        "CH03_EP01_END",
+        "CH03_EP02_N001",
+        "CH03_EP02_KNOWN",
+        "CH03_EP02_DISHES",
+        "CH03_EP02_END",
+        "CH03_EP03_N001",
+        "CH03_EP03_XIA_HOME",
+        "CH03_EP03_EXAM",
+        "CH03_EP03_REVISION",
+        "CH03_EP03_END",
+        "CH03_EP04_N001",
+        "CH03_EP04_FAMILY_KNOWN",
+        "CH03_EP04_CHOICE",
+        "CH03_EP04_DISCUSS",
+        "CH03_EP04_RETURN",
+        "CH03_EP04_END",
+        "CH03_EP05_N001",
+        "CH03_EP05_ROOM",
+        "CH03_EP05_TREE",
+        "CH03_EP05_PHOTO",
+        "CH03_EP05_BAG",
+        "CH03_EP05_END",
+        "CH03_EP06_N001",
+        "CH03_EP06_DISCUSS",
+        "CH03_EP06_FAMILY_KNOWN",
+        "CH03_EP06_LETTER",
+        "CH03_EP06_ENVELOPE",
+        "CH03_EP06_PHONE",
+        "CH03_EP06_END",
+        "CH04_EP01_N001",
+        "CH04_EP01_FOOD",
+        "CH04_EP01_ASK",
+        "CH04_EP01_PHONE",
+        "CH04_EP01_END",
+        "CH04_EP02_N001",
+        "CH04_EP02_PAPER",
+        "CH04_EP02_COMPARE",
+        "CH04_EP02_MESSAGES",
+        "CH04_EP02_LATE",
+        "CH04_EP02_END",
+        "CH04_EP03_N001",
+        "CH04_EP03_HOME",
+        "CH04_EP03_KNOWN",
+        "CH04_EP03_RETURN",
+        "CH04_EP03_MOTHER",
+        "CH04_EP03_END",
+        "CH04_EP04_N001",
+        "CH04_EP04_CHOICE",
+        "CH04_EP04_ASK",
+        "CH04_EP04_MESSAGES",
+        "CH04_EP04_END",
+        "CH04_EP05_N001",
+        "CH04_EP05_AGREED",
+        "CH04_EP05_STREET",
+        "CH04_EP05_PHOTO",
+        "CH04_EP05_NIGHT",
+        "CH04_EP05_END",
+        "CH04_EP06_N001",
+        "CH04_EP06_LISTEN",
+        "CH04_EP06_WINTER",
+        "CH04_EP06_ASK_AGAIN",
+        "CH04_EP06_CLOSE",
+        "CH04_EP06_END",
+        "CH05_EP01_N001",
+        "CH05_EP01_CHECK_FIRST",
+        "CH05_EP01_FACTORY",
+        "CH05_EP01_COST_NOTE",
+        "CH05_EP01_WEEKEND",
+        "CH05_EP01_END",
+        "CH05_EP02_N001",
+        "CH05_EP02_HOME",
+        "CH05_EP02_FAMILY_KNOWN",
+        "CH05_EP02_MESSAGES",
+        "CH05_EP02_END",
+        "CH05_EP03_N001",
+        "CH05_EP03_ASK_ROOM",
+        "CH05_EP03_COST",
+        "CH05_EP03_CHEN",
+        "CH05_EP03_END",
+        "CH05_EP04_N001",
+        "CH05_EP04_SPRING",
+        "CH05_EP04_COMPARE",
+        "CH05_EP04_JOB_NOTE",
+        "CH05_EP04_CHEN",
+        "CH05_EP04_END",
+        "CH05_EP05_N001",
+        "CH05_EP05_CHOICE",
+        "CH05_EP05_SHARE",
+        "CH05_EP05_MESSAGES",
+        "CH05_EP05_END",
+        "CH05_EP06_N001",
+        "CH05_EP06_SEPARATE",
+        "CH05_EP06_PACK",
+        "CH05_EP06_NOTE",
+        "CH05_EP06_CLOSE",
+        "CH05_EP06_END",
+        "CH06_EP01_N001",
+        "CH06_EP01_ARRIVAL",
+        "CH06_EP01_SHARE",
+        "CH06_EP01_HOUSE",
+        "CH06_EP01_PAPER",
+        "CH06_EP01_PHONE",
+        "CH06_EP01_END",
+        "CH06_EP02_N001",
+        "CH06_EP02_EARLY",
+        "CH06_EP02_MEALS",
+        "CH06_EP02_CHEN",
+        "CH06_EP02_END",
+        "CH06_EP03_N001",
+        "CH06_EP03_ASKED",
+        "CH06_EP03_LISTEN",
+        "CH06_EP03_SHIFT_NOTE",
+        "CH06_EP03_MESSAGES",
+        "CH06_EP03_END",
+        "CH06_EP04_N001",
+        "CH06_EP04_SUPPER",
+        "CH06_EP04_SEPARATE",
+        "CH06_EP04_ROOM",
+        "CH06_EP04_CLOSE",
+        "CH06_EP04_END",
+        "CH06_EP05_N001",
+        "CH06_EP05_TALK",
+        "CH06_EP05_PLATFORM",
+        "CH06_EP05_NOTE",
+        "CH06_EP05_EXIT",
+        "CH06_EP05_END",
+        "CH06_EP06_N001",
+        "CH06_EP06_HOME",
+        "CH06_EP06_CHEN",
+        "CH06_EP06_PHONE",
+        "CH06_EP06_DECEMBER",
+        "CH06_EP06_END",
+        "CH07_EP01_N001",
+        "CH07_EP01_AFTER_STATION",
+        "CH07_EP01_EARLY",
+        "CH07_EP01_HOME",
+        "CH07_EP01_LIST",
+        "CH07_EP01_NOTE",
+        "CH07_EP01_END",
+        "CH07_EP02_N001",
+        "CH07_EP02_NEXT",
+        "CH07_EP02_DINNER",
+        "CH07_EP02_END",
+        "CH07_EP03_N001",
+        "CH07_EP03_ASK",
+        "CH07_EP03_WORK",
+        "CH07_EP03_END",
+        "CH07_EP04_N001",
+        "CH07_EP04_CHOICE",
+        "CH07_EP04_TOGETHER",
+        "CH07_EP04_CONFIRM",
+        "CH07_EP04_CLOSE",
+        "CH07_EP04_END",
+        "CH07_EP05_N001",
+        "CH07_EP05_NOTE",
+        "CH07_EP05_WORK",
+        "CH07_EP05_END",
+        "CH07_EP06_N001",
+        "CH07_EP06_NOTE",
+        "CH07_EP06_SHARED",
+        "CH07_EP06_MORNING",
+        "CH07_EP06_END",
+        "CH07_EP07_N001",
+        "CH07_EP07_DIVIDE",
+        "CH07_EP07_NEXT",
+        "CH07_EP07_END",
+        "CH07_EP08_N001",
+        "CH07_EP08_PHOTO_INTRO",
+        "CH07_EP08_PHOTO",
+        "CH07_EP08_CLOSE",
+        "CH07_EP08_RETURN",
+        "CH07_EP08_END",
+        "CH08_EP01_N001",
+        "CH08_EP01_SHARED",
+        "CH08_EP01_ARCHIVE",
+        "CH08_EP01_CLOSE",
+        "CH08_EP01_END",
+        "CH08_EP02_N001",
+        "CH08_EP02_COMPARE",
+        "CH08_EP02_DATES",
+        "CH08_EP02_CLOSE",
+        "CH08_EP02_END",
+        "CH08_EP03_N001",
+        "CH08_EP03_DESK",
+        "CH08_EP03_LETTER",
+        "CH08_EP03_DESK",
+        "CH08_EP03_AUDIO",
+        "CH08_EP03_DESK",
+        "CH08_EP03_READ",
+        "CH08_EP03_CLOSE",
+        "CH08_EP03_END",
+        "CH08_EP04_N001",
+        "CH08_EP04_CALL",
+        "CH08_EP04_CLOSE",
+        "CH08_EP04_END",
+        "CH08_EP05_N001",
+        "CH08_EP05_RECONSTRUCT",
+        "CH08_EP05_GRADUATION",
+        "CH08_EP05_CLOSE",
+        "CH08_EP05_END",
+        "CH08_EP06_N001",
+        "CH08_EP06_TOLD",
+        "CH08_EP06_CLOSE",
+        "CH08_EP06_END",
+        "CH09_EP01_N001",
+        "CH09_EP01_SHARED",
+        "CH09_EP01_DRAFT",
+        "CH09_EP01_CONTACT_CHOICE",
+        "CH09_EP01_INTENT",
+        "CH09_EP01_END",
+        "CH09_EP02_KNOWN",
+        "CH09_EP02_DISCLOSE_CHOICE",
+        "CH09_EP02_TELL",
+        "CH09_EP02_SENT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE",
+        "CH09_EP02_END",
+        "CH09_EP03_EARLY",
+        "CH09_EP03_REPLY",
+        "CH09_EP03_OWN_LIFE",
+        "CH09_EP03_CLOSE",
+        "CH09_EP03_HOSPITAL",
+        "CH09_EP03_HOME",
+        "CH09_EP03_END",
+        "CH09_EP04_N001",
+        "CH09_EP04_JOB_SHARED",
+        "CH09_EP04_COMMUTE",
+        "CH09_EP04_INVITE",
+        "CH09_EP04_MEETING_CHOICE",
+        "CH09_EP04_ACCEPT",
+        "CH09_EP04_CLOSE",
+        "CH09_EP04_END",
+        "CH09_EP05_N001",
+        "CH09_EP05_TEACHER",
+        "CH09_EP05_MET",
+        "CH09_EP05_OLD_PAGE",
+        "CH09_EP05_FIRST_PAGE",
+        "CH09_EP05_CHECKED",
+        "CH09_EP05_CLOSE",
+        "CH09_EP05_END",
+        "CH09_EP06_N001",
+        "CH09_EP06_BEFORE",
+        "CH09_EP06_MET",
+        "CH09_EP06_CLOSE",
+        "CH09_EP06_BAG",
+        "CH09_EP06_END",
+        "CH10_EP01_N001",
+        "CH10_EP01_LISTEN",
+        "CH10_EP01_HOME",
+        "CH10_EP01_END",
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING",
+        "CH10_EP02_END",
+        "CH10_EP03_N001",
+        "CH10_EP03_SHARED",
+        "CH10_EP03_ANRAN",
+        "CH10_EP03_END",
+        "CH10_EP04_N001",
+        "CH10_EP04_KNOWN",
+        "CH10_EP04_MET",
+        "CH10_EP04_END",
+        "CH10_EP05_N001",
+        "CH10_EP05_LETTER",
+        "CH10_EP05_AFTER",
+        "CH10_EP05_NIGHT",
+        "CH10_EP05_END",
+        "CH10_EP06_N001",
+        "CH10_EP06_LATER",
+        "CH10_END_REUNION"
+      ],
+      "episodes": [
+        {
+          "episode": "CH01_EP01",
+          "characters": 720,
+          "estimatedMinutes": [
+            1.44,
+            1.8
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP02",
+          "characters": 687,
+          "estimatedMinutes": [
+            1.37,
+            1.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP03",
+          "characters": 1114,
+          "estimatedMinutes": [
+            2.23,
+            2.79
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP04",
+          "characters": 944,
+          "estimatedMinutes": [
+            1.89,
+            2.36
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP01",
+          "characters": 1098,
+          "estimatedMinutes": [
+            2.2,
+            2.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP02",
+          "characters": 1057,
+          "estimatedMinutes": [
+            2.11,
+            2.64
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP03",
+          "characters": 1482,
+          "estimatedMinutes": [
+            2.96,
+            3.71
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP04",
+          "characters": 1479,
+          "estimatedMinutes": [
+            2.96,
+            3.7
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP05",
+          "characters": 1433,
+          "estimatedMinutes": [
+            2.87,
+            3.58
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP06",
+          "characters": 2016,
+          "estimatedMinutes": [
+            4.03,
+            5.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP01",
+          "characters": 1444,
+          "estimatedMinutes": [
+            2.89,
+            3.61
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP02",
+          "characters": 1014,
+          "estimatedMinutes": [
+            2.03,
+            2.54
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP03",
+          "characters": 1387,
+          "estimatedMinutes": [
+            2.77,
+            3.47
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP04",
+          "characters": 1141,
+          "estimatedMinutes": [
+            2.28,
+            2.85
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP05",
+          "characters": 1466,
+          "estimatedMinutes": [
+            2.93,
+            3.67
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP06",
+          "characters": 1618,
+          "estimatedMinutes": [
+            3.24,
+            4.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP01",
+          "characters": 1349,
+          "estimatedMinutes": [
+            2.7,
+            3.37
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP02",
+          "characters": 1310,
+          "estimatedMinutes": [
+            2.62,
+            3.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP03",
+          "characters": 1812,
+          "estimatedMinutes": [
+            3.62,
+            4.53
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP04",
+          "characters": 905,
+          "estimatedMinutes": [
+            1.81,
+            2.26
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH04_EP05",
+          "characters": 1510,
+          "estimatedMinutes": [
+            3.02,
+            3.77
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP06",
+          "characters": 1708,
+          "estimatedMinutes": [
+            3.42,
+            4.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP01",
+          "characters": 1294,
+          "estimatedMinutes": [
+            2.59,
+            3.23
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP02",
+          "characters": 1243,
+          "estimatedMinutes": [
+            2.49,
+            3.11
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP03",
+          "characters": 1320,
+          "estimatedMinutes": [
+            2.64,
+            3.3
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP04",
+          "characters": 1462,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP05",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH05_EP06",
+          "characters": 1332,
+          "estimatedMinutes": [
+            2.66,
+            3.33
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP01",
+          "characters": 1589,
+          "estimatedMinutes": [
+            3.18,
+            3.97
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP02",
+          "characters": 1288,
+          "estimatedMinutes": [
+            2.58,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP03",
+          "characters": 1087,
+          "estimatedMinutes": [
+            2.17,
+            2.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH06_EP04",
+          "characters": 1796,
+          "estimatedMinutes": [
+            3.59,
+            4.49
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP05",
+          "characters": 1345,
+          "estimatedMinutes": [
+            2.69,
+            3.36
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP06",
+          "characters": 1741,
+          "estimatedMinutes": [
+            3.48,
+            4.35
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP01",
+          "characters": 1236,
+          "estimatedMinutes": [
+            2.47,
+            3.09
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP02",
+          "characters": 1132,
+          "estimatedMinutes": [
+            2.26,
+            2.83
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP03",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP04",
+          "characters": 907,
+          "estimatedMinutes": [
+            1.81,
+            2.27
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP05",
+          "characters": 800,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP06",
+          "characters": 897,
+          "estimatedMinutes": [
+            1.79,
+            2.24
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP07",
+          "characters": 929,
+          "estimatedMinutes": [
+            1.86,
+            2.32
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP08",
+          "characters": 1242,
+          "estimatedMinutes": [
+            2.48,
+            3.1
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP01",
+          "characters": 922,
+          "estimatedMinutes": [
+            1.84,
+            2.31
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP02",
+          "characters": 1108,
+          "estimatedMinutes": [
+            2.22,
+            2.77
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP03",
+          "characters": 1905,
+          "estimatedMinutes": [
+            3.81,
+            4.76
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP04",
+          "characters": 873,
+          "estimatedMinutes": [
+            1.75,
+            2.18
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP05",
+          "characters": 935,
+          "estimatedMinutes": [
+            1.87,
+            2.34
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP06",
+          "characters": 711,
+          "estimatedMinutes": [
+            1.42,
+            1.78
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP01",
+          "characters": 760,
+          "estimatedMinutes": [
+            1.52,
+            1.9
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP02",
+          "characters": 1287,
+          "estimatedMinutes": [
+            2.57,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP03",
+          "characters": 1458,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP04",
+          "characters": 1201,
+          "estimatedMinutes": [
+            2.4,
+            3
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP05",
+          "characters": 1559,
+          "estimatedMinutes": [
+            3.12,
+            3.9
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP06",
+          "characters": 1012,
+          "estimatedMinutes": [
+            2.02,
+            2.53
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP01",
+          "characters": 637,
+          "estimatedMinutes": [
+            1.27,
+            1.59
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP02",
+          "characters": 1022,
+          "estimatedMinutes": [
+            2.04,
+            2.56
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP03",
+          "characters": 700,
+          "estimatedMinutes": [
+            1.4,
+            1.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP04",
+          "characters": 612,
+          "estimatedMinutes": [
+            1.22,
+            1.53
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP05",
+          "characters": 1079,
+          "estimatedMinutes": [
+            2.16,
+            2.7
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP06",
+          "characters": 832,
+          "estimatedMinutes": [
+            1.66,
+            2.08
+          ],
+          "outsideTarget": true
+        }
+      ],
+      "characters": 71847,
+      "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
+    },
+    {
+      "ending": "GOODBYE",
+      "evidence": "FULL",
+      "visited": [
+        "CH01_EP01_N001",
+        "CH01_EP01_DAILY",
+        "CH01_EP01_PARCEL",
+        "CH01_EP01_END",
+        "CH01_EP02_N001",
+        "CH01_EP02_C001",
+        "CH01_EP02_PHOTO_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_LETTER_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_TICKET",
+        "CH01_EP02_C001",
+        "CH01_EP02_ROPE",
+        "CH01_EP02_C001",
+        "CH01_EP02_MP3_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_NAME_001",
+        "CH01_EP02_C002",
+        "CH01_EP02_B001",
+        "CH01_EP02_END",
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A",
+        "CH01_EP03_LETTER_001",
+        "CH01_EP03_TO_MP3",
+        "CH01_EP03_END",
+        "CH01_EP04_N001",
+        "CH01_EP04_N002",
+        "CH01_EP04_RECORDING",
+        "CH01_EP04_N008",
+        "CH01_EP04_BUS",
+        "CH01_EP04_CLASSMATES",
+        "CH01_EP04_WINDOW",
+        "CH01_EP04_END",
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS",
+        "CH02_EP01_END",
+        "CH02_EP02_N001",
+        "CH02_EP02_GYM",
+        "CH02_EP02_PHOTO",
+        "CH02_EP02_BUS_HOME",
+        "CH02_EP02_NOTEBOOK",
+        "CH02_EP02_END",
+        "CH02_EP03_N001",
+        "CH02_EP03_FACTORY",
+        "CH02_EP03_ERRANDS",
+        "CH02_EP03_REPAIR",
+        "CH02_EP03_END",
+        "CH02_EP04_N001",
+        "CH02_EP04_ROUTE",
+        "CH02_EP04_CHENYE",
+        "CH02_EP04_LOOK",
+        "CH02_EP04_END",
+        "CH02_EP05_N001",
+        "CH02_EP05_NUMBER",
+        "CH02_EP05_MESSAGES",
+        "CH02_EP05_SATURDAY",
+        "CH02_EP05_END",
+        "CH02_EP06_N001",
+        "CH02_EP06_PROMISE",
+        "CH02_EP06_FAMILY",
+        "CH02_EP06_CHOICE",
+        "CH02_EP06_TOLD",
+        "CH02_EP06_SATURDAY",
+        "CH02_EP06_HOME_TOLD",
+        "CH02_EP06_CLOSE",
+        "CH02_EP06_END",
+        "CH03_EP01_N001",
+        "CH03_EP01_BUS",
+        "CH03_EP01_HOME",
+        "CH03_EP01_MESSAGE",
+        "CH03_EP01_END",
+        "CH03_EP02_N001",
+        "CH03_EP02_KNOWN",
+        "CH03_EP02_DISHES",
+        "CH03_EP02_END",
+        "CH03_EP03_N001",
+        "CH03_EP03_XIA_HOME",
+        "CH03_EP03_EXAM",
+        "CH03_EP03_REVISION",
+        "CH03_EP03_END",
+        "CH03_EP04_N001",
+        "CH03_EP04_FAMILY_KNOWN",
+        "CH03_EP04_CHOICE",
+        "CH03_EP04_DISCUSS",
+        "CH03_EP04_RETURN",
+        "CH03_EP04_END",
+        "CH03_EP05_N001",
+        "CH03_EP05_ROOM",
+        "CH03_EP05_TREE",
+        "CH03_EP05_PHOTO",
+        "CH03_EP05_BAG",
+        "CH03_EP05_END",
+        "CH03_EP06_N001",
+        "CH03_EP06_DISCUSS",
+        "CH03_EP06_FAMILY_KNOWN",
+        "CH03_EP06_LETTER",
+        "CH03_EP06_ENVELOPE",
+        "CH03_EP06_PHONE",
+        "CH03_EP06_END",
+        "CH04_EP01_N001",
+        "CH04_EP01_FOOD",
+        "CH04_EP01_ASK",
+        "CH04_EP01_PHONE",
+        "CH04_EP01_END",
+        "CH04_EP02_N001",
+        "CH04_EP02_PAPER",
+        "CH04_EP02_COMPARE",
+        "CH04_EP02_MESSAGES",
+        "CH04_EP02_LATE",
+        "CH04_EP02_END",
+        "CH04_EP03_N001",
+        "CH04_EP03_HOME",
+        "CH04_EP03_KNOWN",
+        "CH04_EP03_RETURN",
+        "CH04_EP03_MOTHER",
+        "CH04_EP03_END",
+        "CH04_EP04_N001",
+        "CH04_EP04_CHOICE",
+        "CH04_EP04_ASK",
+        "CH04_EP04_MESSAGES",
+        "CH04_EP04_END",
+        "CH04_EP05_N001",
+        "CH04_EP05_AGREED",
+        "CH04_EP05_STREET",
+        "CH04_EP05_PHOTO",
+        "CH04_EP05_NIGHT",
+        "CH04_EP05_END",
+        "CH04_EP06_N001",
+        "CH04_EP06_LISTEN",
+        "CH04_EP06_WINTER",
+        "CH04_EP06_ASK_AGAIN",
+        "CH04_EP06_CLOSE",
+        "CH04_EP06_END",
+        "CH05_EP01_N001",
+        "CH05_EP01_CHECK_FIRST",
+        "CH05_EP01_FACTORY",
+        "CH05_EP01_COST_NOTE",
+        "CH05_EP01_WEEKEND",
+        "CH05_EP01_END",
+        "CH05_EP02_N001",
+        "CH05_EP02_HOME",
+        "CH05_EP02_FAMILY_KNOWN",
+        "CH05_EP02_MESSAGES",
+        "CH05_EP02_END",
+        "CH05_EP03_N001",
+        "CH05_EP03_ASK_ROOM",
+        "CH05_EP03_COST",
+        "CH05_EP03_CHEN",
+        "CH05_EP03_END",
+        "CH05_EP04_N001",
+        "CH05_EP04_SPRING",
+        "CH05_EP04_COMPARE",
+        "CH05_EP04_JOB_NOTE",
+        "CH05_EP04_CHEN",
+        "CH05_EP04_END",
+        "CH05_EP05_N001",
+        "CH05_EP05_CHOICE",
+        "CH05_EP05_SHARE",
+        "CH05_EP05_MESSAGES",
+        "CH05_EP05_END",
+        "CH05_EP06_N001",
+        "CH05_EP06_SEPARATE",
+        "CH05_EP06_PACK",
+        "CH05_EP06_NOTE",
+        "CH05_EP06_CLOSE",
+        "CH05_EP06_END",
+        "CH06_EP01_N001",
+        "CH06_EP01_ARRIVAL",
+        "CH06_EP01_SHARE",
+        "CH06_EP01_HOUSE",
+        "CH06_EP01_PAPER",
+        "CH06_EP01_PHONE",
+        "CH06_EP01_END",
+        "CH06_EP02_N001",
+        "CH06_EP02_EARLY",
+        "CH06_EP02_MEALS",
+        "CH06_EP02_CHEN",
+        "CH06_EP02_END",
+        "CH06_EP03_N001",
+        "CH06_EP03_ASKED",
+        "CH06_EP03_LISTEN",
+        "CH06_EP03_SHIFT_NOTE",
+        "CH06_EP03_MESSAGES",
+        "CH06_EP03_END",
+        "CH06_EP04_N001",
+        "CH06_EP04_SUPPER",
+        "CH06_EP04_SEPARATE",
+        "CH06_EP04_ROOM",
+        "CH06_EP04_CLOSE",
+        "CH06_EP04_END",
+        "CH06_EP05_N001",
+        "CH06_EP05_TALK",
+        "CH06_EP05_PLATFORM",
+        "CH06_EP05_NOTE",
+        "CH06_EP05_EXIT",
+        "CH06_EP05_END",
+        "CH06_EP06_N001",
+        "CH06_EP06_HOME",
+        "CH06_EP06_CHEN",
+        "CH06_EP06_PHONE",
+        "CH06_EP06_DECEMBER",
+        "CH06_EP06_END",
+        "CH07_EP01_N001",
+        "CH07_EP01_AFTER_STATION",
+        "CH07_EP01_EARLY",
+        "CH07_EP01_HOME",
+        "CH07_EP01_LIST",
+        "CH07_EP01_NOTE",
+        "CH07_EP01_END",
+        "CH07_EP02_N001",
+        "CH07_EP02_NEXT",
+        "CH07_EP02_DINNER",
+        "CH07_EP02_END",
+        "CH07_EP03_N001",
+        "CH07_EP03_ASK",
+        "CH07_EP03_WORK",
+        "CH07_EP03_END",
+        "CH07_EP04_N001",
+        "CH07_EP04_CHOICE",
+        "CH07_EP04_TOGETHER",
+        "CH07_EP04_CONFIRM",
+        "CH07_EP04_CLOSE",
+        "CH07_EP04_END",
+        "CH07_EP05_N001",
+        "CH07_EP05_NOTE",
+        "CH07_EP05_WORK",
+        "CH07_EP05_END",
+        "CH07_EP06_N001",
+        "CH07_EP06_NOTE",
+        "CH07_EP06_SHARED",
+        "CH07_EP06_MORNING",
+        "CH07_EP06_END",
+        "CH07_EP07_N001",
+        "CH07_EP07_DIVIDE",
+        "CH07_EP07_NEXT",
+        "CH07_EP07_END",
+        "CH07_EP08_N001",
+        "CH07_EP08_PHOTO_INTRO",
+        "CH07_EP08_PHOTO",
+        "CH07_EP08_CLOSE",
+        "CH07_EP08_RETURN",
+        "CH07_EP08_END",
+        "CH08_EP01_N001",
+        "CH08_EP01_SHARED",
+        "CH08_EP01_ARCHIVE",
+        "CH08_EP01_CLOSE",
+        "CH08_EP01_END",
+        "CH08_EP02_N001",
+        "CH08_EP02_COMPARE",
+        "CH08_EP02_DATES",
+        "CH08_EP02_CLOSE",
+        "CH08_EP02_END",
+        "CH08_EP03_N001",
+        "CH08_EP03_DESK",
+        "CH08_EP03_LETTER",
+        "CH08_EP03_DESK",
+        "CH08_EP03_AUDIO",
+        "CH08_EP03_DESK",
+        "CH08_EP03_READ",
+        "CH08_EP03_CLOSE",
+        "CH08_EP03_END",
+        "CH08_EP04_N001",
+        "CH08_EP04_CALL",
+        "CH08_EP04_CLOSE",
+        "CH08_EP04_END",
+        "CH08_EP05_N001",
+        "CH08_EP05_RECONSTRUCT",
+        "CH08_EP05_GRADUATION",
+        "CH08_EP05_CLOSE",
+        "CH08_EP05_END",
+        "CH08_EP06_N001",
+        "CH08_EP06_TOLD",
+        "CH08_EP06_CLOSE",
+        "CH08_EP06_END",
+        "CH09_EP01_N001",
+        "CH09_EP01_SHARED",
+        "CH09_EP01_DRAFT",
+        "CH09_EP01_CONTACT_CHOICE",
+        "CH09_EP01_INTENT",
+        "CH09_EP01_END",
+        "CH09_EP02_KNOWN",
+        "CH09_EP02_DISCLOSE_CHOICE",
+        "CH09_EP02_TELL",
+        "CH09_EP02_SENT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE",
+        "CH09_EP02_END",
+        "CH09_EP03_EARLY",
+        "CH09_EP03_REPLY",
+        "CH09_EP03_OWN_LIFE",
+        "CH09_EP03_CLOSE",
+        "CH09_EP03_HOSPITAL",
+        "CH09_EP03_HOME",
+        "CH09_EP03_END",
+        "CH09_EP04_N001",
+        "CH09_EP04_JOB_SHARED",
+        "CH09_EP04_COMMUTE",
+        "CH09_EP04_INVITE",
+        "CH09_EP04_MEETING_CHOICE",
+        "CH09_EP04_DECLINE_REPLY",
+        "CH09_EP04_CLOSE",
+        "CH09_EP04_END",
+        "CH09_EP05_N001",
+        "CH09_EP05_TEACHER",
+        "CH09_EP05_ALONE",
+        "CH09_EP05_CLOSE",
+        "CH09_EP05_END",
+        "CH09_EP06_N001",
+        "CH09_EP06_BEFORE",
+        "CH09_EP06_CLOSED",
+        "CH09_EP06_CLOSE",
+        "CH09_EP06_BAG",
+        "CH09_EP06_END",
+        "CH10_EP01_N001",
+        "CH10_EP01_LISTEN",
+        "CH10_EP01_HOME",
+        "CH10_EP01_END",
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING",
+        "CH10_EP02_END",
+        "CH10_EP03_N001",
+        "CH10_EP03_SHARED",
+        "CH10_EP03_ANRAN",
+        "CH10_EP03_END",
+        "CH10_EP04_N001",
+        "CH10_EP04_KNOWN",
+        "CH10_EP04_CLOSED",
+        "CH10_EP04_END",
+        "CH10_EP05_N001",
+        "CH10_EP05_LETTER",
+        "CH10_EP05_AFTER",
+        "CH10_EP05_NIGHT",
+        "CH10_EP05_END",
+        "CH10_EP06_N001",
+        "CH10_EP06_LATER",
+        "CH10_END_GOODBYE"
+      ],
+      "episodes": [
+        {
+          "episode": "CH01_EP01",
+          "characters": 720,
+          "estimatedMinutes": [
+            1.44,
+            1.8
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP02",
+          "characters": 687,
+          "estimatedMinutes": [
+            1.37,
+            1.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP03",
+          "characters": 1114,
+          "estimatedMinutes": [
+            2.23,
+            2.79
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP04",
+          "characters": 944,
+          "estimatedMinutes": [
+            1.89,
+            2.36
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP01",
+          "characters": 1098,
+          "estimatedMinutes": [
+            2.2,
+            2.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP02",
+          "characters": 1057,
+          "estimatedMinutes": [
+            2.11,
+            2.64
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP03",
+          "characters": 1482,
+          "estimatedMinutes": [
+            2.96,
+            3.71
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP04",
+          "characters": 1479,
+          "estimatedMinutes": [
+            2.96,
+            3.7
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP05",
+          "characters": 1433,
+          "estimatedMinutes": [
+            2.87,
+            3.58
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP06",
+          "characters": 2016,
+          "estimatedMinutes": [
+            4.03,
+            5.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP01",
+          "characters": 1444,
+          "estimatedMinutes": [
+            2.89,
+            3.61
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP02",
+          "characters": 1014,
+          "estimatedMinutes": [
+            2.03,
+            2.54
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP03",
+          "characters": 1387,
+          "estimatedMinutes": [
+            2.77,
+            3.47
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP04",
+          "characters": 1141,
+          "estimatedMinutes": [
+            2.28,
+            2.85
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP05",
+          "characters": 1466,
+          "estimatedMinutes": [
+            2.93,
+            3.67
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP06",
+          "characters": 1618,
+          "estimatedMinutes": [
+            3.24,
+            4.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP01",
+          "characters": 1349,
+          "estimatedMinutes": [
+            2.7,
+            3.37
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP02",
+          "characters": 1310,
+          "estimatedMinutes": [
+            2.62,
+            3.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP03",
+          "characters": 1812,
+          "estimatedMinutes": [
+            3.62,
+            4.53
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP04",
+          "characters": 905,
+          "estimatedMinutes": [
+            1.81,
+            2.26
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH04_EP05",
+          "characters": 1510,
+          "estimatedMinutes": [
+            3.02,
+            3.77
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP06",
+          "characters": 1708,
+          "estimatedMinutes": [
+            3.42,
+            4.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP01",
+          "characters": 1294,
+          "estimatedMinutes": [
+            2.59,
+            3.23
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP02",
+          "characters": 1243,
+          "estimatedMinutes": [
+            2.49,
+            3.11
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP03",
+          "characters": 1320,
+          "estimatedMinutes": [
+            2.64,
+            3.3
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP04",
+          "characters": 1462,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP05",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH05_EP06",
+          "characters": 1332,
+          "estimatedMinutes": [
+            2.66,
+            3.33
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP01",
+          "characters": 1589,
+          "estimatedMinutes": [
+            3.18,
+            3.97
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP02",
+          "characters": 1288,
+          "estimatedMinutes": [
+            2.58,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP03",
+          "characters": 1087,
+          "estimatedMinutes": [
+            2.17,
+            2.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH06_EP04",
+          "characters": 1796,
+          "estimatedMinutes": [
+            3.59,
+            4.49
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP05",
+          "characters": 1345,
+          "estimatedMinutes": [
+            2.69,
+            3.36
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP06",
+          "characters": 1741,
+          "estimatedMinutes": [
+            3.48,
+            4.35
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP01",
+          "characters": 1236,
+          "estimatedMinutes": [
+            2.47,
+            3.09
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP02",
+          "characters": 1132,
+          "estimatedMinutes": [
+            2.26,
+            2.83
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP03",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP04",
+          "characters": 907,
+          "estimatedMinutes": [
+            1.81,
+            2.27
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP05",
+          "characters": 800,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP06",
+          "characters": 897,
+          "estimatedMinutes": [
+            1.79,
+            2.24
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP07",
+          "characters": 929,
+          "estimatedMinutes": [
+            1.86,
+            2.32
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP08",
+          "characters": 1242,
+          "estimatedMinutes": [
+            2.48,
+            3.1
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP01",
+          "characters": 922,
+          "estimatedMinutes": [
+            1.84,
+            2.31
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP02",
+          "characters": 1108,
+          "estimatedMinutes": [
+            2.22,
+            2.77
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP03",
+          "characters": 1905,
+          "estimatedMinutes": [
+            3.81,
+            4.76
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP04",
+          "characters": 873,
+          "estimatedMinutes": [
+            1.75,
+            2.18
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP05",
+          "characters": 935,
+          "estimatedMinutes": [
+            1.87,
+            2.34
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP06",
+          "characters": 711,
+          "estimatedMinutes": [
+            1.42,
+            1.78
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP01",
+          "characters": 760,
+          "estimatedMinutes": [
+            1.52,
+            1.9
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP02",
+          "characters": 1287,
+          "estimatedMinutes": [
+            2.57,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP03",
+          "characters": 1458,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP04",
+          "characters": 1135,
+          "estimatedMinutes": [
+            2.27,
+            2.84
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP05",
+          "characters": 807,
+          "estimatedMinutes": [
+            1.61,
+            2.02
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP06",
+          "characters": 972,
+          "estimatedMinutes": [
+            1.94,
+            2.43
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP01",
+          "characters": 637,
+          "estimatedMinutes": [
+            1.27,
+            1.59
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP02",
+          "characters": 1022,
+          "estimatedMinutes": [
+            2.04,
+            2.56
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP03",
+          "characters": 700,
+          "estimatedMinutes": [
+            1.4,
+            1.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP04",
+          "characters": 587,
+          "estimatedMinutes": [
+            1.17,
+            1.47
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP05",
+          "characters": 1079,
+          "estimatedMinutes": [
+            2.16,
+            2.7
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP06",
+          "characters": 817,
+          "estimatedMinutes": [
+            1.63,
+            2.04
+          ],
+          "outsideTarget": true
+        }
+      ],
+      "characters": 70949,
+      "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
+    },
+    {
+      "ending": "UNDERSTAND",
+      "evidence": "FULL",
+      "visited": [
+        "CH01_EP01_N001",
+        "CH01_EP01_DAILY",
+        "CH01_EP01_PARCEL",
+        "CH01_EP01_END",
+        "CH01_EP02_N001",
+        "CH01_EP02_C001",
+        "CH01_EP02_PHOTO_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_LETTER_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_TICKET",
+        "CH01_EP02_C001",
+        "CH01_EP02_ROPE",
+        "CH01_EP02_C001",
+        "CH01_EP02_MP3_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_NAME_001",
+        "CH01_EP02_C002",
+        "CH01_EP02_B001",
+        "CH01_EP02_END",
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A",
+        "CH01_EP03_LETTER_001",
+        "CH01_EP03_TO_MP3",
+        "CH01_EP03_END",
+        "CH01_EP04_N001",
+        "CH01_EP04_N002",
+        "CH01_EP04_RECORDING",
+        "CH01_EP04_N008",
+        "CH01_EP04_BUS",
+        "CH01_EP04_CLASSMATES",
+        "CH01_EP04_WINDOW",
+        "CH01_EP04_END",
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS",
+        "CH02_EP01_END",
+        "CH02_EP02_N001",
+        "CH02_EP02_GYM",
+        "CH02_EP02_PHOTO",
+        "CH02_EP02_BUS_HOME",
+        "CH02_EP02_NOTEBOOK",
+        "CH02_EP02_END",
+        "CH02_EP03_N001",
+        "CH02_EP03_FACTORY",
+        "CH02_EP03_ERRANDS",
+        "CH02_EP03_REPAIR",
+        "CH02_EP03_END",
+        "CH02_EP04_N001",
+        "CH02_EP04_ROUTE",
+        "CH02_EP04_CHENYE",
+        "CH02_EP04_LOOK",
+        "CH02_EP04_END",
+        "CH02_EP05_N001",
+        "CH02_EP05_NUMBER",
+        "CH02_EP05_MESSAGES",
+        "CH02_EP05_SATURDAY",
+        "CH02_EP05_END",
+        "CH02_EP06_N001",
+        "CH02_EP06_PROMISE",
+        "CH02_EP06_FAMILY",
+        "CH02_EP06_CHOICE",
+        "CH02_EP06_TOLD",
+        "CH02_EP06_SATURDAY",
+        "CH02_EP06_HOME_TOLD",
+        "CH02_EP06_CLOSE",
+        "CH02_EP06_END",
+        "CH03_EP01_N001",
+        "CH03_EP01_BUS",
+        "CH03_EP01_HOME",
+        "CH03_EP01_MESSAGE",
+        "CH03_EP01_END",
+        "CH03_EP02_N001",
+        "CH03_EP02_KNOWN",
+        "CH03_EP02_DISHES",
+        "CH03_EP02_END",
+        "CH03_EP03_N001",
+        "CH03_EP03_XIA_HOME",
+        "CH03_EP03_EXAM",
+        "CH03_EP03_REVISION",
+        "CH03_EP03_END",
+        "CH03_EP04_N001",
+        "CH03_EP04_FAMILY_KNOWN",
+        "CH03_EP04_CHOICE",
+        "CH03_EP04_DISCUSS",
+        "CH03_EP04_RETURN",
+        "CH03_EP04_END",
+        "CH03_EP05_N001",
+        "CH03_EP05_ROOM",
+        "CH03_EP05_TREE",
+        "CH03_EP05_PHOTO",
+        "CH03_EP05_BAG",
+        "CH03_EP05_END",
+        "CH03_EP06_N001",
+        "CH03_EP06_DISCUSS",
+        "CH03_EP06_FAMILY_KNOWN",
+        "CH03_EP06_LETTER",
+        "CH03_EP06_ENVELOPE",
+        "CH03_EP06_PHONE",
+        "CH03_EP06_END",
+        "CH04_EP01_N001",
+        "CH04_EP01_FOOD",
+        "CH04_EP01_ASK",
+        "CH04_EP01_PHONE",
+        "CH04_EP01_END",
+        "CH04_EP02_N001",
+        "CH04_EP02_PAPER",
+        "CH04_EP02_COMPARE",
+        "CH04_EP02_MESSAGES",
+        "CH04_EP02_LATE",
+        "CH04_EP02_END",
+        "CH04_EP03_N001",
+        "CH04_EP03_HOME",
+        "CH04_EP03_KNOWN",
+        "CH04_EP03_RETURN",
+        "CH04_EP03_MOTHER",
+        "CH04_EP03_END",
+        "CH04_EP04_N001",
+        "CH04_EP04_CHOICE",
+        "CH04_EP04_ASK",
+        "CH04_EP04_MESSAGES",
+        "CH04_EP04_END",
+        "CH04_EP05_N001",
+        "CH04_EP05_AGREED",
+        "CH04_EP05_STREET",
+        "CH04_EP05_PHOTO",
+        "CH04_EP05_NIGHT",
+        "CH04_EP05_END",
+        "CH04_EP06_N001",
+        "CH04_EP06_LISTEN",
+        "CH04_EP06_WINTER",
+        "CH04_EP06_ASK_AGAIN",
+        "CH04_EP06_CLOSE",
+        "CH04_EP06_END",
+        "CH05_EP01_N001",
+        "CH05_EP01_CHECK_FIRST",
+        "CH05_EP01_FACTORY",
+        "CH05_EP01_COST_NOTE",
+        "CH05_EP01_WEEKEND",
+        "CH05_EP01_END",
+        "CH05_EP02_N001",
+        "CH05_EP02_HOME",
+        "CH05_EP02_FAMILY_KNOWN",
+        "CH05_EP02_MESSAGES",
+        "CH05_EP02_END",
+        "CH05_EP03_N001",
+        "CH05_EP03_ASK_ROOM",
+        "CH05_EP03_COST",
+        "CH05_EP03_CHEN",
+        "CH05_EP03_END",
+        "CH05_EP04_N001",
+        "CH05_EP04_SPRING",
+        "CH05_EP04_COMPARE",
+        "CH05_EP04_JOB_NOTE",
+        "CH05_EP04_CHEN",
+        "CH05_EP04_END",
+        "CH05_EP05_N001",
+        "CH05_EP05_CHOICE",
+        "CH05_EP05_SHARE",
+        "CH05_EP05_MESSAGES",
+        "CH05_EP05_END",
+        "CH05_EP06_N001",
+        "CH05_EP06_SEPARATE",
+        "CH05_EP06_PACK",
+        "CH05_EP06_NOTE",
+        "CH05_EP06_CLOSE",
+        "CH05_EP06_END",
+        "CH06_EP01_N001",
+        "CH06_EP01_ARRIVAL",
+        "CH06_EP01_SHARE",
+        "CH06_EP01_HOUSE",
+        "CH06_EP01_PAPER",
+        "CH06_EP01_PHONE",
+        "CH06_EP01_END",
+        "CH06_EP02_N001",
+        "CH06_EP02_EARLY",
+        "CH06_EP02_MEALS",
+        "CH06_EP02_CHEN",
+        "CH06_EP02_END",
+        "CH06_EP03_N001",
+        "CH06_EP03_ASKED",
+        "CH06_EP03_LISTEN",
+        "CH06_EP03_SHIFT_NOTE",
+        "CH06_EP03_MESSAGES",
+        "CH06_EP03_END",
+        "CH06_EP04_N001",
+        "CH06_EP04_SUPPER",
+        "CH06_EP04_SEPARATE",
+        "CH06_EP04_ROOM",
+        "CH06_EP04_CLOSE",
+        "CH06_EP04_END",
+        "CH06_EP05_N001",
+        "CH06_EP05_TALK",
+        "CH06_EP05_PLATFORM",
+        "CH06_EP05_NOTE",
+        "CH06_EP05_EXIT",
+        "CH06_EP05_END",
+        "CH06_EP06_N001",
+        "CH06_EP06_HOME",
+        "CH06_EP06_CHEN",
+        "CH06_EP06_PHONE",
+        "CH06_EP06_DECEMBER",
+        "CH06_EP06_END",
+        "CH07_EP01_N001",
+        "CH07_EP01_AFTER_STATION",
+        "CH07_EP01_EARLY",
+        "CH07_EP01_HOME",
+        "CH07_EP01_LIST",
+        "CH07_EP01_NOTE",
+        "CH07_EP01_END",
+        "CH07_EP02_N001",
+        "CH07_EP02_NEXT",
+        "CH07_EP02_DINNER",
+        "CH07_EP02_END",
+        "CH07_EP03_N001",
+        "CH07_EP03_ASK",
+        "CH07_EP03_WORK",
+        "CH07_EP03_END",
+        "CH07_EP04_N001",
+        "CH07_EP04_CHOICE",
+        "CH07_EP04_TOGETHER",
+        "CH07_EP04_CONFIRM",
+        "CH07_EP04_CLOSE",
+        "CH07_EP04_END",
+        "CH07_EP05_N001",
+        "CH07_EP05_NOTE",
+        "CH07_EP05_WORK",
+        "CH07_EP05_END",
+        "CH07_EP06_N001",
+        "CH07_EP06_NOTE",
+        "CH07_EP06_SHARED",
+        "CH07_EP06_MORNING",
+        "CH07_EP06_END",
+        "CH07_EP07_N001",
+        "CH07_EP07_DIVIDE",
+        "CH07_EP07_NEXT",
+        "CH07_EP07_END",
+        "CH07_EP08_N001",
+        "CH07_EP08_PHOTO_INTRO",
+        "CH07_EP08_PHOTO",
+        "CH07_EP08_CLOSE",
+        "CH07_EP08_RETURN",
+        "CH07_EP08_END",
+        "CH08_EP01_N001",
+        "CH08_EP01_SHARED",
+        "CH08_EP01_ARCHIVE",
+        "CH08_EP01_CLOSE",
+        "CH08_EP01_END",
+        "CH08_EP02_N001",
+        "CH08_EP02_COMPARE",
+        "CH08_EP02_DATES",
+        "CH08_EP02_CLOSE",
+        "CH08_EP02_END",
+        "CH08_EP03_N001",
+        "CH08_EP03_DESK",
+        "CH08_EP03_LETTER",
+        "CH08_EP03_DESK",
+        "CH08_EP03_AUDIO",
+        "CH08_EP03_DESK",
+        "CH08_EP03_READ",
+        "CH08_EP03_CLOSE",
+        "CH08_EP03_END",
+        "CH08_EP04_N001",
+        "CH08_EP04_CALL",
+        "CH08_EP04_CLOSE",
+        "CH08_EP04_END",
+        "CH08_EP05_N001",
+        "CH08_EP05_RECONSTRUCT",
+        "CH08_EP05_GRADUATION",
+        "CH08_EP05_CLOSE",
+        "CH08_EP05_END",
+        "CH08_EP06_N001",
+        "CH08_EP06_TOLD",
+        "CH08_EP06_CLOSE",
+        "CH08_EP06_END",
+        "CH09_EP01_N001",
+        "CH09_EP01_SHARED",
+        "CH09_EP01_DRAFT",
+        "CH09_EP01_CONTACT_CHOICE",
+        "CH09_EP01_UNSENT",
+        "CH09_EP01_END",
+        "CH09_EP02_NO_CONTACT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE",
+        "CH09_EP02_END",
+        "CH09_EP03_LOCAL",
+        "CH09_EP03_CLOSE",
+        "CH09_EP03_HOSPITAL",
+        "CH09_EP03_HOME",
+        "CH09_EP03_END",
+        "CH09_EP04_N001",
+        "CH09_EP04_JOB_SHARED",
+        "CH09_EP04_COMMUTE",
+        "CH09_EP04_NO_INVITE",
+        "CH09_EP04_CLOSE",
+        "CH09_EP04_END",
+        "CH09_EP05_N001",
+        "CH09_EP05_TEACHER",
+        "CH09_EP05_ALONE",
+        "CH09_EP05_CLOSE",
+        "CH09_EP05_END",
+        "CH09_EP06_N001",
+        "CH09_EP06_UNSENT",
+        "CH09_EP06_CLOSE",
+        "CH09_EP06_BAG",
+        "CH09_EP06_END",
+        "CH10_EP01_N001",
+        "CH10_EP01_LISTEN",
+        "CH10_EP01_HOME",
+        "CH10_EP01_END",
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING",
+        "CH10_EP02_END",
+        "CH10_EP03_N001",
+        "CH10_EP03_SHARED",
+        "CH10_EP03_ANRAN",
+        "CH10_EP03_END",
+        "CH10_EP04_N001",
+        "CH10_EP04_KNOWN",
+        "CH10_EP04_UNMET",
+        "CH10_EP04_END",
+        "CH10_EP05_N001",
+        "CH10_EP05_LETTER",
+        "CH10_EP05_AFTER",
+        "CH10_EP05_NIGHT",
+        "CH10_EP05_END",
+        "CH10_EP06_N001",
+        "CH10_EP06_LATER",
+        "CH10_END_UNDERSTAND"
+      ],
+      "episodes": [
+        {
+          "episode": "CH01_EP01",
+          "characters": 720,
+          "estimatedMinutes": [
+            1.44,
+            1.8
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP02",
+          "characters": 687,
+          "estimatedMinutes": [
+            1.37,
+            1.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP03",
+          "characters": 1114,
+          "estimatedMinutes": [
+            2.23,
+            2.79
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP04",
+          "characters": 944,
+          "estimatedMinutes": [
+            1.89,
+            2.36
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP01",
+          "characters": 1098,
+          "estimatedMinutes": [
+            2.2,
+            2.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP02",
+          "characters": 1057,
+          "estimatedMinutes": [
+            2.11,
+            2.64
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP03",
+          "characters": 1482,
+          "estimatedMinutes": [
+            2.96,
+            3.71
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP04",
+          "characters": 1479,
+          "estimatedMinutes": [
+            2.96,
+            3.7
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP05",
+          "characters": 1433,
+          "estimatedMinutes": [
+            2.87,
+            3.58
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP06",
+          "characters": 2016,
+          "estimatedMinutes": [
+            4.03,
+            5.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP01",
+          "characters": 1444,
+          "estimatedMinutes": [
+            2.89,
+            3.61
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP02",
+          "characters": 1014,
+          "estimatedMinutes": [
+            2.03,
+            2.54
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP03",
+          "characters": 1387,
+          "estimatedMinutes": [
+            2.77,
+            3.47
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP04",
+          "characters": 1141,
+          "estimatedMinutes": [
+            2.28,
+            2.85
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP05",
+          "characters": 1466,
+          "estimatedMinutes": [
+            2.93,
+            3.67
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP06",
+          "characters": 1618,
+          "estimatedMinutes": [
+            3.24,
+            4.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP01",
+          "characters": 1349,
+          "estimatedMinutes": [
+            2.7,
+            3.37
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP02",
+          "characters": 1310,
+          "estimatedMinutes": [
+            2.62,
+            3.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP03",
+          "characters": 1812,
+          "estimatedMinutes": [
+            3.62,
+            4.53
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP04",
+          "characters": 905,
+          "estimatedMinutes": [
+            1.81,
+            2.26
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH04_EP05",
+          "characters": 1510,
+          "estimatedMinutes": [
+            3.02,
+            3.77
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP06",
+          "characters": 1708,
+          "estimatedMinutes": [
+            3.42,
+            4.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP01",
+          "characters": 1294,
+          "estimatedMinutes": [
+            2.59,
+            3.23
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP02",
+          "characters": 1243,
+          "estimatedMinutes": [
+            2.49,
+            3.11
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP03",
+          "characters": 1320,
+          "estimatedMinutes": [
+            2.64,
+            3.3
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP04",
+          "characters": 1462,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP05",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH05_EP06",
+          "characters": 1332,
+          "estimatedMinutes": [
+            2.66,
+            3.33
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP01",
+          "characters": 1589,
+          "estimatedMinutes": [
+            3.18,
+            3.97
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP02",
+          "characters": 1288,
+          "estimatedMinutes": [
+            2.58,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP03",
+          "characters": 1087,
+          "estimatedMinutes": [
+            2.17,
+            2.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH06_EP04",
+          "characters": 1796,
+          "estimatedMinutes": [
+            3.59,
+            4.49
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP05",
+          "characters": 1345,
+          "estimatedMinutes": [
+            2.69,
+            3.36
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP06",
+          "characters": 1741,
+          "estimatedMinutes": [
+            3.48,
+            4.35
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP01",
+          "characters": 1236,
+          "estimatedMinutes": [
+            2.47,
+            3.09
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP02",
+          "characters": 1132,
+          "estimatedMinutes": [
+            2.26,
+            2.83
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP03",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP04",
+          "characters": 907,
+          "estimatedMinutes": [
+            1.81,
+            2.27
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP05",
+          "characters": 800,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP06",
+          "characters": 897,
+          "estimatedMinutes": [
+            1.79,
+            2.24
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP07",
+          "characters": 929,
+          "estimatedMinutes": [
+            1.86,
+            2.32
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP08",
+          "characters": 1242,
+          "estimatedMinutes": [
+            2.48,
+            3.1
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP01",
+          "characters": 922,
+          "estimatedMinutes": [
+            1.84,
+            2.31
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP02",
+          "characters": 1108,
+          "estimatedMinutes": [
+            2.22,
+            2.77
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP03",
+          "characters": 1905,
+          "estimatedMinutes": [
+            3.81,
+            4.76
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP04",
+          "characters": 873,
+          "estimatedMinutes": [
+            1.75,
+            2.18
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP05",
+          "characters": 935,
+          "estimatedMinutes": [
+            1.87,
+            2.34
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP06",
+          "characters": 711,
+          "estimatedMinutes": [
+            1.42,
+            1.78
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP01",
+          "characters": 783,
+          "estimatedMinutes": [
+            1.57,
+            1.96
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP02",
+          "characters": 1005,
+          "estimatedMinutes": [
+            2.01,
+            2.51
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP03",
+          "characters": 1029,
+          "estimatedMinutes": [
+            2.06,
+            2.57
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP04",
+          "characters": 908,
+          "estimatedMinutes": [
+            1.82,
+            2.27
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP05",
+          "characters": 807,
+          "estimatedMinutes": [
+            1.61,
+            2.02
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP06",
+          "characters": 802,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP01",
+          "characters": 637,
+          "estimatedMinutes": [
+            1.27,
+            1.59
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP02",
+          "characters": 1022,
+          "estimatedMinutes": [
+            2.04,
+            2.56
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP03",
+          "characters": 700,
+          "estimatedMinutes": [
+            1.4,
+            1.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP04",
+          "characters": 579,
+          "estimatedMinutes": [
+            1.16,
+            1.45
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP05",
+          "characters": 1079,
+          "estimatedMinutes": [
+            2.16,
+            2.7
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP06",
+          "characters": 840,
+          "estimatedMinutes": [
+            1.68,
+            2.1
+          ],
+          "outsideTarget": true
+        }
+      ],
+      "characters": 69879,
+      "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
+    },
+    {
+      "ending": "UNSENT",
+      "evidence": "FULL",
+      "visited": [
+        "CH01_EP01_N001",
+        "CH01_EP01_DAILY",
+        "CH01_EP01_PARCEL",
+        "CH01_EP01_END",
+        "CH01_EP02_N001",
+        "CH01_EP02_C001",
+        "CH01_EP02_PHOTO_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_LETTER_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_TICKET",
+        "CH01_EP02_C001",
+        "CH01_EP02_ROPE",
+        "CH01_EP02_C001",
+        "CH01_EP02_MP3_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_NAME_001",
+        "CH01_EP02_C002",
+        "CH01_EP02_B001",
+        "CH01_EP02_END",
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A",
+        "CH01_EP03_LETTER_001",
+        "CH01_EP03_TO_MP3",
+        "CH01_EP03_END",
+        "CH01_EP04_N001",
+        "CH01_EP04_N002",
+        "CH01_EP04_RECORDING",
+        "CH01_EP04_N008",
+        "CH01_EP04_BUS",
+        "CH01_EP04_CLASSMATES",
+        "CH01_EP04_WINDOW",
+        "CH01_EP04_END",
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS",
+        "CH02_EP01_END",
+        "CH02_EP02_N001",
+        "CH02_EP02_GYM",
+        "CH02_EP02_PHOTO",
+        "CH02_EP02_BUS_HOME",
+        "CH02_EP02_NOTEBOOK",
+        "CH02_EP02_END",
+        "CH02_EP03_N001",
+        "CH02_EP03_FACTORY",
+        "CH02_EP03_ERRANDS",
+        "CH02_EP03_REPAIR",
+        "CH02_EP03_END",
+        "CH02_EP04_N001",
+        "CH02_EP04_ROUTE",
+        "CH02_EP04_CHENYE",
+        "CH02_EP04_LOOK",
+        "CH02_EP04_END",
+        "CH02_EP05_N001",
+        "CH02_EP05_NUMBER",
+        "CH02_EP05_MESSAGES",
+        "CH02_EP05_SATURDAY",
+        "CH02_EP05_END",
+        "CH02_EP06_N001",
+        "CH02_EP06_PROMISE",
+        "CH02_EP06_FAMILY",
+        "CH02_EP06_CHOICE",
+        "CH02_EP06_TOLD",
+        "CH02_EP06_SATURDAY",
+        "CH02_EP06_HOME_TOLD",
+        "CH02_EP06_CLOSE",
+        "CH02_EP06_END",
+        "CH03_EP01_N001",
+        "CH03_EP01_BUS",
+        "CH03_EP01_HOME",
+        "CH03_EP01_MESSAGE",
+        "CH03_EP01_END",
+        "CH03_EP02_N001",
+        "CH03_EP02_KNOWN",
+        "CH03_EP02_DISHES",
+        "CH03_EP02_END",
+        "CH03_EP03_N001",
+        "CH03_EP03_XIA_HOME",
+        "CH03_EP03_EXAM",
+        "CH03_EP03_REVISION",
+        "CH03_EP03_END",
+        "CH03_EP04_N001",
+        "CH03_EP04_FAMILY_KNOWN",
+        "CH03_EP04_CHOICE",
+        "CH03_EP04_DISCUSS",
+        "CH03_EP04_RETURN",
+        "CH03_EP04_END",
+        "CH03_EP05_N001",
+        "CH03_EP05_ROOM",
+        "CH03_EP05_TREE",
+        "CH03_EP05_PHOTO",
+        "CH03_EP05_BAG",
+        "CH03_EP05_END",
+        "CH03_EP06_N001",
+        "CH03_EP06_DISCUSS",
+        "CH03_EP06_FAMILY_KNOWN",
+        "CH03_EP06_LETTER",
+        "CH03_EP06_ENVELOPE",
+        "CH03_EP06_PHONE",
+        "CH03_EP06_END",
+        "CH04_EP01_N001",
+        "CH04_EP01_FOOD",
+        "CH04_EP01_ASK",
+        "CH04_EP01_PHONE",
+        "CH04_EP01_END",
+        "CH04_EP02_N001",
+        "CH04_EP02_PAPER",
+        "CH04_EP02_COMPARE",
+        "CH04_EP02_MESSAGES",
+        "CH04_EP02_LATE",
+        "CH04_EP02_END",
+        "CH04_EP03_N001",
+        "CH04_EP03_HOME",
+        "CH04_EP03_KNOWN",
+        "CH04_EP03_RETURN",
+        "CH04_EP03_MOTHER",
+        "CH04_EP03_END",
+        "CH04_EP04_N001",
+        "CH04_EP04_CHOICE",
+        "CH04_EP04_ASK",
+        "CH04_EP04_MESSAGES",
+        "CH04_EP04_END",
+        "CH04_EP05_N001",
+        "CH04_EP05_AGREED",
+        "CH04_EP05_STREET",
+        "CH04_EP05_PHOTO",
+        "CH04_EP05_NIGHT",
+        "CH04_EP05_END",
+        "CH04_EP06_N001",
+        "CH04_EP06_LISTEN",
+        "CH04_EP06_WINTER",
+        "CH04_EP06_ASK_AGAIN",
+        "CH04_EP06_CLOSE",
+        "CH04_EP06_END",
+        "CH05_EP01_N001",
+        "CH05_EP01_CHECK_FIRST",
+        "CH05_EP01_FACTORY",
+        "CH05_EP01_COST_NOTE",
+        "CH05_EP01_WEEKEND",
+        "CH05_EP01_END",
+        "CH05_EP02_N001",
+        "CH05_EP02_HOME",
+        "CH05_EP02_FAMILY_KNOWN",
+        "CH05_EP02_MESSAGES",
+        "CH05_EP02_END",
+        "CH05_EP03_N001",
+        "CH05_EP03_ASK_ROOM",
+        "CH05_EP03_COST",
+        "CH05_EP03_CHEN",
+        "CH05_EP03_END",
+        "CH05_EP04_N001",
+        "CH05_EP04_SPRING",
+        "CH05_EP04_COMPARE",
+        "CH05_EP04_JOB_NOTE",
+        "CH05_EP04_CHEN",
+        "CH05_EP04_END",
+        "CH05_EP05_N001",
+        "CH05_EP05_CHOICE",
+        "CH05_EP05_SHARE",
+        "CH05_EP05_MESSAGES",
+        "CH05_EP05_END",
+        "CH05_EP06_N001",
+        "CH05_EP06_SEPARATE",
+        "CH05_EP06_PACK",
+        "CH05_EP06_NOTE",
+        "CH05_EP06_CLOSE",
+        "CH05_EP06_END",
+        "CH06_EP01_N001",
+        "CH06_EP01_ARRIVAL",
+        "CH06_EP01_SHARE",
+        "CH06_EP01_HOUSE",
+        "CH06_EP01_PAPER",
+        "CH06_EP01_PHONE",
+        "CH06_EP01_END",
+        "CH06_EP02_N001",
+        "CH06_EP02_EARLY",
+        "CH06_EP02_MEALS",
+        "CH06_EP02_CHEN",
+        "CH06_EP02_END",
+        "CH06_EP03_N001",
+        "CH06_EP03_ASKED",
+        "CH06_EP03_LISTEN",
+        "CH06_EP03_SHIFT_NOTE",
+        "CH06_EP03_MESSAGES",
+        "CH06_EP03_END",
+        "CH06_EP04_N001",
+        "CH06_EP04_SUPPER",
+        "CH06_EP04_SEPARATE",
+        "CH06_EP04_ROOM",
+        "CH06_EP04_CLOSE",
+        "CH06_EP04_END",
+        "CH06_EP05_N001",
+        "CH06_EP05_TALK",
+        "CH06_EP05_PLATFORM",
+        "CH06_EP05_NOTE",
+        "CH06_EP05_EXIT",
+        "CH06_EP05_END",
+        "CH06_EP06_N001",
+        "CH06_EP06_HOME",
+        "CH06_EP06_CHEN",
+        "CH06_EP06_PHONE",
+        "CH06_EP06_DECEMBER",
+        "CH06_EP06_END",
+        "CH07_EP01_N001",
+        "CH07_EP01_AFTER_STATION",
+        "CH07_EP01_EARLY",
+        "CH07_EP01_HOME",
+        "CH07_EP01_LIST",
+        "CH07_EP01_NOTE",
+        "CH07_EP01_END",
+        "CH07_EP02_N001",
+        "CH07_EP02_NEXT",
+        "CH07_EP02_DINNER",
+        "CH07_EP02_END",
+        "CH07_EP03_N001",
+        "CH07_EP03_ASK",
+        "CH07_EP03_WORK",
+        "CH07_EP03_END",
+        "CH07_EP04_N001",
+        "CH07_EP04_CHOICE",
+        "CH07_EP04_TOGETHER",
+        "CH07_EP04_CONFIRM",
+        "CH07_EP04_CLOSE",
+        "CH07_EP04_END",
+        "CH07_EP05_N001",
+        "CH07_EP05_NOTE",
+        "CH07_EP05_WORK",
+        "CH07_EP05_END",
+        "CH07_EP06_N001",
+        "CH07_EP06_NOTE",
+        "CH07_EP06_SHARED",
+        "CH07_EP06_MORNING",
+        "CH07_EP06_END",
+        "CH07_EP07_N001",
+        "CH07_EP07_DIVIDE",
+        "CH07_EP07_NEXT",
+        "CH07_EP07_END",
+        "CH07_EP08_N001",
+        "CH07_EP08_PHOTO_INTRO",
+        "CH07_EP08_PHOTO",
+        "CH07_EP08_CLOSE",
+        "CH07_EP08_RETURN",
+        "CH07_EP08_END",
+        "CH08_EP01_N001",
+        "CH08_EP01_SHARED",
+        "CH08_EP01_ARCHIVE",
+        "CH08_EP01_CLOSE",
+        "CH08_EP01_END",
+        "CH08_EP02_N001",
+        "CH08_EP02_COMPARE",
+        "CH08_EP02_DATES",
+        "CH08_EP02_CLOSE",
+        "CH08_EP02_END",
+        "CH08_EP03_N001",
+        "CH08_EP03_DESK",
+        "CH08_EP03_LETTER",
+        "CH08_EP03_DESK",
+        "CH08_EP03_AUDIO",
+        "CH08_EP03_DESK",
+        "CH08_EP03_READ",
+        "CH08_EP03_CLOSE",
+        "CH08_EP03_END",
+        "CH08_EP04_N001",
+        "CH08_EP04_CALL",
+        "CH08_EP04_CLOSE",
+        "CH08_EP04_END",
+        "CH08_EP05_N001",
+        "CH08_EP05_RECONSTRUCT",
+        "CH08_EP05_GRADUATION",
+        "CH08_EP05_CLOSE",
+        "CH08_EP05_END",
+        "CH08_EP06_N001",
+        "CH08_EP06_TOLD",
+        "CH08_EP06_CLOSE",
+        "CH08_EP06_END",
+        "CH09_EP01_N001",
+        "CH09_EP01_SHARED",
+        "CH09_EP01_DRAFT",
+        "CH09_EP01_CONTACT_CHOICE",
+        "CH09_EP01_INTENT",
+        "CH09_EP01_END",
+        "CH09_EP02_KNOWN",
+        "CH09_EP02_DISCLOSE_CHOICE",
+        "CH09_EP02_TELL",
+        "CH09_EP02_SENT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE",
+        "CH09_EP02_END",
+        "CH09_EP03_EARLY",
+        "CH09_EP03_REPLY",
+        "CH09_EP03_OWN_LIFE",
+        "CH09_EP03_CLOSE",
+        "CH09_EP03_HOSPITAL",
+        "CH09_EP03_HOME",
+        "CH09_EP03_END",
+        "CH09_EP04_N001",
+        "CH09_EP04_JOB_SHARED",
+        "CH09_EP04_COMMUTE",
+        "CH09_EP04_INVITE",
+        "CH09_EP04_MEETING_CHOICE",
+        "CH09_EP04_ACCEPT",
+        "CH09_EP04_CLOSE",
+        "CH09_EP04_END",
+        "CH09_EP05_N001",
+        "CH09_EP05_TEACHER",
+        "CH09_EP05_MET",
+        "CH09_EP05_OLD_PAGE",
+        "CH09_EP05_FIRST_PAGE",
+        "CH09_EP05_CHECKED",
+        "CH09_EP05_CLOSE",
+        "CH09_EP05_END",
+        "CH09_EP06_N001",
+        "CH09_EP06_BEFORE",
+        "CH09_EP06_MET",
+        "CH09_EP06_CLOSE",
+        "CH09_EP06_BAG",
+        "CH09_EP06_END",
+        "CH10_EP01_N001",
+        "CH10_EP01_LISTEN",
+        "CH10_EP01_HOME",
+        "CH10_EP01_END",
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING",
+        "CH10_EP02_END",
+        "CH10_EP03_N001",
+        "CH10_EP03_SHARED",
+        "CH10_EP03_ANRAN",
+        "CH10_EP03_END",
+        "CH10_EP04_N001",
+        "CH10_EP04_KNOWN",
+        "CH10_EP04_MET",
+        "CH10_EP04_END",
+        "CH10_EP05_N001",
+        "CH10_EP05_LETTER",
+        "CH10_EP05_AFTER",
+        "CH10_EP05_NIGHT",
+        "CH10_EP05_END",
+        "CH10_EP06_N001",
+        "CH10_EP06_LATER",
+        "CH10_END_UNSENT"
+      ],
+      "episodes": [
+        {
+          "episode": "CH01_EP01",
+          "characters": 720,
+          "estimatedMinutes": [
+            1.44,
+            1.8
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP02",
+          "characters": 687,
+          "estimatedMinutes": [
+            1.37,
+            1.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP03",
+          "characters": 1114,
+          "estimatedMinutes": [
+            2.23,
+            2.79
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP04",
+          "characters": 944,
+          "estimatedMinutes": [
+            1.89,
+            2.36
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP01",
+          "characters": 1098,
+          "estimatedMinutes": [
+            2.2,
+            2.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP02",
+          "characters": 1057,
+          "estimatedMinutes": [
+            2.11,
+            2.64
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP03",
+          "characters": 1482,
+          "estimatedMinutes": [
+            2.96,
+            3.71
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP04",
+          "characters": 1479,
+          "estimatedMinutes": [
+            2.96,
+            3.7
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP05",
+          "characters": 1433,
+          "estimatedMinutes": [
+            2.87,
+            3.58
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP06",
+          "characters": 2016,
+          "estimatedMinutes": [
+            4.03,
+            5.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP01",
+          "characters": 1444,
+          "estimatedMinutes": [
+            2.89,
+            3.61
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP02",
+          "characters": 1014,
+          "estimatedMinutes": [
+            2.03,
+            2.54
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP03",
+          "characters": 1387,
+          "estimatedMinutes": [
+            2.77,
+            3.47
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP04",
+          "characters": 1141,
+          "estimatedMinutes": [
+            2.28,
+            2.85
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP05",
+          "characters": 1466,
+          "estimatedMinutes": [
+            2.93,
+            3.67
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP06",
+          "characters": 1618,
+          "estimatedMinutes": [
+            3.24,
+            4.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP01",
+          "characters": 1349,
+          "estimatedMinutes": [
+            2.7,
+            3.37
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP02",
+          "characters": 1310,
+          "estimatedMinutes": [
+            2.62,
+            3.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP03",
+          "characters": 1812,
+          "estimatedMinutes": [
+            3.62,
+            4.53
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP04",
+          "characters": 905,
+          "estimatedMinutes": [
+            1.81,
+            2.26
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH04_EP05",
+          "characters": 1510,
+          "estimatedMinutes": [
+            3.02,
+            3.77
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP06",
+          "characters": 1708,
+          "estimatedMinutes": [
+            3.42,
+            4.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP01",
+          "characters": 1294,
+          "estimatedMinutes": [
+            2.59,
+            3.23
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP02",
+          "characters": 1243,
+          "estimatedMinutes": [
+            2.49,
+            3.11
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP03",
+          "characters": 1320,
+          "estimatedMinutes": [
+            2.64,
+            3.3
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP04",
+          "characters": 1462,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP05",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH05_EP06",
+          "characters": 1332,
+          "estimatedMinutes": [
+            2.66,
+            3.33
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP01",
+          "characters": 1589,
+          "estimatedMinutes": [
+            3.18,
+            3.97
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP02",
+          "characters": 1288,
+          "estimatedMinutes": [
+            2.58,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP03",
+          "characters": 1087,
+          "estimatedMinutes": [
+            2.17,
+            2.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH06_EP04",
+          "characters": 1796,
+          "estimatedMinutes": [
+            3.59,
+            4.49
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP05",
+          "characters": 1345,
+          "estimatedMinutes": [
+            2.69,
+            3.36
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP06",
+          "characters": 1741,
+          "estimatedMinutes": [
+            3.48,
+            4.35
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP01",
+          "characters": 1236,
+          "estimatedMinutes": [
+            2.47,
+            3.09
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP02",
+          "characters": 1132,
+          "estimatedMinutes": [
+            2.26,
+            2.83
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP03",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP04",
+          "characters": 907,
+          "estimatedMinutes": [
+            1.81,
+            2.27
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP05",
+          "characters": 800,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP06",
+          "characters": 897,
+          "estimatedMinutes": [
+            1.79,
+            2.24
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP07",
+          "characters": 929,
+          "estimatedMinutes": [
+            1.86,
+            2.32
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP08",
+          "characters": 1242,
+          "estimatedMinutes": [
+            2.48,
+            3.1
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP01",
+          "characters": 922,
+          "estimatedMinutes": [
+            1.84,
+            2.31
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP02",
+          "characters": 1108,
+          "estimatedMinutes": [
+            2.22,
+            2.77
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP03",
+          "characters": 1905,
+          "estimatedMinutes": [
+            3.81,
+            4.76
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP04",
+          "characters": 873,
+          "estimatedMinutes": [
+            1.75,
+            2.18
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP05",
+          "characters": 935,
+          "estimatedMinutes": [
+            1.87,
+            2.34
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP06",
+          "characters": 711,
+          "estimatedMinutes": [
+            1.42,
+            1.78
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP01",
+          "characters": 760,
+          "estimatedMinutes": [
+            1.52,
+            1.9
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP02",
+          "characters": 1287,
+          "estimatedMinutes": [
+            2.57,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP03",
+          "characters": 1458,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP04",
+          "characters": 1201,
+          "estimatedMinutes": [
+            2.4,
+            3
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP05",
+          "characters": 1559,
+          "estimatedMinutes": [
+            3.12,
+            3.9
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH09_EP06",
+          "characters": 1012,
+          "estimatedMinutes": [
+            2.02,
+            2.53
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP01",
+          "characters": 637,
+          "estimatedMinutes": [
+            1.27,
+            1.59
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP02",
+          "characters": 1022,
+          "estimatedMinutes": [
+            2.04,
+            2.56
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP03",
+          "characters": 700,
+          "estimatedMinutes": [
+            1.4,
+            1.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP04",
+          "characters": 612,
+          "estimatedMinutes": [
+            1.22,
+            1.53
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP05",
+          "characters": 1079,
+          "estimatedMinutes": [
+            2.16,
+            2.7
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP06",
+          "characters": 871,
+          "estimatedMinutes": [
+            1.74,
+            2.18
+          ],
+          "outsideTarget": true
+        }
+      ],
+      "characters": 71886,
+      "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
+    },
+    {
+      "ending": "TOGETHER",
+      "evidence": "NONE",
+      "visited": [
+        "CH01_EP01_N001",
+        "CH01_EP01_DAILY",
+        "CH01_EP01_PARCEL",
+        "CH01_EP01_END",
+        "CH01_EP02_N001",
+        "CH01_EP02_C001",
+        "CH01_EP02_PHOTO_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_LETTER_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_TICKET",
+        "CH01_EP02_C001",
+        "CH01_EP02_ROPE",
+        "CH01_EP02_C001",
+        "CH01_EP02_MP3_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_NAME_001",
+        "CH01_EP02_C002",
+        "CH01_EP02_B001",
+        "CH01_EP02_END",
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A",
+        "CH01_EP03_LETTER_001",
+        "CH01_EP03_TO_MP3",
+        "CH01_EP03_END",
+        "CH01_EP04_N001",
+        "CH01_EP04_N002",
+        "CH01_EP04_RECORDING",
+        "CH01_EP04_N008",
+        "CH01_EP04_BUS",
+        "CH01_EP04_CLASSMATES",
+        "CH01_EP04_WINDOW",
+        "CH01_EP04_END",
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS",
+        "CH02_EP01_END",
+        "CH02_EP02_N001",
+        "CH02_EP02_GYM",
+        "CH02_EP02_PHOTO",
+        "CH02_EP02_BUS_HOME",
+        "CH02_EP02_NOTEBOOK",
+        "CH02_EP02_END",
+        "CH02_EP03_N001",
+        "CH02_EP03_FACTORY",
+        "CH02_EP03_ERRANDS",
+        "CH02_EP03_REPAIR",
+        "CH02_EP03_END",
+        "CH02_EP04_N001",
+        "CH02_EP04_ROUTE",
+        "CH02_EP04_CHENYE",
+        "CH02_EP04_LOOK",
+        "CH02_EP04_END",
+        "CH02_EP05_N001",
+        "CH02_EP05_NUMBER",
+        "CH02_EP05_MESSAGES",
+        "CH02_EP05_SATURDAY",
+        "CH02_EP05_END",
+        "CH02_EP06_N001",
+        "CH02_EP06_PROMISE",
+        "CH02_EP06_FAMILY",
+        "CH02_EP06_CHOICE",
+        "CH02_EP06_TOLD",
+        "CH02_EP06_SATURDAY",
+        "CH02_EP06_HOME_TOLD",
+        "CH02_EP06_CLOSE",
+        "CH02_EP06_END",
+        "CH03_EP01_N001",
+        "CH03_EP01_BUS",
+        "CH03_EP01_HOME",
+        "CH03_EP01_MESSAGE",
+        "CH03_EP01_END",
+        "CH03_EP02_N001",
+        "CH03_EP02_KNOWN",
+        "CH03_EP02_DISHES",
+        "CH03_EP02_END",
+        "CH03_EP03_N001",
+        "CH03_EP03_XIA_HOME",
+        "CH03_EP03_EXAM",
+        "CH03_EP03_REVISION",
+        "CH03_EP03_END",
+        "CH03_EP04_N001",
+        "CH03_EP04_FAMILY_KNOWN",
+        "CH03_EP04_CHOICE",
+        "CH03_EP04_DISCUSS",
+        "CH03_EP04_RETURN",
+        "CH03_EP04_END",
+        "CH03_EP05_N001",
+        "CH03_EP05_ROOM",
+        "CH03_EP05_TREE",
+        "CH03_EP05_PHOTO",
+        "CH03_EP05_BAG",
+        "CH03_EP05_END",
+        "CH03_EP06_N001",
+        "CH03_EP06_DISCUSS",
+        "CH03_EP06_FAMILY_KNOWN",
+        "CH03_EP06_LETTER",
+        "CH03_EP06_ENVELOPE",
+        "CH03_EP06_PHONE",
+        "CH03_EP06_END",
+        "CH04_EP01_N001",
+        "CH04_EP01_FOOD",
+        "CH04_EP01_ASK",
+        "CH04_EP01_PHONE",
+        "CH04_EP01_END",
+        "CH04_EP02_N001",
+        "CH04_EP02_PAPER",
+        "CH04_EP02_COMPARE",
+        "CH04_EP02_MESSAGES",
+        "CH04_EP02_LATE",
+        "CH04_EP02_END",
+        "CH04_EP03_N001",
+        "CH04_EP03_HOME",
+        "CH04_EP03_KNOWN",
+        "CH04_EP03_RETURN",
+        "CH04_EP03_MOTHER",
+        "CH04_EP03_END",
+        "CH04_EP04_N001",
+        "CH04_EP04_CHOICE",
+        "CH04_EP04_ASK",
+        "CH04_EP04_MESSAGES",
+        "CH04_EP04_END",
+        "CH04_EP05_N001",
+        "CH04_EP05_AGREED",
+        "CH04_EP05_STREET",
+        "CH04_EP05_PHOTO",
+        "CH04_EP05_NIGHT",
+        "CH04_EP05_END",
+        "CH04_EP06_N001",
+        "CH04_EP06_LISTEN",
+        "CH04_EP06_WINTER",
+        "CH04_EP06_ASK_AGAIN",
+        "CH04_EP06_CLOSE",
+        "CH04_EP06_END",
+        "CH05_EP01_N001",
+        "CH05_EP01_CHECK_FIRST",
+        "CH05_EP01_FACTORY",
+        "CH05_EP01_COST_NOTE",
+        "CH05_EP01_WEEKEND",
+        "CH05_EP01_END",
+        "CH05_EP02_N001",
+        "CH05_EP02_HOME",
+        "CH05_EP02_FAMILY_KNOWN",
+        "CH05_EP02_MESSAGES",
+        "CH05_EP02_END",
+        "CH05_EP03_N001",
+        "CH05_EP03_ASK_ROOM",
+        "CH05_EP03_COST",
+        "CH05_EP03_CHEN",
+        "CH05_EP03_END",
+        "CH05_EP04_N001",
+        "CH05_EP04_SPRING",
+        "CH05_EP04_COMPARE",
+        "CH05_EP04_JOB_NOTE",
+        "CH05_EP04_CHEN",
+        "CH05_EP04_END",
+        "CH05_EP05_N001",
+        "CH05_EP05_CHOICE",
+        "CH05_EP05_SHARE",
+        "CH05_EP05_MESSAGES",
+        "CH05_EP05_END",
+        "CH05_EP06_N001",
+        "CH05_EP06_SEPARATE",
+        "CH05_EP06_PACK",
+        "CH05_EP06_NOTE",
+        "CH05_EP06_CLOSE",
+        "CH05_EP06_END",
+        "CH06_EP01_N001",
+        "CH06_EP01_ARRIVAL",
+        "CH06_EP01_SHARE",
+        "CH06_EP01_HOUSE",
+        "CH06_EP01_PAPER",
+        "CH06_EP01_PHONE",
+        "CH06_EP01_END",
+        "CH06_EP02_N001",
+        "CH06_EP02_EARLY",
+        "CH06_EP02_MEALS",
+        "CH06_EP02_CHEN",
+        "CH06_EP02_END",
+        "CH06_EP03_N001",
+        "CH06_EP03_ASKED",
+        "CH06_EP03_LISTEN",
+        "CH06_EP03_SHIFT_NOTE",
+        "CH06_EP03_MESSAGES",
+        "CH06_EP03_END",
+        "CH06_EP04_N001",
+        "CH06_EP04_SUPPER",
+        "CH06_EP04_SEPARATE",
+        "CH06_EP04_ROOM",
+        "CH06_EP04_CLOSE",
+        "CH06_EP04_END",
+        "CH06_EP05_N001",
+        "CH06_EP05_TALK",
+        "CH06_EP05_PLATFORM",
+        "CH06_EP05_NOTE",
+        "CH06_EP05_EXIT",
+        "CH06_EP05_END",
+        "CH06_EP06_N001",
+        "CH06_EP06_HOME",
+        "CH06_EP06_CHEN",
+        "CH06_EP06_PHONE",
+        "CH06_EP06_DECEMBER",
+        "CH06_EP06_END",
+        "CH07_EP01_N001",
+        "CH07_EP01_AFTER_STATION",
+        "CH07_EP01_EARLY",
+        "CH07_EP01_HOME",
+        "CH07_EP01_LIST",
+        "CH07_EP01_NOTE",
+        "CH07_EP01_END",
+        "CH07_EP02_N001",
+        "CH07_EP02_NEXT",
+        "CH07_EP02_DINNER",
+        "CH07_EP02_END",
+        "CH07_EP03_N001",
+        "CH07_EP03_ASK",
+        "CH07_EP03_WORK",
+        "CH07_EP03_END",
+        "CH07_EP04_N001",
+        "CH07_EP04_CHOICE",
+        "CH07_EP04_TOGETHER",
+        "CH07_EP04_CONFIRM",
+        "CH07_EP04_CLOSE",
+        "CH07_EP04_END",
+        "CH07_EP05_N001",
+        "CH07_EP05_NOTE",
+        "CH07_EP05_WORK",
+        "CH07_EP05_END",
+        "CH07_EP06_N001",
+        "CH07_EP06_NOTE",
+        "CH07_EP06_SHARED",
+        "CH07_EP06_MORNING",
+        "CH07_EP06_END",
+        "CH07_EP07_N001",
+        "CH07_EP07_DIVIDE",
+        "CH07_EP07_NEXT",
+        "CH07_EP07_END",
+        "CH07_EP08_N001",
+        "CH07_EP08_PHOTO_INTRO",
+        "CH07_EP08_PHOTO",
+        "CH07_EP08_CLOSE",
+        "CH07_EP08_RETURN",
+        "CH07_EP08_END",
+        "CH08_EP01_N001",
+        "CH08_EP01_SHARED",
+        "CH08_EP01_ARCHIVE",
+        "CH08_EP01_CLOSE",
+        "CH08_EP01_END",
+        "CH08_EP02_N001",
+        "CH08_EP02_COMPARE",
+        "CH08_EP02_DATES",
+        "CH08_EP02_CLOSE",
+        "CH08_EP02_END",
+        "CH08_EP03_N001",
+        "CH08_EP03_DESK",
+        "CH08_EP03_UNREAD",
+        "CH08_EP03_CLOSE",
+        "CH08_EP03_END",
+        "CH08_EP04_N001",
+        "CH08_EP04_CALL",
+        "CH08_EP04_CLOSE",
+        "CH08_EP04_END",
+        "CH08_EP05_N001",
+        "CH08_EP05_PARTIAL",
+        "CH08_EP05_CLOSE",
+        "CH08_EP05_END",
+        "CH08_EP06_N001",
+        "CH08_EP06_TOLD",
+        "CH08_EP06_CLOSE",
+        "CH08_EP06_END",
+        "CH09_EP01_N001",
+        "CH09_EP01_SHARED",
+        "CH09_EP01_DRAFT",
+        "CH09_EP01_CONTACT_CHOICE",
+        "CH09_EP01_UNSENT",
+        "CH09_EP01_END",
+        "CH09_EP02_NO_CONTACT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE",
+        "CH09_EP02_END",
+        "CH09_EP03_LOCAL",
+        "CH09_EP03_CLOSE",
+        "CH09_EP03_HOSPITAL",
+        "CH09_EP03_HOME",
+        "CH09_EP03_END",
+        "CH09_EP04_N001",
+        "CH09_EP04_JOB_SHARED",
+        "CH09_EP04_COMMUTE",
+        "CH09_EP04_NO_INVITE",
+        "CH09_EP04_CLOSE",
+        "CH09_EP04_END",
+        "CH09_EP05_N001",
+        "CH09_EP05_TEACHER",
+        "CH09_EP05_ALONE",
+        "CH09_EP05_CLOSE",
+        "CH09_EP05_END",
+        "CH09_EP06_N001",
+        "CH09_EP06_UNSENT",
+        "CH09_EP06_CLOSE",
+        "CH09_EP06_BAG",
+        "CH09_EP06_END",
+        "CH10_EP01_N001",
+        "CH10_EP01_LISTEN",
+        "CH10_EP01_HOME",
+        "CH10_EP01_END",
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING",
+        "CH10_EP02_END",
+        "CH10_EP03_N001",
+        "CH10_EP03_SHARED",
+        "CH10_EP03_ANRAN",
+        "CH10_EP03_END",
+        "CH10_EP04_N001",
+        "CH10_EP04_UNKNOWN",
+        "CH10_EP04_UNMET",
+        "CH10_EP04_END",
+        "CH10_EP05_N001",
+        "CH10_EP05_LETTER",
+        "CH10_EP05_AFTER",
+        "CH10_EP05_NIGHT",
+        "CH10_EP05_END",
+        "CH10_EP06_N001",
+        "CH10_EP06_LATER",
+        "CH10_END_TOGETHER"
+      ],
+      "episodes": [
+        {
+          "episode": "CH01_EP01",
+          "characters": 720,
+          "estimatedMinutes": [
+            1.44,
+            1.8
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP02",
+          "characters": 687,
+          "estimatedMinutes": [
+            1.37,
+            1.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP03",
+          "characters": 1114,
+          "estimatedMinutes": [
+            2.23,
+            2.79
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP04",
+          "characters": 944,
+          "estimatedMinutes": [
+            1.89,
+            2.36
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP01",
+          "characters": 1098,
+          "estimatedMinutes": [
+            2.2,
+            2.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP02",
+          "characters": 1057,
+          "estimatedMinutes": [
+            2.11,
+            2.64
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP03",
+          "characters": 1482,
+          "estimatedMinutes": [
+            2.96,
+            3.71
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP04",
+          "characters": 1479,
+          "estimatedMinutes": [
+            2.96,
+            3.7
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP05",
+          "characters": 1433,
+          "estimatedMinutes": [
+            2.87,
+            3.58
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP06",
+          "characters": 2016,
+          "estimatedMinutes": [
+            4.03,
+            5.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP01",
+          "characters": 1444,
+          "estimatedMinutes": [
+            2.89,
+            3.61
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP02",
+          "characters": 1014,
+          "estimatedMinutes": [
+            2.03,
+            2.54
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP03",
+          "characters": 1387,
+          "estimatedMinutes": [
+            2.77,
+            3.47
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP04",
+          "characters": 1141,
+          "estimatedMinutes": [
+            2.28,
+            2.85
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP05",
+          "characters": 1466,
+          "estimatedMinutes": [
+            2.93,
+            3.67
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP06",
+          "characters": 1618,
+          "estimatedMinutes": [
+            3.24,
+            4.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP01",
+          "characters": 1349,
+          "estimatedMinutes": [
+            2.7,
+            3.37
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP02",
+          "characters": 1310,
+          "estimatedMinutes": [
+            2.62,
+            3.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP03",
+          "characters": 1812,
+          "estimatedMinutes": [
+            3.62,
+            4.53
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP04",
+          "characters": 905,
+          "estimatedMinutes": [
+            1.81,
+            2.26
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH04_EP05",
+          "characters": 1510,
+          "estimatedMinutes": [
+            3.02,
+            3.77
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP06",
+          "characters": 1708,
+          "estimatedMinutes": [
+            3.42,
+            4.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP01",
+          "characters": 1294,
+          "estimatedMinutes": [
+            2.59,
+            3.23
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP02",
+          "characters": 1243,
+          "estimatedMinutes": [
+            2.49,
+            3.11
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP03",
+          "characters": 1320,
+          "estimatedMinutes": [
+            2.64,
+            3.3
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP04",
+          "characters": 1462,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP05",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH05_EP06",
+          "characters": 1332,
+          "estimatedMinutes": [
+            2.66,
+            3.33
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP01",
+          "characters": 1589,
+          "estimatedMinutes": [
+            3.18,
+            3.97
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP02",
+          "characters": 1288,
+          "estimatedMinutes": [
+            2.58,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP03",
+          "characters": 1087,
+          "estimatedMinutes": [
+            2.17,
+            2.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH06_EP04",
+          "characters": 1796,
+          "estimatedMinutes": [
+            3.59,
+            4.49
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP05",
+          "characters": 1345,
+          "estimatedMinutes": [
+            2.69,
+            3.36
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP06",
+          "characters": 1741,
+          "estimatedMinutes": [
+            3.48,
+            4.35
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP01",
+          "characters": 1236,
+          "estimatedMinutes": [
+            2.47,
+            3.09
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP02",
+          "characters": 1132,
+          "estimatedMinutes": [
+            2.26,
+            2.83
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP03",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP04",
+          "characters": 907,
+          "estimatedMinutes": [
+            1.81,
+            2.27
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP05",
+          "characters": 800,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP06",
+          "characters": 897,
+          "estimatedMinutes": [
+            1.79,
+            2.24
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP07",
+          "characters": 929,
+          "estimatedMinutes": [
+            1.86,
+            2.32
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP08",
+          "characters": 1242,
+          "estimatedMinutes": [
+            2.48,
+            3.1
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP01",
+          "characters": 922,
+          "estimatedMinutes": [
+            1.84,
+            2.31
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP02",
+          "characters": 1108,
+          "estimatedMinutes": [
+            2.22,
+            2.77
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP03",
+          "characters": 683,
+          "estimatedMinutes": [
+            1.37,
+            1.71
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP04",
+          "characters": 873,
+          "estimatedMinutes": [
+            1.75,
+            2.18
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP05",
+          "characters": 681,
+          "estimatedMinutes": [
+            1.36,
+            1.7
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP06",
+          "characters": 711,
+          "estimatedMinutes": [
+            1.42,
+            1.78
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP01",
+          "characters": 783,
+          "estimatedMinutes": [
+            1.57,
+            1.96
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP02",
+          "characters": 1005,
+          "estimatedMinutes": [
+            2.01,
+            2.51
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP03",
+          "characters": 1029,
+          "estimatedMinutes": [
+            2.06,
+            2.57
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP04",
+          "characters": 908,
+          "estimatedMinutes": [
+            1.82,
+            2.27
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP05",
+          "characters": 807,
+          "estimatedMinutes": [
+            1.61,
+            2.02
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP06",
+          "characters": 802,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP01",
+          "characters": 637,
+          "estimatedMinutes": [
+            1.27,
+            1.59
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP02",
+          "characters": 1022,
+          "estimatedMinutes": [
+            2.04,
+            2.56
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP03",
+          "characters": 700,
+          "estimatedMinutes": [
+            1.4,
+            1.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP04",
+          "characters": 558,
+          "estimatedMinutes": [
+            1.12,
+            1.4
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP05",
+          "characters": 1079,
+          "estimatedMinutes": [
+            2.16,
+            2.7
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP06",
+          "characters": 850,
+          "estimatedMinutes": [
+            1.7,
+            2.13
+          ],
+          "outsideTarget": true
+        }
+      ],
+      "characters": 68392,
+      "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
+    },
+    {
+      "ending": "IF_THEN",
+      "evidence": "NONE",
+      "visited": [
+        "CH01_EP01_N001",
+        "CH01_EP01_DAILY",
+        "CH01_EP01_PARCEL",
+        "CH01_EP01_END",
+        "CH01_EP02_N001",
+        "CH01_EP02_C001",
+        "CH01_EP02_PHOTO_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_LETTER_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_TICKET",
+        "CH01_EP02_C001",
+        "CH01_EP02_ROPE",
+        "CH01_EP02_C001",
+        "CH01_EP02_MP3_001",
+        "CH01_EP02_C001",
+        "CH01_EP02_NAME_001",
+        "CH01_EP02_C002",
+        "CH01_EP02_B001",
+        "CH01_EP02_END",
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A",
+        "CH01_EP03_LETTER_001",
+        "CH01_EP03_TO_MP3",
+        "CH01_EP03_END",
+        "CH01_EP04_N001",
+        "CH01_EP04_N002",
+        "CH01_EP04_RECORDING",
+        "CH01_EP04_N008",
+        "CH01_EP04_BUS",
+        "CH01_EP04_CLASSMATES",
+        "CH01_EP04_WINDOW",
+        "CH01_EP04_END",
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS",
+        "CH02_EP01_END",
+        "CH02_EP02_N001",
+        "CH02_EP02_GYM",
+        "CH02_EP02_PHOTO",
+        "CH02_EP02_BUS_HOME",
+        "CH02_EP02_NOTEBOOK",
+        "CH02_EP02_END",
+        "CH02_EP03_N001",
+        "CH02_EP03_FACTORY",
+        "CH02_EP03_ERRANDS",
+        "CH02_EP03_REPAIR",
+        "CH02_EP03_END",
+        "CH02_EP04_N001",
+        "CH02_EP04_ROUTE",
+        "CH02_EP04_CHENYE",
+        "CH02_EP04_LOOK",
+        "CH02_EP04_END",
+        "CH02_EP05_N001",
+        "CH02_EP05_NUMBER",
+        "CH02_EP05_MESSAGES",
+        "CH02_EP05_SATURDAY",
+        "CH02_EP05_END",
+        "CH02_EP06_N001",
+        "CH02_EP06_PROMISE",
+        "CH02_EP06_FAMILY",
+        "CH02_EP06_CHOICE",
+        "CH02_EP06_TOLD",
+        "CH02_EP06_SATURDAY",
+        "CH02_EP06_HOME_TOLD",
+        "CH02_EP06_CLOSE",
+        "CH02_EP06_END",
+        "CH03_EP01_N001",
+        "CH03_EP01_BUS",
+        "CH03_EP01_HOME",
+        "CH03_EP01_MESSAGE",
+        "CH03_EP01_END",
+        "CH03_EP02_N001",
+        "CH03_EP02_KNOWN",
+        "CH03_EP02_DISHES",
+        "CH03_EP02_END",
+        "CH03_EP03_N001",
+        "CH03_EP03_XIA_HOME",
+        "CH03_EP03_EXAM",
+        "CH03_EP03_REVISION",
+        "CH03_EP03_END",
+        "CH03_EP04_N001",
+        "CH03_EP04_FAMILY_KNOWN",
+        "CH03_EP04_CHOICE",
+        "CH03_EP04_DISCUSS",
+        "CH03_EP04_RETURN",
+        "CH03_EP04_END",
+        "CH03_EP05_N001",
+        "CH03_EP05_ROOM",
+        "CH03_EP05_TREE",
+        "CH03_EP05_PHOTO",
+        "CH03_EP05_BAG",
+        "CH03_EP05_END",
+        "CH03_EP06_N001",
+        "CH03_EP06_DISCUSS",
+        "CH03_EP06_FAMILY_KNOWN",
+        "CH03_EP06_LETTER",
+        "CH03_EP06_ENVELOPE",
+        "CH03_EP06_PHONE",
+        "CH03_EP06_END",
+        "CH04_EP01_N001",
+        "CH04_EP01_FOOD",
+        "CH04_EP01_ASK",
+        "CH04_EP01_PHONE",
+        "CH04_EP01_END",
+        "CH04_EP02_N001",
+        "CH04_EP02_PAPER",
+        "CH04_EP02_COMPARE",
+        "CH04_EP02_MESSAGES",
+        "CH04_EP02_LATE",
+        "CH04_EP02_END",
+        "CH04_EP03_N001",
+        "CH04_EP03_HOME",
+        "CH04_EP03_KNOWN",
+        "CH04_EP03_RETURN",
+        "CH04_EP03_MOTHER",
+        "CH04_EP03_END",
+        "CH04_EP04_N001",
+        "CH04_EP04_CHOICE",
+        "CH04_EP04_ASK",
+        "CH04_EP04_MESSAGES",
+        "CH04_EP04_END",
+        "CH04_EP05_N001",
+        "CH04_EP05_AGREED",
+        "CH04_EP05_STREET",
+        "CH04_EP05_PHOTO",
+        "CH04_EP05_NIGHT",
+        "CH04_EP05_END",
+        "CH04_EP06_N001",
+        "CH04_EP06_LISTEN",
+        "CH04_EP06_WINTER",
+        "CH04_EP06_ASK_AGAIN",
+        "CH04_EP06_CLOSE",
+        "CH04_EP06_END",
+        "CH05_EP01_N001",
+        "CH05_EP01_CHECK_FIRST",
+        "CH05_EP01_FACTORY",
+        "CH05_EP01_COST_NOTE",
+        "CH05_EP01_WEEKEND",
+        "CH05_EP01_END",
+        "CH05_EP02_N001",
+        "CH05_EP02_HOME",
+        "CH05_EP02_FAMILY_KNOWN",
+        "CH05_EP02_MESSAGES",
+        "CH05_EP02_END",
+        "CH05_EP03_N001",
+        "CH05_EP03_ASK_ROOM",
+        "CH05_EP03_COST",
+        "CH05_EP03_CHEN",
+        "CH05_EP03_END",
+        "CH05_EP04_N001",
+        "CH05_EP04_SPRING",
+        "CH05_EP04_COMPARE",
+        "CH05_EP04_JOB_NOTE",
+        "CH05_EP04_CHEN",
+        "CH05_EP04_END",
+        "CH05_EP05_N001",
+        "CH05_EP05_CHOICE",
+        "CH05_EP05_SHARE",
+        "CH05_EP05_MESSAGES",
+        "CH05_EP05_END",
+        "CH05_EP06_N001",
+        "CH05_EP06_SEPARATE",
+        "CH05_EP06_PACK",
+        "CH05_EP06_NOTE",
+        "CH05_EP06_CLOSE",
+        "CH05_EP06_END",
+        "CH06_EP01_N001",
+        "CH06_EP01_ARRIVAL",
+        "CH06_EP01_SHARE",
+        "CH06_EP01_HOUSE",
+        "CH06_EP01_PAPER",
+        "CH06_EP01_PHONE",
+        "CH06_EP01_END",
+        "CH06_EP02_N001",
+        "CH06_EP02_EARLY",
+        "CH06_EP02_MEALS",
+        "CH06_EP02_CHEN",
+        "CH06_EP02_END",
+        "CH06_EP03_N001",
+        "CH06_EP03_ASKED",
+        "CH06_EP03_LISTEN",
+        "CH06_EP03_SHIFT_NOTE",
+        "CH06_EP03_MESSAGES",
+        "CH06_EP03_END",
+        "CH06_EP04_N001",
+        "CH06_EP04_SUPPER",
+        "CH06_EP04_SEPARATE",
+        "CH06_EP04_ROOM",
+        "CH06_EP04_CLOSE",
+        "CH06_EP04_END",
+        "CH06_EP05_N001",
+        "CH06_EP05_TALK",
+        "CH06_EP05_PLATFORM",
+        "CH06_EP05_NOTE",
+        "CH06_EP05_EXIT",
+        "CH06_EP05_END",
+        "CH06_EP06_N001",
+        "CH06_EP06_HOME",
+        "CH06_EP06_CHEN",
+        "CH06_EP06_PHONE",
+        "CH06_EP06_DECEMBER",
+        "CH06_EP06_END",
+        "CH07_EP01_N001",
+        "CH07_EP01_AFTER_STATION",
+        "CH07_EP01_EARLY",
+        "CH07_EP01_HOME",
+        "CH07_EP01_LIST",
+        "CH07_EP01_NOTE",
+        "CH07_EP01_END",
+        "CH07_EP02_N001",
+        "CH07_EP02_NEXT",
+        "CH07_EP02_DINNER",
+        "CH07_EP02_END",
+        "CH07_EP03_N001",
+        "CH07_EP03_ASK",
+        "CH07_EP03_WORK",
+        "CH07_EP03_END",
+        "CH07_EP04_N001",
+        "CH07_EP04_CHOICE",
+        "CH07_EP04_PAUSE",
+        "CH07_EP04_CONFIRM",
+        "CH07_EP04_CLOSE",
+        "CH07_EP04_END",
+        "CH07_EP05_N001",
+        "CH07_EP05_NOTE",
+        "CH07_EP05_WORK",
+        "CH07_EP05_END",
+        "CH07_EP06_N001",
+        "CH07_EP06_NOTE",
+        "CH07_EP06_CHANGED",
+        "CH07_EP06_MORNING",
+        "CH07_EP06_END",
+        "CH07_EP07_N001",
+        "CH07_EP07_REVISE",
+        "CH07_EP07_NEXT",
+        "CH07_EP07_END",
+        "CH07_EP08_N001",
+        "CH07_EP08_PHOTO_INTRO",
+        "CH07_EP08_PHOTO",
+        "CH07_EP08_CLOSE",
+        "CH07_EP08_RETURN",
+        "CH07_EP08_END",
+        "CH08_EP01_N001",
+        "CH08_EP01_COMMON",
+        "CH08_EP01_ARCHIVE",
+        "CH08_EP01_CLOSE",
+        "CH08_EP01_END",
+        "CH08_EP02_N001",
+        "CH08_EP02_COMPARE",
+        "CH08_EP02_DATES",
+        "CH08_EP02_CLOSE",
+        "CH08_EP02_END",
+        "CH08_EP03_N001",
+        "CH08_EP03_DESK",
+        "CH08_EP03_UNREAD",
+        "CH08_EP03_CLOSE",
+        "CH08_EP03_END",
+        "CH08_EP04_N001",
+        "CH08_EP04_CALL",
+        "CH08_EP04_CLOSE",
+        "CH08_EP04_END",
+        "CH08_EP05_N001",
+        "CH08_EP05_PARTIAL",
+        "CH08_EP05_CLOSE",
+        "CH08_EP05_END",
+        "CH08_EP06_N001",
+        "CH08_EP06_TOLD",
+        "CH08_EP06_CLOSE",
+        "CH08_EP06_END",
+        "CH09_EP01_N001",
+        "CH09_EP01_COMMON",
+        "CH09_EP01_DRAFT",
+        "CH09_EP01_CONTACT_CHOICE",
+        "CH09_EP01_UNSENT",
+        "CH09_EP01_END",
+        "CH09_EP02_NO_CONTACT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE",
+        "CH09_EP02_END",
+        "CH09_EP03_LOCAL",
+        "CH09_EP03_CLOSE",
+        "CH09_EP03_HOSPITAL",
+        "CH09_EP03_HOME",
+        "CH09_EP03_END",
+        "CH09_EP04_N001",
+        "CH09_EP04_JOB_SHARED",
+        "CH09_EP04_COMMUTE",
+        "CH09_EP04_NO_INVITE",
+        "CH09_EP04_CLOSE",
+        "CH09_EP04_END",
+        "CH09_EP05_N001",
+        "CH09_EP05_TEACHER",
+        "CH09_EP05_ALONE",
+        "CH09_EP05_CLOSE",
+        "CH09_EP05_END",
+        "CH09_EP06_N001",
+        "CH09_EP06_UNSENT",
+        "CH09_EP06_CLOSE",
+        "CH09_EP06_BAG",
+        "CH09_EP06_END",
+        "CH10_EP01_N001",
+        "CH10_EP01_LISTEN",
+        "CH10_EP01_HOME",
+        "CH10_EP01_END",
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING",
+        "CH10_EP02_END",
+        "CH10_EP03_N001",
+        "CH10_EP03_REVISED",
+        "CH10_EP03_ANRAN",
+        "CH10_EP03_END",
+        "CH10_EP04_N001",
+        "CH10_EP04_UNKNOWN",
+        "CH10_EP04_UNMET",
+        "CH10_EP04_END",
+        "CH10_EP05_N001",
+        "CH10_EP05_LETTER",
+        "CH10_EP05_AFTER",
+        "CH10_EP05_NIGHT",
+        "CH10_EP05_END",
+        "CH10_EP06_N001",
+        "CH10_EP06_LATER",
+        "CH10_END_IF_THEN"
+      ],
+      "episodes": [
+        {
+          "episode": "CH01_EP01",
+          "characters": 720,
+          "estimatedMinutes": [
+            1.44,
+            1.8
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP02",
+          "characters": 687,
+          "estimatedMinutes": [
+            1.37,
+            1.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP03",
+          "characters": 1114,
+          "estimatedMinutes": [
+            2.23,
+            2.79
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH01_EP04",
+          "characters": 944,
+          "estimatedMinutes": [
+            1.89,
+            2.36
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP01",
+          "characters": 1098,
+          "estimatedMinutes": [
+            2.2,
+            2.75
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP02",
+          "characters": 1057,
+          "estimatedMinutes": [
+            2.11,
+            2.64
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH02_EP03",
+          "characters": 1482,
+          "estimatedMinutes": [
+            2.96,
+            3.71
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP04",
+          "characters": 1479,
+          "estimatedMinutes": [
+            2.96,
+            3.7
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP05",
+          "characters": 1433,
+          "estimatedMinutes": [
+            2.87,
+            3.58
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH02_EP06",
+          "characters": 2016,
+          "estimatedMinutes": [
+            4.03,
+            5.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP01",
+          "characters": 1444,
+          "estimatedMinutes": [
+            2.89,
+            3.61
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP02",
+          "characters": 1014,
+          "estimatedMinutes": [
+            2.03,
+            2.54
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP03",
+          "characters": 1387,
+          "estimatedMinutes": [
+            2.77,
+            3.47
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP04",
+          "characters": 1141,
+          "estimatedMinutes": [
+            2.28,
+            2.85
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH03_EP05",
+          "characters": 1466,
+          "estimatedMinutes": [
+            2.93,
+            3.67
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH03_EP06",
+          "characters": 1618,
+          "estimatedMinutes": [
+            3.24,
+            4.04
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP01",
+          "characters": 1349,
+          "estimatedMinutes": [
+            2.7,
+            3.37
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP02",
+          "characters": 1310,
+          "estimatedMinutes": [
+            2.62,
+            3.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP03",
+          "characters": 1812,
+          "estimatedMinutes": [
+            3.62,
+            4.53
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP04",
+          "characters": 905,
+          "estimatedMinutes": [
+            1.81,
+            2.26
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH04_EP05",
+          "characters": 1510,
+          "estimatedMinutes": [
+            3.02,
+            3.77
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH04_EP06",
+          "characters": 1708,
+          "estimatedMinutes": [
+            3.42,
+            4.27
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP01",
+          "characters": 1294,
+          "estimatedMinutes": [
+            2.59,
+            3.23
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP02",
+          "characters": 1243,
+          "estimatedMinutes": [
+            2.49,
+            3.11
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP03",
+          "characters": 1320,
+          "estimatedMinutes": [
+            2.64,
+            3.3
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP04",
+          "characters": 1462,
+          "estimatedMinutes": [
+            2.92,
+            3.65
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH05_EP05",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH05_EP06",
+          "characters": 1332,
+          "estimatedMinutes": [
+            2.66,
+            3.33
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP01",
+          "characters": 1589,
+          "estimatedMinutes": [
+            3.18,
+            3.97
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP02",
+          "characters": 1288,
+          "estimatedMinutes": [
+            2.58,
+            3.22
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP03",
+          "characters": 1087,
+          "estimatedMinutes": [
+            2.17,
+            2.72
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH06_EP04",
+          "characters": 1796,
+          "estimatedMinutes": [
+            3.59,
+            4.49
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP05",
+          "characters": 1345,
+          "estimatedMinutes": [
+            2.69,
+            3.36
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH06_EP06",
+          "characters": 1741,
+          "estimatedMinutes": [
+            3.48,
+            4.35
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP01",
+          "characters": 1236,
+          "estimatedMinutes": [
+            2.47,
+            3.09
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH07_EP02",
+          "characters": 1132,
+          "estimatedMinutes": [
+            2.26,
+            2.83
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP03",
+          "characters": 950,
+          "estimatedMinutes": [
+            1.9,
+            2.38
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP04",
+          "characters": 913,
+          "estimatedMinutes": [
+            1.83,
+            2.28
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP05",
+          "characters": 800,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP06",
+          "characters": 900,
+          "estimatedMinutes": [
+            1.8,
+            2.25
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP07",
+          "characters": 941,
+          "estimatedMinutes": [
+            1.88,
+            2.35
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH07_EP08",
+          "characters": 1242,
+          "estimatedMinutes": [
+            2.48,
+            3.1
+          ],
+          "outsideTarget": false
+        },
+        {
+          "episode": "CH08_EP01",
+          "characters": 896,
+          "estimatedMinutes": [
+            1.79,
+            2.24
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP02",
+          "characters": 1108,
+          "estimatedMinutes": [
+            2.22,
+            2.77
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP03",
+          "characters": 683,
+          "estimatedMinutes": [
+            1.37,
+            1.71
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP04",
+          "characters": 873,
+          "estimatedMinutes": [
+            1.75,
+            2.18
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP05",
+          "characters": 681,
+          "estimatedMinutes": [
+            1.36,
+            1.7
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH08_EP06",
+          "characters": 711,
+          "estimatedMinutes": [
+            1.42,
+            1.78
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP01",
+          "characters": 764,
+          "estimatedMinutes": [
+            1.53,
+            1.91
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP02",
+          "characters": 1005,
+          "estimatedMinutes": [
+            2.01,
+            2.51
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP03",
+          "characters": 1029,
+          "estimatedMinutes": [
+            2.06,
+            2.57
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP04",
+          "characters": 908,
+          "estimatedMinutes": [
+            1.82,
+            2.27
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP05",
+          "characters": 807,
+          "estimatedMinutes": [
+            1.61,
+            2.02
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH09_EP06",
+          "characters": 802,
+          "estimatedMinutes": [
+            1.6,
+            2
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP01",
+          "characters": 637,
+          "estimatedMinutes": [
+            1.27,
+            1.59
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP02",
+          "characters": 1022,
+          "estimatedMinutes": [
+            2.04,
+            2.56
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP03",
+          "characters": 721,
+          "estimatedMinutes": [
+            1.44,
+            1.8
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP04",
+          "characters": 558,
+          "estimatedMinutes": [
+            1.12,
+            1.4
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP05",
+          "characters": 1079,
+          "estimatedMinutes": [
+            2.16,
+            2.7
+          ],
+          "outsideTarget": true
+        },
+        {
+          "episode": "CH10_EP06",
+          "characters": 816,
+          "estimatedMinutes": [
+            1.63,
+            2.04
+          ],
+          "outsideTarget": true
+        }
+      ],
+      "characters": 68355,
+      "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
+    }
+  ],
+  "sequences": [
+    {
+      "profile": "REUNION",
+      "scene": "家中",
+      "nodes": [
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A"
+      ],
+      "characters": 896,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "REUNION",
+      "scene": "南城二中",
+      "nodes": [
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS"
+      ],
+      "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "REUNION",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP03_EARLY",
+        "CH09_EP03_REPLY",
+        "CH09_EP03_OWN_LIFE",
+        "CH09_EP03_CLOSE"
+      ],
+      "characters": 806,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "REUNION",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP06_N001",
+        "CH09_EP06_BEFORE",
+        "CH09_EP06_MET",
+        "CH09_EP06_CLOSE"
+      ],
+      "characters": 693,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "REUNION",
+      "scene": "家中",
+      "nodes": [
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING"
+      ],
+      "characters": 1022,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "GOODBYE",
+      "scene": "家中",
+      "nodes": [
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A"
+      ],
+      "characters": 896,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "GOODBYE",
+      "scene": "南城二中",
+      "nodes": [
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS"
+      ],
+      "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "GOODBYE",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP03_EARLY",
+        "CH09_EP03_REPLY",
+        "CH09_EP03_OWN_LIFE",
+        "CH09_EP03_CLOSE"
+      ],
+      "characters": 806,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "GOODBYE",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP06_N001",
+        "CH09_EP06_BEFORE",
+        "CH09_EP06_CLOSED",
+        "CH09_EP06_CLOSE"
+      ],
+      "characters": 653,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "GOODBYE",
+      "scene": "家中",
+      "nodes": [
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING"
+      ],
+      "characters": 1022,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNDERSTAND",
+      "scene": "家中",
+      "nodes": [
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A"
+      ],
+      "characters": 896,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNDERSTAND",
+      "scene": "南城二中",
+      "nodes": [
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS"
+      ],
+      "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNDERSTAND",
+      "scene": "家中",
+      "nodes": [
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING"
+      ],
+      "characters": 1022,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNSENT",
+      "scene": "家中",
+      "nodes": [
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A"
+      ],
+      "characters": 896,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNSENT",
+      "scene": "南城二中",
+      "nodes": [
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS"
+      ],
+      "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNSENT",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP03_EARLY",
+        "CH09_EP03_REPLY",
+        "CH09_EP03_OWN_LIFE",
+        "CH09_EP03_CLOSE"
+      ],
+      "characters": 806,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNSENT",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP06_N001",
+        "CH09_EP06_BEFORE",
+        "CH09_EP06_MET",
+        "CH09_EP06_CLOSE"
+      ],
+      "characters": 693,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNSENT",
+      "scene": "家中",
+      "nodes": [
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING"
+      ],
+      "characters": 1022,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "TOGETHER",
+      "scene": "家中",
+      "nodes": [
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A"
+      ],
+      "characters": 896,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "TOGETHER",
+      "scene": "南城二中",
+      "nodes": [
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS"
+      ],
+      "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "TOGETHER",
+      "scene": "家中",
+      "nodes": [
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING"
+      ],
+      "characters": 1022,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "IF_THEN",
+      "scene": "家中",
+      "nodes": [
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_PHONE",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A"
+      ],
+      "characters": 896,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "IF_THEN",
+      "scene": "南城二中",
+      "nodes": [
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS"
+      ],
+      "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "IF_THEN",
+      "scene": "家中",
+      "nodes": [
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_FRIEND",
+        "CH10_EP02_EVENING"
+      ],
+      "characters": 1022,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    }
+  ]
+}

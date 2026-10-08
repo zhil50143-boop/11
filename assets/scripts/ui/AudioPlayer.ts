@@ -5,7 +5,15 @@ import { DocumentPanel } from './DocumentPanel';
 export class AudioPlayer {
   private generation = 0;
   private source: AudioSource | null = null;
-  dispose(): void { this.generation++; this.source?.stop(); this.source?.destroy(); this.source = null }
+  private ended: { root: Node; callback: () => void } | null = null;
+  dispose(): void {
+    this.generation++;
+    if (this.ended) {
+      this.ended.root.off(AudioSource.EventType.ENDED, this.ended.callback);
+      this.ended = null;
+    }
+    this.source?.stop(); this.source?.destroy(); this.source = null;
+  }
   show(root: Node, node: InteractionStoryNode, done: () => void, offset = 0, changed: (offset: number) => void = () => {}): void {
     this.dispose(); const generation = this.generation;
     const label = text(root, node.text, 250, 300);
@@ -37,10 +45,13 @@ export class AudioPlayer {
       play.interactable = true;
       if (error || !clip) { label.string = '录音暂时无法播放。可以读文字继续。'; return }
       this.source = root.addComponent(AudioSource); this.source.clip = clip;
-      this.source.node.once(AudioSource.EventType.ENDED, () => {
+      const ended = () => {
         if (generation !== this.generation || !root.isValid) return;
+        this.ended = null;
         changed(1); finish.interactable = true;
-      });
+      };
+      this.ended = { root, callback: ended };
+      root.once(AudioSource.EventType.ENDED, ended);
       label.string = node.text; pause.interactable = true;
     });
   }

@@ -1,0 +1,20 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const{chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const[url,out='work/generated-art-fallback']=process.argv.slice(2);if(!url)throw Error('Usage: URL [report-directory]');let browser;
+(async()=>{
+ browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ const context=await browser.newContext({viewport:{width:390,height:780},hasTouch:true,isMobile:true});const page=await context.newPage(),errors=[],blocked=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.route(/\/assets\/resources\/native\/.*\.(jpg|png)(?:\?|$)/,route=>{blocked.push(route.request().url());return route.abort('failed')});
+ const snapshot=()=>page.evaluate(async()=>{const cc=await System.import('cc'),scene=cc.director.getScene(),canvas=document.querySelector('canvas').getBoundingClientRect(),scale=Math.min(canvas.width/1080,canvas.height/1920),buttons=[],labels=[];let state,fallback=false;function walk(n){if(!n.activeInHierarchy)return;const l=n.getComponent(cc.Label);if(l)labels.push(l.string);const m=n.getComponent('StoryManager');if(m?.hasState())state=m.state;const b=n.getComponent(cc.Button);if(b){const title=n.children.find(c=>c.getComponent(cc.Label))?.getComponent(cc.Label)?.string;buttons.push({title,enabled:b.interactable,x:canvas.x+canvas.width/2+n.worldPosition.x*scale,y:canvas.y+canvas.height/2-n.worldPosition.y*scale});if(title==='继续'&&scene.name==='Main')fallback=!!n.getComponent(cc.Graphics)?.enabled}for(const c of n.children)walk(c)}walk(scene);return{scene:scene.name,state,buttons,labels,fallback}});
+ const tap=async title=>{for(let i=0;i<200;i++){const b=(await snapshot()).buttons.find(b=>b.title===title&&b.enabled);if(b){await page.touchscreen.tap(b.x,b.y);await page.waitForTimeout(350);return}await page.waitForTimeout(100)}throw Error('Missing '+title)};
+ await page.goto(url);await page.waitForFunction(()=>window.cc?.director.getScene()?.name==='Main',{},{timeout:30000});
+ for(let i=0;i<120&&!(await snapshot()).fallback;i++)await page.waitForTimeout(100);assert.ok((await snapshot()).fallback,'Envelope fallback remains a readable action');
+ fs.mkdirSync(out,{recursive:true});await page.screenshot({path:path.join(out,'main-images-failed.png')});await tap('继续');
+ for(let i=0;i<120&&!(await snapshot()).state;i++)await page.waitForTimeout(100);
+ const first=await snapshot();assert.equal(first.state.progress.nodeId,'CH01_EP01_N001');assert.ok(first.labels.includes('雨夜回家'));
+ await page.waitForTimeout(2000);await page.screenshot({path:path.join(out,'reading-images-failed.png')});await tap('继续');
+ const next=await snapshot();assert.equal(next.state.progress.nodeId,'CH01_EP01_DAILY');assert.ok(blocked.length>=3);assert.equal(errors.length,0);
+ const report={result:'PASS',method:'All resource-native PNG/JPG requests intentionally aborted; genuine touch from Main into first chapter and next passage. No seeded save, no engine-running state edits. Native readable fallback is failure handling, not final art.',blockedImages:blocked.length,firstNode:first.state.progress.nodeId,nextNode:next.state.progress.nodeId,pageErrors:errors};
+ fs.writeFileSync(path.join(out,'art-fallback.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));await browser.close();
+})().catch(async error=>{console.error(error);await browser?.close();process.exitCode=1});

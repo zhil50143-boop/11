@@ -4,6 +4,7 @@ import { SaveManager } from '../save/SaveManager';
 import { makeCanvas, container, text, button, clear } from './UIFactory';
 import { DialoguePanel } from './DialoguePanel';
 import { PassagePanel } from './PassagePanel';
+import { LifeReadingPanel } from './LifeReadingPanel';
 import { ChoicePanel } from './ChoicePanel';
 import { PhotoViewer } from './PhotoViewer';
 import { LetterViewer } from './LetterViewer';
@@ -26,7 +27,7 @@ export class StoryView extends Component {
   };
   async start(): Promise<void> {
     const canvas = makeCanvas(this.node);
-    this.status = container(canvas, 'Status'); this.root = container(canvas, 'Story');
+    this.root = container(canvas, 'Story'); this.status = container(canvas, 'Status');
     text(this.root, '正在打开……', 0);
     this.manager = this.node.addComponent(StoryManager);
     this.manager.events.on('change', this.onChange); game.on(Game.EVENT_HIDE, this.onHide); game.on(Game.EVENT_SHOW, this.onShow);
@@ -51,13 +52,17 @@ export class StoryView extends Component {
       }); return;
     }
     const life = this.manager.state.life;
-    text(this.status, life.time.label + ' · ' + life.time.location, 800, 100, 30);
+    const paperReading = event.type === 'node' && event.node.type === 'passage'
+      && this.manager.state.progress.chapterId === 'CH01' && !!LifeReadingPanel.background(life.time);
+    if (!paperReading) text(this.status, life.time.label + ' · ' + life.time.location, 800, 100, 30);
     const memoryId = event.type === 'node' ? event.node.lifeContext?.memory?.id : undefined;
     const memory = life.time.timeline === 'memory'
       ? (memoryId ? life.memoryRecords[memoryId] : Object.values(life.memoryRecords)[0]) : undefined;
+    let memoryCaption: string | undefined;
     if (memory) {
       const names = {fragmentary:'残缺',contradictory:'出现矛盾',reinterpreted:'重新理解',complete:'完整'};
-      text(this.status, memory.title + ' · ' + names[memory.status], 735, 70, 26);
+      memoryCaption = memory.title + ' · ' + names[memory.status];
+      if (!paperReading) text(this.status, memoryCaption, 735, 70, 26);
     }
     if (SaveManager.warning) {
       text(this.status, SaveManager.warning, -800, 70, 26);
@@ -70,6 +75,11 @@ export class StoryView extends Component {
     const node = event.node;
     switch (node.type) {
       case 'passage': case 'phone':
+        if (paperReading) {
+          new LifeReadingPanel().show(this.root, node, this.speakers, life.time, memoryCaption, !!SaveManager.warning,
+            this.manager.state.progress.readingOffset, offset => this.manager.setReadingOffset(node.id, offset),
+            () => void this.manager.advance(node.id)); break;
+        }
         new PassagePanel().show(this.root, node, this.speakers, this.manager.state.progress.readingOffset,
           offset => this.manager.setReadingOffset(node.id, offset), () => void this.manager.advance(node.id)); break;
       case 'ending':

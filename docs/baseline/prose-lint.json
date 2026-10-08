@@ -1,0 +1,487 @@
+{
+  "inputHash": "f2f77fff9ed66d860041a69ffcc52a06da8ee598dc4bd559d7e4749d15c70377",
+  "method": "Editorial clues from actual source text, never an AI quality score, automatic rewrite, or proof of human reading.",
+  "hits": [
+    {
+      "chapter": "CH01",
+      "episode": "CH01_EP03",
+      "nodeId": "CH01_EP03_LETTER_001",
+      "file": "assets/resources/data/story/chapter01/ep03_dinner.json",
+      "kind": "时间感叹",
+      "sentence": "如果真的已经过去很多年……那大概说明，我们最后没有一起走到未来。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH02",
+      "episode": "CH02_EP01",
+      "nodeId": "CH02_EP01_BREAK",
+      "file": "assets/resources/data/story/chapter02/ep01_next_day.json",
+      "kind": "时间感叹",
+      "sentence": "很多年以后，他已经记不清那天中午到底去了没有。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH02",
+      "episode": "CH02_EP02",
+      "nodeId": "CH02_EP02_GYM",
+      "file": "assets/resources/data/story/chapter02/ep02_old_gym.json",
+      "kind": "解释式结尾",
+      "sentence": "周叙这才明白所谓的“看训练”主要是在看谁。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH03",
+      "episode": "CH03_EP04",
+      "nodeId": "CH03_EP04_ASSUME",
+      "file": "assets/resources/data/story/chapter03/ep04_plans.json",
+      "kind": "解释式结尾",
+      "sentence": "他把册子拿回来，又把划掉的名字写在旁边，字比原来小。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH04",
+      "episode": "CH04_EP02",
+      "nodeId": "CH04_EP02_N001",
+      "file": "assets/resources/data/story/chapter04/ep02_timetables.json",
+      "kind": "解释式结尾",
+      "sentence": "她给周叙发来时间，问原来想约哪天。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH04",
+      "episode": "CH04_EP03",
+      "nodeId": "CH04_EP03_N001",
+      "file": "assets/resources/data/story/chapter04/ep03_winter_calls.json",
+      "kind": "对称结论句",
+      "sentence": "她问学校暖气有没有开，他说没有暖气，宿舍只是加了一条被子。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH04",
+      "episode": "CH04_EP03",
+      "nodeId": "CH04_EP03_MOTHER",
+      "file": "assets/resources/data/story/chapter04/ep03_winter_calls.json",
+      "kind": "解释式结尾",
+      "sentence": "周叙说自己母亲也找过药盒，原来家里没人记得和自己记的总不一样。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH04",
+      "episode": "CH04_EP04",
+      "nodeId": "CH04_EP04_ASK",
+      "file": "assets/resources/data/story/chapter04/ep04_summer_plan.json",
+      "kind": "解释式结尾",
+      "sentence": "第二天许知夏发来确认后的表，采访比原来晚了一天。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH04",
+      "episode": "CH04_EP05",
+      "nodeId": "CH04_EP05_STREET",
+      "file": "assets/resources/data/story/chapter04/ep05_summer_days.json",
+      "kind": "解释式结尾",
+      "sentence": "她说原来想把线裁掉，后来觉得那天本来就是这样，便把两张里面较清楚的一张留给他。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH04",
+      "episode": "CH04_EP06",
+      "nodeId": "CH04_EP06_FIX",
+      "file": "assets/resources/data/story/chapter04/ep06_new_year.json",
+      "kind": "解释式结尾",
+      "sentence": "周叙想起她原来会拍照，让她干脆换回摄影，空的晚上也多一点。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH04",
+      "episode": "CH04_EP06",
+      "nodeId": "CH04_EP06_ASK_AGAIN",
+      "file": "assets/resources/data/story/chapter04/ep06_new_year.json",
+      "kind": "解释式结尾",
+      "sentence": "母亲说知道了，把原来准备圈的日子留空，让他确定后再打。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP01",
+      "nodeId": "CH05_EP01_N001",
+      "file": "assets/resources/data/story/chapter05/ep01_practice.json",
+      "kind": "解释式结尾",
+      "sentence": "周叙念了名字，父亲说不认识，那边不是自己原来上班的地方。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP01",
+      "nodeId": "CH05_EP01_N001",
+      "file": "assets/resources/data/story/chapter05/ep01_practice.json",
+      "kind": "解释式结尾",
+      "sentence": "周叙看了一遍，发现两边开始时间差了三天，自己原来圈的周末也不一定能用。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP01",
+      "nodeId": "CH05_EP01_REMEMBER",
+      "file": "assets/resources/data/story/chapter05/ep01_practice.json",
+      "kind": "解释式结尾",
+      "sentence": "周叙问过自己这边的老师，把原来以为能赶上的晚车划掉，再告诉家里暑假先不约那顿饭。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP03",
+      "nodeId": "CH05_EP03_COST",
+      "file": "assets/resources/data/story/chapter05/ep03_internship.json",
+      "kind": "解释式结尾",
+      "sentence": "他说还没发，自己还在用原来留的钱。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP03",
+      "nodeId": "CH05_EP03_COST",
+      "file": "assets/resources/data/story/chapter05/ep03_internship.json",
+      "kind": "解释式结尾",
+      "sentence": "第二天打电话，他们先找原来没说完的那一件事，再讲新的；有一回两个人都忘了，最后翻短信才想起来是家里那只风扇有没有收好。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP03",
+      "nodeId": "CH05_EP03_CHEN",
+      "file": "assets/resources/data/story/chapter05/ep03_internship.json",
+      "kind": "解释式结尾",
+      "sentence": "他说自己毕业以后也许会留在那边，但现在先把学校的课过完，弟弟还在催他帮看一张试卷。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP04",
+      "nodeId": "CH05_EP04_CHEN",
+      "file": "assets/resources/data/story/chapter05/ep04_job_forms.json",
+      "kind": "解释式结尾",
+      "sentence": "周叙在站牌旁等，看见原来卖水的地方换成了小吃摊，给母亲发了一条问带不带饭。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP05",
+      "nodeId": "CH05_EP05_RETURN",
+      "file": "assets/resources/data/story/chapter05/ep05_offer_week.json",
+      "kind": "解释式结尾",
+      "sentence": "他把原来准备告诉母亲的同城安排改口，说自己已确认，她还在等。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH05",
+      "episode": "CH05_EP06",
+      "nodeId": "CH05_EP06_N001",
+      "file": "assets/resources/data/story/chapter05/ep06_graduation.json",
+      "kind": "解释式结尾",
+      "sentence": "父亲没替他们选，把前几个月的班表放进抽屉，提醒他原来留在家里的行李也要拿走，别每次回来都只找那一只袋子。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP02",
+      "nodeId": "CH06_EP02_N001",
+      "file": "assets/resources/data/story/chapter06/ep02_evenings.json",
+      "kind": "解释式结尾",
+      "sentence": "许知夏已经去忙，直到他又要出门才回，说自己那天也临时有安排，原来想一起打的电话先往后放。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP02",
+      "nodeId": "CH06_EP02_CHEN",
+      "file": "assets/resources/data/story/chapter06/ep02_evenings.json",
+      "kind": "解释式结尾",
+      "sentence": "她笑了一下，说原来他这次不是来陪人跑腿。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP04",
+      "nodeId": "CH06_EP04_N001",
+      "file": "assets/resources/data/story/chapter06/ep04_days_home.json",
+      "kind": "解释式结尾",
+      "sentence": "他们沿着原来放学走过的那条街过去，有一家店关了，门口贴着转租的字。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP04",
+      "nodeId": "CH06_EP04_SUPPER",
+      "file": "assets/resources/data/story/chapter06/ep04_days_home.json",
+      "kind": "解释式结尾",
+      "sentence": "她回来时把电话放到椅子旁，道歉说原来以为交清楚了，还是留了一处没讲明白。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP04",
+      "nodeId": "CH06_EP04_CLOSE",
+      "file": "assets/resources/data/story/chapter06/ep04_days_home.json",
+      "kind": "解释式结尾",
+      "sentence": "她带母亲去取一份材料，在窗口等了很久，给周叙发消息说原来以为上午就能完，现在还没出来。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP05",
+      "nodeId": "CH06_EP05_N001",
+      "file": "assets/resources/data/story/chapter06/ep05_station.json",
+      "kind": "解释式结尾",
+      "sentence": "许知夏看过一遍车票，把它夹回本子里，说这次回去以后工作还照原来做，最近不会再换。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP05",
+      "nodeId": "CH06_EP05_TALK",
+      "file": "assets/resources/data/story/chapter06/ep05_station.json",
+      "kind": "解释式结尾",
+      "sentence": "他说原来放在自己那里的照片先收着，要寄的时候告诉他地址，她说好，别寄到旧住处。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP06",
+      "nodeId": "CH06_EP06_HOME",
+      "file": "assets/resources/data/story/chapter06/ep06_afterwards.json",
+      "kind": "解释式结尾",
+      "sentence": "母亲先问是不是她工作那边突然变了，他说没有，两个人原来就分别去，现在仍在原来的地方。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH06",
+      "episode": "CH06_EP06",
+      "nodeId": "CH06_EP06_PHONE",
+      "file": "assets/resources/data/story/chapter06/ep06_afterwards.json",
+      "kind": "解释式结尾",
+      "sentence": "他把还在用的地址抄到新页，原来一起列过的见面日子留在后面。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP01",
+      "nodeId": "CH07_EP01_AFTER_STATION",
+      "file": "assets/resources/data/story/chapter07/ep01_rented_room.json",
+      "kind": "解释式结尾",
+      "sentence": "去年站前说过的话，他后来已经照原来讲给家里。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP01",
+      "nodeId": "CH07_EP01_NOTE",
+      "file": "assets/resources/data/story/chapter07/ep01_rented_room.json",
+      "kind": "解释式结尾",
+      "sentence": "原来合租的那份费用不能沿用。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP02",
+      "nodeId": "CH07_EP02_DINNER",
+      "file": "assets/resources/data/story/chapter07/ep02_anran.json",
+      "kind": "解释式结尾",
+      "sentence": "她要帮同事把一个版本找回来，原来约的六点赶不上，问七点半行不行。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP03",
+      "nodeId": "CH07_EP03_WORK",
+      "file": "assets/resources/data/story/chapter07/ep03_two_schedules.json",
+      "kind": "解释式结尾",
+      "sentence": "两个人都没把对方不知道的小事当成必须交代的错，只在会改变原来约定时先讲。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP05",
+      "nodeId": "CH07_EP05_N001",
+      "file": "assets/resources/data/story/chapter07/ep05_marriage.json",
+      "kind": "解释式结尾",
+      "sentence": "程安然在手机上回同事一条消息，说下午不能按原来时间交，要晚一点。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP05",
+      "nodeId": "CH07_EP05_N001",
+      "file": "assets/resources/data/story/chapter07/ep05_marriage.json",
+      "kind": "解释式结尾",
+      "sentence": "他们原来各有一个杯子，没有因为结婚就把所有东西换成一样的。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP05",
+      "nodeId": "CH07_EP05_WORK",
+      "file": "assets/resources/data/story/chapter07/ep05_marriage.json",
+      "kind": "解释式结尾",
+      "sentence": "程安然的项目一度改了负责的人，原来定好的交接要重新做。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP07",
+      "nodeId": "CH07_EP07_DIVIDE",
+      "file": "assets/resources/data/story/chapter07/ep07_night_bus.json",
+      "kind": "解释式结尾",
+      "sentence": "周叙照两人原来一起核过的办法，先给公司问能不能把那一段调开，得到答复以后才写到纸上。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP08",
+      "nodeId": "CH07_EP08_PHOTO_INTRO",
+      "file": "assets/resources/data/story/chapter07/ep08_growing_up.json",
+      "kind": "解释式结尾",
+      "sentence": "程安然问他当年和陈野在外面，是不是也愿意每一段都讲，他想了想，先把原来要问的几句收回。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH07",
+      "episode": "CH07_EP08",
+      "nodeId": "CH07_EP08_CLOSE",
+      "file": "assets/resources/data/story/chapter07/ep08_growing_up.json",
+      "kind": "时间感叹",
+      "sentence": "那些年没有在听到一个名字时消失。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH08",
+      "episode": "CH08_EP01",
+      "nodeId": "CH08_EP01_N001",
+      "file": "assets/resources/data/story/chapter08/ep01_lamp.json",
+      "kind": "时间感叹",
+      "sentence": "过去那些年在脑子里过得快，桌上的杯子却还在原来的地方。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH08",
+      "episode": "CH08_EP03",
+      "nodeId": "CH08_EP03_LETTER",
+      "file": "assets/resources/data/story/chapter08/ep03_folded_pages.json",
+      "kind": "时间感叹",
+      "sentence": "如果真的已经过去很多年……那大概说明，我们最后没有一起走到未来。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH08",
+      "episode": "CH08_EP05",
+      "nodeId": "CH08_EP05_CLOSE",
+      "file": "assets/resources/data/story/chapter08/ep05_put_back.json",
+      "kind": "解释式结尾",
+      "sentence": "袋子里原来装着女儿小时候的绘画纸，他问过她，把要留的那两张拿出来，其余放到她自己愿意放的地方。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH09",
+      "episode": "CH09_EP05",
+      "nodeId": "CH09_EP05_TEACHER",
+      "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
+      "kind": "解释式结尾",
+      "sentence": "旁边一个校友听见，拿来自己的那一版，两张的日期不一样，原来站在后排的也不是同一拨人。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH09",
+      "episode": "CH09_EP05",
+      "nodeId": "CH09_EP05_TEACHER",
+      "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
+      "kind": "时间感叹",
+      "sentence": "周叙拿出手机先记了一句，老师又说那是很多年前的事，别让人看见就以为还在催他交作业。",
+      "isLastSentence": true,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    },
+    {
+      "chapter": "CH10",
+      "episode": "CH10_EP05",
+      "nodeId": "CH10_EP05_LETTER",
+      "file": "assets/resources/data/story/chapter10/ep05_unsent_page.json",
+      "kind": "解释式结尾",
+      "sentence": "哪天再打开，也许会改几个字。",
+      "isLastSentence": false,
+      "reason": "启发式命中，须结合上下文人工复核；不自动判为错误或删改。"
+    }
+  ],
+  "atmosphere": {
+    "沉默": 0,
+    "窗外": 4,
+    "雨": 17,
+    "没有说话": 1,
+    "没说话": 1,
+    "低头": 13,
+    "纸箱": 12,
+    "饭桌": 9
+  },
+  "duplicates": [
+    {
+      "sentence": "不是你说让我试一下录音功能吗？",
+      "nodes": [
+        "CH01_EP04_N002",
+        "CH01_EP04_RECORDING",
+        "CH08_EP03_AUDIO"
+      ],
+      "note": "May be intentional quoted evidence or mutually exclusive branches; review before editing."
+    },
+    {
+      "sentence": "现在我录了，你又不说话。",
+      "nodes": [
+        "CH01_EP04_N002",
+        "CH01_EP04_RECORDING",
+        "CH08_EP03_AUDIO"
+      ],
+      "note": "May be intentional quoted evidence or mutually exclusive branches; review before editing."
+    }
+  ],
+  "sharedDialogue": []
+}

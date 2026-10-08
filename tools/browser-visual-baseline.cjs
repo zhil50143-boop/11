@@ -1,0 +1,27 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const{chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');const{loadStory,play}=require('./story-analysis-lib.cjs');
+const[url,outDir='docs/shots/rc2-baseline']=process.argv.slice(2);if(!url)throw Error('Usage: URL [output-directory]');
+const story=loadStory(),fixtures=new Map();play(story,undefined,'FULL',undefined,(node,state)=>{if(!fixtures.has(node.id))fixtures.set(node.id,structuredClone(state))});
+const photo=story.records.find(r=>r.node.type==='photo'&&r.node.resource&&r.chapter==='CH01').node.id;
+const states=[{id:'main',nodeId:null},{id:'rain-home',nodeId:'CH01_EP01_N001'},{id:'box',nodeId:story.records.find(r=>r.chapter==='CH01'&&r.node.type==='investigation').node.id},{id:'photo-front',nodeId:photo},{id:'photo-back',nodeId:photo,action:'翻面'},{id:'letter-open',nodeId:'CH01_EP03_LETTER_001',action:'抽出信纸'},{id:'audio',nodeId:story.records.find(r=>r.chapter==='CH01'&&r.node.type==='audioInteraction').node.id},{id:'decision',nodeId:'CH01_EP02_C002'},{id:'bus-2007',nodeId:'CH01_EP04_BUS'},{id:'phone',nodeId:'CH02_EP05_MESSAGES'},{id:'memory-reconstruction',nodeId:'CH08_EP05_RECONSTRUCT'},{id:'ending',nodeId:story.records.find(r=>r.node.type==='ending'&&r.node.endingId==='REUNION').node.id}];
+// Source IDs may move only when authors explicitly edit the story; fail instead of inventing a fixture.
+for(const s of states)if(s.nodeId)assert.ok(fixtures.has(s.nodeId),'Missing reachable fixture '+s.nodeId);
+const viewports=[{width:360,height:640},{width:390,height:780},{width:375,height:812},{width:412,height:915},{width:360,height:840}];let browser;
+(async()=>{browser=await chromium.launch({headless:true,executablePath:process.env.BROWSER_EXECUTABLE,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});fs.mkdirSync(outDir,{recursive:true});const reports=[];
+ for(const viewport of viewports){const context=await browser.newContext({viewport,isMobile:true,hasTouch:true});
+  for(const target of states){const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+   if(target.nodeId)await page.addInitScript(raw=>localStorage.setItem('yushengweiji.save.v1',raw),JSON.stringify(fixtures.get(target.nodeId)));
+   else await page.addInitScript(()=>localStorage.removeItem('yushengweiji.save.v1'));
+   const snap=()=>page.evaluate(async()=>{const cc=await System.import('cc'),scene=cc.director.getScene(),canvas=document.querySelector('canvas')?.getBoundingClientRect(),buttons=[],labels=[];let state,nodes=0;if(!canvas)return{buttons,labels};const scale=Math.min(canvas.width/1080,canvas.height/1920);function walk(n){if(!n.activeInHierarchy)return;nodes++;const m=n.getComponent('StoryManager');if(m?.hasState())state=m.state;const l=n.getComponent(cc.Label);if(l)labels.push({text:l.string,designSize:l.fontSize,cssSize:l.fontSize*scale});const b=n.getComponent(cc.Button);if(b){const t=n.getComponent(cc.UITransform);buttons.push({title:n.children.find(c=>c.getComponent(cc.Label))?.getComponent(cc.Label)?.string,enabled:b.interactable,x:canvas.left+canvas.width/2+n.worldPosition.x*scale,y:canvas.top+canvas.height/2-n.worldPosition.y*scale,width:t.width*scale,height:t.height*scale})}for(const c of n.children)walk(c)}if(scene)walk(scene);return{scene:scene?.name,state,buttons,labels,nodes,canvas:canvas.toJSON()}});
+   const tap=async title=>{for(let i=0;i<180;i++){const b=(await snap()).buttons.find(b=>b.title===title&&b.enabled);if(b){await page.touchscreen.tap(b.x,b.y);await page.waitForTimeout(250);return}await page.waitForTimeout(100)}throw Error('Missing button '+title+' / '+target.id)};
+   await page.goto(url);await page.waitForFunction(()=>window.cc?.director.getScene()?.name==='Main',{},{timeout:30000});
+   if(target.nodeId){await tap('继续');for(let i=0;i<100;i++){const s=await snap();if(s.state?.progress.nodeId===target.nodeId&&s.buttons.some(b=>b.enabled))break;await page.waitForTimeout(100)}assert.equal((await snap()).state?.progress.nodeId,target.nodeId);}
+   if(target.action)await tap(target.action);
+   if(target.id.startsWith('photo'))await page.waitForTimeout(750);await page.waitForTimeout(250);
+   const snapshot=await snap(),file=`${viewport.width}x${viewport.height}-${target.id}.png`;await page.screenshot({path:path.join(outDir,file)});
+   const offscreen=snapshot.buttons.filter(b=>b.enabled&&(b.x-b.width/2<0||b.x+b.width/2>viewport.width+1||b.y-b.height/2<0||b.y+b.height/2>viewport.height+1));
+   reports.push({viewport,state:target.id,nodeId:target.nodeId,file,activeNodes:snapshot.nodes,buttons:snapshot.buttons,labels:snapshot.labels,offscreenButtons:offscreen,errors});assert.equal(errors.length,0);assert.equal(offscreen.length,0);await page.close();
+  }await context.close();console.log(`Visual baseline ${viewport.width}x${viewport.height}: 12 states`);
+ }
+ const report={result:'PASS',method:'Initial saved-state fixtures generated by existing domain runtime actions along reachable story routes; actual H5 rendering/touch actions, no running-state writes. Five viewport ratios, not five physical phones. Screenshots require human inspection; geometry checks do not prove aesthetics or safe-area handling in TapTap.',url,states:12,viewports,shots:reports};fs.writeFileSync(path.join(outDir,'index.json'),JSON.stringify(report,null,2)+'\n');await browser.close();
+})().catch(async error=>{console.error(error);await browser?.close();process.exitCode=1});

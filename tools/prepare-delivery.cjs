@@ -6,7 +6,7 @@ const root = path.resolve(process.argv[2] || '');
 if (!process.argv[2] || !fs.existsSync(path.join(root, 'index.html'))) throw Error('Usage: node tools/prepare-delivery.cjs existing-web-build');
 const notices = [
   '余生未寄 — H5 runtime third-party notices',
-  'Original story, photos and synthetic fictional voice assets: see source art/original provenance.',
+  'Original story, Image-generated art and synthetic fictional voice assets: see source art/original and art/visual-v2 provenance.',
   'Voice model weights and synthesis software are not included in this H5 package.',
   'Runtime libraries below retain their original notices and permissions.',
   ...['cocos-engine-3.8.8/LICENSE.md','mitt/LICENSE'].map(file => '\n--- '+file+' ---\n'+fs.readFileSync(path.join(__dirname,'../third_party',file),'utf8')),
