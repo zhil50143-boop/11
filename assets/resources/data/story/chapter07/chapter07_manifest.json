@@ -1,0 +1,55 @@
+{
+  "chapterId": "CH07",
+  "title": "后来的人",
+  "episodes": [
+    {
+      "id": "CH07_EP01",
+      "name": "自己的钥匙",
+      "resource": "data/story/chapter07/ep01_rented_room",
+      "startNode": "CH07_EP01_N001"
+    },
+    {
+      "id": "CH07_EP02",
+      "name": "漏水的楼道",
+      "resource": "data/story/chapter07/ep02_anran",
+      "startNode": "CH07_EP02_N001"
+    },
+    {
+      "id": "CH07_EP03",
+      "name": "两个人的安排",
+      "resource": "data/story/chapter07/ep03_two_schedules",
+      "startNode": "CH07_EP03_N001"
+    },
+    {
+      "id": "CH07_EP04",
+      "name": "以后谁来做",
+      "resource": "data/story/chapter07/ep04_shared_plan",
+      "startNode": "CH07_EP04_N001"
+    },
+    {
+      "id": "CH07_EP05",
+      "name": "放在哪里都要用",
+      "resource": "data/story/chapter07/ep05_marriage",
+      "startNode": "CH07_EP05_N001"
+    },
+    {
+      "id": "CH07_EP06",
+      "name": "小床旁边",
+      "resource": "data/story/chapter07/ep06_small_bed",
+      "startNode": "CH07_EP06_N001"
+    },
+    {
+      "id": "CH07_EP07",
+      "name": "夜里的那趟车",
+      "resource": "data/story/chapter07/ep07_night_bus",
+      "startNode": "CH07_EP07_N001"
+    },
+    {
+      "id": "CH07_EP08",
+      "name": "她也有自己的周末",
+      "resource": "data/story/chapter07/ep08_growing_up",
+      "startNode": "CH07_EP08_N001"
+    }
+  ],
+  "nextChapter": "CH08"
+}

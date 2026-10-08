@@ -1,0 +1,228 @@
+{
+  "episodeId": "CH07_EP06",
+  "name": "小床旁边",
+  "startNode": "CH07_EP06_N001",
+  "nodes": [
+    {
+      "id": "CH07_EP06_N001",
+      "type": "passage",
+      "title": "名字还没写准",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周满在2021年出生。回家那天，周叙抱着袋子上楼，先碰到门框，程安然让他把孩子那一袋换到没有磕过的手上。小床已经摆在屋里，床单是两个人前一周洗的，晒过以后又重新叠了一遍。"
+        },
+        {
+          "text": "他们在一张纸上写周满的名字。周叙母亲把“满”听成另一个字，周叙写给她看，她说知道了，把自己抄的那张改过。程安然躺了一会儿，听到客厅还在争哪个字，探头说就照这一张，别又抄出第三个来。"
+        },
+        {
+          "text": "来帮忙的人不能一直留。程安然父亲要回去办自己的事，周叙母亲也有复查和家里的安排，两边把能来的几天说清。剩下的时间轮到他们自己，饭有时候煮晚，洗衣机响的时候两个人一起抬头看，却都没先起身。"
+        },
+        {
+          "text": "夜里周满醒，周叙一开始只会问要不要叫程安然。她说自己已经醒了，让他先做刚才说过的那件，他绕到床另一边找东西，又忘记放在哪。等孩子安稳一些，他们重新把经常要用的放近，没让别人每次从客厅拿进来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2021,
+          "month": 5,
+          "season": "spring",
+          "label": "2021 · 春 · 名字还没写准",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "名字还没写准"
+          ]
+        }
+      },
+      "next": "CH07_EP06_NOTE"
+    },
+    {
+      "id": "CH07_EP06_NOTE",
+      "type": "letter",
+      "actionText": "看小床边的便签",
+      "text": "2021.5\n周满。\n衣服和日常记录放小柜第一层。\n白天谁照应、晚上谁先起来，每天按实际班次再说。\n两边老人有自己的事，不能沿用上周能来的日子。",
+      "setFlags": [
+        "CH07_ZHOUMAN_BORN_2021",
+        "CH07_READ_CARE_NOTE"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2021,
+          "month": 5,
+          "season": "spring",
+          "label": "2021 · 春 · 看小床边的便签",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "看小床边的便签"
+          ]
+        }
+      },
+      "next": "CH07_EP06_CARE_CHECK"
+    },
+    {
+      "id": "CH07_EP06_CARE_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH07_PLANNED_CARE_TOGETHER",
+          "next": "CH07_EP06_SHARED"
+        },
+        {
+          "flag": "CH07_ASSUMED_PARTNER_PAUSE",
+          "next": "CH07_EP06_CHANGED"
+        }
+      ],
+      "fallback": "CH07_EP06_MORNING"
+    },
+    {
+      "id": "CH07_EP06_SHARED",
+      "type": "passage",
+      "title": "重新列一次",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "当年把两个人班次列过的纸还在，已经不能照原样用。程安然准备恢复工作，她把要到公司的那几天说出来，周叙去问可以换哪两个班，不先把母亲能来当成空缺已经补上。"
+        },
+        {
+          "text": "结果有一个班没换成，两个人有点急，又去问实际能来半天的人。程安然没有把整份工作退掉，周叙也没一句话就把单位的表全调好。最后定下一个能跑起来的星期，过完再看孩子和各自的情况，她把旧纸收在新纸下面。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2021,
+          "month": 8,
+          "season": "summer",
+          "label": "2021 · 夏 · 重新列一次",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "重新列一次"
+          ]
+        }
+      },
+      "next": "CH07_EP06_MORNING"
+    },
+    {
+      "id": "CH07_EP06_CHANGED",
+      "type": "passage",
+      "title": "重新列一次",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "程安然准备恢复工作，周叙想起结婚前自己先写过“她停一阵”。那张已经划过的纸还在，她这次把要到公司的日子讲清，他没有把划掉的那一行重新拿来当她答应过的事。"
+        },
+        {
+          "text": "他去问能换哪两个班，有一个没换成，两个人又核谁能来半天。程安然没有把整份工作退掉，周叙也没把没问到的人先写上。他们最后定了一个能跑起来的星期，过完再看，她把旧纸收在新纸下面，让他把自己的那一栏写准确。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2021,
+          "month": 8,
+          "season": "summer",
+          "label": "2021 · 夏 · 重新列一次",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "重新列一次"
+          ]
+        }
+      },
+      "next": "CH07_EP06_MORNING"
+    },
+    {
+      "id": "CH07_EP06_MORNING",
+      "type": "passage",
+      "title": "早上那一袋",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "程安然第一天回公司，把自己的材料袋和周满的日常东西摆在同一张桌子上。周叙顺手拿错，她叫住他，说蓝色那袋是自己的，不要送到照应孩子的人那里。他把袋子换过，发现桌子太小，又挪开一个不用的盒子。"
+        },
+        {
+          "text": "她回来后先坐了一会儿，讲公司新来的几个人，还没都记住名字。周叙讲今天周满醒过几次，有一回一直找不到那件小衣服，最后在自己外套下面。两个人把日常记录补全，她问他吃没吃饭，他说吃了，问完又想起没把饭盒洗。"
+        },
+        {
+          "text": "有时候程安然也没按说好的时间回，他在门口等着换班，会催。她回来解释临时交接，他说下回至少发一条，不能等他到了楼下才知道。她说知道，也问他临时加班时能不能一样先讲，两个人把要联络的号码放在同一个地方。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2021,
+          "month": 8,
+          "season": "summer",
+          "label": "2021 · 夏 · 早上那一袋",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "早上那一袋"
+          ]
+        }
+      },
+      "next": "CH07_EP06_END"
+    },
+    {
+      "id": "CH07_EP06_END",
+      "type": "episodeEnd",
+      "next": "CH07_EP07"
+    }
+  ],
+  "nodeAliases": {}
+}

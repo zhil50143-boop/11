@@ -1,0 +1,138 @@
+{
+  "episodeId": "CH07_EP05",
+  "name": "放在哪里都要用",
+  "startNode": "CH07_EP05_N001",
+  "nodes": [
+    {
+      "id": "CH07_EP05_N001",
+      "type": "passage",
+      "title": "登记那天",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "2020年他们登记结婚。周叙出门前找不着证件袋，程安然说昨天放进了外套里面，他摸了一遍，还真在那里。她自己忘了带笔，两人在门口店里买了一支，付钱时又顺手拿了一包纸巾。"
+        },
+        {
+          "text": "排队的时候前面有人补材料，他们坐到旁边等。程安然在手机上回同事一条消息，说下午不能按原来时间交，要晚一点。周叙问她是不是要回公司，她说晚上自己处理，不用现在跑去替她解释。他去接了水，她喝过一口把杯子还给他，问材料是不是全部拿好。"
+        },
+        {
+          "text": "吃饭只约了家里几个人。父亲提前到了，母亲带了一袋自己做的东西，程安然父亲把地址抄错了一个门牌，绕到另一边才回来。大家笑了一会儿，周叙下去接，没有让他把刚才走错的路再讲给每个人听。"
+        },
+        {
+          "text": "那天回家两个人都很累。程安然把新买的笔放到桌上，周叙问证件放哪儿，她说先放蓝色文件袋，别和租房收条混在一起。他们原来各有一个杯子，没有因为结婚就把所有东西换成一样的。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2020,
+          "month": 6,
+          "season": "summer",
+          "label": "2020 · 夏 · 登记那天",
+          "location": "登记处与出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "登记那天"
+          ]
+        }
+      },
+      "next": "CH07_EP05_NOTE"
+    },
+    {
+      "id": "CH07_EP05_NOTE",
+      "type": "letter",
+      "actionText": "看两个人写的袋子标签",
+      "text": "2020.6\n蓝色文件袋：登记材料，双方都知道放哪儿。\n租房收条另外放。\n借来的工具周末还陈野，问过以后再约。",
+      "setFlags": [
+        "CH07_MARRIED_2020",
+        "CH07_READ_FAMILY_FOLDER"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2020,
+          "month": 6,
+          "season": "summer",
+          "label": "2020 · 夏 · 看两个人写的袋子标签",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "看两个人写的袋子标签"
+          ]
+        }
+      },
+      "next": "CH07_EP05_WORK"
+    },
+    {
+      "id": "CH07_EP05_WORK",
+      "type": "passage",
+      "title": "她还要回去交材料",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "程安然的项目一度改了负责的人，原来定好的交接要重新做。她在餐桌一角打开电脑，周叙把碗移开，问要不要帮核数字。她说数字已经核过，先别改，只要把旁边那叠纸按日期分一下，他分到一半又问哪些算正式版。"
+        },
+        {
+          "text": "她烦的时候也会答得冲，说刚才不是已经讲过。周叙把纸放下，说自己问的是另一袋，她才抬头看，发现确实拿错了，换过来重新讲。那晚不是一句体贴的话就全顺了，电脑仍开到很晚，两个杯子放在不碍手的地方。"
+        },
+        {
+          "text": "周叙第二天早班，先去睡，程安然让他把走廊的灯留一盏。早上他要出门，看到她把未交的文件写在便签上，杯里水没喝完。他把水倒掉洗好杯子，没把那张便签一起撕了。到公司以后她发来一句“送到了”，他回了一个好。"
+        },
+        {
+          "text": "过年怎么回，两个人也算过。程安然想先去自己的父母那里，周叙还要看厂里的值班，最后分开走一段，再到另一边汇合。亲戚问为什么不是一起，母亲解释各有班次，没有把这种安排讲成两个人不和。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2020,
+          "month": 11,
+          "season": "autumn",
+          "label": "2020 · 秋 · 她还要回去交材料",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "她还要回去交材料"
+          ]
+        }
+      },
+      "next": "CH07_EP05_END"
+    },
+    {
+      "id": "CH07_EP05_END",
+      "type": "episodeEnd",
+      "next": "CH07_EP06"
+    }
+  ],
+  "nodeAliases": {}
+}

@@ -1,0 +1,196 @@
+{
+  "episodeId": "CH07_EP03",
+  "name": "两个人的安排",
+  "startNode": "CH07_EP03_N001",
+  "nodes": [
+    {
+      "id": "CH07_EP03_N001",
+      "type": "passage",
+      "title": "再约一次",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "春天他们约了几次，后来由周叙先问，是不是愿意按来往的意思继续见。程安然问他是不是只在今天讲，还是已经想清。周叙说想清，等她回答。她没有马上答，隔了一会儿说愿意，不过这个周末已经要去看父亲，别把答应来往算成全部时间都空。"
+        },
+        {
+          "text": "周叙送她到公交站，她自己看了站牌，说不是刚才那班，要往前一站换。他们站错过一次，才把日常回家的路讲清。程安然想起他晚上要去上班，问还来不来得及，他说来得及，剩下那段自己走。"
+        },
+        {
+          "text": "后来周叙讲起以前有过一段从高中开始的来往，2013已经分开，之后没有继续。他没有把那个人的姓名和全部细节翻出来，也没说自己一直在等谁。程安然只问现在是不是还有没讲清的共同安排，他说没有；她说那就知道了，不让他当场写一份证明。"
+        },
+        {
+          "text": "程安然也讲过自己的家庭。父母住在另一个区，母亲常催她换份离家近的工作，她还想把手里项目做完。父亲习惯早去菜场，听说她不回来会多问两次，她烦过，也还是会把回去的时间讲准确。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2018,
+          "month": 3,
+          "season": "spring",
+          "label": "2018 · 春 · 再约一次",
+          "location": "南城街边",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "再约一次"
+          ]
+        }
+      },
+      "next": "CH07_EP03_PLAN_CHECK"
+    },
+    {
+      "id": "CH07_EP03_PLAN_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH03_DISCUSS_PLANS",
+          "next": "CH07_EP03_ASK"
+        },
+        {
+          "flag": "CH03_ASSUMED_SAME_CITY",
+          "next": "CH07_EP03_STOP"
+        }
+      ],
+      "fallback": "CH07_EP03_WORK"
+    },
+    {
+      "id": "CH07_EP03_ASK",
+      "type": "passage",
+      "title": "听她讲完",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "公司问程安然愿不愿意去另一处办公室，她拿着通勤图给周叙看。早年谈选校时先问过对方意向，他这次也先问她手里项目怎么办，再讲自己下班能走哪条路，没有替她圈一个最近的位置。"
+        },
+        {
+          "text": "程安然说去新办公室能少做一段重复整理，也会多一段路，要先和主管确认职责。周叙把车次往旁边挪，让她把那一栏说完。她后来选了新的办公室，星期三还要回旧地方交材料，周叙在地图上添了这一天。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2018,
+          "month": 7,
+          "season": "summer",
+          "label": "2018 · 夏 · 听她讲完",
+          "location": "程安然租住的房子",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "听她讲完"
+          ]
+        }
+      },
+      "next": "CH07_EP03_WORK"
+    },
+    {
+      "id": "CH07_EP03_STOP",
+      "type": "passage",
+      "title": "听她讲完",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "公司问程安然愿不愿意去另一处办公室，周叙看过路程，顺口说留在现在这里方便。以前谈选校时他也容易先按同一座城想，她问他方便的是哪一边，他把刚圈的位置划掉，改问她手里项目怎么接。"
+        },
+        {
+          "text": "程安然说新办公室能少一段重复整理，也会多一段路，要先确认职责。周叙听完才讲自己下班能走哪条路。她后来选了新办公室，星期三还回旧地方交材料，他把这一天记到地图上，没有再把旧位置留作她应该回来的地方。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2018,
+          "month": 7,
+          "season": "summer",
+          "label": "2018 · 夏 · 听她讲完",
+          "location": "程安然租住的房子",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "听她讲完"
+          ]
+        }
+      },
+      "next": "CH07_EP03_WORK"
+    },
+    {
+      "id": "CH07_EP03_WORK",
+      "type": "passage",
+      "title": "各自的桌子",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "他们仍住在不同的房子。周叙值夜班时，程安然会把要留给他的东西交楼下店主，不等到半夜敲门。他休息那天去取，看见她留的纸条只写了一句“别把饭盒也还给店里”，把东西带回去以后真数了一遍。"
+        },
+        {
+          "text": "程安然那边的材料有一份找不到。她怀疑自己把旧版本扔了，坐在桌边找了半小时，周叙拿来一个袋子，她先让他别把剩下的都收走。后来文件在电脑另一个目录找到，她松了一口气，又有点恼，说今天先不要叫她再整理桌面。"
+        },
+        {
+          "text": "她有自己的朋友聚餐，不每次都带周叙过去。周叙也会去找陈野，陈野已经换过工作，在另一家公司跑仓库登记，电话里还是要先问有没有人顶班。两个人都没把对方不知道的小事当成必须交代的错，只在会改变原来约定时先讲。"
+        },
+        {
+          "text": "冬天程安然陪父亲去办一次转账，没赶上两人约的电影。她回来讲自己也觉得遗憾，票是她提议买的。周叙问要不要再约一场，她说先把钱退掉，这星期不确定。过了几天由她重新问起，不让他一个人追着确认。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2018,
+          "month": 7,
+          "season": "summer",
+          "label": "2018 · 夏 · 各自的桌子",
+          "location": "两人的住处",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "各自的桌子"
+          ]
+        }
+      },
+      "next": "CH07_EP03_END"
+    },
+    {
+      "id": "CH07_EP03_END",
+      "type": "episodeEnd",
+      "next": "CH07_EP04"
+    }
+  ],
+  "nodeAliases": {}
+}

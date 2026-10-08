@@ -1,0 +1,196 @@
+{
+  "episodeId": "CH07_EP07",
+  "name": "夜里的那趟车",
+  "startNode": "CH07_EP07_N001",
+  "nodes": [
+    {
+      "id": "CH07_EP07_N001",
+      "type": "passage",
+      "title": "听见她喊人",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "周满三岁那年冬天，夜里发热，把自己盖的被子踢到床边，又伸手找母亲。程安然听见她喊，先起来照应，叫周叙拿外套和那只记录袋。周叙睡得沉，第一声没听见，第二次才坐起来，套鞋时把左右穿反。"
+        },
+        {
+          "text": "他们联系了能看的门诊，按要求带孩子过去，没有在家靠翻旧纸决定怎么处理。楼下那趟车还没来，周叙抱了一段，程安然把袋子翻过一遍，说自己的证件刚才落在另一件衣服里。他回去取，她和孩子留在有灯的地方等。"
+        },
+        {
+          "text": "候诊时周满不愿意坐，抱着母亲的袖子，程安然手麻了，让周叙接一下。周满哭着不肯，周叙没有为了证明自己能带就硬拽她，先坐在旁边，让她把另一只手放过来。后来孩子困了，靠到他身上，两个人才换过。"
+        },
+        {
+          "text": "看过以后他们听清了接下来要留意的事，写下复诊联络方式，再回家。途中程安然手机快没电，周叙把自己的递给她，先给第二天工作那边说明。没有人把这一夜拍成一张两个人都很从容的照片，回到家地上还摆着刚才掉的鞋。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2024,
+          "month": 1,
+          "season": "winter",
+          "label": "2024 · 冬 · 听见她喊人",
+          "location": "家中与门诊",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "听见她喊人"
+          ]
+        }
+      },
+      "next": "CH07_EP07_CARE_CHECK"
+    },
+    {
+      "id": "CH07_EP07_CARE_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH07_PLANNED_CARE_TOGETHER",
+          "next": "CH07_EP07_DIVIDE"
+        },
+        {
+          "flag": "CH07_ASSUMED_PARTNER_PAUSE",
+          "next": "CH07_EP07_REVISE"
+        }
+      ],
+      "fallback": "CH07_EP07_NEXT"
+    },
+    {
+      "id": "CH07_EP07_DIVIDE",
+      "type": "passage",
+      "title": "早上的交接",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "天亮后程安然说自己上午能留，下午要交材料。周叙照两人原来一起核过的办法，先给公司问能不能把那一段调开，得到答复以后才写到纸上。他没把夜里她先起来算成白天也全部归她。"
+        },
+        {
+          "text": "她午后出去前仍不放心，周叙把要联系的号码再念了一遍，问她几点能通话。她说送完材料先看消息，别把自己还没出门就当成一直联系不到。周叙点头，去把孩子刚脱下来的衣服收起来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2024,
+          "month": 1,
+          "season": "winter",
+          "label": "2024 · 冬 · 早上的交接",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "早上的交接"
+          ]
+        }
+      },
+      "next": "CH07_EP07_NEXT"
+    },
+    {
+      "id": "CH07_EP07_REVISE",
+      "type": "passage",
+      "title": "早上的交接",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "天亮后程安然说自己上午能留，下午要交材料。周叙原先想让她再留一天，话刚开头又停下，问自己这边能不能把下午调开。他去问公司，等到答复以后才写到纸上，没有把以前自己提过的停工又算成她答应过的安排。"
+        },
+        {
+          "text": "她出去前仍不放心，周叙把要联系的号码再念了一遍。程安然说下午那件是自己的工作，做完会先看消息。周叙应了，拿起孩子刚脱的衣服，才发现夜里匆忙塞进去的手套还在口袋里。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2024,
+          "month": 1,
+          "season": "winter",
+          "label": "2024 · 冬 · 早上的交接",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "早上的交接"
+          ]
+        }
+      },
+      "next": "CH07_EP07_NEXT"
+    },
+    {
+      "id": "CH07_EP07_NEXT",
+      "type": "passage",
+      "title": "另一边也要上班",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "过了那阵，孩子照常去幼儿园，周叙在门口被提醒帽子落了。他回去拿，程安然已经出门，只能在群里说谁下班早谁去取。她那天交材料不顺，被退回来两处，晚上把包一放先不说话，周叙以为她还在生自己的气，问过才知道是工作。"
+        },
+        {
+          "text": "陈野后来有了自己的家庭，见面得提前约。他家孩子和周满不是一个年级，两个人把门口等待的时间都讲错过，后来各自去问自己的家里。周叙没有拿着陈野的一张表照搬给周满，程安然听见他又在比较，叫他先看孩子这边实际几点结束。"
+        },
+        {
+          "text": "一次换班后，周叙没有及时把修改讲给她，程安然接了工作又发现没人去接。她打来语气很急，他承认自己只在单位表上改了，家里的没有改，后来自己去联络补上。晚上讨论时没有拿那次夜里抱过孩子抵掉这一次漏说。"
+        },
+        {
+          "text": "冰箱门上添了一张小纸，不是给谁打分，只写本周真的改过的班。谁写了谁讲一声，过期的取下来。到后来纸边卷了，周满想拿来画画，程安然先看日期，确认已经过完，才给她。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2024,
+          "month": 2,
+          "season": "winter",
+          "label": "2024 · 冬 · 另一边也要上班",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "parent",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "另一边也要上班"
+          ]
+        }
+      },
+      "next": "CH07_EP07_END"
+    },
+    {
+      "id": "CH07_EP07_END",
+      "type": "episodeEnd",
+      "next": "CH07_EP08"
+    }
+  ],
+  "nodeAliases": {}
+}

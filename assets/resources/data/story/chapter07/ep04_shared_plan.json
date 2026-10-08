@@ -1,0 +1,323 @@
+{
+  "episodeId": "CH07_EP04",
+  "name": "以后谁来做",
+  "startNode": "CH07_EP04_N001",
+  "nodes": [
+    {
+      "id": "CH07_EP04_N001",
+      "type": "passage",
+      "title": "两个杯子",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "他们开始谈结婚和一起住。房子看了两处，一处离周叙公司近，一处方便程安然来回两个办公室。周叙在第三次看房才发现墙角那根管子会响，回去录了一小段给房东听，对方让他第二天再来，不能拿一句“正常”带过去。"
+        },
+        {
+          "text": "母亲想提前买家具，程安然说先别买，房子尺寸没定。她把自己那张小桌子量了一遍，发现新屋门口有个转角，要搬进去必须拆。周叙买了工具，拆到最后少了一颗螺丝，两个人蹲在地上找，程安然先找到，说别为了省这一步把剩下的硬拧上。"
+        },
+        {
+          "text": "谈到孩子，他们都说将来愿意养，但不是现在就把所有日程写好。程安然把自己的项目期和父母能帮的时间说出来，周叙讲了班次。母亲说有孩子再商量也行，程安然说到时候事情已经在眼前，至少现在得知道谁愿意改自己的安排。"
+        },
+        {
+          "text": "那天他们洗完碗才继续说，桌上放着两个不同的杯子。程安然问他，自己手里的工作想接着做，夜里和请假的事怎么一起担。周叙拿着笔，还没有在纸上写谁先停下来。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2019,
+          "month": 9,
+          "season": "autumn",
+          "label": "2019 · 秋 · 两个杯子",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "两个杯子"
+          ]
+        }
+      },
+      "next": "CH07_EP04_CHOICE"
+    },
+    {
+      "id": "CH07_EP04_CHOICE",
+      "type": "choice",
+      "prompt": "怎么讨论将来的照护和工作安排？",
+      "consequence": "这次说法会在后来分工时被记住；双方的工作与孩子出生不由一个回答决定。",
+      "options": [
+        {
+          "id": "TOGETHER",
+          "text": "先把两个人的班次和能承担的事列出来。",
+          "next": "CH07_EP04_TOGETHER",
+          "setFlags": [
+            "CH07_PLANNED_CARE_TOGETHER"
+          ],
+          "effects": {
+            "understandingPartner": 2,
+            "honesty": 1
+          }
+        },
+        {
+          "id": "PAUSE",
+          "text": "先建议她停一阵工作，再听她怎么想。",
+          "next": "CH07_EP04_PAUSE",
+          "setFlags": [
+            "CH07_ASSUMED_PARTNER_PAUSE"
+          ],
+          "effects": {
+            "avoidance": 1
+          }
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2019,
+          "month": 9,
+          "season": "autumn",
+          "label": "2019 · 秋 · 以后谁来做",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "结婚前讨论过的照护与工作"
+          ]
+        }
+      }
+    },
+    {
+      "id": "CH07_EP04_TOGETHER",
+      "type": "passage",
+      "title": "先列自己的那一栏",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙先写自己能调的班和不能直接答应的时间，再把纸推到程安然面前。她说这张先当底稿，父母能帮不等于一直能来，每个阶段还得重新问。周叙把“母亲来”那一行改成“问过以后再定”，没拿空白当成已经有人负责。"
+        },
+        {
+          "text": "程安然写了几个自己能调整的时段，有一项写完又擦掉，是她刚接的工作，不能自己说撤就撤。她问周叙能不能先从这星期洗衣和买菜试起，他说能。两个人把下周安排在旧日历背面，没挂一张完美的全年表。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2019,
+          "month": 9,
+          "season": "autumn",
+          "label": "2019 · 秋 · 先列自己的那一栏",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "先列自己的那一栏"
+          ]
+        }
+      },
+      "next": "CH07_EP04_SUMMER_CHECK"
+    },
+    {
+      "id": "CH07_EP04_PAUSE",
+      "type": "passage",
+      "title": "那一栏不是她答应过的",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周叙先说她可以停一阵工作，程安然问停多久，为什么先从自己这一边停。他拿着笔，没有一个已核实的时间。她说自己会调整，但不会因为他写下“她在家”就等于已经同意，父母能来多久也得问过。"
+        },
+        {
+          "text": "周叙把那一行划掉，改写自己的班次和能调的事。他没有靠一句“我是为你好”把讨论盖过去，程安然也没替他填完空白。她说先从这个星期做起，买菜洗衣各说准。两个人最后用旧日历背面写了下周，刚才划过的那一行没有再抄上去。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2019,
+          "month": 9,
+          "season": "autumn",
+          "label": "2019 · 秋 · 那一栏不是她答应过的",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "那一栏不是她答应过的"
+          ]
+        }
+      },
+      "next": "CH07_EP04_SUMMER_CHECK"
+    },
+    {
+      "id": "CH07_EP04_SUMMER_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH04_ASKED_SUMMER_PLAN",
+          "next": "CH07_EP04_CONFIRM"
+        },
+        {
+          "flag": "CH04_PROMISED_FOR_XIA",
+          "next": "CH07_EP04_REVISE"
+        }
+      ],
+      "fallback": "CH07_EP04_CLOSE"
+    },
+    {
+      "id": "CH07_EP04_CONFIRM",
+      "type": "passage",
+      "title": "另外一个周末",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "陈野问周末能不能去帮搬一个柜子，周叙先看了家里还没定的日期，说要确认再回。以前暑期等过另一人的安排，他这次也没把程安然能不能一起去替她答了。她说自己周六要赶材料，周日可以去拿工具，不帮抬柜子。"
+        },
+        {
+          "text": "周叙照她的原话回给陈野，陈野说知道，自己另外找人。他们最后去了半天，把工具拿回来，程安然催周叙别把螺丝盒留在车上，上回少那一颗找了太久。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2019,
+          "month": 10,
+          "season": "autumn",
+          "label": "2019 · 秋 · 另外一个周末",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "另外一个周末"
+          ]
+        }
+      },
+      "next": "CH07_EP04_CLOSE"
+    },
+    {
+      "id": "CH07_EP04_REVISE",
+      "type": "passage",
+      "title": "另外一个周末",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "陈野问周末能不能帮搬柜子，周叙差点像以前答暑期安排一样，把两个人能去都说了。话到嘴边，他先停下问程安然，她说周六要赶材料，周日可以拿工具，不帮抬柜子。他把答复改成自己先确认班次，没有拿她的休息日补一个承诺。"
+        },
+        {
+          "text": "陈野另找了人，回消息说别勉强凑一整天。两人最后去了半天，工具拿回来，程安然催他别把螺丝盒忘在车上。他回到车旁数过一遍，再一起去买晚上要吃的菜。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2019,
+          "month": 10,
+          "season": "autumn",
+          "label": "2019 · 秋 · 另外一个周末",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "另外一个周末"
+          ]
+        }
+      },
+      "next": "CH07_EP04_CLOSE"
+    },
+    {
+      "id": "CH07_EP04_CLOSE",
+      "type": "passage",
+      "title": "月底再看",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "分工没有一直照最初那张纸走。有一周周叙没买菜，回家才发现冰箱里只剩半把青菜；有一周程安然洗完衣服忘记取，晾的时候皱得很。两个人讲过，也会烦，没用每次忘记的小事重新判定要不要结婚。"
+        },
+        {
+          "text": "月底他们再看房子和费用，把确实做不到的先改掉。周叙母亲想来帮，程安然母亲却那阵要处理自己的房子，不能跟着长期住。两边的情况分别问过，谁也没把“家里有人”写成同一个万能答案。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2019,
+          "month": 10,
+          "season": "autumn",
+          "label": "2019 · 秋 · 月底再看",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "正在来往",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "月底再看"
+          ]
+        }
+      },
+      "next": "CH07_EP04_END"
+    },
+    {
+      "id": "CH07_EP04_END",
+      "type": "episodeEnd",
+      "next": "CH07_EP05"
+    }
+  ],
+  "nodeAliases": {}
+}

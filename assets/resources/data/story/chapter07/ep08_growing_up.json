@@ -1,0 +1,198 @@
+{
+  "episodeId": "CH07_EP08",
+  "name": "她也有自己的周末",
+  "startNode": "CH07_EP08_N001",
+  "nodes": [
+    {
+      "id": "CH07_EP08_N001",
+      "type": "passage",
+      "title": "书包换过几次",
+      "category": "time",
+      "paragraphs": [
+        {
+          "text": "周满上学以后，书包换过几次。九岁那年她坚持要自己收拾，周叙怕她漏东西，等她去洗手又把里面翻了一遍。她回来发现本子次序变了，说不是他以为的那样装，作业要按明天交的放上面，把父亲动过的重新排回去。"
+        },
+        {
+          "text": "程安然在一边听，没有让女儿马上对父亲的帮忙说谢谢。她叫周叙先问孩子需不需要检查，自己也承认上星期替她把一张画收起来，后来差点找不到。周满把画拿出来，角上折了，要求以后别放工作材料下面。"
+        },
+        {
+          "text": "这一年周叙母亲要复查，父亲会忘记把新单子和旧单子分开。程安然核文件时也有自己的父母要照应，两个人各看各那一边，有冲突再约，不能因为她记得清楚就让全部事情自动去她那里。"
+        },
+        {
+          "text": "他们换过住处，蓝色文件袋还在。孩子把袋子标签看过，问“双方都知道”是什么意思，程安然说爸爸妈妈都能找到，不用只等一个人在家。周满说自己的东西也能找，转头去拿本子，过了一会儿又出来问那张画到底放哪儿。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2030,
+          "month": 9,
+          "season": "autumn",
+          "label": "2030 · 秋 · 书包换过几次",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "书包换过几次"
+          ]
+        }
+      },
+      "next": "CH07_EP08_PHOTO_INTRO"
+    },
+    {
+      "id": "CH07_EP08_PHOTO_INTRO",
+      "type": "passage",
+      "title": "没有站在中间",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "周满十四岁，和同学一起做暑假的事，周叙想问得细，她只把到几点、在哪里和谁能联系讲清，没把每句话都向父亲复述。程安然问他当年和陈野在外面，是不是也愿意每一段都讲，他想了想，先把原来要问的几句收回。"
+        },
+        {
+          "text": "一家三个人拍过一张普通照片。周满不肯站中间，说中间那块光太亮，自己要靠墙。程安然手上还拿着钥匙，周叙想让她放下，她说先拍，等一会儿还要去拿菜。第一张他没看镜头，周满看过以后要笑，被他说别只挑那一张发。"
+        },
+        {
+          "text": "照片后来洗了一份，纸角被女儿拿笔点了一个小点。她在背面写了自己的名字，又给父亲补一笔，说省得以后看见都是你拍就把别人忘了。程安然让她别把字写到边缘，女儿写完才发现已经出格，只能在后面另起一行。"
+        },
+        {
+          "text": "这张没有替换高中毕业的那张。周叙把它放在现在使用的抽屉，旧照片还在旧东西中。抽屉里也有学校通知、父母的复查单和借工具的纸条，照片拿出来时常把旁边一张也带出来，三个人轮着把它们放回去。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2035,
+          "month": 7,
+          "season": "summer",
+          "label": "2035 · 夏 · 没有站在中间",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "没有站在中间"
+          ]
+        }
+      },
+      "next": "CH07_EP08_PHOTO"
+    },
+    {
+      "id": "CH07_EP08_PHOTO",
+      "type": "photo",
+      "text": "2035年夏天，一家三个人在楼下。周满靠墙，程安然手里还拿着钥匙，周叙没有看准镜头。",
+      "backText": "2035.7\n周满写：我没站中间。\n程安然补：三个人都在，钥匙也在。",
+      "setFlags": [
+        "CH07_SEEN_FAMILY_PHOTO"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2035,
+          "month": 7,
+          "season": "summer",
+          "label": "2035 · 夏 · 现在那张照片",
+          "location": "家中",
+          "timeline": "memory"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "正在长大"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "2035年一家三人的照片"
+          ]
+        }
+      },
+      "next": "CH07_EP08_CLOSE"
+    },
+    {
+      "id": "CH07_EP08_CLOSE",
+      "type": "passage",
+      "title": "高中开学",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "到高中，周满开始用自己的课表。她问母亲周末能不能去找同学，程安然说先讲回来的时间，再看家里已经约好的事。周叙想把接送全部排出来，女儿说自己能坐车，真的要接会提前发消息，他把多写的那一段删掉。"
+        },
+        {
+          "text": "程安然的公司材料换了好几轮，仍会在餐桌一角改。有时候她也讲不清哪一份是最后的，叫周叙先别动，等自己核完再归袋。周叙公司的事情和家里的复查撞过几次，才知道把手机设上提醒不等于已经把人和路程安排好。"
+        },
+        {
+          "text": "九月七日晚上，女儿把卷子拿到饭桌，争那道题的答案。程安然还要核工作，周叙从柜里拿出收回来的旧纸箱，胶带边湿了一点。他说到那个人的名字时，妻子先挪开旁边那杯水；当晚他们说过的话和没有说的，还在这一间屋子里。"
+        },
+        {
+          "text": "旧MP3的按键按下去又弹起，周叙坐在餐桌旁，听见厨房的水声停了。那些年没有在听到一个名字时消失。程安然擦了手回来，说自己还要收最后一页材料，问他旧纸是不是还要看，别和蓝色文件袋放混。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 高中开学",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH07_EP08_RETURN"
+    },
+    {
+      "id": "CH07_EP08_RETURN",
+      "type": "transition",
+      "text": "餐桌的灯还亮着。",
+      "from": "2014～2037 · 后来的生活",
+      "to": "2037年9月7日 · 家中",
+      "lifeContext": {
+        "time": {
+          "year": 2037,
+          "month": 9,
+          "season": "autumn",
+          "label": "2037 · 秋 · 回到餐桌",
+          "location": "家中",
+          "timeline": "present"
+        },
+        "stage": "middleAge",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "一起过日子",
+          "ZHOUMAN": "高中生活"
+        }
+      },
+      "next": "CH07_EP08_END"
+    },
+    {
+      "id": "CH07_EP08_END",
+      "type": "episodeEnd",
+      "next": "CH08"
+    }
+  ],
+  "nodeAliases": {}
+}

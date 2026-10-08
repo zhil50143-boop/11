@@ -19,3 +19,13 @@ H5 加载采用 Cocos 3.8 官方 resources API，按 manifest 加载当前片段
 
 mitt 固定 tag 3.0.1，源文件 assets/scripts/vendor/mitt.ts，未修改正文；MIT 全文随仓库保存。
 Ajv 固定 8.20.0，许可保存在 third_party/ajv/LICENSE。已通过 GitHub Actions 实际安装并执行；package-lock.json 由该环境生成并提交，后续使用 npm ci。
+
+## 2026-10-08新增核查：Code2Games与审美技能
+
+| 候选 | 当前许可证证据 | 可用范围 | 兼容性、风险及决定 |
+|---|---|---|---|
+| [北大等团队 Code2Games](https://github.com/AIGeeksGroup/Code2Games/tree/8d5ca9c95432e3969bef443a83f8cf224ea4f5a8) | 当前提交完整树26个文件，无 LICENSE/COPYING/NOTICE 路径；GitHub metadata license=null，README未给代码授权 | 仅研究场景、规则、运行反馈的对应关系思想 | 公开入口要求 Python3.11、Blender4.2、Code2Worlds场景、Hunyuan3D2.1、DashScope及动画FBX；输出BLEND/MP4/GLB。论文目标UE5，当前树无Cocos、TS、H5或UE项目目录。不能直接减轻本项目JSON剧情/存档开发；不复制代码、提示词、示例素材，不安装运行。代码授权与第三方模型/角色素材许可都须分别确认 |
+| [Taste-Skill](https://github.com/Leonxlnx/taste-skill/tree/b482f7a970abb98c4108d4a9f761e458c64cefc8) | MIT，原文随本机技能安装保留 | 按用户要求用于照片审美：先理解生活叙事需求、核对原有形象、避免泛化装饰 | 已安装 design-taste-frontend，v2实验版；主要针对前端界面，不能自动证明人脸/手部合格；网页栈/动效默认不适用于本Cocos游戏，不加入运行时依赖 |
+| [Impeccable](https://github.com/pbakaus/impeccable/tree/778c8a7b71ccd5bfe3ca6ac68c15d9d872d0f87d) | Apache-2.0，LICENSE与NOTICE.md随本机技能安装保留；平台参考派生部分MIT见NOTICE | 用户确认指该技能并允许独立图片评审；用critique按适用范围评审 | 已安装4.5.0；机械检测主要检查网页界面，不是PNG生成瑕疵检测器。图片审查不得把未扫描/零发现等同自动合格，不强套网页交互分数，不改变本项目叙事方向 |
+
+Code2Games核查日期2026-10-08，固定提交8d5ca9c95432e3969bef443a83f8cf224ea4f5a8。论文[arXiv2610.05033v1](https://arxiv.org/abs/2610.05033)介绍UE5引擎重构与执行反馈；论文许可不替代代码、模型、图片或数据集授权。公开仓库现有可执行交付与论文描述分开判断，本次未声称已跑通它。它的稳定ID和运行反馈思路与本项目已有节点ID、Schema、核心测试和真实H5回归相近，没有显著新增收益。

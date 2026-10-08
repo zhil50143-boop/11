@@ -1,0 +1,370 @@
+{
+  "episodeId": "CH07_EP01",
+  "name": "自己的钥匙",
+  "startNode": "CH07_EP01_N001",
+  "nodes": [
+    {
+      "id": "CH07_EP01_N001",
+      "type": "passage",
+      "title": "换一把锁",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "设备公司的宿舍要调整，周叙和一个同事在外面合租。房东领他们看房，厨房水龙头拧紧了还滴，房东说过几天找人换。周叙在合同旁边添了一行，对方嫌他写得细，他把笔放下，等那一行也签过，才去拿钥匙。"
+        },
+        {
+          "text": "屋里没有洗衣机，两人商量轮着去楼下洗，不把湿衣服全挂在同一面窗上。周叙买了一把小锁，钥匙串上还留着原来的宿舍钥匙，交回去之前又去看了一次床下，找到母亲塞给他、一直没用的鞋刷。"
+        },
+        {
+          "text": "母亲来电话问有没有人帮着搬，他说同事一起。她问是不是许知夏，周叙说不是，已经讲过的事不用再按以前算。母亲停了一下，说好，那就照你现在几个人买菜。他把电话放到桌上，先把那把漏水的龙头关到最紧。"
+        },
+        {
+          "text": "同事下班带回来一只电饭锅，插上电才发现没有量杯。两人用茶杯试了一次，米饭夹生，谁也没再多加水去补，吃过以后把第二次该放多少写在锅旁。周叙有时候还会先报两份饭，走到桌边才改成自己要的那一份。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2014,
+          "month": 3,
+          "season": "spring",
+          "label": "2014 · 春 · 换一把锁",
+          "location": "工作地出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "尚未相识",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "换一把锁"
+          ]
+        }
+      },
+      "next": "CH07_EP01_PARTED_CHECK"
+    },
+    {
+      "id": "CH07_EP01_PARTED_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH06_PARTED_2013",
+          "next": "CH07_EP01_AFTER_STATION"
+        }
+      ],
+      "fallback": "CH07_EP01_FAMILY_CHECK"
+    },
+    {
+      "id": "CH07_EP01_AFTER_STATION",
+      "type": "passage",
+      "title": "那一段已经讲清",
+      "category": "main",
+      "paragraphs": [
+        {
+          "text": "去年站前说过的话，他后来已经照原来讲给家里。母亲再问到旧东西，他说照片还要等对方确定地址，来往没有继续，不把两件事混成一个说法。母亲让他自己保管，别在搬家时拿还没寄出的袋子和不要的东西一起处理。"
+        },
+        {
+          "text": "周叙收东西时把那个袋子单独放好。那天在闸口外只看见一部分的事，没有因为过了半年就变成知道她所有动作；他没有给家里添一个后来才猜出的经过。现在的钥匙和租房收条放另一边，搬走前再数一遍。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2014,
+          "month": 3,
+          "season": "spring",
+          "label": "2014 · 春 · 那一段已经讲清",
+          "location": "工作地出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "尚未相识",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "分开以后寄物件不等于恢复来往"
+          ]
+        }
+      },
+      "next": "CH07_EP01_FAMILY_CHECK"
+    },
+    {
+      "id": "CH07_EP01_FAMILY_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH02_TOLD_FAMILY_RELATION",
+          "next": "CH07_EP01_EARLY"
+        },
+        {
+          "flag": "CH02_HID_FAMILY_RELATION",
+          "next": "CH07_EP01_LATE"
+        }
+      ],
+      "fallback": "CH07_EP01_HOME"
+    },
+    {
+      "id": "CH07_EP01_EARLY",
+      "type": "passage",
+      "title": "周末的电话",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "父亲打来问这周能不能回来，周叙先问是不是复查。他说不是，门口那块木板要挪，人手不够。以前家里早知道他的来往，问周末时常会先问两个人怎么定；现在父亲只等他自己确认班次，没有顺便替另外一个人留时间。"
+        },
+        {
+          "text": "周叙把表看完，说星期天下午能到，晚上要走。父亲说够了，木板先搁着，别急着在电话里应一整天。他又问母亲是不是需要买东西，父亲说等她自己列，自己这张名单只写木板。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2015,
+          "month": 5,
+          "season": "spring",
+          "label": "2015 · 春 · 周末的电话",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "尚未相识",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "周末的电话"
+          ]
+        }
+      },
+      "next": "CH07_EP01_HOME"
+    },
+    {
+      "id": "CH07_EP01_LATE",
+      "type": "passage",
+      "title": "周末的电话",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "父亲打来问这周能不能回来，周叙先问是不是复查。他说不是，门口那块木板要挪，人手不够。后来已经向家里讲清的那段来往，没有被他们当成仍在继续；父亲这次只问周叙自己的班表，没再顺带问另一个人。"
+        },
+        {
+          "text": "周叙把表看完，说星期天下午能到，晚上要走。父亲说够了，让他别为了省解释又先答一整天。周叙没把这句话顶回去，拿纸记了车次，再问母亲需不需要带东西。父亲说等她自己列，自己这里只要木板。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2015,
+          "month": 5,
+          "season": "spring",
+          "label": "2015 · 春 · 周末的电话",
+          "location": "出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "尚未相识",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "周末的电话"
+          ]
+        }
+      },
+      "next": "CH07_EP01_HOME"
+    },
+    {
+      "id": "CH07_EP01_HOME",
+      "type": "passage",
+      "title": "木板和洗衣机",
+      "category": "npc",
+      "paragraphs": [
+        {
+          "text": "周叙回去以后，木板没想象中重，只是放的位置不好抬。父亲扶一头，母亲先挪开旁边的小凳，三个人转过门框才把它放稳。事情做完，母亲让他把饭吃了，他怕误车，吃得快，被提醒慢一点，车次又没变。"
+        },
+        {
+          "text": "陈野后来在配货点做熟了，开始带新来的。他和药店那个姑娘没有继续，见面时只讲了几句，说两个人后来各自换过地方，没能约到一个都愿意留下的安排。周叙问他近来有没有空，陈野把弟弟的新课表给他看，说要先把自己这一周排清。"
+        },
+        {
+          "text": "到了2016年，合租同事结婚搬走。周叙自己找小一点的屋子，照着窗框量了一遍旧窗帘能不能用。押金、房租和通勤费写在背面，写完又擦掉一项，那项是旧房两个人分摊的，不能直接照抄。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2015,
+          "month": 5,
+          "season": "spring",
+          "label": "2015 · 春 · 木板和洗衣机",
+          "location": "南城家中",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "尚未相识",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "木板和洗衣机"
+          ]
+        }
+      },
+      "next": "CH07_EP01_JOB_CHECK"
+    },
+    {
+      "id": "CH07_EP01_JOB_CHECK",
+      "type": "condition",
+      "branches": [
+        {
+          "flag": "CH05_TALKED_JOB_CONDITIONS",
+          "next": "CH07_EP01_LIST"
+        },
+        {
+          "flag": "CH05_ASSUMED_RETURN_FOR_JOB",
+          "next": "CH07_EP01_RECHECK"
+        }
+      ],
+      "fallback": "CH07_EP01_NOTE"
+    },
+    {
+      "id": "CH07_EP01_LIST",
+      "type": "passage",
+      "title": "先看自己的条件",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "求职时一项项核对过两份岗位，后来他也会把自己的班次和钱算在搬家之前。房东催他早点定，他说先把周末值班问准，不能只凭离公司近就签。房东把电话留给他，让他有结果再来。"
+        },
+        {
+          "text": "他最后租下那间屋，给母亲发了地址。母亲问是不是已经看过，他说看过，窗边那块渗水房东写进了维修单。她说自己只是要邮一包东西，没叫他把屋子全部介绍一遍，周叙笑了一下，重新把门牌号发准确。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2016,
+          "month": 8,
+          "season": "summer",
+          "label": "2016 · 夏 · 先看自己的条件",
+          "location": "新出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "尚未相识",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "先看自己的条件"
+          ]
+        }
+      },
+      "next": "CH07_EP01_NOTE"
+    },
+    {
+      "id": "CH07_EP01_RECHECK",
+      "type": "passage",
+      "title": "先看自己的条件",
+      "category": "daily",
+      "paragraphs": [
+        {
+          "text": "求职时他曾先按自己的岗位建议别人回来，后来不得不把已经讲清的条件重新看过。现在房东催着签字，他又差点只照离公司近定下来，走出去才想起班次和修水管的约定还没问，转回去补在纸上。"
+        },
+        {
+          "text": "他最后租下那间屋，给母亲发了地址。母亲问是不是已经看过，他说看过，窗边那块渗水房东写进了维修单。她说自己只是要邮一包东西，没叫他把屋子全部介绍一遍，周叙把漏掉的门牌号再补发了一条。"
+        }
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2016,
+          "month": 8,
+          "season": "summer",
+          "label": "2016 · 夏 · 先看自己的条件",
+          "location": "新出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "尚未相识",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "先看自己的条件"
+          ]
+        }
+      },
+      "next": "CH07_EP01_NOTE"
+    },
+    {
+      "id": "CH07_EP01_NOTE",
+      "type": "letter",
+      "actionText": "看搬家的清单",
+      "text": "2016.8\n自己确认：钥匙、押金收条、通勤时间。\n留给房东：水管维修单。\n原来合租的那份费用不能沿用。",
+      "setFlags": [
+        "CH07_READ_MOVE_LIST"
+      ],
+      "lifeContext": {
+        "time": {
+          "year": 2016,
+          "month": 8,
+          "season": "summer",
+          "label": "2016 · 夏 · 看搬家的清单",
+          "location": "新出租屋",
+          "timeline": "memory"
+        },
+        "stage": "working",
+        "relationships": {
+          "XIA": "已经分开",
+          "ANRAN": "尚未相识",
+          "ZHOUMAN": "尚未出生"
+        },
+        "memory": {
+          "id": "LATER_LIFE",
+          "title": "后来一起过的日子",
+          "status": "fragmentary",
+          "evidence": [
+            "看搬家的清单"
+          ]
+        }
+      },
+      "next": "CH07_EP01_END"
+    },
+    {
+      "id": "CH07_EP01_END",
+      "type": "episodeEnd",
+      "next": "CH07_EP02"
+    }
+  ],
+  "nodeAliases": {}
+}

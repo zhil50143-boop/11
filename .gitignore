@@ -6,6 +6,7 @@ settings/v2/packages/information.json
 build/
 node_modules/
 work/
+.impeccable/
 .env
 .env.*
 !.env.example
