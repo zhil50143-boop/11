@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/zhil50143-boop/11",
+  "branch": "main",
+  "gameSourceCommit": "661708e0d788469c6606573eb7a2bf966d6b57a7",
+  "copySourceCommit": "661708e0d788469c6606573eb7a2bf966d6b57a7",
+  "documentCommit": "d81877a641915692b231be3e7da0bd3053f06053",
+  "H5sha256": "869be0cc0cf1cddb603d6f2513de302462920bbacaa7fccef9879c95f1796f5c",
+  "copySha256": "eef56e077bc06045db184250d855c6a44dbba3a4f05d2f8d6f41e0f8534e43e1",
+  "verifiedSourceInputs": 110,
+  "kind": "development verification, not final release",
+  "physicalTapTapAndHumanAcceptance": "pending",
+  "uploadedToTapTap": false,
+  "file": "C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\outputs\\余生未寄_V2_万轮回归_源码与审核资料.zip",
+  "bytes": 250234168,
+  "entries": 1093,
+  "sha256": "87f2c55389488f1ca78444e8c7848ac1b457424c63d295f9ac8e30fd649df63d",
+  "crc": "PASS",
+  "modelWeightsOrDevRuntimeIncluded": false
+}
