@@ -123,7 +123,29 @@
       "01-opening": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c"
     },
     "uploadedToTapTap": false,
-    "platform": "Original RC2 remains version275902/package74035. No newer upload or binding/submission/publication."
+    "platform": "Original RC2 remains version275902/package74035. No newer upload or binding/submission/publication.",
+    "sourceCommit": "dc086110a3a6821f66103084fa4275f4e62f576d",
+    "copy": {
+      "file": "docs/PLATFORM_REVIEW_COPY.md",
+      "index": "docs/PLATFORM_REVIEW_COPY.index.json",
+      "sourceCommit": "dc086110a3a6821f66103084fa4275f4e62f576d",
+      "date": "2026-10-09",
+      "jsonTextEntries": 3299,
+      "sourceTextEntries": 168,
+      "scopes": {
+        "game-source": 149,
+        "design-preview-only": 19
+      },
+      "bytes": 979410,
+      "sha256": "2d011a754ae7bc6c65ae88fa683bd51a870e0a723d5bf16952eb2b88f3fdbeb1",
+      "verifiedSourceInputs": 109
+    },
+    "originalPhotoSha256": {
+      "graduation_old": "698107eebe5bbb7aa08f0f7e000bae7be3c2f917da3b7e604cb1b30d61cdbfcb",
+      "graduation_fresh": "b5ad17f1fff66cde82bc87676692c71b97205a48ae9daacc0051175435cb6e5f",
+      "street_2010": "8dd9645bd8f0388787ce27bcc74ae0d154dc1d571cf64742ebdc85a3e595bd4d",
+      "family_2035": "3058337469bc704b3b23f82a41b6155e88498a5350bc572f57d1ec520818bdf2"
+    }
   },
   "limits": [
     "Not physical phone/TapTap container or human reading",
@@ -131,5 +153,21 @@
     "One final whole route rerun; prior continuous six rounds and shared-scene catalog/phone tests retained as separate batches",
     "No new voice, art generation, story, choice or ending",
     "Original platform RC2 retained; no newer upload, binding, submission or publication"
-  ]
+  ],
+  "sourceCommit": "dc086110a3a6821f66103084fa4275f4e62f576d",
+  "copy": {
+    "file": "docs/PLATFORM_REVIEW_COPY.md",
+    "index": "docs/PLATFORM_REVIEW_COPY.index.json",
+    "sourceCommit": "dc086110a3a6821f66103084fa4275f4e62f576d",
+    "date": "2026-10-09",
+    "jsonTextEntries": 3299,
+    "sourceTextEntries": 168,
+    "scopes": {
+      "game-source": 149,
+      "design-preview-only": 19
+    },
+    "bytes": 979410,
+    "sha256": "2d011a754ae7bc6c65ae88fa683bd51a870e0a723d5bf16952eb2b88f3fdbeb1",
+    "verifiedSourceInputs": 109
+  }
 }

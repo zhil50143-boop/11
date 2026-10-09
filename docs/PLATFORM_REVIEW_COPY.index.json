@@ -1,13 +1,13 @@
 {
   "version": "1.0.0-rc.3",
   "exportDate": "2026-10-09",
-  "sourceCommit": "289211be626ec875d9a918764e5693ca26dc1ee8",
+  "sourceCommit": "dc086110a3a6821f66103084fa4275f4e62f576d",
   "chapters": 10,
   "episodes": 60,
   "nodeCount": 467,
   "endings": 6,
   "jsonTextEntries": 3299,
-  "sourceTextEntries": 155,
+  "sourceTextEntries": 168,
   "coverage": {
     "json": "all Chinese string values, no branch filtering",
     "source": "all Chinese TypeScript literals/templates outside vendor",
@@ -19820,112 +19820,126 @@
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 20,
+      "line": 21,
       "text": "余生未寄",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 23,
+      "line": 24,
       "text": "暂时无法打开，请重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 24,
+      "line": 25,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 36,
+      "line": 37,
+      "text": "相册",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/core/Main.ts",
+      "line": 39,
+      "text": "暂时读不了相册。原存档仍保留。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/core/Main.ts",
+      "line": 41,
       "text": "从头开始",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 38,
+      "line": 43,
       "text": "再次点按会从头读。已经读完的结局会保留。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 43,
+      "line": 48,
       "text": "存档暂时无法读取。请保留原记录后重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 45,
+      "line": 50,
       "text": "取消重新开始",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "line": 47,
+      "line": 52,
       "text": "阅读设置",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "line": 49,
+      "line": 54,
       "text": "此浏览器暂时无法读取存档。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "line": 54,
+      "line": 59,
       "text": "存档来自较新版本，请使用对应版本继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "line": 59,
+      "line": 64,
       "text": "旧版本存档无法备份，已保留原记录。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "line": 69,
+      "line": 74,
       "text": "旧记录无法备份，已保留原存档。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "line": 76,
+      "line": 81,
       "text": "旧存档无法备份，已保留原记录。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "line": 77,
+      "line": 82,
       "text": "旧存档无法读取，已保留备份。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "line": 86,
+      "line": 91,
       "text": "未能保存。请保持页面打开，稍后重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "line": 90,
+      "line": 95,
       "text": "未能删除存档。",
       "format": "literal",
       "scope": "game-source"
@@ -20239,36 +20253,113 @@
       "scope": "game-source"
     },
     {
-      "file": "assets/scripts/ui/PhotoViewer.ts",
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 11,
+      "text": "旧毕业照",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 12,
+      "text": "刚洗好的毕业照",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 13,
+      "text": "旧街",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 14,
+      "text": "楼下合照",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
       "line": 24,
+      "text": "相册",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 27,
+      "text": "还没有放进来的照片。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 31,
+      "text": "正在打开……",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 32,
+      "text": "返回相册",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 36,
+      "text": "这张照片暂时没能打开，请稍后再看。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "line": 42,
+      "text": "返回书桌",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoViewer.ts",
+      "line": 25,
       "text": "照片暂时没能打开。下面仍可读文字。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "line": 24,
+      "line": 25,
       "text": "旧物图片暂时没能打开。下面仍可读文字。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "line": 26,
+      "line": 27,
       "text": "17路",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "line": 37,
+      "line": 38,
+      "text": "返回相册",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/PhotoViewer.ts",
+      "line": 38,
       "text": "放回去",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "line": 40,
+      "line": 41,
       "text": "翻面",
       "format": "literal",
       "scope": "game-source"
@@ -20695,42 +20786,42 @@
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 172,
+      "line": 173,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 177,
+      "line": 178,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 180,
+      "line": 181,
       "text": "该片段暂时无法继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 192,
+      "line": 193,
       "text": "先看看照片和信封。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 194,
+      "line": 195,
       "text": "（看过）",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 197,
+      "line": 198,
       "text": "收好纸箱",
       "format": "literal",
       "scope": "game-source"
@@ -21176,7 +21267,7 @@
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "sha256": "d1d803856076408ab6a575a77a01b3be0ad0ba6906ce23ee00d6b6e2a414a08c"
+      "sha256": "248cec35809653d9082e9c5bb98eeb0ad31009cc9f1915fac05c55cc644132e1"
     },
     {
       "file": "assets/scripts/core/NarrativeMath.ts",
@@ -21196,7 +21287,7 @@
     },
     {
       "file": "assets/scripts/save/LocalSave.ts",
-      "sha256": "3260dd66e25abd3d18a4fb95ccd8fde1e0564b786f794f4f8bdccc7653671ec5"
+      "sha256": "d8ef2341100b0dc3df944142413e9447dd8513ec2eb300e67058a247b74946f8"
     },
     {
       "file": "assets/scripts/save/ReadingPreferences.ts",
@@ -21204,7 +21295,7 @@
     },
     {
       "file": "assets/scripts/save/SaveManager.ts",
-      "sha256": "938d0f1ebd42ab1dd3dd5791b730dec1307f5e05c35a53f01b251910ced52d90"
+      "sha256": "5b89f4d7aa901d56c4c9844bf9ded5a2cc3115b03aec78fd5781a732ee4e7b27"
     },
     {
       "file": "assets/scripts/story/EndingResolver.ts",
@@ -21271,8 +21362,12 @@
       "sha256": "fc8c735ea7a9ca292aee05a8c294f3489a75072b5ae6137c206bf290b8e0b41a"
     },
     {
+      "file": "assets/scripts/ui/PhotoAlbum.ts",
+      "sha256": "e5d1a44fd130dd4fd05164f707c06014ab04dc68ef6a232f3c417c75791010e4"
+    },
+    {
       "file": "assets/scripts/ui/PhotoViewer.ts",
-      "sha256": "0731b1ee292609b0fce96d4088569e587189f50de3c146fe03c39f167abfd33f"
+      "sha256": "cf0fbf37dec522a7aff0ded36d461a479ba83153052ab9d912b40aaa7316de26"
     },
     {
       "file": "assets/scripts/ui/ReadingSettings.ts",
@@ -21288,7 +21383,7 @@
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "sha256": "4d55ac2fa59c6e9f8fade9051f698efaee535dd58675b08127dca24bc53676b0"
+      "sha256": "46156115ce3ff597045a51319ff9ba3afdaa741ad88b3c9fe6332c925a1d8e7d"
     },
     {
       "file": "assets/scripts/ui/UIFactory.ts",
@@ -21304,8 +21399,8 @@
     }
   ],
   "export": {
-    "bytes": 978628,
-    "sha256": "ed87efa958465b604f085d1307795b424134ce3701d4b2177235d5b15fec9868"
+    "bytes": 979410,
+    "sha256": "2d011a754ae7bc6c65ae88fa683bd51a870e0a723d5bf16952eb2b88f3fdbeb1"
   },
   "limitations": [
     "Current candidate, regenerate on final commit",

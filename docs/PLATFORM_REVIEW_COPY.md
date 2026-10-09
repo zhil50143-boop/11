@@ -1,6 +1,6 @@
 # 《余生未寄》全部游戏文案审核汇总
 
-版本：1.0.0-rc.3｜整理日期：2026-10-09｜剧情与界面源码基线：289211be626ec875d9a918764e5693ca26dc1ee8
+版本：1.0.0-rc.3｜整理日期：2026-10-09｜剧情与界面源码基线：dc086110a3a6821f66103084fa4275f4e62f576d
 
 本汇总从当前实际入包清单与游戏源码生成，完整收录十章、所有条件分支、选择、旧物、短信、照片背文、信件、录音、六个结局及界面提示，包含剧透和隐藏结局。共10章、60片段、467个节点、6个结局，不是单条通关路线或剧情摘要。每处保留来源以便GPT/平台核对，原文不改写。
 
@@ -6075,67 +6075,75 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 家中
 
-### assets/scripts/core/Main.ts:20
+### assets/scripts/core/Main.ts:21
 
 余生未寄
 
-### assets/scripts/core/Main.ts:23
+### assets/scripts/core/Main.ts:24
 
 暂时无法打开，请重试。
 
-### assets/scripts/core/Main.ts:24
+### assets/scripts/core/Main.ts:25
 
 继续
 
-### assets/scripts/core/Main.ts:36
+### assets/scripts/core/Main.ts:37
+
+相册
+
+### assets/scripts/core/Main.ts:39
+
+暂时读不了相册。原存档仍保留。
+
+### assets/scripts/core/Main.ts:41
 
 从头开始
 
-### assets/scripts/core/Main.ts:38
+### assets/scripts/core/Main.ts:43
 
 再次点按会从头读。已经读完的结局会保留。
 
-### assets/scripts/core/Main.ts:43
+### assets/scripts/core/Main.ts:48
 
 存档暂时无法读取。请保留原记录后重试。
 
-### assets/scripts/core/Main.ts:45
+### assets/scripts/core/Main.ts:50
 
 取消重新开始
 
-### assets/scripts/core/Main.ts:47
+### assets/scripts/core/Main.ts:52
 
 阅读设置
 
-### assets/scripts/save/LocalSave.ts:49
+### assets/scripts/save/LocalSave.ts:54
 
 此浏览器暂时无法读取存档。
 
-### assets/scripts/save/LocalSave.ts:54
+### assets/scripts/save/LocalSave.ts:59
 
 存档来自较新版本，请使用对应版本继续。
 
-### assets/scripts/save/LocalSave.ts:59
+### assets/scripts/save/LocalSave.ts:64
 
 旧版本存档无法备份，已保留原记录。
 
-### assets/scripts/save/LocalSave.ts:69
+### assets/scripts/save/LocalSave.ts:74
 
 旧记录无法备份，已保留原存档。
 
-### assets/scripts/save/LocalSave.ts:76
+### assets/scripts/save/LocalSave.ts:81
 
 旧存档无法备份，已保留原记录。
 
-### assets/scripts/save/LocalSave.ts:77
+### assets/scripts/save/LocalSave.ts:82
 
 旧存档无法读取，已保留备份。
 
-### assets/scripts/save/LocalSave.ts:86
+### assets/scripts/save/LocalSave.ts:91
 
 未能保存。请保持页面打开，稍后重试。
 
-### assets/scripts/save/LocalSave.ts:90
+### assets/scripts/save/LocalSave.ts:95
 
 未能删除存档。
 
@@ -6316,23 +6324,67 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 继续
 
-### assets/scripts/ui/PhotoViewer.ts:24
+### assets/scripts/ui/PhotoAlbum.ts:11
+
+旧毕业照
+
+### assets/scripts/ui/PhotoAlbum.ts:12
+
+刚洗好的毕业照
+
+### assets/scripts/ui/PhotoAlbum.ts:13
+
+旧街
+
+### assets/scripts/ui/PhotoAlbum.ts:14
+
+楼下合照
+
+### assets/scripts/ui/PhotoAlbum.ts:24
+
+相册
+
+### assets/scripts/ui/PhotoAlbum.ts:27
+
+还没有放进来的照片。
+
+### assets/scripts/ui/PhotoAlbum.ts:31
+
+正在打开……
+
+### assets/scripts/ui/PhotoAlbum.ts:32
+
+返回相册
+
+### assets/scripts/ui/PhotoAlbum.ts:36
+
+这张照片暂时没能打开，请稍后再看。
+
+### assets/scripts/ui/PhotoAlbum.ts:42
+
+返回书桌
+
+### assets/scripts/ui/PhotoViewer.ts:25
 
 照片暂时没能打开。下面仍可读文字。
 
-### assets/scripts/ui/PhotoViewer.ts:24
+### assets/scripts/ui/PhotoViewer.ts:25
 
 旧物图片暂时没能打开。下面仍可读文字。
 
-### assets/scripts/ui/PhotoViewer.ts:26
+### assets/scripts/ui/PhotoViewer.ts:27
 
 17路
 
-### assets/scripts/ui/PhotoViewer.ts:37
+### assets/scripts/ui/PhotoViewer.ts:38
+
+返回相册
+
+### assets/scripts/ui/PhotoViewer.ts:38
 
 放回去
 
-### assets/scripts/ui/PhotoViewer.ts:40
+### assets/scripts/ui/PhotoViewer.ts:41
 
 翻面
 
@@ -6576,27 +6628,27 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 回到首页
 
-### assets/scripts/ui/StoryView.ts:172
+### assets/scripts/ui/StoryView.ts:173
 
 继续
 
-### assets/scripts/ui/StoryView.ts:177
+### assets/scripts/ui/StoryView.ts:178
 
 继续
 
-### assets/scripts/ui/StoryView.ts:180
+### assets/scripts/ui/StoryView.ts:181
 
 该片段暂时无法继续。
 
-### assets/scripts/ui/StoryView.ts:192
+### assets/scripts/ui/StoryView.ts:193
 
 先看看照片和信封。
 
-### assets/scripts/ui/StoryView.ts:194
+### assets/scripts/ui/StoryView.ts:195
 
 （看过）
 
-### assets/scripts/ui/StoryView.ts:197
+### assets/scripts/ui/StoryView.ts:198
 
 收好纸箱
 
