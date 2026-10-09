@@ -1,6 +1,6 @@
 # 《余生未寄》全部游戏文案审核汇总
 
-版本：1.0.0-rc.3｜整理日期：2026-10-08｜剧情与界面源码基线：e0b0791ed9b5492e182d1e53b6cdb01b6946bf5b
+版本：1.0.0-rc.3｜整理日期：2026-10-09｜剧情与界面源码基线：289211be626ec875d9a918764e5693ca26dc1ee8
 
 本汇总从当前实际入包清单与游戏源码生成，完整收录十章、所有条件分支、选择、旧物、短信、照片背文、信件、录音、六个结局及界面提示，包含剧透和隐藏结局。共10章、60片段、467个节点、6个结局，不是单条通关路线或剧情摘要。每处保留来源以便GPT/平台核对，原文不改写。
 
@@ -4407,8 +4407,6 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 下班回家，母亲打来讲复查时间。她说只是改了半天，别按上次那个星期排。周叙把冰箱纸上的旧日期划掉，换上她说的那个，又拿出自己的旧本子。本子中间夹着一张纸，外沿压在装订线里，他抽的时候把那一页撕出一个小口。
 
-下班回家，母亲打来讲复查时间。她说只是改了半天，别按上次那个星期排。周叙把新日期写在冰箱的纸上，又拿出自己的旧本子。新纸上是现在要做的事，旧本子里的日期不会因为昨晚想得久，就挪到别的年份。
-
 
 #### 两处不同的纸
 
@@ -5015,7 +5013,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP02_KEYS（assets/resources/data/story/chapter09/ep02_before_send.json）
 
-场景标注：2037 · 秋 · 备用钥匙｜南城
+场景标注：2037 · 秋 · 备用钥匙｜家中
 
 标题：备用钥匙
 
@@ -5032,7 +5030,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP02_TABLE（assets/resources/data/story/chapter09/ep02_before_send.json）
 
-场景标注：2037 · 秋 · 晚饭前的桌子｜南城
+场景标注：2037 · 秋 · 晚饭前的桌子｜家中
 
 标题：晚饭前的桌子
 
@@ -5135,7 +5133,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP03_HOSPITAL（assets/resources/data/story/chapter09/ep03_reply.json）
 
-场景标注：2037 · 秋 · 报告还要自己留｜南城
+场景标注：2037 · 秋 · 报告还要自己留｜南城医院
 
 标题：报告还要自己留
 
@@ -5152,7 +5150,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP03_HOME（assets/resources/data/story/chapter09/ep03_reply.json）
 
-场景标注：2037 · 秋 · 把电话放近一点｜南城
+场景标注：2037 · 秋 · 把电话放近一点｜家中
 
 标题：把电话放近一点
 
@@ -5169,7 +5167,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP04_N001（assets/resources/data/story/chapter09/ep04_open_day.json）
 
-场景标注：2037 · 秋 · 九月十八日的下班路｜家中
+场景标注：2037 · 秋 · 九月十八日的下班路｜南城
 
 标题：九月十八日的下班路
 
@@ -5182,7 +5180,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP04_JOB_SHARED（assets/resources/data/story/chapter09/ep04_open_day.json）
 
-场景标注：2037 · 秋 · 先问已经定下的事｜南城
+场景标注：2037 · 秋 · 先问已经定下的事｜单位
 
 标题：先问已经定下的事
 
@@ -5195,7 +5193,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP04_JOB_REVISED（assets/resources/data/story/chapter09/ep04_open_day.json）
 
-场景标注：2037 · 秋 · 把顺口的安排停下来｜南城
+场景标注：2037 · 秋 · 把顺口的安排停下来｜单位
 
 标题：把顺口的安排停下来
 
@@ -5208,7 +5206,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP04_JOB_COMMON（assets/resources/data/story/chapter09/ep04_open_day.json）
 
-场景标注：2037 · 秋 · 借调的日期｜南城
+场景标注：2037 · 秋 · 借调的日期｜单位
 
 标题：借调的日期
 
@@ -5320,7 +5318,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP05_N001（assets/resources/data/story/chapter09/ep05_school_gate.json）
 
-场景标注：2037 · 秋 · 九月二十日，星期日｜家中
+场景标注：2037 · 秋 · 九月二十日，星期日｜南城二中
 
 标题：九月二十日，星期日
 
@@ -5333,7 +5331,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP05_TEACHER（assets/resources/data/story/chapter09/ep05_school_gate.json）
 
-场景标注：2037 · 秋 · 登记桌的另一边｜南城
+场景标注：2037 · 秋 · 登记桌的另一边｜南城二中
 
 标题：登记桌的另一边
 
@@ -5369,7 +5367,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP05_OLD_PAGE（assets/resources/data/story/chapter09/ep05_school_gate.json）
 
-场景标注：2037 · 秋 · 她带来的那一页｜家中
+场景标注：2037 · 秋 · 她带来的那一页｜学校门外
 
 标题：她带来的那一页
 
@@ -5416,7 +5414,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP05_ALONE（assets/resources/data/story/chapter09/ep05_school_gate.json）
 
-场景标注：2037 · 秋 · 自己的回执｜家中
+场景标注：2037 · 秋 · 自己的回执｜南城二中
 
 标题：自己的回执
 
@@ -5429,7 +5427,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP05_CLOSE（assets/resources/data/story/chapter09/ep05_school_gate.json）
 
-场景标注：2037 · 秋 · 回家以前｜家中
+场景标注：2037 · 秋 · 回家以前｜南城公交
 
 标题：回家以前
 
@@ -5522,7 +5520,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP06_CLOSE（assets/resources/data/story/chapter09/ep06_monday.json）
 
-场景标注：2037 · 秋 · 下班前再看一次｜家中
+场景标注：2037 · 秋 · 下班前再看一次｜单位
 
 标题：下班前再看一次
 
@@ -5535,7 +5533,7 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 原文位置：CH09_EP06_BAG（assets/resources/data/story/chapter09/ep06_monday.json）
 
-场景标注：2037 · 秋 · 晚上装回去｜南城
+场景标注：2037 · 秋 · 晚上装回去｜家中
 
 标题：晚上装回去
 
@@ -6246,17 +6244,25 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 录音暂时无法播放。可以读文字继续。
 
-### assets/scripts/ui/ChoicePanel.ts:14
+### assets/scripts/ui/ChoicePanel.ts:17
 
 决定
 
-### assets/scripts/ui/ChoicePanel.ts:22
+### assets/scripts/ui/ChoicePanel.ts:26
 
 决定
 
-### assets/scripts/ui/DialoguePanel.ts:8
+### assets/scripts/ui/DialoguePanel.ts:12
 
 继续
+
+### assets/scripts/ui/DocumentPanel.ts:36
+
+原来记得的
+
+### assets/scripts/ui/DocumentPanel.ts:39
+
+对过的记录
 
 ### assets/scripts/ui/InvestigationPanel.ts:14
 
@@ -6294,19 +6300,19 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 查看
 
-### assets/scripts/ui/LifeReadingPanel.ts:11
-
-家中
-
-### assets/scripts/ui/LifeReadingPanel.ts:12
-
-公交
-
-### assets/scripts/ui/LifeReadingPanel.ts:60
+### assets/scripts/ui/LifeReadingPanel.ts:59
 
 继续
 
-### assets/scripts/ui/PassagePanel.ts:41
+### assets/scripts/ui/MemoryComparisonPanel.ts:14
+
+放回去
+
+### assets/scripts/ui/MemoryComparisonPanel.ts:31
+
+查看
+
+### assets/scripts/ui/PassagePanel.ts:44
 
 继续
 
@@ -6406,91 +6412,191 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 返回
 
-### assets/scripts/ui/StoryView.ts:41
+### assets/scripts/ui/SharedScenes.ts:23
+
+与
+
+### assets/scripts/ui/SharedScenes.ts:24
+
+家中
+
+### assets/scripts/ui/SharedScenes.ts:28
+
+周叙家
+
+### assets/scripts/ui/SharedScenes.ts:30
+
+许知夏家
+
+### assets/scripts/ui/SharedScenes.ts:31
+
+17路公交
+
+### assets/scripts/ui/SharedScenes.ts:32
+
+旧体育馆
+
+### assets/scripts/ui/SharedScenes.ts:35
+
+周叙大学宿舍
+
+### assets/scripts/ui/SharedScenes.ts:37
+
+周叙的大学
+
+### assets/scripts/ui/SharedScenes.ts:39
+
+设备厂办公室
+
+### assets/scripts/ui/SharedScenes.ts:39
+
+省内设备公司
+
+### assets/scripts/ui/SharedScenes.ts:41
+
+单位
+
+### assets/scripts/ui/SharedScenes.ts:42
+
+工作地出租屋
+
+### assets/scripts/ui/SharedScenes.ts:42
+
+出租屋
+
+### assets/scripts/ui/SharedScenes.ts:42
+
+新出租屋
+
+### assets/scripts/ui/SharedScenes.ts:44
+
+南城车站
+
+### assets/scripts/ui/SharedScenes.ts:44
+
+南城车站候车区
+
+### assets/scripts/ui/SharedScenes.ts:44
+
+南城车站检票口
+
+### assets/scripts/ui/SharedScenes.ts:46
+
+照相店
+
+### assets/scripts/ui/SharedScenes.ts:46
+
+南城照相店
+
+### assets/scripts/ui/SharedScenes.ts:48
+
+南城旧街
+
+### assets/scripts/ui/SharedScenes.ts:48
+
+南城街边
+
+### assets/scripts/ui/SharedScenes.ts:48
+
+周叙家楼下
+
+### assets/scripts/ui/SharedScenes.ts:50
+
+南城小饭店
+
+### assets/scripts/ui/SharedScenes.ts:50
+
+面店
+
+### assets/scripts/ui/SharedScenes.ts:52
+
+南城医院
+
+### assets/scripts/ui/StoryView.ts:43
 
 正在打开……
 
-### assets/scripts/ui/StoryView.ts:51
+### assets/scripts/ui/StoryView.ts:53
 
 暂时无法打开。请重试。
 
-### assets/scripts/ui/StoryView.ts:67
+### assets/scripts/ui/StoryView.ts:69
 
 重试
 
-### assets/scripts/ui/StoryView.ts:81
+### assets/scripts/ui/StoryView.ts:85
 
 返回书桌
 
-### assets/scripts/ui/StoryView.ts:89
+### assets/scripts/ui/StoryView.ts:93
 
 暂时无法返回。请重试。
 
-### assets/scripts/ui/StoryView.ts:93
+### assets/scripts/ui/StoryView.ts:97
 
 阅读设置
 
-### assets/scripts/ui/StoryView.ts:108
+### assets/scripts/ui/StoryView.ts:112
 
 残缺
 
-### assets/scripts/ui/StoryView.ts:108
+### assets/scripts/ui/StoryView.ts:112
 
 出现矛盾
 
-### assets/scripts/ui/StoryView.ts:108
+### assets/scripts/ui/StoryView.ts:112
 
 重新理解
 
-### assets/scripts/ui/StoryView.ts:108
+### assets/scripts/ui/StoryView.ts:112
 
 完整
 
-### assets/scripts/ui/StoryView.ts:115
+### assets/scripts/ui/StoryView.ts:119
 
 重试保存
 
-### assets/scripts/ui/StoryView.ts:118
+### assets/scripts/ui/StoryView.ts:122
 
 当前内容读完了。
 
-### assets/scripts/ui/StoryView.ts:119
+### assets/scripts/ui/StoryView.ts:123
 
 可以退出，稍后从这里继续。
 
-### assets/scripts/ui/StoryView.ts:134
+### assets/scripts/ui/StoryView.ts:140
 
 这一页读完了。
 
-### assets/scripts/ui/StoryView.ts:135
+### assets/scripts/ui/StoryView.ts:141
 
 再读一遍
 
-### assets/scripts/ui/StoryView.ts:136
+### assets/scripts/ui/StoryView.ts:142
 
 回到首页
 
-### assets/scripts/ui/StoryView.ts:159
+### assets/scripts/ui/StoryView.ts:172
 
 继续
 
-### assets/scripts/ui/StoryView.ts:164
+### assets/scripts/ui/StoryView.ts:177
 
 继续
-
-### assets/scripts/ui/StoryView.ts:167
-
-该片段暂时无法继续。
-
-### assets/scripts/ui/StoryView.ts:178
-
-先看看照片和信封。
 
 ### assets/scripts/ui/StoryView.ts:180
 
+该片段暂时无法继续。
+
+### assets/scripts/ui/StoryView.ts:192
+
+先看看照片和信封。
+
+### assets/scripts/ui/StoryView.ts:194
+
 （看过）
 
-### assets/scripts/ui/StoryView.ts:183
+### assets/scripts/ui/StoryView.ts:197
 
 收好纸箱
 
@@ -16803,10 +16909,6 @@ MP3开头
 
 下班回家，母亲打来讲复查时间。她说只是改了半天，别按上次那个星期排。周叙把冰箱纸上的旧日期划掉，换上她说的那个，又拿出自己的旧本子。本子中间夹着一张纸，外沿压在装订线里，他抽的时候把那一页撕出一个小口。
 
-来源：assets/resources/data/story/chapter08/ep02_dates.json｜nodes[0].paragraphs[3].text
-
-下班回家，母亲打来讲复查时间。她说只是改了半天，别按上次那个星期排。周叙把新日期写在冰箱的纸上，又拿出自己的旧本子。新纸上是现在要做的事，旧本子里的日期不会因为昨晚想得久，就挪到别的年份。
-
 来源：assets/resources/data/story/chapter08/ep02_dates.json｜nodes[0].lifeContext.time.label
 
 2037 · 秋 · 九月八日的早晨
@@ -18151,7 +18253,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep02_before_send.json｜nodes[10].lifeContext.time.location
 
-南城
+家中
 
 来源：assets/resources/data/story/chapter09/ep02_before_send.json｜nodes[11].title
 
@@ -18179,7 +18281,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep02_before_send.json｜nodes[11].lifeContext.time.location
 
-南城
+家中
 
 来源：assets/resources/data/story/chapter09/ep03_reply.json｜name
 
@@ -18387,7 +18489,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep03_reply.json｜nodes[8].lifeContext.time.location
 
-南城
+南城医院
 
 来源：assets/resources/data/story/chapter09/ep03_reply.json｜nodes[9].title
 
@@ -18411,7 +18513,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep03_reply.json｜nodes[9].lifeContext.time.location
 
-南城
+家中
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜name
 
@@ -18435,7 +18537,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜nodes[0].lifeContext.time.location
 
-家中
+南城
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜nodes[0].lifeContext.relationships.ANRAN
 
@@ -18463,7 +18565,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜nodes[2].lifeContext.time.location
 
-南城
+单位
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜nodes[3].title
 
@@ -18483,7 +18585,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜nodes[3].lifeContext.time.location
 
-南城
+单位
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜nodes[4].title
 
@@ -18503,7 +18605,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜nodes[4].lifeContext.time.location
 
-南城
+单位
 
 来源：assets/resources/data/story/chapter09/ep04_open_day.json｜nodes[5].title
 
@@ -18719,7 +18821,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[0].lifeContext.time.location
 
-家中
+南城二中
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[0].lifeContext.relationships.ANRAN
 
@@ -18755,7 +18857,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[1].lifeContext.time.location
 
-南城
+南城二中
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[3].title
 
@@ -18815,7 +18917,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[4].lifeContext.time.location
 
-家中
+学校门外
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[4].lifeContext.relationships.ANRAN
 
@@ -18917,7 +19019,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[7].lifeContext.time.location
 
-家中
+南城二中
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[7].lifeContext.relationships.ANRAN
 
@@ -18945,7 +19047,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[8].lifeContext.time.location
 
-家中
+南城公交
 
 来源：assets/resources/data/story/chapter09/ep05_school_gate.json｜nodes[8].lifeContext.relationships.ANRAN
 
@@ -19145,7 +19247,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep06_monday.json｜nodes[9].lifeContext.time.location
 
-家中
+单位
 
 来源：assets/resources/data/story/chapter09/ep06_monday.json｜nodes[9].lifeContext.relationships.ANRAN
 
@@ -19181,7 +19283,7 @@ MP3开头
 
 来源：assets/resources/data/story/chapter09/ep06_monday.json｜nodes[10].lifeContext.time.location
 
-南城
+家中
 
 来源：assets/resources/data/story/chapter10/chapter10_manifest.json｜title
 

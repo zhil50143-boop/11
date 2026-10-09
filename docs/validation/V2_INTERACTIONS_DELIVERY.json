@@ -45,5 +45,21 @@
     "01-opening": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c"
   },
   "uploadedToTapTap": false,
-  "platform": "Original RC2 remains version275902/package74035. No newer upload or binding/submission/publication."
+  "platform": "Original RC2 remains version275902/package74035. No newer upload or binding/submission/publication.",
+  "sourceCommit": "289211be626ec875d9a918764e5693ca26dc1ee8",
+  "copy": {
+    "file": "docs/PLATFORM_REVIEW_COPY.md",
+    "index": "docs/PLATFORM_REVIEW_COPY.index.json",
+    "sourceCommit": "289211be626ec875d9a918764e5693ca26dc1ee8",
+    "date": "2026-10-09",
+    "jsonTextEntries": 3299,
+    "sourceTextEntries": 155,
+    "scopes": {
+      "game-source": 136,
+      "design-preview-only": 19
+    },
+    "bytes": 978628,
+    "sha256": "ed87efa958465b604f085d1307795b424134ce3701d4b2177235d5b15fec9868",
+    "verifiedSourceInputs": 108
+  }
 }

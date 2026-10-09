@@ -1,12 +1,13 @@
 {
   "version": "1.0.0-rc.3",
-  "sourceCommit": "e0b0791ed9b5492e182d1e53b6cdb01b6946bf5b",
+  "exportDate": "2026-10-09",
+  "sourceCommit": "289211be626ec875d9a918764e5693ca26dc1ee8",
   "chapters": 10,
   "episodes": 60,
   "nodeCount": 467,
   "endings": 6,
-  "jsonTextEntries": 3300,
-  "sourceTextEntries": 128,
+  "jsonTextEntries": 3299,
+  "sourceTextEntries": 155,
   "coverage": {
     "json": "all Chinese string values, no branch filtering",
     "source": "all Chinese TypeScript literals/templates outside vendor",
@@ -15907,11 +15908,6 @@
     },
     {
       "file": "assets/resources/data/story/chapter08/ep02_dates.json",
-      "path": "nodes[0].paragraphs[3].text",
-      "text": "下班回家，母亲打来讲复查时间。她说只是改了半天，别按上次那个星期排。周叙把新日期写在冰箱的纸上，又拿出自己的旧本子。新纸上是现在要做的事，旧本子里的日期不会因为昨晚想得久，就挪到别的年份。"
-    },
-    {
-      "file": "assets/resources/data/story/chapter08/ep02_dates.json",
       "path": "nodes[0].lifeContext.time.label",
       "text": "2037 · 秋 · 九月八日的早晨"
     },
@@ -17493,7 +17489,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep02_before_send.json",
       "path": "nodes[10].lifeContext.time.location",
-      "text": "南城"
+      "text": "家中"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep02_before_send.json",
@@ -17528,7 +17524,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep02_before_send.json",
       "path": "nodes[11].lifeContext.time.location",
-      "text": "南城"
+      "text": "家中"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep03_reply.json",
@@ -17788,7 +17784,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep03_reply.json",
       "path": "nodes[8].lifeContext.time.location",
-      "text": "南城"
+      "text": "南城医院"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep03_reply.json",
@@ -17818,7 +17814,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep03_reply.json",
       "path": "nodes[9].lifeContext.time.location",
-      "text": "南城"
+      "text": "家中"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
@@ -17848,7 +17844,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
       "path": "nodes[0].lifeContext.time.location",
-      "text": "家中"
+      "text": "南城"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
@@ -17883,7 +17879,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
       "path": "nodes[2].lifeContext.time.location",
-      "text": "南城"
+      "text": "单位"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
@@ -17908,7 +17904,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
       "path": "nodes[3].lifeContext.time.location",
-      "text": "南城"
+      "text": "单位"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
@@ -17933,7 +17929,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
       "path": "nodes[4].lifeContext.time.location",
-      "text": "南城"
+      "text": "单位"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
@@ -18203,7 +18199,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
       "path": "nodes[0].lifeContext.time.location",
-      "text": "家中"
+      "text": "南城二中"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
@@ -18248,7 +18244,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
       "path": "nodes[1].lifeContext.time.location",
-      "text": "南城"
+      "text": "南城二中"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
@@ -18323,7 +18319,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
       "path": "nodes[4].lifeContext.time.location",
-      "text": "家中"
+      "text": "学校门外"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
@@ -18443,7 +18439,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
       "path": "nodes[7].lifeContext.time.location",
-      "text": "家中"
+      "text": "南城二中"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
@@ -18478,7 +18474,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
       "path": "nodes[8].lifeContext.time.location",
-      "text": "家中"
+      "text": "南城公交"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
@@ -18728,7 +18724,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep06_monday.json",
       "path": "nodes[9].lifeContext.time.location",
-      "text": "家中"
+      "text": "单位"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep06_monday.json",
@@ -18773,7 +18769,7 @@
     {
       "file": "assets/resources/data/story/chapter09/ep06_monday.json",
       "path": "nodes[10].lifeContext.time.location",
-      "text": "南城"
+      "text": "家中"
     },
     {
       "file": "assets/resources/data/story/chapter10/chapter10_manifest.json",
@@ -20118,22 +20114,36 @@
     },
     {
       "file": "assets/scripts/ui/ChoicePanel.ts",
-      "line": 14,
+      "line": 17,
       "text": "决定",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/ChoicePanel.ts",
-      "line": 22,
+      "line": 26,
       "text": "决定",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/DialoguePanel.ts",
-      "line": 8,
+      "line": 12,
       "text": "继续",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/DocumentPanel.ts",
+      "line": 36,
+      "text": "原来记得的",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/DocumentPanel.ts",
+      "line": 39,
+      "text": "对过的记录",
       "format": "literal",
       "scope": "game-source"
     },
@@ -20202,28 +20212,28 @@
     },
     {
       "file": "assets/scripts/ui/LifeReadingPanel.ts",
-      "line": 11,
-      "text": "家中",
-      "format": "literal",
-      "scope": "game-source"
-    },
-    {
-      "file": "assets/scripts/ui/LifeReadingPanel.ts",
-      "line": 12,
-      "text": "公交",
-      "format": "literal",
-      "scope": "game-source"
-    },
-    {
-      "file": "assets/scripts/ui/LifeReadingPanel.ts",
-      "line": 60,
+      "line": 59,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
+      "file": "assets/scripts/ui/MemoryComparisonPanel.ts",
+      "line": 14,
+      "text": "放回去",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/MemoryComparisonPanel.ts",
+      "line": 31,
+      "text": "查看",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
       "file": "assets/scripts/ui/PassagePanel.ts",
-      "line": 41,
+      "line": 44,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
@@ -20397,155 +20407,330 @@
       "scope": "game-source"
     },
     {
-      "file": "assets/scripts/ui/StoryView.ts",
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 23,
+      "text": "与",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 24,
+      "text": "家中",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 28,
+      "text": "周叙家",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 30,
+      "text": "许知夏家",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 31,
+      "text": "17路公交",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 32,
+      "text": "旧体育馆",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 35,
+      "text": "周叙大学宿舍",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 37,
+      "text": "周叙的大学",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 39,
+      "text": "设备厂办公室",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 39,
+      "text": "省内设备公司",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
       "line": 41,
+      "text": "单位",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 42,
+      "text": "工作地出租屋",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 42,
+      "text": "出租屋",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 42,
+      "text": "新出租屋",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 44,
+      "text": "南城车站",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 44,
+      "text": "南城车站候车区",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 44,
+      "text": "南城车站检票口",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 46,
+      "text": "照相店",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 46,
+      "text": "南城照相店",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 48,
+      "text": "南城旧街",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 48,
+      "text": "南城街边",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 48,
+      "text": "周叙家楼下",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 50,
+      "text": "南城小饭店",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 50,
+      "text": "面店",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "line": 52,
+      "text": "南城医院",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/StoryView.ts",
+      "line": 43,
       "text": "正在打开……",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 51,
+      "line": 53,
       "text": "暂时无法打开。请重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 67,
+      "line": 69,
       "text": "重试",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 81,
+      "line": 85,
       "text": "返回书桌",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 89,
+      "line": 93,
       "text": "暂时无法返回。请重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 93,
+      "line": 97,
       "text": "阅读设置",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 108,
+      "line": 112,
       "text": "残缺",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 108,
+      "line": 112,
       "text": "出现矛盾",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 108,
+      "line": 112,
       "text": "重新理解",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 108,
+      "line": 112,
       "text": "完整",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 115,
+      "line": 119,
       "text": "重试保存",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 118,
+      "line": 122,
       "text": "当前内容读完了。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 119,
+      "line": 123,
       "text": "可以退出，稍后从这里继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 134,
+      "line": 140,
       "text": "这一页读完了。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 135,
+      "line": 141,
       "text": "再读一遍",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 136,
+      "line": 142,
       "text": "回到首页",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 159,
+      "line": 172,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 164,
+      "line": 177,
       "text": "继续",
-      "format": "literal",
-      "scope": "game-source"
-    },
-    {
-      "file": "assets/scripts/ui/StoryView.ts",
-      "line": 167,
-      "text": "该片段暂时无法继续。",
-      "format": "literal",
-      "scope": "game-source"
-    },
-    {
-      "file": "assets/scripts/ui/StoryView.ts",
-      "line": 178,
-      "text": "先看看照片和信封。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
       "line": 180,
+      "text": "该片段暂时无法继续。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/StoryView.ts",
+      "line": 192,
+      "text": "先看看照片和信封。",
+      "format": "literal",
+      "scope": "game-source"
+    },
+    {
+      "file": "assets/scripts/ui/StoryView.ts",
+      "line": 194,
       "text": "（看过）",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 183,
+      "line": 197,
       "text": "收好纸箱",
       "format": "literal",
       "scope": "game-source"
@@ -20899,7 +21084,7 @@
     },
     {
       "file": "assets/resources/data/story/chapter08/ep02_dates.json",
-      "sha256": "1e5f0850af848aba7cbccf0521855199ae90fe7a1a052d75a056c784644483a1"
+      "sha256": "c430787f6d2793d6ed13c3c884c1239a2d3d5077a8b3bc373f41490535172117"
     },
     {
       "file": "assets/resources/data/story/chapter08/ep03_folded_pages.json",
@@ -20927,23 +21112,23 @@
     },
     {
       "file": "assets/resources/data/story/chapter09/ep02_before_send.json",
-      "sha256": "127a662e074bdda64124c8cb067a9988073df93bff3912e8c58ed5f0577be61b"
+      "sha256": "21eed2bb28dfc4f2fe65434d8e5f6a92c081bc06f019e031377d75822a8ec522"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep03_reply.json",
-      "sha256": "4e451c857eb06dd370d7e2d19aa029cc644868e3fb654369d2f7ea2d25fce2e1"
+      "sha256": "9d78e0daf219dd5e9c84142076d6aa9e8870e1d429e8332307f8bb704096a8e4"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
-      "sha256": "014b8c50e773835989b8a924cb633fe557c42e3bbc1bade5d57a1c1721022507"
+      "sha256": "25059fccf1deaeba199cfcd501e90841eb856d4103745c360aeff1f9cc259a1a"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
-      "sha256": "4eb334d936d3b39b5beb635b8034a6e4eac1623934d7d599c733581ec3bd8152"
+      "sha256": "5f218ea00ff2b024eb0996992d834afdc742bdf82ca728ef07f92b7ae3a1d03a"
     },
     {
       "file": "assets/resources/data/story/chapter09/ep06_monday.json",
-      "sha256": "725ff2e98dd22fa878c07da07fa97dfb67cd0569354bb62755b59ecb672f690f"
+      "sha256": "f1b7239747a274afa0f91f478bb43d2f829ced0f8fc2d81a13631b1446c88241"
     },
     {
       "file": "assets/resources/data/story/chapter10/chapter10_manifest.json",
@@ -21043,7 +21228,7 @@
     },
     {
       "file": "assets/scripts/ui/ArtSurface.ts",
-      "sha256": "6ada11828387b9129f9fb33e25dfc6d7c718e8f51cd28b33e9d91f5256ccd5f9"
+      "sha256": "0d735bc2e395cad5f8347428f2d371cdc88dbd2b90dd28bf08dceaab1a87cdae"
     },
     {
       "file": "assets/scripts/ui/AudioPlayer.ts",
@@ -21051,15 +21236,15 @@
     },
     {
       "file": "assets/scripts/ui/ChoicePanel.ts",
-      "sha256": "16eb500843423e9f36b07cb12b790f6a472cb3a352e005016ee9180211ec24a9"
+      "sha256": "3addff4de2499a64ab6b04215d34e68b7ee21084f1574d82576d79166235c656"
     },
     {
       "file": "assets/scripts/ui/DialoguePanel.ts",
-      "sha256": "0ad2b37445482e004da4f6ae52948e8e6c9d98075cdfe0895339657668214ece"
+      "sha256": "ee8c172a82a91264e4f7153b07d96a1dc11aa6f7a8a8f0dbdb864e0eb7fb7cf1"
     },
     {
       "file": "assets/scripts/ui/DocumentPanel.ts",
-      "sha256": "70084d3bb11b1f3d5cc5f1f156911e879310dc7dde8cbfee9b31f022dcb29906"
+      "sha256": "8c68fcdced90e5d98affe818e1dc838c261cea36de495eb6bbbe2763ddfaeeff"
     },
     {
       "file": "assets/scripts/ui/InvestigationPanel.ts",
@@ -21071,7 +21256,11 @@
     },
     {
       "file": "assets/scripts/ui/LifeReadingPanel.ts",
-      "sha256": "0b775462adfe33c7603cc5608cf6e4b3e41e0fa079358f1e456c46d8caa6e033"
+      "sha256": "8b2867bf66691bff823f17eb100b2d56b619a545f7ccd2e2a4d0ef51072b5dfd"
+    },
+    {
+      "file": "assets/scripts/ui/MemoryComparisonPanel.ts",
+      "sha256": "9708a8aa25e74a4266677226802c2b19a47281d251f9ad13c2a93b15d326ddf1"
     },
     {
       "file": "assets/scripts/ui/ObjectSurface.ts",
@@ -21079,7 +21268,7 @@
     },
     {
       "file": "assets/scripts/ui/PassagePanel.ts",
-      "sha256": "19dbbc1ad3d8fe4fda7ed0fa1104900111065622731e6403a41b838954c6f078"
+      "sha256": "fc8c735ea7a9ca292aee05a8c294f3489a75072b5ae6137c206bf290b8e0b41a"
     },
     {
       "file": "assets/scripts/ui/PhotoViewer.ts",
@@ -21094,8 +21283,12 @@
       "sha256": "c6ba8d6f8a8e3a43e3b773e64e29ac9832359f51f2cc1c2c430e57ebda3ab1f0"
     },
     {
+      "file": "assets/scripts/ui/SharedScenes.ts",
+      "sha256": "c586c536f613731a46371a66ecd461bca1eaa60c786afe81e0db36e11993baff"
+    },
+    {
       "file": "assets/scripts/ui/StoryView.ts",
-      "sha256": "584b6ed91828354214a4b1468632a6e36929a5f134ac0143e00e8579ce201991"
+      "sha256": "4d55ac2fa59c6e9f8fade9051f698efaee535dd58675b08127dca24bc53676b0"
     },
     {
       "file": "assets/scripts/ui/UIFactory.ts",
@@ -21111,8 +21304,8 @@
     }
   ],
   "export": {
-    "bytes": 977667,
-    "sha256": "34390198f50d6afa0f60e16ee40fd9ace9185b69bfcb48574577792f407cc1c3"
+    "bytes": 978628,
+    "sha256": "ed87efa958465b604f085d1307795b424134ce3701d4b2177235d5b15fec9868"
   },
   "limitations": [
     "Current candidate, regenerate on final commit",
