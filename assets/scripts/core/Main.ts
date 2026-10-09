@@ -18,7 +18,7 @@ export class Main extends Component {
   private showHome(canvas: Node): void {
     clear(canvas);
     artSurface(canvas, 'desk_2037_v1', 0, 0, 1080, 1920, true);
-    const title = text(canvas, '余生未寄', 755, 150, 64);
+    const title = text(canvas, '遗憾', 755, 150, 64);
     title.node.setPosition(180, 755); title.node.getComponent(UITransform)!.setContentSize(560, 150);
     title.color = new Color(243, 237, 222); title.horizontalAlign = Label.HorizontalAlign.CENTER;
     const open = () => director.loadScene('Story', error => { if (error && this.isValid) title.string = '暂时无法打开，请重试。' });

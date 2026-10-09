@@ -24,7 +24,7 @@ export class VisualDraft {
   private desk(): void {
     this.box(this.stage,0,0,1080,1920,'#ded6c8');
     artSurface(this.stage,'desk_2037_v1',0,0,1080,1920,true);
-    const heading=this.label(this.stage,'余生未寄',180,778,560,100,64,'#f3edde');heading.horizontalAlign=Label.HorizontalAlign.CENTER;
+    const heading=this.label(this.stage,'遗憾',180,778,560,100,64,'#f3edde');heading.horizontalAlign=Label.HorizontalAlign.CENTER;
     const date=this.label(this.stage,'2037 · 九月',180,678,560,70,32,'#ddd7c8');date.horizontalAlign=Label.HorizontalAlign.CENTER;
     // A lamp, a closed notebook and the continuation envelope. Props stay separate layers.
     const envelope=artSurface(this.stage,'envelope_v1',55,190,735,368);

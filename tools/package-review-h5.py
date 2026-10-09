@@ -9,7 +9,7 @@ build, target, record_file = [Path(p).resolve() for p in sys.argv[1:4]]
 build_source = subprocess.check_output(['git', 'rev-parse', sys.argv[4]], cwd=root, text=True).strip()
 assert (build / 'index.html').is_file(), 'Missing Web Mobile entry'
 assert not target.exists() and not record_file.exists(), 'Preserve existing artifacts'
-subprocess.run(['git', 'diff', '--exit-code', build_source, '--', 'assets', 'settings', 'build-config', 'package.json'], cwd=root, check=True)
+subprocess.run(['git', 'diff', '--exit-code', build_source, '--', 'assets', 'settings', 'build-config', 'build-templates', 'package.json'], cwd=root, check=True)
 sha = lambda raw: hashlib.sha256(raw).hexdigest()
 target.parent.mkdir(parents=True, exist_ok=True)
 with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
@@ -45,7 +45,7 @@ record = {
     'originalPhotoSha256': prior_photos,
     'buildFiles': [],
     'uploadedToTapTap': False,
-    'platform': 'Original RC2 remains version275902/package74035. No newer upload, binding, submission or publication.',
+    'platform': 'Prepared locally. Remote upload, binding, review and publication require separate status verification.',
 }
 with zipfile.ZipFile(target) as archive:
     record['buildFiles'] = [{'file': n, 'sha256': sha(archive.read(n))} for n in names]
