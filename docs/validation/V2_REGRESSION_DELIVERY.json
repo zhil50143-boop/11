@@ -1,0 +1,869 @@
+{
+  "version": "1.0.0-rc.3",
+  "kind": "development verification, not final release",
+  "build": "build/visual-v2-save-edges",
+  "buildSourceCommit": "661708e0d788469c6606573eb7a2bf966d6b57a7",
+  "file": "C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\outputs\\余生未寄_V2_万轮回归_开发验证_H5.zip",
+  "bytes": 19024570,
+  "entries": 203,
+  "sha256": "869be0cc0cf1cddb603d6f2513de302462920bbacaa7fccef9879c95f1796f5c",
+  "crc": "PASS",
+  "generatedAssetBytesVerified": [
+    "home_2037_v1",
+    "bus_2007_v1",
+    "desk_2037_v1",
+    "paper_v1",
+    "envelope_v1",
+    "album_v1",
+    "mp3_v1",
+    "archive_folder_v1",
+    "bus_ticket_v1",
+    "wrist_cord_v1",
+    "phone_early_v1",
+    "phone_current_v1",
+    "school_2007_v1",
+    "gym_2007_v1",
+    "parents_home_2007_v1",
+    "dorm_2009_v1",
+    "work_2013_v1",
+    "rental_2017_v1",
+    "street_2010_v1",
+    "diner_2017_v1",
+    "clinic_2010_v1",
+    "phone_early_v2",
+    "home_2037_day_v1",
+    "campus_2009_v1",
+    "office_current_v1",
+    "station_2013_v2",
+    "photo_shop_2007_v2",
+    "home_2037_night_v1",
+    "parents_home_night_v1",
+    "dorm_2009_night_v1"
+  ],
+  "voiceSha256": {
+    "01-full": "3a4e650df1b990ac02e519d0f1835195a52dced5c363e05e535b11f92e2f78b1",
+    "01-opening": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c"
+  },
+  "originalPhotoSha256": {
+    "graduation_old": "698107eebe5bbb7aa08f0f7e000bae7be3c2f917da3b7e604cb1b30d61cdbfcb",
+    "graduation_fresh": "b5ad17f1fff66cde82bc87676692c71b97205a48ae9daacc0051175435cb6e5f",
+    "street_2010": "8dd9645bd8f0388787ce27bcc74ae0d154dc1d571cf64742ebdc85a3e595bd4d",
+    "family_2035": "3058337469bc704b3b23f82a41b6155e88498a5350bc572f57d1ec520818bdf2"
+  },
+  "buildFiles": [
+    {
+      "file": "game/application.f3108.js",
+      "sha256": "9ea30ed75fa7dd4749b0a40b9ce3f7df3b651ce4c7e0102708d29ac97470b598"
+    },
+    {
+      "file": "game/assets/internal/config.38906.json",
+      "sha256": "5ffcd1e6171482505728061e292f8ef3b788b11dd218a8053cd827c2d7612771"
+    },
+    {
+      "file": "game/assets/internal/import/0b/0b0f7a282.c7c7d.json",
+      "sha256": "4436abc5b0607e56136f40624532487c1843327950c3ada497ed3986e70218d1"
+    },
+    {
+      "file": "game/assets/internal/index.38906.js",
+      "sha256": "19bd675acfdd6f12d4bfec92fa4fa354b57c1dee7256325dce20ebfc5657b58c"
+    },
+    {
+      "file": "game/assets/main/config.22158.json",
+      "sha256": "86ac258f6332138ab71c760a7786716614352c43aef45ef595a1bcd1c2229238"
+    },
+    {
+      "file": "game/assets/main/import/47/479a8652-7c93-40e3-bd45-847276c53afa.243f4.json",
+      "sha256": "c74c3cea7c3d4e3fac841e3a2948ace0ac67c2c29e2be5f6ce07a3cdc38189d1"
+    },
+    {
+      "file": "game/assets/main/import/66/6634dd05-0617-44e7-a62d-64c7d3824321.04cf4.json",
+      "sha256": "085b50ffecd58fa2514f7cd0c949883621b398c782c07b92b97ceeb213112d4d"
+    },
+    {
+      "file": "game/assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.8bce7.json",
+      "sha256": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39"
+    },
+    {
+      "file": "game/assets/main/import/d5/d56a1501-4795-4448-b0a5-8efc31c541ed.2e881.json",
+      "sha256": "a29f41c1069f6e4ae67819fe3f874addc46170a7ea339cd3b6e79bd2536b61b0"
+    },
+    {
+      "file": "game/assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.731f4.json",
+      "sha256": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d"
+    },
+    {
+      "file": "game/assets/main/index.22158.js",
+      "sha256": "d06080d679507fab11d6d706700b5624550e805366baad1c96468996e03cbe39"
+    },
+    {
+      "file": "game/assets/resources/config.caa2d.json",
+      "sha256": "1831446b6ada1a460378366adf775791af4ef2049ee9fdc31488ab0809a7d1b4"
+    },
+    {
+      "file": "game/assets/resources/import/01/012c89d5-ab51-43d7-ba08-34341d688bb2.bc4bc.json",
+      "sha256": "65aca25d909b81174b815c53961868f5bd2dfd8cba49d92516815ae0303f4931"
+    },
+    {
+      "file": "game/assets/resources/import/01/016b6d45-2b50-468d-8f74-a25b5fcb304f.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/01/016b6d45-2b50-468d-8f74-a25b5fcb304f@f9941.7731a.json",
+      "sha256": "10c66231552ebe0892eb17dbbf4d2ec380a6fd8b847e17267a21588137bd6c2e"
+    },
+    {
+      "file": "game/assets/resources/import/08/08bbab437.4f3af.json",
+      "sha256": "6d94af7268fe2785e489334db017d13276ff0c262605f4abd087591e84f2e880"
+    },
+    {
+      "file": "game/assets/resources/import/09/09ad8c02-5b78-4562-8b3e-846f1dc95943.b399b.json",
+      "sha256": "f6032b2d94ac8bfd6ad82022e5da958e2e20dd905902987b0f8382be2cb2a7ba"
+    },
+    {
+      "file": "game/assets/resources/import/0a/0ad60008-e013-4ec2-8362-cb9775780173.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/0a/0ad60008-e013-4ec2-8362-cb9775780173@f9941.6cb35.json",
+      "sha256": "c350cd9aea24a07f2e9d0e6a5b431a6ac8276957fc779f2726b5cfd938a30184"
+    },
+    {
+      "file": "game/assets/resources/import/11/11ce1d24-1f6c-4eec-9e8c-a98978c24569.84c57.json",
+      "sha256": "7e0b4834c3f2a89d4b6251e792d6f52a85203eb39b22e15c19f59ae8ccf672a8"
+    },
+    {
+      "file": "game/assets/resources/import/12/125622f3-0bf9-47fa-97cb-ab2175d925e1.8977f.json",
+      "sha256": "70343d00b876b88c62c5105b7583a7c78bbc0466f6f08ae44e039f5fc3984bb8"
+    },
+    {
+      "file": "game/assets/resources/import/14/14389343-6e04-4ae0-af9a-6bb6f0e009d2.aa725.json",
+      "sha256": "8bfa4db9ab3565b540247eb552bd8ddec4f27878aa1545352e9724cc4a9e70f0"
+    },
+    {
+      "file": "game/assets/resources/import/14/146b8cb7-06b1-4d09-bfe7-ea822084576c.fd05e.json",
+      "sha256": "dc0101e64d42030409c00ff83c674f1b7bb2b6c366c917f6b98040a0b6427d02"
+    },
+    {
+      "file": "game/assets/resources/import/14/14f646c2-8d77-4d56-8ceb-a3ba5a048462.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/14/14f646c2-8d77-4d56-8ceb-a3ba5a048462@f9941.b809c.json",
+      "sha256": "2f06f5f55a3bcf97b598044af767702c01e1106503d3669b194bf8c3ed97334c"
+    },
+    {
+      "file": "game/assets/resources/import/16/16439bf4-ab1c-450d-bc23-1f931010adc5.9c438.json",
+      "sha256": "6da87128772013144d3c0f7a058082c545154ad5faf335992816d4e1c391bdd9"
+    },
+    {
+      "file": "game/assets/resources/import/17/1788f5c1-d4b2-452b-ada3-6c451d5f55b8.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/17/1788f5c1-d4b2-452b-ada3-6c451d5f55b8@f9941.b06c0.json",
+      "sha256": "e18a833b4de9adb536f767400e0caf52b515d49139da3400b5690d906e8ffc8f"
+    },
+    {
+      "file": "game/assets/resources/import/1a/1aae204c-883a-45a4-bc6e-59f2e453ba9a.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/1a/1aae204c-883a-45a4-bc6e-59f2e453ba9a@f9941.1425a.json",
+      "sha256": "5088a887bdcff491345bb5f5d82d4dfd4994c96fafb35c9f961124bd038c4da8"
+    },
+    {
+      "file": "game/assets/resources/import/1d/1d117346-1235-4168-883e-cc0b75a5dd70.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/1d/1d117346-1235-4168-883e-cc0b75a5dd70@f9941.1b795.json",
+      "sha256": "08eb17ed543b834468e460f3c0e284c2210e3b64efe5d794e7968fc222bda044"
+    },
+    {
+      "file": "game/assets/resources/import/20/20917468-8cd8-4025-93e2-ddd30c4be814.983d6.json",
+      "sha256": "5083f813dda2e1263c2e8ad340e1df2ca6f588fdb5bfb7a95baf25f6540e1c47"
+    },
+    {
+      "file": "game/assets/resources/import/22/22f55cd6-c97b-4cd9-8c3c-4265e255f358.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/22/22f55cd6-c97b-4cd9-8c3c-4265e255f358@f9941.3664d.json",
+      "sha256": "e66153e9061b1bd29de9941002f2dc488a8ef73fbffb9f3839352bbbee531552"
+    },
+    {
+      "file": "game/assets/resources/import/24/2483d6b4-275e-4b99-93e2-388eb195780b.4fdd1.json",
+      "sha256": "46f2389ea44bff2db73d3593c6a2c8ba30e68f8665e4d8046f6a2fecb031bb8a"
+    },
+    {
+      "file": "game/assets/resources/import/26/266ff5ec-6d46-4089-ae6a-f727a199c919.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/26/266ff5ec-6d46-4089-ae6a-f727a199c919@f9941.388ac.json",
+      "sha256": "ab22473a6c7fad238e69a74c11daadc5559bf20415b58b3fb0cd2f964d95cf26"
+    },
+    {
+      "file": "game/assets/resources/import/26/2693973e-35c3-4f32-9d14-44e1934d66a7.ad378.json",
+      "sha256": "3436b68fc4319138e80454c6f88d1b7ee7f22c256602fddf31baea794d486ee0"
+    },
+    {
+      "file": "game/assets/resources/import/26/26c2aa9b-3b00-4d04-9af6-7d69a34978b8.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/26/26c2aa9b-3b00-4d04-9af6-7d69a34978b8@f9941.ceed4.json",
+      "sha256": "0e557c2090f84a5de06ca8655beb1d29ac07f54aa27699bb60cbcd1e4525d130"
+    },
+    {
+      "file": "game/assets/resources/import/2c/2c38a0c9-6f82-4545-b55b-6609eaa448b8.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/2c/2c38a0c9-6f82-4545-b55b-6609eaa448b8@f9941.c80c3.json",
+      "sha256": "187bb0f5c7d398dfe21b25d4198bed999f184614a820ad234c73320fe7e4ea25"
+    },
+    {
+      "file": "game/assets/resources/import/2d/2d7b27c8-79c2-4229-a56c-45aab6f96b86.b1ea8.json",
+      "sha256": "628027354b80d9862773c233b5edb7d0e11718df502585ad6c4797eb8cbd900a"
+    },
+    {
+      "file": "game/assets/resources/import/2e/2e934af9-6461-4e77-9ac9-da98270d2e78.3fb42.json",
+      "sha256": "7faa10e2311e8d0515b661e8f1b54c9b5e870e183c85a9a643ce1b0047c2425e"
+    },
+    {
+      "file": "game/assets/resources/import/30/303c1822-ba5c-4d32-aa3e-5ae1b68e12c6.f338d.json",
+      "sha256": "66d3172715a0792ec9f169dd58d0eb077b86b2b8b2d734456aaedc509d288236"
+    },
+    {
+      "file": "game/assets/resources/import/31/31b59f01-ff8c-4bf2-80d4-841e3ac4331c.1299d.json",
+      "sha256": "abf4d05c7440418b7a282cf1a571a301d8a6f3a275a9d0a3bcbf49928998c5b4"
+    },
+    {
+      "file": "game/assets/resources/import/32/325b13f8-0cf0-4d9f-9c0f-33902b64922c.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/32/325b13f8-0cf0-4d9f-9c0f-33902b64922c@f9941.25cd7.json",
+      "sha256": "c750e698d293cbebd242fdc42b6a166e2292e62f4ee5c7c3265063f487ea459a"
+    },
+    {
+      "file": "game/assets/resources/import/34/34bf100b-3cf9-4a1d-9167-140ec186f41f.50964.json",
+      "sha256": "b7fc8fb1e5400c3d424b6591291f941032f41f3e6eff27091be61cfca9540715"
+    },
+    {
+      "file": "game/assets/resources/import/34/34e41248-df60-45d5-a414-b50b2093d370.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/34/34e41248-df60-45d5-a414-b50b2093d370@f9941.2f98d.json",
+      "sha256": "381d37a129bdd7dba6e59a78303a708102ec10ac8c6f79411fffcc8900cb76c6"
+    },
+    {
+      "file": "game/assets/resources/import/35/357408e2-b66a-4610-9d95-8e727f996c54.0c56c.json",
+      "sha256": "ae8d08589d859446f5c0ef99f60c48fa94f8c4c48ebe8b0dbbc42a1ac476bca4"
+    },
+    {
+      "file": "game/assets/resources/import/38/383b7ebb-a413-4a4f-b28e-66058a83c255.d6a64.json",
+      "sha256": "4f6712c160521c7dd76bb861f18f2f0abb4da3c9c90eeb521e8daaeb34a11122"
+    },
+    {
+      "file": "game/assets/resources/import/3b/3b036511-b690-415c-a4a5-8039302a0caa.3cee5.json",
+      "sha256": "a8189621fbb8a2e419245368fa12957c93a354889131fc46236d7d1c2a9e91a2"
+    },
+    {
+      "file": "game/assets/resources/import/3d/3df03185-b0c6-4306-8604-134d7d06a6e3.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/3d/3df03185-b0c6-4306-8604-134d7d06a6e3@f9941.4e004.json",
+      "sha256": "cec8b35cc5bba9c5d596a23ecb64ab399cb1c64b6b42eebae04001d4e586ef4a"
+    },
+    {
+      "file": "game/assets/resources/import/42/426ea681-5203-4186-b5d1-20d2f6b535f6.4e2b5.json",
+      "sha256": "d635c502d3f67a59dcd2d50e99b32744e164ca45867b1b25d8aae27158c0f9dc"
+    },
+    {
+      "file": "game/assets/resources/import/42/42fa2990-26ef-4411-bcce-5b94dd2f2ce6.e14a6.json",
+      "sha256": "f44ef13167f2a4b54116691c9846b55de9ca44731a90bfe8d5736ae1b19d1954"
+    },
+    {
+      "file": "game/assets/resources/import/45/45e7e148-8019-484f-a307-a027976c0f66.f04ba.json",
+      "sha256": "4542779b8d5e0cf8dfd3dd7813086a2604ff6d4c3771cabeb77f8b836525d2f2"
+    },
+    {
+      "file": "game/assets/resources/import/47/470298db-04bd-42bf-9e3e-438cd05a2864.8c6cd.json",
+      "sha256": "498fca1b60ec59f4be1e47ada6885404b9bb2192539b1727036d916e38e493ff"
+    },
+    {
+      "file": "game/assets/resources/import/48/487f3385-f7b7-4fbd-a9f1-6a4d569ba89e.08100.json",
+      "sha256": "330bd6943f7bb3bbc9953399de1914a69b0653538fec1993164b945716a8c2dc"
+    },
+    {
+      "file": "game/assets/resources/import/4b/4bb0da44-4ff6-4538-a37f-43902aa1a4d6.44b3e.json",
+      "sha256": "ee4fe18945540872a8fffe575cbe5f689654fc40b50532b3b84542353ee108e5"
+    },
+    {
+      "file": "game/assets/resources/import/58/58362375-4414-4389-852a-25a35ea8d63a.00db8.json",
+      "sha256": "b43140ce0b792a918817b7bfafc96a1b1d0cd321d8a41b4222c4cf9a43c44b03"
+    },
+    {
+      "file": "game/assets/resources/import/5a/5a28716a-9d49-46f2-803e-e8348a9b971c.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/5a/5a28716a-9d49-46f2-803e-e8348a9b971c@f9941.e169b.json",
+      "sha256": "b15bd21c15fb8800612e8d4242e6014d21f45dbcd03b45208267695aa87ea560"
+    },
+    {
+      "file": "game/assets/resources/import/5c/5cef9e2d-5c45-4981-96a0-186c60853ae9.739fd.json",
+      "sha256": "a48bb2158db6740b6dd7a7866791396debbaea0d5eabc52a612e77b58d50e4e6"
+    },
+    {
+      "file": "game/assets/resources/import/5d/5d74cbdf-91d9-4cc3-9dd2-40f3e19b74bf.1f730.json",
+      "sha256": "fdbfed50f86f026c54f0b2ad5dfbda0baeb84f7575f2ee35b3b7fd70cd62f6f8"
+    },
+    {
+      "file": "game/assets/resources/import/5e/5ea16fd1-f45a-4d48-b631-2a82ff640d3c.798a3.json",
+      "sha256": "dd3196e8102e6656db9095afbe4d9a4448e913a2b928283be56fa01f16e9bb3e"
+    },
+    {
+      "file": "game/assets/resources/import/60/606cba1d-c0ea-41ec-8dad-aef889b5f3c8.47a11.json",
+      "sha256": "d5a59044f3430a16d728191f1c2df104a81c76470913a9c800ed56ed509714a8"
+    },
+    {
+      "file": "game/assets/resources/import/61/619ec284-8704-44d8-a5f7-1a9c8aee5a1d.72429.json",
+      "sha256": "8799eed307f5d4956fdc58fa90fb25d98fe27c43b8222350fc5e2b8d37ff2aa1"
+    },
+    {
+      "file": "game/assets/resources/import/62/62d945e5-a2fb-4b19-bb45-200b31d4ee95.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/62/62d945e5-a2fb-4b19-bb45-200b31d4ee95@f9941.eae47.json",
+      "sha256": "d50481be9e134f1921dcbc07f6b58a474772a7f6e84def9c6376f73ea132d5d2"
+    },
+    {
+      "file": "game/assets/resources/import/65/6562fb3e-056f-488b-aaa4-1a9a98edf21a.b1af7.json",
+      "sha256": "aab839705b27cb2df1817d549d1d180d126c2f7bd84db334801c6b3294a02df6"
+    },
+    {
+      "file": "game/assets/resources/import/67/67bf8b07-ea06-438d-af45-85fb4d980666.c574c.json",
+      "sha256": "566513d62edfe8a748ce323b980f9389768541e0c8775ffceb653d5274760423"
+    },
+    {
+      "file": "game/assets/resources/import/6e/6e9747f2-5d84-4670-ae4f-1da4d2944f97.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/6e/6e9747f2-5d84-4670-ae4f-1da4d2944f97@f9941.34c0a.json",
+      "sha256": "75ee1ba48623f60a97c071826cafed24a0e01c8f5c15364543f9aa05669ed429"
+    },
+    {
+      "file": "game/assets/resources/import/6f/6fa67148-c1bd-4383-967e-c37e2d643517.bdc32.json",
+      "sha256": "cfefce69c5ce6ee791977624b3ffb54452242226baaef839b59777a4491bc7f9"
+    },
+    {
+      "file": "game/assets/resources/import/6f/6fff1230-9745-43fc-b162-2348344f4816.cc7c0.json",
+      "sha256": "148630019c9c9c63bf7a72bf73608caf7329136065396448ea4afb27ef63a689"
+    },
+    {
+      "file": "game/assets/resources/import/72/72076ffb-3e39-4db5-b040-5a3fbb8e1a8c.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/72/72076ffb-3e39-4db5-b040-5a3fbb8e1a8c@f9941.e0594.json",
+      "sha256": "911a3ffd3ba0f315b5c923ea0173869631e91a8bba2c753b584e7097adf48f8a"
+    },
+    {
+      "file": "game/assets/resources/import/73/733b6123-a040-4aee-a115-c1697af57fc4.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/73/733b6123-a040-4aee-a115-c1697af57fc4@f9941.a6fd3.json",
+      "sha256": "422185c49aa7966213615a4be16ab6892c334189de933ce3f9fc46aec2a91ded"
+    },
+    {
+      "file": "game/assets/resources/import/74/7489b66c-0ac6-4e8e-a7fd-d4a5604b5031.b2eaa.json",
+      "sha256": "c60b0f35b461543ff22c47b77e7cb1a91c3114806c72c2c44fedd39150d15814"
+    },
+    {
+      "file": "game/assets/resources/import/74/7495742b-dbbb-4345-acae-35a6fb814a4c.d087a.json",
+      "sha256": "efd9f9e86df55ed58751b8810c577ff36f40930a654134422036a60e82f89b66"
+    },
+    {
+      "file": "game/assets/resources/import/7a/7a5a4443-5beb-4185-af2a-19151f39b4f6.64bb8.json",
+      "sha256": "44bf1a550e5d13a67b26c0ac10e313f3ffab4ff238a2ec985b1ed0a869ca30d5"
+    },
+    {
+      "file": "game/assets/resources/import/7a/7a9c0d27-ca05-4b50-8d29-1b106ab6aaa3.b9007.json",
+      "sha256": "373ad7b72ce24f40d825adb3b6e194a7b7b094d0526afbd63e2f83997ef3eeac"
+    },
+    {
+      "file": "game/assets/resources/import/7b/7bf0da2d-1241-4391-b0c4-04f02e254619.cd145.json",
+      "sha256": "4006856e39e80af1b09dc326700f6bd22730617da973e63accbeb6ef8fe1741d"
+    },
+    {
+      "file": "game/assets/resources/import/7d/7d650601-0fcc-4582-915b-1c5b2ce88e7f.4b8e0.json",
+      "sha256": "9737c0fafefa618875fbfb9f67d0f7d1a95afe5da5c4300cdb88cdd363d13c92"
+    },
+    {
+      "file": "game/assets/resources/import/7e/7e6a09e4-7e46-4a56-9e3c-a02757ff612d.43de0.json",
+      "sha256": "423b3bac8555d1b2afdabc1aa4de3e2602da8422cb7ff70462d7d7b0939ac727"
+    },
+    {
+      "file": "game/assets/resources/import/80/805e3e0f-18a4-42d6-98b3-efcdae9dde6f.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/80/805e3e0f-18a4-42d6-98b3-efcdae9dde6f@f9941.c8278.json",
+      "sha256": "b278832a9a8b5cf6378be6199abbe9e5489b531db65c47f9fe6183436bf02213"
+    },
+    {
+      "file": "game/assets/resources/import/82/82dcbf3f-be77-490f-8f00-4444e7ed8e04.ccb52.json",
+      "sha256": "28cfcc1ad127dd8774e853a7a70e46ef4fd709f684c977891c4c1f14dd1733af"
+    },
+    {
+      "file": "game/assets/resources/import/88/88a58597-280e-4216-87eb-e02791e5d72a.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/88/88a58597-280e-4216-87eb-e02791e5d72a@f9941.a59d6.json",
+      "sha256": "629e3d4994c1f6f58f16f6aad7c6eaf1d3b09ebf357212bad66e278865f8adce"
+    },
+    {
+      "file": "game/assets/resources/import/91/917e8266-13b3-4314-9184-70453bb8b989.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/91/917e8266-13b3-4314-9184-70453bb8b989@f9941.6c13d.json",
+      "sha256": "bca71b3eb08908836945b5898c62fb1c56eb166e95e139c218a4899f4eea43e3"
+    },
+    {
+      "file": "game/assets/resources/import/91/91ec9b40-5338-4702-94f4-f84216ed8845.5607f.json",
+      "sha256": "18d95c8d9b321ec97a1499a90efe7ff5261aba7031e5688ddb5c2c50d2cbd2e5"
+    },
+    {
+      "file": "game/assets/resources/import/94/947aa07e-965b-4522-998c-a39608d6c181.2f311.json",
+      "sha256": "b4b01b7ad8509d90ad1cf65ac0174fb56a0e3e0113ac07ac2e5c8bf9a454dfd1"
+    },
+    {
+      "file": "game/assets/resources/import/98/983e8184-c04f-48f8-874f-0573e0526989.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/98/983e8184-c04f-48f8-874f-0573e0526989@f9941.404da.json",
+      "sha256": "8422c5fe7268d90ae7d9804f6399e73689a5bda666374bea1c02cded032066b1"
+    },
+    {
+      "file": "game/assets/resources/import/98/9866a03c-060c-4c7c-8200-215b27c37a43.c2069.json",
+      "sha256": "bc3fd495a83b37df2ed11f93b76f5300f886dd9da1fd341b5cc6ef5ab51919c2"
+    },
+    {
+      "file": "game/assets/resources/import/98/98fe64df-559b-4bf9-b74d-6508b9f21cc5.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/98/98fe64df-559b-4bf9-b74d-6508b9f21cc5@f9941.0f266.json",
+      "sha256": "d69273e41d13a4fa6f602a5a5db626fac61e4eec4516c1f67e5eee4063789c25"
+    },
+    {
+      "file": "game/assets/resources/import/9a/9aefac89-ca8b-4580-b1c8-27bb3ae19f37.cd48d.json",
+      "sha256": "c193b918fdc43b599593c927838c96412b4cfaf4797175ca5bacd79b8d01482a"
+    },
+    {
+      "file": "game/assets/resources/import/9f/9faab0ae-44c2-4591-b0e4-c017d9ee0674.574c6.json",
+      "sha256": "3d368a52dadf32ee8c7873d92652a2da6a62fb32e67c770d4a14f83ffa9bcee7"
+    },
+    {
+      "file": "game/assets/resources/import/9f/9fd697fc-b75f-48a5-b72f-17cebce9b259.b1fdd.json",
+      "sha256": "e025924cdda9e3b42c479f3607e15629a13dd6fb28e5ec0121e4ac05fdc32dc0"
+    },
+    {
+      "file": "game/assets/resources/import/a0/a006827c-f216-4681-9d28-f00b7faac416.99681.json",
+      "sha256": "45ccadf0e1a408734fcde095b7a1de1f19662c6573d43806b910708c2e1713b0"
+    },
+    {
+      "file": "game/assets/resources/import/a2/a2144e8a-5366-4668-a8cc-2f1d08d4e8ca.5b0ce.json",
+      "sha256": "7c660cc9277462d7ec6d10d040cd5ef7c92b329ebcf1592671b999b65a6d70ea"
+    },
+    {
+      "file": "game/assets/resources/import/a3/a34235c1-22dc-4208-aa3f-cc7276b7385f.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/a3/a34235c1-22dc-4208-aa3f-cc7276b7385f@f9941.f0545.json",
+      "sha256": "dc633312a5893999c0bc822b0787914bce91a2e1542cbd8dac4d33f933fce50d"
+    },
+    {
+      "file": "game/assets/resources/import/a3/a35ebc77-b4ff-45b9-a129-d41987f77d65.28a2c.json",
+      "sha256": "2fcc7a4901041cca46d4af283b6602b454e827e545576e6fc2ae50eab3c6b459"
+    },
+    {
+      "file": "game/assets/resources/import/a5/a5ec311c-b5bd-4eec-9fe4-9fde4e2e784f.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/a5/a5ec311c-b5bd-4eec-9fe4-9fde4e2e784f@f9941.9d821.json",
+      "sha256": "8d49362a5e3c7cc348c476e1dfbeab295c84e25d1c4c631b45304c422bb43427"
+    },
+    {
+      "file": "game/assets/resources/import/a6/a6501ea4-94b7-4bb0-b021-6d6e61468e2e.e42f6.json",
+      "sha256": "5f29b5686546444f00f03cced5eaba69334570e24a04dbfe33a0a2b675a760f1"
+    },
+    {
+      "file": "game/assets/resources/import/aa/aa3981cd-93e4-4d22-959e-876fb25f75bc.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/aa/aa3981cd-93e4-4d22-959e-876fb25f75bc@f9941.b1b8c.json",
+      "sha256": "f8810469dd3bd801f8704666f3dc8078998297273145550686dee272aef1fab3"
+    },
+    {
+      "file": "game/assets/resources/import/aa/aa61a86b-90d8-41e7-bb4d-55fde3fcef36.c4861.json",
+      "sha256": "ae0bda44b2d162e9acf417d9b122170b1266e0868bfaf804f49c68b94cfeb33d"
+    },
+    {
+      "file": "game/assets/resources/import/ab/ab9094da-c84b-4502-a145-4cd3bcb90120.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/ab/ab9094da-c84b-4502-a145-4cd3bcb90120@f9941.3def9.json",
+      "sha256": "d57cbee6d22b6d004b60c48fbc8eef8114d5a232e906610a87abdc5ca69c3340"
+    },
+    {
+      "file": "game/assets/resources/import/b0/b05a6c44-76d9-4f49-b1d8-0c44a3593707.6a1b5.json",
+      "sha256": "b32224910fc3d04d2df0ba8a41c9cbc1c5c5603774858d4396d936c6efd4d88f"
+    },
+    {
+      "file": "game/assets/resources/import/b1/b184f497-0ecb-457a-9f92-4b94202e85a1.38117.json",
+      "sha256": "1eefafd961ceeb289811c7168997e7c1f50729d9fef843e79e01db17fcfd9560"
+    },
+    {
+      "file": "game/assets/resources/import/b4/b4efc6e1-a30c-477b-ac93-8c0b3e430590.a4a63.json",
+      "sha256": "0797c47a49e4e0d8ebb84c95c50544caf26cbad73fba9836a73d8fea741a4508"
+    },
+    {
+      "file": "game/assets/resources/import/b5/b505eac6-5ec5-4fac-acb1-54e41e8d205b.7d2bf.json",
+      "sha256": "583b7a408110bda6098497e44a4bc1a78129617d08f6e35c88f4520c5228caff"
+    },
+    {
+      "file": "game/assets/resources/import/ba/babed395-0dfa-4a88-9935-a7a8671d1d55.945af.json",
+      "sha256": "a3bd3865e9e7243f3f3965f78116d48d3ef561ee66e0377d69509e86522d7b23"
+    },
+    {
+      "file": "game/assets/resources/import/bd/bd178f8b-be64-43aa-89e5-954030abfd27.046fe.json",
+      "sha256": "e35cca0cf5ef3aa9293784ae494cd4a012515be614337eeb7f0fe6534aabfe17"
+    },
+    {
+      "file": "game/assets/resources/import/bd/bdb10e36-b470-463d-a60f-2a64e2a3b0ad.2b2ff.json",
+      "sha256": "8e5cbee8bf03ed17a55bb7883bf5a5ffe9b59f4a0312d1ad010da3e12831e758"
+    },
+    {
+      "file": "game/assets/resources/import/c1/c16a7fcb-01f2-4389-9b83-05496289189e.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/c1/c16a7fcb-01f2-4389-9b83-05496289189e@f9941.b9f93.json",
+      "sha256": "d511c0fcd4a75e065d5c159e4d0d926213640c45313f1cfbaaa58efc6ad785c4"
+    },
+    {
+      "file": "game/assets/resources/import/c1/c1c2171a-e843-44f2-856a-8b704e560390.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/c1/c1c2171a-e843-44f2-856a-8b704e560390@f9941.994a4.json",
+      "sha256": "4cab839f7783f51d0ddee7676efcc38daf3b299979d174f59bb2470b5a5477cd"
+    },
+    {
+      "file": "game/assets/resources/import/c1/c1c3808b-87a6-4f9f-ad74-41645f20f898.a2533.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "file": "game/assets/resources/import/c1/c1c3808b-87a6-4f9f-ad74-41645f20f898@f9941.1bfee.json",
+      "sha256": "0a53ce2f4ba6019053cb73a655565101333f83414899700b189b0f7e4b96cdd1"
+    },
+    {
+      "file": "game/assets/resources/import/c3/c39b3750-bf9a-4b0a-a33b-41718381d090.65cd4.json",
+      "sha256": "f531775cdcd3f25cb5c8141b68987f30cd18a7f234b1aac27f3d007501c546ce"
+    },
+    {
+      "file": "game/assets/resources/import/c5/c5670796-6752-4805-a953-6e5ce2547cb6.4d23b.json",
+      "sha256": "25f8a6f698b5b09697fe9dbd591c15f1d333089db67089b84084823d3d489be4"
+    },
+    {
+      "file": "game/assets/resources/import/c6/c646b2d1-47d4-4c25-9ede-c11c07f23293.3b94d.json",
+      "sha256": "ea49a707ad99db2a407923780f98322d52647428e57d6ea9d01fdeb7c27c6860"
+    },
+    {
+      "file": "game/assets/resources/import/ca/cad4cb87-245a-4e12-b721-4a3a35937a94.ce537.json",
+      "sha256": "cc139f70f2ded217d5490a9740a815b7abfddbe1e7a0da149b46ed85523983fa"
+    },
+    {
+      "file": "game/assets/resources/import/cd/cd44faec-7eaf-477c-9865-06ecdcd56b2b.408d6.json",
+      "sha256": "ee956276aa0f1ca13ed9d9b594e5a4d3415e236fb5afff8f0379f77b72f772c9"
+    },
+    {
+      "file": "game/assets/resources/import/ce/ce9d7b5b-105a-4385-8806-1b04e817ae8e.d80f5.json",
+      "sha256": "11c42464015d336c62a3660c597d2f5ae7794ef007b97ac8ed6aa226986145ba"
+    },
+    {
+      "file": "game/assets/resources/import/d2/d283be25-cbf5-47de-9719-270436b3fa48.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/d2/d283be25-cbf5-47de-9719-270436b3fa48@f9941.695d0.json",
+      "sha256": "126015cf59a73021634df120b0910d09b6fdeb2d7177dcb11418465d9c1925e3"
+    },
+    {
+      "file": "game/assets/resources/import/d3/d35ca909-09e2-4171-a0cf-5e8324a4a1fb.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/d3/d35ca909-09e2-4171-a0cf-5e8324a4a1fb@f9941.2eec6.json",
+      "sha256": "8fa0a1de9554944e03612bc297599175a18de2ad9efb6809d14dcc5a351843ad"
+    },
+    {
+      "file": "game/assets/resources/import/d9/d9ac03b2-813f-48e2-ab5f-984e3280f933.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/d9/d9ac03b2-813f-48e2-ab5f-984e3280f933@f9941.c320e.json",
+      "sha256": "cacfcac43c3aac9558ab16e21bfccf9a9cc8cfde638c55eb58e87eb3469cc768"
+    },
+    {
+      "file": "game/assets/resources/import/da/da2db0c1-fb9b-45bf-8cdd-c15282844fdd.c16a8.json",
+      "sha256": "6dfa3c0de2e1503d5c8ffe00e9594729e0eda1d6cff38f5b24be6cca3d8b1602"
+    },
+    {
+      "file": "game/assets/resources/import/da/da2db0c1-fb9b-45bf-8cdd-c15282844fdd@f9941.92252.json",
+      "sha256": "c4f2edc90387bf7c8e73109ac18a97f4a2abb939eddafd7f68b5792d85c4bd93"
+    },
+    {
+      "file": "game/assets/resources/import/dd/dd5bd6da-5798-465a-a132-75938f856033.1114a.json",
+      "sha256": "502ef8054b50ad3d43d1d53e0f79dfcb79a20a71f9ddf729dfdb79dcba861e5f"
+    },
+    {
+      "file": "game/assets/resources/import/e2/e2058046-58a1-468b-adcb-8b6a463484ed.2c4b4.json",
+      "sha256": "e254acf4150a3d360bfa98391879ae1f53e99e55bc43b7ddbe5bcf46d43d6c5a"
+    },
+    {
+      "file": "game/assets/resources/import/e5/e5c2e3ff-c99f-4582-8c4f-5e7e449a710d.d13ac.json",
+      "sha256": "db3d6d079a87c0d34711c0453d607023f2b235b68cb88d46a2f1c0b3d5d729c7"
+    },
+    {
+      "file": "game/assets/resources/import/e8/e8d13fce-9bce-4f36-91d7-bc0ff6534109.415b8.json",
+      "sha256": "2b6a028766038947635d9023fc77da821d8a5cb7592e3e0b8f331ec0e48a601e"
+    },
+    {
+      "file": "game/assets/resources/import/ed/ed25f091-5697-4da1-9b40-0dfaafcec4a4.b401e.json",
+      "sha256": "fa276003738697c0a859f3ffb29763f0e01100d87d482cc81dd841b344dc90a1"
+    },
+    {
+      "file": "game/assets/resources/import/f7/f7c2bfdb-933b-4752-b252-da98ea75db62.fea6a.json",
+      "sha256": "6dc63a9727bc603b8346fe41830d5b24a42e70be72c867dd244b32816130a91f"
+    },
+    {
+      "file": "game/assets/resources/import/fc/fc429dd8-af3e-47ca-bc26-6bff00e42ea5.a30dc.json",
+      "sha256": "baa7ee6e8cf34e71b4011942cb54a2b85bf775363b23a46d3803a34584be62b4"
+    },
+    {
+      "file": "game/assets/resources/import/ff/ff26d572-a781-49ed-8def-1f879ef7c33e.097f0.json",
+      "sha256": "6552bd75a1acf1c7665dd9f8ea6b20807495639710a68bac3da65dad2b13ed9a"
+    },
+    {
+      "file": "game/assets/resources/index.caa2d.js",
+      "sha256": "51a07ab61ee49561d29734ff6ee095b0d8a47998bbe30a6f1973bf3c8b7faa25"
+    },
+    {
+      "file": "game/assets/resources/native/01/016b6d45-2b50-468d-8f74-a25b5fcb304f.1ad44.jpg",
+      "sha256": "414052b3b8d2dd82ce5be017512143aafce2ba24be843e59094fec01053a06e0"
+    },
+    {
+      "file": "game/assets/resources/native/0a/0ad60008-e013-4ec2-8362-cb9775780173.62b47.png",
+      "sha256": "b5ad17f1fff66cde82bc87676692c71b97205a48ae9daacc0051175435cb6e5f"
+    },
+    {
+      "file": "game/assets/resources/native/12/125622f3-0bf9-47fa-97cb-ab2175d925e1.ebeb4.mp3",
+      "sha256": "3a4e650df1b990ac02e519d0f1835195a52dced5c363e05e535b11f92e2f78b1"
+    },
+    {
+      "file": "game/assets/resources/native/14/14f646c2-8d77-4d56-8ceb-a3ba5a048462.743fc.jpg",
+      "sha256": "43550e61f7ac89be9fdc2fb876fdaed467b81ea1ccfa0e7848ce2bddff663a7b"
+    },
+    {
+      "file": "game/assets/resources/native/17/1788f5c1-d4b2-452b-ada3-6c451d5f55b8.b2561.jpg",
+      "sha256": "2d39ee066d7cb3f0e8f415e6e40d3aa5e4eb02732b3657d57c5a5495a16f8d83"
+    },
+    {
+      "file": "game/assets/resources/native/1a/1aae204c-883a-45a4-bc6e-59f2e453ba9a.5eab6.jpg",
+      "sha256": "bddb1799a6dd793af6cae6eb0e4b99a839a27ad156ebdf7001c107d6ea1c4159"
+    },
+    {
+      "file": "game/assets/resources/native/1d/1d117346-1235-4168-883e-cc0b75a5dd70.eea09.jpg",
+      "sha256": "297525fa4755f815f6400bedf11048164e34ade1446346334d3fcc54427fe1a9"
+    },
+    {
+      "file": "game/assets/resources/native/22/22f55cd6-c97b-4cd9-8c3c-4265e255f358.39808.jpg",
+      "sha256": "f2a3e5996d69b46e94b9875a425cc5a3270fac10ab8273eb5a63116832ef18dd"
+    },
+    {
+      "file": "game/assets/resources/native/26/266ff5ec-6d46-4089-ae6a-f727a199c919.a706b.jpg",
+      "sha256": "c9951f0d5b4335ff4c382bc2c93bb52ddb35f913e8e5647724614fb9410896a4"
+    },
+    {
+      "file": "game/assets/resources/native/26/26c2aa9b-3b00-4d04-9af6-7d69a34978b8.47a66.png",
+      "sha256": "c5757c9ded8a80a6af85c33cfc343e295d63399433c5a2fed26465b388925a1e"
+    },
+    {
+      "file": "game/assets/resources/native/2c/2c38a0c9-6f82-4545-b55b-6609eaa448b8.7f591.jpg",
+      "sha256": "64bd57e36705e181f6b73e66f2d526b17d17309342e9bf722f0074be72085e0f"
+    },
+    {
+      "file": "game/assets/resources/native/32/325b13f8-0cf0-4d9f-9c0f-33902b64922c.8119a.jpg",
+      "sha256": "f44551c5bea10a0cbfcb8c358782882d3b80a93078d18bf9635b70082c8d284e"
+    },
+    {
+      "file": "game/assets/resources/native/34/34e41248-df60-45d5-a414-b50b2093d370.5d956.png",
+      "sha256": "698107eebe5bbb7aa08f0f7e000bae7be3c2f917da3b7e604cb1b30d61cdbfcb"
+    },
+    {
+      "file": "game/assets/resources/native/3d/3df03185-b0c6-4306-8604-134d7d06a6e3.b5b8c.png",
+      "sha256": "3d46b7fdfdfbdbb2e6716620e5de97d2a0dfe83636c0ae4d7817c6473d09c679"
+    },
+    {
+      "file": "game/assets/resources/native/42/42fa2990-26ef-4411-bcce-5b94dd2f2ce6.96834.mp3",
+      "sha256": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c"
+    },
+    {
+      "file": "game/assets/resources/native/5a/5a28716a-9d49-46f2-803e-e8348a9b971c.67c77.png",
+      "sha256": "6fcb165c95926940a03e8398495892549bb263614ec99a95c2ba0aa8c9b301f9"
+    },
+    {
+      "file": "game/assets/resources/native/62/62d945e5-a2fb-4b19-bb45-200b31d4ee95.bcc1d.jpg",
+      "sha256": "2e6853b77cd373b22760b9bad39db85ddbf38512f8a69c5cfa0a30931b83419c"
+    },
+    {
+      "file": "game/assets/resources/native/6e/6e9747f2-5d84-4670-ae4f-1da4d2944f97.c8185.png",
+      "sha256": "ed282423fd9f2423abc9f7c136c0f2c186806dc0f1fce9d8120a408ba99c900e"
+    },
+    {
+      "file": "game/assets/resources/native/72/72076ffb-3e39-4db5-b040-5a3fbb8e1a8c.8c5a5.jpg",
+      "sha256": "979f6d4440581b36a577f9a822b491a1efbc03bd42e9ffc2de2f4824e3406691"
+    },
+    {
+      "file": "game/assets/resources/native/73/733b6123-a040-4aee-a115-c1697af57fc4.838bc.jpg",
+      "sha256": "52f2d172fe873b19033e470b3c9ae61d56f63d1d990771bd8ba3f6e6eaa6496d"
+    },
+    {
+      "file": "game/assets/resources/native/80/805e3e0f-18a4-42d6-98b3-efcdae9dde6f.1d6db.jpg",
+      "sha256": "2c2c16bb410bc4dfb9eac9ee60cf9b15cae66dbb45e0d6325c7d175dcc520f0e"
+    },
+    {
+      "file": "game/assets/resources/native/88/88a58597-280e-4216-87eb-e02791e5d72a.3a18a.jpg",
+      "sha256": "98b89e8f225429ced918313ea3a377ea88005647d6534102703adf495a0daaf6"
+    },
+    {
+      "file": "game/assets/resources/native/91/917e8266-13b3-4314-9184-70453bb8b989.0e92e.jpg",
+      "sha256": "638810c272856fba4820d69cdcdff5ae5c223feaad8afc6b3daea0a8a931bd01"
+    },
+    {
+      "file": "game/assets/resources/native/98/983e8184-c04f-48f8-874f-0573e0526989.79579.jpg",
+      "sha256": "a3f42eeed4ee082b01a06fd744df5b1542eadcb072e5758a9187c52dde76f2b3"
+    },
+    {
+      "file": "game/assets/resources/native/98/98fe64df-559b-4bf9-b74d-6508b9f21cc5.a8c24.png",
+      "sha256": "3058337469bc704b3b23f82a41b6155e88498a5350bc572f57d1ec520818bdf2"
+    },
+    {
+      "file": "game/assets/resources/native/a3/a34235c1-22dc-4208-aa3f-cc7276b7385f.5460d.jpg",
+      "sha256": "6d1c34b7cb29a1d4e143fa6e638c9be2ba4ca5ac9a51f4ddf9a3518c8b83ef74"
+    },
+    {
+      "file": "game/assets/resources/native/a5/a5ec311c-b5bd-4eec-9fe4-9fde4e2e784f.227b4.png",
+      "sha256": "8dd9645bd8f0388787ce27bcc74ae0d154dc1d571cf64742ebdc85a3e595bd4d"
+    },
+    {
+      "file": "game/assets/resources/native/aa/aa3981cd-93e4-4d22-959e-876fb25f75bc.a1b8c.jpg",
+      "sha256": "7871d07e9e8bcff47fd673e2160a6aa59ab1f0f09b150b08c6bf5d51ba625ab3"
+    },
+    {
+      "file": "game/assets/resources/native/ab/ab9094da-c84b-4502-a145-4cd3bcb90120.79bae.png",
+      "sha256": "8d18381ed9a388664e2bac66a5922c918cb8a16dad25319297821160e989d4a3"
+    },
+    {
+      "file": "game/assets/resources/native/c1/c16a7fcb-01f2-4389-9b83-05496289189e.24b4d.jpg",
+      "sha256": "d766b23c58148d51732d70317ffe5af72549e403470ed6fed1f3bfd41e9b58c4"
+    },
+    {
+      "file": "game/assets/resources/native/c1/c1c2171a-e843-44f2-856a-8b704e560390.e2009.jpg",
+      "sha256": "cf4efefce8dd65384d2fa76eedc30c1e83bb728d49de6551c93d061789a9f61d"
+    },
+    {
+      "file": "game/assets/resources/native/c1/c1c3808b-87a6-4f9f-ad74-41645f20f898.14b91.png",
+      "sha256": "7603c75d4c50a8fab47e93a967233e3d5625be07dd3080533371b370d49cb290"
+    },
+    {
+      "file": "game/assets/resources/native/d2/d283be25-cbf5-47de-9719-270436b3fa48.fe79b.jpg",
+      "sha256": "853d26110896f80f16d466ef2db2eb59d098d27aa5210928daa34692dd1123dc"
+    },
+    {
+      "file": "game/assets/resources/native/d3/d35ca909-09e2-4171-a0cf-5e8324a4a1fb.7194b.jpg",
+      "sha256": "d51616ffe166801f2505083258ff0c546dd9f3f1795aecf578a6fcb781ba8044"
+    },
+    {
+      "file": "game/assets/resources/native/d9/d9ac03b2-813f-48e2-ab5f-984e3280f933.6e6c7.jpg",
+      "sha256": "6e1c8c57aeaf6e5e5f861dcbd7607d83b03095e04b80ad6bb1c7e0363034baec"
+    },
+    {
+      "file": "game/assets/resources/native/da/da2db0c1-fb9b-45bf-8cdd-c15282844fdd.28419.jpg",
+      "sha256": "f3815dd6735e0c49a9e792fe9d1e44b8de799113bb926896bc1c0988ecc27f35"
+    },
+    {
+      "file": "game/cocos-js/cc.74960.js",
+      "sha256": "2b7836e3186dac621c7e5c11391d566823b068bf059438dcc3ccf86ef7ef4333"
+    },
+    {
+      "file": "game/index.a2719.js",
+      "sha256": "2210eeaf87d5e91bd35f4b767cc7470b223aac6a1617402606e44ff7ed63e457"
+    },
+    {
+      "file": "game/index.html",
+      "sha256": "0d80835ca24561769ec223dddd4e82a916fc09250970ba8a2940a66b6bb0a1c1"
+    },
+    {
+      "file": "game/src/chunks/bundle.0c245.js",
+      "sha256": "79384f4bbbd95347b5215aa2e3d8bdbdeb94da1f72a12eb8b7ed339a7add4c3e"
+    },
+    {
+      "file": "game/src/effect.bin",
+      "sha256": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556"
+    },
+    {
+      "file": "game/src/import-map.3aa37.json",
+      "sha256": "aecfe618336b305273e42c8a35c65cbca9d4c1802c79d4a16940804428bda413"
+    },
+    {
+      "file": "game/src/polyfills.bundle.5adbf.js",
+      "sha256": "f1e4ced3322168d6b9915e782e4c1cf1055d75f66f2b38e7fcd60f48cf89082b"
+    },
+    {
+      "file": "game/src/settings.568fe.json",
+      "sha256": "87f5c442eff925fda7e531c8215526f6ce43e20560a69307e35107d84f189a0e"
+    },
+    {
+      "file": "game/src/system.bundle.543e6.js",
+      "sha256": "90f192f3b04f7fcb5bba9c15745cdd1a798d9b855f752c5ee7e48bb526dd543d"
+    },
+    {
+      "file": "game/style.f76d1.css",
+      "sha256": "b9dac5de1b7792243a6432dfe553901f0a235f41edb42c719d482d1c17016a2f"
+    },
+    {
+      "file": "game/THIRD_PARTY_NOTICES.txt",
+      "sha256": "a28b33f65fe975459993e7f2b878c6e44f89eeece9fe58a736de7faa5d6a33aa"
+    }
+  ],
+  "uploadedToTapTap": false,
+  "platform": "Original RC2 remains version275902/package74035. No newer upload, binding, submission or publication."
+}

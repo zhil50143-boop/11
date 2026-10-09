@@ -1,0 +1,156 @@
+{
+  "date": "2026-10-09",
+  "version": "1.0.0-rc.3",
+  "gameSourceCommit": "661708e0d788469c6606573eb7a2bf966d6b57a7",
+  "build": "build/visual-v2-save-edges",
+  "buildFinishedAt": "2026-10-09 17:34:43",
+  "result": "PASS within recorded automated and desktop-H5 scope",
+  "core": {
+    "tests": 73,
+    "pass": 73,
+    "fail": 0,
+    "weightedLogicRoutes": 508800,
+    "notBrowserRoutes": true
+  },
+  "types": [
+    "tsconfig.verify.json PASS",
+    "tsconfig.json PASS"
+  ],
+  "graph": {
+    "chapters": 10,
+    "episodes": 60,
+    "nodes": 467,
+    "endings": 6,
+    "result": "PASS"
+  },
+  "stress": {
+    "rounds": 10000,
+    "actions": 6817924,
+    "writes": 4065916,
+    "restarts": 36388,
+    "rejectedWrites": 20000,
+    "readGates": 10000,
+    "newRounds": 7500,
+    "seconds": 106.522,
+    "endings": {
+      "REUNION": 659,
+      "GOODBYE": 2237,
+      "UNDERSTAND": 1629,
+      "UNSENT": 157,
+      "TOGETHER": 2754,
+      "IF_THEN": 2564
+    },
+    "faults": {
+      "passage": 1250,
+      "choice": 1250,
+      "investigation": 1250,
+      "photo": 1250,
+      "letter": 1250,
+      "audioInteraction": 1250,
+      "load": 1250,
+      "finish": 1250
+    },
+    "visibleNodesVisited": 405,
+    "automaticNodes": 59,
+    "legacyFallbackPassages": [
+      "CH09_EP04_JOB_COMMON",
+      "CH10_EP01_COMMON",
+      "CH10_EP03_COMMON"
+    ],
+    "legacyFallbackCoveredBy": "73 core tests and three dedicated H5 condition-current fixtures",
+    "jsonl": {
+      "file": "docs/validation/regression-10000/rounds.jsonl.gz",
+      "rows": 10000,
+      "rawBytes": 6183492,
+      "rawSha256": "7e6db98528d4a0e7e4810c7801f38ab47e79c542f56b8b2155b84a5faa84a4cb",
+      "gzipBytes": 908374,
+      "gzipSha256": "b13f741d933da91efaa381548ce1f532ca6f313577263cb81a319bc80b53da17"
+    },
+    "method": "10000 executed production-domain full-game rounds in 2500 four-round campaigns. Registered episodeEnd graph, JSON serialization, LocalSave migration/reload, two quota failures per round, recovery, mid-round runtime replacement, read gates, real ending completion and new-round reset. Not 10000 browser playthroughs, human readings or physical TapTap tests."
+  },
+  "browser": {
+    "edgeScenarios": 7,
+    "saveFaultScenarios": 14,
+    "wholeSteps": 290,
+    "wholeEnding": "ROUND_END_REUNION",
+    "inspectionItems": 7,
+    "retriedChapters": [
+      "CH02",
+      "CH03",
+      "CH04",
+      "CH05",
+      "CH06",
+      "CH07",
+      "CH08",
+      "CH09",
+      "CH10"
+    ],
+    "resumedTypes": [
+      "passage",
+      "investigation",
+      "photo",
+      "letter",
+      "choice",
+      "phone",
+      "audioInteraction",
+      "transition",
+      "ending"
+    ],
+    "readingOffset": 0.5172874554323992,
+    "errors": [],
+    "failedRequests": [],
+    "audioHideShowCycles": 5,
+    "physicalTapTapPhone": "pending"
+  },
+  "copy": {
+    "sourceCommit": "661708e0d788469c6606573eb7a2bf966d6b57a7",
+    "inputs": 110,
+    "jsonStrings": 3299,
+    "sourceStrings": 172,
+    "bytes": 979874,
+    "sha256": "eef56e077bc06045db184250d855c6a44dbba3a4f05d2f8d6f41e0f8534e43e1"
+  },
+  "delivery": {
+    "file": "C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\outputs\\余生未寄_V2_万轮回归_开发验证_H5.zip",
+    "bytes": 19024570,
+    "sha256": "869be0cc0cf1cddb603d6f2513de302462920bbacaa7fccef9879c95f1796f5c",
+    "crc": "PASS"
+  },
+  "acceptance": {
+    "humanAllBranches": "pending",
+    "human15to30Minutes": "pending",
+    "crossAgeBlindTest": "pending",
+    "physicalTapTapPhone": "pending",
+    "uploadedNewCandidate": false,
+    "platformVersion": 275902,
+    "platformPackage": 74035,
+    "userDecision": "先交GPT审核，暂不上传",
+    "finalRelease": false
+  },
+  "proofs": [
+    {
+      "file": "docs/validation/regression-10000/stress.json",
+      "sha256": "8e3cf6584b85481dcc2bfd3e4c31f2b05cf5e0df5dd7989105cd1391035f96c1"
+    },
+    {
+      "file": "docs/validation/regression-10000/edges.json",
+      "sha256": "d5cb365ace59e5bd3e81919aa3dff14351d646c80b8fc9ad470864e953904032"
+    },
+    {
+      "file": "docs/validation/regression-10000/before.json",
+      "sha256": "0ca898ee3c3dcbf963d5b86ed5b75197a887d5664d0396b8d18747c48d55c7a1"
+    },
+    {
+      "file": "docs/validation/regression-10000/whole.json",
+      "sha256": "40a5e9f8ed80141061da03e902e523faca1c3fa8c07cadf116699382f1adcd71"
+    },
+    {
+      "file": "docs/validation/regression-10000/transactions.json",
+      "sha256": "bf80ebb23c088cf96edfcc26c83d7bdb89495a056c5fb3a4dd2541a747c79ac8"
+    },
+    {
+      "file": "docs/validation/regression-10000/audio.json",
+      "sha256": "dba09a82191449f0e3e3ddac19dcf4fece687513f24d9feb1ae1216279d4266c"
+    }
+  ]
+}

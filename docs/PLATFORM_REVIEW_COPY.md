@@ -1,6 +1,6 @@
 # 《余生未寄》全部游戏文案审核汇总
 
-版本：1.0.0-rc.3｜整理日期：2026-10-09｜剧情与界面源码基线：a331a6fb3f61bb7aecb564679a9125a563065ed0
+版本：1.0.0-rc.3｜整理日期：2026-10-09｜剧情与界面源码基线：661708e0d788469c6606573eb7a2bf966d6b57a7
 
 本汇总从当前实际入包清单与游戏源码生成，完整收录十章、所有条件分支、选择、旧物、短信、照片背文、信件、录音、六个结局及界面提示，包含剧透和隐藏结局。共10章、60片段、467个节点、6个结局，不是单条通关路线或剧情摘要。每处保留来源以便GPT/平台核对，原文不改写。
 
@@ -6215,27 +6215,27 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 剧情目录不可用。
 
-### assets/scripts/story/StoryManager.ts:159
+### assets/scripts/story/StoryManager.ts:165
 
 存档来自较新版本，请使用对应版本继续。
 
-### assets/scripts/story/StoryManager.ts:159
+### assets/scripts/story/StoryManager.ts:165
 
 旧版本存档无法备份，已保留原记录。
 
-### assets/scripts/story/StoryManager.ts:160
+### assets/scripts/story/StoryManager.ts:166
 
 旧记录无法备份，已保留原存档。
 
-### assets/scripts/story/StoryManager.ts:160
+### assets/scripts/story/StoryManager.ts:166
 
 旧存档无法备份，已保留原记录。
 
-### assets/scripts/story/StoryManager.ts:161
+### assets/scripts/story/StoryManager.ts:167
 
 存档片段不可用。请保留存档并使用对应版本。
 
-### assets/scripts/story/StoryManager.ts:164
+### assets/scripts/story/StoryManager.ts:170
 
 这段内容暂时没能打开。请重试。
 
@@ -6580,91 +6580,91 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 南城医院
 
-### assets/scripts/ui/StoryView.ts:44
+### assets/scripts/ui/StoryView.ts:45
 
 正在打开……
 
-### assets/scripts/ui/StoryView.ts:55
+### assets/scripts/ui/StoryView.ts:56
 
 暂时无法打开。请重试。
 
-### assets/scripts/ui/StoryView.ts:77
+### assets/scripts/ui/StoryView.ts:78
 
 重试
 
-### assets/scripts/ui/StoryView.ts:93
+### assets/scripts/ui/StoryView.ts:94
 
 返回书桌
 
-### assets/scripts/ui/StoryView.ts:101
+### assets/scripts/ui/StoryView.ts:106
 
 暂时无法返回。请重试。
 
-### assets/scripts/ui/StoryView.ts:105
+### assets/scripts/ui/StoryView.ts:111
 
 阅读设置
 
-### assets/scripts/ui/StoryView.ts:119
+### assets/scripts/ui/StoryView.ts:125
 
 残缺
 
-### assets/scripts/ui/StoryView.ts:119
+### assets/scripts/ui/StoryView.ts:125
 
 出现矛盾
 
-### assets/scripts/ui/StoryView.ts:119
+### assets/scripts/ui/StoryView.ts:125
 
 重新理解
 
-### assets/scripts/ui/StoryView.ts:119
+### assets/scripts/ui/StoryView.ts:125
 
 完整
 
-### assets/scripts/ui/StoryView.ts:125
+### assets/scripts/ui/StoryView.ts:131
 
 当前内容读完了。
 
-### assets/scripts/ui/StoryView.ts:126
+### assets/scripts/ui/StoryView.ts:132
 
 可以退出，稍后从这里继续。
 
-### assets/scripts/ui/StoryView.ts:143
+### assets/scripts/ui/StoryView.ts:149
 
 这一页读完了。
 
-### assets/scripts/ui/StoryView.ts:144
+### assets/scripts/ui/StoryView.ts:150
 
 再读一遍
 
-### assets/scripts/ui/StoryView.ts:145
+### assets/scripts/ui/StoryView.ts:151
 
 回到首页
 
-### assets/scripts/ui/StoryView.ts:176
+### assets/scripts/ui/StoryView.ts:182
 
 继续
 
-### assets/scripts/ui/StoryView.ts:181
+### assets/scripts/ui/StoryView.ts:187
 
 继续
 
-### assets/scripts/ui/StoryView.ts:184
+### assets/scripts/ui/StoryView.ts:190
 
 该片段暂时无法继续。
 
-### assets/scripts/ui/StoryView.ts:192
+### assets/scripts/ui/StoryView.ts:198
 
 重试保存
 
-### assets/scripts/ui/StoryView.ts:203
+### assets/scripts/ui/StoryView.ts:209
 
 先看看照片和信封。
 
-### assets/scripts/ui/StoryView.ts:205
+### assets/scripts/ui/StoryView.ts:211
 
 （看过）
 
-### assets/scripts/ui/StoryView.ts:208
+### assets/scripts/ui/StoryView.ts:214
 
 收好纸箱
 

@@ -1,0 +1,47 @@
+{
+  "result": "REPRODUCTION",
+  "method": "Actual Cocos H5, isolated cursor fixtures, touchscreen input, deterministic storage/scene-load latency faults and synthetic lifecycle events. Not physical TapTap acceptance.",
+  "scenarios": [
+    {
+      "name": "condition-current-known",
+      "failedAt": "CH01_EP03_COND001",
+      "rejected": 1,
+      "restartedAt": "CH01_EP03_COND001",
+      "beforeRetry": "CH01_EP03_N006A",
+      "pendingBeforeRetry": true,
+      "recoveredAt": "CH01_EP03_N006A",
+      "pendingAfterRetry": false,
+      "flagsPreserved": true
+    },
+    {
+      "name": "condition-current-fallback",
+      "failedAt": "CH01_EP03_COND001",
+      "rejected": 1,
+      "restartedAt": "CH01_EP03_COND001",
+      "beforeRetry": "CH01_EP03_N006B",
+      "pendingBeforeRetry": true,
+      "recoveredAt": "CH01_EP03_N006B",
+      "pendingAfterRetry": false,
+      "flagsPreserved": true
+    },
+    {
+      "name": "rapid-exit-success",
+      "failedSavesKeptRaw": true,
+      "blockedExitCalls": 0,
+      "rapidInputs": 8,
+      "exitCalls": 8,
+      "scene": "Main",
+      "saveCursor": "CH01_EP01_N001"
+    },
+    {
+      "name": "rapid-exit-load-failure",
+      "failedSavesKeptRaw": true,
+      "blockedExitCalls": 0,
+      "rapidInputs": 8,
+      "exitCalls": 8,
+      "scene": "Story",
+      "saveCursor": "CH01_EP01_N001"
+    }
+  ],
+  "errors": []
+}

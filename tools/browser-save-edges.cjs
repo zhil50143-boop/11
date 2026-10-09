@@ -27,16 +27,19 @@ function seed(id){const r=story.records.find(r=>r.node.id===id),s=createInitialS
   async function lifecycle(event){await page.evaluate(async event=>{const cc=await System.import('cc');if(event==='pagehide')window.dispatchEvent(new PageTransitionEvent('pagehide'));else cc.game.emit(event==='hide'?cc.Game.EVENT_HIDE:cc.Game.EVENT_SHOW)},event);await page.waitForTimeout(100)}
   await page.goto(url);await tap('继续');await page.waitForTimeout(700);return{context,page,snap,tap,lifecycle};
  }
- for(const known of [true,false]){
-  const initial=seed('CH01_EP03_COND001');if(known)initial.flags.TOLD_PARTNER_XIA=true;
+ for(const [id,expected,known,name] of [
+  ['CH01_EP03_COND001','CH01_EP03_N006A',true,'known'],['CH01_EP03_COND001','CH01_EP03_N006B',false,'fallback'],
+  ['CH09_EP04_JOB_CHECK','CH09_EP04_JOB_COMMON',false,'legacy-job'],['CH10_EP01_OLD_CHECK','CH10_EP01_COMMON',false,'legacy-work'],['CH10_EP03_REVISE_CHECK','CH10_EP03_COMMON',false,'legacy-care'],
+ ]){
+  const initial=seed(id);if(known)initial.flags.TOLD_PARTNER_XIA=true;
   const t=await open(initial,'condition'),failed=await t.snap();
   assert.equal(failed.state.progress.nodeId,initial.progress.nodeId);assert.ok(failed.failedAction);assert.equal(JSON.parse(failed.raw).progress.nodeId,initial.progress.nodeId);
   const stable=s=>({flags:s.state.flags,stats:s.state.stats,read:s.state.readNodeIds,memories:s.state.life.memoryRecords});
   for(let i=0;i<3;i++){await t.lifecycle('hide');await t.lifecycle('show');assert.deepEqual(stable(await t.snap()),stable(failed))}
   await t.page.reload();await t.tap('继续');await t.page.waitForTimeout(700);const restarted=await t.snap();assert.equal(restarted.state.progress.nodeId,initial.progress.nodeId);assert.deepEqual(stable(restarted),stable(failed));
   await t.page.evaluate(()=>{window.__edgeFault=''});await t.lifecycle('show');const beforeRetry=await t.snap();
-  await t.tap(beforeRetry.buttons.some(b=>b.title==='重试保存')?'重试保存':'重试');await t.page.waitForTimeout(500);const recovered=await t.snap(),expected=known?'CH01_EP03_N006A':'CH01_EP03_N006B';
-  const report={name:'condition-current-'+(known?'known':'fallback'),failedAt:failed.state.progress.nodeId,rejected:failed.rejected,restartedAt:restarted.state.progress.nodeId,beforeRetry:beforeRetry.state.progress.nodeId,pendingBeforeRetry:beforeRetry.failedAction,recoveredAt:recovered.state.progress.nodeId,pendingAfterRetry:recovered.failedAction,flagsPreserved:JSON.stringify(stable(recovered))===JSON.stringify(stable(failed))};
+  await t.tap(beforeRetry.buttons.some(b=>b.title==='重试保存')?'重试保存':'重试');await t.page.waitForTimeout(500);const recovered=await t.snap();
+  const report={name:'condition-current-'+name,failedAt:failed.state.progress.nodeId,rejected:failed.rejected,restartedAt:restarted.state.progress.nodeId,beforeRetry:beforeRetry.state.progress.nodeId,pendingBeforeRetry:beforeRetry.failedAction,recoveredAt:recovered.state.progress.nodeId,pendingAfterRetry:recovered.failedAction,flagsPreserved:JSON.stringify(stable(recovered))===JSON.stringify(stable(failed))};
   assert.equal(recovered.state.progress.nodeId,expected);assert.ok(!recovered.failedAction);assert.deepEqual(stable(recovered),stable(failed));assert.deepEqual(JSON.parse(recovered.raw),recovered.state);
   if(mode==='verify')assert.equal(beforeRetry.state.progress.nodeId,initial.progress.nodeId,'Background refresh cannot execute a pending failed action');
   await t.page.screenshot({path:path.join(out,report.name+'.png')});reports.push(report);await t.context.close();

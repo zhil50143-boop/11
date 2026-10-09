@@ -85,6 +85,14 @@ test('current on a saved automatic condition survives repeated write failures an
     assert.deepEqual(local.load(),restored);const committed=values.get('test');runtime.current();assert.equal(values.get('test'),committed);
   }
 });
+test('legacy saves without job or care history retry into common passages without inventing old decisions',()=>{
+  for(const [id,target] of [['CH09_EP04_JOB_CHECK','CH09_EP04_JOB_COMMON'],['CH10_EP01_OLD_CHECK','CH10_EP01_COMMON'],['CH10_EP03_REVISE_CHECK','CH10_EP03_COMMON']]){
+    const record=byId(id),state=createInitialState();state.progress={chapterId:record.chapter,episodeId:record.episode,nodeId:id,readingOffset:0};
+    let blocked=false,raw;const runtime=new StoryRuntime(state,s=>{if(blocked)return false;raw=JSON.stringify(s);return true});runtime.load(episode(record),record.chapter);const before=structuredClone(state),original=raw;
+    blocked=true;assert.throws(()=>runtime.current(),SaveWriteError);assert.deepEqual(state,before);assert.equal(raw,original);
+    blocked=false;assert.equal(runtime.current().id,target);assert.deepEqual(state.flags,{});assert.deepEqual(state.readNodeIds,[]);assert.deepEqual(JSON.parse(raw),state);
+  }
+});
 test('failed direct writes do not update timestamps; read-denied storage cannot be overwritten',()=>{
   const s=createInitialState();s.updatedAt=123;const save=new LocalSave({getItem:()=>{throw Error('read denied')},setItem:()=>{throw Error('should not write')},removeItem:()=>{}},'test');
   const loaded=save.load();assert.equal(save.save(loaded),false);assert.match(save.warning,/无法读取/);

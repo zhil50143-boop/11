@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-rc.3",
   "exportDate": "2026-10-09",
-  "sourceCommit": "a331a6fb3f61bb7aecb564679a9125a563065ed0",
+  "sourceCommit": "661708e0d788469c6606573eb7a2bf966d6b57a7",
   "chapters": 10,
   "episodes": 60,
   "nodeCount": 467,
@@ -20065,42 +20065,42 @@
     },
     {
       "file": "assets/scripts/story/StoryManager.ts",
-      "line": 159,
+      "line": 165,
       "text": "存档来自较新版本，请使用对应版本继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/story/StoryManager.ts",
-      "line": 159,
+      "line": 165,
       "text": "旧版本存档无法备份，已保留原记录。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/story/StoryManager.ts",
-      "line": 160,
+      "line": 166,
       "text": "旧记录无法备份，已保留原存档。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/story/StoryManager.ts",
-      "line": 160,
+      "line": 166,
       "text": "旧存档无法备份，已保留原记录。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/story/StoryManager.ts",
-      "line": 161,
+      "line": 167,
       "text": "存档片段不可用。请保留存档并使用对应版本。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/story/StoryManager.ts",
-      "line": 164,
+      "line": 170,
       "text": "这段内容暂时没能打开。请重试。",
       "format": "literal",
       "scope": "game-source"
@@ -20702,154 +20702,154 @@
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 44,
+      "line": 45,
       "text": "正在打开……",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 55,
+      "line": 56,
       "text": "暂时无法打开。请重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 77,
+      "line": 78,
       "text": "重试",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 93,
+      "line": 94,
       "text": "返回书桌",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 101,
+      "line": 106,
       "text": "暂时无法返回。请重试。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 105,
+      "line": 111,
       "text": "阅读设置",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 119,
+      "line": 125,
       "text": "残缺",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 119,
+      "line": 125,
       "text": "出现矛盾",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 119,
+      "line": 125,
       "text": "重新理解",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 119,
+      "line": 125,
       "text": "完整",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 125,
+      "line": 131,
       "text": "当前内容读完了。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 126,
+      "line": 132,
       "text": "可以退出，稍后从这里继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 143,
+      "line": 149,
       "text": "这一页读完了。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 144,
+      "line": 150,
       "text": "再读一遍",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 145,
+      "line": 151,
       "text": "回到首页",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 176,
+      "line": 182,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 181,
+      "line": 187,
       "text": "继续",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 184,
+      "line": 190,
       "text": "该片段暂时无法继续。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 192,
+      "line": 198,
       "text": "重试保存",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 203,
+      "line": 209,
       "text": "先看看照片和信封。",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 205,
+      "line": 211,
       "text": "（看过）",
       "format": "literal",
       "scope": "game-source"
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "line": 208,
+      "line": 214,
       "text": "收好纸箱",
       "format": "literal",
       "scope": "game-source"
@@ -21339,7 +21339,7 @@
     },
     {
       "file": "assets/scripts/story/StoryManager.ts",
-      "sha256": "2f767cb6598ac73c8f6e6a32f56751319a7c442fdb3557fc167f9b3fd2c4ee9c"
+      "sha256": "7d0fe02345f0f879cbe2a7c7bb0607899d35e5ca5fded530c67b903fafe443f3"
     },
     {
       "file": "assets/scripts/story/StoryNode.ts",
@@ -21415,7 +21415,7 @@
     },
     {
       "file": "assets/scripts/ui/StoryView.ts",
-      "sha256": "dbf900b7df2fc00f9b2a7ff39d96dbc6de3cb763553348cea7d5f886eaca0bb7"
+      "sha256": "c85f703df11bccd89840c0266c9073f1b6f5d930dd71a847613f5ffa90e55a13"
     },
     {
       "file": "assets/scripts/ui/UIFactory.ts",
@@ -21432,7 +21432,7 @@
   ],
   "export": {
     "bytes": 979874,
-    "sha256": "36e9f8a5b61d42dec6dc529cd45cf92a3b64ab915eb80bf2ac8b727253837547"
+    "sha256": "eef56e077bc06045db184250d855c6a44dbba3a4f05d2f8d6f41e0f8534e43e1"
   },
   "limitations": [
     "Current candidate, regenerate on final commit",
