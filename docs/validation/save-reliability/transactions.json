@@ -1,0 +1,209 @@
+{
+  "result": "PASS",
+  "method": "Isolated source-derived save fixtures, actual Cocos H5 touchscreen actions and Storage.setItem fault injection. No mutation of live story state. Background/pagehide events simulate app hooks, not physical TapTap acceptance.",
+  "scenarios": [
+    {
+      "name": "ordinary-passage",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH01_EP01_N001",
+      "failedAt": "CH01_EP01_N001",
+      "to": "CH01_EP01_DAILY",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "major-decision",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH01_EP02_C002",
+      "failedAt": "CH01_EP02_C002",
+      "to": "CH01_EP02_B001",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "photo-evidence",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH01_EP02_PHOTO_001",
+      "failedAt": "CH01_EP02_PHOTO_001",
+      "to": "CH01_EP02_C001",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "full-letter-evidence",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH08_EP03_LETTER",
+      "failedAt": "CH08_EP03_LETTER",
+      "to": "CH08_EP03_DESK",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "full-recording-evidence",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH08_EP03_AUDIO",
+      "failedAt": "CH08_EP03_AUDIO",
+      "to": "CH08_EP03_DESK",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "playing-recording-save-failure",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH01_EP04_N002",
+      "failedAt": "CH01_EP04_N002",
+      "to": "CH01_EP04_RECORDING",
+      "pendingRequestsAfterSettlement": 0,
+      "originalClipRetainedAndPauseResumed": true,
+      "disposedAfterRetry": true,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "investigation-completion",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH01_EP02_C001",
+      "failedAt": "CH01_EP02_C001",
+      "to": "CH01_EP02_NAME_001",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "chapter-write-failure",
+      "rawPreserved": false,
+      "durableBoundaryPreserved": true,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH01_EP04_WINDOW",
+      "failedAt": "CH01_EP04_END",
+      "to": "CH02_EP01_N001",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "episode-write-failure",
+      "rawPreserved": false,
+      "durableBoundaryPreserved": true,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH01_EP01_PARCEL",
+      "failedAt": "CH01_EP01_END",
+      "to": "CH01_EP02_N001",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "ending-write-failure",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH10_END_REUNION",
+      "failedAt": "CH10_END_REUNION",
+      "to": "CH10_END_REUNION",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "next-round-write-failure",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH10_END_REUNION",
+      "failedAt": "CH10_END_REUNION",
+      "to": "CH01_EP01_N001",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "background-scroll-save",
+      "warningSurvivesShow": true,
+      "offset": 0.5084062327510332,
+      "reloadedOffset": 0.5084062327510332,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "pagehide-scroll-save",
+      "warningSurvivesShow": true,
+      "offset": 0.5397729476526488,
+      "reloadedOffset": 0.5397729476526488,
+      "viewport": {
+        "width": 540,
+        "height": 960
+      }
+    },
+    {
+      "name": "narrow-screen-decision",
+      "rawPreserved": true,
+      "durableBoundaryPreserved": false,
+      "pendingActionGated": true,
+      "retriedAndReloaded": true,
+      "from": "CH01_EP02_C002",
+      "failedAt": "CH01_EP02_C002",
+      "to": "CH01_EP02_B001",
+      "pendingRequestsAfterSettlement": 0,
+      "viewport": {
+        "width": 320,
+        "height": 694
+      }
+    }
+  ],
+  "errors": []
+}

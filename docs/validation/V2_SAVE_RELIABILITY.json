@@ -1,0 +1,301 @@
+{
+  "date": "2026-10-09",
+  "version": "1.0.0-rc.3",
+  "build": "build/visual-v2-save-safe-locked",
+  "buildSourceCommit": "843ab8503fb2f3ac3c1adafa2c039d572e814910",
+  "verificationSourceCommit": "a331a6fb3f61bb7aecb564679a9125a563065ed0",
+  "finishedAt": "2026-10-09 16:29:16",
+  "result": "PASS within listed desktop and domain scope; human/physical acceptance pending",
+  "core": {
+    "tests": 71,
+    "pass": 71,
+    "fail": 0,
+    "logicalWeightedRoutes": 508800,
+    "equivalentInvestigationStates": 3872,
+    "memoHits": 49,
+    "notBrowserRoutes": true
+  },
+  "types": [
+    "tsconfig.verify.json PASS",
+    "tsconfig.json PASS"
+  ],
+  "graph": {
+    "chapters": 10,
+    "episodes": 60,
+    "nodes": 467,
+    "endings": 6,
+    "result": "PASS"
+  },
+  "transactions": {
+    "scenarios": 14,
+    "errors": [],
+    "sourceDerivedFixture": true,
+    "storageBoundaryFaultInjection": true,
+    "keepsCommittedState": true,
+    "playingClipRetainedAndPauseResumed": true
+  },
+  "whole": {
+    "steps": 290,
+    "inspectionItems": 7,
+    "retriedChapters": [
+      "CH02",
+      "CH03",
+      "CH04",
+      "CH05",
+      "CH06",
+      "CH07",
+      "CH08",
+      "CH09",
+      "CH10"
+    ],
+    "resumedTypes": [
+      "passage",
+      "investigation",
+      "photo",
+      "letter",
+      "choice",
+      "phone",
+      "audioInteraction",
+      "transition",
+      "ending"
+    ],
+    "readingOffset": 0.7414504050243912,
+    "v2BackupVerified": true,
+    "errors": [],
+    "failedRequests": []
+  },
+  "rounds": {
+    "steps": [
+      290,
+      287,
+      279,
+      290,
+      274,
+      274
+    ],
+    "result": "PASS",
+    "distinctEndings": 6,
+    "completedRounds": 6,
+    "nextPlayCount": 7,
+    "hiddenRound": 4,
+    "metaRetained": true,
+    "currentFactsReset": true,
+    "sessionDiagnostics": true,
+    "errors": [],
+    "failedRequests": [],
+    "galleryPhotoVisits": 48,
+    "withoutDocumentReload": true
+  },
+  "longSession": {
+    "result": "PASS",
+    "method": "Six real rounds in one document without page reload, plus two full four-photo gallery cycles per round. JS heap before/after explicit diagnostic GC, public Cocos assets/textures/audio and DOM event counts observed. Estimated RGBA bytes are not GPU/RSS measurements or physical-device results.",
+    "samples": [
+      {
+        "round": 1,
+        "heapBeforeDiagnosticGC": 28674488,
+        "heapAfterDiagnosticGC": 13158756,
+        "dom": {
+          "documents": 1,
+          "nodes": 116,
+          "jsEventListeners": 51
+        },
+        "cacheAssets": 188,
+        "jsonAssets": 72,
+        "textures": 32,
+        "texturePixels": 28281904,
+        "estimatedRGBABytes": 113127616,
+        "audioClips": 2,
+        "storyManagers": 0,
+        "audioSources": 0
+      },
+      {
+        "round": 2,
+        "heapBeforeDiagnosticGC": 18000884,
+        "heapAfterDiagnosticGC": 13452136,
+        "dom": {
+          "documents": 1,
+          "nodes": 116,
+          "jsEventListeners": 51
+        },
+        "cacheAssets": 188,
+        "jsonAssets": 72,
+        "textures": 32,
+        "texturePixels": 28281904,
+        "estimatedRGBABytes": 113127616,
+        "audioClips": 2,
+        "storyManagers": 0,
+        "audioSources": 0
+      },
+      {
+        "round": 3,
+        "heapBeforeDiagnosticGC": 30206744,
+        "heapAfterDiagnosticGC": 13453104,
+        "dom": {
+          "documents": 1,
+          "nodes": 116,
+          "jsEventListeners": 51
+        },
+        "cacheAssets": 188,
+        "jsonAssets": 72,
+        "textures": 32,
+        "texturePixels": 28281904,
+        "estimatedRGBABytes": 113127616,
+        "audioClips": 2,
+        "storyManagers": 0,
+        "audioSources": 0
+      },
+      {
+        "round": 4,
+        "heapBeforeDiagnosticGC": 25432624,
+        "heapAfterDiagnosticGC": 13798316,
+        "dom": {
+          "documents": 1,
+          "nodes": 116,
+          "jsEventListeners": 51
+        },
+        "cacheAssets": 188,
+        "jsonAssets": 72,
+        "textures": 32,
+        "texturePixels": 28281904,
+        "estimatedRGBABytes": 113127616,
+        "audioClips": 2,
+        "storyManagers": 0,
+        "audioSources": 0
+      },
+      {
+        "round": 5,
+        "heapBeforeDiagnosticGC": 18678296,
+        "heapAfterDiagnosticGC": 13899512,
+        "dom": {
+          "documents": 1,
+          "nodes": 116,
+          "jsEventListeners": 51
+        },
+        "cacheAssets": 188,
+        "jsonAssets": 72,
+        "textures": 32,
+        "texturePixels": 28281904,
+        "estimatedRGBABytes": 113127616,
+        "audioClips": 2,
+        "storyManagers": 0,
+        "audioSources": 0
+      },
+      {
+        "round": 6,
+        "heapBeforeDiagnosticGC": 29123076,
+        "heapAfterDiagnosticGC": 13990932,
+        "dom": {
+          "documents": 1,
+          "nodes": 116,
+          "jsEventListeners": 51
+        },
+        "cacheAssets": 188,
+        "jsonAssets": 72,
+        "textures": 32,
+        "texturePixels": 28281904,
+        "estimatedRGBABytes": 113127616,
+        "audioClips": 2,
+        "storyManagers": 0,
+        "audioSources": 0
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "estimatedTextureBytesAreNotGPUorRSS": true
+  },
+  "audio": {
+    "result": "PASS",
+    "method": "Initial cursor fixture from genuine CH08 no-recording H5 save; actual touch play/pause/resume/media-ended/reload/complete; no running-state writes or seeks",
+    "playing": {
+      "playing": true,
+      "time": 2.2035,
+      "duration": 63.6,
+      "valid": true
+    },
+    "paused": {
+      "playing": false,
+      "time": 3.1925,
+      "duration": 63.6,
+      "valid": true
+    },
+    "still": {
+      "playing": false,
+      "time": 3.1925,
+      "duration": 63.6,
+      "valid": true
+    },
+    "completedSource": true,
+    "truthNotInvented": true,
+    "disposed": true,
+    "errors": [],
+    "failedRequests": [],
+    "lifecycleHideShowCycles": 5,
+    "eventsAreSimulated": true,
+    "fixedVoiceSha256": {
+      "01-full": "3a4e650df1b990ac02e519d0f1835195a52dced5c363e05e535b11f92e2f78b1",
+      "01-opening": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c"
+    }
+  },
+  "performance": {
+    "isolated": [
+      {
+        "viewport": {
+          "width": 540,
+          "height": 960
+        },
+        "menuMs": 7076,
+        "storyMs": 7901,
+        "storyTransferBytes": 534591,
+        "initialAudioDownloads": 0,
+        "initialNativePhotoDownloads": 0,
+        "medianFrameMs": 16.600000000000364,
+        "p95FrameMs": 16.700000000000728,
+        "errors": []
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "menuMs": 6986,
+        "storyMs": 7804,
+        "storyTransferBytes": 534591,
+        "initialAudioDownloads": 0,
+        "initialNativePhotoDownloads": 0,
+        "medianFrameMs": 16.600000000000364,
+        "p95FrameMs": 16.700000000000728,
+        "errors": []
+      }
+    ],
+    "parallelDiagnosticsRetained": true,
+    "limitations": "Desktop SwiftShader, 1.6Mbps/80ms/4x CPU and gzip local server. Parallel trial is retained separately; isolated trial after other tests closed is comparison sample, not TapTap/phone or human reading."
+  },
+  "preview": {
+    "url": "http://127.0.0.1:57319/",
+    "sameExistingTab": true,
+    "savedAndReturnedThenReloaded": true,
+    "observedTitle": "饭桌上",
+    "sameText": true,
+    "noChoicesMade": true,
+    "screenshot": "docs/shots/v2-save-reliability/in-app-preserved-progress.png"
+  },
+  "evidenceFiles": {
+    "whole": "docs/validation/save-reliability/whole.json",
+    "transactions": "docs/validation/save-reliability/transactions.json",
+    "rounds": "docs/validation/save-reliability/rounds.json",
+    "complete": "docs/validation/save-reliability/complete.json",
+    "session": "docs/validation/save-reliability/session.json",
+    "audio": "docs/validation/save-reliability/audio.json",
+    "audioLifecycle": "docs/validation/save-reliability/audioLifecycle.json",
+    "performanceConcurrent": "docs/validation/save-reliability/performanceConcurrent.json",
+    "performanceIsolated": "docs/validation/save-reliability/performanceIsolated.json"
+  },
+  "delivery": "docs/validation/V2_SAVE_DELIVERY.json",
+  "humanFullBranchReading": "pending",
+  "human15to30MinuteReading": "pending",
+  "crossAgeBlindTest": "pending",
+  "physicalTapTapPhone": "pending",
+  "cloudSaveClaimed": false,
+  "newPlatformUpload": false,
+  "finalRelease": false
+}

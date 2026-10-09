@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "distinctEndings": 6,
+  "completedRounds": 6,
+  "nextPlayCount": 7,
+  "hiddenRound": 4,
+  "metaRetained": true,
+  "currentFactsReset": true,
+  "sessionDiagnostics": true,
+  "errors": [],
+  "failedRequests": []
+}

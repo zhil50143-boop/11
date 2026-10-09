@@ -1,0 +1,17 @@
+{
+  "name": "余生未寄",
+  "platform": "web-mobile",
+  "buildPath": "project://build",
+  "outputName": "visual-v2-save-safe-locked",
+  "startScene": "6634dd05-0617-44e7-a62d-64c7d3824321",
+  "debug": false,
+  "showFPS": false,
+  "mainBundleCompressionType": "merge_dep",
+  "md5Cache": true,
+  "packages": {
+    "web-mobile": {
+      "orientation": "portrait"
+    }
+  },
+  "logDest": "C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\work\\yushengweiji\\work\\visual-v2-save-safe-locked.log"
+}

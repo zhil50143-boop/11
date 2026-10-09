@@ -7,7 +7,7 @@ Cocos Creator 3.8.8 + TypeScript，1080×1920竖屏，Boot/Main/Story。十章60
 1. `npm ci --ignore-scripts`。
 2. `npm run check:types`，官方3.8.8类型核对；本机导入编辑器后另跑`npm run check:cocos`。
 3. `npm run check:story`：全部章节Schema、未登记文件、节点/跨章引用、旧别名、可达性、六个终局。
-4. `npm test`：54项核心测试，508800初始路线及元进度/二周目专项。高分不能替代事实，缺失旧历史不能编造。
+4. `npm test`：当前71项核心测试，508800加权领域逻辑路线及元进度/二周目专项。相同调查语义状态只验证一次并保留路线乘数，字节/集合顺序另测；不是浏览器同数量点按。高分不能替代事实，缺失旧历史不能编造。
 5. 每次章节完成对照GAME_SPEC、用户方向和LIFE_NARRATIVE_RULES审查整个游戏，修复冲突再继续，保留符合/待完成/冲突。
 
 ## 构建与预览
@@ -32,6 +32,8 @@ node tools/serve-preview.cjs 5088 build/life-candidate --gzip
 HTTP打开http://127.0.0.1:5088。去掉--gzip是独立未压缩诊断；部署端需实际提供正确Content-Encoding/Vary，不能假定TapTap自动开启压缩。不要双击file://。旧build/web-mobile清理被拒，保留历史目录，不能当新产物。
 
 ## 浏览器验收
+
+2026-10-09存档可靠性批次新增：对当前HTTP构建运行tools/browser-save-transactions.cjs，14项实际触摸/写入故障fixture；tools/browser-smoke.cjs十章290步/九跨章失败重试；tools/browser-rounds.cjs URL 输出目录 --session-diagnostics，在同一页面连续六轮并反复只读回看相册，记录公有资源计数/诊断GC堆。全套完整报告见validation/V2_SAVE_RELIABILITY.json与SAVE_RELIABILITY_AUDIT.md；固定v3音源的自然结束和模拟后台另由browser-audio.cjs/browser-audio-lifecycle.cjs复验。后台事件注入、桌面软件渲染和诊断GC都不是实体手机验收。图片/声音/全部文案散列按V2_SAVE_DELIVERY.json锁定。
 
 开发机器可用已有Playwright，设置PLAYWRIGHT_MODULE为其模块路径、BROWSER_EXECUTABLE为Chrome路径；测试依赖不加入游戏。手机尺寸touchscreen点按/拖动，读取运行状态用于断言。发布包可运行；额外UI类型通过公开System模块读取，不依赖debug变量UITransform。
 

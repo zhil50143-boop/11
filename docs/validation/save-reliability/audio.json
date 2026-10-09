@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "method": "Initial cursor fixture from genuine CH08 no-recording H5 save; actual touch play/pause/resume/media-ended/reload/complete; no running-state writes or seeks",
+  "playing": {
+    "playing": true,
+    "time": 2.2035,
+    "duration": 63.6,
+    "valid": true
+  },
+  "paused": {
+    "playing": false,
+    "time": 3.1925,
+    "duration": 63.6,
+    "valid": true
+  },
+  "still": {
+    "playing": false,
+    "time": 3.1925,
+    "duration": 63.6,
+    "valid": true
+  },
+  "completedSource": true,
+  "truthNotInvented": true,
+  "disposed": true,
+  "errors": [],
+  "failedRequests": []
+}

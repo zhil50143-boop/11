@@ -1,0 +1,116 @@
+{
+  "result": "PASS",
+  "method": "Six real rounds in one document without page reload, plus two full four-photo gallery cycles per round. JS heap before/after explicit diagnostic GC, public Cocos assets/textures/audio and DOM event counts observed. Estimated RGBA bytes are not GPU/RSS measurements or physical-device results.",
+  "samples": [
+    {
+      "round": 1,
+      "heapBeforeDiagnosticGC": 28674488,
+      "heapAfterDiagnosticGC": 13158756,
+      "dom": {
+        "documents": 1,
+        "nodes": 116,
+        "jsEventListeners": 51
+      },
+      "cacheAssets": 188,
+      "jsonAssets": 72,
+      "textures": 32,
+      "texturePixels": 28281904,
+      "estimatedRGBABytes": 113127616,
+      "audioClips": 2,
+      "storyManagers": 0,
+      "audioSources": 0
+    },
+    {
+      "round": 2,
+      "heapBeforeDiagnosticGC": 18000884,
+      "heapAfterDiagnosticGC": 13452136,
+      "dom": {
+        "documents": 1,
+        "nodes": 116,
+        "jsEventListeners": 51
+      },
+      "cacheAssets": 188,
+      "jsonAssets": 72,
+      "textures": 32,
+      "texturePixels": 28281904,
+      "estimatedRGBABytes": 113127616,
+      "audioClips": 2,
+      "storyManagers": 0,
+      "audioSources": 0
+    },
+    {
+      "round": 3,
+      "heapBeforeDiagnosticGC": 30206744,
+      "heapAfterDiagnosticGC": 13453104,
+      "dom": {
+        "documents": 1,
+        "nodes": 116,
+        "jsEventListeners": 51
+      },
+      "cacheAssets": 188,
+      "jsonAssets": 72,
+      "textures": 32,
+      "texturePixels": 28281904,
+      "estimatedRGBABytes": 113127616,
+      "audioClips": 2,
+      "storyManagers": 0,
+      "audioSources": 0
+    },
+    {
+      "round": 4,
+      "heapBeforeDiagnosticGC": 25432624,
+      "heapAfterDiagnosticGC": 13798316,
+      "dom": {
+        "documents": 1,
+        "nodes": 116,
+        "jsEventListeners": 51
+      },
+      "cacheAssets": 188,
+      "jsonAssets": 72,
+      "textures": 32,
+      "texturePixels": 28281904,
+      "estimatedRGBABytes": 113127616,
+      "audioClips": 2,
+      "storyManagers": 0,
+      "audioSources": 0
+    },
+    {
+      "round": 5,
+      "heapBeforeDiagnosticGC": 18678296,
+      "heapAfterDiagnosticGC": 13899512,
+      "dom": {
+        "documents": 1,
+        "nodes": 116,
+        "jsEventListeners": 51
+      },
+      "cacheAssets": 188,
+      "jsonAssets": 72,
+      "textures": 32,
+      "texturePixels": 28281904,
+      "estimatedRGBABytes": 113127616,
+      "audioClips": 2,
+      "storyManagers": 0,
+      "audioSources": 0
+    },
+    {
+      "round": 6,
+      "heapBeforeDiagnosticGC": 29123076,
+      "heapAfterDiagnosticGC": 13990932,
+      "dom": {
+        "documents": 1,
+        "nodes": 116,
+        "jsEventListeners": 51
+      },
+      "cacheAssets": 188,
+      "jsonAssets": 72,
+      "textures": 32,
+      "texturePixels": 28281904,
+      "estimatedRGBABytes": 113127616,
+      "audioClips": 2,
+      "storyManagers": 0,
+      "audioSources": 0
+    }
+  ],
+  "errors": [],
+  "failedRequests": []
+}

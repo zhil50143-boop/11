@@ -8,7 +8,9 @@ TapTap H5现实人生叙事模拟。连续生活叙事优先，少量重要决�
 
 保留用户确认的“场景窗＋纸面”。全游戏阅读、决定与回退统一纸面；调查、照片翻面、信封/长信、两代手机、记忆对照及独立MP3在实际流程中使用原事实/存档逻辑。20种场景/手机变体按真实年份和地点共享，未知或混合空间回到纸面，不补写同居、时段或证据。所有新美术通过当前内置Image生成，原图、完整提示、编辑链和散列见[素材记录](art/visual-v2/README.md)。工具未回传具体模型型号。已确认第三版音色保持。
 
-本批57核心测试、508800初始路线、两种类型/全图通过；最终Cocos3.8.8包十章290步、九次跨章失败重试、九类续档及原文备份通过。39状态/78张日夜大字截图、18次决定点按、18手机节点与42专项场景通过。[本批全游戏核对](docs/INTERACTION_VISUAL_AUDIT.md)、[可核验记录](docs/validation/V2_INTERACTIONS.json)。既往同一存档连续六轮浏览器与本批单路线分别留档，不能混作本轮重测。
+最新存档可靠性批次：复现并修复写入失败后内存剧情仍推进的问题，保存成功才提交决定、证据、游标和结局，失败留原页并可重试。71核心测试、508800加权领域逻辑路线、两种类型/全图通过；最新同一构建实际十章290步、14项写入故障及连续六轮1694步/48次相册回看通过，第四轮隐藏、下一轮7。[整改与全游戏核对](docs/SAVE_RELIABILITY_AUDIT.md)、[实际证据](docs/validation/V2_SAVE_RELIABILITY.json)。逻辑路线计数不是同数量浏览器通关；长会话资源观察也不等于手机内存验收。
+
+既往共享场景39状态/78张日夜大字图、18次决定点按、18手机与42专项仍独立保留，[前批核对](docs/INTERACTION_VISUAL_AUDIT.md)和[原始记录](docs/validation/V2_INTERACTIONS.json)不冒充本轮重跑。
 
 阅读页有“返回书桌”，保存成功才退出，继续回到原段落；保存失败留原页重试。三档字号、夜间纸面、录音音量与减少动态独立保存。[设置说明](docs/READING_SETTINGS.md)。相册只读回看与照片描述跨刷新现已补齐；只显示本轮已完成照片，回看不改事实。相册后60测试、整十章290步、18专项/23图及四原照片实际加载集中确认通过。[最新全游戏核对](docs/PHOTO_ALBUM_AUDIT.md)。余下精确场景、跨龄真人辨认及全篇生活节奏仍待完成。
 
@@ -23,7 +25,7 @@ RC2自测包已按授权上传已有TapTap游戏，版本275902/包体74035；�
 
 先读CODEX_TASK、GAME_SPEC和LIFE_NARRATIVE_RULES。安装依赖后运行npm run check:types、npm run check:story、npm test；已导入编辑器时另跑npm run check:cocos。统计、文案线索与素材清单可以重导出，但不代替真人审读。
 
-发布配置build-config/web-mobile.json关闭debug并裁剪2D模块；最新输出build/visual-v2-album，2026-10-09 14:40:04 Finished。共享场景前批输出独立保留。构建后使用tools/prepare-delivery.cjs和tools/serve-preview.cjs通过HTTP试玩。旧build/web-mobile与历史包不能当成最新包，也不能双击file://代替运行。
+发布配置build-config/web-mobile.json关闭debug并裁剪2D模块；最新输出build/visual-v2-save-safe-locked，2026-10-09 16:29:16 Finished，游戏源码843ab85。相册及共享场景前批输出独立保留。构建后使用tools/prepare-delivery.cjs和tools/serve-preview.cjs通过HTTP试玩；tools/package-review-h5.py核对游戏源、30件图、四原照片及固定声音并保留旧包。旧build/web-mobile与历史包不能当成最新包，也不能双击file://代替运行。
 
 ## 项目资料
 

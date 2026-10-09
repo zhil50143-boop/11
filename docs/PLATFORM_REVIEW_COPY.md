@@ -1,6 +1,6 @@
 # 《余生未寄》全部游戏文案审核汇总
 
-版本：1.0.0-rc.3｜整理日期：2026-10-09｜剧情与界面源码基线：0a7a2f664fd1723d500ab6c592a60284abd7589f
+版本：1.0.0-rc.3｜整理日期：2026-10-09｜剧情与界面源码基线：a331a6fb3f61bb7aecb564679a9125a563065ed0
 
 本汇总从当前实际入包清单与游戏源码生成，完整收录十章、所有条件分支、选择、旧物、短信、照片背文、信件、录音、六个结局及界面提示，包含剧透和隐藏结局。共10章、60片段、467个节点、6个结局，不是单条通关路线或剧情摘要。每处保留来源以便GPT/平台核对，原文不改写。
 
@@ -6115,35 +6115,43 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 阅读设置
 
-### assets/scripts/save/LocalSave.ts:54
+### assets/scripts/save/LocalSave.ts:14
+
+存档位置不完整，已保留原记录。请使用备份或对应版本。
+
+### assets/scripts/save/LocalSave.ts:57
 
 此浏览器暂时无法读取存档。
 
-### assets/scripts/save/LocalSave.ts:59
+### assets/scripts/save/LocalSave.ts:62
 
 存档来自较新版本，请使用对应版本继续。
 
-### assets/scripts/save/LocalSave.ts:64
+### assets/scripts/save/LocalSave.ts:67
 
 旧版本存档无法备份，已保留原记录。
 
-### assets/scripts/save/LocalSave.ts:74
+### assets/scripts/save/LocalSave.ts:77
 
 旧记录无法备份，已保留原存档。
 
-### assets/scripts/save/LocalSave.ts:81
+### assets/scripts/save/LocalSave.ts:84
 
 旧存档无法备份，已保留原记录。
 
-### assets/scripts/save/LocalSave.ts:82
+### assets/scripts/save/LocalSave.ts:85
+
+存档位置不完整，已保留原记录。请使用备份或对应版本。
+
+### assets/scripts/save/LocalSave.ts:88
 
 旧存档无法读取，已保留备份。
 
-### assets/scripts/save/LocalSave.ts:91
+### assets/scripts/save/LocalSave.ts:98
 
 未能保存。请保持页面打开，稍后重试。
 
-### assets/scripts/save/LocalSave.ts:95
+### assets/scripts/save/LocalSave.ts:102
 
 未能删除存档。
 
@@ -6171,84 +6179,108 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 余生未寄
 
-### assets/scripts/story/StoryManager.ts:34
+### assets/scripts/story/PhotoCatalog.ts:4
+
+旧毕业照
+
+### assets/scripts/story/PhotoCatalog.ts:5
+
+刚洗好的毕业照
+
+### assets/scripts/story/PhotoCatalog.ts:6
+
+旧街
+
+### assets/scripts/story/PhotoCatalog.ts:7
+
+楼下合照
+
+### assets/scripts/story/StoryManager.ts:20
+
+未能保存。请保持页面打开，稍后重试。
+
+### assets/scripts/story/StoryManager.ts:38
 
 章节未登记：
 
-### assets/scripts/story/StoryManager.ts:37
+### assets/scripts/story/StoryManager.ts:41
 
 章节配置不可用：
 
-### assets/scripts/story/StoryManager.ts:43
+### assets/scripts/story/StoryManager.ts:47
 
 存档片段不可用。请保留存档并使用对应版本。
 
-### assets/scripts/story/StoryManager.ts:60
+### assets/scripts/story/StoryManager.ts:64
 
 剧情目录不可用。
 
-### assets/scripts/story/StoryManager.ts:126
+### assets/scripts/story/StoryManager.ts:159
 
 存档来自较新版本，请使用对应版本继续。
 
-### assets/scripts/story/StoryManager.ts:126
+### assets/scripts/story/StoryManager.ts:159
 
 旧版本存档无法备份，已保留原记录。
 
-### assets/scripts/story/StoryManager.ts:127
+### assets/scripts/story/StoryManager.ts:160
 
 旧记录无法备份，已保留原存档。
 
-### assets/scripts/story/StoryManager.ts:127
+### assets/scripts/story/StoryManager.ts:160
 
 旧存档无法备份，已保留原记录。
 
-### assets/scripts/story/StoryManager.ts:128
+### assets/scripts/story/StoryManager.ts:161
 
 存档片段不可用。请保留存档并使用对应版本。
 
-### assets/scripts/story/StoryManager.ts:131
+### assets/scripts/story/StoryManager.ts:164
 
 这段内容暂时没能打开。请重试。
 
-### assets/scripts/story/StoryRuntime.ts:92
+### assets/scripts/story/StoryRuntime.ts:18
+
+未能保存。请保持页面打开，稍后重试。
+
+### assets/scripts/story/StoryRuntime.ts:145
 
 请先读到这一页的末尾。
 
-### assets/scripts/ui/AudioPlayer.ts:32
+### assets/scripts/ui/AudioPlayer.ts:34
 
 继续
 
-### assets/scripts/ui/AudioPlayer.ts:33
+### assets/scripts/ui/AudioPlayer.ts:35
 
 播放
 
-### assets/scripts/ui/AudioPlayer.ts:35
+### assets/scripts/ui/AudioPlayer.ts:37
 
 录音暂时无法播放。可以查看完整录音文字。
 
-### assets/scripts/ui/AudioPlayer.ts:35
-
-录音暂时无法播放。可以读文字继续。
-
-### assets/scripts/ui/AudioPlayer.ts:40
+### assets/scripts/ui/AudioPlayer.ts:37
 
 录音暂时无法播放。可以读文字继续。
 
 ### assets/scripts/ui/AudioPlayer.ts:42
 
+录音暂时无法播放。可以读文字继续。
+
+### assets/scripts/ui/AudioPlayer.ts:44
+
 暂停 / 继续播放
 
-### assets/scripts/ui/AudioPlayer.ts:53
+### assets/scripts/ui/AudioPlayer.ts:55
 
 查看录音文字
 
-### assets/scripts/ui/AudioPlayer.ts:57
+### assets/scripts/ui/AudioPlayer.ts:59
 
 
 正在读取录音……
 
-### assets/scripts/ui/AudioPlayer.ts:61
+### assets/scripts/ui/AudioPlayer.ts:63
 
 录音暂时无法播放。可以读文字继续。
 
@@ -6324,43 +6356,27 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 继续
 
-### assets/scripts/ui/PhotoAlbum.ts:11
-
-旧毕业照
-
-### assets/scripts/ui/PhotoAlbum.ts:12
-
-刚洗好的毕业照
-
-### assets/scripts/ui/PhotoAlbum.ts:13
-
-旧街
-
-### assets/scripts/ui/PhotoAlbum.ts:14
-
-楼下合照
-
-### assets/scripts/ui/PhotoAlbum.ts:24
+### assets/scripts/ui/PhotoAlbum.ts:18
 
 相册
 
-### assets/scripts/ui/PhotoAlbum.ts:27
+### assets/scripts/ui/PhotoAlbum.ts:21
 
 还没有放进来的照片。
 
-### assets/scripts/ui/PhotoAlbum.ts:31
+### assets/scripts/ui/PhotoAlbum.ts:25
 
 正在打开……
 
-### assets/scripts/ui/PhotoAlbum.ts:32
+### assets/scripts/ui/PhotoAlbum.ts:26
 
 返回相册
 
-### assets/scripts/ui/PhotoAlbum.ts:36
+### assets/scripts/ui/PhotoAlbum.ts:30
 
 这张照片暂时没能打开，请稍后再看。
 
-### assets/scripts/ui/PhotoAlbum.ts:42
+### assets/scripts/ui/PhotoAlbum.ts:36
 
 返回书桌
 
@@ -6564,91 +6580,91 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 南城医院
 
-### assets/scripts/ui/StoryView.ts:43
+### assets/scripts/ui/StoryView.ts:44
 
 正在打开……
 
-### assets/scripts/ui/StoryView.ts:53
+### assets/scripts/ui/StoryView.ts:55
 
 暂时无法打开。请重试。
 
-### assets/scripts/ui/StoryView.ts:69
+### assets/scripts/ui/StoryView.ts:77
 
 重试
 
-### assets/scripts/ui/StoryView.ts:85
+### assets/scripts/ui/StoryView.ts:93
 
 返回书桌
 
-### assets/scripts/ui/StoryView.ts:93
+### assets/scripts/ui/StoryView.ts:101
 
 暂时无法返回。请重试。
 
-### assets/scripts/ui/StoryView.ts:97
+### assets/scripts/ui/StoryView.ts:105
 
 阅读设置
 
-### assets/scripts/ui/StoryView.ts:112
+### assets/scripts/ui/StoryView.ts:119
 
 残缺
 
-### assets/scripts/ui/StoryView.ts:112
+### assets/scripts/ui/StoryView.ts:119
 
 出现矛盾
 
-### assets/scripts/ui/StoryView.ts:112
+### assets/scripts/ui/StoryView.ts:119
 
 重新理解
 
-### assets/scripts/ui/StoryView.ts:112
+### assets/scripts/ui/StoryView.ts:119
 
 完整
 
-### assets/scripts/ui/StoryView.ts:119
-
-重试保存
-
-### assets/scripts/ui/StoryView.ts:122
+### assets/scripts/ui/StoryView.ts:125
 
 当前内容读完了。
 
-### assets/scripts/ui/StoryView.ts:123
+### assets/scripts/ui/StoryView.ts:126
 
 可以退出，稍后从这里继续。
 
-### assets/scripts/ui/StoryView.ts:140
+### assets/scripts/ui/StoryView.ts:143
 
 这一页读完了。
 
-### assets/scripts/ui/StoryView.ts:141
+### assets/scripts/ui/StoryView.ts:144
 
 再读一遍
 
-### assets/scripts/ui/StoryView.ts:142
+### assets/scripts/ui/StoryView.ts:145
 
 回到首页
 
-### assets/scripts/ui/StoryView.ts:173
-
-继续
-
-### assets/scripts/ui/StoryView.ts:178
+### assets/scripts/ui/StoryView.ts:176
 
 继续
 
 ### assets/scripts/ui/StoryView.ts:181
 
+继续
+
+### assets/scripts/ui/StoryView.ts:184
+
 该片段暂时无法继续。
 
-### assets/scripts/ui/StoryView.ts:193
+### assets/scripts/ui/StoryView.ts:192
+
+重试保存
+
+### assets/scripts/ui/StoryView.ts:203
 
 先看看照片和信封。
 
-### assets/scripts/ui/StoryView.ts:195
+### assets/scripts/ui/StoryView.ts:205
 
 （看过）
 
-### assets/scripts/ui/StoryView.ts:198
+### assets/scripts/ui/StoryView.ts:208
 
 收好纸箱
 
