@@ -77,9 +77,10 @@ sections.push('## 原始文字覆盖附录\n\n为避免任一分支、场景标�
 for(const r of records)sections.push('来源：'+r.file+'｜'+r.path+'\n\n'+r.text+'\n');
 let sourceCommit;try{sourceCommit=require('node:child_process').execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim()}catch{sourceCommit='unknown'}
 const header='# 《余生未寄》全部游戏文案审核汇总\n\n版本：'+version+'｜整理日期：'+exportDate+'｜剧情与界面源码基线：'+sourceCommit+'\n\n本汇总从当前实际入包清单与游戏源码生成，完整收录十章、所有条件分支、选择、旧物、短信、照片背文、信件、录音、六个结局及界面提示，包含剧透和隐藏结局。共10章、60片段、467个节点、6个结局，不是单条通关路线或剧情摘要。每处保留来源以便GPT/平台核对，原文不改写。\n\n当前为视觉升级开发切片，已上传RC2及其旧文案另存不覆盖：音色已确认；真人阅读节奏、TapTap实际容器与手机尚待验收。本汇总不代表平台已审核或已发布。最终版本将按最终提交重新生成，后续任何文案修改都需重导出。照片与声音二进制另随源码/素材保留，本文不把图像鉴定或ASR当作内容批准。\n\n';
-const body=header+sections.join('\n');
+// Use LF across platform checkouts for stable export hashes.
+const body=(header+sections.join('\n')).replace(/\r\n/g,'\n');
 // The raw appendix is an exhaustive coverage witness independent of the formatted body.
-assert.ok(records.every(r=>body.includes(r.text)),'Missing JSON copy');assert.ok(uiRows.every(r=>body.includes(r.text)),'Missing source copy');
+assert.ok(records.every(r=>body.includes(r.text.replace(/\r\n/g,'\n'))),'Missing JSON copy');assert.ok(uiRows.every(r=>body.includes(r.text.replace(/\r\n/g,'\n'))),'Missing source copy');
 fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,body,'utf8');
 const index={version,exportDate,sourceCommit,chapters:chapterCount,episodes:episodeCount,nodeCount:nodes.length,endings:endingCount,jsonTextEntries:records.length,sourceTextEntries:uiRows.length,coverage:{json:'all Chinese string values, no branch filtering',source:'all Chinese TypeScript literals/templates outside vendor',voice:'all manifest events'},inputHashPolicy:'SHA256 of UTF-8 source normalized to LF; matches source archive independent of Windows checkout line endings',nodes,textRecords:records,interfaceText:uiRows,inputs,export:{bytes:Buffer.byteLength(body),sha256:crypto.createHash('sha256').update(body).digest('hex')},limitations:['Current candidate, regenerate on final commit','Images/audio require separate review','Human reading and physical TapTap device pending']};
 fs.writeFileSync(target.replace(/\.md$/i,'.index.json'),JSON.stringify(index,null,2)+'\n');
