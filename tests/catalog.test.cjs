@@ -45,10 +45,22 @@ test('every route reaches the current boundary and keeps chapter 02 to 09 decisi
   const catalog=JSON.parse(fs.readFileSync(path.join(resources,'data/story/catalog.json')));
   const chapters=new Map(catalog.chapters.map(ref=>{const m=JSON.parse(fs.readFileSync(path.join(resources,ref.resource+'.json')));return[m.chapterId,m]}));
   const episodes=new Map([...chapters.values()].flatMap(m=>m.episodes.map(ref=>[ref.id,{chapterId:m.chapterId,ep:JSON.parse(fs.readFileSync(path.join(resources,ref.resource+'.json')))}])));
-  const queue=[{state:createInitialState(),episodeId:chapters.get(catalog.startChapter).episodes[0].id,steps:0}];let endings=0;const reachedEndings=new Set();
+  const queue=[{state:createInitialState(),episodeId:chapters.get(catalog.startChapter).episodes[0].id,steps:0}];let endings=0,memoHits=0;const reachedEndings=new Set(),investigationRoutes=new Map();
+  // Story decisions read history/evidence as sets, never their insertion order.
+  // Check each equivalent investigation state once, retaining the number of
+  // distinct routes beneath it. UI order/save fidelity has separate tests.
+  const stable=v=>Array.isArray(v)?v.map(stable):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])])):v;
+  const investigationKey=state=>JSON.stringify(stable({...state,updatedAt:0,readNodeIds:state.readNodeIds.slice().sort(),life:{...state.life,memoryRecords:Object.fromEntries(Object.entries(state.life.memoryRecords).map(([id,m])=>[id,{...m,evidence:m.evidence.slice().sort()}]))}}));
   while(queue.length){
-    const item=queue.pop();assert.ok(item.steps<1000);const state=item.state,entry=episodes.get(item.episodeId);
+    const item=queue.pop();
+    if(item.memoKey){investigationRoutes.set(item.memoKey,endings-item.startedAt);continue}
+    assert.ok(item.steps<1000);const state=item.state,entry=episodes.get(item.episodeId);
     const runtime=new StoryRuntime(state,()=>true);runtime.load(entry.ep,entry.chapterId);const node=runtime.current();
+    if(node.type==='investigation'){
+      const key=investigationKey(state);
+      if(investigationRoutes.has(key)){endings+=investigationRoutes.get(key);memoHits++;continue}
+      queue.push({memoKey:key,startedAt:endings});
+    }
     // Queue states are owned by one path. Fork only when branching; linear
     // passages retain the same state so adding long chapters stays practical.
     const enqueue=(act,fork=true)=>{const copy=fork?structuredClone(state):state,r=fork?new StoryRuntime(copy,()=>true):runtime;if(fork)r.load(entry.ep,entry.chapterId);act(r);queue.push({state:copy,episodeId:item.episodeId,steps:item.steps+1})};
@@ -76,5 +88,5 @@ test('every route reaches the current boundary and keeps chapter 02 to 09 decisi
     else if(['dialogue','narration','passage','phone'].includes(node.type))enqueue(r=>r.advance(node.id),false);
     else enqueue(r=>{if(node.requireReadToEnd)r.state.progress.readingOffset=1;r.complete(node.id)},false);
   }
-  assert.equal(endings,508800);assert.deepEqual([...reachedEndings].sort(),['GOODBYE','IF_THEN','REUNION','TOGETHER','UNDERSTAND']);console.log('Full implemented game routes: '+endings);
+  assert.equal(endings,508800);assert.deepEqual([...reachedEndings].sort(),['GOODBYE','IF_THEN','REUNION','TOGETHER','UNDERSTAND']);console.log('Full implemented game logical routes: '+endings+'; equivalent investigation states: '+investigationRoutes.size+'; memo hits: '+memoHits+' (not browser click routes)');
 });
