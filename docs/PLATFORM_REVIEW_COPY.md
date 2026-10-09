@@ -1,6 +1,6 @@
 # 《余生未寄》全部游戏文案审核汇总
 
-版本：1.0.0-rc.3｜整理日期：2026-10-08｜剧情与界面源码基线：c5905eed976be054a8809d2c113e8cdc33868fd9
+版本：1.0.0-rc.3｜整理日期：2026-10-08｜剧情与界面源码基线：e0b0791ed9b5492e182d1e53b6cdb01b6946bf5b
 
 本汇总从当前实际入包清单与游戏源码生成，完整收录十章、所有条件分支、选择、旧物、短信、照片背文、信件、录音、六个结局及界面提示，包含剧透和隐藏结局。共10章、60片段、467个节点、6个结局，不是单条通关路线或剧情摘要。每处保留来源以便GPT/平台核对，原文不改写。
 
@@ -6209,44 +6209,48 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 请先读到这一页的末尾。
 
-### assets/scripts/ui/AudioPlayer.ts:24
+### assets/scripts/ui/AudioPlayer.ts:32
 
 继续
 
-### assets/scripts/ui/AudioPlayer.ts:25
+### assets/scripts/ui/AudioPlayer.ts:33
 
 播放
 
-### assets/scripts/ui/AudioPlayer.ts:27
+### assets/scripts/ui/AudioPlayer.ts:35
 
 录音暂时无法播放。可以查看完整录音文字。
 
-### assets/scripts/ui/AudioPlayer.ts:27
+### assets/scripts/ui/AudioPlayer.ts:35
 
 录音暂时无法播放。可以读文字继续。
 
-### assets/scripts/ui/AudioPlayer.ts:32
+### assets/scripts/ui/AudioPlayer.ts:40
 
 录音暂时无法播放。可以读文字继续。
 
-### assets/scripts/ui/AudioPlayer.ts:34
+### assets/scripts/ui/AudioPlayer.ts:42
 
 暂停 / 继续播放
 
-### assets/scripts/ui/AudioPlayer.ts:45
+### assets/scripts/ui/AudioPlayer.ts:53
 
 查看录音文字
 
-### assets/scripts/ui/AudioPlayer.ts:49
+### assets/scripts/ui/AudioPlayer.ts:57
 
 
 正在读取录音……
 
-### assets/scripts/ui/AudioPlayer.ts:53
+### assets/scripts/ui/AudioPlayer.ts:61
 
 录音暂时无法播放。可以读文字继续。
 
-### assets/scripts/ui/ChoicePanel.ts:7
+### assets/scripts/ui/ChoicePanel.ts:14
+
+决定
+
+### assets/scripts/ui/ChoicePanel.ts:22
 
 决定
 
@@ -6254,11 +6258,39 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 继续
 
-### assets/scripts/ui/LetterViewer.ts:8
+### assets/scripts/ui/InvestigationPanel.ts:14
+
+先看看照片和信封。
+
+### assets/scripts/ui/InvestigationPanel.ts:22
+
+（看过）
+
+### assets/scripts/ui/InvestigationPanel.ts:40
+
+17路
+
+### assets/scripts/ui/InvestigationPanel.ts:44
+
+前面几件
+
+### assets/scripts/ui/InvestigationPanel.ts:45
+
+其余旧物
+
+### assets/scripts/ui/InvestigationPanel.ts:48
+
+收好纸箱
+
+### assets/scripts/ui/LetterViewer.ts:10
+
+信
+
+### assets/scripts/ui/LetterViewer.ts:11
 
 放回去
 
-### assets/scripts/ui/LetterViewer.ts:14
+### assets/scripts/ui/LetterViewer.ts:17
 
 查看
 
@@ -6278,17 +6310,23 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 继续
 
-### assets/scripts/ui/PhotoViewer.ts:18
+### assets/scripts/ui/PhotoViewer.ts:24
 
-照片暂时没能打开。
+照片暂时没能打开。下面仍可读文字。
 
+### assets/scripts/ui/PhotoViewer.ts:24
 
+旧物图片暂时没能打开。下面仍可读文字。
 
-### assets/scripts/ui/PhotoViewer.ts:32
+### assets/scripts/ui/PhotoViewer.ts:26
+
+17路
+
+### assets/scripts/ui/PhotoViewer.ts:37
 
 放回去
 
-### assets/scripts/ui/PhotoViewer.ts:35
+### assets/scripts/ui/PhotoViewer.ts:40
 
 翻面
 
@@ -6368,91 +6406,91 @@ MP3屏幕的背光不均匀，左下角比别处暗。文件列表里只有几�
 
 返回
 
-### assets/scripts/ui/StoryView.ts:39
+### assets/scripts/ui/StoryView.ts:41
 
 正在打开……
 
-### assets/scripts/ui/StoryView.ts:49
+### assets/scripts/ui/StoryView.ts:51
 
 暂时无法打开。请重试。
 
-### assets/scripts/ui/StoryView.ts:65
+### assets/scripts/ui/StoryView.ts:67
 
 重试
 
-### assets/scripts/ui/StoryView.ts:76
+### assets/scripts/ui/StoryView.ts:81
 
 返回书桌
 
-### assets/scripts/ui/StoryView.ts:84
+### assets/scripts/ui/StoryView.ts:89
 
 暂时无法返回。请重试。
 
-### assets/scripts/ui/StoryView.ts:88
+### assets/scripts/ui/StoryView.ts:93
 
 阅读设置
 
-### assets/scripts/ui/StoryView.ts:103
+### assets/scripts/ui/StoryView.ts:108
 
 残缺
 
-### assets/scripts/ui/StoryView.ts:103
+### assets/scripts/ui/StoryView.ts:108
 
 出现矛盾
 
-### assets/scripts/ui/StoryView.ts:103
+### assets/scripts/ui/StoryView.ts:108
 
 重新理解
 
-### assets/scripts/ui/StoryView.ts:103
+### assets/scripts/ui/StoryView.ts:108
 
 完整
 
-### assets/scripts/ui/StoryView.ts:110
+### assets/scripts/ui/StoryView.ts:115
 
 重试保存
 
-### assets/scripts/ui/StoryView.ts:113
+### assets/scripts/ui/StoryView.ts:118
 
 当前内容读完了。
 
-### assets/scripts/ui/StoryView.ts:114
+### assets/scripts/ui/StoryView.ts:119
 
 可以退出，稍后从这里继续。
 
-### assets/scripts/ui/StoryView.ts:129
+### assets/scripts/ui/StoryView.ts:134
 
 这一页读完了。
 
-### assets/scripts/ui/StoryView.ts:130
+### assets/scripts/ui/StoryView.ts:135
 
 再读一遍
 
-### assets/scripts/ui/StoryView.ts:131
+### assets/scripts/ui/StoryView.ts:136
 
 回到首页
 
-### assets/scripts/ui/StoryView.ts:153
+### assets/scripts/ui/StoryView.ts:159
 
 继续
 
-### assets/scripts/ui/StoryView.ts:158
+### assets/scripts/ui/StoryView.ts:164
 
 继续
 
-### assets/scripts/ui/StoryView.ts:161
+### assets/scripts/ui/StoryView.ts:167
 
 该片段暂时无法继续。
 
-### assets/scripts/ui/StoryView.ts:166
+### assets/scripts/ui/StoryView.ts:178
 
 先看看照片和信封。
 
-### assets/scripts/ui/StoryView.ts:168
+### assets/scripts/ui/StoryView.ts:180
 
 （看过）
 
-### assets/scripts/ui/StoryView.ts:171
+### assets/scripts/ui/StoryView.ts:183
 
 收好纸箱
 

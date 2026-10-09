@@ -1,0 +1,255 @@
+{
+  "date": "2026-10-09",
+  "sourceCommit": "e0b0791ed9b5492e182d1e53b6cdb01b6946bf5b",
+  "version": "1.0.0-rc.3",
+  "build": "build/visual-v2-ch01-objects-final",
+  "finished": "2026-10-09 09:40:02",
+  "core": {
+    "chapters": 10,
+    "episodes": 60,
+    "nodes": 467,
+    "typeChecks": 2,
+    "tests": 57,
+    "initialRoutes": 508800,
+    "storyJSONAndVoiceUnchanged": true
+  },
+  "whole": {
+    "touchSteps": 290,
+    "crossChapterRetries": [
+      "CH02",
+      "CH03",
+      "CH04",
+      "CH05",
+      "CH06",
+      "CH07",
+      "CH08",
+      "CH09",
+      "CH10"
+    ],
+    "readingOffset": 0.5858551758089301,
+    "resumedTypes": [
+      "passage",
+      "investigation",
+      "photo",
+      "letter",
+      "choice",
+      "phone",
+      "audioInteraction",
+      "transition",
+      "ending"
+    ],
+    "malformedV2Backup": true,
+    "errors": [],
+    "failedRequests": []
+  },
+  "objects": {
+    "result": "PASS",
+    "method": "Reachable domain fixtures for setup, then genuine H5 touch, scroll and media natural end. No running state edits, no audio seek. Desktop Chrome touch emulation is not a physical TapTap phone.",
+    "reports": [
+      {
+        "case": "five original objects, reverse optional order, two pages and required gate",
+        "result": "PASS"
+      },
+      {
+        "case": "first decision A and late-night consequence",
+        "nodes": [
+          "CH01_EP02_A001",
+          "CH01_EP03_N001",
+          "CH01_EP03_DAUGHTER",
+          "CH01_EP03_CLEANUP",
+          "CH01_EP03_PHONE",
+          "CH01_EP03_LATE",
+          "CH01_EP03_N006B",
+          "CH01_EP03_LETTER_001",
+          "CH01_EP03_TO_MP3",
+          "CH01_EP04_N001",
+          "CH01_EP04_N002",
+          "CH01_EP04_RECORDING",
+          "CH01_EP04_N008",
+          "CH01_EP04_BUS",
+          "CH01_EP04_CLASSMATES",
+          "CH01_EP04_WINDOW"
+        ],
+        "result": "PASS"
+      },
+      {
+        "case": "first decision B and late-night consequence",
+        "nodes": [
+          "CH01_EP02_B001",
+          "CH01_EP03_N001",
+          "CH01_EP03_DAUGHTER",
+          "CH01_EP03_CLEANUP",
+          "CH01_EP03_PHONE",
+          "CH01_EP03_LATE",
+          "CH01_EP03_N006A",
+          "CH01_EP03_LETTER_001",
+          "CH01_EP03_TO_MP3",
+          "CH01_EP04_N001",
+          "CH01_EP04_N002",
+          "CH01_EP04_RECORDING",
+          "CH01_EP04_N008",
+          "CH01_EP04_BUS",
+          "CH01_EP04_CLASSMATES",
+          "CH01_EP04_WINDOW"
+        ],
+        "result": "PASS"
+      },
+      {
+        "case": "first decision C and late-night consequence",
+        "nodes": [
+          "CH01_EP02_C001A",
+          "CH01_EP03_N001",
+          "CH01_EP03_DAUGHTER",
+          "CH01_EP03_CLEANUP",
+          "CH01_EP03_PHONE",
+          "CH01_EP03_LATE",
+          "CH01_EP03_N006B",
+          "CH01_EP03_LETTER_001",
+          "CH01_EP03_TO_MP3",
+          "CH01_EP04_N001",
+          "CH01_EP04_N002",
+          "CH01_EP04_RECORDING",
+          "CH01_EP04_N008",
+          "CH01_EP04_BUS",
+          "CH01_EP04_CLASSMATES",
+          "CH01_EP04_WINDOW"
+        ],
+        "result": "PASS"
+      },
+      {
+        "case": "CH01_EP02_C001 all generated images failed",
+        "blocked": 11,
+        "result": "PASS"
+      },
+      {
+        "case": "CH01_EP02_PHOTO_001 all generated images failed",
+        "blocked": 23,
+        "result": "PASS"
+      },
+      {
+        "case": "CH01_EP02_TICKET all generated images failed",
+        "blocked": 23,
+        "result": "PASS"
+      },
+      {
+        "case": "CH01_EP02_LETTER_001 all generated images failed",
+        "blocked": 7,
+        "result": "PASS"
+      },
+      {
+        "case": "full audio failure uses exact complete transcript; no early source",
+        "blocked": 4,
+        "result": "PASS"
+      },
+      {
+        "case": "approved voice natural playback, pause/resume and completion",
+        "duration": 63.6,
+        "waitMs": 62523,
+        "result": "PASS"
+      }
+    ],
+    "pageErrors": []
+  },
+  "settings": {
+    "result": "PASS",
+    "method": "Genuine Main/first-chapter touch and scroll, independent preference failure injection; letter/audio/photo initial fixtures produced by domain actions, then real H5 touch, no running story writes or audio seeks. Five desktop touch viewports, not physical phones.",
+    "screens": 53,
+    "independent": true,
+    "reflowPreservedFactsAndOffset": true,
+    "openedViews": true,
+    "documentTextComplete": true,
+    "realVolume": true,
+    "errors": []
+  },
+  "returnHome": {
+    "result": "PASS",
+    "method": "Genuine first-chapter touch and scroll, return to Main, resume same node/offset/facts. Failed story storage keeps current page and original raw save; retry then return succeeds. No seeded facts or runtime state writes.",
+    "nodeId": "CH01_EP01_N001",
+    "readingOffset": 0.33049154893858257,
+    "factsPreserved": true,
+    "failureRetainedPageAndRaw": true,
+    "retryReturned": true,
+    "errors": []
+  },
+  "screens": {
+    "result": "PASS",
+    "method": "Initial saved-state fixtures generated by existing domain runtime actions along reachable story routes; actual H5 rendering/touch actions, no running-state writes. Five viewport ratios, not five physical phones. Screenshots require human inspection; geometry checks do not prove aesthetics or safe-area handling in TapTap.",
+    "viewports": [
+      {
+        "width": 360,
+        "height": 640
+      },
+      {
+        "width": 390,
+        "height": 780
+      },
+      {
+        "width": 375,
+        "height": 812
+      },
+      {
+        "width": 412,
+        "height": 915
+      },
+      {
+        "width": 360,
+        "height": 840
+      }
+    ],
+    "count": 60,
+    "record": "docs/shots/v2-ch01-objects-final/index.json"
+  },
+  "inAppPreview": {
+    "url": "http://127.0.0.1:57319/",
+    "method": "Cua screenshot showed 饭桌上; actual return saved first, own preview server replaced on same port after exact process verification, reload and touch Continue visibly restored 饭桌上 and same lines. No user choices changed.",
+    "screenshot": "outputs/visual-v2-ch01-objects-check/in-app-preserved-dinner.png",
+    "progressRetained": true
+  },
+  "art": {
+    "generatedVisualAssets": 10,
+    "newProps": 3,
+    "bytes": 4315138,
+    "manifest": "art/visual-v2/manifest.json",
+    "concreteModel": "Not returned by built-in service; no invented ID"
+  },
+  "delivery": {
+    "codeBaseline": "e0b0791ed9b5492e182d1e53b6cdb01b6946bf5b",
+    "build": "build/visual-v2-ch01-objects-final",
+    "finished": "2026-10-09 09:40:02",
+    "version": "1.0.0-rc.3",
+    "file": "C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\outputs\\余生未寄_V2_第一章物件_开发验证_H5.zip",
+    "bytes": 15968478,
+    "sha256": "c27f39a5a365c66314de81eec1ab29eed07cce75c28c4bdc83d5d2355b109e30",
+    "entries": 142,
+    "crc": "PASS",
+    "voiceSha256": {
+      "01-full": "3a4e650df1b990ac02e519d0f1835195a52dced5c363e05e535b11f92e2f78b1",
+      "01-opening": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c"
+    },
+    "voicePreserved": true,
+    "generatedPropPixelsVerified": 3,
+    "platform": "Not uploaded. Previously approved RC2 remains version275902/package74035."
+  },
+  "copy": {
+    "jsonEntries": 3300,
+    "sourceEntries": 128,
+    "gameSourceEntries": 109,
+    "designPreviewEntries": 19,
+    "bytes": 977667,
+    "sha256": "34390198f50d6afa0f60e16ee40fd9ace9185b69bfcb48574577792f407cc1c3"
+  },
+  "CI": {
+    "id": 37872423514,
+    "url": "https://github.com/zhil50143-boop/11/actions/runs/37872423514",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "remaining": [
+    "Phone and memory comparison templates",
+    "Other chapter scenes and acquired-object lookback",
+    "Photo description offset across reload",
+    "Human life reading and cross-age review",
+    "Physical TapTap phone and deployment/background/compression validation",
+    "Final acceptance"
+  ]
+}

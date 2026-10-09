@@ -35,6 +35,8 @@
 
 ## 可核验记录
 
+源码e0b0791ed9b5492e182d1e53b6cdb01b6946bf5b已同步main，GitHub CI37872423514完成成功（类型、剧情图、57测试）。最新全集以此源码为基线，3300条JSON与128条源码中文均导出；当前开发H5为15968478字节/142条目，CRC与原音频/三件新物件入包散列通过。文案与开发包的具体散列见validation/V2_CH01_OBJECTS.json，源档独立标记，不覆盖平台原RC2。
+
 最终构建build/visual-v2-ch01-objects-final，Cocos Creator3.8.8 Web Mobile，2026-10-09 09:40:02 Finished。正常60图见shots/v2-ch01-objects-final/index.json；汇总见validation/V2_CH01_OBJECTS.json，详细输出在outputs/visual-v2-ch01-objects-check对应complete/final目录。早期失败探针和中间构建保留，不算最终验收证据。
 
 下一批按审查顺序完成两代短信与记忆对照，再按1～3、4～7、8～10分组完成共享场景和具体生活文本审读。没有新增系统、普通回答选择或版本号；真人审读、15～30分钟阅读、TapTap手机和最终性能未改写成通过。
