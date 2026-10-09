@@ -1,5 +1,6 @@
 2026-10-9 16:29:02 - debug: =================================== build Task (visual-v2-save-safe-locked) Start ================================
-2026-10-9 16:29:02 - debug: Start build task, options:{"name":"余生未寄","platform":"web-mobile","buildPath":"project://build","outputName":"visual-v2-save-safe-locked","startScene":"6634dd05-0617-44e7-a62d-64c7d3824321","debug":false,"showFPS":false,"mainBundleCompressionType":"merge_dep","md5Cache":true,"packages":{"web-mobile":{"orientation":"portrait","useWebGPU":false,"embedWebDebugger":false},"adsense-h5g-plugin":{"enableAdsense":false,"enableTestAd":false}},"logDest":"C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\work\\yushengweiji\\work\\visual-v2-save-safe-locked.log","taskName":"visual-v2-save-safe-locked","buildMode":"normal","server":"","engineModulesConfigKey":"defaultConfig","mangleProperties":false,"skipCompressTexture":false,"sourceMaps":false,"overwriteProjectSettings":{"includeModules":{"gfx-webgl2":"on","physics":"inherit-project-setting","physics-2d":"inherit-project-setting"},"macroConfig":{"cleanupImageCache":"inherit-project-setting"}},"nativeCodeBundleMode":"both","polyfills":{"asyncFunctions":true},"experimentalEraseModules":false,"startSceneAssetBundle":false,"bundleConfigs":[],"inlineEnum":true,"useBuiltinServer":false,"md5CacheOptions":{"excludes":[],"includes":[],"replaceOnly":[],"handleTemplateMd5Link":true},"mainBundleIsRemote":false,"useSplashScreen":true,"bundleCommonChunk":false,"packAutoAtlas":true,"scenes":[{"url":"db://assets/scenes/Boot.scene","uuid":"6634dd05-0617-44e7-a62d-64c7d3824321"},{"url":"db://assets/scenes/Main.scene","uuid":"479a8652-7c93-40e3-bd45-847276c53afa"},{"url":"db://assets/scenes/Story.scene","uuid":"d56a1501-4795-4448-b0a5-8efc31c541ed"}],"wasmCompressionMode":false,"binGroupConfig":{"threshold":16,"enable":false}}
+2026-10-9 16:29:02 - debug: Start build task, options:
+{"name":"余生未寄","platform":"web-mobile","buildPath":"project://build","outputName":"visual-v2-save-safe-locked","startScene":"6634dd05-0617-44e7-a62d-64c7d3824321","debug":false,"showFPS":false,"mainBundleCompressionType":"merge_dep","md5Cache":true,"packages":{"web-mobile":{"orientation":"portrait","useWebGPU":false,"embedWebDebugger":false},"adsense-h5g-plugin":{"enableAdsense":false,"enableTestAd":false}},"logDest":"C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\work\\yushengweiji\\work\\visual-v2-save-safe-locked.log","taskName":"visual-v2-save-safe-locked","buildMode":"normal","server":"","engineModulesConfigKey":"defaultConfig","mangleProperties":false,"skipCompressTexture":false,"sourceMaps":false,"overwriteProjectSettings":{"includeModules":{"gfx-webgl2":"on","physics":"inherit-project-setting","physics-2d":"inherit-project-setting"},"macroConfig":{"cleanupImageCache":"inherit-project-setting"}},"nativeCodeBundleMode":"both","polyfills":{"asyncFunctions":true},"experimentalEraseModules":false,"startSceneAssetBundle":false,"bundleConfigs":[],"inlineEnum":true,"useBuiltinServer":false,"md5CacheOptions":{"excludes":[],"includes":[],"replaceOnly":[],"handleTemplateMd5Link":true},"mainBundleIsRemote":false,"useSplashScreen":true,"bundleCommonChunk":false,"packAutoAtlas":true,"scenes":[{"url":"db://assets/scenes/Boot.scene","uuid":"6634dd05-0617-44e7-a62d-64c7d3824321"},{"url":"db://assets/scenes/Main.scene","uuid":"479a8652-7c93-40e3-bd45-847276c53afa"},{"url":"db://assets/scenes/Story.scene","uuid":"d56a1501-4795-4448-b0a5-8efc31c541ed"}],"wasmCompressionMode":false,"binGroupConfig":{"threshold":16,"enable":false}}
 2026-10-9 16:29:02 - debug: Build with Cocos Creator 3.8.8
 2026-10-9 16:29:02 - debug: cocos-service:(onBeforeBuild) start..., progress: 0%
 2026-10-9 16:29:02 - debug: // ---- build task cocos-service：onBeforeBuild ----
@@ -279,23 +280,103 @@
 2026-10-9 16:29:03 - debug: [Build Memory track]: 查询 Asset Bundle start:227.61MB, end 227.76MB, increase: 159.13KB
 2026-10-9 16:29:03 - debug: 打包脚本 start, progress: 17%
 2026-10-9 16:29:03 - debug: // ---- build task 打包脚本 ----
-2026-10-9 16:29:04 - log: [buildPolyfillsCommand]enter sub process 58512, 9229, see: chrome://inspect/#devices
+2026-10-9 16:29:04 - log: [buildPolyfillsCommand]enter sub process 58512, 9229, see: chrome://inspect/#devices
+
+
 2026-10-9 16:29:07 - debug: execute-script-end with buildPolyfillsCommand 3428ms
 2026-10-9 16:29:07 - debug: Generate systemJs..., progress: 17%
 2026-10-9 16:29:09 - debug: execute-script-end with buildSystemJsCommand 2672ms
 2026-10-9 16:29:09 - debug: 构建项目脚本 start..., progress: 17%
 2026-10-9 16:29:09 - debug: 构建项目脚本 start..., progress: 13%
-2026-10-9 16:29:13 - log: [buildScriptCommand]Number of non-entry chunks: 3
+2026-10-9 16:29:13 - log: [buildScriptCommand]Number of non-entry chunks: 3
+
+
 2026-10-9 16:29:14 - debug: execute-script-end with buildScriptCommand 4161ms
 2026-10-9 16:29:14 - debug: Copy externalScripts success!
 2026-10-9 16:29:14 - debug: 构建项目脚本 in (4226 ms) √, progress: 17%
 2026-10-9 16:29:14 - debug: 构建项目脚本 in (4226 ms) √, progress: 13%
 2026-10-9 16:29:14 - debug: 构建引擎脚本 start..., progress: 17%
 2026-10-9 16:29:14 - debug: mangleProperties is enabled, found engine-mangle-config.json, use it
-2026-10-9 16:29:14 - debug: Error: Exit process with code:null, signal:SIGTERM in task build-script    at ChildProcess.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\builder\dist\worker\worker-pools\sub-process-manager.ccc:1:2409)    at ChildProcess.emit (node:events:519:28)    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2026-10-9 16:29:14 - debug: Error: Exit process with code:null, signal:SIGTERM in task build-script
+    at ChildProcess.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\builder\dist\worker\worker-pools\sub-process-manager.ccc:1:2409)
+    at ChildProcess.emit (node:events:519:28)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+
 2026-10-9 16:29:14 - debug: Use cache engine: {link(C:\Users\21895\AppData\Local\Temp\CocosCreator\3.8.8\builder\engine\3e34fb8a5b2d24a332d07223b0464f0a)}
-2026-10-9 16:29:14 - debug: Use cache, md5String: debug=false,sourceMaps=false,includeModules=["2d","audio","base","custom-pipeline","gfx-webgl","gfx-webgl2","graphics","mask","profiler","tween","ui","ui-skew","custom-pipeline-builtin-scripts"],engineVersion="3.8.8",platformType="HTML5",split=false,nativeCodeBundleMode="both",targets=undefined,entry="C:\\ProgramData\\cocos\\editors\\Creator\\3.8.8\\resources\\resources\\3d\\engine",noDeprecatedFeatures=undefined,loose=true,assetURLFormat="runtime-resolved",flags={"DEBUG":false,"LOAD_BULLET_MANUALLY":false,"LOAD_SPINE_MANUALLY":false,"WEBGPU":false},preserveType=undefined,wasmCompressionMode=false,enableNamedRegisterForSystemJSModuleFormat=undefined,mangleProperties=false,inlineEnum=true,
-2026-10-9 16:29:14 - debug: Use cache, options: {  "entry": "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.8\\resources\\resources\\3d\\engine",  "debug": false,  "mangleProperties": false,  "inlineEnum": true,  "sourceMaps": false,  "includeModules": [    "2d",    "audio",    "base",    "custom-pipeline",    "gfx-webgl",    "gfx-webgl2",    "graphics",    "mask",    "profiler",    "tween",    "ui",    "ui-skew",    "custom-pipeline-builtin-scripts"  ],  "engineVersion": "3.8.8",  "md5Map": [],  "engineName": "cocos-js",  "output": "C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\work\\yushengweiji\\build\\visual-v2-save-safe-locked\\cocos-js",  "platformType": "HTML5",  "useCache": true,  "nativeCodeBundleMode": "both",  "wasmCompressionMode": false,  "split": false,  "assetURLFormat": "runtime-resolved",  "flags": {    "DEBUG": false,    "LOAD_BULLET_MANUALLY": false,    "LOAD_SPINE_MANUALLY": false,    "WEBGPU": false  }}
+2026-10-9 16:29:14 - debug: Use cache, md5String: debug=false,
+sourceMaps=false,
+includeModules=["2d",
+"audio",
+"base",
+"custom-pipeline",
+"gfx-webgl",
+"gfx-webgl2",
+"graphics",
+"mask",
+"profiler",
+"tween",
+"ui",
+"ui-skew",
+"custom-pipeline-builtin-scripts"],
+engineVersion="3.8.8",
+platformType="HTML5",
+split=false,
+nativeCodeBundleMode="both",
+targets=undefined,
+entry="C:\\ProgramData\\cocos\\editors\\Creator\\3.8.8\\resources\\resources\\3d\\engine",
+noDeprecatedFeatures=undefined,
+loose=true,
+assetURLFormat="runtime-resolved",
+flags={"DEBUG":false,
+"LOAD_BULLET_MANUALLY":false,
+"LOAD_SPINE_MANUALLY":false,
+"WEBGPU":false},
+preserveType=undefined,
+wasmCompressionMode=false,
+enableNamedRegisterForSystemJSModuleFormat=undefined,
+mangleProperties=false,
+inlineEnum=true,
+
+
+2026-10-9 16:29:14 - debug: Use cache, options: {
+  "entry": "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.8\\resources\\resources\\3d\\engine",
+  "debug": false,
+  "mangleProperties": false,
+  "inlineEnum": true,
+  "sourceMaps": false,
+  "includeModules": [
+    "2d",
+    "audio",
+    "base",
+    "custom-pipeline",
+    "gfx-webgl",
+    "gfx-webgl2",
+    "graphics",
+    "mask",
+    "profiler",
+    "tween",
+    "ui",
+    "ui-skew",
+    "custom-pipeline-builtin-scripts"
+  ],
+  "engineVersion": "3.8.8",
+  "md5Map": [],
+  "engineName": "cocos-js",
+  "output": "C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\work\\yushengweiji\\build\\visual-v2-save-safe-locked\\cocos-js",
+  "platformType": "HTML5",
+  "useCache": true,
+  "nativeCodeBundleMode": "both",
+  "wasmCompressionMode": false,
+  "split": false,
+  "assetURLFormat": "runtime-resolved",
+  "flags": {
+    "DEBUG": false,
+    "LOAD_BULLET_MANUALLY": false,
+    "LOAD_SPINE_MANUALLY": false,
+    "WEBGPU": false
+  }
+}
+
 2026-10-9 16:29:14 - debug: 构建引擎脚本 in (114 ms) √, progress: 17%
 2026-10-9 16:29:14 - debug: Copy plugin script ..., progress: 17%
 2026-10-9 16:29:14 - debug: Generate import-map..., progress: 17%

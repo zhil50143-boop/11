@@ -297,5 +297,10 @@
   "physicalTapTapPhone": "pending",
   "cloudSaveClaimed": false,
   "newPlatformUpload": false,
-  "finalRelease": false
+  "finalRelease": false,
+  "evidenceLogLineEndings": {
+    "cocos": "CR and CRLF normalized to LF, content retained",
+    "rawLogSha256": "5c7b9b7c8d628e371c6be583949a6097134695877f66bd8944341d4fdf6d17df",
+    "normalizedLogSha256": "3f36b70330d90091d8633c0ca4b46a063fdd3e0857c395f1a3286da919fd8759"
+  }
 }
