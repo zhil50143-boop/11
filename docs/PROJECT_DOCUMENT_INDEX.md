@@ -7,18 +7,20 @@
 | DESIGN_DECISIONS.md | 已定、待定、材料冲突及执行顺序 | V2优化的当前决定与事实 |
 | PROPOSED_GAME_SPEC_V2.md | 用户提供的策划修订原文 | 保留来源，不自动覆盖GAME_SPEC历史 |
 | EXTERNAL_REVIEW_V2.md | 用户提供的工程对照审核 | 以f976796为旧快照，截图缺口已补基线 |
+| EXTERNAL_REVIEW_2026-10-09.md | 用户最新十章成品打磨审查与采用范围 | 明确取证限制、P0/P1与冻结结构，不沿用自动调度旧推断 |
+| CHAPTER01_VISUAL_AUDIT.md / validation/V2_CH01_OBJECTS.json | 第一章物件切片与全游戏核对 | 分页、决定承接、图片/录音失败、门槛、当前构建及后续待验 |
 | OPTIMIZATION_ROADMAP_SOURCE.md | 用户DOCX抽取的路线图原文 | Phase0/1及预算建议；平台条款须另核 |
 | VISUAL_V2_SPEC.md | 三屏、决定变体、皮肤与模板规格 | 布局已确认；首页及第一章两处正文已接入 |
 | READING_SETTINGS.md | 字号/纸面/音量/减少动态、存储边界与返回书桌 | 已接入实际Main/Story；手机安全区待验 |
 | shots/v2-reading-settings/index.json / shots/v2-reading-navigation/index.json | 设置重排53图、通用入口12状态×5比例60图 | 实际桌面触摸与截图；不代替物理手机 |
-| ART_SOURCE_POLICY.md / ../art/visual-v2/manifest.json | 用户最新Image来源要求与每件提示/散列 | 新增7件；具体模型型号工具未回传 |
-| ASSET_REGISTER.csv / baseline/SCENE_PROP_LIST.md | 真实素材和待产条目、地点与物件清单 | 13个已入库文件、53地点标签，12共享空间初分 |
+| ART_SOURCE_POLICY.md / ../art/visual-v2/manifest.json | 用户最新Image来源要求与每件提示/散列 | 新增10件；具体模型型号工具未回传 |
+| ASSET_REGISTER.csv / baseline/SCENE_PROP_LIST.md | 真实素材和待产条目、地点与物件清单 | 16个已入库文件、53地点标签，12共享空间初分 |
 | baseline/STORY_EXPERIENCE.md / PROSE_REVIEW.md | 60片段估算和文本线索 | 不代替真人时长；不自动改正文 |
 | shots/rc2-baseline/index.json | 12状态×5视口实际截图与节点/字体/热点 | 当前RC2功能视觉基线，不是手机验收 |
 | shots/v2-life-slice/index.json / shots/v2-image-candidates-fixed/index.json | 新视觉切片60状态图与20设计预览图 | 明确区分正常玩法、候选与手机待验 |
 | TAPTAP_SELF_TEST.md / PLATFORM_PHASE0.md | 实际上传、自测与官方适用性核对 | 原RC2已上传，真实手机待反馈 |
 | PLATFORM_REVIEW_COPY.md / index.json | 所有实际原文、分支和来源散列 | 随实际源版本重导出，完整材料交平台 |
 | GAME_SPEC.md / DIRECTION_SOURCE.txt / LIFE_NARRATIVE_RULES.md | 历史策划与已确认的生活叙事边界 | 时间、人物、长期事实和去AI感要求 |
-| CHAPTER01_AUDIT.md～CHAPTER10_AUDIT.md / ENDING_RULES.md | 每章全局审查与六结局真实硬条件 | 不把待完成项改写为通过 |
+| CHAPTER02_AUDIT.md～CHAPTER10_AUDIT.md / CHAPTER01_VISUAL_AUDIT.md / ENDING_RULES.md | 每章全局审查与六结局真实硬条件 | 不把待完成项改写为通过；第一章本批审查单独留档 |
 
 运行包、源码ZIP和审核材料当前RC2与后续优化构建须分开记录。给GPT审核时提供公开仓库、具体提交及这些文档；不能把多个版本的文案和包混成一个最终成果。

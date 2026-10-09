@@ -14,7 +14,7 @@ for(const file of files){const raw=fs.readFileSync(file),png=file.endsWith('.png
 const generated=fs.existsSync('art/visual-v2/manifest.json')?JSON.parse(fs.readFileSync('art/visual-v2/manifest.json')).assets:[];
 for(const a of generated){
  const raw=fs.readFileSync(a.file),hash=crypto.createHash('sha256').update(raw).digest('hex');if(hash!==a.sha256)throw Error('Generated asset changed without provenance update: '+a.file);
- if(!files.includes(a.file)&&!files.includes(a.file.replaceAll('/',path.sep)))rows.push([a.id,a.kind==='background'?'场景':a.kind==='paper'?'纸面':'旧物',a.file,raw.length,...a.size,hash,'Main/LifeReadingPanel/VisualDraft（第一章与独立候选）','art/visual-v2/manifest.json；'+a.prompt,'已核原图与透明度；全游戏与物理手机待验','第一章视觉切片/候选，非全游戏美术完成']);
+ if(!files.includes(a.file)&&!files.includes(a.file.replaceAll('/',path.sep)))rows.push([a.id,a.kind==='background'?'场景':a.kind==='paper'?'纸面':'旧物',a.file,raw.length,...a.size,hash,a.useSites?.join(';')||'Main/LifeReadingPanel/VisualDraft','art/visual-v2/manifest.json；'+a.prompt,'已核原图与透明度；全游戏与物理手机待验',a.productionStatus]);
 }
-for(const[id,kind,record]of [['UI-NIGHT','UI皮肤','夜间暗纸面与设置待实现'],['UI-DAY','UI皮肤','日纸面已有纹理；设置待实现'],['PROP-DESK-LAYERS','物件','已有信封/相册/MP3；毕业册/抽屉与真实回看待实现'],['MEMORY-ANNOTATIONS','交互模板','批注式记忆线框']])rows.push([id,kind,'',0,'','','','',record,'部分素材已生成；交互待实现','尚未完整；不计为完成']);
+for(const[id,kind,record]of [['UI-NIGHT','UI皮肤','夜间暗纸面、独立偏好及设置已实现；物理手机待验'],['UI-DAY','UI皮肤','日间纸面、三档字号及设置已实现；物理手机待验'],['PROP-DESK-LAYERS','物件','第一章档案袋/旧物、信封与MP3已实显；相册只读回看及抽屉待实现'],['MEMORY-ANNOTATIONS','交互模板','批注式记忆线框仍待实现']])rows.push([id,kind,'',0,'','','','',record,'实际状态见本行，不计新增资源文件','属于交互/皮肤状态；完整视觉验收未完成']);
 fs.writeFileSync('docs/ASSET_REGISTER.csv','\ufeff'+rows.map(row=>row.map(csv).join(',')).join('\n')+'\n');console.log(`Asset register: ${rows.length-5} actual files, ${locations.size} location labels, ${grouped.size} draft space groups`);

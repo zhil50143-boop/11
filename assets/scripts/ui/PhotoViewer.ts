@@ -1,41 +1,44 @@
-import { Node, Sprite, SpriteFrame, UITransform, resources, Color, Graphics } from 'cc';
-import { text, button, container } from './UIFactory';
+import { Node, UITransform, Graphics, isValid, Label } from 'cc';
+import { text, container } from './UIFactory';
 import type { InteractionStoryNode } from '../story/StoryNode';
 import { ReadingSettings } from './ReadingSettings';
-import { artSurface } from './ArtSurface';
+import { artSurface, paperButton, setPaperButtonEnabled } from './ArtSurface';
+import { objectPaper, objectImage, firstChapterProps } from './ObjectSurface';
+import { DocumentPanel } from './DocumentPanel';
+
 export class PhotoViewer {
   show(root: Node, node: InteractionStoryNode, done: () => void, initiallyBack = false, flipped: (back: boolean) => void = () => {}): void {
-    const caption = text(root, node.text, 150, 750);
+    objectPaper(root);
     let back = initiallyBack;
-    caption.node.active = !back;
-    let loaded = false;
-    const image = node.resource ? container(root, 'Photograph', 180) : undefined;
-    if (image) {
-      image.getComponent(UITransform)!.setContentSize(900, 600);
-      const sprite = image.addComponent(Sprite); sprite.sizeMode = Sprite.SizeMode.CUSTOM;
-      resources.load(node.resource!, SpriteFrame, (error, frame) => {
-        if (!root.isValid || !image.isValid) return;
-        if (error || !frame) { if (!back) caption.string = '照片暂时没能打开。\n\n' + node.text; return }
-        sprite.spriteFrame = frame; loaded = true;
-        const ratio = frame.originalSize.width / frame.originalSize.height;
-        image.getComponent(UITransform)!.setContentSize(Math.min(900, 600 * ratio), Math.min(600, 900 / ratio));
-        if (!back) { caption.node.setPosition(0, -240); caption.node.getComponent(UITransform)!.setContentSize(900, 220); caption.fontSize = 30; caption.lineHeight = 48 }
-        image.active = !back;
-      });
+    const front = container(root, 'PhotoFront'); front.active = !back;
+    const prop = firstChapterProps[node.id];
+    if (node.resource || prop) {
+      if (node.resource) {
+        const matte = container(front, 'PhotoMatte', 290); matte.getComponent(UITransform)!.setContentSize(920, 640);
+        const g = matte.addComponent(Graphics); g.fillColor = ReadingSettings.paper; g.rect(-460, -320, 920, 640); g.fill();
+        artSurface(matte, 'paper_v1', 0, 0, 920, 640, false, ReadingSettings.current.theme === 'night' ? '#465047' : '#e5decb');
+      }
+      const failure = text(front, '', 290, 420, ReadingSettings.bodySize(46)); failure.color = ReadingSettings.ink;
+      objectImage(front, node.resource ?? 'images/visual-v2/' + prop + '/spriteFrame', 0, 290,
+        prop === 'mp3_v1' ? 440 : 870, 580, node.resource ? 'Photograph' : 'OldObject', success => {
+          if (!success && isValid(failure, true)) failure.string = node.resource ? '照片暂时没能打开。下面仍可读文字。' : '旧物图片暂时没能打开。下面仍可读文字。';
+        });
+      if (prop === 'bus_ticket_v1') { const route = text(front, '17路', 290, 90, 38); route.color = ReadingSettings.mutedInk; route.horizontalAlign = Label.HorizontalAlign.CENTER; }
+      new DocumentPanel().show(front, node.text, 0, () => {}, () => {}, { height: 360, y: -230 });
+    } else {
+      // Do not fabricate an image for a source that only has text.
+      new DocumentPanel().show(front, node.text, 0, () => {}, () => {});
     }
-    const paper = container(root, 'PhotoBack', 180); paper.active = back;
-    paper.getComponent(UITransform)!.setContentSize(900, 600);
-    const surface = paper.addComponent(Graphics); surface.fillColor = ReadingSettings.paper; surface.rect(-450,-300,900,600); surface.fill();
-    artSurface(paper, 'paper_v1', 0, 0, 900, 600, false, ReadingSettings.paperTint);
-    // Keep the ink separate from the generated image, preserving exact story text.
-    const backCaption = text(paper, node.backText ?? '', 0, 500, ReadingSettings.bodySize(46)); backCaption.color = ReadingSettings.ink;
-    const finish = button(root, '放回去', -650, done);
+    const paper = container(root, 'PhotoBack', 290); paper.active = back;
+    paper.getComponent(UITransform)!.setContentSize(920, 640);
+    const surface = paper.addComponent(Graphics); surface.fillColor = ReadingSettings.paper; surface.rect(-460, -320, 920, 640); surface.fill();
+    artSurface(paper, 'paper_v1', 0, 0, 920, 640, false, ReadingSettings.current.theme === 'night' ? '#465047' : '#e5decb');
+    const backCaption = text(paper, node.backText ?? '', 0, 530, ReadingSettings.bodySize(46)); backCaption.color = ReadingSettings.ink;
+    const finish = paperButton(root, '放回去', -650, done);
     if (node.backText) {
-      finish.interactable = back;
-      button(root, '翻面', -460, () => {
-        back = !back; flipped(back); paper.active = back; caption.node.active = !back;
-        if (image) image.active = !back && loaded;
-        finish.interactable = true;
+      setPaperButtonEnabled(finish, back);
+      paperButton(root, '翻面', -490, () => {
+        back = !back; flipped(back); paper.active = back; front.active = !back; setPaperButtonEnabled(finish, true);
       });
     }
   }

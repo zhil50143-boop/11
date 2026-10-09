@@ -13,6 +13,7 @@ import type { InteractionStoryNode } from '../story/StoryNode';
 import { paperButton } from './ArtSurface';
 import { ReadingSettings } from './ReadingSettings';
 import { SettingsPanel } from './SettingsPanel';
+import { InvestigationPanel } from './InvestigationPanel';
 const { ccclass } = _decorator;
 @ccclass('StoryView')
 export class StoryView extends Component {
@@ -23,6 +24,7 @@ export class StoryView extends Component {
   private settings?: SettingsPanel;
   private lastEvent?: StoryEvent;
   private viewNode = '';
+  private investigationPages: Record<string, number> = {};
   private interactionView = { letterOpen: false, photoBack: false, transcriptOpen: false };
   private audio = new AudioPlayer();
   private speakers: Record<string, string> = {};
@@ -67,11 +69,14 @@ export class StoryView extends Component {
       }); return;
     }
     const life = this.manager.state.life;
+    const paperInteraction = event.type === 'node' && (['photo', 'letter', 'audioInteraction'].includes(event.node.type)
+      || (event.node.type === 'choice' && this.manager.state.progress.chapterId === 'CH01'));
     const paperReading = event.type === 'node' && event.node.type === 'passage'
       && this.manager.state.progress.chapterId === 'CH01' && !!LifeReadingPanel.background(life.time);
     if (!paperReading) {
       const time = text(this.status, life.time.label + ' · ' + life.time.location, 785, 100, 30);
       time.node.setPosition(-100, 785); time.node.getComponent(UITransform)!.setContentSize(680, 100);
+      if (paperInteraction && event.type === 'node' && event.node.type !== 'choice') time.color = ReadingSettings.mutedInk;
     }
     const back = paperButton(this.status, '返回书桌', 884, () => {
       for (const scroll of this.root.getComponentsInChildren(ScrollView)) scroll.stopAutoScroll();
@@ -102,11 +107,11 @@ export class StoryView extends Component {
     if (memory) {
       const names = {fragmentary:'残缺',contradictory:'出现矛盾',reinterpreted:'重新理解',complete:'完整'};
       memoryCaption = memory.title + ' · ' + names[memory.status];
-      if (!paperReading) text(this.status, memoryCaption, 735, 70, 26);
+      if (!paperReading) { const caption = text(this.status, memoryCaption, 735, 70, 26); if (paperInteraction) caption.color = ReadingSettings.mutedInk; }
     }
     if (SaveManager.warning) {
       const warning = text(this.status, SaveManager.warning, -800, 70, 26);
-      if (paperReading) warning.color = ReadingSettings.ink;
+      if (paperReading || paperInteraction) warning.color = ReadingSettings.ink;
       button(this.status, '重试保存', -890, () => { this.manager.retrySave(); void this.manager.refresh() });
     }
     if (event.type === 'end') {
@@ -137,7 +142,8 @@ export class StoryView extends Component {
       case 'dialogue': case 'narration':
         new DialoguePanel().show(this.root, node, node.speaker ? this.speakers[node.speaker] ?? node.speaker : '', () => void this.manager.advance(node.id)); break;
       case 'choice':
-        new ChoicePanel().show(this.root, node, id => void this.manager.choose(id, node.id)); break;
+        new ChoicePanel().show(this.root, node, id => void this.manager.choose(id, node.id),
+          this.manager.state.progress.chapterId === 'CH01' ? life.time : undefined); break;
       case 'photo': new PhotoViewer().show(this.root, node, () => void this.manager.complete(node.id), this.interactionView.photoBack,
         back => { this.interactionView.photoBack = back; }); break;
       case 'letter': new LetterViewer().show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset,
@@ -162,6 +168,12 @@ export class StoryView extends Component {
     }
   }
   private investigation(node: InteractionStoryNode): void {
+    if (node.id === 'CH01_EP02_C001') {
+      new InvestigationPanel().show(this.root, node, this.manager.state.flags,
+        id => void this.manager.inspect(id, node.id), () => void this.manager.complete(node.id),
+        this.investigationPages[node.id] ?? 0, page => { this.investigationPages[node.id] = page; });
+      return;
+    }
     text(this.root, node.text, 500, 160);
     if (!node.requiredFlags?.every(f => this.manager.state.flags[f])) text(this.root, node.requiredHint ?? '先看看照片和信封。', 365, 70, 30);
     node.items?.forEach((item, i) => {

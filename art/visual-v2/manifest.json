@@ -26,8 +26,13 @@
       ],
       "sha256": "2c2c16bb410bc4dfb9eac9ee60cf9b15cae66dbb45e0d6325c7d175dcc520f0e",
       "alpha": null,
-      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
-      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "useSites": [
+        "Main/VisualDraft",
+        "CH01 home passages",
+        "CH01_EP02_C002 ChoicePanel"
+      ]
     },
     {
       "id": "bus_2007_v1",
@@ -53,9 +58,13 @@
       ],
       "sha256": "979f6d4440581b36a577f9a822b491a1efbc03bd42e9ffc2de2f4824e3406691",
       "alpha": null,
-      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
       "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
-      "referenceSha256": "e3aa0646a2ce3360e55577b9ff07ef274fe7eb5b33da0192302e2517642dc9de"
+      "referenceSha256": "e3aa0646a2ce3360e55577b9ff07ef274fe7eb5b33da0192302e2517642dc9de",
+      "useSites": [
+        "VisualDraft",
+        "CH01 2007 bus passages"
+      ]
     },
     {
       "id": "desk_2037_v1",
@@ -81,8 +90,13 @@
       ],
       "sha256": "2d39ee066d7cb3f0e8f415e6e40d3aa5e4eb02732b3657d57c5a5495a16f8d83",
       "alpha": null,
-      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
-      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "useSites": [
+        "Main",
+        "VisualDraft",
+        "CH01_EP02_C001 InvestigationPanel"
+      ]
     },
     {
       "id": "paper_v1",
@@ -108,8 +122,18 @@
       ],
       "sha256": "43550e61f7ac89be9fdc2fb876fdaed467b81ea1ccfa0e7848ce2bddff663a7b",
       "alpha": null,
-      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
-      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "useSites": [
+        "Main/VisualDraft",
+        "LifeReadingPanel",
+        "ReadingSettings/SettingsPanel",
+        "ChoicePanel CH01",
+        "PhotoViewer",
+        "LetterViewer/DocumentPanel",
+        "AudioPlayer",
+        "paperButton"
+      ]
     },
     {
       "id": "envelope_v1",
@@ -139,8 +163,13 @@
         "opaquePixels": 1311,
         "totalPixels": 259200
       },
-      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
-      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "useSites": [
+        "Main/VisualDraft",
+        "CH01_EP02_C001",
+        "LetterViewer for actionText containing 信"
+      ]
     },
     {
       "id": "album_v1",
@@ -170,8 +199,11 @@
         "opaquePixels": 1180,
         "totalPixels": 518400
       },
-      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
-      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+      "productionStatus": "Design preview only; no real lookback implemented",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "useSites": [
+        "VisualDraft only; no acquired-object lookback"
+      ]
     },
     {
       "id": "mp3_v1",
@@ -201,8 +233,120 @@
         "opaquePixels": 967,
         "totalPixels": 691200
       },
-      "productionStatus": "In-engine visual candidate; not final all-game visual acceptance",
-      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool"
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "useSites": [
+        "VisualDraft",
+        "CH01_EP02_C001 page2",
+        "CH01_EP02_MP3_001",
+        "AudioPlayer CH01/CH08"
+      ]
+    },
+    {
+      "id": "archive_folder_v1",
+      "kind": "prop",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/archive_folder_v1.png",
+      "sourceBytes": 2892788,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "ef92d49f663c112f15595b73c04de2efa0b1f6d9dececcd35ca09787fab372c6",
+      "prompt": "art/visual-v2/archive_folder_v1.prompt.txt",
+      "editedFrom": null,
+      "lightingReference": "art/visual-v2/desk_2037_v1.png",
+      "referenceSha256": "4919afe847d38091291b91f1dbde17c11608e8a36987152e95e962909807ecce",
+      "file": "assets/resources/images/visual-v2/archive_folder_v1.png",
+      "resource": "images/visual-v2/archive_folder_v1/spriteFrame",
+      "bytes": 1079879,
+      "size": [
+        960,
+        640
+      ],
+      "sha256": "ed282423fd9f2423abc9f7c136c0f2c186806dc0f1fce9d8120a408ba99c900e",
+      "alpha": {
+        "transparentPixels": 141514,
+        "opaquePixels": 1040,
+        "totalPixels": 614400
+      },
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "processing": "Only resize and lossless encode; source alpha retained, no semantic editing outside Image tool",
+      "useSites": [
+        "CH01_EP02_C001 InvestigationPanel"
+      ]
+    },
+    {
+      "id": "bus_ticket_v1",
+      "kind": "prop",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/bus_ticket_v1.png",
+      "sourceBytes": 2635158,
+      "sourceSize": [
+        1860,
+        845
+      ],
+      "sourceSha256": "12fbf1b71004880d535bf3bdf6356876776710f23eae1775f4f2b6b07ea67d7b",
+      "prompt": "art/visual-v2/bus_ticket_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/bus_ticket_v1.png",
+      "resource": "images/visual-v2/bus_ticket_v1/spriteFrame",
+      "bytes": 338068,
+      "size": [
+        720,
+        327
+      ],
+      "sha256": "c5757c9ded8a80a6af85c33cfc343e295d63399433c5a2fed26465b388925a1e",
+      "alpha": {
+        "transparentPixels": 58564,
+        "opaquePixels": 1321,
+        "totalPixels": 235440
+      },
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "processing": "Only resize and lossless encode; source alpha retained, no semantic editing outside Image tool",
+      "useSites": [
+        "CH01_EP02_C001",
+        "CH01_EP02_TICKET"
+      ]
+    },
+    {
+      "id": "wrist_cord_v1",
+      "kind": "prop",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/wrist_cord_v1.png",
+      "sourceBytes": 1686278,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "4ff8f0561ac96e22f083cdf60142b0e20ceed1015f109043a22a503bc5bd15e2",
+      "prompt": "art/visual-v2/wrist_cord_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/wrist_cord_v1.png",
+      "resource": "images/visual-v2/wrist_cord_v1/spriteFrame",
+      "bytes": 193400,
+      "size": [
+        720,
+        480
+      ],
+      "sha256": "6fcb165c95926940a03e8398495892549bb263614ec99a95c2ba0aa8c9b301f9",
+      "alpha": {
+        "transparentPixels": 288151,
+        "opaquePixels": 1343,
+        "totalPixels": 345600
+      },
+      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "processing": "Only resize and lossless encode; source alpha retained, no semantic editing outside Image tool",
+      "useSites": [
+        "CH01_EP02_C001",
+        "CH01_EP02_ROPE"
+      ]
     }
   ]
 }

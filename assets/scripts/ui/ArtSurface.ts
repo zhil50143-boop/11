@@ -1,4 +1,4 @@
-import { Node, Sprite, SpriteFrame, UITransform, Mask, Color, resources, isValid, Button, Graphics, Label } from 'cc';
+import { Node, Sprite, SpriteFrame, UITransform, Mask, Color, resources, isValid, Button, Graphics, Label, UIOpacity } from 'cc';
 import { container, button } from './UIFactory';
 import { ReadingSettings } from './ReadingSettings';
 
@@ -36,4 +36,10 @@ export function paperButton(parent: Node, title: string, y: number, action: () =
   const label = control.node.children.find(n => n.getComponent(Label))!.getComponent(Label)!;
   label.node.getComponent(UITransform)!.setContentSize(width - 20, 116); label.color = ReadingSettings.ink;
   return control;
+}
+
+export function setPaperButtonEnabled(control: Button, enabled: boolean): void {
+  control.interactable = enabled;
+  const opacity = control.node.getComponent(UIOpacity) ?? control.node.addComponent(UIOpacity);
+  opacity.opacity = enabled ? 255 : 140;
 }

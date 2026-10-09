@@ -6,14 +6,15 @@ import { ReadingSettings } from './ReadingSettings';
 // A readable physical document; the same text remains available if audio fails.
 export class DocumentPanel {
   show(root: Node, value: string, offset: number, changed: (offset: number) => void,
-    reachedEnd: () => void): ScrollView {
-    const area = container(root, 'Document');
-    area.getComponent(UITransform)!.setContentSize(900, 1110);
+    reachedEnd: () => void, layout = { height: 1110, y: 0 }): ScrollView {
+    const height = layout.height;
+    const area = container(root, 'Document', layout.y);
+    area.getComponent(UITransform)!.setContentSize(900, height);
     const paper = area.addComponent(Graphics);
-    paper.fillColor = ReadingSettings.paper; paper.rect(-450, -555, 900, 1110); paper.fill();
-    artSurface(area, 'paper_v1', 0, 0, 900, 1110, false, ReadingSettings.paperTint);
+    paper.fillColor = ReadingSettings.paper; paper.rect(-450, -height / 2, 900, height); paper.fill();
+    artSurface(area, 'paper_v1', 0, 0, 900, height, false, ReadingSettings.paperTint);
     const viewport = container(area, 'Viewport');
-    viewport.getComponent(UITransform)!.setContentSize(900, 1110);
+    viewport.getComponent(UITransform)!.setContentSize(900, height);
     viewport.addComponent(Mask).type = Mask.Type.GRAPHICS_RECT;
     const content = container(viewport, 'Content');
     const transform = content.getComponent(UITransform)!; transform.setAnchorPoint(0.5, 1);
@@ -31,7 +32,7 @@ export class DocumentPanel {
       label.color = ReadingSettings.ink; label.updateRenderData(true);
       top += box.height;
     }
-    transform.setContentSize(900, Math.max(1110, top + 44)); content.setPosition(0, 555);
+    transform.setContentSize(900, Math.max(height, top + 44)); content.setPosition(0, height / 2);
     const scroll = area.addComponent(ScrollView); scroll.content = content;
     scroll.horizontal = false; scroll.vertical = true; scroll.inertia = !ReadingSettings.current.reducedMotion;
     const update = () => {

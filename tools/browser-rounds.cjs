@@ -10,6 +10,7 @@ const tap=async title=>{for(let i=0;i<150;i++){const s=await snap(),b=s.buttons.
 const cdp=await context.newCDPSession(page);
 const swipe=async()=>{await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:260,y:700}]});for(let y=650;y>=280;y-=45){await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:260,y}]});await page.waitForTimeout(35)}await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(200)};
 const finishDocument=async title=>{for(let i=0;i<35;i++){const s=await snap();if(s.buttons.find(b=>b.title===title&&b.enabled))return;await swipe()}throw Error('Document did not reach final line')};
+const tapInvestigationItem=async title=>{for(let i=0;i<3;i++){const s=await snap();if(s.buttons.some(b=>b.title===title&&b.enabled)){await tap(title);return}const pageControl=s.buttons.find(b=>b.enabled&&(b.title==='其余旧物'||b.title==='前面几件'));assert.ok(pageControl,'Investigation item is reachable '+title);await tap(pageControl.title);}throw Error('Unreachable investigation item '+title)};
 await page.goto(url);await tap('继续');let oldEndings={};
 for(let round=0;round<routes.length;round++){
  const[expected,options,evidence]=routes[round],visited=[],inspected=new Set();let last;
@@ -18,7 +19,7 @@ for(let round=0;round<routes.length;round++){
   if(n.type==='ending'){assert.equal(n.endingId,expected);assert.ok(!s.state.flags.ROUND_COMPLETED);await swipe();await page.screenshot({path:path.join(outDir,`${round+1}-${expected}.png`)});await tap('继续');last=await snap();assert.ok(last.state.flags.ROUND_COMPLETED);assert.ok(last.state.endings[expected]);break;}
   if(['passage','phone','narration','dialogue'].includes(n.type))await tap('继续');
   else if(n.type==='choice')await tap(n.options.find(o=>o.id===options[n.id]).text);
-  else if(n.type==='investigation'){const item=n.items.find(i=>!inspected.has(n.id+':'+i.id)&&(!n.optional||evidence==='FULL'));if(item){inspected.add(n.id+':'+item.id);await tap(item.text+(s.state.flags[item.viewedFlag]?'（看过）':''))}else await tap(n.doneText||'收好纸箱');}
+  else if(n.type==='investigation'){const item=n.items.find(i=>!inspected.has(n.id+':'+i.id)&&(!n.optional||evidence==='FULL'));if(item){inspected.add(n.id+':'+item.id);await tapInvestigationItem(item.text+(s.state.flags[item.viewedFlag]?'（看过）':''))}else await tap(n.doneText||'收好纸箱');}
   else if(n.type==='photo'){if(n.backText)await tap('翻面');await tap('放回去');}
   else if(n.type==='letter'){await tap(n.actionText||'查看');if(n.requireReadToEnd)await finishDocument('放回去');await tap('放回去');}
   else if(n.type==='audioInteraction'){await tap('查看录音文字');if(n.requireReadToEnd)await finishDocument('继续');await tap('继续');}
