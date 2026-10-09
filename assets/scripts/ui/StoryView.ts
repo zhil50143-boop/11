@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game, director, UITransform, ScrollView } from 'cc';
+import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game, director, UITransform, ScrollView, Button } from 'cc';
 import { StoryManager, type StoryEvent } from '../story/StoryManager';
 import { makeCanvas, container, text, button, clear } from './UIFactory';
 import { DialoguePanel } from './DialoguePanel';
@@ -31,8 +31,9 @@ export class StoryView extends Component {
   private audio = new AudioPlayer();
   private speakers: Record<string, string> = {};
   private presentLabel = ''; private memoryLabel = '';
+  private leaving = false;
   private onChange = (event: StoryEvent) => this.render(event);
-  private onShow = () => { if (this.manager?.hasState()) void this.manager.refresh() };
+  private onShow = () => { if (!this.leaving && this.manager?.hasState()) void this.manager.refresh() };
   private onHide = () => {
     for (const scroll of this.root?.getComponentsInChildren(ScrollView) ?? []) scroll.stopAutoScroll();
     this.audio.dispose();
@@ -91,14 +92,19 @@ export class StoryView extends Component {
       if (paperInteraction && !sceneCaption) time.color = ReadingSettings.mutedInk;
     }
     const back = paperButton(this.status, '返回书桌', 884, () => {
+      if (this.leaving) return;
       for (const scroll of this.root.getComponentsInChildren(ScrollView)) scroll.stopAutoScroll();
       this.audio.pause();
-      if (!this.manager.retrySave()) {
-        if (this.lastEvent) this.render(this.lastEvent);
-        return;
-      }
+      if (!this.manager.retrySave()) return;
+      this.leaving = true;
+      // Keep the current paper visible while the scene loads; accept no second
+      // exit or story input during this single transition.
+      for (const control of this.canvas.getComponentsInChildren(Button)) control.interactable = false;
       director.loadScene('Main', error => {
-        if (error && this.isValid) this.render({ type: 'error', message: '暂时无法返回。请重试。' });
+        if (error && this.isValid) {
+          this.leaving = false;
+          this.render({ type: 'error', message: '暂时无法返回。请重试。' });
+        }
       });
     }, 264);
     back.node.setPosition(-350, 884);

@@ -93,8 +93,14 @@ export class StoryManager extends Component {
     });
   }
   async refresh(): Promise<void> {
-    if (!this.ready) { if (!this.failedSaveAction) await this.initialize(); return; }
-    await this.perform(() => this.present(), true);
+    // A background repaint must not replace or silently run an unsaved action.
+    // Only the explicit retry owns that transaction, including automatic routes.
+    if (this.failedSaveAction) {
+      if (this.alive) this.events.emit('change', { type: 'saveStatus', message: this.saveWarning });
+      return;
+    }
+    if (!this.ready) { await this.initialize(); return; }
+    await this.perform(() => this.present());
   }
   async retry(): Promise<void> {
     if (this.busy || !this.alive) return;
@@ -135,9 +141,9 @@ export class StoryManager extends Component {
     if (node.type === 'episodeEnd') throw new Error('Episode end loop');
     this.events.emit('change', { type: 'node', node });
   }
-  private async perform(action: () => Promise<void>, allowPending = false): Promise<void> {
+  private async perform(action: () => Promise<void>): Promise<void> {
     if (this.busy || !this.alive) return;
-    if (this.failedSaveAction && !allowPending) {
+    if (this.failedSaveAction) {
       this.events.emit('change', { type: 'saveStatus', message: this.saveWarning }); return;
     }
     this.busy = true;

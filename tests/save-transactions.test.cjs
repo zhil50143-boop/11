@@ -69,6 +69,22 @@ test('a persistence exception leaves caller-held references and state unchanged'
   let blocked=false;const runtime=new StoryRuntime(state,()=>{if(blocked)throw Error('storage unavailable');return true});runtime.load(episode(record));const before=structuredClone(state),flags=state.flags;blocked=true;
   assert.throws(()=>runtime.choose('B',record.node.id),/storage unavailable/);assert.deepEqual(state,before);assert.strictEqual(state.flags,flags);
 });
+test('current on a saved automatic condition survives repeated write failures and process restarts without replaying effects',()=>{
+  const record=byId('CH01_EP03_COND001');
+  for(const known of [true,false]){
+    const state=createInitialState();state.progress={chapterId:record.chapter,episodeId:record.episode,nodeId:record.node.id,readingOffset:0};
+    state.flags.TOLD_PARTNER_XIA=known;state.stats.honesty=17;state.readNodeIds=['CH01_EP02_C002'];
+    const values=new Map(),fault={blocked:false},local=new LocalSave({getItem:k=>values.get(k)??null,setItem:(k,v)=>{if(fault.blocked)throw Error('quota');values.set(k,v)},removeItem:k=>values.delete(k)},'test');
+    let runtime=new StoryRuntime(state,s=>local.save(s));runtime.load(episode(record),record.chapter);
+    const before=structuredClone(state),raw=values.get('test');fault.blocked=true;
+    for(let i=0;i<3;i++){assert.throws(()=>runtime.current(),SaveWriteError);assert.deepEqual(state,before);assert.equal(values.get('test'),raw)}
+    const restored=local.load();fault.blocked=false;runtime=new StoryRuntime(restored,s=>local.save(s));runtime.load(episode(record),record.chapter);fault.blocked=true;
+    assert.throws(()=>runtime.current(),SaveWriteError);assert.equal(restored.progress.nodeId,record.node.id);
+    fault.blocked=false;assert.equal(runtime.current().id,known?'CH01_EP03_N006A':'CH01_EP03_N006B');
+    assert.equal(restored.stats.honesty,17);assert.deepEqual(restored.flags,before.flags);assert.deepEqual(restored.readNodeIds,before.readNodeIds);
+    assert.deepEqual(local.load(),restored);const committed=values.get('test');runtime.current();assert.equal(values.get('test'),committed);
+  }
+});
 test('failed direct writes do not update timestamps; read-denied storage cannot be overwritten',()=>{
   const s=createInitialState();s.updatedAt=123;const save=new LocalSave({getItem:()=>{throw Error('read denied')},setItem:()=>{throw Error('should not write')},removeItem:()=>{}},'test');
   const loaded=save.load();assert.equal(save.save(loaded),false);assert.match(save.warning,/无法读取/);
