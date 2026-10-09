@@ -4,6 +4,16 @@ import { applyLifeContext } from '../core/LifeState';
 import { resolveEnding, recordEnding } from './EndingResolver';
 import type { EpisodeData, StoryNode, InteractionStoryNode } from './StoryNode';
 
+const copyLife = (life: GameStateData['life']): GameStateData['life'] => ({
+  ...life, time: { ...life.time }, relationships: { ...life.relationships },
+  memoryRecords: Object.fromEntries(Object.entries(life.memoryRecords).map(([id, memory]) => [id, { ...memory, evidence: memory.evidence.slice() }])),
+});
+const copyState = (state: GameStateData): GameStateData => ({
+  ...state, progress: { ...state.progress }, life: copyLife(state.life), stats: { ...state.stats },
+  flags: { ...state.flags }, metaFlags: { ...state.metaFlags }, memories: { ...state.memories },
+  cg: { ...state.cg }, endings: { ...state.endings }, readNodeIds: state.readNodeIds.slice(),
+});
+
 export class SaveWriteError extends Error {
   constructor() { super('未能保存。请保持页面打开，稍后重试。'); this.name = 'SaveWriteError'; }
 }
@@ -27,7 +37,7 @@ export class StoryRuntime {
     if (['endingRoute', 'condition', 'save'].includes(node.type)) return this.transact(() => this.resolve());
     // Repainting an unchanged passage does not clone or write the whole save.
     if (node.lifeContext) {
-      const life = JSON.parse(JSON.stringify(this.state.life)) as GameStateData['life'];
+      const life = copyLife(this.state.life);
       if (applyLifeContext(life, node.lifeContext)) return this.transact(() => {
         this.state.life = life; this.changed = true; return node;
       });
@@ -37,7 +47,7 @@ export class StoryRuntime {
   private transact<T>(action: () => T): T {
     if (this.working) return action();
     const previousNodes = this.nodes;
-    this.working = JSON.parse(JSON.stringify(this.committedState)) as GameStateData;
+    this.working = copyState(this.committedState);
     this.changed = false;
     try {
       const result = action();

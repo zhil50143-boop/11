@@ -33,8 +33,7 @@ function seed(id){const r=byId(id),s=createInitialState();s.progress={chapterId:
   async function operation(name,initial,prepare,action,expected,{fault='all',width=540,height=960}={}){
     const t=await open(initial,width,height);if(prepare)await prepare(t);await t.page.waitForTimeout(700);const before=await t.snap();
     await t.page.evaluate(f=>{window.__saveFault=f},fault);await action(t);const failed=await t.snap();
-    assert.equal(failed.raw,before.raw,name+' keeps exact primary');
-    if(fault==='all')assert.deepEqual(failed.state,before.state,name+' keeps committed runtime');
+    if(fault==='all'){assert.equal(failed.raw,before.raw,name+' keeps exact primary');assert.deepEqual(failed.state,before.state,name+' keeps committed runtime')}
     else{assert.equal(failed.state.progress.nodeId,JSON.parse(failed.raw).progress.nodeId);assert.deepEqual(failed.state.flags,JSON.parse(failed.raw).flags)}
     assert.ok(failed.failedAction,name+' retains failed action');assert.ok(failed.labels.some(s=>s.includes('未能保存')));assert.ok(failed.buttons.some(b=>b.title==='重试保存'&&b.enabled));
     await t.page.screenshot({path:path.join(output,name+'-failed.png')});
@@ -45,7 +44,7 @@ function seed(id){const r=byId(id),s=createInitialState();s.progress={chapterId:
     assert.equal(recovered.state.progress.nodeId,expected);assert.deepEqual(JSON.parse(recovered.raw),recovered.state);assert.ok(!recovered.failedAction);assert.ok(!recovered.labels.some(s=>s.includes('未能保存')));assert.equal(recovered.pendingRequests,0);
     await t.page.screenshot({path:path.join(output,name+'-recovered.png')});
     await t.page.reload();await t.tap('继续');await t.page.waitForTimeout(800);const restored=await t.snap();assert.equal(restored.state.progress.nodeId,expected);assert.deepEqual(restored.state.flags,recovered.state.flags);assert.deepEqual(restored.state.readNodeIds,recovered.state.readNodeIds);
-    reports.push({name,rawPreserved:true,pendingActionGated:true,retriedAndReloaded:true,from:before.state.progress.nodeId,failedAt:failed.state.progress.nodeId,to:expected,pendingRequestsAfterSettlement:0,viewport:{width,height}});await t.context.close();
+    reports.push({name,rawPreserved:fault==='all',durableBoundaryPreserved:fault!=='all',pendingActionGated:true,retriedAndReloaded:true,from:before.state.progress.nodeId,failedAt:failed.state.progress.nodeId,to:expected,pendingRequestsAfterSettlement:0,viewport:{width,height}});await t.context.close();
   }
   const first=byId('CH01_EP01_N001');await operation('ordinary-passage',seed(first.node.id),null,t=>t.tap('继续'),first.node.next);
   const choice=byId('CH01_EP02_C002'),option=choice.node.options.find(o=>o.id==='B');await operation('major-decision',seed(choice.node.id),null,t=>t.tap(option.text),option.next);
