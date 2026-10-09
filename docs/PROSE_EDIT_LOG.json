@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-09",
+  "method": "Concrete source reading correction, not a substitute for human review of all branches.",
+  "edits": [
+    {
+      "file": "assets/resources/data/story/chapter08/ep02_dates.json",
+      "nodeId": "CH08_EP02_N001",
+      "original": "下班回家，母亲打来讲复查时间。她说只是改了半天，别按上次那个星期排。周叙把新日期写在冰箱的纸上，又拿出自己的旧本子。新纸上是现在要做的事，旧本子里的日期不会因为昨晚想得久，就挪到别的年份。",
+      "replacement": null,
+      "reason": "与第三段同一次下班后的复查电话重复。保留第三段实际抽出日期纸的动作，删除重复及段尾解释。",
+      "downstream": [
+        "CH08_EP02_COMPARE",
+        "CH08_EP02_DATES"
+      ],
+      "factsAndNodeIDsUnchanged": true
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep02_before_send.json",
+      "nodeId": "CH09_EP02_KEYS",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "家中",
+      "reason": "父亲打来问备用钥匙，周叙在家翻门口小盒。",
+      "downstream": [
+        "CH09_EP02_TABLE"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep02_before_send.json",
+      "nodeId": "CH09_EP02_TABLE",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "家中",
+      "reason": "程安然在家核材料，周叙先去洗菜。",
+      "downstream": [
+        "CH09_EP02_END"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep03_reply.json",
+      "nodeId": "CH09_EP03_HOSPITAL",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "南城医院",
+      "reason": "父亲在医院窗口核出生日期。",
+      "downstream": [
+        "CH09_EP03_HOME"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep03_reply.json",
+      "nodeId": "CH09_EP03_HOME",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "家中",
+      "reason": "父亲晚上住在家里。",
+      "downstream": [
+        "CH09_EP03_END"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
+      "nodeId": "CH09_EP04_N001",
+      "field": "lifeContext.time.location",
+      "original": "家中",
+      "replacement": "南城",
+      "reason": "下班取修好的拉链，尚在店铺/通勤路上。",
+      "downstream": [
+        "CH09_EP04_JOB_CHECK"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
+      "nodeId": "CH09_EP04_JOB_SHARED",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "单位",
+      "reason": "下班前与同事核借调和交接时间。",
+      "downstream": [
+        "CH09_EP04_COMMUTE"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
+      "nodeId": "CH09_EP04_JOB_REVISED",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "单位",
+      "reason": "同事通知借调，周叙纠正先替对方安排。",
+      "downstream": [
+        "CH09_EP04_COMMUTE"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep04_open_day.json",
+      "nodeId": "CH09_EP04_JOB_COMMON",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "单位",
+      "reason": "核对同事借调通知和交接。",
+      "downstream": [
+        "CH09_EP04_COMMUTE"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
+      "nodeId": "CH09_EP05_N001",
+      "field": "lifeContext.time.location",
+      "original": "家中",
+      "replacement": "南城二中",
+      "reason": "开场原文明确在旧教学楼一层登记桌交纸。",
+      "downstream": [
+        "CH09_EP05_TEACHER"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
+      "nodeId": "CH09_EP05_TEACHER",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "南城二中",
+      "reason": "在同一学校登记桌旁遇到老师。",
+      "downstream": [
+        "CH09_EP05_MEET_CHECK"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
+      "nodeId": "CH09_EP05_OLD_PAGE",
+      "field": "lifeContext.time.location",
+      "original": "家中",
+      "replacement": "学校门外",
+      "reason": "见面承接校门外十分钟，不在家中。",
+      "downstream": [
+        "CH09_EP05_FIRST_PAGE"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
+      "nodeId": "CH09_EP05_ALONE",
+      "field": "lifeContext.time.location",
+      "original": "家中",
+      "replacement": "南城二中",
+      "reason": "未见面路线仍在学校登记桌核回执。",
+      "downstream": [
+        "CH09_EP05_CLOSE"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep05_school_gate.json",
+      "nodeId": "CH09_EP05_CLOSE",
+      "field": "lifeContext.time.location",
+      "original": "家中",
+      "replacement": "南城公交",
+      "reason": "回家前走到公交站并上车，不在家中。",
+      "downstream": [
+        "CH09_EP05_END"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep06_monday.json",
+      "nodeId": "CH09_EP06_CLOSE",
+      "field": "lifeContext.time.location",
+      "original": "家中",
+      "replacement": "单位",
+      "reason": "下午同事请他重核工作交接表。",
+      "downstream": [
+        "CH09_EP06_BAG"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    },
+    {
+      "file": "assets/resources/data/story/chapter09/ep06_monday.json",
+      "nodeId": "CH09_EP06_BAG",
+      "field": "lifeContext.time.location",
+      "original": "南城",
+      "replacement": "家中",
+      "reason": "程安然在家把材料装回袋子。",
+      "downstream": [
+        "CH09_EP06_END"
+      ],
+      "factsAndNodeIDsUnchanged": true,
+      "scope": "Correct display location to existing prose, no new scene event or branch fact"
+    }
+  ]
+}

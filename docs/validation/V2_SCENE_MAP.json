@@ -1,0 +1,5009 @@
+{
+  "result": "PASS",
+  "inputHash": "f35eece0dc14d524f3d5783933885d5b599e48a08760391d47c94aea390f46d9",
+  "method": "Source presentation map and reachable domain-action fixtures, not physical or human visual acceptance. Source locations corrected only to existing prose.",
+  "renderableNodes": 311,
+  "mappedNodes": 251,
+  "paperFallbackNodes": 60,
+  "sceneAssetsUsed": 20,
+  "used": [
+    "home_2037_v1",
+    "phone_current_v1",
+    "bus_2007_v1",
+    "school_2007_v1",
+    "gym_2007_v1",
+    "parents_home_night_v1",
+    "parents_home_2007_v1",
+    "phone_early_v2",
+    "campus_2009_v1",
+    "dorm_2009_night_v1",
+    "dorm_2009_v1",
+    "clinic_2010_v1",
+    "street_2010_v1",
+    "work_2013_v1",
+    "diner_2017_v1",
+    "station_2013_v2",
+    "rental_2017_v1",
+    "home_2037_day_v1",
+    "home_2037_night_v1",
+    "office_current_v1"
+  ],
+  "rows": [
+    {
+      "nodeId": "CH01_EP01_N001",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 傍晚",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP01_DAILY",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP01_PARCEL",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP02_N001",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP02_NAME_001",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP02_C002",
+      "chapter": "CH01",
+      "type": "choice",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP02_A001",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP02_B001",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP02_C001A",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP03_N001",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 晚饭",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP03_DAUGHTER",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP03_CLEANUP",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP03_PHONE",
+      "chapter": "CH01",
+      "type": "phone",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "phone_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP03_LATE",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 深夜",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP03_N006A",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 深夜",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP03_N006B",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 深夜",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP03_TO_MP3",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 深夜",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP04_N001",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 深夜",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP04_RECORDING",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 深夜",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP04_BUS",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋",
+        "location": "17路公交",
+        "timeline": "memory"
+      },
+      "scene": "bus_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP04_CLASSMATES",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋",
+        "location": "17路公交",
+        "timeline": "memory"
+      },
+      "scene": "bus_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH01_EP04_WINDOW",
+      "chapter": "CH01",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋",
+        "location": "17路公交",
+        "timeline": "memory"
+      },
+      "scene": "bus_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP01_N001",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 早读前",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP01_CAMERA",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 上午",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP01_BREAK",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 课间",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP01_LUNCH",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 中午",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP01_AFTER_CLASS",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 中午",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP02_N001",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 午休",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP02_GYM",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 午休",
+        "location": "旧体育馆",
+        "timeline": "memory"
+      },
+      "scene": "gym_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP02_PHOTO",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 放学前",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP02_BUS_HOME",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 放学",
+        "location": "17路公交",
+        "timeline": "memory"
+      },
+      "scene": "bus_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP02_NOTEBOOK",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 晚上",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP03_N001",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 7,
+        "season": "summer",
+        "label": "2007 · 夏 · 暑假",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP03_FACTORY",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 7,
+        "season": "summer",
+        "label": "2007 · 夏 · 下午",
+        "location": "父亲的工厂",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH02_EP03_ERRANDS",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 7,
+        "season": "summer",
+        "label": "2007 · 夏 · 暑假",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP03_REPAIR",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 9,
+        "season": "autumn",
+        "label": "2007 · 秋 · 晚上",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP04_N001",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 10,
+        "season": "autumn",
+        "label": "2007 · 秋 · 放学",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP04_ROUTE",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 10,
+        "season": "autumn",
+        "label": "2007 · 秋 · 傍晚",
+        "location": "17路临时站点",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH02_EP04_CHENYE",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 10,
+        "season": "autumn",
+        "label": "2007 · 秋 · 放学",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP04_LOOK",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 10,
+        "season": "autumn",
+        "label": "2007 · 秋 · 放学",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP05_N001",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 11,
+        "season": "autumn",
+        "label": "2007 · 秋 · 晚自习",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH02_EP05_NUMBER",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 11,
+        "season": "autumn",
+        "label": "2007 · 秋 · 周末",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP05_MESSAGES",
+      "chapter": "CH02",
+      "type": "phone",
+      "time": {
+        "year": 2007,
+        "month": 11,
+        "season": "autumn",
+        "label": "2007 · 秋 · 晚上",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP05_SATURDAY",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 11,
+        "season": "autumn",
+        "label": "2007 · 秋 · 周六上午",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP06_N001",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 放学",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH02_EP06_PROMISE",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 放学",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH02_EP06_FAMILY",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 晚饭",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP06_CHOICE",
+      "chapter": "CH02",
+      "type": "choice",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 晚饭",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP06_TOLD",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 晚饭",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP06_HIDDEN",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 晚饭",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH02_EP06_SATURDAY",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 周六",
+        "location": "图书馆与照相店",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH02_EP06_HOME_TOLD",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 周六傍晚",
+        "location": "回家路上",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH02_EP06_HOME_HIDDEN",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 周六傍晚",
+        "location": "回家路上",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH02_EP06_CLOSE",
+      "chapter": "CH02",
+      "type": "passage",
+      "time": {
+        "year": 2007,
+        "month": 12,
+        "season": "winter",
+        "label": "2007 · 冬 · 晚上",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP01_N001",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 2,
+        "season": "winter",
+        "label": "2008 · 冬 · 返校",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH03_EP01_BUS",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 3,
+        "season": "spring",
+        "label": "2008 · 春 · 放学",
+        "location": "17路公交",
+        "timeline": "memory"
+      },
+      "scene": "bus_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP01_HOME",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 3,
+        "season": "spring",
+        "label": "2008 · 春 · 周末",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP01_MESSAGE",
+      "chapter": "CH03",
+      "type": "phone",
+      "time": {
+        "year": 2008,
+        "month": 3,
+        "season": "spring",
+        "label": "2008 · 春 · 课间",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP02_N001",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 4,
+        "season": "spring",
+        "label": "2008 · 春 · 周六中午",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP02_KNOWN",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 4,
+        "season": "spring",
+        "label": "2008 · 春 · 午饭",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP02_FIRST_NAME",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 4,
+        "season": "spring",
+        "label": "2008 · 春 · 午饭后",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP02_DISHES",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 4,
+        "season": "spring",
+        "label": "2008 · 春 · 周末以后",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP03_N001",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 9,
+        "season": "autumn",
+        "label": "2008 · 秋 · 高三",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP03_XIA_HOME",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2008,
+        "month": 11,
+        "season": "autumn",
+        "label": "2008 · 秋 · 周日",
+        "location": "许知夏家",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH03_EP03_EXAM",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 3,
+        "season": "spring",
+        "label": "2009 · 春 · 模拟考以后",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP03_REVISION",
+      "chapter": "CH03",
+      "type": "phone",
+      "time": {
+        "year": 2009,
+        "month": 4,
+        "season": "spring",
+        "label": "2009 · 春 · 晚上",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP04_N001",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 5,
+        "season": "spring",
+        "label": "2009 · 春 · 咨询会",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP04_FAMILY_KNOWN",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 5,
+        "season": "spring",
+        "label": "2009 · 春 · 咨询会",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP04_FAMILY_LATE",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 5,
+        "season": "spring",
+        "label": "2009 · 春 · 咨询会",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP04_CHOICE",
+      "chapter": "CH03",
+      "type": "choice",
+      "time": {
+        "year": 2009,
+        "month": 5,
+        "season": "spring",
+        "label": "2009 · 春 · 咨询会",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP04_DISCUSS",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 5,
+        "season": "spring",
+        "label": "2009 · 春 · 咨询会以后",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP04_ASSUME",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 5,
+        "season": "spring",
+        "label": "2009 · 春 · 咨询会以后",
+        "location": "17路站点",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH03_EP04_RETURN",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 5,
+        "season": "spring",
+        "label": "2009 · 春 · 晚上",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP05_N001",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 6,
+        "season": "summer",
+        "label": "2009 · 夏 · 考完以后",
+        "location": "南城二中校门",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP05_ROOM",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 6,
+        "season": "summer",
+        "label": "2009 · 夏 · 返校",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP05_TREE",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 6,
+        "season": "summer",
+        "label": "2009 · 夏 · 毕业照片",
+        "location": "南城二中南门",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP05_BAG",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 6,
+        "season": "summer",
+        "label": "2009 · 夏 · 毕业以后",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP06_N001",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 7,
+        "season": "summer",
+        "label": "2009 · 夏 · 暑假",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP06_DISCUSS",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 7,
+        "season": "summer",
+        "label": "2009 · 夏 · 见面",
+        "location": "17路站点",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH03_EP06_ASSUME",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 7,
+        "season": "summer",
+        "label": "2009 · 夏 · 见面",
+        "location": "17路站点",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH03_EP06_FAMILY_KNOWN",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 7,
+        "season": "summer",
+        "label": "2009 · 夏 · 收拾行李",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP06_FAMILY_LATE",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 7,
+        "season": "summer",
+        "label": "2009 · 夏 · 收拾行李",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP06_LETTER",
+      "chapter": "CH03",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 8,
+        "season": "summer",
+        "label": "2009 · 夏 · 返校还东西",
+        "location": "南城二中",
+        "timeline": "memory"
+      },
+      "scene": "school_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH03_EP06_PHONE",
+      "chapter": "CH03",
+      "type": "phone",
+      "time": {
+        "year": 2009,
+        "month": 8,
+        "season": "summer",
+        "label": "2009 · 夏 · 出发以前",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP01_N001",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 9,
+        "season": "autumn",
+        "label": "2009 · 秋 · 宿舍门口",
+        "location": "周叙的大学",
+        "timeline": "memory"
+      },
+      "scene": "campus_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP01_FOOD",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 9,
+        "season": "autumn",
+        "label": "2009 · 秋 · 饭卡第一次用",
+        "location": "周叙大学食堂",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH04_EP01_ASK",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 9,
+        "season": "autumn",
+        "label": "2009 · 秋 · 先问现在忙不忙",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP01_SET",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 9,
+        "season": "autumn",
+        "label": "2009 · 秋 · 原来不在宿舍",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP01_PHONE",
+      "chapter": "CH04",
+      "type": "phone",
+      "time": {
+        "year": 2009,
+        "month": 9,
+        "season": "autumn",
+        "label": "2009 · 秋 · 熄灯前的消息",
+        "location": "两边的大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP02_N001",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 10,
+        "season": "autumn",
+        "label": "2009 · 秋 · 十一以前",
+        "location": "周叙大学教学楼",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH04_EP02_COMPARE",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 10,
+        "season": "autumn",
+        "label": "2009 · 秋 · 把空的那天圈出来",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP02_REARRANGE",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 10,
+        "season": "autumn",
+        "label": "2009 · 秋 · 没有提前问的那张票",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP02_MESSAGES",
+      "chapter": "CH04",
+      "type": "phone",
+      "time": {
+        "year": 2009,
+        "month": 10,
+        "season": "autumn",
+        "label": "2009 · 秋 · 回去以后再说",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP02_LATE",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 11,
+        "season": "autumn",
+        "label": "2009 · 秋 · 课表换了一行",
+        "location": "两边的大学",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH04_EP03_N001",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2009,
+        "month": 12,
+        "season": "winter",
+        "label": "2009 · 冬 · 先把衣服晒进去",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP03_HOME",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 1,
+        "season": "winter",
+        "label": "2010 · 冬 · 寒假回家",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP03_KNOWN",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 1,
+        "season": "winter",
+        "label": "2010 · 冬 · 家里知道约了谁",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP03_LATE",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 1,
+        "season": "winter",
+        "label": "2010 · 冬 · 这次没有借陈野的名字",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP03_RETURN",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 2,
+        "season": "winter",
+        "label": "2010 · 冬 · 带回去的饭盒",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP03_MOTHER",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 3,
+        "season": "spring",
+        "label": "2010 · 春 · 各自家里也有事",
+        "location": "两边的大学",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH04_EP04_N001",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 6,
+        "season": "summer",
+        "label": "2010 · 夏 · 家里的复查单",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP04_CHOICE",
+      "chapter": "CH04",
+      "type": "choice",
+      "time": {
+        "year": 2010,
+        "month": 6,
+        "season": "summer",
+        "label": "2010 · 夏 · 暑期安排",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP04_ASK",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 6,
+        "season": "summer",
+        "label": "2010 · 夏 · 还不能替她答应",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP04_PROMISE",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 6,
+        "season": "summer",
+        "label": "2010 · 夏 · 已经说出口的日期",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP04_MESSAGES",
+      "chapter": "CH04",
+      "type": "phone",
+      "time": {
+        "year": 2010,
+        "month": 6,
+        "season": "summer",
+        "label": "2010 · 夏 · 确认过的那一张",
+        "location": "两边的大学",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP05_N001",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 7,
+        "season": "summer",
+        "label": "2010 · 夏 · 复查那天",
+        "location": "南城医院",
+        "timeline": "memory"
+      },
+      "scene": "clinic_2010_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP05_AGREED",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 8,
+        "season": "summer",
+        "label": "2010 · 夏 · 等到表上空下来",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP05_CORRECTED",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 8,
+        "season": "summer",
+        "label": "2010 · 夏 · 不是她临时改的",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP05_STREET",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 8,
+        "season": "summer",
+        "label": "2010 · 夏 · 街口新装的门",
+        "location": "南城旧街",
+        "timeline": "memory"
+      },
+      "scene": "street_2010_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP05_NIGHT",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 8,
+        "season": "summer",
+        "label": "2010 · 夏 · 没一起去的球场",
+        "location": "南城",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH04_EP06_N001",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 9,
+        "season": "autumn",
+        "label": "2010 · 秋 · 走熟的那条路",
+        "location": "周叙的大学",
+        "timeline": "memory"
+      },
+      "scene": "campus_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP06_LISTEN",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 10,
+        "season": "autumn",
+        "label": "2010 · 秋 · 先听她换组的理由",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP06_FIX",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2010,
+        "month": 10,
+        "season": "autumn",
+        "label": "2010 · 秋 · 又想替她换一个安排",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP06_WINTER",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 1,
+        "season": "winter",
+        "label": "2011 · 冬 · 各有一张账单",
+        "location": "南城与两边的大学",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH04_EP06_ASK_AGAIN",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 3,
+        "season": "spring",
+        "label": "2011 · 春 · 先看今年的表",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP06_PROMISE_AGAIN",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 3,
+        "season": "spring",
+        "label": "2011 · 春 · 记住去年改过一次",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH04_EP06_CLOSE",
+      "chapter": "CH04",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 6,
+        "season": "summer",
+        "label": "2011 · 夏 · 大二暑假以前",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP01_N001",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 7,
+        "season": "summer",
+        "label": "2011 · 夏 · 先问清楚地点",
+        "location": "周叙大学教学楼",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH05_EP01_CHECK_FIRST",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 7,
+        "season": "summer",
+        "label": "2011 · 夏 · 这次还是先核对",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP01_REMEMBER",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 7,
+        "season": "summer",
+        "label": "2011 · 夏 · 看见去年划掉的那两行",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP01_FACTORY",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 7,
+        "season": "summer",
+        "label": "2011 · 夏 · 办公室的那张椅子",
+        "location": "设备厂办公室",
+        "timeline": "memory"
+      },
+      "scene": "work_2013_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP01_WEEKEND",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 8,
+        "season": "summer",
+        "label": "2011 · 夏 · 那周没有赶过去",
+        "location": "两边的大学",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH05_EP02_N001",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2011,
+        "month": 10,
+        "season": "autumn",
+        "label": "2011 · 秋 · 课又排到晚上",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP02_HOME",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 1,
+        "season": "winter",
+        "label": "2012 · 冬 · 冬天家里的账",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP02_FAMILY_KNOWN",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 1,
+        "season": "winter",
+        "label": "2012 · 冬 · 父母知道她也有安排",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP02_FAMILY_LATE",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 1,
+        "season": "winter",
+        "label": "2012 · 冬 · 现在说的是实际日期",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP02_MESSAGES",
+      "chapter": "CH05",
+      "type": "phone",
+      "time": {
+        "year": 2012,
+        "month": 3,
+        "season": "spring",
+        "label": "2012 · 春 · 一张复印件",
+        "location": "两边的大学",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP03_N001",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 7,
+        "season": "summer",
+        "label": "2012 · 夏 · 每天同一趟车",
+        "location": "设备厂附近",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH05_EP03_ASK_ROOM",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 7,
+        "season": "summer",
+        "label": "2012 · 夏 · 先问那间屋子",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP03_SUGGEST_ROOM",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 7,
+        "season": "summer",
+        "label": "2012 · 夏 · 近一点也不等于都有地方",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP03_COST",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 8,
+        "season": "summer",
+        "label": "2012 · 夏 · 月底留下的票",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP03_CHEN",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 8,
+        "season": "summer",
+        "label": "2012 · 夏 · 陈野自己的去向",
+        "location": "南城小饭店",
+        "timeline": "memory"
+      },
+      "scene": "diner_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP04_N001",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2012,
+        "month": 11,
+        "season": "autumn",
+        "label": "2012 · 秋 · 鞋底还没干",
+        "location": "周叙大学招聘会",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH05_EP04_SPRING",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 3,
+        "season": "spring",
+        "label": "2013 · 春 · 论文和回程票",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP04_COMPARE",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 3,
+        "season": "spring",
+        "label": "2013 · 春 · 把没问到的留空",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP04_RECHECK",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 3,
+        "season": "spring",
+        "label": "2013 · 春 · 不是她临时变了主意",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP04_CHEN",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 4,
+        "season": "spring",
+        "label": "2013 · 春 · 陈野先问班次",
+        "location": "南城公交站",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH05_EP05_N001",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 5,
+        "season": "spring",
+        "label": "2013 · 春 · 周五以前要答复",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP05_CHOICE",
+      "chapter": "CH05",
+      "type": "choice",
+      "time": {
+        "year": 2013,
+        "month": 5,
+        "season": "spring",
+        "label": "2013 · 春 · 工作去向",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP05_SHARE",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 5,
+        "season": "spring",
+        "label": "2013 · 春 · 两边分别问清楚",
+        "location": "周叙大学楼道",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH05_EP05_RETURN",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 5,
+        "season": "spring",
+        "label": "2013 · 春 · 她没有答应的那一栏",
+        "location": "周叙大学楼道",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH05_EP05_MESSAGES",
+      "chapter": "CH05",
+      "type": "phone",
+      "time": {
+        "year": 2013,
+        "month": 5,
+        "season": "spring",
+        "label": "2013 · 春 · 还有材料没交完",
+        "location": "两边的大学",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP06_N001",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 6,
+        "season": "summer",
+        "label": "2013 · 夏 · 把图重新卷好",
+        "location": "周叙的大学",
+        "timeline": "memory"
+      },
+      "scene": "campus_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP06_SEPARATE",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 6,
+        "season": "summer",
+        "label": "2013 · 夏 · 知道还要再商量",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP06_CORRECT",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 6,
+        "season": "summer",
+        "label": "2013 · 夏 · 这不是她后来才反悔",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP06_PACK",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 6,
+        "season": "summer",
+        "label": "2013 · 夏 · 最后一晚在宿舍",
+        "location": "周叙大学宿舍",
+        "timeline": "memory"
+      },
+      "scene": "dorm_2009_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH05_EP06_CLOSE",
+      "chapter": "CH05",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 6,
+        "season": "summer",
+        "label": "2013 · 夏 · 带回家的箱子",
+        "location": "南城",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP01_N001",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 6,
+        "season": "summer",
+        "label": "2013 · 夏 · 车票买好了",
+        "location": "南城",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP01_ARRIVAL",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 7,
+        "season": "summer",
+        "label": "2013 · 夏 · 一张空床",
+        "location": "省内设备公司",
+        "timeline": "memory"
+      },
+      "scene": "work_2013_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP01_SHARE",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 7,
+        "season": "summer",
+        "label": "2013 · 夏 · 报到以后再核一次",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP01_CORRECT",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 7,
+        "season": "summer",
+        "label": "2013 · 夏 · 不能拿自己的床位替她算",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP01_HOUSE",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 7,
+        "season": "summer",
+        "label": "2013 · 夏 · 电风扇放哪边",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP01_PHONE",
+      "chapter": "CH06",
+      "type": "phone",
+      "time": {
+        "year": 2013,
+        "month": 7,
+        "season": "summer",
+        "label": "2013 · 夏 · 第一张工资单以前",
+        "location": "两人的住处",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP02_N001",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 8,
+        "season": "summer",
+        "label": "2013 · 夏 · 电话不再固定九点",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP02_EARLY",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 8,
+        "season": "summer",
+        "label": "2013 · 夏 · 母亲先问有没有约过",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP02_LATE",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 8,
+        "season": "summer",
+        "label": "2013 · 夏 · 现在不用别人补日期",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP02_MEALS",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 8,
+        "season": "summer",
+        "label": "2013 · 夏 · 饭剩在小锅里",
+        "location": "两人的住处",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP02_CHEN",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 8,
+        "season": "summer",
+        "label": "2013 · 夏 · 陈野这次不跟他们等",
+        "location": "南城小饭店",
+        "timeline": "memory"
+      },
+      "scene": "diner_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP03_N001",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 9,
+        "season": "autumn",
+        "label": "2013 · 秋 · 先空出的周日",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP03_ASKED",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 9,
+        "season": "autumn",
+        "label": "2013 · 秋 · 先说还没买票",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP03_REVISED",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 9,
+        "season": "autumn",
+        "label": "2013 · 秋 · 没有把未定说成答应",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP03_LISTEN",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 9,
+        "season": "autumn",
+        "label": "2013 · 秋 · 去那边住也要有工作",
+        "location": "两人的住处",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP03_RECONSIDER",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 9,
+        "season": "autumn",
+        "label": "2013 · 秋 · 先停下那条现成路线",
+        "location": "两人的住处",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP03_MESSAGES",
+      "chapter": "CH06",
+      "type": "phone",
+      "time": {
+        "year": 2013,
+        "month": 9,
+        "season": "autumn",
+        "label": "2013 · 秋 · 先告诉我你到了",
+        "location": "两人的住处",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP04_N001",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 十月回到南城",
+        "location": "南城",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP04_SUPPER",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 吃饭时候还要接电话",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP04_SEPARATE",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 问清楚以后仍有不同",
+        "location": "周叙家楼下",
+        "timeline": "memory"
+      },
+      "scene": "street_2010_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP04_CORRECTED",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 没有一份她答应过的名单",
+        "location": "周叙家楼下",
+        "timeline": "memory"
+      },
+      "scene": "street_2010_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP04_ROOM",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 说到后来已经很晚",
+        "location": "南城街边",
+        "timeline": "memory"
+      },
+      "scene": "street_2010_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP04_CLOSE",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 返程以前又说了一次",
+        "location": "两人的住处",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP05_N001",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 到车站的时候",
+        "location": "南城车站",
+        "timeline": "memory"
+      },
+      "scene": "station_2013_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP05_TALK",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 把话说到这里",
+        "location": "南城车站候车区",
+        "timeline": "memory"
+      },
+      "scene": "station_2013_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP05_PLATFORM",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 到检票口",
+        "location": "南城车站检票口",
+        "timeline": "memory"
+      },
+      "scene": "station_2013_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP05_EXIT",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 走到公交站",
+        "location": "南城车站外",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP06_N001",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 回去以后要交班",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH06_EP06_HOME",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 10,
+        "season": "autumn",
+        "label": "2013 · 秋 · 向家里讲清楚",
+        "location": "周叙家",
+        "timeline": "memory"
+      },
+      "scene": "parents_home_2007_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP06_CHEN",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 11,
+        "season": "autumn",
+        "label": "2013 · 秋 · 陈野不替她作证",
+        "location": "南城小饭店",
+        "timeline": "memory"
+      },
+      "scene": "diner_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP06_PHONE",
+      "chapter": "CH06",
+      "type": "phone",
+      "time": {
+        "year": 2013,
+        "month": 11,
+        "season": "autumn",
+        "label": "2013 · 秋 · 不再约每个周末",
+        "location": "周叙的宿舍",
+        "timeline": "memory"
+      },
+      "scene": "phone_early_v2",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH06_EP06_DECEMBER",
+      "chapter": "CH06",
+      "type": "passage",
+      "time": {
+        "year": 2013,
+        "month": 12,
+        "season": "winter",
+        "label": "2013 · 冬 · 冬天那张新表",
+        "location": "省内设备公司",
+        "timeline": "memory"
+      },
+      "scene": "work_2013_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP01_N001",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2014,
+        "month": 3,
+        "season": "spring",
+        "label": "2014 · 春 · 换一把锁",
+        "location": "工作地出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP01_AFTER_STATION",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2014,
+        "month": 3,
+        "season": "spring",
+        "label": "2014 · 春 · 那一段已经讲清",
+        "location": "工作地出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP01_EARLY",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2015,
+        "month": 5,
+        "season": "spring",
+        "label": "2015 · 春 · 周末的电话",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP01_LATE",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2015,
+        "month": 5,
+        "season": "spring",
+        "label": "2015 · 春 · 周末的电话",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP01_HOME",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2015,
+        "month": 5,
+        "season": "spring",
+        "label": "2015 · 春 · 木板和洗衣机",
+        "location": "南城家中",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH07_EP01_LIST",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2016,
+        "month": 8,
+        "season": "summer",
+        "label": "2016 · 夏 · 先看自己的条件",
+        "location": "新出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP01_RECHECK",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2016,
+        "month": 8,
+        "season": "summer",
+        "label": "2016 · 夏 · 先看自己的条件",
+        "location": "新出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP02_N001",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2017,
+        "month": 4,
+        "season": "spring",
+        "label": "2017 · 春 · 等房东来",
+        "location": "出租楼楼道",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH07_EP02_NEXT",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2017,
+        "month": 6,
+        "season": "summer",
+        "label": "2017 · 夏 · 不是每天都碰到",
+        "location": "楼下小店",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH07_EP02_DINNER",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2017,
+        "month": 11,
+        "season": "autumn",
+        "label": "2017 · 秋 · 一碗面",
+        "location": "面店",
+        "timeline": "memory"
+      },
+      "scene": "diner_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP03_N001",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2018,
+        "month": 3,
+        "season": "spring",
+        "label": "2018 · 春 · 再约一次",
+        "location": "南城街边",
+        "timeline": "memory"
+      },
+      "scene": "street_2010_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP03_ASK",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2018,
+        "month": 7,
+        "season": "summer",
+        "label": "2018 · 夏 · 听她讲完",
+        "location": "程安然租住的房子",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH07_EP03_STOP",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2018,
+        "month": 7,
+        "season": "summer",
+        "label": "2018 · 夏 · 听她讲完",
+        "location": "程安然租住的房子",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH07_EP03_WORK",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2018,
+        "month": 7,
+        "season": "summer",
+        "label": "2018 · 夏 · 各自的桌子",
+        "location": "两人的住处",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH07_EP04_N001",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2019,
+        "month": 9,
+        "season": "autumn",
+        "label": "2019 · 秋 · 两个杯子",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP04_CHOICE",
+      "chapter": "CH07",
+      "type": "choice",
+      "time": {
+        "year": 2019,
+        "month": 9,
+        "season": "autumn",
+        "label": "2019 · 秋 · 以后谁来做",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP04_TOGETHER",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2019,
+        "month": 9,
+        "season": "autumn",
+        "label": "2019 · 秋 · 先列自己的那一栏",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP04_PAUSE",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2019,
+        "month": 9,
+        "season": "autumn",
+        "label": "2019 · 秋 · 那一栏不是她答应过的",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP04_CONFIRM",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2019,
+        "month": 10,
+        "season": "autumn",
+        "label": "2019 · 秋 · 另外一个周末",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP04_REVISE",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2019,
+        "month": 10,
+        "season": "autumn",
+        "label": "2019 · 秋 · 另外一个周末",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP04_CLOSE",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2019,
+        "month": 10,
+        "season": "autumn",
+        "label": "2019 · 秋 · 月底再看",
+        "location": "出租屋",
+        "timeline": "memory"
+      },
+      "scene": "rental_2017_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP05_N001",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2020,
+        "month": 6,
+        "season": "summer",
+        "label": "2020 · 夏 · 登记那天",
+        "location": "登记处与出租屋",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH07_EP05_WORK",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2020,
+        "month": 11,
+        "season": "autumn",
+        "label": "2020 · 秋 · 她还要回去交材料",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP06_N001",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2021,
+        "month": 5,
+        "season": "spring",
+        "label": "2021 · 春 · 名字还没写准",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP06_SHARED",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2021,
+        "month": 8,
+        "season": "summer",
+        "label": "2021 · 夏 · 重新列一次",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP06_CHANGED",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2021,
+        "month": 8,
+        "season": "summer",
+        "label": "2021 · 夏 · 重新列一次",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP06_MORNING",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2021,
+        "month": 8,
+        "season": "summer",
+        "label": "2021 · 夏 · 早上那一袋",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP07_N001",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2024,
+        "month": 1,
+        "season": "winter",
+        "label": "2024 · 冬 · 听见她喊人",
+        "location": "家中与门诊",
+        "timeline": "memory"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH07_EP07_DIVIDE",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2024,
+        "month": 1,
+        "season": "winter",
+        "label": "2024 · 冬 · 早上的交接",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP07_REVISE",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2024,
+        "month": 1,
+        "season": "winter",
+        "label": "2024 · 冬 · 早上的交接",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP07_NEXT",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2024,
+        "month": 2,
+        "season": "winter",
+        "label": "2024 · 冬 · 另一边也要上班",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP08_N001",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2030,
+        "month": 9,
+        "season": "autumn",
+        "label": "2030 · 秋 · 书包换过几次",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP08_PHOTO_INTRO",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2035,
+        "month": 7,
+        "season": "summer",
+        "label": "2035 · 夏 · 没有站在中间",
+        "location": "家中",
+        "timeline": "memory"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH07_EP08_CLOSE",
+      "chapter": "CH07",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 高中开学",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP01_N001",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月七日的晚上",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP01_SHARED",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 明早的接送",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP01_COMMON",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 门口的便签",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP01_CLOSE",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先把袋子放平",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP02_N001",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月八日的早晨",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP02_COMPARE",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 两处不同的纸",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP02_CLOSE",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先接现在的电话",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP03_N001",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 纸没有自己展开",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP03_READ",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 纸里写的是那时",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP03_UNREAD",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 还没展开的那一页",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP03_CLOSE",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 分开两只袋子",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP04_N001",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月九日",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP04_CALL",
+      "chapter": "CH08",
+      "type": "phone",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 陈野的电话",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "phone_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP04_CLOSE",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 挂电话以后",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP05_N001",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 不同来源",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP05_GRADUATION",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 信纸的年份",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP05_PARTIAL",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先留空",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP05_CLOSE",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 把纸放远一点",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP06_N001",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月十日",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP06_TOLD",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 已经说过的名字",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP06_COMMON",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 把话补到现在",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH08_EP06_CLOSE",
+      "chapter": "CH08",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 还没发出去",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP01_N001",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月十一日，星期五",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP01_SHARED",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 周末还要核一次",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP01_COMMON",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 没有直接填到她那边",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP01_DRAFT",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 把问题写具体",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP01_CONTACT_CHOICE",
+      "chapter": "CH09",
+      "type": "choice",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 把问题写具体",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP01_INTENT",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 还没有送达",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP01_UNSENT",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先留在这里",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_KNOWN",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 她知道的不是这一条",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_NEW_NAME",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先前没有讲全",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_DISCLOSE_CHOICE",
+      "chapter": "CH09",
+      "type": "choice",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 她知道的不是这一条",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_TELL",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 发之前讲明白",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_WAIT",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先回到输入框",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_SENT",
+      "chapter": "CH09",
+      "type": "phone",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 只发这一条",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "phone_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_NO_CONTACT",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 星期六先出门",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_CLOSE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 灯装好了",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_KEYS",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 备用钥匙",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP02_TABLE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 晚饭前的桌子",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP03_EARLY",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 星期六的早晨",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP03_LATER",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 补上昨晚没说的",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP03_REPLY",
+      "chapter": "CH09",
+      "type": "phone",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 下午四点多",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "phone_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP03_OWN_LIFE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 她那边的星期六",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP03_LOCAL",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 自己的旧登记",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP03_CLOSE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 星期一的接车",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP03_HOSPITAL",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 报告还要自己留",
+        "location": "南城医院",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP03_HOME",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 把电话放近一点",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_N001",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月十八日的下班路",
+        "location": "南城",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP04_JOB_SHARED",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先问已经定下的事",
+        "location": "单位",
+        "timeline": "present"
+      },
+      "scene": "office_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_JOB_REVISED",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 把顺口的安排停下来",
+        "location": "单位",
+        "timeline": "present"
+      },
+      "scene": "office_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_JOB_COMMON",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 借调的日期",
+        "location": "单位",
+        "timeline": "present"
+      },
+      "scene": "office_current_v1",
+      "reachableFixture": false,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_COMMUTE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 从公司出来",
+        "location": "南城",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP04_INVITE",
+      "chapter": "CH09",
+      "type": "phone",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 她已经要回南城",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "phone_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_MEETING_CHOICE",
+      "chapter": "CH09",
+      "type": "choice",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 她已经要回南城",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_ACCEPT",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先核自己的安排",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_DECLINE_REPLY",
+      "chapter": "CH09",
+      "type": "phone",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 这次不见",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "phone_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_NO_INVITE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 没有别人的约定",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP04_CLOSE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 把袋子减轻",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP05_N001",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月二十日，星期日",
+        "location": "南城二中",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP05_TEACHER",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 登记桌的另一边",
+        "location": "南城二中",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP05_MET",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 十一点，校门外",
+        "location": "学校门外",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP05_OLD_PAGE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 她带来的那一页",
+        "location": "学校门外",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP05_CHECKED",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 能对上的名字和雨",
+        "location": "学校门外",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP05_ALONE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 自己的回执",
+        "location": "南城二中",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP05_CLOSE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 回家以前",
+        "location": "南城公交",
+        "timeline": "present"
+      },
+      "scene": null,
+      "reachableFixture": true,
+      "fallback": "Same paper layout; unsupported exact place, mixed setting, season or time. No invented visual facts."
+    },
+    {
+      "nodeId": "CH09_EP06_N001",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月二十一日的早餐",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP06_BEFORE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 那一条，发之前讲过",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP06_AFTER",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 不是后来说明就没有发生",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP06_MET",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 十分钟以后",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP06_CLOSED",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 这次聊到这里",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP06_UNSENT",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 草稿仍然没发",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP06_CLOSE",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 下班前再看一次",
+        "location": "单位",
+        "timeline": "present"
+      },
+      "scene": "office_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH09_EP06_BAG",
+      "chapter": "CH09",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 晚上装回去",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP01_N001",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月二十三日，星期三",
+        "location": "单位",
+        "timeline": "present"
+      },
+      "scene": "office_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP01_LISTEN",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 交接之前",
+        "location": "单位",
+        "timeline": "present"
+      },
+      "scene": "office_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP01_RECHECK",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先把时间听完",
+        "location": "单位",
+        "timeline": "present"
+      },
+      "scene": "office_current_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP01_COMMON",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 一项一项确认",
+        "location": "单位",
+        "timeline": "present"
+      },
+      "scene": "office_current_v1",
+      "reachableFixture": false,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP01_HOME",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 回家以后",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP02_N001",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月二十五日，星期五",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP02_PHOTOS",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 没有全删掉",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP02_FRIEND",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 周日的时间",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP02_EVENING",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 照片排好了",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP03_N001",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 九月二十九日，星期二",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP03_SHARED",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 原来的分工也会变",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP03_REVISED",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 这次没有先替她填",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP03_COMMON",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先核各自的时间",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": false,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP03_ANRAN",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 9,
+        "season": "autumn",
+        "label": "2037 · 秋 · 她今天还有一件事",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP04_N001",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 十月二日，星期五",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP04_KNOWN",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 每张纸自己的日期",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP04_UNKNOWN",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 先留出不知道的地方",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP04_MET",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 她发来的只到这里",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP04_CLOSED",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 不再追问下一次",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP04_UNMET",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 今天没有新的来信",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP05_N001",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 十月四日，星期日",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP05_AFTER",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 字没有写得很齐",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP05_NIGHT",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 还有一封没回的邮件",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_night_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP06_N001",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 十月七日，星期三",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    },
+    {
+      "nodeId": "CH10_EP06_LATER",
+      "chapter": "CH10",
+      "type": "passage",
+      "time": {
+        "year": 2037,
+        "month": 10,
+        "season": "autumn",
+        "label": "2037 · 秋 · 十月十一日，星期日",
+        "location": "家中",
+        "timeline": "present"
+      },
+      "scene": "home_2037_day_v1",
+      "reachableFixture": true,
+      "fallback": null
+    }
+  ]
+}

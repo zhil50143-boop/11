@@ -26,12 +26,27 @@
       ],
       "sha256": "2c2c16bb410bc4dfb9eac9ee60cf9b15cae66dbb45e0d6325c7d175dcc520f0e",
       "alpha": null,
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
       "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
       "useSites": [
-        "Main/VisualDraft",
-        "CH01 home passages",
-        "CH01_EP02_C002 ChoicePanel"
+        "CH01_EP01_N001",
+        "CH01_EP01_DAILY",
+        "CH01_EP01_PARCEL",
+        "CH01_EP02_N001",
+        "CH01_EP02_NAME_001",
+        "CH01_EP02_C002",
+        "CH01_EP02_A001",
+        "CH01_EP02_B001",
+        "CH01_EP02_C001A",
+        "CH01_EP03_N001",
+        "CH01_EP03_DAUGHTER",
+        "CH01_EP03_CLEANUP",
+        "CH01_EP03_LATE",
+        "CH01_EP03_N006A",
+        "CH01_EP03_N006B",
+        "CH01_EP03_TO_MP3",
+        "CH01_EP04_N001",
+        "CH01_EP04_RECORDING"
       ]
     },
     {
@@ -58,12 +73,15 @@
       ],
       "sha256": "979f6d4440581b36a577f9a822b491a1efbc03bd42e9ffc2de2f4824e3406691",
       "alpha": null,
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
       "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
       "referenceSha256": "e3aa0646a2ce3360e55577b9ff07ef274fe7eb5b33da0192302e2517642dc9de",
       "useSites": [
-        "VisualDraft",
-        "CH01 2007 bus passages"
+        "CH01_EP04_BUS",
+        "CH01_EP04_CLASSMATES",
+        "CH01_EP04_WINDOW",
+        "CH02_EP02_BUS_HOME",
+        "CH03_EP01_BUS"
       ]
     },
     {
@@ -90,7 +108,7 @@
       ],
       "sha256": "2d39ee066d7cb3f0e8f415e6e40d3aa5e4eb02732b3657d57c5a5495a16f8d83",
       "alpha": null,
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "In-engine interaction; desktop H5 whole-route scope checked, human and physical-device acceptance pending",
       "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
       "useSites": [
         "Main",
@@ -122,7 +140,7 @@
       ],
       "sha256": "43550e61f7ac89be9fdc2fb876fdaed467b81ea1ccfa0e7848ce2bddff663a7b",
       "alpha": null,
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "In-engine interaction; desktop H5 whole-route scope checked, human and physical-device acceptance pending",
       "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
       "useSites": [
         "Main/VisualDraft",
@@ -163,7 +181,7 @@
         "opaquePixels": 1311,
         "totalPixels": 259200
       },
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "In-engine interaction; desktop H5 whole-route scope checked, human and physical-device acceptance pending",
       "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
       "useSites": [
         "Main/VisualDraft",
@@ -233,7 +251,7 @@
         "opaquePixels": 967,
         "totalPixels": 691200
       },
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "In-engine interaction; desktop H5 whole-route scope checked, human and physical-device acceptance pending",
       "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
       "useSites": [
         "VisualDraft",
@@ -272,7 +290,7 @@
         "opaquePixels": 1040,
         "totalPixels": 614400
       },
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "In-engine interaction; desktop H5 whole-route scope checked, human and physical-device acceptance pending",
       "processing": "Only resize and lossless encode; source alpha retained, no semantic editing outside Image tool",
       "useSites": [
         "CH01_EP02_C001 InvestigationPanel"
@@ -306,7 +324,7 @@
         "opaquePixels": 1321,
         "totalPixels": 235440
       },
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "In-engine interaction; desktop H5 whole-route scope checked, human and physical-device acceptance pending",
       "processing": "Only resize and lossless encode; source alpha retained, no semantic editing outside Image tool",
       "useSites": [
         "CH01_EP02_C001",
@@ -341,12 +359,863 @@
         "opaquePixels": 1343,
         "totalPixels": 345600
       },
-      "productionStatus": "In-engine visual slice; full-game, human and physical phone acceptance pending",
+      "productionStatus": "In-engine interaction; desktop H5 whole-route scope checked, human and physical-device acceptance pending",
       "processing": "Only resize and lossless encode; source alpha retained, no semantic editing outside Image tool",
       "useSites": [
         "CH01_EP02_C001",
         "CH01_EP02_ROPE"
       ]
+    },
+    {
+      "id": "phone_early_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/phone_early_v1.png",
+      "sourceBytes": 3103708,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "555947b8a4458ef4521652ec87d39d507d768c3b6d79d788d9a2bc67750140cf",
+      "prompt": "art/visual-v2/phone_early_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/phone_early_v1.jpg",
+      "resource": "images/visual-v2/phone_early_v1/spriteFrame",
+      "bytes": 159844,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "c9951f0d5b4335ff4c382bc2c93bb52ddb35f913e8e5647724614fb9410896a4",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Superseded by phone_early_v2; original and prior development evidence retained",
+      "useSites": [
+        "Historical phone-memory development batch, no current runtime mapping"
+      ]
+    },
+    {
+      "id": "phone_current_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/phone_current_v1.png",
+      "sourceBytes": 2971445,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "1b1dd6e568e5a88ec29a409370a32a305d03666613c92e55fd62c1a903406bc1",
+      "prompt": "art/visual-v2/phone_current_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/phone_current_v1.jpg",
+      "resource": "images/visual-v2/phone_current_v1/spriteFrame",
+      "bytes": 153046,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "853d26110896f80f16d466ef2db2eb59d098d27aa5210928daa34692dd1123dc",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH01_EP03_PHONE",
+        "CH08_EP04_CALL",
+        "CH09_EP02_SENT",
+        "CH09_EP03_REPLY",
+        "CH09_EP04_INVITE",
+        "CH09_EP04_DECLINE_REPLY"
+      ]
+    },
+    {
+      "id": "school_2007_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/school_2007_v1.png",
+      "sourceBytes": 3189655,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "d5e05e8986e7ef9500f79855309e578df46f53584b2b0d1db7997f75c8a58cb6",
+      "prompt": "art/visual-v2/school_2007_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/school_2007_v1.jpg",
+      "resource": "images/visual-v2/school_2007_v1/spriteFrame",
+      "bytes": 229632,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "6d1c34b7cb29a1d4e143fa6e638c9be2ba4ca5ac9a51f4ddf9a3518c8b83ef74",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH02_EP01_N001",
+        "CH02_EP01_CAMERA",
+        "CH02_EP01_BREAK",
+        "CH02_EP01_LUNCH",
+        "CH02_EP01_AFTER_CLASS",
+        "CH02_EP02_N001",
+        "CH02_EP02_PHOTO",
+        "CH02_EP04_N001",
+        "CH02_EP04_CHENYE",
+        "CH02_EP04_LOOK",
+        "CH02_EP05_SATURDAY",
+        "CH03_EP02_DISHES",
+        "CH03_EP03_N001",
+        "CH03_EP04_N001",
+        "CH03_EP04_FAMILY_KNOWN",
+        "CH03_EP04_FAMILY_LATE",
+        "CH03_EP04_CHOICE",
+        "CH03_EP04_DISCUSS",
+        "CH03_EP05_N001",
+        "CH03_EP05_ROOM",
+        "CH03_EP05_TREE",
+        "CH03_EP06_LETTER"
+      ]
+    },
+    {
+      "id": "gym_2007_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/gym_2007_v1.png",
+      "sourceBytes": 2343856,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "8d01af6ba1fb0dca98fcc9ed87e80c98ab7ef2eb81a9c4cf4d44182b292183bf",
+      "prompt": "art/visual-v2/gym_2007_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/gym_2007_v1.jpg",
+      "resource": "images/visual-v2/gym_2007_v1/spriteFrame",
+      "bytes": 138661,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "64bd57e36705e181f6b73e66f2d526b17d17309342e9bf722f0074be72085e0f",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH02_EP02_GYM"
+      ]
+    },
+    {
+      "id": "parents_home_2007_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/parents_home_2007_v1.png",
+      "sourceBytes": 2525277,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "93755dbd708efea49e59f488d5dd0b2c1d8f3ccb49099c74850439cf5af35137",
+      "prompt": "art/visual-v2/parents_home_2007_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/parents_home_2007_v1.jpg",
+      "resource": "images/visual-v2/parents_home_2007_v1/spriteFrame",
+      "bytes": 146942,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "f2a3e5996d69b46e94b9875a425cc5a3270fac10ab8273eb5a63116832ef18dd",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH02_EP03_N001",
+        "CH02_EP05_NUMBER",
+        "CH03_EP01_HOME",
+        "CH03_EP02_N001",
+        "CH03_EP02_KNOWN",
+        "CH03_EP02_FIRST_NAME",
+        "CH03_EP03_EXAM",
+        "CH03_EP05_BAG",
+        "CH03_EP06_N001",
+        "CH03_EP06_FAMILY_KNOWN",
+        "CH03_EP06_FAMILY_LATE",
+        "CH04_EP03_HOME",
+        "CH04_EP03_KNOWN",
+        "CH04_EP03_LATE",
+        "CH04_EP05_AGREED",
+        "CH04_EP05_CORRECTED",
+        "CH05_EP02_HOME",
+        "CH05_EP02_FAMILY_KNOWN",
+        "CH05_EP02_FAMILY_LATE",
+        "CH06_EP02_EARLY",
+        "CH06_EP02_LATE",
+        "CH06_EP04_SUPPER",
+        "CH06_EP06_HOME"
+      ]
+    },
+    {
+      "id": "dorm_2009_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/dorm_2009_v1.png",
+      "sourceBytes": 2611661,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "0c84f7c72188b8f49c83f655f6365cf7ffdee85db7c93a4a7fb0bdfcd5d82138",
+      "prompt": "art/visual-v2/dorm_2009_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/dorm_2009_v1.jpg",
+      "resource": "images/visual-v2/dorm_2009_v1/spriteFrame",
+      "bytes": 156815,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "297525fa4755f815f6400bedf11048164e34ade1446346334d3fcc54427fe1a9",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH04_EP02_COMPARE",
+        "CH04_EP02_REARRANGE",
+        "CH04_EP03_N001",
+        "CH04_EP03_RETURN",
+        "CH04_EP04_N001",
+        "CH04_EP04_CHOICE",
+        "CH04_EP04_ASK",
+        "CH04_EP04_PROMISE",
+        "CH04_EP06_LISTEN",
+        "CH04_EP06_FIX",
+        "CH04_EP06_ASK_AGAIN",
+        "CH04_EP06_PROMISE_AGAIN",
+        "CH04_EP06_CLOSE",
+        "CH05_EP01_CHECK_FIRST",
+        "CH05_EP01_REMEMBER",
+        "CH05_EP03_ASK_ROOM",
+        "CH05_EP03_SUGGEST_ROOM",
+        "CH05_EP03_COST",
+        "CH05_EP04_SPRING",
+        "CH05_EP04_COMPARE",
+        "CH05_EP04_RECHECK",
+        "CH05_EP05_N001",
+        "CH05_EP05_CHOICE",
+        "CH05_EP06_SEPARATE",
+        "CH05_EP06_CORRECT",
+        "CH05_EP06_PACK"
+      ]
+    },
+    {
+      "id": "work_2013_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/work_2013_v1.png",
+      "sourceBytes": 2333939,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "1b8c0f917b064583f42f359b450d2e6d237285ee052b38c89bcfe8ce8a82320a",
+      "prompt": "art/visual-v2/work_2013_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/work_2013_v1.jpg",
+      "resource": "images/visual-v2/work_2013_v1/spriteFrame",
+      "bytes": 121471,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "52f2d172fe873b19033e470b3c9ae61d56f63d1d990771bd8ba3f6e6eaa6496d",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH05_EP01_FACTORY",
+        "CH06_EP01_ARRIVAL",
+        "CH06_EP06_DECEMBER"
+      ]
+    },
+    {
+      "id": "rental_2017_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/rental_2017_v1.png",
+      "sourceBytes": 2454793,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "5c116e6f7c18b902e8128d055e32666381b78206c816992620552f9b6ca45351",
+      "prompt": "art/visual-v2/rental_2017_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/rental_2017_v1.jpg",
+      "resource": "images/visual-v2/rental_2017_v1/spriteFrame",
+      "bytes": 138690,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "d766b23c58148d51732d70317ffe5af72549e403470ed6fed1f3bfd41e9b58c4",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH07_EP01_N001",
+        "CH07_EP01_AFTER_STATION",
+        "CH07_EP01_EARLY",
+        "CH07_EP01_LATE",
+        "CH07_EP01_LIST",
+        "CH07_EP01_RECHECK",
+        "CH07_EP04_N001",
+        "CH07_EP04_CHOICE",
+        "CH07_EP04_TOGETHER",
+        "CH07_EP04_PAUSE",
+        "CH07_EP04_CONFIRM",
+        "CH07_EP04_REVISE",
+        "CH07_EP04_CLOSE"
+      ]
+    },
+    {
+      "id": "street_2010_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/street_2010_v1.png",
+      "sourceBytes": 2951841,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "e7f211cf2b7b2ffe85de51c9c4b3fef693ac2849749c5d7080353a51d219a2d3",
+      "prompt": "art/visual-v2/street_2010_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/street_2010_v1.jpg",
+      "resource": "images/visual-v2/street_2010_v1/spriteFrame",
+      "bytes": 201038,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "2e6853b77cd373b22760b9bad39db85ddbf38512f8a69c5cfa0a30931b83419c",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH04_EP05_STREET",
+        "CH06_EP04_SEPARATE",
+        "CH06_EP04_CORRECTED",
+        "CH06_EP04_ROOM",
+        "CH07_EP03_N001"
+      ]
+    },
+    {
+      "id": "diner_2017_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/diner_2017_v1.png",
+      "sourceBytes": 2567876,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "f0d91bffe10ea8d6aab742619af35849314db428c03fbc296bab91ca06e6a44b",
+      "prompt": "art/visual-v2/diner_2017_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/diner_2017_v1.jpg",
+      "resource": "images/visual-v2/diner_2017_v1/spriteFrame",
+      "bytes": 149450,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "414052b3b8d2dd82ce5be017512143aafce2ba24be843e59094fec01053a06e0",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH05_EP03_CHEN",
+        "CH06_EP02_CHEN",
+        "CH06_EP06_CHEN",
+        "CH07_EP02_DINNER"
+      ]
+    },
+    {
+      "id": "clinic_2010_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/clinic_2010_v1.png",
+      "sourceBytes": 2330346,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "012aae6fea52b4811dab6ae92108c528559def6ae8685037ed44729734277547",
+      "prompt": "art/visual-v2/clinic_2010_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/clinic_2010_v1.jpg",
+      "resource": "images/visual-v2/clinic_2010_v1/spriteFrame",
+      "bytes": 121145,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "a3f42eeed4ee082b01a06fd744df5b1542eadcb072e5758a9187c52dde76f2b3",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH04_EP05_N001"
+      ]
+    },
+    {
+      "id": "phone_early_v2",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/phone_early_v2.png",
+      "sourceBytes": 2820696,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "c9aafe72dd7cf43546ab970fcca76329069b4b59c1b7441636b1aaa8cc3c5743",
+      "prompt": "art/visual-v2/phone_early_v2.prompt.txt",
+      "editedFrom": "art/visual-v2/phone_early_v1.png",
+      "referenceSha256": "555947b8a4458ef4521652ec87d39d507d768c3b6d79d788d9a2bc67750140cf",
+      "file": "assets/resources/images/visual-v2/phone_early_v2.jpg",
+      "resource": "images/visual-v2/phone_early_v2/spriteFrame",
+      "bytes": 153632,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "638810c272856fba4820d69cdcdff5ae5c223feaad8afc6b3daea0a8a931bd01",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH02_EP05_MESSAGES",
+        "CH03_EP01_MESSAGE",
+        "CH03_EP03_REVISION",
+        "CH03_EP06_PHONE",
+        "CH04_EP01_PHONE",
+        "CH04_EP02_MESSAGES",
+        "CH04_EP04_MESSAGES",
+        "CH05_EP02_MESSAGES",
+        "CH05_EP05_MESSAGES",
+        "CH06_EP01_PHONE",
+        "CH06_EP03_MESSAGES",
+        "CH06_EP06_PHONE"
+      ]
+    },
+    {
+      "id": "home_2037_day_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/home_2037_day_v1.png",
+      "sourceBytes": 2320370,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "90eae2e79da6b28a2d9350601fa9d7033151812f365686cab9fee60948702943",
+      "prompt": "art/visual-v2/home_2037_day_v1.prompt.txt",
+      "editedFrom": "art/visual-v2/home_2037_v1.png",
+      "referenceSha256": "9d0d592c36dcbf0f1057bac409f70f528e7007f7249346923400e37db4ec91cd",
+      "file": "assets/resources/images/visual-v2/home_2037_day_v1.jpg",
+      "resource": "images/visual-v2/home_2037_day_v1/spriteFrame",
+      "bytes": 154259,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "6e1c8c57aeaf6e5e5f861dcbd7607d83b03095e04b80ad6bb1c7e0363034baec",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH07_EP05_WORK",
+        "CH07_EP06_N001",
+        "CH07_EP06_SHARED",
+        "CH07_EP06_CHANGED",
+        "CH07_EP06_MORNING",
+        "CH07_EP07_DIVIDE",
+        "CH07_EP07_REVISE",
+        "CH07_EP07_NEXT",
+        "CH07_EP08_N001",
+        "CH07_EP08_PHOTO_INTRO",
+        "CH07_EP08_CLOSE",
+        "CH08_EP02_COMPARE",
+        "CH08_EP06_N001",
+        "CH08_EP06_TOLD",
+        "CH08_EP06_COMMON",
+        "CH08_EP06_CLOSE",
+        "CH09_EP02_NO_CONTACT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP03_EARLY",
+        "CH09_EP03_LATER",
+        "CH09_EP03_OWN_LIFE",
+        "CH09_EP03_LOCAL",
+        "CH09_EP03_CLOSE",
+        "CH09_EP04_MEETING_CHOICE",
+        "CH09_EP04_ACCEPT",
+        "CH09_EP04_NO_INVITE",
+        "CH09_EP04_CLOSE",
+        "CH09_EP06_N001",
+        "CH09_EP06_BEFORE",
+        "CH09_EP06_AFTER",
+        "CH09_EP06_CLOSED",
+        "CH09_EP06_UNSENT",
+        "CH10_EP02_FRIEND",
+        "CH10_EP03_N001",
+        "CH10_EP03_SHARED",
+        "CH10_EP03_REVISED",
+        "CH10_EP03_COMMON",
+        "CH10_EP04_N001",
+        "CH10_EP04_KNOWN",
+        "CH10_EP04_UNKNOWN",
+        "CH10_EP04_MET",
+        "CH10_EP04_CLOSED",
+        "CH10_EP04_UNMET",
+        "CH10_EP05_N001",
+        "CH10_EP05_AFTER",
+        "CH10_EP06_N001",
+        "CH10_EP06_LATER"
+      ]
+    },
+    {
+      "id": "campus_2009_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/campus_2009_v1.png",
+      "sourceBytes": 2831727,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "78df1938a5a79a370d36db15d61ea706eaea9332a5caad591f937f72161e399f",
+      "prompt": "art/visual-v2/campus_2009_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/campus_2009_v1.jpg",
+      "resource": "images/visual-v2/campus_2009_v1/spriteFrame",
+      "bytes": 193128,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "7871d07e9e8bcff47fd673e2160a6aa59ab1f0f09b150b08c6bf5d51ba625ab3",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH04_EP01_N001",
+        "CH04_EP06_N001",
+        "CH05_EP06_N001"
+      ]
+    },
+    {
+      "id": "office_current_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/office_current_v1.png",
+      "sourceBytes": 2172485,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "685ea918196587c39fa2eb98b0e626c75d0aea5f0a5c3c196dd14e6e0a6f80ef",
+      "prompt": "art/visual-v2/office_current_v1.prompt.txt",
+      "editedFrom": null,
+      "file": "assets/resources/images/visual-v2/office_current_v1.jpg",
+      "resource": "images/visual-v2/office_current_v1/spriteFrame",
+      "bytes": 116464,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "bddb1799a6dd793af6cae6eb0e4b99a839a27ad156ebdf7001c107d6ea1c4159",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH09_EP04_JOB_SHARED",
+        "CH09_EP04_JOB_REVISED",
+        "CH09_EP04_JOB_COMMON",
+        "CH09_EP06_CLOSE",
+        "CH10_EP01_N001",
+        "CH10_EP01_LISTEN",
+        "CH10_EP01_RECHECK",
+        "CH10_EP01_COMMON"
+      ]
+    },
+    {
+      "id": "station_2013_v2",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/station_2013_v2.png",
+      "sourceBytes": 2245022,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "d8376fdb88542186ad5f158939a89edee5f282c790d0bb565e1efccdfa019066",
+      "prompt": "art/visual-v2/station_2013_v2.prompt.txt",
+      "editedFrom": "art/visual-v2/station_2013_v1.png",
+      "referenceSha256": "79f01891f3c801fb6ada1c4c17e492be7ea0224d64e368d35a58d355922cbd65",
+      "file": "assets/resources/images/visual-v2/station_2013_v2.jpg",
+      "resource": "images/visual-v2/station_2013_v2/spriteFrame",
+      "bytes": 138454,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "cf4efefce8dd65384d2fa76eedc30c1e83bb728d49de6551c93d061789a9f61d",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH06_EP05_N001",
+        "CH06_EP05_TALK",
+        "CH06_EP05_PLATFORM"
+      ]
+    },
+    {
+      "id": "photo_shop_2007_v2",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/photo_shop_2007_v2.png",
+      "sourceBytes": 2451286,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "d9bbfab4a0839204a3a45092ae6d8f663d6c06f685fc1b5410b76d9faf5dccc3",
+      "prompt": "art/visual-v2/photo_shop_2007_v2.prompt.txt",
+      "editedFrom": "art/visual-v2/photo_shop_2007_v1.png",
+      "referenceSha256": "395dd8bd94a691c3dd507ec72e1858c56097c7164effecd5dc27e4c8c74e6928",
+      "file": "assets/resources/images/visual-v2/photo_shop_2007_v2.jpg",
+      "resource": "images/visual-v2/photo_shop_2007_v2/spriteFrame",
+      "bytes": 162611,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "d51616ffe166801f2505083258ff0c546dd9f3f1795aecf578a6fcb781ba8044",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Scene presentation candidate; mapping and final H5 validation pending",
+      "useSites": []
+    },
+    {
+      "id": "home_2037_night_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/home_2037_night_v1.png",
+      "sourceBytes": 1937635,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "c368070c4db483a4c2f0e2f1aaa664f1857beaca1df7db37d72113b6c2c0d2d3",
+      "prompt": "art/visual-v2/home_2037_night_v1.prompt.txt",
+      "editedFrom": "art/visual-v2/home_2037_v1.png",
+      "referenceSha256": "9d0d592c36dcbf0f1057bac409f70f528e7007f7249346923400e37db4ec91cd",
+      "file": "assets/resources/images/visual-v2/home_2037_night_v1.jpg",
+      "resource": "images/visual-v2/home_2037_night_v1/spriteFrame",
+      "bytes": 123586,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "f3815dd6735e0c49a9e792fe9d1e44b8de799113bb926896bc1c0988ecc27f35",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH08_EP01_N001",
+        "CH08_EP01_SHARED",
+        "CH08_EP01_COMMON",
+        "CH08_EP01_CLOSE",
+        "CH08_EP02_N001",
+        "CH08_EP02_CLOSE",
+        "CH08_EP03_N001",
+        "CH08_EP03_READ",
+        "CH08_EP03_UNREAD",
+        "CH08_EP03_CLOSE",
+        "CH08_EP04_N001",
+        "CH08_EP04_CLOSE",
+        "CH08_EP05_N001",
+        "CH08_EP05_GRADUATION",
+        "CH08_EP05_PARTIAL",
+        "CH08_EP05_CLOSE",
+        "CH09_EP01_N001",
+        "CH09_EP01_SHARED",
+        "CH09_EP01_COMMON",
+        "CH09_EP01_DRAFT",
+        "CH09_EP01_CONTACT_CHOICE",
+        "CH09_EP01_INTENT",
+        "CH09_EP01_UNSENT",
+        "CH09_EP02_KNOWN",
+        "CH09_EP02_NEW_NAME",
+        "CH09_EP02_DISCLOSE_CHOICE",
+        "CH09_EP02_TELL",
+        "CH09_EP02_WAIT",
+        "CH09_EP02_TABLE",
+        "CH09_EP03_HOME",
+        "CH09_EP06_MET",
+        "CH09_EP06_BAG",
+        "CH10_EP01_HOME",
+        "CH10_EP02_N001",
+        "CH10_EP02_PHOTOS",
+        "CH10_EP02_EVENING",
+        "CH10_EP03_ANRAN",
+        "CH10_EP05_NIGHT"
+      ]
+    },
+    {
+      "id": "parents_home_night_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/parents_home_night_v1.png",
+      "sourceBytes": 2279891,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "c9e8e4a40bebb65c6f9741f1300a0ef0f85189b0993fa1fa3baf5d1589d2fbc1",
+      "prompt": "art/visual-v2/parents_home_night_v1.prompt.txt",
+      "editedFrom": "art/visual-v2/parents_home_2007_v1.png",
+      "referenceSha256": "93755dbd708efea49e59f488d5dd0b2c1d8f3ccb49099c74850439cf5af35137",
+      "file": "assets/resources/images/visual-v2/parents_home_night_v1.jpg",
+      "resource": "images/visual-v2/parents_home_night_v1/spriteFrame",
+      "bytes": 133694,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "98b89e8f225429ced918313ea3a377ea88005647d6534102703adf495a0daaf6",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH02_EP02_NOTEBOOK",
+        "CH02_EP03_ERRANDS",
+        "CH02_EP03_REPAIR",
+        "CH02_EP06_FAMILY",
+        "CH02_EP06_CHOICE",
+        "CH02_EP06_TOLD",
+        "CH02_EP06_HIDDEN",
+        "CH02_EP06_CLOSE",
+        "CH03_EP04_RETURN"
+      ]
+    },
+    {
+      "id": "dorm_2009_night_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/dorm_2009_night_v1.png",
+      "sourceBytes": 2297858,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "5b192c99340cbd86022b3a373dfe7d311b89825a11c59e28d8ceb96b5a444140",
+      "prompt": "art/visual-v2/dorm_2009_night_v1.prompt.txt",
+      "editedFrom": "art/visual-v2/dorm_2009_v1.png",
+      "referenceSha256": "0c84f7c72188b8f49c83f655f6365cf7ffdee85db7c93a4a7fb0bdfcd5d82138",
+      "file": "assets/resources/images/visual-v2/dorm_2009_night_v1.jpg",
+      "resource": "images/visual-v2/dorm_2009_night_v1/spriteFrame",
+      "bytes": 135179,
+      "size": [
+        1080,
+        720
+      ],
+      "sha256": "f44551c5bea10a0cbfcb8c358782882d3b80a93078d18bf9635b70082c8d284e",
+      "alpha": null,
+      "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
+      "productionStatus": "Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending",
+      "useSites": [
+        "CH04_EP01_ASK",
+        "CH04_EP01_SET",
+        "CH05_EP02_N001"
+      ]
+    }
+  ],
+  "sourceOnlyCandidates": [
+    {
+      "id": "station_2013_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/station_2013_v1.png",
+      "sourceBytes": 2529896,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "79f01891f3c801fb6ada1c4c17e492be7ea0224d64e368d35a58d355922cbd65",
+      "prompt": "art/visual-v2/station_2013_v1.prompt.txt",
+      "editedFrom": null,
+      "productionStatus": "Superseded by a local Image edit; never mapped as a story backdrop"
+    },
+    {
+      "id": "photo_shop_2007_v1",
+      "kind": "background",
+      "tool": "image_gen.imagegen (current built-in Image service)",
+      "modelVersion": "Not returned by this tool; no invented model identifier",
+      "generatedAt": "2026-10-09",
+      "source": "art/visual-v2/photo_shop_2007_v1.png",
+      "sourceBytes": 2793240,
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "395dd8bd94a691c3dd507ec72e1858c56097c7164effecd5dc27e4c8c74e6928",
+      "prompt": "art/visual-v2/photo_shop_2007_v1.prompt.txt",
+      "editedFrom": null,
+      "productionStatus": "Superseded by a local Image edit; never mapped as a story backdrop"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "inputHash": "f2f77fff9ed66d860041a69ffcc52a06da8ee598dc4bd559d7e4749d15c70377",
+  "inputHash": "f35eece0dc14d524f3d5783933885d5b599e48a08760391d47c94aea390f46d9",
   "locations": [
     {
       "location": "家中",
@@ -95,29 +95,27 @@
         "CH09_EP02_SENT",
         "CH09_EP02_NO_CONTACT",
         "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE",
         "CH09_EP03_EARLY",
         "CH09_EP03_LATER",
         "CH09_EP03_REPLY",
         "CH09_EP03_OWN_LIFE",
         "CH09_EP03_LOCAL",
         "CH09_EP03_CLOSE",
-        "CH09_EP04_N001",
+        "CH09_EP03_HOME",
         "CH09_EP04_INVITE",
         "CH09_EP04_ACCEPT",
         "CH09_EP04_DECLINE_REPLY",
         "CH09_EP04_NO_INVITE",
         "CH09_EP04_CLOSE",
-        "CH09_EP05_N001",
-        "CH09_EP05_OLD_PAGE",
-        "CH09_EP05_ALONE",
-        "CH09_EP05_CLOSE",
         "CH09_EP06_N001",
         "CH09_EP06_BEFORE",
         "CH09_EP06_AFTER",
         "CH09_EP06_MET",
         "CH09_EP06_CLOSED",
         "CH09_EP06_UNSENT",
-        "CH09_EP06_CLOSE",
+        "CH09_EP06_BAG",
         "CH10_EP01_HOME",
         "CH10_EP02_N001",
         "CH10_EP02_PHOTOS",
@@ -176,7 +174,8 @@
       "years": [
         2007,
         2008,
-        2009
+        2009,
+        2037
       ],
       "nodes": [
         "CH02_EP01_N001",
@@ -204,11 +203,15 @@
         "CH03_EP04_DISCUSS",
         "CH03_EP05_ROOM",
         "CH03_EP06_LETTER",
-        "CH03_EP06_ENVELOPE"
+        "CH03_EP06_ENVELOPE",
+        "CH09_EP05_N001",
+        "CH09_EP05_TEACHER",
+        "CH09_EP05_ALONE"
       ],
       "chapters": [
         "CH02",
-        "CH03"
+        "CH03",
+        "CH09"
       ]
     },
     {
@@ -520,13 +523,16 @@
     {
       "location": "南城医院",
       "years": [
-        2010
+        2010,
+        2037
       ],
       "nodes": [
-        "CH04_EP05_N001"
+        "CH04_EP05_N001",
+        "CH09_EP03_HOSPITAL"
       ],
       "chapters": [
-        "CH04"
+        "CH04",
+        "CH09"
       ]
     },
     {
@@ -565,16 +571,8 @@
         "CH05_EP06_CLOSE",
         "CH06_EP01_N001",
         "CH06_EP04_N001",
-        "CH09_EP02_KEYS",
-        "CH09_EP02_TABLE",
-        "CH09_EP03_HOSPITAL",
-        "CH09_EP03_HOME",
-        "CH09_EP04_JOB_SHARED",
-        "CH09_EP04_JOB_REVISED",
-        "CH09_EP04_JOB_COMMON",
+        "CH09_EP04_N001",
         "CH09_EP04_COMMUTE",
-        "CH09_EP05_TEACHER",
-        "CH09_EP06_BAG",
         "CH10_END_REUNION"
       ],
       "chapters": [
@@ -940,12 +938,33 @@
       ]
     },
     {
+      "location": "单位",
+      "years": [
+        2037
+      ],
+      "nodes": [
+        "CH09_EP04_JOB_SHARED",
+        "CH09_EP04_JOB_REVISED",
+        "CH09_EP04_JOB_COMMON",
+        "CH09_EP06_CLOSE",
+        "CH10_EP01_N001",
+        "CH10_EP01_LISTEN",
+        "CH10_EP01_RECHECK",
+        "CH10_EP01_COMMON"
+      ],
+      "chapters": [
+        "CH09",
+        "CH10"
+      ]
+    },
+    {
       "location": "学校门外",
       "years": [
         2037
       ],
       "nodes": [
         "CH09_EP05_MET",
+        "CH09_EP05_OLD_PAGE",
         "CH09_EP05_FIRST_PAGE",
         "CH09_EP05_CHECKED"
       ],
@@ -954,18 +973,15 @@
       ]
     },
     {
-      "location": "单位",
+      "location": "南城公交",
       "years": [
         2037
       ],
       "nodes": [
-        "CH10_EP01_N001",
-        "CH10_EP01_LISTEN",
-        "CH10_EP01_RECHECK",
-        "CH10_EP01_COMMON"
+        "CH09_EP05_CLOSE"
       ],
       "chapters": [
-        "CH10"
+        "CH09"
       ]
     },
     {
@@ -1002,13 +1018,15 @@
       "name": "公交车",
       "locations": [
         "17路公交",
-        "南城公交站"
+        "南城公交站",
+        "南城公交"
       ],
       "chapters": [
         "CH01",
         "CH02",
         "CH03",
-        "CH05"
+        "CH05",
+        "CH09"
       ]
     },
     {
@@ -1056,6 +1074,7 @@
         "CH02",
         "CH05",
         "CH06",
+        "CH09",
         "CH10"
       ]
     },
@@ -1112,7 +1131,8 @@
         "南城医院"
       ],
       "chapters": [
-        "CH04"
+        "CH04",
+        "CH09"
       ]
     },
     {

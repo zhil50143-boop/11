@@ -1,0 +1,113 @@
+{
+  "result": "PASS",
+  "reports": [
+    {
+      "id": "CH01_EP03_PHONE",
+      "result": "PASS",
+      "paragraphs": 6,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH02_EP05_MESSAGES",
+      "result": "PASS",
+      "paragraphs": 9,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH03_EP01_MESSAGE",
+      "result": "PASS",
+      "paragraphs": 8,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH03_EP03_REVISION",
+      "result": "PASS",
+      "paragraphs": 8,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH03_EP06_PHONE",
+      "result": "PASS",
+      "paragraphs": 10,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH04_EP01_PHONE",
+      "result": "PASS",
+      "paragraphs": 11,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH04_EP02_MESSAGES",
+      "result": "PASS",
+      "paragraphs": 9,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH04_EP04_MESSAGES",
+      "result": "PASS",
+      "paragraphs": 9,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH05_EP02_MESSAGES",
+      "result": "PASS",
+      "paragraphs": 8,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH05_EP05_MESSAGES",
+      "result": "PASS",
+      "paragraphs": 8,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH06_EP01_PHONE",
+      "result": "PASS",
+      "paragraphs": 8,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH06_EP03_MESSAGES",
+      "result": "PASS",
+      "paragraphs": 8,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH06_EP06_PHONE",
+      "result": "PASS",
+      "paragraphs": 8,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH08_EP04_CALL",
+      "result": "PASS",
+      "paragraphs": 9,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH09_EP02_SENT",
+      "result": "PASS",
+      "paragraphs": 2,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH09_EP03_REPLY",
+      "result": "PASS",
+      "paragraphs": 3,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH09_EP04_INVITE",
+      "result": "PASS",
+      "paragraphs": 3,
+      "originalCopyAndOrderPreserved": true
+    },
+    {
+      "id": "CH09_EP04_DECLINE_REPLY",
+      "result": "PASS",
+      "paragraphs": 2,
+      "originalCopyAndOrderPreserved": true
+    }
+  ]
+}

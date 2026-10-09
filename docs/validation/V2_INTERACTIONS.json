@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-09",
+  "version": "1.0.0-rc.3",
+  "build": "build/visual-v2-shared-scenes-final",
+  "creator": "3.8.8",
+  "finishedAt": "2026-10-09 11:32:52",
+  "core": {
+    "tests": 57,
+    "pass": 57,
+    "initialRoutes": 508800
+  },
+  "types": [
+    "tsconfig.verify.json PASS",
+    "tsconfig.json PASS"
+  ],
+  "story": {
+    "chapters": 10,
+    "episodes": 60,
+    "nodes": 467,
+    "endings": 6
+  },
+  "whole": {
+    "steps": 290,
+    "resumedTypes": [
+      "passage",
+      "investigation",
+      "photo",
+      "letter",
+      "choice",
+      "phone",
+      "audioInteraction",
+      "transition",
+      "ending"
+    ],
+    "retriedChapters": [
+      "CH02",
+      "CH03",
+      "CH04",
+      "CH05",
+      "CH06",
+      "CH07",
+      "CH08",
+      "CH09",
+      "CH10"
+    ],
+    "readingOffset": 0.13426222905136279,
+    "errors": [],
+    "failedRequests": [],
+    "inspectionItems": 7,
+    "v2BackupVerified": true
+  },
+  "catalog": {
+    "states": 39,
+    "screens": 78,
+    "errors": [],
+    "choicesTouched": 18,
+    "loadedScenes": [
+      "home_2037_v1",
+      "school_2007_v1",
+      "campus_2009_v1",
+      "rental_2017_v1",
+      "home_2037_night_v1",
+      "office_current_v1",
+      "parents_home_night_v1",
+      "dorm_2009_v1",
+      "home_2037_day_v1",
+      "phone_current_v1",
+      "bus_2007_v1",
+      "gym_2007_v1",
+      "parents_home_2007_v1",
+      "phone_early_v2",
+      "dorm_2009_night_v1",
+      "clinic_2010_v1",
+      "street_2010_v1",
+      "work_2013_v1",
+      "diner_2017_v1",
+      "station_2013_v2"
+    ]
+  },
+  "phoneMemory": {
+    "phoneNodes": 18,
+    "scenarios": 42,
+    "screens": 40,
+    "errors": []
+  },
+  "sceneMap": {
+    "renderable": 311,
+    "mapped": 251,
+    "paperFallback": 60,
+    "used": 20
+  },
+  "art": {
+    "libraryFiles": 30,
+    "visualDeliveryBytes": 7342879,
+    "backgroundFiles": 23,
+    "activeSceneVariants": 20,
+    "sourceOnly": [
+      "station_2013_v1",
+      "photo_shop_2007_v1"
+    ]
+  },
+  "performance": [
+    {
+      "viewport": {
+        "width": 540,
+        "height": 960
+      },
+      "menuMs": 7392,
+      "storyMs": 8358,
+      "medianFrameMs": 16.600000000000364,
+      "p95FrameMs": 29.700000000000728,
+      "startupTransferBytes": 519873,
+      "storyTransferBytes": 528956,
+      "initialAudioDownloads": 0,
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "menuMs": 7234,
+      "storyMs": 8092,
+      "medianFrameMs": 16.600000000000364,
+      "p95FrameMs": 16.700000000000728,
+      "startupTransferBytes": 519873,
+      "storyTransferBytes": 528956,
+      "initialAudioDownloads": 0,
+      "errors": [],
+      "failedRequests": []
+    }
+  ],
+  "voice": [
+    {
+      "file": "assets/resources/audio/01-opening.mp3",
+      "expected": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c",
+      "sha256": "de670b1f49e3ca30159321fb7ef6adc70a9377cf3e91711e36d1b65ceffdcc5c"
+    },
+    {
+      "file": "assets/resources/audio/01-full.mp3",
+      "expected": "3a4e650df1b990ac02e519d0f1835195a52dced5c363e05e535b11f92e2f78b1",
+      "sha256": "3a4e650df1b990ac02e519d0f1835195a52dced5c363e05e535b11f92e2f78b1"
+    }
+  ],
+  "limits": [
+    "Chrome desktop touch viewports, not TapTap or physical phones",
+    "Performance runs alongside independent phone checks; synthetic sample, not isolated benchmark or device guarantee",
+    "This batch reran core/meta tests and one whole browser route, not the previous six continuous browser rounds",
+    "All-branch human reading, physical long reading and cross-age recognition remain pending",
+    "Original RC2 self-test version 275902 retained; no newer upload, main binding, submission or publication"
+  ],
+  "preview": {
+    "url": "http://127.0.0.1:57319/",
+    "build": "build/visual-v2-shared-scenes-final",
+    "progress": "Returned through the real save action before reload; Continue visibly restored 饭桌上 and the same dialogue. No choice or history written by a test harness.",
+    "screenshot": "docs/shots/v2-interactions/in-app-preserved-dinner.png"
+  }
+}

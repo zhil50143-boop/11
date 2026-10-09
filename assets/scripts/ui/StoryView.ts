@@ -10,10 +10,12 @@ import { PhotoViewer } from './PhotoViewer';
 import { LetterViewer } from './LetterViewer';
 import { AudioPlayer } from './AudioPlayer';
 import type { InteractionStoryNode } from '../story/StoryNode';
-import { paperButton } from './ArtSurface';
+import { paperButton, setPaperButtonEnabled } from './ArtSurface';
+import { objectPaper } from './ObjectSurface';
 import { ReadingSettings } from './ReadingSettings';
 import { SettingsPanel } from './SettingsPanel';
 import { InvestigationPanel } from './InvestigationPanel';
+import { MemoryComparisonPanel } from './MemoryComparisonPanel';
 const { ccclass } = _decorator;
 @ccclass('StoryView')
 export class StoryView extends Component {
@@ -69,14 +71,16 @@ export class StoryView extends Component {
       }); return;
     }
     const life = this.manager.state.life;
-    const paperInteraction = event.type === 'node' && (['photo', 'letter', 'audioInteraction'].includes(event.node.type)
-      || (event.node.type === 'choice' && this.manager.state.progress.chapterId === 'CH01'));
-    const paperReading = event.type === 'node' && event.node.type === 'passage'
-      && this.manager.state.progress.chapterId === 'CH01' && !!LifeReadingPanel.background(life.time);
-    if (!paperReading) {
+    const paperInteraction = event.type === 'node';
+    const paperReading = event.type === 'node' && (event.node.type === 'phone' || (event.node.type === 'passage'
+      && !!LifeReadingPanel.background(life.time, event.node.id)));
+    const sceneChoice = event.type === 'node' && event.node.type === 'choice' && !!LifeReadingPanel.background(life.time, event.node.id);
+    if (!paperReading && !sceneChoice) {
       const time = text(this.status, life.time.label + ' · ' + life.time.location, 785, 100, 30);
       time.node.setPosition(-100, 785); time.node.getComponent(UITransform)!.setContentSize(680, 100);
-      if (paperInteraction && event.type === 'node' && event.node.type !== 'choice') time.color = ReadingSettings.mutedInk;
+      const sceneCaption = event.type === 'node' && (event.node.id === 'CH01_EP02_C001'
+        || (event.node.type === 'choice' && LifeReadingPanel.background(life.time, event.node.id)));
+      if (paperInteraction && !sceneCaption) time.color = ReadingSettings.mutedInk;
     }
     const back = paperButton(this.status, '返回书桌', 884, () => {
       for (const scroll of this.root.getComponentsInChildren(ScrollView)) scroll.stopAutoScroll();
@@ -107,7 +111,7 @@ export class StoryView extends Component {
     if (memory) {
       const names = {fragmentary:'残缺',contradictory:'出现矛盾',reinterpreted:'重新理解',complete:'完整'};
       memoryCaption = memory.title + ' · ' + names[memory.status];
-      if (!paperReading) { const caption = text(this.status, memoryCaption, 735, 70, 26); if (paperInteraction) caption.color = ReadingSettings.mutedInk; }
+      if (!paperReading && !sceneChoice) { const caption = text(this.status, memoryCaption, 735, 70, 26); if (paperInteraction) caption.color = ReadingSettings.mutedInk; }
     }
     if (SaveManager.warning) {
       const warning = text(this.status, SaveManager.warning, -800, 70, 26);
@@ -124,16 +128,18 @@ export class StoryView extends Component {
         if (paperReading) {
           new LifeReadingPanel().show(this.root, node, this.speakers, life.time, memoryCaption, !!SaveManager.warning,
             this.manager.state.progress.readingOffset, offset => this.manager.setReadingOffset(node.id, offset),
-            () => void this.manager.advance(node.id)); break;
+            () => void this.manager.advance(node.id), node.type === 'phone'
+              ? (life.time.year < 2014 ? 'phone_early_v2' : 'phone_current_v1') : undefined); break;
         }
         new PassagePanel().show(this.root, node, this.speakers, this.manager.state.progress.readingOffset,
           offset => this.manager.setReadingOffset(node.id, offset), () => void this.manager.advance(node.id)); break;
       case 'ending':
         if (this.manager.state.flags.ROUND_COMPLETED) {
-          text(this.root, node.title, 350, 120, 48);
-          text(this.root, '这一页读完了。', 100, 100, 34);
-          button(this.root, '再读一遍', -350, () => void this.manager.nextRound());
-          button(this.root, '回到首页', -530, () => director.loadScene('Main'));
+          objectPaper(this.root);
+          text(this.root, node.title, 350, 120, 48).color = ReadingSettings.ink;
+          text(this.root, '这一页读完了。', 100, 100, 34).color = ReadingSettings.ink;
+          paperButton(this.root, '再读一遍', -350, () => void this.manager.nextRound());
+          paperButton(this.root, '回到首页', -530, () => director.loadScene('Main'));
         } else {
           new PassagePanel().show(this.root, { ...node, type: 'passage' }, this.speakers, this.manager.state.progress.readingOffset,
             offset => this.manager.setReadingOffset(node.id, offset), () => void this.manager.finish(node.id));
@@ -142,11 +148,17 @@ export class StoryView extends Component {
       case 'dialogue': case 'narration':
         new DialoguePanel().show(this.root, node, node.speaker ? this.speakers[node.speaker] ?? node.speaker : '', () => void this.manager.advance(node.id)); break;
       case 'choice':
-        new ChoicePanel().show(this.root, node, id => void this.manager.choose(id, node.id),
-          this.manager.state.progress.chapterId === 'CH01' ? life.time : undefined); break;
+        new ChoicePanel().show(this.root, node, id => void this.manager.choose(id, node.id), life.time, memoryCaption); break;
       case 'photo': new PhotoViewer().show(this.root, node, () => void this.manager.complete(node.id), this.interactionView.photoBack,
         back => { this.interactionView.photoBack = back; }); break;
-      case 'letter': new LetterViewer().show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset,
+      case 'letter':
+        if (node.id === 'CH08_EP05_RECONSTRUCT') {
+          new MemoryComparisonPanel().show(this.root, node, this.manager.state.readNodeIds.includes('CH08_EP05_N001'),
+            () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset,
+            offset => this.manager.setReadingOffset(node.id, offset), this.interactionView.letterOpen,
+            () => { this.interactionView.letterOpen = true; }); break;
+        }
+        new LetterViewer().show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset,
         offset => this.manager.setReadingOffset(node.id, offset), this.interactionView.letterOpen,
         () => { this.interactionView.letterOpen = true; }); break;
       case 'audioInteraction': this.audio.show(this.root, node, () => void this.manager.complete(node.id), this.manager.state.progress.readingOffset,
@@ -154,14 +166,15 @@ export class StoryView extends Component {
         () => { this.interactionView.transcriptOpen = true; }); break;
       case 'investigation': this.investigation(node); break;
       case 'transition': {
-        text(this.root, node.to ?? node.text, 80);
+        objectPaper(this.root);
+        text(this.root, node.to ?? node.text, 80).color = ReadingSettings.ink;
         if (ReadingSettings.current.reducedMotion) {
-          button(this.root, '继续', -650, () => void this.manager.complete(node.id)); break;
+          paperButton(this.root, '继续', -650, () => void this.manager.complete(node.id)); break;
         }
         const opacity = this.root.getComponent(UIOpacity) ?? this.root.addComponent(UIOpacity);
         opacity.opacity = 0;
         tween(opacity).to(0.45, {opacity:255}).call(() => {
-          if (this.isValid) button(this.root, '继续', -650, () => void this.manager.complete(node.id));
+          if (this.isValid) paperButton(this.root, '继续', -650, () => void this.manager.complete(node.id));
         }).start(); break;
       }
       default: text(this.root, '该片段暂时无法继续。', 0);
@@ -174,14 +187,15 @@ export class StoryView extends Component {
         this.investigationPages[node.id] ?? 0, page => { this.investigationPages[node.id] = page; });
       return;
     }
-    text(this.root, node.text, 500, 160);
-    if (!node.requiredFlags?.every(f => this.manager.state.flags[f])) text(this.root, node.requiredHint ?? '先看看照片和信封。', 365, 70, 30);
+    objectPaper(this.root);
+    text(this.root, node.text, 500, 160).color = ReadingSettings.ink;
+    if (!node.requiredFlags?.every(f => this.manager.state.flags[f])) text(this.root, node.requiredHint ?? '先看看照片和信封。', 365, 70, 30).color = ReadingSettings.mutedInk;
     node.items?.forEach((item, i) => {
       const viewed = this.manager.state.flags[item.viewedFlag] ? '（看过）' : '';
-      button(this.root, item.text + viewed, 200 - i * 155, () => void this.manager.inspect(item.id, node.id));
+      paperButton(this.root, item.text + viewed, 200 - i * 155, () => void this.manager.inspect(item.id, node.id));
     });
-    const done = button(this.root, node.doneText ?? '收好纸箱', -650, () => void this.manager.complete(node.id));
-    done.interactable = node.requiredFlags?.every(f => this.manager.state.flags[f]) ?? true;
+    const done = paperButton(this.root, node.doneText ?? '收好纸箱', -650, () => void this.manager.complete(node.id));
+    setPaperButtonEnabled(done, node.requiredFlags?.every(f => this.manager.state.flags[f]) ?? true);
   }
   onDestroy(): void {
     this.settings?.destroy();

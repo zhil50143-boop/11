@@ -9,12 +9,16 @@
 | EXTERNAL_REVIEW_V2.md | 用户提供的工程对照审核 | 以f976796为旧快照，截图缺口已补基线 |
 | EXTERNAL_REVIEW_2026-10-09.md | 用户最新十章成品打磨审查与采用范围 | 明确取证限制、P0/P1与冻结结构，不沿用自动调度旧推断 |
 | CHAPTER01_VISUAL_AUDIT.md / validation/V2_CH01_OBJECTS.json | 第一章物件切片与全游戏核对 | 分页、决定承接、图片/录音失败、门槛、当前构建及后续待验 |
+| INTERACTION_VISUAL_AUDIT.md / validation/V2_INTERACTIONS.json | 共用互动与共享场景全游戏核对 | 57测试/508800路线、最终290步、18手机/42专项；真实手机/真人待验 |
+| shots/v2-interactions/catalog/index.json / phone-memory/index.json | 当前日夜大字目录及手机/记忆专项 | 39状态78图、18次决定点按、42专项40图，包含实际加载/偏移/失败回退 |
+| PROSE_EDIT_LOG.json / validation/V2_SCENE_MAP.json | 每条原句与原因、实际场景映射 | 一重复段/15地点标注；311正文手机决定，251映射/60纸面回退 |
+| INTERACTION_AESTHETIC_REVIEW.md / INTERACTION_EVIDENCE_REVIEW.md | 两名独立评审的实际原图/截图/源码检查 | 已提出的按钮、数字键、墙钟、人像卡和混合空间问题关闭；非全量独立运行 |
 | OPTIMIZATION_ROADMAP_SOURCE.md | 用户DOCX抽取的路线图原文 | Phase0/1及预算建议；平台条款须另核 |
-| VISUAL_V2_SPEC.md | 三屏、决定变体、皮肤与模板规格 | 布局已确认；首页及第一章两处正文已接入 |
+| VISUAL_V2_SPEC.md | 三屏、决定变体、皮肤与模板规格 | 全游戏统一纸面，20种实际场景/手机变体；未知/混合地点回退 |
 | READING_SETTINGS.md | 字号/纸面/音量/减少动态、存储边界与返回书桌 | 已接入实际Main/Story；手机安全区待验 |
 | shots/v2-reading-settings/index.json / shots/v2-reading-navigation/index.json | 设置重排53图、通用入口12状态×5比例60图 | 实际桌面触摸与截图；不代替物理手机 |
-| ART_SOURCE_POLICY.md / ../art/visual-v2/manifest.json | 用户最新Image来源要求与每件提示/散列 | 新增10件；具体模型型号工具未回传 |
-| ASSET_REGISTER.csv / baseline/SCENE_PROP_LIST.md | 真实素材和待产条目、地点与物件清单 | 16个已入库文件、53地点标签，12共享空间初分 |
+| ART_SOURCE_POLICY.md / ../art/visual-v2/manifest.json | 用户最新Image来源要求与每件提示/散列 | 库30文件7342879字节；20种实际场景/手机，具体模型未回传 |
+| ASSET_REGISTER.csv / baseline/SCENE_PROP_LIST.md | 真实素材和待产条目、地点与物件清单 | 36个实际资源文件、54地点标签，12共享空间初分；历史候选与当前使用单列 |
 | baseline/STORY_EXPERIENCE.md / PROSE_REVIEW.md | 60片段估算和文本线索 | 不代替真人时长；不自动改正文 |
 | shots/rc2-baseline/index.json | 12状态×5视口实际截图与节点/字体/热点 | 当前RC2功能视觉基线，不是手机验收 |
 | shots/v2-life-slice/index.json / shots/v2-image-candidates-fixed/index.json | 新视觉切片60状态图与20设计预览图 | 明确区分正常玩法、候选与手机待验 |

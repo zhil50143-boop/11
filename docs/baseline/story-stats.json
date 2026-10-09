@@ -1,5 +1,5 @@
 {
-  "inputHash": "f2f77fff9ed66d860041a69ffcc52a06da8ee598dc4bd559d7e4749d15c70377",
+  "inputHash": "f35eece0dc14d524f3d5783933885d5b599e48a08760391d47c94aea390f46d9",
   "chapters": 10,
   "episodes": 60,
   "nodes": 467,
@@ -929,7 +929,7 @@
       "episode": "CH08_EP02",
       "title": "先看日期",
       "nodes": 5,
-      "allBranchCharacters": 1108,
+      "allBranchCharacters": 1014,
       "choiceNodes": 0,
       "interactionNodes": 1,
       "timeLabels": [
@@ -1062,8 +1062,7 @@
         "2037 · 秋 · 晚饭前的桌子"
       ],
       "places": [
-        "家中",
-        "南城"
+        "家中"
       ]
     },
     {
@@ -1087,7 +1086,7 @@
       ],
       "places": [
         "家中",
-        "南城"
+        "南城医院"
       ]
     },
     {
@@ -1112,8 +1111,9 @@
         "2037 · 秋 · 把袋子减轻"
       ],
       "places": [
-        "家中",
-        "南城"
+        "南城",
+        "单位",
+        "家中"
       ]
     },
     {
@@ -1136,9 +1136,9 @@
         "2037 · 秋 · 回家以前"
       ],
       "places": [
-        "家中",
-        "南城",
-        "学校门外"
+        "南城二中",
+        "学校门外",
+        "南城公交"
       ]
     },
     {
@@ -1162,7 +1162,7 @@
       ],
       "places": [
         "家中",
-        "南城"
+        "单位"
       ]
     },
     {
@@ -2029,10 +2029,10 @@
         },
         {
           "episode": "CH08_EP02",
-          "characters": 1108,
+          "characters": 1014,
           "estimatedMinutes": [
-            2.22,
-            2.77
+            2.03,
+            2.54
           ],
           "outsideTarget": true
         },
@@ -2181,7 +2181,7 @@
           "outsideTarget": true
         }
       ],
-      "characters": 71847,
+      "characters": 71753,
       "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
     },
     {
@@ -2925,10 +2925,10 @@
         },
         {
           "episode": "CH08_EP02",
-          "characters": 1108,
+          "characters": 1014,
           "estimatedMinutes": [
-            2.22,
-            2.77
+            2.03,
+            2.54
           ],
           "outsideTarget": true
         },
@@ -3077,7 +3077,7 @@
           "outsideTarget": true
         }
       ],
-      "characters": 70949,
+      "characters": 70855,
       "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
     },
     {
@@ -3813,10 +3813,10 @@
         },
         {
           "episode": "CH08_EP02",
-          "characters": 1108,
+          "characters": 1014,
           "estimatedMinutes": [
-            2.22,
-            2.77
+            2.03,
+            2.54
           ],
           "outsideTarget": true
         },
@@ -3965,7 +3965,7 @@
           "outsideTarget": true
         }
       ],
-      "characters": 69879,
+      "characters": 69785,
       "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
     },
     {
@@ -4712,10 +4712,10 @@
         },
         {
           "episode": "CH08_EP02",
-          "characters": 1108,
+          "characters": 1014,
           "estimatedMinutes": [
-            2.22,
-            2.77
+            2.03,
+            2.54
           ],
           "outsideTarget": true
         },
@@ -4864,7 +4864,7 @@
           "outsideTarget": true
         }
       ],
-      "characters": 71886,
+      "characters": 71792,
       "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
     },
     {
@@ -5595,10 +5595,10 @@
         },
         {
           "episode": "CH08_EP02",
-          "characters": 1108,
+          "characters": 1014,
           "estimatedMinutes": [
-            2.22,
-            2.77
+            2.03,
+            2.54
           ],
           "outsideTarget": true
         },
@@ -5747,7 +5747,7 @@
           "outsideTarget": true
         }
       ],
-      "characters": 68392,
+      "characters": 68298,
       "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
     },
     {
@@ -6478,10 +6478,10 @@
         },
         {
           "episode": "CH08_EP02",
-          "characters": 1108,
+          "characters": 1014,
           "estimatedMinutes": [
-            2.22,
-            2.77
+            2.03,
+            2.54
           ],
           "outsideTarget": true
         },
@@ -6630,7 +6630,7 @@
           "outsideTarget": true
         }
       ],
-      "characters": 68355,
+      "characters": 68261,
       "method": "Domain runtime actions, one count per unique visited node. Audio transcript counted as optional text, back text counted when presented. No human duration inferred."
     }
   ],
@@ -6666,6 +6666,19 @@
       "profile": "REUNION",
       "scene": "家中",
       "nodes": [
+        "CH09_EP02_TELL",
+        "CH09_EP02_SENT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE"
+      ],
+      "characters": 1148,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "REUNION",
+      "scene": "家中",
+      "nodes": [
         "CH09_EP03_EARLY",
         "CH09_EP03_REPLY",
         "CH09_EP03_OWN_LIFE",
@@ -6678,18 +6691,6 @@
       "profile": "REUNION",
       "scene": "家中",
       "nodes": [
-        "CH09_EP06_N001",
-        "CH09_EP06_BEFORE",
-        "CH09_EP06_MET",
-        "CH09_EP06_CLOSE"
-      ],
-      "characters": 693,
-      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
-    },
-    {
-      "profile": "REUNION",
-      "scene": "家中",
-      "nodes": [
         "CH10_EP02_N001",
         "CH10_EP02_PHOTOS",
         "CH10_EP02_FRIEND",
@@ -6723,6 +6724,19 @@
         "CH02_EP01_AFTER_CLASS"
       ],
       "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "GOODBYE",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP02_TELL",
+        "CH09_EP02_SENT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE"
+      ],
+      "characters": 1148,
       "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
     },
     {
@@ -6741,18 +6755,6 @@
       "profile": "GOODBYE",
       "scene": "家中",
       "nodes": [
-        "CH09_EP06_N001",
-        "CH09_EP06_BEFORE",
-        "CH09_EP06_CLOSED",
-        "CH09_EP06_CLOSE"
-      ],
-      "characters": 653,
-      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
-    },
-    {
-      "profile": "GOODBYE",
-      "scene": "家中",
-      "nodes": [
         "CH10_EP02_N001",
         "CH10_EP02_PHOTOS",
         "CH10_EP02_FRIEND",
@@ -6792,6 +6794,18 @@
       "profile": "UNDERSTAND",
       "scene": "家中",
       "nodes": [
+        "CH09_EP02_NO_CONTACT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE"
+      ],
+      "characters": 1005,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNDERSTAND",
+      "scene": "家中",
+      "nodes": [
         "CH10_EP02_N001",
         "CH10_EP02_PHOTOS",
         "CH10_EP02_FRIEND",
@@ -6825,6 +6839,19 @@
         "CH02_EP01_AFTER_CLASS"
       ],
       "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "UNSENT",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP02_TELL",
+        "CH09_EP02_SENT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE"
+      ],
+      "characters": 1148,
       "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
     },
     {
@@ -6837,18 +6864,6 @@
         "CH09_EP03_CLOSE"
       ],
       "characters": 806,
-      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
-    },
-    {
-      "profile": "UNSENT",
-      "scene": "家中",
-      "nodes": [
-        "CH09_EP06_N001",
-        "CH09_EP06_BEFORE",
-        "CH09_EP06_MET",
-        "CH09_EP06_CLOSE"
-      ],
-      "characters": 693,
       "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
     },
     {
@@ -6888,6 +6903,18 @@
         "CH02_EP01_AFTER_CLASS"
       ],
       "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "TOGETHER",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP02_NO_CONTACT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE"
+      ],
+      "characters": 1005,
       "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
     },
     {
@@ -6927,6 +6954,18 @@
         "CH02_EP01_AFTER_CLASS"
       ],
       "characters": 1098,
+      "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
+    },
+    {
+      "profile": "IF_THEN",
+      "scene": "家中",
+      "nodes": [
+        "CH09_EP02_NO_CONTACT",
+        "CH09_EP02_CLOSE",
+        "CH09_EP02_KEYS",
+        "CH09_EP02_TABLE"
+      ],
+      "characters": 1005,
       "review": "Four or more text nodes without an explicit location change or interaction. Editorial clue only; continuous life narration may be intentional."
     },
     {

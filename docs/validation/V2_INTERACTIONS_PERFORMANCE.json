@@ -1,0 +1,585 @@
+{
+  "reports": [
+    {
+      "viewport": {
+        "width": 540,
+        "height": 960
+      },
+      "environment": "Chrome desktop SwiftShader, mobile touch viewport. Cold start emulated 1.6Mbps/80ms latency/4x CPU; idle frame sample after throttles removed. Not TapTap or physical phone performance.",
+      "menuMs": 7392,
+      "storyMs": 8358,
+      "startupTransferBytes": 519873,
+      "storyTransferBytes": 528956,
+      "initialAudioDownloads": 0,
+      "initialNativePhotoDownloads": 0,
+      "jsHeapBytes": 16186813,
+      "medianFrameMs": 16.600000000000364,
+      "p95FrameMs": 29.700000000000728,
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 540,
+        "height": 960,
+        "top": 0,
+        "right": 540,
+        "bottom": 960,
+        "left": 0
+      },
+      "touchTargets": [
+        {
+          "title": "继续",
+          "enabled": true,
+          "x": 270,
+          "y": 890,
+          "width": 450,
+          "height": 66
+        },
+        {
+          "title": "返回书桌",
+          "enabled": true,
+          "x": 95,
+          "y": 38,
+          "width": 132,
+          "height": 66
+        },
+        {
+          "title": "阅读设置",
+          "enabled": true,
+          "x": 464,
+          "y": 38,
+          "width": 108,
+          "height": 66
+        }
+      ],
+      "typography": [
+        {
+          "node": "Text",
+          "fontSize": 30,
+          "cssFontSize": 15,
+          "lineHeight": 23
+        },
+        {
+          "node": "Text",
+          "fontSize": 56,
+          "cssFontSize": 28,
+          "lineHeight": 36
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 23,
+          "lineHeight": 40.5
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 32,
+          "cssFontSize": 16,
+          "lineHeight": 28
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 23,
+          "lineHeight": 40.5
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 23,
+          "lineHeight": 40.5
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 32,
+          "cssFontSize": 16,
+          "lineHeight": 28
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 23,
+          "lineHeight": 40.5
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 32,
+          "cssFontSize": 16,
+          "lineHeight": 28
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 23,
+          "lineHeight": 40.5
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 32,
+          "cssFontSize": 16,
+          "lineHeight": 28
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 23,
+          "lineHeight": 40.5
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 23,
+          "lineHeight": 40.5
+        },
+        {
+          "node": "Text",
+          "fontSize": 44,
+          "cssFontSize": 22,
+          "lineHeight": 28
+        },
+        {
+          "node": "Text",
+          "fontSize": 44,
+          "cssFontSize": 22,
+          "lineHeight": 28
+        },
+        {
+          "node": "Text",
+          "fontSize": 44,
+          "cssFontSize": 22,
+          "lineHeight": 28
+        }
+      ],
+      "encodedResponses": [
+        {
+          "url": "http://127.0.0.1:57329/",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/style.f76d1.css",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/polyfills.bundle.5adbf.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/system.bundle.543e6.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/import-map.3aa37.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/index.df598.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/application.a7cb1.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/cocos-js/cc.74960.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/settings.b284b.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/chunks/bundle.5227e.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/internal/config.38906.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/internal/index.38906.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/internal/import/0b/0b0f7a282.c7c7d.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/config.caa2d.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/index.caa2d.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/config.9dbb3.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/index.9dbb3.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/import/66/6634dd05-0617-44e7-a62d-64c7d3824321.04cf4.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/import/47/479a8652-7c93-40e3-bd45-847276c53afa.243f4.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/17/1788f5c1-d4b2-452b-ada3-6c451d5f55b8@f9941.b06c0.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/ab/ab9094da-c84b-4502-a145-4cd3bcb90120@f9941.3def9.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/14/14f646c2-8d77-4d56-8ceb-a3ba5a048462@f9941.b809c.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/08/08bbab437.4f3af.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/import/d5/d56a1501-4795-4448-b0a5-8efc31c541ed.2e881.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/17/1788f5c1-d4b2-452b-ada3-6c451d5f55b8.c16a8.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/ab/ab9094da-c84b-4502-a145-4cd3bcb90120.a2533.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/14/14f646c2-8d77-4d56-8ceb-a3ba5a048462.c16a8.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/74/7489b66c-0ac6-4e8e-a7fd-d4a5604b5031.b2eaa.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/ed/ed25f091-5697-4da1-9b40-0dfaafcec4a4.b401e.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/45/45e7e148-8019-484f-a307-a027976c0f66.f04ba.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/dd/dd5bd6da-5798-465a-a132-75938f856033.1114a.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/4b/4bb0da44-4ff6-4538-a37f-43902aa1a4d6.44b3e.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/80/805e3e0f-18a4-42d6-98b3-efcdae9dde6f@f9941.c8278.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/80/805e3e0f-18a4-42d6-98b3-efcdae9dde6f.c16a8.json",
+          "encoding": "gzip"
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "environment": "Chrome desktop SwiftShader, mobile touch viewport. Cold start emulated 1.6Mbps/80ms latency/4x CPU; idle frame sample after throttles removed. Not TapTap or physical phone performance.",
+      "menuMs": 7234,
+      "storyMs": 8092,
+      "startupTransferBytes": 519873,
+      "storyTransferBytes": 528956,
+      "initialAudioDownloads": 0,
+      "initialNativePhotoDownloads": 0,
+      "jsHeapBytes": 16128965,
+      "medianFrameMs": 16.600000000000364,
+      "p95FrameMs": 16.700000000000728,
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "touchTargets": [
+        {
+          "title": "继续",
+          "enabled": true,
+          "x": 195,
+          "y": 718.1111111111111,
+          "width": 325,
+          "height": 47.666666666666664
+        },
+        {
+          "title": "返回书桌",
+          "enabled": true,
+          "x": 68.61111111111111,
+          "y": 102.77777777777777,
+          "width": 95.33333333333333,
+          "height": 47.666666666666664
+        },
+        {
+          "title": "阅读设置",
+          "enabled": true,
+          "x": 335.1111111111111,
+          "y": 102.77777777777777,
+          "width": 78,
+          "height": 47.666666666666664
+        }
+      ],
+      "typography": [
+        {
+          "node": "Text",
+          "fontSize": 30,
+          "cssFontSize": 10.833333333333334,
+          "lineHeight": 16.61111111111111
+        },
+        {
+          "node": "Text",
+          "fontSize": 56,
+          "cssFontSize": 20.22222222222222,
+          "lineHeight": 26
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 16.61111111111111,
+          "lineHeight": 29.25
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 32,
+          "cssFontSize": 11.555555555555555,
+          "lineHeight": 20.22222222222222
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 16.61111111111111,
+          "lineHeight": 29.25
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 16.61111111111111,
+          "lineHeight": 29.25
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 32,
+          "cssFontSize": 11.555555555555555,
+          "lineHeight": 20.22222222222222
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 16.61111111111111,
+          "lineHeight": 29.25
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 32,
+          "cssFontSize": 11.555555555555555,
+          "lineHeight": 20.22222222222222
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 16.61111111111111,
+          "lineHeight": 29.25
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 32,
+          "cssFontSize": 11.555555555555555,
+          "lineHeight": 20.22222222222222
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 16.61111111111111,
+          "lineHeight": 29.25
+        },
+        {
+          "node": "Paragraph",
+          "fontSize": 46,
+          "cssFontSize": 16.61111111111111,
+          "lineHeight": 29.25
+        },
+        {
+          "node": "Text",
+          "fontSize": 44,
+          "cssFontSize": 15.88888888888889,
+          "lineHeight": 20.22222222222222
+        },
+        {
+          "node": "Text",
+          "fontSize": 44,
+          "cssFontSize": 15.88888888888889,
+          "lineHeight": 20.22222222222222
+        },
+        {
+          "node": "Text",
+          "fontSize": 44,
+          "cssFontSize": 15.88888888888889,
+          "lineHeight": 20.22222222222222
+        }
+      ],
+      "encodedResponses": [
+        {
+          "url": "http://127.0.0.1:57329/",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/style.f76d1.css",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/polyfills.bundle.5adbf.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/system.bundle.543e6.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/import-map.3aa37.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/index.df598.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/application.a7cb1.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/cocos-js/cc.74960.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/settings.b284b.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/src/chunks/bundle.5227e.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/internal/config.38906.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/internal/index.38906.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/internal/import/0b/0b0f7a282.c7c7d.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/config.caa2d.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/index.caa2d.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/config.9dbb3.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/index.9dbb3.js",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/import/66/6634dd05-0617-44e7-a62d-64c7d3824321.04cf4.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/import/47/479a8652-7c93-40e3-bd45-847276c53afa.243f4.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/17/1788f5c1-d4b2-452b-ada3-6c451d5f55b8@f9941.b06c0.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/ab/ab9094da-c84b-4502-a145-4cd3bcb90120@f9941.3def9.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/14/14f646c2-8d77-4d56-8ceb-a3ba5a048462@f9941.b809c.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/08/08bbab437.4f3af.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/main/import/d5/d56a1501-4795-4448-b0a5-8efc31c541ed.2e881.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/17/1788f5c1-d4b2-452b-ada3-6c451d5f55b8.c16a8.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/ab/ab9094da-c84b-4502-a145-4cd3bcb90120.a2533.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/14/14f646c2-8d77-4d56-8ceb-a3ba5a048462.c16a8.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/74/7489b66c-0ac6-4e8e-a7fd-d4a5604b5031.b2eaa.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/ed/ed25f091-5697-4da1-9b40-0dfaafcec4a4.b401e.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/45/45e7e148-8019-484f-a307-a027976c0f66.f04ba.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/dd/dd5bd6da-5798-465a-a132-75938f856033.1114a.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/4b/4bb0da44-4ff6-4538-a37f-43902aa1a4d6.44b3e.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/80/805e3e0f-18a4-42d6-98b3-efcdae9dde6f@f9941.c8278.json",
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:57329/assets/resources/import/80/805e3e0f-18a4-42d6-98b3-efcdae9dde6f.c16a8.json",
+          "encoding": "gzip"
+        }
+      ],
+      "errors": [],
+      "failedRequests": []
+    }
+  ],
+  "limitations": "Synthetic throttling and desktop rendering are diagnostic samples, not device acceptance. No human reading time inferred."
+}

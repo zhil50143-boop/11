@@ -1,20 +1,40 @@
-# 第一批Image美术素材
+# Image视觉资产与制作历史
 
-当前10件使用内置Image通道实际生成，原图与完整提示保留。三个背景、纸面和信封已进入视觉切片；MP3已接真实播放器与第一章旧物，新增档案袋、公交票和手绳已在第一章实显。相册仍仅设计预览，不能称十章美术全部完成。
+当前库 30 件交付文件，共 7342879 字节；含场景窗、手机物件、纸面及旧物，不表示新增30个剧情场景。实际阅读映射采用20个场景/手机版本，剩余是首页、纸面、旧物或有明确标签的历史候选。所有原图、完整提示、局部Image编辑参考链、原图和交付散列见manifest.json与PROMPTS.md；工具未回传具体模型型号，不杜撰。
 
-| 素材 | 原图 | 完整提示 | 交付资源 |
-| --- | --- | --- | --- |
-| 2037家庭雨夜 | [原图](home_2037_v1.png) | [提示](home_2037_v1.prompt.txt) | [172412字节](../../assets/resources/images/visual-v2/home_2037_v1.jpg) |
-| 2007公交 | [原图](bus_2007_v1.png) | [提示](bus_2007_v1.prompt.txt) | [223039字节](../../assets/resources/images/visual-v2/bus_2007_v1.jpg) |
-| 2037书桌 | [原图](desk_2037_v1.png) | [提示](desk_2037_v1.prompt.txt) | [214269字节](../../assets/resources/images/visual-v2/desk_2037_v1.jpg) |
-| 阅读纸面 | [原图](paper_v1.png) | [提示](paper_v1.prompt.txt) | [122751字节](../../assets/resources/images/visual-v2/paper_v1.jpg) |
-| 无邮戳信封 | [原图](envelope_v1.png) | [提示](envelope_v1.prompt.txt) | [359587字节](../../assets/resources/images/visual-v2/envelope_v1.png) |
-| 普通相册 | [原图](album_v1.png) | [提示](album_v1.prompt.txt) | [862717字节](../../assets/resources/images/visual-v2/album_v1.png) |
-| 旧MP3 | [原图](mp3_v1.png) | [提示](mp3_v1.prompt.txt) | [749016字节](../../assets/resources/images/visual-v2/mp3_v1.png) |
-| 普通档案袋 | [原图](archive_folder_v1.png) | [提示](archive_folder_v1.prompt.txt) | [1079879字节](../../assets/resources/images/visual-v2/archive_folder_v1.png) |
-| 17路票底材 | [原图](bus_ticket_v1.png) | [提示](bus_ticket_v1.prompt.txt) | [338068字节](../../assets/resources/images/visual-v2/bus_ticket_v1.png) |
-| 褪色手绳 | [原图](wrist_cord_v1.png) | [提示](wrist_cord_v1.prompt.txt) | [193400字节](../../assets/resources/images/visual-v2/wrist_cord_v1.png) |
+只进行尺寸/编码交付处理，语义改图仍用Image；第三版声音未变。日夜家庭与宿舍保留同一空间布局。空白键、固定墙钟与柜内人像卡的三个旧候选保留制作历史，新版本才进入当前映射。
 
-合计交付4315138字节，第二批新增1611347字节。只缩放、编码，原始像素与透明度保留；没有在图外重新绘画。公交初稿磨损过重，用Image工具定向减轻；被否决初稿仅留作编辑链记录，不在游戏资源目录。票没有生成可读日期/价格，17路由原剧情对应的本地字层显示，不能据图新增线索。
+| 资源 | 类型 | 字节 | 实际使用/状态 |
+| --- | --- | ---: | --- |
+| home_2037_v1 | background | 172412 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| bus_2007_v1 | background | 223039 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| desk_2037_v1 | background | 214269 | In-engine visual slice; full-game, human and physical phone acceptance pending |
+| paper_v1 | paper | 122751 | In-engine visual slice; full-game, human and physical phone acceptance pending |
+| envelope_v1 | prop | 359587 | In-engine visual slice; full-game, human and physical phone acceptance pending |
+| album_v1 | prop | 862717 | Design preview only; no real lookback implemented |
+| mp3_v1 | prop | 749016 | In-engine visual slice; full-game, human and physical phone acceptance pending |
+| archive_folder_v1 | prop | 1079879 | In-engine visual slice; full-game, human and physical phone acceptance pending |
+| bus_ticket_v1 | prop | 338068 | In-engine visual slice; full-game, human and physical phone acceptance pending |
+| wrist_cord_v1 | prop | 193400 | In-engine visual slice; full-game, human and physical phone acceptance pending |
+| phone_early_v1 | background | 159844 | Superseded by phone_early_v2; original and prior development evidence retained |
+| phone_current_v1 | background | 153046 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| school_2007_v1 | background | 229632 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| gym_2007_v1 | background | 138661 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| parents_home_2007_v1 | background | 146942 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| dorm_2009_v1 | background | 156815 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| work_2013_v1 | background | 121471 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| rental_2017_v1 | background | 138690 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| street_2010_v1 | background | 201038 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| diner_2017_v1 | background | 149450 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| clinic_2010_v1 | background | 121145 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| phone_early_v2 | background | 153632 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| home_2037_day_v1 | background | 154259 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| campus_2009_v1 | background | 193128 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| office_current_v1 | background | 116464 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| station_2013_v2 | background | 138454 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| photo_shop_2007_v2 | background | 162611 | Scene presentation candidate; mapping and final H5 validation pending |
+| home_2037_night_v1 | background | 123586 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| parents_home_night_v1 | background | 133694 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
+| dorm_2009_night_v1 | background | 135179 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
 
-[详细生成记录](manifest.json)、[提示词全集](PROMPTS.md)、[来源与制作约束](../../docs/ART_SOURCE_POLICY.md)。
+已实际查看并经两名独立评审，地图边界和必要修正见docs/INTERACTION_*_REVIEW.md。20种场景/手机均有最终H5 SpriteFrame实显记录；桌面检查不代替真机、真人时长或跨龄辨认。

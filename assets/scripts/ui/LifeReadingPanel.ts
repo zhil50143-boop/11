@@ -4,23 +4,22 @@ import { artSurface, paperButton } from './ArtSurface';
 import { ReadingSettings } from './ReadingSettings';
 import type { PassageStoryNode } from '../story/StoryNode';
 import type { StoryTime } from '../core/GameState';
+import { sharedScene } from './SharedScenes';
 
-// First visual slice only: assets never determine facts, evidence, choices or time.
+// Presentation assets never determine facts, evidence, choices or time.
 export class LifeReadingPanel {
-  static background(time: StoryTime): string | undefined {
-    if (time.year === 2037 && time.timeline === 'present' && time.location === '家中') return 'home_2037_v1';
-    if (time.year === 2007 && time.location.includes('公交')) return 'bus_2007_v1';
-    return undefined;
+  static background(time: StoryTime, nodeId = ''): string | undefined {
+    return sharedScene(time, nodeId);
   }
   show(root: Node, node: PassageStoryNode, speakers: Record<string, string>, time: StoryTime,
     memoryCaption: string | undefined, warning: boolean, offset: number,
-    changed: (offset: number) => void, next: () => void): void {
+    changed: (offset: number) => void, next: () => void, background = LifeReadingPanel.background(time, node.id)): void {
     const backdrop = container(root, 'ReadingPaper');
     backdrop.getComponent(UITransform)!.setContentSize(1080, 1920);
     const surface = backdrop.addComponent(Graphics); surface.fillColor = ReadingSettings.paper;
     surface.rect(-540, -960, 1080, 1920); surface.fill();
     artSurface(backdrop, 'paper_v1', 0, 0, 1080, 1920, false, ReadingSettings.current.theme === 'night' ? ReadingSettings.paperTint : time.timeline === 'present' ? '#eceee9' : '#fff9ef');
-    artSurface(root, LifeReadingPanel.background(time)!, 0, 642, 1080, 636, true);
+    if (background) artSurface(root, background, 0, 642, 1080, 636, true);
     const ink = ReadingSettings.ink, muted = ReadingSettings.mutedInk;
     const heading = (value: string, y: number, height: number, size: number) => {
       const label = text(root, value, y, height, size); label.color = muted;

@@ -6,7 +6,7 @@ import { ReadingSettings } from './ReadingSettings';
 // A readable physical document; the same text remains available if audio fails.
 export class DocumentPanel {
   show(root: Node, value: string, offset: number, changed: (offset: number) => void,
-    reachedEnd: () => void, layout = { height: 1110, y: 0 }): ScrollView {
+    reachedEnd: () => void, layout: { height: number; y: number; recall?: string } = { height: 1110, y: 0 }): ScrollView {
     const height = layout.height;
     const area = container(root, 'Document', layout.y);
     area.getComponent(UITransform)!.setContentSize(900, height);
@@ -22,16 +22,23 @@ export class DocumentPanel {
     let top = 44;
     // One giant Label can exceed the WebGL canvas texture height and stretch
     // glyphs. Keep the source's own line/paragraph boundaries in separate labels.
-    for (const paragraph of value.split('\n')) {
-      if (!paragraph) { top += lineHeight; continue; }
-      const body = container(content, 'DocumentText');
+    const line = (paragraph: string, name = 'DocumentText', color = ReadingSettings.ink, fontSize = size) => {
+      if (!paragraph) { top += lineHeight; return; }
+      const body = container(content, name);
       const box = body.getComponent(UITransform)!; box.setAnchorPoint(0.5, 1); box.setContentSize(804, 100); body.setPosition(0, -top);
-      const label = body.addComponent(Label); label.string = paragraph; label.fontSize = size; label.lineHeight = lineHeight;
+      const label = body.addComponent(Label); label.string = paragraph; label.fontSize = fontSize; label.lineHeight = lineHeight;
       label.enableWrapText = true; label.overflow = Label.Overflow.RESIZE_HEIGHT;
       label.horizontalAlign = Label.HorizontalAlign.LEFT; label.verticalAlign = Label.VerticalAlign.TOP;
-      label.color = ReadingSettings.ink; label.updateRenderData(true);
+      label.color = color; label.updateRenderData(true);
       top += box.height;
+    };
+    if (layout.recall) {
+      line('原来记得的', 'ComparisonHeading', ReadingSettings.mutedInk, 32);
+      top += 16;
+      line(layout.recall, 'MemoryRecallText'); top += lineHeight;
+      line('对过的记录', 'ComparisonHeading', ReadingSettings.mutedInk, 32); top += 16;
     }
+    for (const paragraph of value.split('\n')) line(paragraph);
     transform.setContentSize(900, Math.max(height, top + 44)); content.setPosition(0, height / 2);
     const scroll = area.addComponent(ScrollView); scroll.content = content;
     scroll.horizontal = false; scroll.vertical = true; scroll.inertia = !ReadingSettings.current.reducedMotion;
