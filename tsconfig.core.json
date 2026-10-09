@@ -12,6 +12,7 @@
     "assets/scripts/story/StoryNode.ts",
     "assets/scripts/story/StoryEffects.ts",
     "assets/scripts/story/StoryRuntime.ts",
+    "assets/scripts/story/PhotoCatalog.ts",
     "assets/scripts/save/LocalSave.ts",
     "assets/scripts/vendor/mitt.ts",
     "assets/scripts/core/NarrativeMath.ts",

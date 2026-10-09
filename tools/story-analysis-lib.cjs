@@ -12,7 +12,7 @@ const baseChoices={CH01_EP02_C002:'B',CH02_EP06_CHOICE:'TELL',CH03_EP04_CHOICE:'
 function play(story,choices=baseChoices,evidence='FULL',state,onNode=()=>{}){
  const{StoryRuntime}=require('../work/core/story/StoryRuntime.js'),{createInitialState}=require('../work/core/core/GameState.js');state=state||createInitialState();const visited=[];
  for(const chapter of story.chapters)for(const episode of chapter.episodes){
-  const runtime=new StoryRuntime(state,()=>{});runtime.load(episode.data,chapter.chapterId);let stopped=false;
+  const runtime=new StoryRuntime(state,()=>true);runtime.load(episode.data,chapter.chapterId);let stopped=false;
   for(let guard=0;guard<100;guard++){
    const n=runtime.current();onNode(n,state);visited.push(n.id);
    if(n.type==='episodeEnd'){stopped=true;break}

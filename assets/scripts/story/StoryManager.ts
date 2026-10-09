@@ -1,11 +1,11 @@
 import { _decorator, Component, JsonAsset, resources } from 'cc';
 import mitt from '../vendor/mitt';
 import { SaveManager } from '../save/SaveManager';
-import { StoryRuntime } from './StoryRuntime';
+import { StoryRuntime, SaveWriteError } from './StoryRuntime';
 import type { ChapterManifest, EpisodeData, StoryNode, StoryCatalog } from './StoryNode';
 import { createNextRound } from './EndingResolver';
 const { ccclass } = _decorator;
-export type StoryEvent = { type: 'node'; node: StoryNode } | { type: 'end' } | { type: 'error'; message: string };
+export type StoryEvent = { type: 'node'; node: StoryNode } | { type: 'end' } | { type: 'error'; message: string } | { type: 'saveStatus'; message: string };
 @ccclass('StoryManager')
 export class StoryManager extends Component {
   readonly events = mitt<{ change: StoryEvent }>();
@@ -15,7 +15,9 @@ export class StoryManager extends Component {
   private busy = false;
   private alive = true;
   private pending = new Map<string, Promise<JsonAsset>>();
+  private failedSaveAction?: () => Promise<void>;
   get state() { return this.runtime.state }
+  get saveWarning(): string { return SaveManager.warning || (this.failedSaveAction ? '未能保存。请保持页面打开，稍后重试。' : '') }
   hasState(): boolean { return !!this.runtime }
   private ready = false;
   private loadJSON(path: string): Promise<JsonAsset> {
@@ -25,7 +27,9 @@ export class StoryManager extends Component {
         if (error || !asset) reject(error ?? new Error('Missing JSON: ' + path)); else resolve(asset);
       }));
       this.pending.set(path, request);
-      request.catch(() => this.pending.delete(path));
+      // Deduplicate requests in flight; settled assets belong to Cocos' cache.
+      const settled = () => { if (this.pending.get(path) === request) this.pending.delete(path) };
+      void request.then(settled, settled);
     }
     return request;
   }
@@ -80,16 +84,31 @@ export class StoryManager extends Component {
       const manifest = await this.readManifest(this.catalog.startChapter);
       const episode = (await this.loadJSON(manifest.episodes[0].resource)).json as EpisodeData;
       let committed = false;
-      const candidate = new StoryRuntime(next, state => { if (committed) SaveManager.save(state) });
+      const candidate = new StoryRuntime(next, state => committed ? SaveManager.save(state) : true);
       candidate.load(episode, manifest.chapterId);
-      if (!SaveManager.save(next)) throw new Error(SaveManager.warning);
+      if (!SaveManager.save(next)) throw new SaveWriteError();
       committed = true;
       this.runtime = candidate;
       this.manifest = manifest; this.preloadNext(); await this.present();
     });
   }
-  async refresh(): Promise<void> { if (!this.ready) { await this.initialize(); return; } await this.perform(() => this.present()) }
-  retrySave(): boolean { return this.hasState() && SaveManager.save(this.state) }
+  async refresh(): Promise<void> {
+    if (!this.ready) { if (!this.failedSaveAction) await this.initialize(); return; }
+    await this.perform(() => this.present(), true);
+  }
+  async retry(): Promise<void> {
+    if (this.busy || !this.alive) return;
+    if (this.failedSaveAction) {
+      const action = this.failedSaveAction; this.failedSaveAction = undefined;
+      await this.perform(action);
+    } else if (this.retrySave()) await this.refresh();
+  }
+  retrySave(): boolean {
+    this.unschedule(this.saveReading);
+    const saved = this.hasState() && !this.failedSaveAction && SaveManager.save(this.state);
+    if (this.alive) this.events.emit('change', { type: 'saveStatus', message: saved ? '' : this.saveWarning });
+    return saved;
+  }
   private saveReading = () => { this.retrySave() };
   setReadingOffset(id: string, offset: number): void {
     if (!this.hasState() || this.state.progress.nodeId !== id || !Number.isFinite(offset)) return;
@@ -104,7 +123,8 @@ export class StoryManager extends Component {
       if (ref) await this.loadEpisode(ref.resource);
       else if (node.next && node.next === this.manifest.nextChapter) {
         if (node.next === this.catalog.pendingChapter) {
-          SaveManager.save(this.state); this.events.emit('change', { type: 'end' }); return;
+          if (!SaveManager.save(this.state)) throw new SaveWriteError();
+          this.events.emit('change', { type: 'end' }); return;
         }
         // A registered chapter failing to load is an error, never a fake ending.
         await this.openChapter(node.next);
@@ -115,10 +135,23 @@ export class StoryManager extends Component {
     if (node.type === 'episodeEnd') throw new Error('Episode end loop');
     this.events.emit('change', { type: 'node', node });
   }
-  private async perform(action: () => Promise<void>): Promise<void> {
+  private async perform(action: () => Promise<void>, allowPending = false): Promise<void> {
     if (this.busy || !this.alive) return;
+    if (this.failedSaveAction && !allowPending) {
+      this.events.emit('change', { type: 'saveStatus', message: this.saveWarning }); return;
+    }
     this.busy = true;
+    this.unschedule(this.saveReading);
+    const before = this.ready ? [this.state.progress.chapterId, this.state.progress.episodeId, this.state.progress.nodeId].join('/') : undefined;
     try { await action() } catch (error) {
+      if (error instanceof SaveWriteError) {
+        const after = this.ready ? [this.state.progress.chapterId, this.state.progress.episodeId, this.state.progress.nodeId].join('/') : undefined;
+        // A previous episode end can already be committed before the next load.
+        // Retry that load, never replay the preceding choice or text effects.
+        this.failedSaveAction = before !== undefined && before !== after ? () => this.present() : action;
+        if (this.alive) this.events.emit('change', { type: 'saveStatus', message: this.saveWarning });
+        return;
+      }
       // Keep actionable save/version messages; loader paths and engine errors
       // are implementation details, not dialogue or instructions to a player.
       const message = error instanceof Error ? error.message : '';
@@ -131,5 +164,5 @@ export class StoryManager extends Component {
         message: SaveManager.warning || (saveMessages.includes(message) ? message : '这段内容暂时没能打开。请重试。') });
     } finally { this.busy = false }
   }
-  onDestroy(): void { this.alive = false; this.events.all.clear(); this.pending.clear() }
+  onDestroy(): void { this.alive = false; this.unschedule(this.saveReading); this.failedSaveAction = undefined; this.events.all.clear(); this.pending.clear() }
 }

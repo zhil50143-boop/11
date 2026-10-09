@@ -1,6 +1,5 @@
 import { _decorator, Component, Node, UIOpacity, tween, Tween, JsonAsset, resources, game, Game, director, UITransform, ScrollView } from 'cc';
 import { StoryManager, type StoryEvent } from '../story/StoryManager';
-import { SaveManager } from '../save/SaveManager';
 import { makeCanvas, container, text, button, clear } from './UIFactory';
 import { DialoguePanel } from './DialoguePanel';
 import { PassagePanel } from './PassagePanel';
@@ -22,6 +21,7 @@ export class StoryView extends Component {
   private manager!: StoryManager;
   private root!: Node;
   private status!: Node;
+  private saveStatus?: Node;
   private canvas!: Node;
   private settings?: SettingsPanel;
   private lastEvent?: StoryEvent;
@@ -34,6 +34,7 @@ export class StoryView extends Component {
   private onChange = (event: StoryEvent) => this.render(event);
   private onShow = () => { if (this.manager?.hasState()) void this.manager.refresh() };
   private onHide = () => {
+    for (const scroll of this.root?.getComponentsInChildren(ScrollView) ?? []) scroll.stopAutoScroll();
     this.audio.dispose();
     if (this.manager) this.manager.retrySave();
   };
@@ -43,6 +44,7 @@ export class StoryView extends Component {
     text(this.root, '正在打开……', 0);
     this.manager = this.node.addComponent(StoryManager);
     this.manager.events.on('change', this.onChange); game.on(Game.EVENT_HIDE, this.onHide); game.on(Game.EVENT_SHOW, this.onShow);
+    if (typeof window !== 'undefined') window.addEventListener('pagehide', this.onHide);
     try {
       const asset = await new Promise<JsonAsset>((resolve,reject) => resources.load('data/presentation', JsonAsset, (e,a) => e || !a ? reject(e) : resolve(a)));
       if (!this.isValid) return;
@@ -53,6 +55,12 @@ export class StoryView extends Component {
     } catch { if (this.isValid) this.render({type:'error', message:'暂时无法打开。请重试。'}) }
   }
   private render(event: StoryEvent): void {
+    if (event.type === 'saveStatus') {
+      if (!this.lastEvent || this.lastEvent.type === 'error') {
+        if (event.message) this.render({ type: 'error', message: event.message });
+      } else this.showSaveStatus(event.message);
+      return;
+    }
     this.lastEvent = event;
     const viewNode = event.type === 'node' ? event.node.id : '';
     if (viewNode !== this.viewNode) {
@@ -67,7 +75,7 @@ export class StoryView extends Component {
     if (event.type === 'error') {
       text(this.root, event.message, 100);
       button(this.root, '重试', -650, () => {
-        if (!this.manager.hasState()) void this.manager.initialize(); else void this.manager.refresh();
+        if (!this.manager.hasState()) void this.manager.initialize(); else void this.manager.retry();
       }); return;
     }
     const life = this.manager.state.life;
@@ -105,19 +113,14 @@ export class StoryView extends Component {
     }, 216);
     settings.node.setPosition(388, 884);
     const memoryId = event.type === 'node' ? event.node.lifeContext?.memory?.id : undefined;
-    const memory = life.time.timeline === 'memory'
-      ? (memoryId ? life.memoryRecords[memoryId] : Object.values(life.memoryRecords)[0]) : undefined;
+    const memory = life.time.timeline === 'memory' && memoryId ? life.memoryRecords[memoryId] : undefined;
     let memoryCaption: string | undefined;
     if (memory) {
       const names = {fragmentary:'残缺',contradictory:'出现矛盾',reinterpreted:'重新理解',complete:'完整'};
       memoryCaption = memory.title + ' · ' + names[memory.status];
       if (!paperReading && !sceneChoice) { const caption = text(this.status, memoryCaption, 735, 70, 26); if (paperInteraction) caption.color = ReadingSettings.mutedInk; }
     }
-    if (SaveManager.warning) {
-      const warning = text(this.status, SaveManager.warning, -800, 70, 26);
-      if (paperReading || paperInteraction) warning.color = ReadingSettings.ink;
-      button(this.status, '重试保存', -890, () => { this.manager.retrySave(); void this.manager.refresh() });
-    }
+    this.showSaveStatus(this.manager.saveWarning);
     if (event.type === 'end') {
       text(this.root, '当前内容读完了。', 100);
       text(this.root, '可以退出，稍后从这里继续。', -100, 160, 32); return;
@@ -126,7 +129,7 @@ export class StoryView extends Component {
     switch (node.type) {
       case 'passage': case 'phone':
         if (paperReading) {
-          new LifeReadingPanel().show(this.root, node, this.speakers, life.time, memoryCaption, !!SaveManager.warning,
+          new LifeReadingPanel().show(this.root, node, this.speakers, life.time, memoryCaption, !!this.manager.saveWarning,
             this.manager.state.progress.readingOffset, offset => this.manager.setReadingOffset(node.id, offset),
             () => void this.manager.advance(node.id), node.type === 'phone'
               ? (life.time.year < 2014 ? 'phone_early_v2' : 'phone_current_v1') : undefined); break;
@@ -181,6 +184,13 @@ export class StoryView extends Component {
       default: text(this.root, '该片段暂时无法继续。', 0);
     }
   }
+  private showSaveStatus(message: string): void {
+    this.saveStatus?.destroy(); this.saveStatus = undefined;
+    if (!message) return;
+    this.saveStatus = container(this.status, 'SaveStatus');
+    text(this.saveStatus, message, -800, 70, 26).color = ReadingSettings.ink;
+    paperButton(this.saveStatus, '重试保存', -890, () => void this.manager.retry(), 420);
+  }
   private investigation(node: InteractionStoryNode): void {
     if (node.id === 'CH01_EP02_C001') {
       new InvestigationPanel().show(this.root, node, this.manager.state.flags,
@@ -202,5 +212,6 @@ export class StoryView extends Component {
     this.settings?.destroy();
     this.audio.dispose(); this.manager?.events.off('change', this.onChange);
     game.off(Game.EVENT_HIDE, this.onHide); game.off(Game.EVENT_SHOW, this.onShow);
+    if (typeof window !== 'undefined') window.removeEventListener('pagehide', this.onHide);
   }
 }

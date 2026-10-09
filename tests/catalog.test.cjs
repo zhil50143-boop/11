@@ -32,7 +32,7 @@ test('validator checks broken chapter 02 node targets, not just chapter 01',()=>
   fixture(root=>edit(root,'data/story/chapter02/ep02_old_gym.json',e=>e.nodes[0].next='MISSING_TARGET'),root=>assert.throws(()=>validateStoryTree(root),/Missing target/));
 });
 test('chapter transition persists a consistent cursor and preserves it if the next asset is invalid',()=>{
-  const s=createInitialState(),writes=[];const runtime=new StoryRuntime(s,state=>writes.push(structuredClone(state.progress)));
+  const s=createInitialState(),writes=[];const runtime=new StoryRuntime(s,state=>{writes.push(structuredClone(state.progress));return true});
   const first=JSON.parse(fs.readFileSync(path.join(resources,'data/story/chapter02/ep01_next_day.json')));
   const second=JSON.parse(fs.readFileSync(path.join(resources,'data/story/chapter02/ep02_old_gym.json')));
   runtime.load(first,'CH02');assert.deepEqual(writes.at(-1),{chapterId:'CH02',episodeId:'CH02_EP01',nodeId:'CH02_EP01_N001',readingOffset:0});
@@ -48,10 +48,10 @@ test('every route reaches the current boundary and keeps chapter 02 to 09 decisi
   const queue=[{state:createInitialState(),episodeId:chapters.get(catalog.startChapter).episodes[0].id,steps:0}];let endings=0;const reachedEndings=new Set();
   while(queue.length){
     const item=queue.pop();assert.ok(item.steps<1000);const state=item.state,entry=episodes.get(item.episodeId);
-    const runtime=new StoryRuntime(state,()=>{});runtime.load(entry.ep,entry.chapterId);const node=runtime.current();
+    const runtime=new StoryRuntime(state,()=>true);runtime.load(entry.ep,entry.chapterId);const node=runtime.current();
     // Queue states are owned by one path. Fork only when branching; linear
     // passages retain the same state so adding long chapters stays practical.
-    const enqueue=(act,fork=true)=>{const copy=fork?structuredClone(state):state,r=fork?new StoryRuntime(copy,()=>{}):runtime;if(fork)r.load(entry.ep,entry.chapterId);act(r);queue.push({state:copy,episodeId:item.episodeId,steps:item.steps+1})};
+    const enqueue=(act,fork=true)=>{const copy=fork?structuredClone(state):state,r=fork?new StoryRuntime(copy,()=>true):runtime;if(fork)r.load(entry.ep,entry.chapterId);act(r);queue.push({state:copy,episodeId:item.episodeId,steps:item.steps+1})};
     if(node.type==='episodeEnd'){
       if(node.id==='CH08_EP06_END'){
         assert.ok(state.readNodeIds.includes('CH02_EP02_GYM'));assert.ok(state.life.memoryRecords.FIRST_MEETING.evidence.includes('旧体育馆午休'));assert.ok(state.readNodeIds.includes('CH02_EP05_MESSAGES'));assert.equal(state.life.memoryRecords.HOME_SUMMER.status,'fragmentary');

@@ -13,9 +13,9 @@ test('all choice combinations and investigation orders reach slice end',()=>{
   const queue=[{state:createInitialState(),index:0,steps:0}]; let endings=0;
   while(queue.length) {
     const item=queue.pop(); assert.ok(item.steps<250);
-    const state=structuredClone(item.state); const runtime=new StoryRuntime(state,()=>{});
+    const state=structuredClone(item.state); const runtime=new StoryRuntime(state,()=>true);
     runtime.load(episodes[item.index]); const node=runtime.current();
-    const enqueue=fn=>{const copy=structuredClone(state);const r=new StoryRuntime(copy,()=>{});r.load(episodes[item.index]);fn(r);queue.push({state:copy,index:item.index,steps:item.steps+1})};
+    const enqueue=fn=>{const copy=structuredClone(state);const r=new StoryRuntime(copy,()=>true);r.load(episodes[item.index]);fn(r);queue.push({state:copy,index:item.index,steps:item.steps+1})};
     if(node.type==='episodeEnd'){
       if(node.next==='CH02'){endings++;assert.ok(state.flags.IN_MEMORY_2007);assert.ok(state.flags.OPENED_MP3_RECORDING);assert.ok(state.flags.VIEWED_OLD_PHOTO&&state.flags.VIEWED_LETTER)}
       else {const index=episodes.findIndex(e=>e.episodeId===node.next);assert.ok(index>=0);queue.push({state,index,steps:item.steps+1})}
@@ -30,7 +30,7 @@ test('all choice combinations and investigation orders reach slice end',()=>{
 });
 test('revisiting photo cannot farm stats, and stale input cannot repeat choice',()=>{
   const s=createInitialState();s.progress.episodeId='CH01_EP02';s.progress.nodeId='CH01_EP02_C001';
-  const r=new StoryRuntime(s,()=>{});r.load(episodes[1]);
+  const r=new StoryRuntime(s,()=>true);r.load(episodes[1]);
   const view=()=>{r.inspect('photo','CH01_EP02_C001');r.complete('CH01_EP02_PHOTO_001')};
   view();const n=s.stats.nostalgia;view();assert.equal(s.stats.nostalgia,n);
   assert.throws(()=>r.complete('CH01_EP02_C001'),/Required/);
@@ -42,7 +42,7 @@ test('resume every interaction preserves cursor and flags',()=>{
   for(const ep of episodes)for(const node of ep.nodes.filter(n=>['photo','letter','audioInteraction','transition','choice','investigation','episodeEnd','passage','phone'].includes(n.type))){
     const st=storage();const local=new LocalSave(st,'test');const s=createInitialState();
     s.progress.episodeId=ep.episodeId;s.progress.nodeId=node.id;s.flags.TEST=true;
-    assert.ok(local.save(s));const restored=local.load();const r=new StoryRuntime(restored,()=>{});r.load(ep);
+    assert.ok(local.save(s));const restored=local.load();const r=new StoryRuntime(restored,()=>true);r.load(ep);
     assert.equal(r.current().id,node.id);assert.ok(restored.flags.TEST);
   }
 });
@@ -51,7 +51,7 @@ test('only the consequential disclosure is a decision; daily content advances na
   assert.deepEqual(choices.map(n=>n.id),['CH01_EP02_C002']);
   assert.ok(choices[0].consequence && choices[0].prompt);
   assert.ok(episodes.flatMap(e=>e.nodes).some(n=>n.type==='phone'));
-  const s=createInitialState();const r=new StoryRuntime(s,()=>{});r.load(episodes[3]);
+  const s=createInitialState();const r=new StoryRuntime(s,()=>true);r.load(episodes[3]);
   s.progress.nodeId='CH01_EP04_BUS';r.current();
   assert.equal(s.life.time.year,2007);assert.equal(s.life.stage,'student');
   assert.equal(s.life.memoryRecords.FIRST_MEETING.status,'fragmentary');
@@ -73,7 +73,7 @@ test('reading position and memory evidence survive resume without duplicate or d
   const st=storage();const local=new LocalSave(st,'test');const s=createInitialState();
   s.progress.episodeId='CH01_EP04';s.progress.nodeId='CH01_EP04_BUS';s.progress.readingOffset=0.7;
   s.life.memoryRecords.FIRST_MEETING={title:'初次相识',status:'complete',evidence:['另一份证词']};
-  local.save(s);const restored=local.load();const r=new StoryRuntime(restored,()=>{});r.load(episodes[3]);
+  local.save(s);const restored=local.load();const r=new StoryRuntime(restored,()=>true);r.load(episodes[3]);
   r.current();r.current();assert.equal(restored.progress.readingOffset,0.7);
   assert.equal(restored.life.memoryRecords.FIRST_MEETING.status,'complete');
   assert.equal(new Set(restored.life.memoryRecords.FIRST_MEETING.evidence).size,3);

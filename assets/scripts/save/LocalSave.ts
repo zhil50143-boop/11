@@ -10,6 +10,9 @@ export function normalizeSave(value: unknown): GameStateData {
   if (typeof value.saveVersion === 'number' && value.saveVersion > base.saveVersion) throw new Error('Save is from a newer version');
   if (value.saveVersion !== undefined && value.saveVersion !== 1 && value.saveVersion !== 2) throw new Error('Unsupported save version');
   const p = value.progress;
+  if (value.saveVersion === 2 && (!record(p) || !['chapterId','episodeId','nodeId'].every(k => typeof p[k] === 'string' && (p[k] as string).trim().length > 0))) {
+    throw new Error('存档位置不完整，已保留原记录。请使用备份或对应版本。');
+  }
   if (record(p) && ['chapterId','episodeId','nodeId'].every(k => typeof p[k] === 'string')) {
     base.progress = { chapterId: p.chapterId as string, episodeId: p.episodeId as string, nodeId: p.nodeId as string,
       readingOffset: typeof p.readingOffset === 'number' && Number.isFinite(p.readingOffset) ? Math.max(0, Math.min(1, p.readingOffset)) : 0 };
@@ -51,7 +54,7 @@ export class LocalSave {
     this.warning = ''; this.blocked = false;
     let raw: string | null;
     try { raw = this.storage.getItem(this.key); }
-    catch { this.warning = '此浏览器暂时无法读取存档。'; return createInitialState(); }
+    catch { this.blocked = true; this.warning = '此浏览器暂时无法读取存档。'; return createInitialState(); }
     if (!raw) return createInitialState();
     try {
       const parsed: unknown = JSON.parse(raw);
@@ -79,6 +82,9 @@ export class LocalSave {
       if (this.blocked) throw error;
       try { this.storage.setItem(this.key + '.corrupt', raw); }
       catch { this.blocked = true; throw new Error('旧存档无法备份，已保留原记录。'); }
+      if (error instanceof Error && error.message === '存档位置不完整，已保留原记录。请使用备份或对应版本。') {
+        this.blocked = true; this.warning = error.message; throw error;
+      }
       this.warning = '旧存档无法读取，已保留备份。';
       return createInitialState();
     }
@@ -86,8 +92,9 @@ export class LocalSave {
   save(state: GameStateData): boolean {
     if (this.blocked) return false;
     try {
-      state.updatedAt = Date.now();
-      this.storage.setItem(this.key, JSON.stringify(state)); this.warning = ''; return true;
+      const updatedAt = Date.now();
+      this.storage.setItem(this.key, JSON.stringify({ ...state, updatedAt }));
+      state.updatedAt = updatedAt; this.warning = ''; return true;
     } catch { this.warning = '未能保存。请保持页面打开，稍后重试。'; return false; }
   }
   clear(): boolean {

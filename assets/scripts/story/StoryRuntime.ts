@@ -4,10 +4,53 @@ import { applyLifeContext } from '../core/LifeState';
 import { resolveEnding, recordEnding } from './EndingResolver';
 import type { EpisodeData, StoryNode, InteractionStoryNode } from './StoryNode';
 
+export class SaveWriteError extends Error {
+  constructor() { super('未能保存。请保持页面打开，稍后重试。'); this.name = 'SaveWriteError'; }
+}
+
 export class StoryRuntime {
   private nodes = new Map<string, StoryNode>();
-  constructor(public readonly state: GameStateData, private readonly persist: (state: GameStateData) => void) {}
-  load(episode: EpisodeData, chapterId = this.state.progress.chapterId): void {
+  private working?: GameStateData;
+  private changed = false;
+  constructor(private readonly committedState: GameStateData, private readonly persist: (state: GameStateData) => boolean) {}
+  get state(): GameStateData { return this.working ?? this.committedState }
+  load(episode: EpisodeData, chapterId = this.state.progress.chapterId): void { this.transact(() => this.loadData(episode, chapterId)) }
+  advance(expected: string): StoryNode { return this.transact(() => this.advanceNode(expected)) }
+  choose(id: string, expected: string): StoryNode { return this.transact(() => this.chooseNode(id, expected)) }
+  inspect(id: string, expected: string): StoryNode { return this.transact(() => this.inspectNode(id, expected)) }
+  complete(expected: string): StoryNode { return this.transact(() => this.completeNode(expected)) }
+  finish(expected: string): void { this.transact(() => this.finishNode(expected)) }
+  current(): StoryNode {
+    if (this.working) return this.resolve();
+    const node = this.nodes.get(this.state.progress.nodeId);
+    if (!node) throw new Error('Missing node: ' + this.state.progress.nodeId);
+    if (['endingRoute', 'condition', 'save'].includes(node.type)) return this.transact(() => this.resolve());
+    // Repainting an unchanged passage does not clone or write the whole save.
+    if (node.lifeContext) {
+      const life = JSON.parse(JSON.stringify(this.state.life)) as GameStateData['life'];
+      if (applyLifeContext(life, node.lifeContext)) return this.transact(() => {
+        this.state.life = life; this.changed = true; return node;
+      });
+    }
+    return node;
+  }
+  private transact<T>(action: () => T): T {
+    if (this.working) return action();
+    const previousNodes = this.nodes;
+    this.working = JSON.parse(JSON.stringify(this.committedState)) as GameStateData;
+    this.changed = false;
+    try {
+      const result = action();
+      if (this.changed) {
+        if (this.persist(this.working) !== true) throw new SaveWriteError();
+        // Publish effects, evidence, cursor and timestamp only after the write.
+        Object.assign(this.committedState, this.working);
+      }
+      return result;
+    } catch (error) { this.nodes = previousNodes; throw error }
+    finally { this.working = undefined; this.changed = false }
+  }
+  private loadData(episode: EpisodeData, chapterId: string): void {
     const nodes = new Map<string, StoryNode>();
     for (const node of episode.nodes) {
       if (nodes.has(node.id)) throw new Error('Duplicate node: ' + node.id);
@@ -26,9 +69,9 @@ export class StoryRuntime {
     }
     this.state.progress.chapterId = chapterId;
     this.state.progress.episodeId = episode.episodeId;
-    this.persist(this.state);
+    this.changed = true;
   }
-  current(): StoryNode {
+  private resolve(): StoryNode {
     for (let guard = 0; guard < 64; guard++) {
       const node = this.nodes.get(this.state.progress.nodeId);
       if (!node) throw new Error('Missing node: ' + this.state.progress.nodeId);
@@ -52,13 +95,13 @@ export class StoryRuntime {
         if (!node.next) throw new Error('Save node has no next');
         this.go(node.next);
       } else {
-        if (applyLifeContext(this.state.life, node.lifeContext)) this.persist(this.state);
+        if (applyLifeContext(this.state.life, node.lifeContext)) this.changed = true;
         return node;
       }
     }
     throw new Error('Automatic node cycle');
   }
-  advance(expected: string): StoryNode {
+  private advanceNode(expected: string): StoryNode {
     const node = this.expect(expected);
     if (!['dialogue', 'narration', 'passage', 'phone'].includes(node.type)) throw new Error('Advance requires text');
     if (!node.next) throw new Error('Text node has no next');
@@ -66,7 +109,7 @@ export class StoryRuntime {
     if (!this.state.readNodeIds.includes(node.id)) applyEffects(this.state, undefined, node.setFlags);
     this.read(node.id); this.go(node.next); return this.current();
   }
-  choose(id: string, expected: string): StoryNode {
+  private chooseNode(id: string, expected: string): StoryNode {
     const node = this.expect(expected);
     if (node.type !== 'choice') throw new Error('Choice required');
     const option = node.options.find(o => o.id === id);
@@ -75,14 +118,14 @@ export class StoryRuntime {
     applyEffects(this.state, option.effects, option.setFlags);
     this.read(node.id); this.go(option.next); return this.current();
   }
-  inspect(id: string, expected: string): StoryNode {
+  private inspectNode(id: string, expected: string): StoryNode {
     const node = this.expect(expected);
     if (node.type !== 'investigation') throw new Error('Investigation required');
     const item = node.items?.find(i => i.id === id);
     if (!item) throw new Error('Unknown item');
     this.go(item.next); return this.current();
   }
-  complete(expected: string): StoryNode {
+  private completeNode(expected: string): StoryNode {
     const node = this.expect(expected);
     if (!['investigation', 'photo', 'letter', 'audioInteraction', 'transition'].includes(node.type)) {
       throw new Error('Interaction required');
@@ -99,11 +142,11 @@ export class StoryRuntime {
     if (!this.state.readNodeIds.includes(node.id)) applyEffects(this.state, special.effects, special.setFlags);
     this.read(node.id); this.go(special.next); return this.current();
   }
-  finish(expected: string): void {
+  private finishNode(expected: string): void {
     const node = this.expect(expected);
     if (node.type !== 'ending') throw new Error('Ending required');
     recordEnding(this.state, node.endingId);
-    this.read(node.id); this.persist(this.state);
+    this.read(node.id); this.changed = true;
   }
   private expect(id: string): StoryNode {
     const node = this.current();
@@ -114,7 +157,7 @@ export class StoryRuntime {
     if (!this.nodes.has(id)) throw new Error('Missing target: ' + id);
   }
   private go(id: string): void {
-    this.requireTarget(id); this.state.progress.nodeId = id; this.state.progress.readingOffset = 0; this.persist(this.state);
+    this.requireTarget(id); this.state.progress.nodeId = id; this.state.progress.readingOffset = 0; this.changed = true;
   }
   private read(id: string): void {
     if (!this.state.readNodeIds.includes(id)) this.state.readNodeIds.push(id);

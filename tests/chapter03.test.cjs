@@ -33,7 +33,7 @@ test('chapter 03 photograph matches the chapter 01 old object and its envelope i
  const first=JSON.parse(fs.readFileSync('assets/resources/data/story/chapter01/ep02_box.json'));
  assert.equal(nodes.find(n=>n.id==='CH03_EP05_PHOTO').backText,first.nodes.find(n=>n.id==='CH01_EP02_PHOTO_001').backText);
  const ep=episodes[5],s=createInitialState();s.progress={chapterId:'CH03',episodeId:ep.episodeId,nodeId:'CH03_EP06_ENVELOPE',readingOffset:0};
- const r=new StoryRuntime(s,()=>{});r.load(ep,'CH03');r.complete('CH03_EP06_ENVELOPE');assert.ok(s.flags.CH03_SEEN_FUTURE_ENVELOPE);assert.ok(!s.flags.READ_FULL_LETTER);assert.equal(s.life.memoryRecords.GRADUATION.status,'fragmentary');
+ const r=new StoryRuntime(s,()=>true);r.load(ep,'CH03');r.complete('CH03_EP06_ENVELOPE');assert.ok(s.flags.CH03_SEEN_FUTURE_ENVELOPE);assert.ok(!s.flags.READ_FULL_LETTER);assert.equal(s.life.memoryRecords.GRADUATION.status,'fragmentary');
  assert.equal(nodes.filter(n=>n.type==='choice').length,1);
 });
 test('old chapter 02 end saves continue into chapter 03 without resetting prior flags, stats or memories',()=>{

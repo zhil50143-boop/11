@@ -29,12 +29,12 @@ test('all new chapter 02 reading positions, phone messages and hidden life conte
   const local=new LocalSave(storage(),'test'),s=createInitialState();s.flags.KEPT_PREVIOUS_CHAPTER=true;
   s.progress={chapterId:'CH02',episodeId:ep.episodeId,nodeId:node.id,readingOffset:0.42};
   const r=new StoryRuntime(s,state=>local.save(state));r.load(ep,'CH02');r.current();
-  const saved=local.load(),copy=structuredClone(saved.life),resumed=new StoryRuntime(saved,()=>{});resumed.load(ep,'CH02');
+  const saved=local.load(),copy=structuredClone(saved.life),resumed=new StoryRuntime(saved,()=>true);resumed.load(ep,'CH02');
   assert.equal(resumed.current().id,node.id);assert.equal(saved.progress.readingOffset,0.42);assert.ok(saved.flags.KEPT_PREVIOUS_CHAPTER);assert.deepEqual(saved.life,copy);
  }
 });
 test('summer is a bounded flashback before meeting Xia, and only fragments are recorded',()=>{
- const s=createInitialState(),r=new StoryRuntime(s,()=>{}),ep=episodes[2];r.load(ep,'CH02');let n=r.current();
+ const s=createInitialState(),r=new StoryRuntime(s,()=>true),ep=episodes[2];r.load(ep,'CH02');let n=r.current();
  assert.equal(s.life.time.month,7);assert.equal(n.lifeContext.memory.id,'HOME_SUMMER');
  while(n.type!=='episodeEnd')n=r.advance(n.id);
  assert.equal(s.life.time.month,9);assert.equal(s.life.time.timeline,'memory');assert.equal(s.life.memoryRecords.HOME_SUMMER.status,'fragmentary');

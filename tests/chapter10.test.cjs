@@ -5,7 +5,7 @@ const catalog=JSON.parse(fs.readFileSync('assets/resources/data/story/catalog.js
 const chapters=catalog.chapters.map(c=>JSON.parse(fs.readFileSync('assets/resources/'+c.resource+'.json')));
 function play(s,options={},evidence='FULL') {
  const visited=[];let ending;
- for(const m of chapters)for(const ref of m.episodes){const ep=JSON.parse(fs.readFileSync('assets/resources/'+ref.resource+'.json')),r=new StoryRuntime(s,()=>{});r.load(ep,m.chapterId);
+ for(const m of chapters)for(const ref of m.episodes){const ep=JSON.parse(fs.readFileSync('assets/resources/'+ref.resource+'.json')),r=new StoryRuntime(s,()=>true);r.load(ep,m.chapterId);
   for(let guard=0;guard<70;guard++){
    const n=r.current();visited.push(n.id);if(n.type==='episodeEnd')break;
    if(n.type==='ending'){ending=n.endingId;assert.ok(!s.flags.ROUND_COMPLETED);r.finish(n.id);r.finish(n.id);break;}
@@ -39,7 +39,7 @@ test('completed round and meta survive v2 normalization; failed writes preserve 
  const s=play(createInitialState(),honest).s;assert.ok(save.save(s));const raw=records.get('s'),loaded=save.load();assert.deepEqual(loaded.endings,s.endings);assert.ok(loaded.flags.ROUND_COMPLETED);fail=true;assert.equal(save.save(createNextRound(loaded)),false);assert.equal(records.get('s'),raw);fail=false;assert.ok(save.save(createNextRound(loaded)));assert.equal(save.load().playCount,2);assert.ok(save.load().endings.REUNION);assert.deepEqual(save.load().flags,{});
 });
 test('ending ties use stable configured order and incomplete old history stays unknown',()=>{
- const s=createInitialState(),m=chapters.at(-1);for(const ref of m.episodes){const ep=JSON.parse(fs.readFileSync('assets/resources/'+ref.resource+'.json')),r=new StoryRuntime(s,()=>{});r.load(ep,'CH10');for(let i=0;i<60;i++){const n=r.current();if(n.type==='episodeEnd')break;if(n.type==='ending'){assert.equal(n.endingId,'IF_THEN');break;}if(n.type==='letter'){s.progress.readingOffset=1;r.complete(n.id)}else r.advance(n.id)}}
+ const s=createInitialState(),m=chapters.at(-1);for(const ref of m.episodes){const ep=JSON.parse(fs.readFileSync('assets/resources/'+ref.resource+'.json')),r=new StoryRuntime(s,()=>true);r.load(ep,'CH10');for(let i=0;i<60;i++){const n=r.current();if(n.type==='episodeEnd')break;if(n.type==='ending'){assert.equal(n.endingId,'IF_THEN');break;}if(n.type==='letter'){s.progress.readingOffset=1;r.complete(n.id)}else r.advance(n.id)}}
  for(const flag of ['READ_FULL_LETTER','FOUND_FULL_RECORDING','CH07_PLANNED_CARE_TOGETHER','CH05_TALKED_JOB_CONDITIONS','MET_XIA','TOLD_PARTNER_BEFORE_CONTACT'])assert.ok(!s.flags[flag]);
  const tied=createInitialState();for(const f of ['READ_FULL_LETTER','FOUND_FULL_RECORDING','CH08_COMPARED_DATES','CH08_HEARD_CHEN_CONTEXT','UNDERSTOOD_BREAKUP_TRUTH','CH10_SORTED_OWN_PAPERS','CH07_PLANNED_CARE_TOGETHER','CH10_SHARED_WEEK','CH10_READY_CURRENT_LIFE'])tied.flags[f]=true;tied.stats.selfReflection=10;tied.stats.understandingPartner=20/3;
  for(let i=0;i<20;i++)assert.equal(resolveEnding(tied),'UNDERSTAND');
