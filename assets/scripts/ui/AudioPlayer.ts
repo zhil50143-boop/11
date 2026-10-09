@@ -29,7 +29,9 @@ export class AudioPlayer {
       prop.active = false; label.string = message; label.fontSize = ReadingSettings.bodySize(46);
       label.node.setPosition(0, 250); label.node.getComponent(UITransform)!.setContentSize(900, 400);
     };
-    const finish = paperButton(root, '继续', -650, () => { this.dispose(); done() }); setPaperButtonEnabled(finish, !!node.requireReadToEnd && offset >= .99);
+    // StoryView disposes the player after a successful commit. A rejected save
+    // keeps this interaction usable, with its original clip and controls.
+    const finish = paperButton(root, '继续', -650, done); setPaperButtonEnabled(finish, !!node.requireReadToEnd && offset >= .99);
     const play = paperButton(root, '播放', -300, () => {
       if (!this.source) {
         unavailable(node.transcript ? '录音暂时无法播放。可以查看完整录音文字。' : '录音暂时无法播放。可以读文字继续。');
