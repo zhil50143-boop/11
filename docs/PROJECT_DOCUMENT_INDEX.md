@@ -9,6 +9,7 @@
 | EXTERNAL_REVIEW_V2.md | 用户提供的工程对照审核 | 以f976796为旧快照，截图缺口已补基线 |
 | EXTERNAL_REVIEW_2026-10-09.md | 用户最新十章成品打磨审查与采用范围 | 明确取证限制、P0/P1与冻结结构，不沿用自动调度旧推断 |
 | CHAPTER01_VISUAL_AUDIT.md / validation/V2_CH01_OBJECTS.json | 第一章物件切片与全游戏核对 | 分页、决定承接、图片/录音失败、门槛、当前构建及后续待验 |
+| PHOTO_ALBUM_AUDIT.md / validation/V2_ALBUM.json | 相册与照片续读后的全游戏核对 | 60测试/508800路线、最终290步、18专项/23图及四原照片集中加载；原真实饭桌进度保持 |
 | INTERACTION_VISUAL_AUDIT.md / validation/V2_INTERACTIONS.json | 共用互动与共享场景全游戏核对 | 57测试/508800路线、最终290步、18手机/42专项；真实手机/真人待验 |
 | shots/v2-interactions/catalog/index.json / phone-memory/index.json | 当前日夜大字目录及手机/记忆专项 | 39状态78图、18次决定点按、42专项40图，包含实际加载/偏移/失败回退 |
 | PROSE_EDIT_LOG.json / validation/V2_SCENE_MAP.json | 每条原句与原因、实际场景映射 | 一重复段/15地点标注；311正文手机决定，251映射/60纸面回退 |

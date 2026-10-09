@@ -1,0 +1,178 @@
+{
+  "result": "PASS",
+  "method": "Actual final H5 touch with reachable domain-action fixtures in isolated browser contexts; original four photo fronts/backs, completion gates and byte-identical save. Real story photo drag/save-first return/refresh. Injected image/source failures, corrupt/future save and late callback. Desktop viewports, not physical phone or human long reading.",
+  "reports": [
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "theme": "paper",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "theme": "night",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 780
+      },
+      "theme": "paper",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 780
+      },
+      "theme": "night",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "theme": "paper",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "theme": "night",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 412,
+        "height": 915
+      },
+      "theme": "paper",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 412,
+        "height": 915
+      },
+      "theme": "night",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 840
+      },
+      "theme": "paper",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 840
+      },
+      "theme": "night",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    },
+    {
+      "result": "PASS",
+      "entryWithoutCompletionDoesNotRevealPhotos": true
+    },
+    {
+      "result": "PASS",
+      "unreadableOrFutureSavePreserved": true,
+      "retryAvailable": true
+    },
+    {
+      "result": "PASS",
+      "unreadableOrFutureSavePreserved": true,
+      "retryAvailable": true
+    },
+    {
+      "result": "PASS",
+      "onlyCompletedFlagPhotosShown": true
+    },
+    {
+      "result": "PASS",
+      "imageFailureRetainsOriginalTextAndBack": true
+    },
+    {
+      "result": "PASS",
+      "sourceFailureReturnsWithoutStateMutation": true
+    },
+    {
+      "result": "PASS",
+      "lateSourceCallbackCannotReplaceHome": true
+    },
+    {
+      "result": "PASS",
+      "actualPhotoScrollSavedOffset": 0.933990429015196,
+      "returnAndRefreshRestoreDescription": true,
+      "noPrematureCompletion": true
+    }
+  ],
+  "screens": [
+    "360x640-paper-album.png",
+    "360x640-paper-old-photo-back.png",
+    "360x640-night-album.png",
+    "360x640-night-old-photo-back.png",
+    "390x780-paper-album.png",
+    "390x780-paper-old-photo-back.png",
+    "390x780-night-album.png",
+    "390x780-night-old-photo-back.png",
+    "375x812-paper-album.png",
+    "375x812-paper-old-photo-back.png",
+    "375x812-night-album.png",
+    "375x812-night-old-photo-back.png",
+    "412x915-paper-album.png",
+    "412x915-paper-old-photo-back.png",
+    "412x915-night-album.png",
+    "412x915-night-old-photo-back.png",
+    "360x840-paper-album.png",
+    "360x840-paper-old-photo-back.png",
+    "360x840-night-album.png",
+    "360x840-night-old-photo-back.png",
+    "390x780-paper-entered-but-uncompleted.png",
+    "390x780-paper-image-failure.png",
+    "360x640-night-photo-offset-restored.png"
+  ],
+  "errors": []
+}

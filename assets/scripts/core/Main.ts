@@ -5,6 +5,7 @@ import { createNextRound } from '../story/EndingResolver';
 import { VisualDraft } from '../ui/VisualDraft';
 import { artSurface, paperButton } from '../ui/ArtSurface';
 import { SettingsPanel } from '../ui/SettingsPanel';
+import { PhotoAlbum } from '../ui/PhotoAlbum';
 const { ccclass } = _decorator;
 @ccclass('Main')
 export class Main extends Component {
@@ -32,17 +33,21 @@ export class Main extends Component {
     resumeLabel.node.setPosition(0, -73); resumeLabel.color = new Color(53, 59, 57);
     // Keep an obvious text affordance even if an optional generated prop fails to load.
     let confirm = false;
-    const notice = text(canvas, '', -230, 180, 32); notice.color = new Color(53, 59, 57);
+    const notice = text(canvas, '', -110, 150, 32); notice.color = new Color(53, 59, 57);
+    const album = paperButton(canvas, '相册', -290, () => {
+      try { new PhotoAlbum().show(canvas, SaveManager.peek(), () => { if (this.isValid) this.showHome(canvas); }); }
+      catch { notice.string = '暂时读不了相册。原存档仍保留。'; }
+    });
     const fresh = paperButton(canvas, '从头开始', -480, () => {
       if (!confirm) {
-        confirm = true; notice.string = '再次点按会从头读。已经读完的结局会保留。'; cancel.node.active = true; return;
+        confirm = true; album.node.active = false; notice.string = '再次点按会从头读。已经读完的结局会保留。'; cancel.node.active = true; return;
       }
       try {
         const next = createNextRound(SaveManager.load(), false);
         if (SaveManager.save(next)) open(); else title.string = SaveManager.warning;
       } catch { title.string = '存档暂时无法读取。请保留原记录后重试。' }
     });
-    const cancel = paperButton(canvas, '取消重新开始', -650, () => { confirm = false; notice.string = ''; cancel.node.active = false; fresh.interactable = true });
+    const cancel = paperButton(canvas, '取消重新开始', -650, () => { confirm = false; notice.string = ''; cancel.node.active = false; album.node.active = true; fresh.interactable = true });
     cancel.node.active = false;
     paperButton(canvas, '阅读设置', -835, () => {
       new SettingsPanel(canvas, () => { if (this.isValid) this.showHome(canvas); });

@@ -217,10 +217,11 @@
         "opaquePixels": 1180,
         "totalPixels": 518400
       },
-      "productionStatus": "Design preview only; no real lookback implemented",
+      "productionStatus": "Read-only current-round completed-photo lookback implemented; actual H5 gallery and original sources checked, human and physical phone pending",
       "processing": "Only resize and encode for delivery; original retained, no painting or semantic editing outside Image tool",
       "useSites": [
-        "VisualDraft only; no acquired-object lookback"
+        "Main/PhotoAlbum completed-only read-only lookback",
+        "VisualDraft historical preview"
       ]
     },
     {

@@ -38,3 +38,5 @@
 | dorm_2009_night_v1 | background | 135179 | Mapped presentation; source and desktop H5 checked, human and physical-device acceptance pending |
 
 已实际查看并经两名独立评审，地图边界和必要修正见docs/INTERACTION_*_REVIEW.md。20种场景/手机均有最终H5 SpriteFrame实显记录；桌面检查不代替真机、真人时长或跨龄辨认。
+
+2026-10-09相册封面已从设计预览接入Main/PhotoAlbum正常只读回看，原Image文件不变。四张原照片从完成flag与原JSON读取，五视口日夜及四SpriteFrame实际加载确认通过。资源库仍30文件7342879字节，未新生成或换人物/声音。详细边界见PHOTO_ALBUM_AUDIT。

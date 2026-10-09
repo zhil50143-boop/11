@@ -10,7 +10,7 @@ TapTap H5现实人生叙事模拟。连续生活叙事优先，少量重要决�
 
 本批57核心测试、508800初始路线、两种类型/全图通过；最终Cocos3.8.8包十章290步、九次跨章失败重试、九类续档及原文备份通过。39状态/78张日夜大字截图、18次决定点按、18手机节点与42专项场景通过。[本批全游戏核对](docs/INTERACTION_VISUAL_AUDIT.md)、[可核验记录](docs/validation/V2_INTERACTIONS.json)。既往同一存档连续六轮浏览器与本批单路线分别留档，不能混作本轮重测。
 
-阅读页有“返回书桌”，保存成功才退出，继续回到原段落；保存失败留原页重试。三档字号、夜间纸面、录音音量与减少动态独立保存。[设置说明](docs/READING_SETTINGS.md)。相册只读回看、照片描述跨刷新、余下精确场景、跨龄真人辨认及全篇生活节奏仍待完成。
+阅读页有“返回书桌”，保存成功才退出，继续回到原段落；保存失败留原页重试。三档字号、夜间纸面、录音音量与减少动态独立保存。[设置说明](docs/READING_SETTINGS.md)。相册只读回看与照片描述跨刷新现已补齐；只显示本轮已完成照片，回看不改事实。相册后60测试、整十章290步、18专项/23图及四原照片实际加载集中确认通过。[最新全游戏核对](docs/PHOTO_ALBUM_AUDIT.md)。余下精确场景、跨龄真人辨认及全篇生活节奏仍待完成。
 
 RC2自测包已按授权上传已有TapTap游戏，版本275902/包体74035；新视觉包未上传、绑定、提审或公开发布。[平台状态](docs/TAPTAP_SELF_TEST.md)。给GPT/平台的[全文合集](docs/PLATFORM_REVIEW_COPY.md)覆盖全部分支，实际源码基线和交付包见[审核交接](docs/REVIEW_HANDOFF.md)。当前automation-2不存在，未新建替代调度。
 
@@ -23,7 +23,7 @@ RC2自测包已按授权上传已有TapTap游戏，版本275902/包体74035；�
 
 先读CODEX_TASK、GAME_SPEC和LIFE_NARRATIVE_RULES。安装依赖后运行npm run check:types、npm run check:story、npm test；已导入编辑器时另跑npm run check:cocos。统计、文案线索与素材清单可以重导出，但不代替真人审读。
 
-发布配置build-config/web-mobile.json关闭debug并裁剪2D模块；最终本批输出build/visual-v2-shared-scenes-final。构建后使用tools/prepare-delivery.cjs和tools/serve-preview.cjs通过HTTP试玩。旧build/web-mobile与历史包不能当成最新包，也不能双击file://代替运行。
+发布配置build-config/web-mobile.json关闭debug并裁剪2D模块；最新输出build/visual-v2-album，2026-10-09 14:40:04 Finished。共享场景前批输出独立保留。构建后使用tools/prepare-delivery.cjs和tools/serve-preview.cjs通过HTTP试玩。旧build/web-mobile与历史包不能当成最新包，也不能双击file://代替运行。
 
 ## 项目资料
 

@@ -5,6 +5,7 @@ import { LocalSave } from './LocalSave';
 export class SaveManager {
   private static local = new LocalSave(sys.localStorage, GameConfig.saveKey);
   static get warning(): string { return this.local.warning }
+  static peek(): GameStateData { return this.local.peek() }
   static load(): GameStateData { return this.local.load() }
   static save(state: GameStateData): boolean { return this.local.save(state) }
   static clear(): boolean { return this.local.clear() }

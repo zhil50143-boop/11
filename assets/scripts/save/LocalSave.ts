@@ -42,6 +42,11 @@ export class LocalSave {
   private blocked = false;
   warning = '';
   constructor(private readonly storage: StoragePort, private readonly key: string) {}
+  peek(): GameStateData {
+    // Read-only viewers must not migrate, back up, reset or save player progress.
+    const raw = this.storage.getItem(this.key);
+    return raw ? normalizeSave(JSON.parse(raw)) : createInitialState();
+  }
   load(): GameStateData {
     this.warning = ''; this.blocked = false;
     let raw: string | null;

@@ -150,7 +150,8 @@ export class StoryView extends Component {
       case 'choice':
         new ChoicePanel().show(this.root, node, id => void this.manager.choose(id, node.id), life.time, memoryCaption); break;
       case 'photo': new PhotoViewer().show(this.root, node, () => void this.manager.complete(node.id), this.interactionView.photoBack,
-        back => { this.interactionView.photoBack = back; }); break;
+        back => { this.interactionView.photoBack = back; },
+        { offset: this.manager.state.progress.readingOffset, changed: offset => this.manager.setReadingOffset(node.id, offset) }); break;
       case 'letter':
         if (node.id === 'CH08_EP05_RECONSTRUCT') {
           new MemoryComparisonPanel().show(this.root, node, this.manager.state.readNodeIds.includes('CH08_EP05_N001'),

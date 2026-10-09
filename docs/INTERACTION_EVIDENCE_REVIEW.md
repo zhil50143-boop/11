@@ -188,3 +188,67 @@
 - **大学宿舍边界已收窄：** 仅精确匹配“周叙大学宿舍”，不再通过“包含大学且包含宿舍”匹配两边大学的混合地点。
 
 上述是当前源码选择规则的静态关闭确认，不是新包浏览器运行通过。主代理报告最终源码构建于11:32:52显示 Finished，但本评审未读取构建日志，不将其升级为运行证据；全游戏和目录检查仍待主代理实际结果。本报告没有提前记录其运行通过，也未开展实体手机或真人验收。
+
+## 14. 新增相册小批次独立细节确认
+
+日期：2026-10-09。本次一次读取 `PhotoAlbum.ts`、`PhotoViewer.ts`、`core/Main.ts`、`LocalSave.ts` 的 `peek`、`SaveManager.ts`、`tests/readonly-save.test.cjs`，及工程外 `outputs/visual-v2-album-check/album/index.json`。为核实完成标记与回调／滚动接线，仅补读对应四个原 JSON 照片节点、`StoryView.ts` 的 photo 分支、`StoryManager.setReadingOffset`、`StoryRuntime.complete`、`UIFactory.clear` 及图片资源辅助函数。本次没有重新执行测试、浏览器操作、真机或真人阅读。
+
+**结论：在实际读取的源码与现有报告范围内，没有发现相册新增事实、提前解锁、回看写存档或晚到资源回调覆盖退出页面的真实冲突。** 本结论不扩大为全部 UI 或未来改动的保证。
+
+### 14.1 四张照片的原完成条件与内容来源
+
+| 相册项目 | 原照片节点 | 唯一筛选完成 flag |
+|---|---|---|
+| 旧毕业照 | `CH01_EP02_PHOTO_001` | `VIEWED_OLD_PHOTO` |
+| 刚洗好的毕业照 | `CH03_EP05_PHOTO` | `CH03_SEEN_GRADUATION_PHOTO` |
+| 旧街 | `CH04_EP05_PHOTO` | `CH04_SEEN_STREET_PHOTO` |
+| 楼下合照 | `CH07_EP08_PHOTO` | `CH07_SEEN_FAMILY_PHOTO` |
+
+`PhotoAlbum.ts` 仅保留 `state.flags[photo.flag] === true` 的条目，不用进入章节、当前节点、readNodeIds 或其他照片的完成条件替代。四个 flag 均来自相应原照片节点的 `setFlags`；`StoryRuntime.complete` 在真实完成时应用它们，进入／显示照片本身不在该方法之外提前设置。
+
+打开照片直接加载四个原 episode JSON，查找对应 node ID 并验证 `node.type === 'photo'`，随后将原节点交给 `PhotoViewer`。`PhotoViewer` 正面使用 `node.text`，背面使用 `node.backText`；相册没有另建正文副本、照片证据、回忆说明或日期。旧毕业照与刚洗好的毕业照仍保留各自原节点描述，不因图像相似合并成一个剧情来源。
+
+### 14.2 相册回看确认为独立只读路径
+
+- 首页相册入口使用 `SaveManager.peek()`，没有调用用于迁移／备份的 `load()` 或 `save()`。
+- `LocalSave.peek()` 只 `getItem`、JSON parse 和 normalize，返回新状态对象；没有 `setItem`、`removeItem`、迁移备份、损坏存档备份或更新时间写回。损坏、未来版本、存储不可读会抛错，首页捕获后保留原存档并显示可重试说明。
+- `PhotoAlbum` 读取 state.flags 作筛选，不修改该 state，不依赖或调用 `StoryManager`，不执行 complete、effects、evidence、unlock 或进度推进。
+- 相册传入 `readOnly: true`；完成按钮变为“返回相册”，其回调只重绘相册。翻面回调为无动作函数，描述滚动只更新 `PhotoAlbum.offsets[node.id]` 这个 UI 对象内的临时值，不更新游戏存档。
+- `readOnly` 的实际只读性质来自这一整条回调接线，不能将该参数泛称为能阻止任意外部回调写入的通用保护。本次读取的相册调用已使用上述只读回调。
+
+### 14.3 退出与晚到回调
+
+相册重绘／返回时 `clear(canvas)` 销毁原页子节点。原 JSON 的加载回调首先检查 `isValid(viewer, true)`，包含已安排销毁节点的严格检查；退出原照片页后不会再创建新 `PhotoViewer`。图片加载辅助函数也在回调中严格检查图片节点，纸面纹理回调检查 bounds 与 image；照片失败提示另检查提示节点。现有源码没有从相册加载回调跳转、调用 `showHome` 或恢复已退出页面的路径。
+
+原 JSON 加载失败时保持错误说明和“返回相册”按钮；照片图片失败时保留原正文／背文，并显示图片不可用说明，不补造新图片或文案事实。
+
+### 14.4 正常剧情描述 offset 接线
+
+正常 StoryView 的 photo 分支继续传入：
+
+- `offset: this.manager.state.progress.readingOffset`；
+- `changed: offset => this.manager.setReadingOffset(node.id, offset)`；
+- 真正“放回去”调用 `this.manager.complete(node.id)`。
+
+`PhotoViewer` 的正面描述通过 `DocumentPanel` 使用这个 offset／changed，图片有无都保留该接线。`StoryManager.setReadingOffset` 核对当前 node ID 与有限数值，再更新 readingOffset 并安排正常保存。因此正常剧情与相册临时滚动位置没有互相替换；拖动描述不等于完成照片交互，返回相册也不等于故事推进。
+
+### 14.5 已有测试与浏览器报告的证据范围
+
+实际读取的 `readonly-save.test.cjs` 包含3个测试：读取返回独立状态且零写入；损坏／未来／不可读记录不备份或覆盖；旧版／异常集合只在返回对象里规范化，不造历史也不改原数据。本次**仅阅读测试内容，没有重新运行它们**。
+
+实际读取的 `album/index.json` 记录18项 PASS、23张截图及空 errors。10项视口／主题组合覆盖360×640、390×780、375×812、412×915、360×840，昼／夜两种阅读主题，声明四照片原正背文、游戏存储字节不变及零 save writes；另外记录未完成不展示、只按完成flag筛选、损坏／未来存档保留、图片／原 JSON 失败、晚到回调，以及正常剧情描述滚动返回／刷新恢复。最后一项记录 `actualPhotoScrollSavedOffset = 0.933990429015196` 且无提前完成。
+
+这些 PASS 是主代理已保存的桌面 H5 检查记录，不是本评审再次运行得出的结果；本次没有逐张查看这些截图，也没有将其升级为实体手机或真人阅读评分。声音、故事原文、旗标、决定和其他系统未改动。
+
+### 14.6 本次所读主要源码指纹
+
+| 文件 | SHA-256 |
+|---|---|
+| `PhotoAlbum.ts` | `E5D1A44FD130DD4FD05164F707C06014AB04DC68EF6A232F3C417C75791010E4` |
+| `PhotoViewer.ts` | `BB46F5F42A4D47AC8910A7623CDA97CB72EEF19DD83E3E5FBCE0BD7701892075` |
+| `core/Main.ts` | `11789A9C7E17E77B7F8E6838D51FB026E1FA2366D08EFDF78BE92B8318CEACDC` |
+| `LocalSave.ts` | `6A28124CCCAC80C8D4B7F0FD3176BD56C7C9222A8A657C6759A768D4AB36C4F4` |
+| `SaveManager.ts` | `5B560A5A24160D13B4C1D5AEF759DD426B38D3BDDE4EC9B5ACA478BB29DA82A5` |
+| `readonly-save.test.cjs` | `5CD2D1A50081F39FFA1C741A7CD0A033E1CE3385AA3F24071830206049D73D4C` |
+
+本轮仅追加此报告，没有修改源码、图片、存档、测试、运行服务或任何其他文件。

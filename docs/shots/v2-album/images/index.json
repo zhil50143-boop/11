@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "method": "Focused actual album opening, four original photograph SpriteFrames loaded, four original fronts/backs and byte-identical save in one day largest-font viewport. No repeated fault/scroll suite.",
+  "reports": [
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "theme": "paper",
+      "result": "PASS",
+      "fourOriginalFrontsAndBacks": true,
+      "fourPhotographSpriteFramesLoaded": true,
+      "gameStorageByteIdentical": true,
+      "saveWrites": 0
+    }
+  ],
+  "screens": [
+    "360x640-paper-album.png",
+    "360x640-paper-CH01_EP02_PHOTO_001-front.png",
+    "360x640-paper-old-photo-back.png",
+    "360x640-paper-CH03_EP05_PHOTO-front.png",
+    "360x640-paper-CH04_EP05_PHOTO-front.png",
+    "360x640-paper-CH07_EP08_PHOTO-front.png"
+  ],
+  "errors": []
+}
