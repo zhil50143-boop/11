@@ -1,0 +1,16 @@
+{
+  "file": "C:\\Users\\21895\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\outputs\\余生未寄_V2_存档可靠性_源代码与审核资料.zip",
+  "bytes": 244322005,
+  "sha256": "ce94b9e6bde4aebf00abc7c65cb72513fff0f6462eb27b52af5d596301e568b3",
+  "entries": 1068,
+  "crc": "PASS",
+  "buildSourceCommit": "843ab8503fb2f3ac3c1adafa2c039d572e814910",
+  "copySourceCommit": "a331a6fb3f61bb7aecb564679a9125a563065ed0",
+  "documentCommit": "870c1f21033c2368c6a2fc7c979523c909d94044",
+  "H5sha256": "3d036e8c17b1228c1a78010088aea65b419a507b19e0f3974c12b0f6ab1b748e",
+  "copySha256": "36e9f8a5b61d42dec6dc529cd45cf92a3b64ab915eb80bf2ac8b727253837547",
+  "verifiedSourceInputs": 110,
+  "modelWeightsOrDevRuntimeIncluded": false,
+  "finalRelease": false,
+  "documentBaselineMeaning": "Archive is the exact 870c1f2 document snapshot. Later repository commits may add handoff metadata only; game/copy inputs and H5 unchanged."
+}

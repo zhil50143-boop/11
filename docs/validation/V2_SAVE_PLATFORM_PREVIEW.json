@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-09",
+  "result": "local archive preflight PASS; no upload",
+  "developerId": 473536,
+  "appId": 949864,
+  "packageType": "h5",
+  "screenOrientation": 1,
+  "filename": "余生未寄_V2_存档可靠性_开发验证_H5.zip",
+  "bytes": 19024513,
+  "sha256": "3d036e8c17b1228c1a78010088aea65b419a507b19e0f3974c12b0f6ab1b748e",
+  "idempotencyKey": "yushengweiji-rc3-save-3d036e8c17b1",
+  "availableTypes": [
+    "h5"
+  ],
+  "preflight": {
+    "entry_count": 203,
+    "top_level_entries": [
+      "game"
+    ],
+    "violations": [],
+    "warnings": []
+  },
+  "networkRequestsDuringPreview": 0,
+  "uploaded": false,
+  "userApproval": "Deferred by user: 先交 GPT 审核，暂不上传",
+  "bound": false,
+  "submitted": false,
+  "published": false
+}
