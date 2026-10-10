@@ -1,0 +1,56 @@
+{
+  "sha256": "6877c01735c3a8f444c11fcdbb9a587e7887e75bc9804dc1f3714c2fda3df9f0",
+  "bytes": 228823,
+  "generatedAt": "2026-10-10T07:57:05.236697+08:00",
+  "sourceCommit": "91b54bd7e0a4f03c1be3312c276cd8188ac87d3d",
+  "sourceInputsVerified": 110,
+  "counts": {
+    "store": 4,
+    "json": 3303,
+    "source": 175,
+    "voice": 15
+  },
+  "totalSourceEntries": 3497,
+  "missingTextEntries": 0,
+  "sourceMarkdownSha256": "d3fa993ed0eeb96dde6778313b7526226b2e1f5c34bb2222fff8ed5168b0324b",
+  "file": "docs/PLATFORM_REVIEW_COPY.docx",
+  "pages": 130,
+  "chapters": 10,
+  "episodes": 60,
+  "nodes": 467,
+  "endings": 6,
+  "editable": true,
+  "fullMutuallyExclusiveBranches": true,
+  "sourceFieldTruncations": 0,
+  "sourceFieldMismatches": 0,
+  "validContentsTargets": 15,
+  "extraEnglishOrNumericEntries": 7,
+  "voicePointers": "events[0].text through events[14].text",
+  "storeSnapshot": "docs/PLATFORM_REVIEW_COPY.store.json",
+  "rendering": {
+    "pdfExporter": "Microsoft Word, hidden read-only instance",
+    "rasterizer": "bundled documents render_docx.py using Word-exported PDF",
+    "allPagesVisuallyChecked": true,
+    "pageRanges": [
+      "1-44",
+      "45-87",
+      "88-130"
+    ],
+    "changedPagesRechecked": [
+      6,
+      7,
+      8,
+      9,
+      72,
+      73,
+      74,
+      75,
+      95,
+      96,
+      97
+    ],
+    "other119PageImagesUnchanged": true,
+    "unresolvedBlockingLayoutIssues": 0
+  },
+  "acceptanceBoundary": "Text coverage and document layout only. Human narrative review and physical TapTap phone acceptance remain pending."
+}

@@ -29,7 +29,7 @@ with zipfile.ZipFile(temporary) as source:
         archive.write(delivery['file'], 'H5/' + Path(delivery['file']).name)
         for file, destination in [('docs/PLATFORM_REVIEW_COPY.md', 'review/全部文案.md'), ('docs/PLATFORM_REVIEW_COPY.md', 'review/全部文案.txt'), ('docs/PLATFORM_REVIEW_COPY.index.json', 'review/文案来源索引.json'), ('docs/REVIEW_HANDOFF.md', 'review/审核交接.md'), ('docs/REGRESSION_10000.md', 'review/万轮测试报告.md')]:
             archive.writestr(destination, source.read(file))
-        baseline = {'repository': 'https://github.com/zhil50143-boop/11', 'branch': 'main', 'gameSourceCommit': delivery['buildSourceCommit'], 'copySourceCommit': index['sourceCommit'], 'documentCommit': commit, 'H5sha256': delivery['sha256'], 'copySha256': index['export']['sha256'], 'verifiedSourceInputs': len(index['inputs']), 'kind': 'development verification, not final release', 'physicalTapTapAndHumanAcceptance': 'pending', 'uploadedToTapTap': False}
+        baseline = {'repository': 'https://github.com/zhil50143-boop/11', 'branch': 'main', 'gameSourceCommit': delivery['buildSourceCommit'], 'copySourceCommit': index['sourceCommit'], 'documentCommit': commit, 'H5sha256': delivery['sha256'], 'copySha256': index['export']['sha256'], 'verifiedSourceInputs': len(index['inputs']), 'kind': 'development verification, not final release', 'physicalTapTapAndHumanAcceptance': 'pending', 'uploadedToTapTap': delivery.get('uploadedToTapTap', False), 'platform': delivery.get('platform')}
         archive.writestr('BASELINE.json', json.dumps(baseline, ensure_ascii=False, indent=2) + '\n')
 with zipfile.ZipFile(target) as check:
     assert check.testzip() is None

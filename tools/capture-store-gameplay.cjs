@@ -2,25 +2,27 @@
 const fs = require('node:fs'), path = require('node:path'), assert = require('node:assert/strict');
 const {chromium} = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const url = process.argv[2], out = path.resolve(process.argv[3] || 'work/store-capture');
+const landscape = process.argv[4] === 'landscape';
 if (!url) throw Error('Usage: node tools/capture-store-gameplay.cjs URL OUTPUT');
 fs.mkdirSync(out, {recursive:true});
 (async () => {
   const browser = await chromium.launch({headless:true, executablePath:process.env.BROWSER_EXECUTABLE,
     args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
   try {
-    const context = await browser.newContext({viewport:{width:540,height:960},deviceScaleFactor:2,hasTouch:true,isMobile:true});
+    const context = await browser.newContext({viewport:landscape?{width:1280,height:720}:{width:540,height:960},
+      deviceScaleFactor:landscape?1:2,hasTouch:true,isMobile:true});
     const page = await context.newPage(), errors = [];
     page.on('pageerror', e => errors.push(e.message));
     const snapshot = () => page.evaluate(() => {
       const cc=window.cc, scene=cc?.director.getScene(), labels=[], buttons=[];
-      let state;
+      let state; const scale=Math.min(innerWidth/1080,innerHeight/1920);
       function walk(n) {
         if (!n.activeInHierarchy) return;
         const manager=n.getComponent('StoryManager'); if(manager?.hasState())state=manager.state;
         const label=n.getComponent(cc.Label); if(label)labels.push(label.string);
         const b=n.getComponent(cc.Button);
         if(b?.interactable)buttons.push({text:n.children.find(c=>c.getComponent(cc.Label))?.getComponent(cc.Label)?.string,
-          x:270+n.worldPosition.x/2,y:480-n.worldPosition.y/2});
+          x:innerWidth/2+n.worldPosition.x*scale,y:innerHeight/2-n.worldPosition.y*scale});
         n.children.forEach(walk);
       }
       if(scene)walk(scene); return {state,labels,buttons};

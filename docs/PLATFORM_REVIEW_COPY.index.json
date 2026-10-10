@@ -1,7 +1,7 @@
 {
   "version": "1.0.0-rc.3",
   "exportDate": "2026-10-09",
-  "sourceCommit": "661708e0d788469c6606573eb7a2bf966d6b57a7",
+  "sourceCommit": "91b54bd7e0a4f03c1be3312c276cd8188ac87d3d",
   "chapters": 10,
   "episodes": 60,
   "nodeCount": 467,
@@ -19786,7 +19786,7 @@
     {
       "file": "assets/scripts/core/Boot.ts",
       "line": 8,
-      "text": "余生未寄",
+      "text": "遗憾",
       "format": "literal",
       "scope": "game-source"
     },
@@ -19821,7 +19821,7 @@
     {
       "file": "assets/scripts/core/Main.ts",
       "line": 21,
-      "text": "余生未寄",
+      "text": "遗憾",
       "format": "literal",
       "scope": "game-source"
     },
@@ -20857,7 +20857,7 @@
     {
       "file": "assets/scripts/ui/VisualDraft.ts",
       "line": 27,
-      "text": "余生未寄",
+      "text": "遗憾",
       "format": "literal",
       "scope": "design-preview-only"
     },
@@ -21279,7 +21279,7 @@
     },
     {
       "file": "assets/scripts/core/Boot.ts",
-      "sha256": "ebd45b03b4f373f88e0b95549bc7cf04ac176fbcbecadf6c9fd0440314100d6a"
+      "sha256": "e266aa6bf856a0087f1fc21f2ea300f1f908bfb729568d4ddcadcff77e67ca0a"
     },
     {
       "file": "assets/scripts/core/GameConfig.ts",
@@ -21295,7 +21295,7 @@
     },
     {
       "file": "assets/scripts/core/Main.ts",
-      "sha256": "248cec35809653d9082e9c5bb98eeb0ad31009cc9f1915fac05c55cc644132e1"
+      "sha256": "3b1bfe3b191bee659ef17fc58c9dd70aa4002436a9d0ed6945f1898599403cfd"
     },
     {
       "file": "assets/scripts/core/NarrativeMath.ts",
@@ -21423,7 +21423,7 @@
     },
     {
       "file": "assets/scripts/ui/VisualDraft.ts",
-      "sha256": "b928866f93a896e641913f6872b5bbd272cdadbdfbc04a356ba444db16159802"
+      "sha256": "784376b13f4a32dbec017da2db85c4737dcae71b5f530b76dbb1d410e31adb8b"
     },
     {
       "file": "art/original/audio/manifest.json",
@@ -21431,8 +21431,8 @@
     }
   ],
   "export": {
-    "bytes": 979874,
-    "sha256": "eef56e077bc06045db184250d855c6a44dbba3a4f05d2f8d6f41e0f8534e43e1"
+    "bytes": 979850,
+    "sha256": "d3fa993ed0eeb96dde6778313b7526226b2e1f5c34bb2222fff8ed5168b0324b"
   },
   "limitations": [
     "Current candidate, regenerate on final commit",

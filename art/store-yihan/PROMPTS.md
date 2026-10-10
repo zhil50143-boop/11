@@ -1,0 +1,21 @@
+# 本轮内置Image完整有效提示
+
+## 图标
+
+Create a finished game app icon, square 1:1 at 1536x1536 or higher. One dominant focal subject: an ordinary aged pale ivory paper envelope, already opened, with a single off-white sheet peeking from the flap, seen close up on a worn warm brown wooden desk. Grounded semi-realistic painted life-narrative game art, matte textures, restrained warm desk-lamp light, subdued warm-gray background; gently creased paper and natural irregular wear, no melodrama. The envelope should occupy 75% of image, immediately identifiable at small icon size, simple compact composition. No text of any kind, no title, letters, handwriting, stamps, logos, watermark, UI, icon border, rounded corners, hearts, ribbons, ornamental particles, flowers or fake photo collage. Full square opaque canvas. This represents the original Chinese everyday-life game '遗憾', where the player investigates ordinary old objects and reads letters.
+
+## 重生成宣传图
+
+Generate ONE BRAND NEW finished promotional artwork for Chinese everyday-life narrative game 遗憾, completely new composition. REQUIRED final canvas is FULL RESOLUTION 1920 by 1080 pixels at minimum, 16:9 landscape; use high-resolution output, do not downsample to a preview. In a modest lived-in apartment, close view from above and slightly left across a warm brown wooden table. At right, an ordinary middle-aged adult's hand turns over a mildly worn old graduation photograph; on its reverse there is no readable writing. Beside it lies one open plain cream envelope, no text. A subdued gray-green wall and late afternoon ordinary window light; semi-realistic painted texture consistent with a quiet original life narrative, no anime. The photograph must be small, natural and imperfect; no detailed perfect faces, no collage. The concrete gameplay moment is turning over an old photo, not fantasy combat. In the quiet left area render only the exact Chinese title 遗憾, two correct large cream Ming/Song Chinese characters, legible and unobstructed, integrated with scene. No additional text, letters, numbers, logos, slogans, subtitles, UI, borders, watermark, particles, hearts, flowers, neon, lavish lighting or glossy 3D. Modest natural palette, non-theatrical ordinary domestic scene. Output final file at least 1920x1080.
+
+## 照片事实修正
+
+Edit ONLY the photograph inside the first reference banner. Keep the entire first banner unchanged: exact Chinese title 遗憾, wall/window/desk, two middle-aged hands, paper envelope, teacup, lighting, composition, paint style. Replace the erroneous group portrait of people in black university graduation caps with the actual supplied second reference photo of two ordinary Chinese high-school graduates, a girl shielding her eyes from sunlight and boy looking to one side in ordinary pale blue/light shirts with backpacks in front of their school. Preserve these two fictional characters' identity, expressions and poses from the second reference, and match that exact photograph content in the held small print, naturally warped to the existing print's perspective. No caps, gowns, group portrait, additional people or made-up text. This is a faithful promotional depiction of the actual game's 2009 high-school photo. Keep the title exactly 遗憾 and add no other text. Retain 16:9 landscape canvas.
+
+## 方形宣传图
+
+Adapt the supplied actual promotional banner for the Chinese everyday-life game 遗憾 into a coherent SQUARE 1:1 promotional image. Preserve the same scene, gray-green wall, wooden table, teacup/window natural daylight, the two ordinary middle-aged hands holding the same correct two-high-school-graduates photo, the open cream envelope, and overall natural painted art style. Keep the exact correct title 遗憾 large in the quiet upper-left, no other text. Reframe and extend ONLY as needed for square; do not introduce new people, props, emotions or gameplay. Place title and held photograph as clear separate focal areas, don't crop important photo or either hand. No new university group/caps. No UI, borders, watermark, logos, slogans or fancy dramatic effects. Full opaque square canvas, target1440x1440 or greater.
+
+## 尺寸与授权
+
+Image实际原图为1254×1254、1672×941等；工具没有按提示的目标尺寸输出。用户明确回答“允许仅调整新图尺寸”，故仅执行尺寸导出及必要格式压缩，画面内容不另绘制。所有PNG不透明背景，截图直接来自游戏而非Image。候选展示、改图、导出均不代表素材审核通过。

@@ -1,0 +1,161 @@
+{
+  "game": "遗憾",
+  "appId": 966933,
+  "developerId": 473536,
+  "verifiedAt": "2026-10-09T12:48:41.509Z",
+  "model": "Built-in Image tool; no model identifier returned",
+  "images": [
+    {
+      "file": "icon/candidates/icon.png",
+      "field": "icon",
+      "assetId": 372367,
+      "url": "https://img-tc.tapimg.com/market/images/408e0d5adf4dbec131254c1c3bb1bc1b.png",
+      "bytes": 2737113,
+      "sha256": "92edc428347164e6cc9e0f0110512b36893b213f18d07f3f525773ec1042aa60",
+      "width": 1254,
+      "height": 1254,
+      "format": "png",
+      "source": "Built-in Image generation; see PROMPTS.md",
+      "profileFieldVerified": true
+    },
+    {
+      "file": "banner/candidates/banner-1920.png",
+      "field": "banner_4",
+      "assetId": 372485,
+      "url": "https://img-tc.tapimg.com/market/images/2e20155676f43312f753b03b0ddf11ee.png",
+      "bytes": 4063571,
+      "sha256": "c9549f7cae68c704663a2546de099ff5873e02c0e9abddb97d9f2b59934f115d",
+      "width": 1920,
+      "height": 1080,
+      "format": "png",
+      "source": "Built-in Image generation; see PROMPTS.md",
+      "profileFieldVerified": true
+    },
+    {
+      "file": "square/candidates/square-1440.jpg",
+      "field": "square_promo_image",
+      "assetId": 372606,
+      "url": "https://img-tc.tapimg.com/market/images/448d66f4d30825891b1d897d2a7fb870.jpg",
+      "bytes": 639588,
+      "sha256": "272745c45f9ed9215097a9ceca0ea8101e62b83880f033e85b122f4327bc6f73",
+      "width": 1440,
+      "height": 1440,
+      "format": "jpeg",
+      "source": "Built-in Image generation; see PROMPTS.md",
+      "profileFieldVerified": true
+    },
+    {
+      "file": "screenshots/candidates/01-title.png",
+      "field": "screenshots",
+      "assetId": 372521,
+      "url": "https://img-tc.tapimg.com/market/images/0248d6d9664303c82b2ac7e695aa2a78.png",
+      "bytes": 1858917,
+      "sha256": "c8c30dd962bc995caeefc62e9d7a62f3ebae77cef7a9ae399f7c2a536931335c",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "source": "Unedited actual Cocos H5 capture",
+      "profileFieldVerified": true
+    },
+    {
+      "file": "screenshots/candidates/02-reading.png",
+      "field": "screenshots",
+      "assetId": 372522,
+      "url": "https://img-tc.tapimg.com/market/images/f19033f275938e5489d4671844624281.png",
+      "bytes": 2210903,
+      "sha256": "c03c8085c877490896762b7798bcbbf178639f2d602214bfc950a3bdbdb5ef64",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "source": "Unedited actual Cocos H5 capture",
+      "profileFieldVerified": true
+    },
+    {
+      "file": "screenshots/candidates/03-investigation.png",
+      "field": "screenshots",
+      "assetId": 372524,
+      "url": "https://img-tc.tapimg.com/market/images/c529e63593737d02071ae37af5ed7b05.png",
+      "bytes": 2059990,
+      "sha256": "a96d175ee6415ea10cd367134a5a7c9a8a292d646bb99f096ab730f0de6850d0",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "source": "Unedited actual Cocos H5 capture",
+      "profileFieldVerified": true
+    },
+    {
+      "file": "screenshots/candidates/04-photo.png",
+      "field": "screenshots",
+      "assetId": 372525,
+      "url": "https://img-tc.tapimg.com/market/images/55e947b8d47daff422bfaff00078c674.png",
+      "bytes": 2387542,
+      "sha256": "50e7955cfc801e888abf936c5368ba0ce47d1dd1481ddbbbb12a7d7706948b95",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "source": "Unedited actual Cocos H5 capture",
+      "profileFieldVerified": true
+    },
+    {
+      "file": "screenshots/candidates/05-photo-back.png",
+      "field": "screenshots",
+      "assetId": 372527,
+      "url": "https://img-tc.tapimg.com/market/images/e2264ec98a83ea11deacc9aebba16f16.png",
+      "bytes": 1927053,
+      "sha256": "c20cc98d5e0f2db9a365df704741aef4bdcff6be8f6320598f8a5e60c75823b5",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "source": "Unedited actual Cocos H5 capture",
+      "profileFieldVerified": true
+    },
+    {
+      "file": "screenshots/candidates/06-envelope.png",
+      "field": "screenshots",
+      "assetId": 372528,
+      "url": "https://img-tc.tapimg.com/market/images/b2d2717b332f9896c05928f2393eba81.png",
+      "bytes": 2026719,
+      "sha256": "def63557eb0781b1ed65aea78f0b5772aff0b2c1c9635931c362d5280305fe41",
+      "width": 1080,
+      "height": 1920,
+      "format": "png",
+      "source": "Unedited actual Cocos H5 capture",
+      "profileFieldVerified": true
+    }
+  ],
+  "videos": [
+    {
+      "file": "gameplay.mp4",
+      "field": "gameplay_demo_video",
+      "videoId": 5952278,
+      "bytes": 1568820,
+      "sha256": "52b2bdde72c8952d9f10a72330d609842b36e773b79d543212f6ad24ba8f21e1",
+      "localDurationSeconds": 40.2523,
+      "width": 1080,
+      "height": 1920,
+      "remoteStatus": "regulating",
+      "playable": true,
+      "profileFieldVerified": true,
+      "source": "Actual Cocos H5 Canvas recording in desktop Chrome; not physical TapTap phone evidence"
+    },
+    {
+      "file": "trailer.mp4",
+      "field": "trailer",
+      "videoId": 5952346,
+      "bytes": 2374669,
+      "sha256": "47cef5ea5fe3ec0ab561b8ea26ceebb626d5b5c0b8431f4a193c0ec5233fe843",
+      "localDurationSeconds": 37.5979,
+      "width": 1280,
+      "height": 720,
+      "remoteStatus": "regulating",
+      "playable": true,
+      "profileFieldVerified": true,
+      "source": "Actual Cocos H5 Canvas recording in desktop Chrome; not physical TapTap phone evidence"
+    }
+  ],
+  "unused": [
+    "banner-letter-unused.png",
+    "square-1440-png-source.png"
+  ],
+  "signedPlaybackUrlsAndQr": "Kept local, excluded from public records"
+}

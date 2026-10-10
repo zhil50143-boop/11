@@ -1,0 +1,147 @@
+{
+  "stage": "ai-image-validate",
+  "rule": {
+    "id": "screenshot",
+    "label": "gameplay screenshot",
+    "generation_mode": "source_edit_only",
+    "source_requirement": "actual game capture supplied by the user or captured from the running game",
+    "model_operations": [
+      "crop",
+      "resize",
+      "format_conversion",
+      "compression"
+    ],
+    "reference_rules": [
+      "use the supplied real game capture as the source image",
+      "do not use text-to-image or image-to-image generation to create new gameplay content"
+    ],
+    "formats": [
+      "jpg",
+      "png"
+    ],
+    "tolerance": 0.01,
+    "max_file_size": 4194304,
+    "count_range": {
+      "min": 3
+    },
+    "dimensions": [
+      {
+        "min_width": 1280,
+        "min_height": 720,
+        "aspect_range": [
+          1.6,
+          2.6666666667
+        ]
+      },
+      {
+        "min_width": 720,
+        "min_height": 1280,
+        "aspect_range": [
+          0.375,
+          0.625
+        ]
+      }
+    ],
+    "consistent_aspect_ratio": true,
+    "content_constraints": [
+      "all screenshots must use the same aspect ratio as the first screenshot",
+      "must originate from actual in-game screens",
+      "the model must not invent gameplay scenes, UI, levels, or game states",
+      "the model may only crop, resize, convert format, or compress the supplied game capture"
+    ],
+    "prompt_rules": [
+      "preserve the actual game screen and its real gameplay state",
+      "only perform the listed source-preserving operations"
+    ],
+    "forbidden_elements": [
+      "invented gameplay",
+      "invented UI, levels, characters, items, or game states",
+      "new scene redraw or visual repaint"
+    ],
+    "negative_terms": [
+      "watermark",
+      "blurry",
+      "empty scene",
+      "malformed UI text",
+      "invented gameplay",
+      "new game state"
+    ]
+  },
+  "input": "art\\store-yihan\\screenshots",
+  "valid": true,
+  "manual_checks": [
+    "all screenshots must use the same aspect ratio as the first screenshot",
+    "must originate from actual in-game screens",
+    "the model must not invent gameplay scenes, UI, levels, or game states",
+    "the model may only crop, resize, convert format, or compress the supplied game capture"
+  ],
+  "candidates": [
+    {
+      "path": "art\\store-yihan\\screenshots\\candidates\\01-title.png",
+      "name": "01-title.png",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "file_size": 1858917,
+      "valid": true,
+      "upload_command": "taptap-cli upload \"art\\store-yihan\\screenshots\\candidates\\01-title.png\" --app-id \u003capp-id\u003e --dev-id \u003cdeveloper-id\u003e --idempotency-key \u003cstable-image-intent-key\u003e --yes"
+    },
+    {
+      "path": "art\\store-yihan\\screenshots\\candidates\\02-reading.png",
+      "name": "02-reading.png",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "file_size": 2210903,
+      "valid": true,
+      "upload_command": "taptap-cli upload \"art\\store-yihan\\screenshots\\candidates\\02-reading.png\" --app-id \u003capp-id\u003e --dev-id \u003cdeveloper-id\u003e --idempotency-key \u003cstable-image-intent-key\u003e --yes"
+    },
+    {
+      "path": "art\\store-yihan\\screenshots\\candidates\\03-investigation.png",
+      "name": "03-investigation.png",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "file_size": 2059990,
+      "valid": true,
+      "upload_command": "taptap-cli upload \"art\\store-yihan\\screenshots\\candidates\\03-investigation.png\" --app-id \u003capp-id\u003e --dev-id \u003cdeveloper-id\u003e --idempotency-key \u003cstable-image-intent-key\u003e --yes"
+    },
+    {
+      "path": "art\\store-yihan\\screenshots\\candidates\\04-photo.png",
+      "name": "04-photo.png",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "file_size": 2387542,
+      "valid": true,
+      "upload_command": "taptap-cli upload \"art\\store-yihan\\screenshots\\candidates\\04-photo.png\" --app-id \u003capp-id\u003e --dev-id \u003cdeveloper-id\u003e --idempotency-key \u003cstable-image-intent-key\u003e --yes"
+    },
+    {
+      "path": "art\\store-yihan\\screenshots\\candidates\\05-photo-back.png",
+      "name": "05-photo-back.png",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "file_size": 1927053,
+      "valid": true,
+      "upload_command": "taptap-cli upload \"art\\store-yihan\\screenshots\\candidates\\05-photo-back.png\" --app-id \u003capp-id\u003e --dev-id \u003cdeveloper-id\u003e --idempotency-key \u003cstable-image-intent-key\u003e --yes"
+    },
+    {
+      "path": "art\\store-yihan\\screenshots\\candidates\\06-envelope.png",
+      "name": "06-envelope.png",
+      "format": "png",
+      "width": 1080,
+      "height": 1920,
+      "file_size": 2026719,
+      "valid": true,
+      "upload_command": "taptap-cli upload \"art\\store-yihan\\screenshots\\candidates\\06-envelope.png\" --app-id \u003capp-id\u003e --dev-id \u003cdeveloper-id\u003e --idempotency-key \u003cstable-image-intent-key\u003e --yes"
+    }
+  ],
+  "user_action_required": true,
+  "upload_pending": true,
+  "manifest_path": "art\\store-yihan\\screenshots\\manifest.json",
+  "next_steps": [
+    "图片仅保存在本地，CLI 未上传或修改资料字段。",
+    "请先确认候选图；确认后再执行候选项中的 upload_command 上传到素材库。"
+  ]
+}

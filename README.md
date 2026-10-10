@@ -1,6 +1,8 @@
-# 余生未寄 / The Letter Never Sent
+# 遗憾（原项目名：余生未寄）
 
 TapTap H5现实人生叙事模拟。连续生活叙事优先，少量重要决定有长期承接。
+
+2026-10-09用户确认游戏名改为《遗憾》，在深海游戏工作室另建TapTap条目966933；继续同一main工程，保留原剧情、结局标题、存档键及确认声线。新条目包体与资料记录见[后台交付](docs/TAPTAP_YIHAN_HANDOFF.md)。
 
 ## 当前状态
 
@@ -14,7 +16,7 @@ TapTap H5现实人生叙事模拟。连续生活叙事优先，少量重要决�
 
 阅读页有“返回书桌”，保存成功才退出，继续回到原段落；保存失败留原页重试。三档字号、夜间纸面、录音音量与减少动态独立保存。[设置说明](docs/READING_SETTINGS.md)。相册只读回看与照片描述跨刷新现已补齐；只显示本轮已完成照片，回看不改事实。相册后60测试、整十章290步、18专项/23图及四原照片实际加载集中确认通过。[最新全游戏核对](docs/PHOTO_ALBUM_AUDIT.md)。余下精确场景、跨龄真人辨认及全篇生活节奏仍待完成。
 
-RC2自测包已按授权上传已有TapTap游戏，版本275902/包体74035；新视觉包未上传、绑定、提审或公开发布。[平台状态](docs/TAPTAP_SELF_TEST.md)。给GPT/平台的[全文合集](docs/PLATFORM_REVIEW_COPY.md)覆盖全部分支，实际源码基线和交付包见[审核交接](docs/REVIEW_HANDOFF.md)。当前automation-2不存在，未新建替代调度。
+原《余生未寄》RC2版本275902/包体74035保留。新《遗憾》966933的rc.3版本280435/包体76019已上传并按用户批准绑定主包；图标、简介、开发者的话、截图、横版及方形宣传图、实机录像与宣传片均已回填，内容授权协议已获用户同意并签署。资料体检无阻断，未提审或公开发布。[平台状态](docs/TAPTAP_YIHAN_HANDOFF.md)。给GPT/平台的[全文合集](docs/PLATFORM_REVIEW_COPY.md)覆盖全部分支，实际源码基线和交付包见[审核交接](docs/REVIEW_HANDOFF.md)。当前automation-2不存在，未新建替代调度。
 
 ## 技术与运行
 
@@ -25,7 +27,7 @@ RC2自测包已按授权上传已有TapTap游戏，版本275902/包体74035；�
 
 先读CODEX_TASK、GAME_SPEC和LIFE_NARRATIVE_RULES。安装依赖后运行npm run check:types、npm run check:story、npm test；已导入编辑器时另跑npm run check:cocos。统计、文案线索与素材清单可以重导出，但不代替真人审读。
 
-发布配置build-config/web-mobile.json关闭debug并裁剪2D模块；最新输出build/visual-v2-save-edges，2026-10-09 17:34:43 Finished，游戏源码661708e。相册及共享场景前批输出独立保留。构建后使用tools/prepare-delivery.cjs和tools/serve-preview.cjs通过HTTP试玩；tools/package-review-h5.py核对游戏源、30件图、四原照片及固定声音并保留旧包。旧build/web-mobile与历史包不能当成最新包，也不能双击file://代替运行。
+发布配置build-config/web-mobile.json关闭debug并裁剪2D模块；当前新名称包输出build/yihan-rc3-taptap，2026-10-09 19:56:15 Finished，游戏源码91b54bd。此前万轮整改、相册及共享场景输出独立保留。构建后使用tools/prepare-delivery.cjs和tools/serve-preview.cjs通过HTTP试玩；tools/package-review-h5.py核对游戏源、30件图、四原照片及固定声音并保留旧包。旧build/web-mobile与历史包不能当成最新包，也不能双击file://代替运行。
 
 ## 项目资料
 
@@ -36,5 +38,6 @@ RC2自测包已按授权上传已有TapTap游戏，版本275902/包体74035；�
 - [第一章物件核对](docs/CHAPTER01_VISUAL_AUDIT.md)、[第十章全局核对](docs/CHAPTER10_AUDIT.md)
 - [审美评审](docs/INTERACTION_AESTHETIC_REVIEW.md)、[细节与事实评审](docs/INTERACTION_EVIDENCE_REVIEW.md)
 - [全部审核文案](docs/PLATFORM_REVIEW_COPY.md)、[逐条来源索引](docs/PLATFORM_REVIEW_COPY.index.json)、[对应交付记录](docs/validation/V2_INTERACTIONS_DELIVERY.json)
+- [全部文本Word](docs/PLATFORM_REVIEW_COPY.docx)：130页、3497条来源原文，含全分支、实际录音及后台文案；[Word完整性与版式记录](docs/validation/YIHAN_WORD_COPY.json)。
 
 各章审查保存当时范围；当前状态以FINAL_PROGRESS和实际源码/产物为准。
